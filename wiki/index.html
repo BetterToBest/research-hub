@@ -8,6 +8,11 @@
     <meta name="keywords" content="research, economics, creative currency, governance, open access, better to best, Citizen Internet Portal, X-cents">
     <meta name="author" content="Duke Johnson">
     
+    <!-- Enhanced bot accessibility -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bettertobest.github.io/research-hub/">
@@ -22,15 +27,21 @@
     <meta property="twitter:description" content="An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.">
     <meta property="twitter:image" content="https://bettertobest.github.io/research-hub/assets/images/social-preview.jpg">
 
-    <!-- Schema.org structured data -->
+    <!-- Schema.org structured data enhanced for AI/bot indexing -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Better To Best Research Hub",
+      "alternateName": "BetterToBest Research Hub",
       "description": "An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.",
       "url": "https://bettertobest.github.io/research-hub/",
       "author": {
+        "@type": "Person",
+        "name": "Duke Johnson",
+        "description": "Independent researcher and creator of Compassionate Meritocracy (Compassionism)"
+      },
+      "publisher": {
         "@type": "Person",
         "name": "Duke Johnson"
       },
@@ -38,12 +49,26 @@
         "@type": "SearchAction",
         "target": "https://bettertobest.github.io/research-hub/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
-      }
+      },
+      "mainEntity": [
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Economic Modeling and Simulation Analysis of Creative Currency Octaves",
+          "url": "https://bettertobest.github.io/research-hub/papers/economic-modeling-analysis.html"
+        }
+      ],
+      "keywords": ["Creative Currency Octaves", "Public Trust Housing", "Post-Scarcity Economics", "Welfare Economics", "Universal Basic Income", "Community Economics", "Compassionate Meritocracy", "Economic Innovation", "Social Policy", "Open Access Research"],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "inLanguage": "en-US"
     }
     </script>
 
     <link rel="canonical" href="https://bettertobest.github.io/research-hub/">
-    <link rel="sitemap" href="/sitemap.xml">
+    <link rel="sitemap" href="https://bettertobest.github.io/research-hub/sitemap.xml">
+    
+    <!-- RSS feed for content syndication -->
+    <link rel="alternate" type="application/rss+xml" title="Better To Best Research Hub RSS" href="https://bettertobest.github.io/research-hub/rss.xml">
     
     <style>
         * {
@@ -692,7 +717,7 @@
                     <ul>
                         <li><a href="#home" class="nav-link active">Home</a></li>
                         <li><a href="#papers" class="nav-link">Research Papers</a></li>
-                        <li><a href="#wiki" class="nav-link">Wiki & FAQ</a></li>
+                        <li><a href="https://bettertobest.github.io/research-hub/wiki/" class="nav-link">Wiki & FAQ</a></li>
                         <li><a href="#about" class="nav-link">About / Contact</a></li>
                     </ul>
                 </nav>
@@ -740,7 +765,7 @@
                         <div class="card-description">
                             Revolutionary dual-tier incentive systems that combine octave-based capacity limits with personal multiplier rates to eliminate welfare cliffs while enhancing work incentives.
                         </div>
-                        <a href="#cco-papers" class="card-link">
+                        <a href="#papers" class="card-link">
                             Explore CCO Research →
                         </a>
                     </div>
@@ -753,7 +778,7 @@
                         <div class="card-description">
                             Community-owned housing models integrated with skill development and democratic governance, creating pathways for collective wealth building.
                         </div>
-                        <a href="#pth-papers" class="card-link">
+                        <a href="https://bettertobest.github.io/research-hub/wiki/faq.html#pth" class="card-link">
                             View PTH Framework →
                         </a>
                     </div>
@@ -766,7 +791,7 @@
                         <div class="card-description">
                             Digital infrastructure for democratic participation and transparent governance, enabling community-controlled economic systems.
                         </div>
-                        <a href="#cip-papers" class="card-link">
+                        <a href="https://bettertobest.github.io/research-hub/wiki/faq.html#cip" class="card-link">
                             Learn About CIP →
                         </a>
                     </div>
@@ -781,54 +806,18 @@
                 <div class="paper-grid">
                     <div class="paper-card">
                         <div class="paper-content">
-                            <h3 class="paper-title">Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare</h3>
+                            <h3 class="paper-title">Economic Modeling and Simulation Analysis of Creative Currency Octaves: Implementation Scenarios and Policy Implications</h3>
                             <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
-                            <p class="paper-abstract">This paper examines an integrated welfare framework combining Creative Currency Octaves (CCO) with dual-tier incentive mechanisms that addresses persistent challenges in transfer system design: work disincentive effects, welfare cliffs, and administrative inefficiency.</p>
+                            <p class="paper-abstract">This paper presents comprehensive economic modeling and simulation analysis of Creative Currency Octaves (CCO) implementation across diverse community scenarios, using agent-based modeling and Monte Carlo simulation techniques.</p>
                             <div class="paper-tags">
-                                <span class="tag">Welfare Economics</span>
-                                <span class="tag">UBI</span>
+                                <span class="tag">Economic Modeling</span>
                                 <span class="tag">CCO</span>
-                                <span class="tag">PTH</span>
+                                <span class="tag">Simulation</span>
+                                <span class="tag">Policy Analysis</span>
                             </div>
                             <div class="paper-actions">
-                                <a href="/papers/optimal-transfer-design.html" class="paper-link">Read Paper</a>
-                                <a href="/papers/optimal-transfer-design.pdf" class="paper-link" download>Download PDF</a>
-                                <a href="#cite-modal" class="paper-link">Cite</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="paper-card">
-                        <div class="paper-content">
-                            <h3 class="paper-title">Community-Based Monetary Innovation for Development</h3>
-                            <p class="paper-authors">Duke Johnson</p>
-                            <p class="paper-abstract">An exploration of how Creative Currency Octaves can serve as a development finance mechanism in emerging economies, with case studies from community implementations.</p>
-                            <div class="paper-tags">
-                                <span class="tag">Development Economics</span>
-                                <span class="tag">Community Currency</span>
-                                <span class="tag">Innovation</span>
-                            </div>
-                            <div class="paper-actions">
-                                <a href="/papers/community-monetary-innovation.html" class="paper-link">Read Paper</a>
-                                <a href="/papers/community-monetary-innovation.pdf" class="paper-link" download>Download PDF</a>
-                                <a href="#cite-modal" class="paper-link">Cite</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="paper-card">
-                        <div class="paper-content">
-                            <h3 class="paper-title">Democratic Governance in Economic Systems: Lessons from Public Trust Housing</h3>
-                            <p class="paper-authors">Duke Johnson</p>
-                            <p class="paper-abstract">Analysis of community governance mechanisms in Public Trust Housing implementations, examining how democratic decision-making can effectively manage complex economic systems.</p>
-                            <div class="paper-tags">
-                                <span class="tag">Governance</span>
-                                <span class="tag">Democracy</span>
-                                <span class="tag">Housing Policy</span>
-                            </div>
-                            <div class="paper-actions">
-                                <a href="/papers/democratic-governance-economic-systems.html" class="paper-link">Read Paper</a>
-                                <a href="/papers/democratic-governance-economic-systems.pdf" class="paper-link" download>Download PDF</a>
+                                <a href="https://bettertobest.github.io/research-hub/papers/economic-modeling-analysis.html" class="paper-link">Read Paper</a>
+                                <button class="paper-link" onclick="showPDFNotice()" style="background: none; border: none; color: var(--primary-color); cursor: pointer; text-decoration: underline;" title="PDF coming soon">Download PDF</button>
                                 <a href="#cite-modal" class="paper-link">Cite</a>
                             </div>
                         </div>
@@ -840,20 +829,20 @@
             <section class="stats">
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <h3>12</h3>
-                        <p>Published Papers</p>
-                    </div>
-                    <div class="stat-item">
                         <h3>3</h3>
-                        <p>Research Areas</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>150+</h3>
-                        <p>Citations</p>
+                        <p>Research Papers</p>
                     </div>
                     <div class="stat-item">
                         <h3>5</h3>
-                        <p>Implementations</p>
+                        <p>Research Areas</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Open</h3>
+                        <p>Access License</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Global</h3>
+                        <p>Collaboration</p>
                     </div>
                 </div>
             </section>
@@ -872,7 +861,7 @@
                         <div class="card-description">
                             Definitions and explanations of key terms in Creative Currency Octaves system design and implementation.
                         </div>
-                        <a href="/wiki/glossary.html" class="card-link">
+                        <a href="https://bettertobest.github.io/research-hub/wiki/glossary.html" class="card-link">
                             View Glossary →
                         </a>
                     </div>
@@ -885,7 +874,7 @@
                         <div class="card-description">
                             Common questions about implementation, theory, and practical applications of our research frameworks.
                         </div>
-                        <a href="/wiki/faq.html" class="card-link">
+                        <a href="https://bettertobest.github.io/research-hub/wiki/faq.html" class="card-link">
                             Read FAQ →
                         </a>
                     </div>
@@ -898,349 +887,3 @@
                         <div class="card-description">
                             Join the conversation about economic innovation and policy implementation.
                         </div>
-                        <a href="https://www.reddit.com/r/EconomicIdeas/" class="card-link" target="_blank">
-                            Join Discussion →
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- About Section -->
-            <section class="section" id="about">
-                <h2>About the Research</h2>
-                <p>This research hub represents a collaborative effort to develop and document innovative approaches to post-scarcity economics, with a focus on systems that enhance human flourishing while maintaining economic efficiency.</p>
-                
-                <div class="featured-grid">
-                    <div class="featured-card">
-                        <div class="card-header">
-                            <div class="card-icon">👨‍🔬</div>
-                            <div class="card-title">Duke Johnson</div>
-                        </div>
-                        <div class="card-description">
-                            Independent researcher and original developer of Creative Currency Octaves and Public Trust Housing frameworks. Author of "Better To Best: Novel Ideas to Improve Governments, Economies, and Societies" and creator of Compassionate Meritocracy (Compassionism).
-                        </div>
-                        <div class="social-links">
-                            <a href="https://authordukejohnson.bsky.social" class="social-link" title="Bluesky">🦋</a>
-                            <a href="https://x.com/Author_Duke_J" class="social-link" title="X/Twitter">𝕏</a>
-                            <a href="#facebook" class="social-link" title="Facebook">f</a>
-                            <a href="#gettr" class="social-link" title="Gettr">G</a>
-                        </div>
-                    </div>
-
-                    <div class="featured-card">
-                        <div class="card-header">
-                            <div class="card-icon">🤖</div>
-                            <div class="card-title">Claude (Anthropic)</div>
-                        </div>
-                        <div class="card-description">
-                            AI assistant contributing mathematical formalization, empirical research design, and comprehensive literature integration to support rigorous academic development of these frameworks.
-                        </div>
-                    </div>
-
-                    <div class="featured-card">
-                        <div class="card-header">
-                            <div class="card-icon">📧</div>
-                            <div class="card-title">Contact & Collaboration</div>
-                        </div>
-                        <div class="card-description">
-                            Interested in collaboration, implementation, or have questions about the research? We welcome engagement from researchers, policymakers, and communities worldwide.
-                        </div>
-                        <a href="mailto:Duke.T.James@gmail.com" class="card-link">
-                            Contact Duke Johnson →
-                        </a>
-                    </div>
-                </div>
-
-                <div style="margin-top: 3rem; padding: 2rem; background: var(--surface); border-radius: 1rem; border-left: 4px solid var(--primary-color);">
-                    <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Open Access Commitment</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">All research published on this platform is available under Creative Commons licensing, supporting open science and collaborative development. We believe transformative economic ideas should be freely accessible to communities, researchers, and policymakers worldwide.</p>
-                    <p style="color: var(--text-secondary);">This research received no specific grant funding and is conducted independently as a contribution to public knowledge and policy development.</p>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Research Areas</h3>
-                    <ul>
-                        <li><a href="#cco-papers">Creative Currency Octaves</a></li>
-                        <li><a href="#pth-papers">Public Trust Housing</a></li>
-                        <li><a href="#governance-papers">Democratic Governance</a></li>
-                        <li><a href="#development-papers">Development Economics</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="/wiki/glossary.html">Glossary</a></li>
-                        <li><a href="/wiki/faq.html">FAQ</a></li>
-                        <li><a href="/implementation-guide.html">Implementation Guide</a></li>
-                        <li><a href="/citations.html">Citation Tools</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Community</h3>
-                    <ul>
-                        <li><a href="https://www.reddit.com/r/EconomicIdeas/" target="_blank">Discussion Forum</a></li>
-                        <li><a href="/collaboration.html">Collaboration</a></li>
-                        <li><a href="/pilot-programs.html">Pilot Programs</a></li>
-                        <li><a href="/newsletter.html">Newsletter</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Technical</h3>
-                    <ul>
-                        <li><a href="/sitemap.xml">Sitemap</a></li>
-                        <li><a href="/rss.xml">RSS Feed</a></li>
-                        <li><a href="https://github.com/yourusername/better-to-best-research" target="_blank">GitHub Repository</a></li>
-                        <li><a href="/accessibility.html">Accessibility</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Duke Johnson & Claude (Anthropic). Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0</a></p>
-                <p>Built with GitHub Pages | <a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
-
-    <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const body = document.body;
-
-        // Check for saved theme preference or default to light
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        body.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-
-        function updateThemeIcon(theme) {
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-        }
-
-        // Mobile menu toggle
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const mainNav = document.getElementById('mainNav');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Active navigation highlighting
-        const navLinks = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('section[id]');
-
-        function highlightNavigation() {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 60) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        }
-
-        window.addEventListener('scroll', highlightNavigation);
-
-        // Back to top button
-        const backToTopBtn = document.getElementById('backToTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-        });
-
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Search functionality
-        const searchInput = document.getElementById('searchInput');
-        const searchResults = document.getElementById('searchResults');
-
-        // Sample search data - in a real implementation, this would come from your content
-        const searchData = [
-            {
-                title: "Optimal Transfer Design in Post-Scarcity Economies",
-                snippet: "Creative Currency Octaves with dual-tier incentive mechanisms",
-                url: "/papers/optimal-transfer-design.html"
-            },
-            {
-                title: "Community-Based Monetary Innovation",
-                snippet: "Development finance mechanism in emerging economies",
-                url: "/papers/community-monetary-innovation.html"
-            },
-            {
-                title: "Democratic Governance in Economic Systems",
-                snippet: "Community governance mechanisms in Public Trust Housing",
-                url: "/papers/democratic-governance-economic-systems.html"
-            },
-            {
-                title: "Creative Currency Octaves Glossary",
-                snippet: "Definitions and explanations of key CCO terms",
-                url: "/wiki/glossary.html"
-            }
-        ];
-
-        searchInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase().trim();
-            
-            if (query.length < 2) {
-                searchResults.style.display = 'none';
-                return;
-            }
-
-            const results = searchData.filter(item => 
-                item.title.toLowerCase().includes(query) || 
-                item.snippet.toLowerCase().includes(query)
-            );
-
-            displaySearchResults(results, query);
-        });
-
-        function displaySearchResults(results, query) {
-            if (results.length === 0) {
-                searchResults.innerHTML = '<div class="search-result-item">No results found</div>';
-            } else {
-                searchResults.innerHTML = results.map(result => `
-                    <div class="search-result-item" onclick="window.location.href='${result.url}'">
-                        <div class="search-result-title">${highlightQuery(result.title, query)}</div>
-                        <div class="search-result-snippet">${highlightQuery(result.snippet, query)}</div>
-                    </div>
-                `).join('');
-            }
-            searchResults.style.display = 'block';
-        }
-
-        function highlightQuery(text, query) {
-            const regex = new RegExp(`(${query})`, 'gi');
-            return text.replace(regex, '<strong>$1</strong>');
-        }
-
-        // Click outside to close search results
-        document.addEventListener('click', function(e) {
-            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-                searchResults.style.display = 'none';
-            }
-        });
-
-        // Simple visitor counter (in a real implementation, you'd use a proper analytics service)
-        function updateVisitorCount() {
-            const visits = localStorage.getItem('siteVisits') || '0';
-            const newVisits = parseInt(visits) + 1;
-            localStorage.setItem('siteVisits', newVisits.toString());
-            document.getElementById('visitorCount').textContent = newVisits.toLocaleString();
-        }
-
-        // Initialize visitor counter
-        updateVisitorCount();
-
-        // Initialize page
-        document.addEventListener('DOMContentLoaded', function() {
-            highlightNavigation();
-            
-            // Add loading animation completion
-            setTimeout(() => {
-                document.body.classList.add('loaded');
-            }, 100);
-        });
-
-        // SEO and Analytics placeholder functions
-        function trackPageView(page) {
-            // Placeholder for Google Analytics or similar
-            console.log('Page view:', page);
-        }
-
-        function trackEvent(action, category, label) {
-            // Placeholder for event tracking
-            console.log('Event:', action, category, label);
-        }
-
-        // Track initial page load
-        trackPageView(window.location.pathname);
-    </script>
-
-    <!-- Schema.org structured data for research papers -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ScholarlyArticle",
-      "headline": "Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
-      ],
-      "datePublished": "2025-07-31",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Better To Best Research Hub"
-      },
-      "abstract": "This paper examines an integrated welfare framework combining Creative Currency Octaves (CCO) with dual-tier incentive mechanisms that addresses persistent challenges in transfer system design: work disincentive effects, welfare cliffs, and administrative inefficiency.",
-      "keywords": ["Welfare Economics", "Universal Basic Income", "Creative Currency", "Public Trust Housing", "Post-Scarcity Economics"],
-      "license": "https://creativecommons.org/licenses/by/4.0/"
-    }
-    </script>
-
-    <!-- Google Search Console verification (replace with your actual verification code) -->
-    <meta name="google-site-verification" content="your-verification-code-here">
-    
-    <!-- RSS feed -->
-    <link rel="alternate" type="application/rss+xml" title="Better To Best Research Hub RSS" href="/rss.xml">
-    
-    <!-- Preload key resources for better performance -->
-    <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-</body>
-</html>
