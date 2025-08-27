@@ -1,0 +1,115 @@
+# Site settings
+title: "Better To Best Research Hub"
+description: "An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics."
+baseurl: "" 
+url: "https://bettertobest.github.io/research-hub"
+repository: "BetterToBest/research-hub"
+
+# SEO settings
+author: "Duke Johnson"
+keywords: "research, economics, creative currency, governance, open access, better to best, Citizen Internet Portal, X-cents"
+lang: "en"
+
+# Social media
+twitter:
+  username: Author_Duke_J
+  card: summary_large_image
+social:
+  name: Duke Johnson
+  links:
+    - https://authordukejohnson.bsky.social
+    - https://x.com/Author_Duke_J
+
+# Google Analytics (optional - add your tracking ID)
+google_analytics: # UA-XXXXXXXX-X
+
+# Google Search Console (add your verification code)
+google_site_verification: # your-verification-code-here
+
+# Collections for organized content
+collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+  wiki:
+    output: true
+    permalink: /wiki/:name/
+  implementations:
+    output: true
+    permalink: /implementations/:name/
+
+# Default values for collections
+defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "paper"
+      author: "Duke Johnson"
+      license: "CC BY 4.0"
+  - scope:
+      path: ""
+      type: "wiki"
+    values:
+      layout: "wiki"
+  - scope:
+      path: ""
+      type: "implementations"
+    values:
+      layout: "implementation"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+highlighter: rouge
+
+# Pagination
+paginate: 10
+paginate_path: "/papers/page:num/"
+
+# Sass
+sass:
+  style: compressed
+
+# Build settings
+safe: true
+incremental: false
+profile: false
+strict_front_matter: true
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files
+include:
+  - _pages
+
+# RSS Feed settings
+feed:
+  posts_limit: 20
+  path: /rss.xml
+
+# SEO tag settings
+seo:
+  type: WebSite
