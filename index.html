@@ -5,65 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Better To Best Research Hub</title>
     <meta name="description" content="An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.">
-    <meta name="keywords" content="research, economics, creative currency, governance, open access, better to best, Citizen Internet Portal, X-cents">
+    <meta name="keywords" content="research, economics, creative currency, governance, open access, better to best, Citizen Internet Portal">
     <meta name="author" content="Duke Johnson">
     
-    <!-- Enhanced bot accessibility -->
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bettertobest.github.io/research-hub/">
-    <meta property="og:title" content="Better To Best Research Hub">
-    <meta property="og:description" content="An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.">
-    <meta property="og:image" content="https://bettertobest.github.io/research-hub/assets/images/social-preview.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://bettertobest.github.io/research-hub/">
-    <meta property="twitter:title" content="Better To Best Research Hub">
-    <meta property="twitter:description" content="An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.">
-    <meta property="twitter:image" content="https://bettertobest.github.io/research-hub/assets/images/social-preview.jpg">
-
-    <!-- Schema.org structured data enhanced for AI/bot indexing -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Better To Best Research Hub",
-      "alternateName": "BetterToBest Research Hub",
-      "description": "An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.",
-      "url": "https://bettertobest.github.io/research-hub/",
-      "author": {
-        "@type": "Person",
-        "name": "Duke Johnson",
-        "description": "Independent researcher and creator of Compassionate Meritocracy (Compassionism)"
-      },
-      "publisher": {
-        "@type": "Person",
-        "name": "Duke Johnson"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://bettertobest.github.io/research-hub/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      },
-      "mainEntity": [
-        {
-          "@type": "ScholarlyArticle",
-          "headline": "Economic Modeling and Simulation Analysis of Creative Currency Octaves",
-          "url": "https://bettertobest.github.io/research-hub/papers/economic-modeling-analysis.html"
-        }
-      ],
-      "keywords": ["Creative Currency Octaves", "Public Trust Housing", "Post-Scarcity Economics", "Welfare Economics", "Universal Basic Income", "Community Economics", "Compassionate Meritocracy", "Economic Innovation", "Social Policy", "Open Access Research"],
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "isAccessibleForFree": true,
-      "inLanguage": "en-US"
-    }
-    </script>
-
     <link rel="canonical" href="https://bettertobest.github.io/research-hub/">
     
     <style>
@@ -76,32 +20,19 @@
         :root {
             --primary-color: #2563eb;
             --secondary-color: #1e40af;
-            --accent-color: #3b82f6;
             --background: #ffffff;
             --surface: #f8fafc;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --border-color: #e2e8f0;
-            --success-color: #10b981;
-            --warning-color: #f59e0b;
-            --error-color: #ef4444;
             --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
 
-        [data-theme="dark"] {
-            --background: #0f172a;
-            --surface: #1e293b;
-            --text-primary: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --border-color: #334155;
-        }
-
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: var(--text-primary);
             background: var(--background);
-            transition: all 0.3s ease;
         }
 
         .container {
@@ -110,14 +41,12 @@
             padding: 0 1rem;
         }
 
-        /* Header */
         header {
             background: var(--surface);
             border-bottom: 1px solid var(--border-color);
             position: sticky;
             top: 0;
             z-index: 100;
-            backdrop-filter: blur(10px);
         }
 
         .header-content {
@@ -145,99 +74,12 @@
             color: var(--text-secondary);
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s ease;
         }
 
-        nav a:hover, nav a.active {
+        nav a:hover {
             color: var(--primary-color);
         }
 
-        .search-container {
-            position: relative;
-            margin: 0 1rem;
-        }
-
-        .search-input {
-            width: 300px;
-            padding: 0.75rem 1rem 0.75rem 2.5rem;
-            border: 1px solid var(--border-color);
-            border-radius: 0.5rem;
-            background: var(--background);
-            color: var(--text-primary);
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .search-input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-        }
-
-        .search-icon {
-            position: absolute;
-            left: 0.75rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-secondary);
-        }
-
-        .theme-toggle {
-            background: none;
-            border: 1px solid var(--border-color);
-            border-radius: 0.5rem;
-            padding: 0.5rem;
-            cursor: pointer;
-            color: var(--text-secondary);
-            transition: all 0.3s ease;
-        }
-
-        .theme-toggle:hover {
-            color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-
-        /* Mobile Menu */
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-primary);
-        }
-
-        @media (max-width: 768px) {
-            .mobile-menu-toggle {
-                display: block;
-            }
-
-            nav {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--surface);
-                border-top: 1px solid var(--border-color);
-            }
-
-            nav.active {
-                display: block;
-            }
-
-            nav ul {
-                flex-direction: column;
-                padding: 1rem;
-                gap: 1rem;
-            }
-
-            .search-input {
-                width: 250px;
-            }
-        }
-
-        /* Hero Section */
         .hero {
             background: var(--gradient);
             color: white;
@@ -249,7 +91,6 @@
             font-size: 3rem;
             font-weight: 800;
             margin-bottom: 1rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .hero p {
@@ -258,7 +99,6 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            opacity: 0.9;
         }
 
         .cta-buttons {
@@ -274,19 +114,11 @@
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
         }
 
         .btn-primary {
             background: white;
             color: var(--primary-color);
-        }
-
-        .btn-primary:hover {
-            background: #f1f5f9;
-            transform: translateY(-2px);
         }
 
         .btn-outline {
@@ -295,12 +127,6 @@
             border: 2px solid white;
         }
 
-        .btn-outline:hover {
-            background: white;
-            color: var(--primary-color);
-        }
-
-        /* Main Content */
         main {
             padding: 3rem 0;
         }
@@ -322,7 +148,6 @@
             max-width: 70ch;
         }
 
-        /* Featured Content Grid */
         .featured-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -335,7 +160,6 @@
             border: 1px solid var(--border-color);
             border-radius: 1rem;
             padding: 2rem;
-            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
@@ -348,11 +172,6 @@
             right: 0;
             height: 4px;
             background: var(--gradient);
-        }
-
-        .featured-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
         .card-header {
@@ -389,16 +208,8 @@
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
         }
 
-        .card-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Paper Grid */
         .paper-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -411,12 +222,6 @@
             border: 1px solid var(--border-color);
             border-radius: 0.75rem;
             overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .paper-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
 
         .paper-content {
@@ -473,11 +278,6 @@
             font-weight: 500;
         }
 
-        .paper-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Social Links */
         .social-links {
             display: flex;
             gap: 1rem;
@@ -494,15 +294,8 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            transition: all 0.3s ease;
         }
 
-        .social-link:hover {
-            background: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
         footer {
             background: var(--surface);
             border-top: 1px solid var(--border-color);
@@ -535,7 +328,6 @@
         .footer-section a {
             color: var(--text-secondary);
             text-decoration: none;
-            transition: color 0.3s ease;
         }
 
         .footer-section a:hover {
@@ -550,103 +342,19 @@
             font-size: 0.9rem;
         }
 
-        /* Back to Top Button */
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 3rem;
-            height: 3rem;
-            cursor: pointer;
-            font-size: 1.25rem;
-            transition: all 0.3s ease;
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
             }
 
             .featured-grid {
                 grid-template-columns: 1fr;
             }
 
-            .search-input {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .header-content {
-                flex-wrap: wrap;
+            nav ul {
+                flex-direction: column;
                 gap: 1rem;
             }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-
-        /* Search Results Styling */
-        .search-results {
-            background: var(--surface);
-            border: 1px solid var(--border-color);
-            border-radius: 0.5rem;
-            max-height: 400px;
-            overflow-y: auto;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            display: none;
-        }
-
-        .search-result-item {
-            padding: 1rem;
-            border-bottom: 1px solid var(--border-color);
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .search-result-item:hover {
-            background: var(--background);
-        }
-
-        .search-result-item:last-child {
-            border-bottom: none;
-        }
-
-        .search-result-title {
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 0.25rem;
-        }
-
-        .search-result-snippet {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
         }
     </style>
 </head>
@@ -654,31 +362,16 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="https://bettertobest.github.io/research-hub/" class="logo">Better To Best Research Hub</a>
+                <a href="index.html" class="logo">Better To Best Research Hub</a>
                 
-                <div class="search-container">
-                    <div style="position: relative;">
-                        <span class="search-icon">🔍</span>
-                        <input type="text" class="search-input" placeholder="Search papers, topics..." id="searchInput">
-                        <div class="search-results" id="searchResults"></div>
-                    </div>
-                </div>
-
-                <nav id="mainNav">
+                <nav>
                     <ul>
-                        <li><a href="#home" class="nav-link active">Home</a></li>
-                        <li><a href="#papers" class="nav-link">Research Papers</a></li>
-                        <li><a href="wiki/glossary.html" class="nav-link">Wiki & FAQ</a></li>
-                        <li><a href="#about" class="nav-link">About / Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#papers">Research Papers</a></li>
+                        <li><a href="wiki/glossary.html">Wiki & FAQ</a></li>
+                        <li><a href="#about">About / Contact</a></li>
                     </ul>
                 </nav>
-
-                <div style="display: flex; align-items: center; gap: 1rem;">
-                    <button class="theme-toggle" id="themeToggle" title="Toggle theme">
-                        <span id="themeIcon">🌙</span>
-                    </button>
-                    <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
-                </div>
             </div>
         </div>
     </header>
@@ -696,7 +389,6 @@
         </section>
 
         <div class="container">
-
             <!-- Featured Content -->
             <section class="section">
                 <h2>Featured Research</h2>
@@ -711,9 +403,7 @@
                         <div class="card-description">
                             Revolutionary dual-tier incentive systems that combine octave-based capacity limits with personal multiplier rates to eliminate welfare cliffs while enhancing work incentives.
                         </div>
-                        <a href="#papers" class="card-link">
-                            Explore CCO Research →
-                        </a>
+                        <a href="#papers" class="card-link">Explore CCO Research →</a>
                     </div>
 
                     <div class="featured-card">
@@ -724,9 +414,7 @@
                         <div class="card-description">
                             Community-owned housing models integrated with skill development and democratic governance, creating pathways for collective wealth building.
                         </div>
-                        <a href="wiki/faq.html#pth" class="card-link">
-                            View PTH Framework →
-                        </a>
+                        <a href="wiki/faq.html#pth" class="card-link">View PTH Framework →</a>
                     </div>
 
                     <div class="featured-card">
@@ -737,9 +425,7 @@
                         <div class="card-description">
                             Digital infrastructure for democratic participation and transparent governance, enabling community-controlled economic systems.
                         </div>
-                        <a href="wiki/faq.html#cip" class="card-link">
-                            Learn About CIP →
-                        </a>
+                        <a href="wiki/faq.html#cip" class="card-link">Learn About CIP →</a>
                     </div>
                 </div>
             </section>
@@ -763,8 +449,8 @@
                             </div>
                             <div class="paper-actions">
                                 <a href="papers/economic-modeling-analysis.html" class="paper-link">Read Paper</a>
-                                <button class="paper-link" onclick="showPDFNotice()" style="background: none; border: none; color: var(--primary-color); cursor: pointer; text-decoration: underline;" title="PDF coming soon">Download PDF</button>
-                                <button class="paper-link" onclick="showCiteModal('economic-modeling')" style="background: none; border: none; color: var(--primary-color); cursor: pointer; text-decoration: underline;">Cite</button>
+                                <a href="#" class="paper-link" onclick="alert('PDF coming soon!')">Download PDF</a>
+                                <a href="#" class="paper-link" onclick="alert('Citation tools coming soon!')">Cite</a>
                             </div>
                         </div>
                     </div>
@@ -782,8 +468,8 @@
                             </div>
                             <div class="paper-actions">
                                 <a href="papers/optimal-transfer-design.html" class="paper-link">Read Paper</a>
-                                <button class="paper-link" onclick="showPDFNotice()" style="background: none; border: none; color: var(--primary-color); cursor: pointer; text-decoration: underline;" title="PDF coming soon">Download PDF</button>
-                                <button class="paper-link" onclick="showCiteModal('optimal-transfer')" style="background: none; border: none; color: var(--primary-color); cursor: pointer; text-decoration: underline;">Cite</button>
+                                <a href="#" class="paper-link" onclick="alert('PDF coming soon!')">Download PDF</a>
+                                <a href="#" class="paper-link" onclick="alert('Citation tools coming soon!')">Cite</a>
                             </div>
                         </div>
                     </div>
@@ -804,9 +490,7 @@
                         <div class="card-description">
                             Definitions and explanations of key terms in Creative Currency Octaves system design and implementation.
                         </div>
-                        <a href="wiki/glossary.html" class="card-link">
-                            View Glossary →
-                        </a>
+                        <a href="wiki/glossary.html" class="card-link">View Glossary →</a>
                     </div>
 
                     <div class="featured-card">
@@ -817,9 +501,7 @@
                         <div class="card-description">
                             Common questions about implementation, theory, and practical applications of our research frameworks.
                         </div>
-                        <a href="wiki/faq.html" class="card-link">
-                            Read FAQ →
-                        </a>
+                        <a href="wiki/faq.html" class="card-link">Read FAQ →</a>
                     </div>
 
                     <div class="featured-card">
@@ -830,9 +512,7 @@
                         <div class="card-description">
                             Join the conversation about economic innovation and policy implementation on Reddit.
                         </div>
-                        <a href="https://www.reddit.com/r/EconomicIdeas/" class="card-link" target="_blank">
-                            Join Discussion →
-                        </a>
+                        <a href="https://www.reddit.com/r/EconomicIdeas/" class="card-link" target="_blank">Join Discussion →</a>
                     </div>
                 </div>
             </section>
@@ -878,9 +558,7 @@
                         <div class="card-description">
                             Interested in collaboration, implementation, or have questions about the research? We welcome engagement from researchers, policymakers, and communities worldwide.
                         </div>
-                        <a href="mailto:Duke.T.James@gmail.com" class="card-link">
-                            Contact Duke Johnson →
-                        </a>
+                        <a href="mailto:Duke.T.James@gmail.com" class="card-link">Contact Duke Johnson →</a>
                     </div>
                 </div>
 
@@ -941,301 +619,5 @@
             </div>
         </div>
     </footer>
-
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
-
-    <!-- Citation Modal -->
-    <div id="citationModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center;">
-        <div style="background: var(--surface); border-radius: 1rem; padding: 2rem; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <h3 style="color: var(--text-primary);">Cite This Paper</h3>
-                <button onclick="closeCiteModal()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-secondary);">×</button>
-            </div>
-            <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
-                <button onclick="showCitation('apa')" class="citation-tab" data-format="apa" style="padding: 0.5rem 1rem; border: 1px solid var(--border-color); background: var(--background); cursor: pointer; border-radius: 0.25rem;">APA</button>
-                <button onclick="showCitation('mla')" class="citation-tab" data-format="mla" style="padding: 0.5rem 1rem; border: 1px solid var(--border-color); background: var(--background); cursor: pointer; border-radius: 0.25rem;">MLA</button>
-                <button onclick="showCitation('chicago')" class="citation-tab" data-format="chicago" style="padding: 0.5rem 1rem; border: 1px solid var(--border-color); background: var(--background); cursor: pointer; border-radius: 0.25rem;">Chicago</button>
-                <button onclick="showCitation('bibtex')" class="citation-tab" data-format="bibtex" style="padding: 0.5rem 1rem; border: 1px solid var(--border-color); background: var(--background); cursor: pointer; border-radius: 0.25rem;">BibTeX</button>
-            </div>
-            <div id="citationContent" style="background: rgba(30, 64, 175, 0.1); padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; font-family: monospace; font-size: 0.9rem; white-space: pre-wrap;"></div>
-            <button onclick="copyCitation()" style="background: var(--primary-color); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 0.5rem; cursor: pointer; font-weight: 600;">Copy Citation</button>
-        </div>
-    </div>
-
-    <script>
-        // Sample search data for homepage search functionality
-        const searchData = [
-            {
-                title: "Creative Currency Octaves (CCO)",
-                snippet: "Revolutionary dual-tier incentive systems that eliminate welfare cliffs",
-                url: "wiki/glossary.html"
-            },
-            {
-                title: "Public Trust Housing (PTH)",
-                snippet: "Community-owned housing models with democratic governance",
-                url: "wiki/faq.html#pth"
-            },
-            {
-                title: "Economic Modeling Analysis",
-                snippet: "Comprehensive simulation analysis of CCO implementation",
-                url: "papers/economic-modeling-analysis.html"
-            },
-            {
-                title: "Optimal Transfer Design",
-                snippet: "Creative Currency Octaves and Public Trust Foundations as welfare",
-                url: "papers/optimal-transfer-design.html"
-            },
-            {
-                title: "Basic Units",
-                snippet: "Universal currency restricted to essential expenditures",
-                url: "wiki/glossary.html"
-            },
-            {
-                title: "Octave Levels",
-                snippet: "Progressive advancement tiers with doubling conversion capacity",
-                url: "wiki/glossary.html"
-            },
-            {
-                title: "Personal Multiplier Rates",
-                snippet: "Quality-based conversion multipliers from 1x to 14x+",
-                url: "wiki/glossary.html"
-            },
-            {
-                title: "Creative Collectives",
-                snippet: "Community groups that determine conversion rates and cultural value",
-                url: "wiki/glossary.html"
-            },
-            {
-                title: "Welfare Cliffs",
-                snippet: "Economic phenomenon where earning more results in net loss",
-                url: "wiki/glossary.html"
-            },
-            {
-                title: "Post-Scarcity Economics",
-                snippet: "Economic frameworks for abundant basic needs provision",
-                url: "wiki/glossary.html"
-            },
-            {
-                title: "Citizen Internet Portal (CIP)",
-                snippet: "Digital infrastructure for democratic participation",
-                url: "wiki/faq.html#cip"
-            },
-            {
-                title: "FAQ - Frequently Asked Questions",
-                snippet: "Common questions about CCO, PTH, and implementation",
-                url: "wiki/faq.html"
-            }
-        ];
-
-        // Citation data
-        const citations = {
-            'economic-modeling': {
-                apa: 'Johnson, D., & Claude (Anthropic). (2025, August). Economic modeling and simulation analysis of Creative Currency Octaves: Implementation scenarios and policy implications. Better To Best Research Hub. https://bettertobest.github.io/research-hub/papers/economic-modeling-analysis.html',
-                mla: 'Johnson, Duke, and Claude (Anthropic). "Economic Modeling and Simulation Analysis of Creative Currency Octaves: Implementation Scenarios and Policy Implications." Better To Best Research Hub, Aug. 2025, bettertobest.github.io/research-hub/papers/economic-modeling-analysis.html.',
-                chicago: 'Johnson, Duke, and Claude (Anthropic). "Economic Modeling and Simulation Analysis of Creative Currency Octaves: Implementation Scenarios and Policy Implications." Better To Best Research Hub. August 2025. https://bettertobest.github.io/research-hub/papers/economic-modeling-analysis.html.',
-                bibtex: '@article{johnson2025economic,\n  title={Economic Modeling and Simulation Analysis of Creative Currency Octaves: Implementation Scenarios and Policy Implications},\n  author={Johnson, Duke and Claude (Anthropic)},\n  journal={Better To Best Research Hub},\n  year={2025},\n  month={August},\n  url={https://bettertobest.github.io/research-hub/papers/economic-modeling-analysis.html}\n}'
-            },
-            'optimal-transfer': {
-                apa: 'Johnson, D., & Claude (Anthropic). (2025, July). Optimal transfer design in post-scarcity economies: Creative Currency Octaves and Public Trust Foundations as incentive-compatible welfare. Better To Best Research Hub. https://bettertobest.github.io/research-hub/papers/optimal-transfer-design.html',
-                mla: 'Johnson, Duke, and Claude (Anthropic). "Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare." Better To Best Research Hub, July 2025, bettertobest.github.io/research-hub/papers/optimal-transfer-design.html.',
-                chicago: 'Johnson, Duke, and Claude (Anthropic). "Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare." Better To Best Research Hub. July 2025. https://bettertobest.github.io/research-hub/papers/optimal-transfer-design.html.',
-                bibtex: '@article{johnson2025optimal,\n  title={Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare},\n  author={Johnson, Duke and Claude (Anthropic)},\n  journal={Better To Best Research Hub},\n  year={2025},\n  month={July},\n  url={https://bettertobest.github.io/research-hub/papers/optimal-transfer-design.html}\n}'
-            }
-        };
-
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const body = document.body;
-
-        // Check for saved theme preference or default to light
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        body.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-
-        function updateThemeIcon(theme) {
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-        }
-
-        // Mobile menu toggle
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const mainNav = document.getElementById('mainNav');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Active navigation highlighting
-        const navLinks = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('section[id]');
-
-        function highlightNavigation() {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 60) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        }
-
-        window.addEventListener('scroll', highlightNavigation);
-
-        // Back to top button
-        const backToTopBtn = document.getElementById('backToTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-        });
-
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Search functionality
-        const searchInput = document.getElementById('searchInput');
-        const searchResults = document.getElementById('searchResults');
-
-        searchInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase().trim();
-            
-            if (query.length < 2) {
-                searchResults.style.display = 'none';
-                return;
-            }
-
-            const results = searchData.filter(item => 
-                item.title.toLowerCase().includes(query) || 
-                item.snippet.toLowerCase().includes(query)
-            );
-
-            displaySearchResults(results, query);
-        });
-
-        function displaySearchResults(results, query) {
-            if (results.length === 0) {
-                searchResults.innerHTML = '<div class="search-result-item">No results found</div>';
-            } else {
-                searchResults.innerHTML = results.map(result => `
-                    <div class="search-result-item" onclick="window.location.href='${result.url}'">
-                        <div class="search-result-title">${highlightQuery(result.title, query)}</div>
-                        <div class="search-result-snippet">${highlightQuery(result.snippet, query)}</div>
-                    </div>
-                `).join('');
-            }
-            searchResults.style.display = 'block';
-        }
-
-        function highlightQuery(text, query) {
-            const regex = new RegExp(`(${query})`, 'gi');
-            return text.replace(regex, '<strong>$1</strong>');
-        }
-
-        // Click outside to close search results
-        document.addEventListener('click', function(e) {
-            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-                searchResults.style.display = 'none';
-            }
-        });
-
-        // PDF notice function
-        function showPDFNotice() {
-            alert('PDF version coming soon! The paper is currently available in web format.');
-        }
-
-        // Citation modal functions
-        let currentPaper = '';
-
-        function showCiteModal(paperId) {
-            currentPaper = paperId;
-            document.getElementById('citationModal').style.display = 'flex';
-            showCitation('apa'); // Default to APA
-        }
-
-        function closeCiteModal() {
-            document.getElementById('citationModal').style.display = 'none';
-        }
-
-        function showCitation(format) {
-            const citationContent = document.getElementById('citationContent');
-            const citationTabs = document.querySelectorAll('.citation-tab');
-            
-            // Update active tab
-            citationTabs.forEach(tab => {
-                if (tab.getAttribute('data-format') === format) {
-                    tab.style.background = 'var(--primary-color)';
-                    tab.style.color = 'white';
-                } else {
-                    tab.style.background = 'var(--background)';
-                    tab.style.color = 'var(--text-primary)';
-                }
-            });
-            
-            // Show citation
-            citationContent.textContent = citations[currentPaper][format];
-        }
-
-        function copyCitation() {
-            const citationContent = document.getElementById('citationContent');
-            navigator.clipboard.writeText(citationContent.textContent).then(() => {
-                alert('Citation copied to clipboard!');
-            });
-        }
-
-        // Close modal when clicking outside
-        document.getElementById('citationModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeCiteModal();
-            }
-        });
-
-        // Initialize page
-        document.addEventListener('DOMContentLoaded', function() {
-            highlightNavigation();
-            
-            // Add loading animation completion
-            setTimeout(() => {
-                document.body.classList.add('loaded');
-            }, 100);
-        });
-    </script>
 </body>
 </html>
