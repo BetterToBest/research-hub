@@ -480,33 +480,6 @@
             text-decoration: underline;
         }
 
-        /* Stats Section */
-        .stats {
-            background: var(--surface);
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 3rem 0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .stat-item h3 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-item p {
-            color: var(--text-secondary);
-            font-weight: 500;
-        }
-
         /* Footer */
         footer {
             background: var(--surface);
@@ -576,6 +549,7 @@
             padding-top: 2rem;
             border-top: 1px solid var(--border-color);
             color: var(--text-secondary);
+            font-size: 0.9rem;
         }
 
         /* Back to Top Button */
@@ -604,27 +578,6 @@
         .back-to-top:hover {
             background: var(--secondary-color);
             transform: translateY(-2px);
-        }
-
-        /* Visitor Counter */
-        .visitor-counter {
-            background: var(--surface);
-            border: 1px solid var(--border-color);
-            border-radius: 0.5rem;
-            padding: 1rem;
-            text-align: center;
-            margin: 1rem 0;
-        }
-
-        .visitor-counter h4 {
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .visitor-count {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
         }
 
         /* Responsive Design */
@@ -717,7 +670,7 @@
                     <ul>
                         <li><a href="#home" class="nav-link active">Home</a></li>
                         <li><a href="#papers" class="nav-link">Research Papers</a></li>
-                        <li><a href="https://bettertobest.github.io/research-hub/wiki/glossary.html" class="nav-link">Wiki & FAQ</a></li>
+                        <li><a href="wiki/glossary.html" class="nav-link">Wiki & FAQ</a></li>
                         <li><a href="#about" class="nav-link">About / Contact</a></li>
                     </ul>
                 </nav>
@@ -739,7 +692,7 @@
                 <p>An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.</p>
                 <div class="cta-buttons">
                     <a href="#papers" class="btn btn-primary">Browse Research</a>
-                    <a href="#about" class="btn btn-outline">Learn More</a>
+                    <a href="learn-more.html" class="btn btn-outline">Learn More</a>
                 </div>
             </div>
         </section>
@@ -773,7 +726,7 @@
                         <div class="card-description">
                             Community-owned housing models integrated with skill development and democratic governance, creating pathways for collective wealth building.
                         </div>
-                        <a href="https://bettertobest.github.io/research-hub/wiki/faq.html#pth" class="card-link">
+                        <a href="wiki/faq.html#pth" class="card-link">
                             View PTH Framework →
                         </a>
                     </div>
@@ -786,7 +739,7 @@
                         <div class="card-description">
                             Digital infrastructure for democratic participation and transparent governance, enabling community-controlled economic systems.
                         </div>
-                        <a href="https://bettertobest.github.io/research-hub/wiki/faq.html#cip" class="card-link">
+                        <a href="wiki/faq.html#cip" class="card-link">
                             Learn About CIP →
                         </a>
                     </div>
@@ -811,33 +764,11 @@
                                 <span class="tag">Policy Analysis</span>
                             </div>
                             <div class="paper-actions">
-                                <a href="https://bettertobest.github.io/research-hub/papers/economic-modeling-analysis.html" class="paper-link">Read Paper</a>
+                                <a href="papers/economic-modeling-analysis.html" class="paper-link">Read Paper</a>
                                 <button class="paper-link" onclick="showPDFNotice()" style="background: none; border: none; color: var(--primary-color); cursor: pointer; text-decoration: underline;" title="PDF coming soon">Download PDF</button>
                                 <a href="#cite-modal" class="paper-link">Cite</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Stats -->
-            <section class="stats">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h3>3</h3>
-                        <p>Research Papers</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>5</h3>
-                        <p>Research Areas</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Open</h3>
-                        <p>Access License</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Global</h3>
-                        <p>Collaboration</p>
                     </div>
                 </div>
             </section>
@@ -856,7 +787,7 @@
                         <div class="card-description">
                             Definitions and explanations of key terms in Creative Currency Octaves system design and implementation.
                         </div>
-                        <a href="https://bettertobest.github.io/research-hub/wiki/glossary.html" class="card-link">
+                        <a href="wiki/glossary.html" class="card-link">
                             View Glossary →
                         </a>
                     </div>
@@ -869,7 +800,7 @@
                         <div class="card-description">
                             Common questions about implementation, theory, and practical applications of our research frameworks.
                         </div>
-                        <a href="https://bettertobest.github.io/research-hub/wiki/faq.html" class="card-link">
+                        <a href="wiki/faq.html" class="card-link">
                             Read FAQ →
                         </a>
                     </div>
@@ -880,5 +811,54 @@
                             <div class="card-title">Discussion Forum</div>
                         </div>
                         <div class="card-description">
-                            Join the conversation about economic innovation and policy implementation.
+                            Join the conversation about economic innovation and policy implementation on Reddit.
                         </div>
+                        <a href="https://www.reddit.com/r/EconomicIdeas/" class="card-link" target="_blank">
+                            Join Discussion →
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="section" id="about">
+                <h2>About the Research</h2>
+                <p>This research hub represents a collaborative effort to develop and document innovative approaches to post-scarcity economics, with a focus on systems that enhance human flourishing while maintaining economic efficiency.</p>
+                
+                <div class="featured-grid">
+                    <div class="featured-card">
+                        <div class="card-header">
+                            <div class="card-icon">👨‍🔬</div>
+                            <div class="card-title">Duke Johnson</div>
+                        </div>
+                        <div class="card-description">
+                            Independent researcher and original developer of Creative Currency Octaves and Public Trust Housing frameworks. Author of "Better To Best: Novel Ideas to Improve Governments, Economies, and Societies" and creator of Compassionate Meritocracy (Compassionism).
+                        </div>
+                        <div class="social-links">
+                            <a href="https://authordukejohnson.bsky.social" class="social-link" title="Bluesky">🦋</a>
+                            <a href="https://x.com/Author_Duke_J" class="social-link" title="X/Twitter">𝕏</a>
+                            <a href="#facebook" class="social-link" title="Facebook">f</a>
+                            <a href="#gettr" class="social-link" title="Gettr">G</a>
+                        </div>
+                    </div>
+
+                    <div class="featured-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤖</div>
+                            <div class="card-title">Claude (Anthropic)</div>
+                        </div>
+                        <div class="card-description">
+                            AI assistant contributing mathematical formalization, empirical research design, and comprehensive literature integration to support rigorous academic development of these frameworks.
+                        </div>
+                    </div>
+
+                    <div class="featured-card">
+                        <div class="card-header">
+                            <div class="card-icon">📧</div>
+                            <div class="card-title">Contact & Collaboration</div>
+                        </div>
+                        <div class="card-description">
+                            Interested in collaboration, implementation, or have questions about the research? We welcome engagement from researchers, policymakers, and communities worldwide.
+                        </div>
+                        <a href="mailto:Duke.T.James@gmail.com" class="card-link">
+                            Contact
