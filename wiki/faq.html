@@ -317,20 +317,6 @@
             transform: translateY(-2px);
         }
 
-        /* Footer */
-        footer {
-            background: var(--surface);
-            border-top: 1px solid var(--border-color);
-            padding: 2rem 0;
-            margin-top: 4rem;
-        }
-
-        .footer-content {
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
         @media (max-width: 768px) {
             .page-title {
                 font-size: 1.75rem;
@@ -355,11 +341,11 @@
     <header>
         <div class="container">
             <div class="header-nav">
-                <a href="../index.html" class="logo">Better To Best Research Hub</a>
+                <a href="/" class="logo">Better To Best Research Hub</a>
                 <nav class="breadcrumb">
-                    <a href="../index.html">Home</a>
+                    <a href="/">Home</a>
                     <span>/</span>
-                    <a href="../wiki/">Wiki</a>
+                    <a href="/wiki/">Wiki</a>
                     <span>/</span>
                     <span>FAQ</span>
                 </nav>
@@ -409,18 +395,682 @@
                     </div>
                 </div>
 
-                <!-- Additional FAQ items would continue here with the same structure as the original, but with corrected navigation links -->
-            </section>
-        </div>
-    </main>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Who is behind this research?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The primary research is conducted by <strong>Duke Johnson</strong>, independent researcher and author of "Better To Best: Novel Ideas to Improve Governments, Economies, and Societies," in collaboration with <strong>Claude (Anthropic)</strong> for mathematical formalization and empirical research design.</p>
+                        <p>Duke is also the creator of Compassionate Meritocracy (Compassionism) and has developed these frameworks through extensive theoretical work and impassioned online engagement.</p>
+                    </div>
+                </div>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Duke Johnson & Claude (Anthropic). Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: var(--primary-color);">Creative Commons Attribution 4.0</a></p>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Is this research free to access and use?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! All research published here is available under Creative Commons Attribution 4.0 licensing, supporting open science and collaborative development. We believe transformative economic ideas should be freely accessible to communities, researchers, and policymakers worldwide.</p>
+                        <p>This research received no specific grant funding and is conducted independently as a contribution to public knowledge and policy development.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How do I cite this research?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Each paper includes detailed citation information in multiple formats (APA, MLA, Chicago, BibTeX). The general format for citing the research hub is:</p>
+                        <div class="highlight-box">
+                            <strong>APA:</strong> Johnson, D., & Claude (Anthropic). (2025). Better To Best Research Hub. https://bettertobest.github.io/research-hub/
+                        </div>
+                        <p>For specific papers, use the citation tools provided on each paper's page.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CCO Section -->
+            <section id="cco" class="faq-section">
+                <h2 class="section-title">Creative Currency Octaves (CCO)</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What are Creative Currency Octaves?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Creative Currency Octaves (CCO) is a dual-currency system that provides universal basic income while strengthening rather than weakening work incentives. It operates through:</p>
+                        <ul>
+                            <li><strong>Basic Units:</strong> Distributed universally, pegged 1:1 to primary currency, restricted to essential expenditures, expire at end of distribution cycle</li>
+                            <li><strong>Conversion System:</strong> Expired basic units can be converted to unrestricted primary currency through productive activities</li>
+                            <li><strong>Dual-Tier Incentives:</strong> Octave-based capacity levels (that double with each step up) and personal multiplier rates (1x to 14x+)</li>
+                        </ul>
+                        <p>The name "octaves" comes from the doubling pattern - like musical octaves, each level doubles the previous capacity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How does CCO eliminate welfare cliffs?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Traditional welfare systems create "welfare cliffs" where earning additional income results in net loss due to benefit reduction. CCO eliminates this by:</p>
+                        <ul>
+                            <li><strong>No benefit reduction:</strong> Basic units are provided universally regardless of other income</li>
+                            <li><strong>Additive rewards:</strong> Work creates additional income opportunities rather than reducing existing benefits</li>
+                            <li><strong>Progressive enhancement:</strong> Higher productivity leads to higher conversion rates and capacities</li>
+                        </ul>
+                        <p>This means every hour of productive work always increases total income, eliminating marginal tax rates over 100% that characterize welfare cliff scenarios.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What determines octave levels and multiplier rates?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The dual-tier system evaluates contributions across multiple dimensions:</p>
+                        <h4>Octave Level Factors:</h4>
+                        <ul>
+                            <li>Consistency of productive contribution</li>
+                            <li>Community engagement and collaboration</li>
+                            <li>Skill development and knowledge sharing</li>
+                            <li>Long-term commitment to community wellbeing</li>
+                        </ul>
+                        <h4>Personal Multiplier Rate Factors:</h4>
+                        <ul>
+                            <li>Quality and innovation in contributions</li>
+                            <li>Cultural and artistic excellence</li>
+                            <li>Problem-solving and creativity</li>
+                            <li>Positive impact on community outcomes</li>
+                        </ul>
+                        <p><strong>Important Note:</strong> Capacity amounts apply to businesses that accept basic units for payment, whereas individual performers and artist groups may not have capped trade-in amounts. Rather, their octave level advancement serves as a measure of success and achievement.</p>
+                        <p>The community of Creative Collective Members determines the conversion rates, while the market determines capacity achievement. Proposed rate levels are detailed in "Harmonize Economics With Creative Currency Octaves" (2024). These rates are adjustable and dependent on several factors, with the Phi-Rate serving as an additional multiplier of 1.618 that corresponds to the golden ratio.</p>
+                        <p>Assessment combines objective metrics with community evaluation, designed to minimize bias while recognizing diverse forms of valuable contribution.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Is CCO the same as Universal Basic Income?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CCO includes UBI-like elements but addresses key UBI criticisms:</p>
+                        <div class="highlight-box">
+                            <strong>Similarities:</strong> Universal provision, poverty elimination, simplified administration
+                        </div>
+                        <div class="highlight-box">
+                            <strong>Key Differences:</strong>
+                            <ul>
+                                <li>Enhanced work incentives rather than potential work disincentives</li>
+                                <li>Merit-based progression system rewards excellence</li>
+                                <li>Restricted basic units are designed to mitigate inflationary pressure in non-essential markets</li>
+                                <li>Cultural value integration supports artistic and creative work</li>
+                                <li>Community assessment encourages broad community participation while recognizing diverse contributions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PTH Section -->
+            <section id="pth" class="faq-section">
+                <h2 class="section-title">Public Trust Housing (PTH)</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What is Public Trust Housing?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Public Trust Housing (PTH) is a community-owned housing model that creates pathways for collective wealth building while providing stable, affordable housing. PTH does not replace private real estate; rather, it offers an additional option. Homeowners may choose to utilize certain services such as PTH insurance plans that would be less expensive than private market options. Key features include:</p>
+                        <ul>
+                            <li><strong>Community Ownership:</strong> Housing held in public trust, owned collectively by residents</li>
+                            <li><strong>Democratic Governance:</strong> Residents participate in decision-making about community development</li>
+                            <li><strong>Integrated Services:</strong> On-site childcare, healthcare, education, and skill development</li>
+                            <li><strong>Wealth Building:</strong> Residents build equity in collective assets rather than individual property</li>
+                            <li><strong>CCO Integration:</strong> Housing payments can be made using basic units, supporting the CCO ecosystem</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How does PTH differ from public housing?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>PTH represents a fundamental evolution beyond traditional public housing:</p>
+                        <h4>Traditional Public Housing:</h4>
+                        <ul>
+                            <li>Government-owned and managed</li>
+                            <li>Often stigmatized and under-resourced</li>
+                            <li>Limited tenant control or equity building</li>
+                            <li>Concentrated poverty effects</li>
+                        </ul>
+                        <h4>Public Trust Housing:</h4>
+                        <ul>
+                            <li>Community-owned through democratic trust structures</li>
+                            <li>Mixed-income communities with diverse residents</li>
+                            <li>Residents build collective wealth and have governance rights</li>
+                            <li>Integrated services and community development focus</li>
+                            <li>Designed for long-term community empowerment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How does the wealth-building component work?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>PTH creates collective wealth through several mechanisms:</p>
+                        <ul>
+                            <li><strong>Equity Accumulation:</strong> Housing payments build equity in community-owned assets</li>
+                            <li><strong>Business Development:</strong> Community enterprises generate revenue and employment</li>
+                            <li><strong>Skill Premium Sharing:</strong> Training and education increase earning potential</li>
+                            <li><strong>Collective Investment:</strong> Community decisions about asset development and improvement</li>
+                        </ul>
+                        <p>Unlike individual homeownership where wealth is tied to personal property values, PTH creates shared wealth that benefits the entire community while providing individual security.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What is Acre Equity in the PTF system?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Acre Equity is a concept within the Public Trust Foundation (PTF) system that measures and distributes value based on land stewardship and productive use. The term "Acre Equity" was introduced by NotebookLM during analysis of PTF concepts, with Claude subsequently generating proposed metrics for implementation.</p>
+                        <h4>Key Components:</h4>
+                        <ul>
+                            <li><strong>Land Stewardship Value:</strong> Recognition of environmental care, sustainability practices, and ecosystem preservation</li>
+                            <li><strong>Productive Use Assessment:</strong> Evaluation of how effectively land generates community value through agriculture, housing, business, or recreation</li>
+                            <li><strong>Community Benefit Measurement:</strong> Assessment of how land use contributes to broader community wellbeing and economic development</li>
+                            <li><strong>Equity Distribution:</strong> Proportional sharing of land-based value creation among community stakeholders</li>
+                        </ul>
+                        <p><strong>Important Note:</strong> While Claude has generated proposed metrics and frameworks for Acre Equity, nations that implement PTF systems may decide to adjust and tweak these specifics based on local conditions, cultural values, and economic priorities. The concept provides a foundation for discussion rather than rigid requirements.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CIP Section -->
+            <section id="cip" class="faq-section">
+                <h2 class="section-title">Citizen Internet Portal (CIP)</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What is the Citizen Internet Portal?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The Citizen Internet Portal (CIP) is a comprehensive digital infrastructure platform designed to enable democratic participation, transparent governance, and community-controlled economic systems. CIP serves as the technological backbone that connects and facilitates CCO, PTH, and other innovative governance frameworks.</p>
+                        <h4>Core Functions:</h4>
+                        <ul>
+                            <li><strong>Democratic Participation:</strong> Secure voting systems, community assemblies, and civic engagement tools</li>
+                            <li><strong>Economic Integration:</strong> CCO transaction processing, PTH governance, and financial transparency systems</li>
+                            <li><strong>Information Access:</strong> Government transparency, public data access, and community information sharing</li>
+                            <li><strong>Service Delivery:</strong> Streamlined access to public services, benefits, and community resources</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How does CIP differ from existing government websites?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CIP represents a fundamental evolution beyond traditional government websites toward true digital democracy:</p>
+                        <h4>Traditional Government Websites:</h4>
+                        <ul>
+                            <li>Primarily informational with limited interaction</li>
+                            <li>Fragmented services across multiple platforms</li>
+                            <li>Limited transparency and citizen input</li>
+                            <li>Top-down information distribution</li>
+                        </ul>
+                        <h4>Citizen Internet Portal:</h4>
+                        <ul>
+                            <li>Interactive democratic participation and decision-making</li>
+                            <li>Integrated platform for all civic and economic activities</li>
+                            <li>Complete transparency with real-time data access</li>
+                            <li>Citizen-controlled governance and community management</li>
+                            <li>Economic system integration (CCO, PTH) within civic platform</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What are the privacy and security considerations for CIP?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CIP is designed with privacy-by-design principles and robust security measures:</p>
+                        <h4>Privacy Protections:</h4>
+                        <ul>
+                            <li><strong>User Control:</strong> Citizens control their own data and privacy settings</li>
+                            <li><strong>Minimal Data Collection:</strong> Only necessary information for services and voting</li>
+                            <li><strong>Transparent Data Use:</strong> Clear documentation of how data is used and shared</li>
+                            <li><strong>Right to Delete:</strong> Citizens can remove their data and accounts</li>
+                        </ul>
+                        <h4>Security Features:</h4>
+                        <ul>
+                            <li><strong>End-to-End Encryption:</strong> All communications and transactions secured</li>
+                            <li><strong>Decentralized Architecture:</strong> No single point of failure or control</li>
+                            <li><strong>Audit Trails:</strong> Transparent logging of all system activities</li>
+                            <li><strong>Multi-Factor Authentication:</strong> Secure identity verification for voting and transactions</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SZH Section -->
+            <section id="szh" class="faq-section">
+                <h2 class="section-title">Social Zone Harmonization (SZH)</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What is Social Zone Harmonization?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Social Zone Harmonization (SZH) is a comprehensive framework for organizing communities and regions to optimize social, economic, and environmental outcomes through coordinated planning and resource allocation. SZH works to balance diverse community needs while maintaining local autonomy and democratic governance.</p>
+                        <h4>Key Principles:</h4>
+                        <ul>
+                            <li><strong>Balanced Development:</strong> Coordinated growth that prevents extreme inequality between regions</li>
+                            <li><strong>Resource Optimization:</strong> Efficient allocation of resources across interconnected zones</li>
+                            <li><strong>Cultural Preservation:</strong> Maintaining local identity while enabling beneficial coordination</li>
+                            <li><strong>Environmental Integration:</strong> Planning that respects ecological boundaries and sustainability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How does SZH work with existing local governments?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>SZH is designed to enhance rather than replace existing local governance structures:</p>
+                        <h4>Coordination Mechanisms:</h4>
+                        <ul>
+                            <li><strong>Inter-Municipal Cooperation:</strong> Voluntary coordination between adjacent communities</li>
+                            <li><strong>Resource Sharing Agreements:</strong> Collaborative infrastructure and service delivery</li>
+                            <li><strong>Regional Planning Councils:</strong> Democratic bodies with representatives from participating communities</li>
+                            <li><strong>Opt-in Participation:</strong> Communities choose their level of SZH integration</li>
+                        </ul>
+                        <h4>Benefits for Local Communities:</h4>
+                        <ul>
+                            <li>Access to larger resource pools and shared infrastructure</li>
+                            <li>Reduced service delivery costs through economies of scale</li>
+                            <li>Enhanced economic opportunities through regional coordination</li>
+                            <li>Improved environmental management across ecological boundaries</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What are the different types of social zones in SZH?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>SZH recognizes different zone types based on community characteristics and development priorities:</p>
+                        <h4>Zone Classifications:</h4>
+                        <ul>
+                            <li><strong>Urban Innovation Zones:</strong> High-density areas focused on technology, culture, and economic development</li>
+                            <li><strong>Suburban Transition Zones:</strong> Mixed-density areas balancing residential, commercial, and community services</li>
+                            <li><strong>Rural Stewardship Zones:</strong> Low-density areas emphasizing agriculture, conservation, and sustainable resource management</li>
+                            <li><strong>Special Purpose Zones:</strong> Areas with unique functions like education, healthcare, recreation, or cultural preservation</li>
+                        </ul>
+                        <h4>Harmonization Benefits:</h4>
+                        <ul>
+                            <li>Each zone can specialize in its strengths while accessing resources from others</li>
+                            <li>Coordinated transportation and communication infrastructure</li>
+                            <li>Balanced economic development that benefits all zones</li>
+                            <li>Shared environmental stewardship and climate adaptation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementation Section -->
+            <section id="implementation" class="faq-section">
+                <h2 class="section-title">Implementation</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Where are these systems being tested?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Currently, these frameworks exist primarily in theoretical and design phases. We are actively seeking:</p>
+                        <ul>
+                            <li><strong>Community Partners:</strong> Local governments or organizations interested in pilot programs</li>
+                            <li><strong>Research Collaborators:</strong> Academic institutions for controlled studies</li>
+                            <li><strong>Technology Partners:</strong> Organizations to develop necessary digital infrastructure</li>
+                            <li><strong>Policy Partners:</strong> Government entities exploring innovative welfare approaches</li>
+                        </ul>
+                        <p>If you represent an organization interested in testing these frameworks, please contact Duke Johnson at Duke.T.James@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What would a pilot program look like?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A comprehensive pilot program would likely include:</p>
+                        <h4>Phase 1: Community Preparation (6 months)</h4>
+                        <ul>
+                            <li>Community engagement and education</li>
+                            <li>Technology infrastructure development</li>
+                            <li>Governance structure establishment</li>
+                            <li>Baseline data collection</li>
+                        </ul>
+                        <h4>Phase 2: Limited Implementation (12 months)</h4>
+                        <ul>
+                            <li>CCO basic unit distribution to 100-500 participants</li>
+                            <li>Conversion opportunities in essential services</li>
+                            <li>Community assessment system testing</li>
+                            <li>Continuous data collection and adjustment</li>
+                        </ul>
+                        <h4>Phase 3: Full Integration (24 months)</h4>
+                        <ul>
+                            <li>PTH housing development or conversion</li>
+                            <li>Full dual-tier incentive system</li>
+                            <li>Community enterprise development</li>
+                            <li>Comprehensive impact evaluation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What are the main implementation challenges?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Key implementation challenges include:</p>
+                        <h4>Technical Challenges:</h4>
+                        <ul>
+                            <li>Developing secure, user-friendly digital currency infrastructure</li>
+                            <li>Creating fair and transparent assessment systems</li>
+                            <li>Integrating with existing financial and government systems</li>
+                        </ul>
+                        <h4>Social Challenges:</h4>
+                        <ul>
+                            <li>Building community understanding and buy-in</li>
+                            <li>Preventing gaming or abuse of the system</li>
+                            <li>Managing cultural change and expectations</li>
+                        </ul>
+                        <h4>Regulatory Challenges:</h4>
+                        <ul>
+                            <li>Navigating existing welfare and financial regulations</li>
+                            <li>Ensuring compliance with labor and housing laws</li>
+                            <li>Working with multiple levels of government</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Economics Section -->
+            <section id="economics" class="faq-section">
+                <h2 class="section-title">Economic Theory</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How do these systems affect inflation?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CCO is designed to minimize inflationary pressure through several mechanisms:</p>
+                        <ul>
+                            <li><strong>Restricted Basic Units:</strong> Can only be spent on essential goods/services, mitigating demand increases in luxury markets</li>
+                            <li><strong>Expiration System:</strong> Basic units expire, preventing accumulation and hoarding</li>
+                            <li><strong>Productive Conversion:</strong> Unrestricted (primary) currency is earned through productive activity</li>
+                            <li><strong>Supply-Side Focus:</strong> System incentivizes increased production of goods and services</li>
+                        </ul>
+                        <p><strong>Currency Backing Comparison:</strong> While fiat currency is created from debt and backed by faith, and gold-backed currencies face foreign manipulation challenges, basic units are backed by Public Trust Foundations (PTF) and CCO systems, offering stability through innovation and artistic cultural enhancements. Cryptocurrency, while technologically important, remains too volatile for national treasury backing due to electricity requirements and potential quantum computing vulnerabilities.</p>
+                        <p>By restricting where basic units can be spent and requiring productive work for conversion into primary currency, CCO may be less inflationary than traditional welfare systems that provide unrestricted cash. With PTF integrated into the system and CCO rewarding efficiency protocols and metrics achieved, some sectors could even become deflationary, benefiting consumers with lower prices.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How are disabled persons who can't work integrated into the CCO system?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The CCO system is designed to support all community members:</p>
+                        <ul>
+                            <li><strong>Universal Basic Units:</strong> Everyone receives basic units regardless of work ability</li>
+                            <li><strong>Diverse Contribution Recognition:</strong> Non-traditional forms of value creation are recognized (childcare, eldercare, emotional support, creative work)</li>
+                            <li><strong>Accommodation Systems:</strong> Assessment processes account for different abilities and circumstances</li>
+                            <li><strong>Community Support Networks:</strong> PTH provides integrated care and support services</li>
+                        </ul>
+                        <p>The goal is to recognize that everyone contributes to community wellbeing in different ways, and the assessment system should reflect this diversity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How does this relate to post-scarcity economics?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>These frameworks represent transition mechanisms toward post-scarcity conditions:</p>
+                        <div class="highlight-box">
+                            <strong>Post-Scarcity Vision:</strong> A state where basic needs are abundantly met for all, allowing humans to focus on creativity, relationships, and self-actualization rather than survival.
+                        </div>
+                        <p><strong>Important note about "post-scarcity" economics:</strong> This generally refers to post "artificial scarcity," such as millions of homes sitting vacant while juxtaposed with housing affordability crises, extreme poverty, and high levels of homelessness. Some types of scarcity will likely always remain, such as: one-of-a-kind items, people's expertise and time (skilled labor), as well as non-tangible experiences. However, A.I. and automation seems poised to greatly reduce "natural scarcity" in the near future.</p>
+                        <p>CCO and PTH work toward this by:</p>
+                        <ul>
+                            <li><strong>Ensuring Basic Security:</strong> Universal provision of essential needs removes survival anxiety</li>
+                            <li><strong>Incentivizing Excellence:</strong> Merit recognition encourages innovation and quality improvement</li>
+                            <li><strong>Cultural Integration:</strong> Artistic and creative work receives economic recognition</li>
+                            <li><strong>Community Wealth Building:</strong> Collective prosperity rather than individual accumulation</li>
+                        </ul>
+                        <p>As productivity increases and costs decrease, the system can adapt to provide higher base levels of support while maintaining incentives for continued innovation.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Section -->
+            <section id="research" class="faq-section">
+                <h2 class="section-title">Research & Development</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What research methods are being used?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our research employs multiple methodological approaches:</p>
+                        <h4>Theoretical Development:</h4>
+                        <ul>
+                            <li>Mathematical modeling of incentive structures</li>
+                            <li>Economic analysis using established frameworks</li>
+                            <li>Game theory applications to community dynamics</li>
+                            <li>Literature synthesis across disciplines</li>
+                        </ul>
+                        <h4>Empirical Research Design:</h4>
+                        <ul>
+                            <li>Controlled pilot program protocols</li>
+                            <li>Survey instruments for community assessment</li>
+                            <li>Economic impact measurement frameworks</li>
+                            <li>Longitudinal outcome tracking systems</li>
+                        </ul>
+                        <h4>Community Engagement:</h4>
+                        <ul>
+                            <li>Participatory design processes</li>
+                            <li>Focus groups with diverse stakeholders</li>
+                            <li>Feedback integration from online discussions</li>
+                            <li>Cultural adaptation for different communities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How can I contribute to this research?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There are several ways to contribute:</p>
+                        <h4>For Researchers:</h4>
+                        <ul>
+                            <li>Collaborative paper development</li>
+                            <li>Peer review and feedback</li>
+                            <li>Data analysis and modeling</li>
+                            <li>Cross-disciplinary connections</li>
+                        </ul>
+                        <h4>For Communities:</h4>
+                        <ul>
+                            <li>Pilot program participation</li>
+                            <li>Local implementation adaptation</li>
+                            <li>Community feedback and testing</li>
+                            <li>Cultural context integration</li>
+                        </ul>
+                        <h4>For Policymakers:</h4>
+                        <ul>
+                            <li>Regulatory framework development</li>
+                            <li>Policy implementation pathways</li>
+                            <li>Government integration strategies</li>
+                            <li>Inter-jurisdictional coordination</li>
+                        </ul>
+                        <h4>For Everyone:</h4>
+                        <ul>
+                            <li>Join discussions on Reddit or other forums</li>
+                            <li>Share feedback and questions</li>
+                            <li>Help refine concepts and language</li>
+                            <li>Spread awareness in your networks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What evidence supports these approaches?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Evidence supporting these frameworks comes from multiple sources:</p>
+                        <h4>UBI and Transfer Research:</h4>
+                        <ul>
+                            <li>Finland's UBI experiment showed maintained work motivation</li>
+                            <li>Kenya's GiveDirectly studies demonstrate positive economic effects</li>
+                            <li>Alaska Permanent Fund provides long-term basic income data</li>
+                            <li>Earned Income Tax Credit shows benefits of work-compatible transfers</li>
+                        </ul>
+                        <h4>Community Currency Studies:</h4>
+                        <ul>
+                            <li>Ithaca HOURS and similar local currency successes</li>
+                            <li>Time banking research on alternative value systems</li>
+                            <li>Community development financial institutions (CDFI) outcomes</li>
+                        </ul>
+                        <h4>Cooperative and Community Ownership:</h4>
+                        <ul>
+                            <li>Cooperative housing success in Europe and North America</li>
+                            <li>Community land trust effectiveness in preserving affordable housing</li>
+                            <li>Worker cooperative productivity and satisfaction studies</li>
+                        </ul>
+                        <h4>Merit-Based Systems:</h4>
+                        <ul>
+                            <li>Performance-based education and employment research</li>
+                            <li>Reputation systems in online communities</li>
+                            <li>Cultural incentive research in arts and innovation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What are the next research priorities?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Current research priorities include:</p>
+                        <h4>Immediate Priorities (6-12 months):</h4>
+                        <ul>
+                            <li>Detailed pilot program design and protocols</li>
+                            <li>Technology infrastructure specifications</li>
+                            <li>Community assessment bias prevention mechanisms</li>
+                            <li>Integration pathways with existing welfare systems</li>
+                        </ul>
+                        <h4>Medium-term Goals (1-3 years):</h4>
+                        <ul>
+                            <li>First pilot program implementation and evaluation</li>
+                            <li>Cross-cultural adaptation for diverse communities</li>
+                            <li>Economic modeling of scale effects</li>
+                            <li>Policy framework development for government adoption</li>
+                        </ul>
+                        <h4>Long-term Vision (3-10 years):</h4>
+                        <ul>
+                            <li>Multi-community comparative studies</li>
+                            <li>Integration with emerging technologies (AI, automation)</li>
+                            <li>International development applications</li>
+                            <li>Post-scarcity transition pathway research</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How does this research relate to existing economic schools of thought?
+                        <span class="faq-toggle">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>This research draws from and integrates multiple economic traditions:</p>
+                        <h4>Mainstream Economics:</h4>
+                        <ul>
+                            <li>Incentive design from mechanism design theory</li>
+                            <li>Welfare economics and Pareto efficiency concepts</li>
+                            <li>Labor economics insights on work motivation</li>
+                            <li>Public finance principles for transfer system design</li>
+                        </ul>
+                        <h4>Institutional Economics:</h4>
+                        <ul>
+                            <li>Community governance structures</li>
+                            <li>Social norms and informal institutions</li>
+                            <li>Transaction cost considerations</li>
+                        </ul>
+                        <h4>Behavioral Economics:</h4>
+                        <ul>
+                            <li>Recognition of non-monetary motivations</li>
+                            <li>Social status and reputation effects</li>
+                            <li>Cognitive biases in assessment systems</li>
+                        </ul>
+                        <h4>Heterodox Approaches:</h4>
+                        <ul>
+                            <li>Post-Keynesian insights on effective demand</li>
+                            <li>Ecological economics sustainability principles</li>
+                            <li>Feminist economics care work recognition</li>
+                            <li>Social economics community-based development</li>
+                        </ul>
+                        <p>Rather than adhering to a single school, we integrate insights from multiple perspectives to address real-world policy challenges.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact CTA -->
+            <div class="contact-cta">
+                <h3>Still Have Questions?</h3>
+                <p>We're always happy to engage with researchers, policymakers, and community members interested in these frameworks.</p>
+                <a href="mailto:Duke.T.James@gmail.com" class="btn">Contact Duke Johnson</a>
+                <a href="https://www.reddit.com/r/EconomicIdeas/" class="btn" target="_blank">Join Discussion Forum</a>
             </div>
         </div>
-    </footer>
+    </main>
 
     <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
 
