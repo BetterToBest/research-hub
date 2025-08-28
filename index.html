@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Better To Best Research Hub</title>
-    <meta name="description" content="An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.">
-    <meta name="keywords" content="research, economics, creative currency, governance, open access, better to best, Citizen Internet Portal">
+    <title>Wiki & Resources - Better To Best Research Hub</title>
+    <meta name="description" content="Comprehensive wiki, glossary, and FAQ for Creative Currency Octaves, Public Trust Housing, and post-scarcity economics research.">
+    <meta name="keywords" content="wiki, glossary, FAQ, Creative Currency Octaves, Public Trust Housing, economics, research resources">
     <meta name="author" content="Duke Johnson">
     
-    <link rel="canonical" href="https://bettertobest.github.io/research-hub/">
+    <link rel="canonical" href="https://bettertobest.github.io/research-hub/wiki/">
     
     <style>
         * {
@@ -20,19 +20,32 @@
         :root {
             --primary-color: #2563eb;
             --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
             --background: #ffffff;
             --surface: #f8fafc;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --border-color: #e2e8f0;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --error-color: #ef4444;
             --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
 
+        [data-theme="dark"] {
+            --background: #0f172a;
+            --surface: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: var(--text-primary);
             background: var(--background);
+            transition: all 0.3s ease;
         }
 
         .container {
@@ -41,12 +54,14 @@
             padding: 0 1rem;
         }
 
+        /* Header */
         header {
             background: var(--surface);
             border-bottom: 1px solid var(--border-color);
             position: sticky;
             top: 0;
             z-index: 100;
+            backdrop-filter: blur(10px);
         }
 
         .header-content {
@@ -54,6 +69,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         .logo {
@@ -74,12 +91,29 @@
             color: var(--text-secondary);
             text-decoration: none;
             font-weight: 500;
+            transition: color 0.3s ease;
         }
 
-        nav a:hover {
+        nav a:hover, nav a.active {
             color: var(--primary-color);
         }
 
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        /* Hero Section */
         .hero {
             background: var(--gradient);
             color: white;
@@ -91,6 +125,7 @@
             font-size: 3rem;
             font-weight: 800;
             margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .hero p {
@@ -99,34 +134,10 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            opacity: 0.9;
         }
 
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary {
-            background: white;
-            color: var(--primary-color);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
+        /* Main Content */
         main {
             padding: 3rem 0;
         }
@@ -148,23 +159,25 @@
             max-width: 70ch;
         }
 
-        .featured-grid {
+        /* Resource Grid */
+        .resource-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
 
-        .featured-card {
+        .resource-card {
             background: var(--surface);
             border: 1px solid var(--border-color);
             border-radius: 1rem;
             padding: 2rem;
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
 
-        .featured-card::before {
+        .resource-card::before {
             content: '';
             position: absolute;
             top: 0;
@@ -172,6 +185,11 @@
             right: 0;
             height: 4px;
             background: var(--gradient);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
         .card-header {
@@ -202,100 +220,62 @@
         .card-description {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
+            line-height: 1.6;
         }
 
         .card-link {
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 600;
-        }
-
-        .paper-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .paper-card {
-            background: var(--surface);
-            border: 1px solid var(--border-color);
-            border-radius: 0.75rem;
-            overflow: hidden;
-        }
-
-        .paper-content {
-            padding: 1.5rem;
-        }
-
-        .paper-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-            line-height: 1.4;
-        }
-
-        .paper-authors {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .paper-abstract {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
-
-        .paper-tags {
-            display: flex;
-            flex-wrap: wrap;
+            display: inline-flex;
+            align-items: center;
             gap: 0.5rem;
-            margin-bottom: 1rem;
         }
 
-        .tag {
-            background: var(--primary-color);
-            color: white;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            font-size: 0.75rem;
-            font-weight: 500;
+        .card-link:hover {
+            text-decoration: underline;
         }
 
-        .paper-actions {
-            display: flex;
+        /* Quick Links */
+        .quick-links {
+            background: var(--surface);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .quick-links h3 {
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
-            flex-wrap: wrap;
         }
 
-        .paper-link {
-            color: var(--primary-color);
+        .quick-link-item {
+            padding: 0.75rem 1rem;
+            background: var(--background);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
             text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .social-link {
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 50%;
-            background: var(--primary-color);
-            color: white;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-decoration: none;
+            gap: 0.5rem;
         }
 
+        .quick-link-item:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Footer */
         footer {
             background: var(--surface);
             border-top: 1px solid var(--border-color);
@@ -304,56 +284,56 @@
         }
 
         .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h3 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-section a {
-            color: var(--text-secondary);
-            text-decoration: none;
-        }
-
-        .footer-section a:hover {
-            color: var(--primary-color);
-        }
-
-        .footer-bottom {
             text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
             color: var(--text-secondary);
-            font-size: 0.9rem;
         }
 
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
             }
 
-            .featured-grid {
+            .resource-grid {
                 grid-template-columns: 1fr;
             }
 
             nav ul {
                 flex-direction: column;
                 gap: 1rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: stretch;
             }
         }
     </style>
@@ -362,210 +342,192 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="index.html" class="logo">Better To Best Research Hub</a>
-                
+                <a href="../" class="logo">Better To Best Research Hub</a>
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#papers">Research Papers</a></li>
-                        <li><a href="wiki/glossary.html">Wiki & FAQ</a></li>
-                        <li><a href="#about">About / Contact</a></li>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../#papers">Research Papers</a></li>
+                        <li><a href="./" class="active">Wiki & FAQ</a></li>
+                        <li><a href="../#about">About / Contact</a></li>
                     </ul>
                 </nav>
+                <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+                    <span id="themeIcon">🌙</span>
+                </button>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="container">
-                <h1>Better To Best Research Hub</h1>
-                <p>An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.</p>
-                <div class="cta-buttons">
-                    <a href="#papers" class="btn btn-primary">Browse Research</a>
-                    <a href="learn-more.html" class="btn btn-outline">Learn More</a>
-                </div>
-            </div>
-        </section>
-
+    <section class="hero">
         <div class="container">
-            <!-- Featured Content -->
+            <h1>Wiki & Resources</h1>
+            <p>Comprehensive documentation, glossary, and frequently asked questions about Creative Currency Octaves, Public Trust Housing, and innovative economic frameworks</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <!-- Main Resources -->
             <section class="section">
-                <h2>Featured Research</h2>
-                <p>Explore groundbreaking work in post-scarcity economics, creative currency systems, and innovative governance models.</p>
+                <h2>Core Resources</h2>
+                <p>Essential documentation and reference materials for understanding and implementing CCO, PTH, and related frameworks.</p>
                 
-                <div class="featured-grid">
-                    <div class="featured-card">
-                        <div class="card-header">
-                            <div class="card-icon">📊</div>
-                            <div class="card-title">Creative Currency Octaves</div>
-                        </div>
-                        <div class="card-description">
-                            Revolutionary dual-tier incentive systems that combine octave-based capacity limits with personal multiplier rates to eliminate welfare cliffs while enhancing work incentives.
-                        </div>
-                        <a href="#papers" class="card-link">Explore CCO Research →</a>
-                    </div>
-
-                    <div class="featured-card">
-                        <div class="card-header">
-                            <div class="card-icon">🏛️</div>
-                            <div class="card-title">Public Trust Housing</div>
-                        </div>
-                        <div class="card-description">
-                            Community-owned housing models integrated with skill development and democratic governance, creating pathways for collective wealth building.
-                        </div>
-                        <a href="wiki/faq.html#pth" class="card-link">View PTH Framework →</a>
-                    </div>
-
-                    <div class="featured-card">
-                        <div class="card-header">
-                            <div class="card-icon">🌐</div>
-                            <div class="card-title">Citizen Internet Portal</div>
-                        </div>
-                        <div class="card-description">
-                            Digital infrastructure for democratic participation and transparent governance, enabling community-controlled economic systems.
-                        </div>
-                        <a href="wiki/faq.html#cip" class="card-link">Learn About CIP →</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Recent Papers -->
-            <section class="section" id="papers">
-                <h2>Research Papers</h2>
-                <p>Exploring innovative approaches to economics, governance, and social policy.</p>
-                
-                <div class="paper-grid">
-                    <div class="paper-card">
-                        <div class="paper-content">
-                            <h3 class="paper-title">Economic Modeling and Simulation Analysis of Creative Currency Octaves: Implementation Scenarios and Policy Implications</h3>
-                            <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
-                            <p class="paper-abstract">This paper presents comprehensive economic modeling and simulation analysis of Creative Currency Octaves (CCO) implementation across diverse community scenarios, using agent-based modeling and Monte Carlo simulation techniques.</p>
-                            <div class="paper-tags">
-                                <span class="tag">Economic Modeling</span>
-                                <span class="tag">CCO</span>
-                                <span class="tag">Simulation</span>
-                                <span class="tag">Policy Analysis</span>
-                            </div>
-                            <div class="paper-actions">
-                                <a href="papers/economic-modeling-analysis.html" class="paper-link">Read Paper</a>
-                                <a href="#" class="paper-link" onclick="alert('PDF coming soon!')">Download PDF</a>
-                                <a href="#" class="paper-link" onclick="alert('Citation tools coming soon!')">Cite</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="paper-card">
-                        <div class="paper-content">
-                            <h3 class="paper-title">Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare</h3>
-                            <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
-                            <p class="paper-abstract">This paper examines an integrated welfare framework combining Creative Currency Octaves (CCO) with dual-tier incentive mechanisms that addresses persistent challenges in transfer system design.</p>
-                            <div class="paper-tags">
-                                <span class="tag">Welfare Economics</span>
-                                <span class="tag">UBI</span>
-                                <span class="tag">CCO</span>
-                                <span class="tag">PTH</span>
-                            </div>
-                            <div class="paper-actions">
-                                <a href="papers/optimal-transfer-design.html" class="paper-link">Read Paper</a>
-                                <a href="#" class="paper-link" onclick="alert('PDF coming soon!')">Download PDF</a>
-                                <a href="#" class="paper-link" onclick="alert('Citation tools coming soon!')">Cite</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Wiki & FAQ Section -->
-            <section class="section" id="wiki">
-                <h2>Wiki & FAQ</h2>
-                <p>Comprehensive documentation and frequently asked questions about Creative Currency Octaves, Public Trust Housing, and related concepts.</p>
-                
-                <div class="featured-grid">
-                    <div class="featured-card">
+                <div class="resource-grid">
+                    <div class="resource-card">
                         <div class="card-header">
                             <div class="card-icon">📚</div>
-                            <div class="card-title">CCO Glossary</div>
+                            <div class="card-title">Comprehensive Glossary</div>
                         </div>
                         <div class="card-description">
-                            Definitions and explanations of key terms in Creative Currency Octaves system design and implementation.
+                            Complete definitions and explanations of all key terms in Creative Currency Octaves, Public Trust Housing, Social Zone Harmonization, and Citizen Internet Portal systems.
                         </div>
-                        <a href="wiki/glossary.html" class="card-link">View Glossary →</a>
+                        <a href="./glossary.html" class="card-link">
+                            View Full Glossary →
+                        </a>
                     </div>
 
-                    <div class="featured-card">
+                    <div class="resource-card">
                         <div class="card-header">
                             <div class="card-icon">❓</div>
                             <div class="card-title">Frequently Asked Questions</div>
                         </div>
                         <div class="card-description">
-                            Common questions about implementation, theory, and practical applications of our research frameworks.
+                            Common questions about theory, implementation, economics, and practical applications of our research frameworks, with detailed answers.
                         </div>
-                        <a href="wiki/faq.html" class="card-link">Read FAQ →</a>
+                        <a href="./faq.html" class="card-link">
+                            Read FAQ →
+                        </a>
                     </div>
 
-                    <div class="featured-card">
+                    <div class="resource-card">
                         <div class="card-header">
-                            <div class="card-icon">💬</div>
-                            <div class="card-title">Discussion Forum</div>
+                            <div class="card-icon">🛠️</div>
+                            <div class="card-title">Implementation Guide</div>
                         </div>
                         <div class="card-description">
-                            Join the conversation about economic innovation and policy implementation on Reddit.
+                            Step-by-step instructions for communities interested in implementing CCO and PTH systems, including pilot program design and best practices.
                         </div>
-                        <a href="https://www.reddit.com/r/EconomicIdeas/" class="card-link" target="_blank">Join Discussion →</a>
+                        <a href="./implementation-guide.html" class="card-link">
+                            View Guide →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📊</div>
+                            <div class="card-title">Technical Specifications</div>
+                        </div>
+                        <div class="card-description">
+                            Detailed technical documentation for developers and policymakers, including system architecture, API specifications, and integration protocols.
+                        </div>
+                        <a href="./technical-specs.html" class="card-link">
+                            View Specs →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">🎓</div>
+                            <div class="card-title">Educational Materials</div>
+                        </div>
+                        <div class="card-description">
+                            Presentations, infographics, and educational resources for teaching CCO and PTH concepts to diverse audiences.
+                        </div>
+                        <a href="./education.html" class="card-link">
+                            Access Materials →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">💬</div>
+                            <div class="card-title">Community Forum</div>
+                        </div>
+                        <div class="card-description">
+                            Join discussions with researchers, practitioners, and communities exploring economic innovation and policy implementation.
+                        </div>
+                        <a href="https://www.reddit.com/r/EconomicIdeas/" class="card-link" target="_blank">
+                            Join Discussion →
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <!-- About Section -->
-            <section class="section" id="about">
-                <h2>About the Research</h2>
-                <p>This research hub represents a collaborative effort to develop and document innovative approaches to post-scarcity economics, with a focus on systems that enhance human flourishing while maintaining economic efficiency.</p>
-                
-                <div class="featured-grid">
-                    <div class="featured-card">
-                        <div class="card-header">
-                            <div class="card-icon">👨‍🔬</div>
-                            <div class="card-title">Duke Johnson</div>
-                        </div>
-                        <div class="card-description">
-                            Independent researcher and original developer of Creative Currency Octaves and Public Trust Housing frameworks. Author of "Better To Best: Novel Ideas to Improve Governments, Economies, and Societies" and creator of Compassionate Meritocracy (Compassionism).
-                        </div>
-                        <div class="social-links">
-                            <a href="https://authordukejohnson.bsky.social" class="social-link" title="Bluesky" target="_blank">🦋</a>
-                            <a href="https://x.com/Author_Duke_J" class="social-link" title="X/Twitter" target="_blank">𝕏</a>
-                            <a href="https://www.youtube.com/@AuthorDukeJohnson" class="social-link" title="YouTube" target="_blank">▶️</a>
-                            <a href="https://bettertobest.wixsite.com/book" class="social-link" title="Book Page" target="_blank">📚</a>
-                            <a href="https://sites.google.com/view/compassionatemeritocracy/home" class="social-link" title="Compassionate Meritocracy" target="_blank">🏛️</a>
-                        </div>
-                    </div>
-
-                    <div class="featured-card">
-                        <div class="card-header">
-                            <div class="card-icon">🤖</div>
-                            <div class="card-title">Claude (Anthropic)</div>
-                        </div>
-                        <div class="card-description">
-                            AI assistant contributing mathematical formalization, empirical research design, and comprehensive literature integration to support rigorous academic development of these frameworks.
-                        </div>
-                    </div>
-
-                    <div class="featured-card">
-                        <div class="card-header">
-                            <div class="card-icon">📧</div>
-                            <div class="card-title">Contact & Collaboration</div>
-                        </div>
-                        <div class="card-description">
-                            Interested in collaboration, implementation, or have questions about the research? We welcome engagement from researchers, policymakers, and communities worldwide.
-                        </div>
-                        <a href="mailto:Duke.T.James@gmail.com" class="card-link">Contact Duke Johnson →</a>
-                    </div>
+            <!-- Quick Links Section -->
+            <section class="quick-links">
+                <h3>Quick Reference Links</h3>
+                <div class="links-grid">
+                    <a href="./glossary.html#basic-units" class="quick-link-item">
+                        <span>📝</span> Basic Units
+                    </a>
+                    <a href="./glossary.html#octave-levels" class="quick-link-item">
+                        <span>📈</span> Octave Levels
+                    </a>
+                    <a href="./glossary.html#multiplier-rates" class="quick-link-item">
+                        <span>✖️</span> Multiplier Rates
+                    </a>
+                    <a href="./glossary.html#pth" class="quick-link-item">
+                        <span>🏠</span> Public Trust Housing
+                    </a>
+                    <a href="./faq.html#implementation" class="quick-link-item">
+                        <span>🚀</span> Implementation FAQ
+                    </a>
+                    <a href="./faq.html#economics" class="quick-link-item">
+                        <span>💰</span> Economic Theory
+                    </a>
+                    <a href="./glossary.html#welfare-cliffs" class="quick-link-item">
+                        <span>📉</span> Welfare Cliffs
+                    </a>
+                    <a href="./glossary.html#conversion-system" class="quick-link-item">
+                        <span>🔄</span> Conversion System
+                    </a>
                 </div>
+            </section>
 
-                <div style="margin-top: 3rem; padding: 2rem; background: var(--surface); border-radius: 1rem; border-left: 4px solid var(--primary-color);">
-                    <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Open Access Commitment</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">All research published on this platform is available under Creative Commons licensing, supporting open science and collaborative development. We believe transformative economic ideas should be freely accessible to communities, researchers, and policymakers worldwide.</p>
-                    <p style="color: var(--text-secondary);">This research received no specific grant funding and is conducted independently as a contribution to public knowledge and policy development.</p>
+            <!-- Additional Resources -->
+            <section class="section">
+                <h2>Research Tools & Citations</h2>
+                <p>Tools and resources for researchers and academics working with CCO and PTH frameworks.</p>
+                
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📖</div>
+                            <div class="card-title">Citation Generator</div>
+                        </div>
+                        <div class="card-description">
+                            Generate properly formatted citations for all research papers in APA, MLA, Chicago, and BibTeX formats.
+                        </div>
+                        <a href="./citations.html" class="card-link">
+                            Generate Citations →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📈</div>
+                            <div class="card-title">Data & Models</div>
+                        </div>
+                        <div class="card-description">
+                            Access economic models, simulation data, and analysis tools used in our research papers.
+                        </div>
+                        <a href="./data-models.html" class="card-link">
+                            Access Data →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤝</div>
+                            <div class="card-title">Collaboration Portal</div>
+                        </div>
+                        <div class="card-description">
+                            Information for researchers, communities, and policymakers interested in collaboration opportunities.
+                        </div>
+                        <a href="./collaboration.html" class="card-link">
+                            Learn More →
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -574,50 +536,56 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Research Areas</h3>
-                    <ul>
-                        <li><a href="papers/economic-modeling-analysis.html">Creative Currency Octaves</a></li>
-                        <li><a href="wiki/faq.html#pth">Public Trust Housing</a></li>
-                        <li><a href="wiki/faq.html#szh">Social Zone Harmonization</a></li>
-                        <li><a href="wiki/faq.html#cip">Citizen Internet Portal</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="wiki/glossary.html">Glossary</a></li>
-                        <li><a href="wiki/faq.html">FAQ</a></li>
-                        <li><a href="learn-more.html">Implementation Guide</a></li>
-                        <li><a href="learn-more.html">Citation Tools</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Community</h3>
-                    <ul>
-                        <li><a href="https://www.reddit.com/r/EconomicIdeas/" target="_blank">Discussion Forum</a></li>
-                        <li><a href="learn-more.html">Collaboration</a></li>
-                        <li><a href="learn-more.html">Pilot Programs</a></li>
-                        <li><a href="learn-more.html">Newsletter</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Technical</h3>
-                    <ul>
-                        <li><a href="learn-more.html">Sitemap</a></li>
-                        <li><a href="learn-more.html">RSS Feed</a></li>
-                        <li><a href="learn-more.html">Accessibility</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Duke Johnson & Claude (Anthropic). Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0</a> | Built with GitHub Pages</p>
+                <p>&copy; 2025 Duke Johnson & Claude (Anthropic). Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: var(--primary-color);">Creative Commons Attribution 4.0</a></p>
+                <p style="margin-top: 1rem;">
+                    <a href="../" style="color: var(--primary-color); margin: 0 1rem;">Home</a> |
+                    <a href="../#papers" style="color: var(--primary-color); margin: 0 1rem;">Papers</a> |
+                    <a href="./" style="color: var(--primary-color); margin: 0 1rem;">Wiki</a> |
+                    <a href="../#about" style="color: var(--primary-color); margin: 0 1rem;">Contact</a>
+                </p>
             </div>
         </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        // Back to top button
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        window.addEventListener('scroll', () => {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+    </script>
 </body>
 </html>
