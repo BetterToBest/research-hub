@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions - Better To Best Research Hub</title>
-    <meta name="description" content="Frequently asked questions about Creative Currency Octaves, Public Trust Housing, and post-scarcity economics research.">
+    <title>Wiki & Resources - Better To Best Research Hub</title>
+    <meta name="description" content="Comprehensive wiki, glossary, and FAQ for Creative Currency Octaves, Public Trust Housing, and post-scarcity economics research.">
     
     <style>
         * {
@@ -13,46 +13,30 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --primary-color: #1e40af;
-            --secondary-color: #1e3a8a;
-            --accent-color: #2563eb;
-            --background: #ffffff;
-            --surface: #f8fafc;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --border-color: #e2e8f0;
-            --success-color: #10b981;
-            --warning-color: #f59e0b;
-            --error-color: #ef4444;
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--background);
-            transition: all 0.3s ease;
+            color: #0f172a;
+            background: #ffffff;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 1rem;
         }
 
         /* Header */
         header {
-            background: var(--surface);
-            border-bottom: 1px solid var(--border-color);
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
-        .header-nav {
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -61,247 +45,226 @@
         }
 
         .logo {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: #1a3d8f;
             text-decoration: none;
         }
 
-        .breadcrumb {
+        nav {
             display: flex;
-            gap: 0.5rem;
             align-items: center;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
+            gap: 2rem;
         }
 
-        .breadcrumb a {
-            color: var(--primary-color);
+        nav a {
+            color: #475569;
             text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
 
-        /* Page header */
-        .page-header {
-            background: var(--gradient);
+        nav a:hover, nav a.active {
+            color: #1a3d8f;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #5a6fd8 0%, #6b4298 100%);
             color: white;
-            padding: 3rem 0;
+            padding: 4rem 0;
             text-align: center;
         }
 
-        .page-title {
-            font-size: 2.5rem;
+        .hero h1 {
+            font-size: 3rem;
             font-weight: 800;
             margin-bottom: 1rem;
         }
 
-        .page-subtitle {
+        .hero p {
             font-size: 1.2rem;
-            opacity: 0.9;
+            margin-bottom: 2rem;
             max-width: 600px;
-            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
         }
 
-        /* Main content */
-        .main-content {
+        /* Main Content */
+        main {
             padding: 3rem 0;
         }
 
-        /* FAQ Sections */
-        .faq-nav {
-            background: var(--surface);
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            margin-bottom: 3rem;
-            border-left: 4px solid var(--primary-color);
+        .section {
+            margin-bottom: 4rem;
         }
 
-        .faq-nav h3 {
-            color: var(--text-primary);
+        .section h2 {
+            font-size: 2rem;
+            font-weight: 700;
             margin-bottom: 1rem;
-            font-size: 1.1rem;
+            color: #0f172a;
         }
 
-        .nav-links {
+        .section p {
+            color: #475569;
+            margin-bottom: 1.5rem;
+            max-width: 70ch;
+        }
+
+        /* Resource Grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .resource-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .resource-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #5a6fd8 0%, #6b4298 100%);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            background: linear-gradient(135deg, #5a6fd8 0%, #6b4298 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        .card-description {
+            color: #475569;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .card-link {
+            color: #1a3d8f;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        .card-status {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: #fef3c7;
+            color: #92400e;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            background: #f8fafc;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .quick-links h3 {
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .links-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
         }
 
-        .nav-links a {
-            color: var(--primary-color);
+        .quick-link-item {
+            padding: 0.75rem 1rem;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
             text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem;
-            border-radius: 0.25rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            background: var(--background);
-        }
-
-        .faq-section {
-            margin-bottom: 4rem;
-        }
-
-        .section-title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        .faq-item {
-            background: var(--surface);
-            border-radius: 0.75rem;
-            margin-bottom: 1.5rem;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-        }
-
-        .faq-question {
-            background: none;
-            border: none;
-            width: 100%;
-            padding: 1.5rem;
-            text-align: left;
-            cursor: pointer;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text-primary);
+            color: #0f172a;
+            transition: all 0.3s ease;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            transition: background-color 0.3s ease;
+            gap: 0.5rem;
         }
 
-        .faq-question:hover {
-            background: rgba(30, 64, 175, 0.05);
+        .quick-link-item:hover {
+            background: #1a3d8f;
+            color: white;
+            border-color: #1a3d8f;
         }
 
-        .faq-question.active {
-            background: rgba(30, 64, 175, 0.1);
+        /* Footer */
+        footer {
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
         }
 
-        .faq-toggle {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            transition: transform 0.3s ease;
-        }
-
-        .faq-question.active .faq-toggle {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            padding: 0 1.5rem 1.5rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            display: none;
-        }
-
-        .faq-answer.active {
-            display: block;
-        }
-
-        .faq-answer h4 {
-            color: var(--text-primary);
-            margin: 1rem 0 0.5rem;
-        }
-
-        .faq-answer ul, .faq-answer ol {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-
-        .faq-answer li {
-            margin-bottom: 0.5rem;
-        }
-
-        .highlight-box {
-            background: rgba(30, 64, 175, 0.1);
-            border-left: 4px solid var(--primary-color);
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 0.5rem;
-        }
-
-        .contact-cta {
-            background: var(--surface);
-            padding: 2rem;
-            border-radius: 1rem;
+        .footer-content {
             text-align: center;
-            margin: 3rem 0;
-            border: 1px solid var(--border-color);
-        }
-
-        .contact-cta h3 {
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            margin: 0.5rem;
-        }
-
-        .btn:hover {
-            background: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 3rem;
-            height: 3rem;
-            cursor: pointer;
-            font-size: 1.25rem;
-            transition: all 0.3s ease;
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background: var(--secondary-color);
-            transform: translateY(-2px);
+            color: #475569;
         }
 
         @media (max-width: 768px) {
-            .page-title {
-                font-size: 1.75rem;
+            .hero h1 {
+                font-size: 2rem;
             }
 
-            .nav-links {
+            .resource-grid {
                 grid-template-columns: 1fr;
             }
 
-            .faq-question {
-                font-size: 1rem;
-                padding: 1rem;
-            }
-
-            .faq-answer {
-                padding: 0 1rem 1rem;
+            nav {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
     </style>
@@ -309,559 +272,224 @@
 <body>
     <header>
         <div class="container">
-            <div class="header-nav">
+            <div class="header-content">
                 <a href="../" class="logo">Better To Best Research Hub</a>
-                <nav class="breadcrumb">
+                <nav>
                     <a href="../">Home</a>
-                    <span>/</span>
-                    <a href="../wiki/">Wiki</a>
-                    <span>/</span>
-                    <span>FAQ</span>
+                    <a href="../#papers">Research Papers</a>
+                    <a href="./" class="active">Wiki & FAQ</a>
+                    <a href="../#about">About / Contact</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <div class="page-header">
+    <section class="hero">
         <div class="container">
-            <h1 class="page-title">Frequently Asked Questions</h1>
-            <p class="page-subtitle">Common questions about Creative Currency Octaves, Public Trust Housing, Social Zone Harmonization, Digital Governance Initiatives, and related concepts</p>
+            <h1>Wiki & Resources</h1>
+            <p>Comprehensive documentation, glossary, and frequently asked questions about Creative Currency Octaves, Public Trust Housing, and innovative economic frameworks</p>
         </div>
-    </div>
+    </section>
 
-    <main class="main-content">
+    <main>
         <div class="container">
-            <!-- Quick Navigation -->
-            <div class="faq-nav">
-                <h3>Jump to Section:</h3>
-                <div class="nav-links">
-                    <a href="#basics">Basics & Overview</a>
-                    <a href="#cco">Creative Currency Octaves</a>
-                    <a href="#pth">Public Trust Housing</a>
-                    <a href="#cip">Citizen Internet Portal</a>
-                    <a href="#szh">Social Zone Harmonization</a>
-                    <a href="#implementation">Implementation</a>
-                    <a href="#economics">Economic Theory</a>
-                    <a href="#research">Research & Development</a>
-                </div>
-            </div>
-
-            <!-- Basics Section -->
-            <section id="basics" class="faq-section">
-                <h2 class="section-title">Basics & Overview</h2>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What is the Better To Best Research Hub?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The Better To Best Research Hub is an open-access platform for research on effective ways to improve governments, economies, and societies. The primary focus is to develop and document productive approaches to harmoniously-functioning societies that promote human flourishing by maintaining economic efficiency while enhancing cultures, particularly with the innovative economic systems Creative Currency Octaves (CCO) and Public Trust Housing (PTH).</p>
-                        <p>This research focuses on resolving traditional tradeoffs between equity and efficiency through novel incentive designs that eliminate welfare cliffs while strengthening work motivation.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        Who is behind this research?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The primary research is conducted by <strong>Duke Johnson</strong>, independent researcher and author of "Better To Best: Novel Ideas to Improve Governments, Economies, and Societies," in collaboration with <strong>Claude (Anthropic)</strong> for mathematical formalization and empirical research design.</p>
-                        <p>Duke is also the creator of Compassionate Meritocracy (Compassionism) and has developed these frameworks through extensive theoretical work and passionate online engagement.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        Is this research free to access and use?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! All research published here is available under Creative Commons Attribution 4.0 licensing, supporting open science and collaborative development. We believe transformative economic ideas should be freely accessible to communities, researchers, and policymakers worldwide.</p>
-                        <p>This research received no specific grant funding and is conducted independently as a contribution to public knowledge and policy development.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CCO Section -->
-            <section id="cco" class="faq-section">
-                <h2 class="section-title">Creative Currency Octaves (CCO)</h2>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What are Creative Currency Octaves?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Creative Currency Octaves (CCO) is a dual-currency system that provides universal basic income while strengthening rather than weakening work incentives. It operates through:</p>
-                        <ul>
-                            <li><strong>Basic Units:</strong> Distributed universally, pegged 1:1 to primary currency, restricted to essential expenditures, expire at end of distribution cycle</li>
-                            <li><strong>Conversion System:</strong> Expired basic units can be converted to unrestricted primary currency through productive activities</li>
-                            <li><strong>Dual-Tier Incentives:</strong> Octave-based capacity levels (that double with each step up) and personal multiplier rates (1x to 14x+)</li>
-                        </ul>
-                        <p>The name "octaves" comes from the doubling pattern - like musical octaves, each level doubles the previous capacity.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        How does CCO eliminate welfare cliffs?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Traditional welfare systems create "welfare cliffs" where earning additional income results in net loss due to benefit reduction. CCO eliminates this by:</p>
-                        <ul>
-                            <li><strong>No benefit reduction:</strong> Basic units are provided universally regardless of other income</li>
-                            <li><strong>Additive rewards:</strong> Work creates additional income opportunities rather than reducing existing benefits</li>
-                            <li><strong>Progressive enhancement:</strong> Higher productivity leads to higher conversion rates and capacities</li>
-                        </ul>
-                        <p>This means every hour of productive work always increases total income, eliminating marginal tax rates over 100% that characterize welfare cliff scenarios.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What determines octave levels and multiplier rates?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The dual-tier system evaluates contributions across multiple dimensions:</p>
-                        <h4>Octave Level Factors:</h4>
-                        <ul>
-                            <li>Consistency of productive contribution</li>
-                            <li>Community engagement and collaboration</li>
-                            <li>Skill development and knowledge sharing</li>
-                            <li>Long-term commitment to community wellbeing</li>
-                        </ul>
-                        <h4>Personal Multiplier Rate Factors:</h4>
-                        <ul>
-                            <li>Quality and innovation in contributions</li>
-                            <li>Cultural and artistic excellence</li>
-                            <li>Problem-solving and creativity</li>
-                            <li>Positive impact on community outcomes</li>
-                        </ul>
-                        <p><strong>Important Note:</strong> Capacity amounts apply to businesses that accept basic units for payment, whereas individual performers and artist groups may not have capped trade-in amounts. Rather, their octave level advancement serves as a measure of success and achievement.</p>
-                        <p>The community of Creative Collective Members determines the conversion rates, while the market determines capacity achievement. Proposed rate levels are detailed in "Harmonize Economics With Creative Currency Octaves" (2024). These rates are adjustable and dependent on several factors, with the Phi-Rate serving as an additional multiplier of 1.618 that corresponds to the golden ratio.</p>
-                        <p>Assessment combines objective metrics with community evaluation, designed to minimize bias while recognizing diverse forms of valuable contribution.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        Is CCO the same as Universal Basic Income?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>CCO includes UBI-like elements but addresses key UBI criticisms:</p>
-                        <div class="highlight-box">
-                            <strong>Similarities:</strong> Universal provision, poverty elimination, simplified administration
+            <!-- Main Resources -->
+            <section class="section">
+                <h2>Core Resources</h2>
+                <p>Essential documentation and reference materials for understanding and implementing CCO, PTH, and related frameworks.</p>
+                
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📚</div>
+                            <div class="card-title">Comprehensive Glossary</div>
                         </div>
-                        <div class="highlight-box">
-                            <strong>Key Differences:</strong>
-                            <ul>
-                                <li>Enhanced work incentives rather than potential work disincentives</li>
-                                <li>Merit-based progression system rewards excellence</li>
-                                <li>Restricted basic units are designed to mitigate inflationary pressure in non-essential markets</li>
-                                <li>Cultural value integration supports artistic and creative work</li>
-                                <li>Community assessment encourages broad community participation while recognizing diverse contributions</li>
-                            </ul>
+                        <div class="card-description">
+                            Complete definitions and explanations of all key terms in Creative Currency Octaves, Public Trust Housing, Social Zone Harmonization, and Citizen Internet Portal systems.
                         </div>
+                        <a href="./glossary.html" class="card-link">
+                            View Full Glossary →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">❓</div>
+                            <div class="card-title">Frequently Asked Questions</div>
+                        </div>
+                        <div class="card-description">
+                            Common questions about theory, implementation, economics, and practical applications of our research frameworks, with detailed answers.
+                        </div>
+                        <a href="./faq.html" class="card-link">
+                            Read FAQ →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">🛠️</div>
+                            <div class="card-title">Implementation Guide</div>
+                        </div>
+                        <div class="card-description">
+                            Step-by-step instructions for communities interested in implementing CCO and PTH systems, including pilot program design and best practices.
+                        </div>
+                        <a href="https://claude.ai/public/artifacts/b96a0930-7992-4cb6-a8e1-c99a7c29c30a" target="_blank" class="card-link">
+                            View Guide →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📋</div>
+                            <div class="card-title">Hypothetical Plan</div>
+                        </div>
+                        <div class="card-description">
+                            Detailed hypothetical implementation plan for Compassionate Meritocracy including CCO and PTH deployment strategies.
+                        </div>
+                        <a href="https://bettertobest.github.io/compassionate-meritocracy-plan/" target="_blank" class="card-link">
+                            View Plan →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">🎓</div>
+                            <div class="card-title">Educational Materials</div>
+                            <span class="card-status">Coming Soon</span>
+                        </div>
+                        <div class="card-description">
+                            Presentations, infographics, and educational resources for teaching CCO and PTH concepts to diverse audiences.
+                        </div>
+                        <span class="card-link" style="color: #94a3b8;">
+                            In Development
+                        </span>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">💬</div>
+                            <div class="card-title">Community Forum</div>
+                        </div>
+                        <div class="card-description">
+                            Join discussions with researchers, practitioners, and communities exploring economic innovation and policy implementation.
+                        </div>
+                        <a href="https://www.reddit.com/r/EconomicIdeas/" target="_blank" class="card-link">
+                            Join Discussion →
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <!-- PTH Section -->
-            <section id="pth" class="faq-section">
-                <h2 class="section-title">Public Trust Housing (PTH)</h2>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What is Public Trust Housing?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Public Trust Housing (PTH) is a community-owned housing model that creates pathways for collective wealth building while providing stable, affordable housing. PTH complements rather than replaces private real estate markets. Key features include:</p>
-                        <ul>
-                            <li><strong>Community Ownership:</strong> Housing held in public trust, owned collectively by residents</li>
-                            <li><strong>Democratic Governance:</strong> Residents participate in decision-making about community development</li>
-                            <li><strong>Integrated Services:</strong> On-site childcare, healthcare, education, and skill development</li>
-                            <li><strong>Wealth Building:</strong> Residents build equity in collective assets rather than individual property</li>
-                            <li><strong>CCO Integration:</strong> Housing payments can be made using basic units, supporting the CCO ecosystem</li>
-                        </ul>
+            <!-- Research Tools -->
+            <section class="section">
+                <h2>Research Tools & Resources</h2>
+                <p>Tools and resources for researchers and academics working with CCO and PTH frameworks.</p>
+                
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📖</div>
+                            <div class="card-title">Citation Generator</div>
+                            <span class="card-status">Coming Soon</span>
+                        </div>
+                        <div class="card-description">
+                            Generate properly formatted citations for all research papers in APA, MLA, Chicago, and BibTeX formats.
+                        </div>
+                        <span class="card-link" style="color: #94a3b8;">
+                            In Development
+                        </span>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        How does PTH differ from public housing?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>PTH represents a fundamental evolution beyond traditional public housing:</p>
-                        <h4>Traditional Public Housing:</h4>
-                        <ul>
-                            <li>Government-owned and managed</li>
-                            <li>Often stigmatized and under-resourced</li>
-                            <li>Limited tenant control or equity building</li>
-                            <li>Concentrated poverty effects</li>
-                        </ul>
-                        <h4>Public Trust Housing:</h4>
-                        <ul>
-                            <li>Community-owned through democratic trust structures</li>
-                            <li>Mixed-income communities with diverse residents</li>
-                            <li>Residents build collective wealth and have governance rights</li>
-                            <li>Integrated services and community development focus</li>
-                            <li>Designed for long-term community empowerment</li>
-                        </ul>
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📈</div>
+                            <div class="card-title">Data & Models</div>
+                            <span class="card-status">Coming Soon</span>
+                        </div>
+                        <div class="card-description">
+                            Access economic models, simulation data, and analysis tools used in our research papers.
+                        </div>
+                        <span class="card-link" style="color: #94a3b8;">
+                            In Development
+                        </span>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        How does the wealth-building component work?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>PTH creates collective wealth through several mechanisms:</p>
-                        <ul>
-                            <li><strong>Equity Accumulation:</strong> Housing payments build equity in community-owned assets</li>
-                            <li><strong>Business Development:</strong> Community enterprises generate revenue and employment</li>
-                            <li><strong>Skill Premium Sharing:</strong> Training and education increase earning potential</li>
-                            <li><strong>Collective Investment:</strong> Community decisions about asset development and improvement</li>
-                        </ul>
-                        <p>Unlike individual homeownership where wealth is tied to personal property values, PTH creates shared wealth that benefits the entire community while providing individual security.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What is Acre Equity in the PTF system?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Acre Equity is a concept within the Public Trust Foundation (PTF) system that measures and distributes value based on land stewardship and productive use. The term "Acre Equity" was introduced by NotebookLM during analysis of PTF concepts, with Claude subsequently generating proposed metrics for implementation.</p>
-                        <h4>Key Components:</h4>
-                        <ul>
-                            <li><strong>Land Stewardship Value:</strong> Recognition of environmental care, sustainability practices, and ecosystem preservation</li>
-                            <li><strong>Productive Use Assessment:</strong> Evaluation of how effectively land generates community value through agriculture, housing, business, or recreation</li>
-                            <li><strong>Community Benefit Measurement:</strong> Assessment of how land use contributes to broader community wellbeing and economic development</li>
-                            <li><strong>Equity Distribution:</strong> Proportional sharing of land-based value creation among community stakeholders</li>
-                        </ul>
-                        <p><strong>Important Note:</strong> While Claude has generated proposed metrics and frameworks for Acre Equity, nations that implement PTF systems may decide to adjust and tweak these specifics based on local conditions, cultural values, and economic priorities. The concept provides a foundation for discussion rather than rigid requirements.</p>
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤝</div>
+                            <div class="card-title">Collaboration Portal</div>
+                        </div>
+                        <div class="card-description">
+                            Information for researchers, communities, and policymakers interested in collaboration opportunities.
+                        </div>
+                        <a href="../#contact" class="card-link">
+                            Contact Us →
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <!-- CIP Section -->
-            <section id="cip" class="faq-section">
-                <h2 class="section-title">Citizen Internet Portal (CIP)</h2>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What is the Citizen Internet Portal?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The Citizen Internet Portal (CIP) is a comprehensive digital infrastructure platform designed to enable democratic participation, transparent governance, and community-controlled economic systems. CIP serves as the technological backbone that connects and facilitates CCO, PTH, and other innovative governance frameworks.</p>
-                        <h4>Core Functions:</h4>
-                        <ul>
-                            <li><strong>Democratic Participation:</strong> Secure voting systems, community assemblies, and civic engagement tools</li>
-                            <li><strong>Economic Integration:</strong> CCO transaction processing, PTH governance, and financial transparency systems</li>
-                            <li><strong>Information Access:</strong> Government transparency, public data access, and community information sharing</li>
-                            <li><strong>Service Delivery:</strong> Streamlined access to public services, benefits, and community resources</li>
-                        </ul>
+            <!-- External Resources -->
+            <section class="section">
+                <h2>External Links & Resources</h2>
+                <p>Additional resources and related projects.</p>
+                
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📖</div>
+                            <div class="card-title">Better To Best Book</div>
+                        </div>
+                        <div class="card-description">
+                            The original book "Better To Best: Novel Ideas to Improve Governments, Economies, and Societies" by Duke Johnson.
+                        </div>
+                        <a href="https://bettertobest.wixsite.com/book" target="_blank" class="card-link">
+                            View Book →
+                        </a>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        How does CIP differ from existing government websites?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>CIP represents a fundamental evolution beyond traditional government websites toward true digital democracy:</p>
-                        <h4>Traditional Government Websites:</h4>
-                        <ul>
-                            <li>Primarily informational with limited interaction</li>
-                            <li>Fragmented services across multiple platforms</li>
-                            <li>Limited transparency and citizen input</li>
-                            <li>Top-down information distribution</li>
-                        </ul>
-                        <h4>Citizen Internet Portal:</h4>
-                        <ul>
-                            <li>Interactive democratic participation and decision-making</li>
-                            <li>Integrated platform for all civic and economic activities</li>
-                            <li>Complete transparency with real-time data access</li>
-                            <li>Citizen-controlled governance and community management</li>
-                            <li>Economic system integration (CCO, PTH) within civic platform</li>
-                        </ul>
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤲</div>
+                            <div class="card-title">Compassionate Meritocracy</div>
+                        </div>
+                        <div class="card-description">
+                            Learn about Compassionate Meritocracy (Compassionism) - the governance philosophy underlying CCO and PTH frameworks.
+                        </div>
+                        <a href="https://sites.google.com/view/compassionatemeritocracy/home" target="_blank" class="card-link">
+                            Learn More →
+                        </a>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What are the privacy and security considerations for CIP?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>CIP is designed with privacy-by-design principles and robust security measures:</p>
-                        <h4>Privacy Protections:</h4>
-                        <ul>
-                            <li><strong>User Control:</strong> Citizens control their own data and privacy settings</li>
-                            <li><strong>Minimal Data Collection:</strong> Only necessary information for services and voting</li>
-                            <li><strong>Transparent Data Use:</strong> Clear documentation of how data is used and shared</li>
-                            <li><strong>Right to Delete:</strong> Citizens can remove their data and accounts</li>
-                        </ul>
-                        <h4>Security Features:</h4>
-                        <ul>
-                            <li><strong>End-to-End Encryption:</strong> All communications and transactions secured</li>
-                            <li><strong>Decentralized Architecture:</strong> No single point of failure or control</li>
-                            <li><strong>Audit Trails:</strong> Transparent logging of all system activities</li>
-                            <li><strong>Multi-Factor Authentication:</strong> Secure identity verification for voting and transactions</li>
-                        </ul>
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📺</div>
+                            <div class="card-title">YouTube Channel</div>
+                        </div>
+                        <div class="card-description">
+                            Video explanations and discussions about CCO, PTH, and economic innovation on Duke Johnson's YouTube channel.
+                        </div>
+                        <a href="https://www.youtube.com/@AuthorDukeJohnson" target="_blank" class="card-link">
+                            Watch Videos →
+                        </a>
                     </div>
                 </div>
             </section>
-
-            <!-- SZH Section -->
-            <section id="szh" class="faq-section">
-                <h2 class="section-title">Social Zone Harmonization (SZH)</h2>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What is Social Zone Harmonization?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Social Zone Harmonization (SZH) is a comprehensive framework for organizing communities and regions to optimize social, economic, and environmental outcomes through coordinated planning and resource allocation. SZH works to balance diverse community needs while maintaining local autonomy and democratic governance.</p>
-                        <h4>Key Principles:</h4>
-                        <ul>
-                            <li><strong>Balanced Development:</strong> Coordinated growth that prevents extreme inequality between regions</li>
-                            <li><strong>Resource Optimization:</strong> Efficient allocation of resources across interconnected zones</li>
-                            <li><strong>Cultural Preservation:</strong> Maintaining local identity while enabling beneficial coordination</li>
-                            <li><strong>Environmental Integration:</strong> Planning that respects ecological boundaries and sustainability</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        How does SZH work with existing local governments?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>SZH is designed to enhance rather than replace existing local governance structures:</p>
-                        <h4>Coordination Mechanisms:</h4>
-                        <ul>
-                            <li><strong>Inter-Municipal Cooperation:</strong> Voluntary coordination between adjacent communities</li>
-                            <li><strong>Resource Sharing Agreements:</strong> Collaborative infrastructure and service delivery</li>
-                            <li><strong>Regional Planning Councils:</strong> Democratic bodies with representatives from participating communities</li>
-                            <li><strong>Opt-in Participation:</strong> Communities choose their level of SZH integration</li>
-                        </ul>
-                        <h4>Benefits for Local Communities:</h4>
-                        <ul>
-                            <li>Access to larger resource pools and shared infrastructure</li>
-                            <li>Reduced service delivery costs through economies of scale</li>
-                            <li>Enhanced economic opportunities through regional coordination</li>
-                            <li>Improved environmental management across ecological boundaries</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What are the different types of social zones in SZH?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>SZH recognizes different zone types based on community characteristics and development priorities:</p>
-                        <h4>Zone Classifications:</h4>
-                        <ul>
-                            <li><strong>Urban Innovation Zones:</strong> High-density areas focused on technology, culture, and economic development</li>
-                            <li><strong>Suburban Transition Zones:</strong> Mixed-density areas balancing residential, commercial, and community services</li>
-                            <li><strong>Rural Stewardship Zones:</strong> Low-density areas emphasizing agriculture, conservation, and sustainable resource management</li>
-                            <li><strong>Special Purpose Zones:</strong> Areas with unique functions like education, healthcare, recreation, or cultural preservation</li>
-                        </ul>
-                        <h4>Harmonization Benefits:</h4>
-                        <ul>
-                            <li>Each zone can specialize in its strengths while accessing resources from others</li>
-                            <li>Coordinated transportation and communication infrastructure</li>
-                            <li>Balanced economic development that benefits all zones</li>
-                            <li>Shared environmental stewardship and climate adaptation</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Implementation Section -->
-            <section id="implementation" class="faq-section">
-                <h2 class="section-title">Implementation</h2>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        Where are these systems being tested?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Currently, these frameworks exist primarily in theoretical and design phases. We are actively seeking:</p>
-                        <ul>
-                            <li><strong>Community Partners:</strong> Local governments or organizations interested in pilot programs</li>
-                            <li><strong>Research Collaborators:</strong> Academic institutions for controlled studies</li>
-                            <li><strong>Technology Partners:</strong> Organizations to develop necessary digital infrastructure</li>
-                            <li><strong>Policy Partners:</strong> Government entities exploring innovative welfare approaches</li>
-                        </ul>
-                        <p>If you represent an organization interested in testing these frameworks, please contact Duke Johnson at Duke.T.James@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        What would a pilot program look like?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>A comprehensive pilot program would likely include:</p>
-                        <h4>Phase 1: Community Preparation (6 months)</h4>
-                        <ul>
-                            <li>Community engagement and education</li>
-                            <li>Technology infrastructure development</li>
-                            <li>Governance structure establishment</li>
-                            <li>Baseline data collection</li>
-                        </ul>
-                        <h4>Phase 2: Limited Implementation (12 months)</h4>
-                        <ul>
-                            <li>CCO basic unit distribution to 100-500 participants</li>
-                            <li>Conversion opportunities in essential services</li>
-                            <li>Community assessment system testing</li>
-                            <li>Continuous data collection and adjustment</li>
-                        </ul>
-                        <h4>Phase 3: Full Integration (24 months)</h4>
-                        <ul>
-                            <li>PTH housing development or conversion</li>
-                            <li>Full dual-tier incentive system</li>
-                            <li>Community enterprise development</li>
-                            <li>Comprehensive impact evaluation</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Economics Section -->
-            <section id="economics" class="faq-section">
-                <h2 class="section-title">Economic Theory</h2>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        How do these systems affect inflation?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>CCO is designed to minimize inflationary pressure through several mechanisms:</p>
-                        <ul>
-                            <li><strong>Restricted Basic Units:</strong> Can only be spent on essential goods/services, mitigating demand increases in luxury markets</li>
-                            <li><strong>Expiration System:</strong> Basic units expire, preventing accumulation and hoarding</li>
-                            <li><strong>Productive Conversion:</strong> Unrestricted (primary) currency is earned through productive activity</li>
-                            <li><strong>Supply-Side Focus:</strong> System incentivizes increased production of goods and services</li>
-                        </ul>
-                        <p>By restricting where basic units can be spent and requiring productive work for conversion into primary currency, CCO may be less inflationary than traditional welfare systems that provide unrestricted cash.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        How are disabled persons who can't work integrated into the CCO system?
-                        <span class="faq-toggle">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The CCO system is designed to support all community members:</p>
-                        <ul>
-                            <li><strong>Universal Basic Units:</strong> Everyone receives basic units regardless of work ability</li>
-                            <li><strong>Diverse Contribution Recognition:</strong> Non-traditional forms of value creation are recognized (childcare, eldercare, emotional support, creative work)</li>
-                            <li><strong>Accommodation Systems:</strong> Assessment processes account for different abilities and circumstances</li>
-                            <li><strong>Community Support Networks:</strong> PTH provides integrated care and support services</li>
-                        </ul>
-                        <p>The goal is to recognize that everyone contributes to community wellbeing in different ways, and the assessment system should reflect this diversity.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact CTA -->
-            <div class="contact-cta">
-                <h3>Have More Questions?</h3>
-                <p>We're always happy to discuss these frameworks and answer additional questions.</p>
-                <a href="mailto:Duke.T.James@gmail.com" class="btn">Contact Duke Johnson</a>
-                <a href="https://www.reddit.com/r/EconomicIdeas/" target="_blank" class="btn">Join Discussion Forum</a>
-            </div>
         </div>
     </main>
 
-    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
-
-    <script>
-        // FAQ toggle functionality
-        function toggleFAQ(button) {
-            const answer = button.nextElementSibling;
-            const isActive = button.classList.contains('active');
-            
-            // If this FAQ is not active, close all others in the same section first
-            if (!isActive) {
-                const section = button.closest('.faq-section');
-                section.querySelectorAll('.faq-question').forEach(q => {
-                    q.classList.remove('active');
-                    q.nextElementSibling.classList.remove('active');
-                });
-                
-                // Then open this one
-                button.classList.add('active');
-                answer.classList.add('active');
-                
-                // Scroll to the question for better positioning
-                setTimeout(() => {
-                    const headerHeight = document.querySelector('header').offsetHeight;
-                    const targetPosition = button.offsetTop - headerHeight - 20;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }, 100);
-            } else {
-                // If clicking the same question, just close it
-                button.classList.remove('active');
-                answer.classList.remove('active');
-            }
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const target = document.getElementById(targetId);
-                if (target) {
-                    const headerHeight = document.querySelector('header').offsetHeight;
-                    const targetPosition = target.offsetTop - headerHeight - 20;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Back to top button
-        function scrollToTop() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-
-        window.addEventListener('scroll', () => {
-            const backToTop = document.getElementById('backToTop');
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-    </script>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Duke Johnson & Claude (Anthropic). Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: #1a3d8f;">Creative Commons Attribution 4.0</a></p>
+                <p style="margin-top: 1rem;">
+                    <a href="../" style="color: #1a3d8f; margin: 0 1rem;">Home</a> |
+                    <a href="../#papers" style="color: #1a3d8f; margin: 0 1rem;">Papers</a> |
+                    <a href="./" style="color: #1a3d8f; margin: 0 1rem;">Wiki</a> |
+                    <a href="../#about" style="color: #1a3d8f; margin: 0 1rem;">Contact</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
