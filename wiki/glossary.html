@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glossary - Better To Best Research Hub</title>
-    <meta name="description" content="Comprehensive glossary of terms for Creative Currency Octaves, Public Trust Housing, Social Zone Harmonization, and related economic concepts.">
+    <meta name="description" content="Comprehensive glossary of terms for Creative Currency Octaves, Public Trust Housing, Social Zone Harmonization, Citizen Internet Portal, and related economic concepts.">
     
     <style>
         * {
@@ -13,11 +13,26 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #1e3a8a;
+            --accent-color: #2563eb;
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --border-color: #e2e8f0;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #0f172a;
-            background: #ffffff;
+            color: var(--text-primary);
+            background: var(--background);
+            transition: all 0.3s ease;
         }
 
         .container {
@@ -28,8 +43,8 @@
 
         /* Header */
         header {
-            background: #f8fafc;
-            border-bottom: 1px solid #e2e8f0;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border-color);
             padding: 1rem 0;
             position: sticky;
             top: 0;
@@ -47,7 +62,7 @@
         .logo {
             font-size: 1.25rem;
             font-weight: 700;
-            color: #1a3d8f;
+            color: var(--primary-color);
             text-decoration: none;
         }
 
@@ -56,17 +71,17 @@
             gap: 0.5rem;
             align-items: center;
             font-size: 0.9rem;
-            color: #475569;
+            color: var(--text-secondary);
         }
 
         .breadcrumb a {
-            color: #1a3d8f;
+            color: var(--primary-color);
             text-decoration: none;
         }
 
         /* Page header */
         .page-header {
-            background: linear-gradient(135deg, #5a6fd8 0%, #6b4298 100%);
+            background: var(--gradient);
             color: white;
             padding: 3rem 0;
             text-align: center;
@@ -85,26 +100,97 @@
             margin: 0 auto;
         }
 
-        /* Search section */
+        /* Search and filter */
         .search-section {
-            background: #f8fafc;
+            background: var(--surface);
             padding: 2rem 0;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .search-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
         }
 
         .search-input {
-            width: 100%;
-            max-width: 500px;
+            flex: 1;
+            min-width: 250px;
             padding: 0.75rem 1rem;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--border-color);
             border-radius: 0.5rem;
+            background: var(--background);
+            color: var(--text-primary);
             font-size: 0.9rem;
         }
 
         .search-input:focus {
             outline: none;
-            border-color: #1a3d8f;
-            box-shadow: 0 0 0 3px rgba(26, 61, 143, 0.1);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background: var(--background);
+            border: 1px solid var(--border-color);
+            border-radius: 2rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Quick Links Section */
+        .quick-links {
+            background: var(--surface);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .quick-links h3 {
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .quick-link-item {
+            padding: 0.75rem 1rem;
+            background: var(--background);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .quick-link-item:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
         }
 
         /* Main content */
@@ -118,8 +204,8 @@
         }
 
         .term-card {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
             border-radius: 0.75rem;
             padding: 1.5rem;
             transition: all 0.3s ease;
@@ -135,54 +221,90 @@
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 1rem;
-            gap: 1rem;
         }
 
         .term-title {
             font-size: 1.25rem;
             font-weight: 700;
-            color: #0f172a;
+            color: var(--text-primary);
             margin-bottom: 0.25rem;
         }
 
         .term-category {
-            background: #1a3d8f;
+            background: var(--primary-color);
             color: white;
             padding: 0.25rem 0.75rem;
             border-radius: 1rem;
             font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
-            white-space: nowrap;
         }
 
         .term-pronunciation {
             font-size: 0.9rem;
-            color: #475569;
+            color: var(--text-secondary);
             font-style: italic;
             margin-bottom: 0.5rem;
         }
 
         .term-definition {
-            color: #475569;
+            color: var(--text-secondary);
             line-height: 1.7;
             margin-bottom: 1rem;
         }
 
         .term-example {
-            background: rgba(26, 61, 143, 0.1);
-            border-left: 4px solid #1a3d8f;
+            background: rgba(30, 64, 175, 0.1);
+            border-left: 4px solid var(--primary-color);
             padding: 1rem;
             margin: 1rem 0;
             border-radius: 0.5rem;
         }
 
         .term-example h4 {
-            color: #0f172a;
+            color: var(--text-primary);
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-secondary);
+        }
+
+        .no-results h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
         }
 
         @media (max-width: 768px) {
@@ -190,10 +312,23 @@
                 font-size: 1.75rem;
             }
 
+            .search-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-input {
+                min-width: auto;
+            }
+
             .term-header {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 0.5rem;
+            }
+
+            .links-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -206,7 +341,7 @@
                 <nav class="breadcrumb">
                     <a href="../">Home</a>
                     <span>/</span>
-                    <a href="./">Wiki</a>
+                    <a href="../wiki/">Wiki</a>
                     <span>/</span>
                     <span>Glossary</span>
                 </nav>
@@ -217,13 +352,55 @@
     <div class="page-header">
         <div class="container">
             <h1 class="page-title">Research Glossary</h1>
-            <p class="page-subtitle">Comprehensive definitions for Creative Currency Octaves, Public Trust Housing, and related economic concepts</p>
+            <p class="page-subtitle">Comprehensive definitions for Creative Currency Octaves, Public Trust Housing, Social Zone Harmonization, Citizen Internet Portal, and related economic concepts</p>
         </div>
     </div>
 
     <div class="search-section">
         <div class="container">
-            <input type="text" class="search-input" id="searchInput" placeholder="Search terms..." onkeyup="searchTerms()">
+            <div class="search-controls">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search terms...">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="cco">CCO</button>
+                    <button class="filter-btn" data-category="pth">PTH</button>
+                    <button class="filter-btn" data-category="szh">SZH</button>
+                    <button class="filter-btn" data-category="cip">CIP</button>
+                    <button class="filter-btn" data-category="economics">Economics</button>
+                    <button class="filter-btn" data-category="governance">Governance</button>
+                </div>
+            </div>
+
+            <!-- Quick Reference Links -->
+            <div class="quick-links">
+                <h3>Quick Reference Links</h3>
+                <div class="links-grid">
+                    <a href="#basic-units" class="quick-link-item">
+                        <span>📝</span> Basic Units
+                    </a>
+                    <a href="#octave-levels" class="quick-link-item">
+                        <span>📈</span> Octave Levels
+                    </a>
+                    <a href="#multiplier-rates" class="quick-link-item">
+                        <span>✖️</span> Multiplier Rates
+                    </a>
+                    <a href="#creative-collectives" class="quick-link-item">
+                        <span>🎨</span> Creative Collectives
+                    </a>
+                    <a href="#pth" class="quick-link-item">
+                        <span>🏠</span> Public Trust Housing
+                    </a>
+                    <a href="#welfare-cliffs" class="quick-link-item">
+                        <span>📉</span> Welfare Cliffs
+                    </a>
+                    <a href="#conversion-system" class="quick-link-item">
+                        <span>🔄</span> Conversion System
+                    </a>
+                    <a href="#szh" class="quick-link-item">
+                        <span>🌐</span> Social Zone Harmonization
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -231,24 +408,8 @@
         <div class="container">
             <div class="glossary-grid" id="glossaryGrid">
                 
-                <!-- Acre Equity -->
-                <div class="term-card" id="acre-equity">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Acre Equity</div>
-                            <div class="term-pronunciation">AY-kur EK-wi-tee</div>
-                        </div>
-                        <div class="term-category">PTH</div>
-                    </div>
-                    <div class="term-definition">A concept within the Public Trust Foundation (PTF) system that measures and distributes value based on land stewardship and productive use. The term was introduced by NotebookLM during analysis of PTF concepts, with Claude subsequently generating proposed metrics for implementation.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>The Riverside Community's Acre Equity system recognizes both the organic farmers who maintain soil health and the community garden coordinators who maximize productive food output.</p>
-                    </div>
-                </div>
-
                 <!-- Basic Units -->
-                <div class="term-card" id="basic-units">
+                <div class="term-card" data-category="cco" id="basic-units">
                     <div class="term-header">
                         <div>
                             <div class="term-title">Basic Units</div>
@@ -256,127 +417,19 @@
                         </div>
                         <div class="term-category">CCO</div>
                     </div>
-                    <div class="term-definition">The foundational currency units in the Creative Currency Octaves system. Basic units are distributed universally to all community members, pegged 1:1 to the primary currency, but restricted to essential expenditures (housing, food, healthcare, education, transportation). They expire at the end of each distribution cycle to prevent accumulation.</div>
+                    <div class="term-definition">The foundational currency units in the Creative Currency Octaves system. Basic units are distributed universally to all community members, pegged 1:1 to the primary currency, but restricted to essential expenditures (housing, food, healthcare, education, transportation). They expire at the end of each distribution cycle to prevent accumulation and maintain economic flow.</div>
                     <div class="term-example">
                         <h4>Example:</h4>
                         <p>Sarah receives 1,000 basic units monthly. She can use these for groceries, rent, and medical expenses, but not for luxury items. Any unused basic units expire at month's end.</p>
                     </div>
-                </div>
-
-                <!-- Bias Prevention -->
-                <div class="term-card" id="bias-prevention">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Bias Prevention</div>
-                            <div class="term-pronunciation">BY-uhs pri-VEN-shuhn</div>
-                        </div>
-                        <div class="term-category">Governance</div>
-                    </div>
-                    <div class="term-definition">Systematic safeguards within community assessment processes designed to minimize discrimination, favoritism, cultural bias, and subjective prejudice in merit recognition. Includes diverse evaluation panels, algorithmic bias detection, transparency requirements, appeal processes, and regular system auditing.</div>
                     <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Bias prevention measures include rotating assessment panels, blind evaluation components, statistical bias monitoring, and community advocates to ensure fair treatment across all demographic groups.</p>
-                    </div>
-                </div>
-
-                <!-- Citizen Internet Portal -->
-                <div class="term-card" id="citizen-internet-portal">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Citizen Internet Portal (CIP)</div>
-                            <div class="term-pronunciation">SIT-uh-zuhn IN-tur-net POR-tuhl</div>
-                        </div>
-                        <div class="term-category">CIP</div>
-                    </div>
-                    <div class="term-definition">Digital infrastructure platform that enables democratic participation, transparent governance, and community-controlled economic systems. CIP facilitates CCO operations, PTH governance, community assessment, and civic engagement through secure, user-controlled technology with privacy-by-design principles.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Through CIP, residents access their basic units, participate in community votes, view transparent budgets, engage in assessment processes, and coordinate community activities all through one integrated platform.</p>
-                    </div>
-                </div>
-
-                <!-- Collective Wealth Building -->
-                <div class="term-card" id="collective-wealth-building">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Collective Wealth Building</div>
-                            <div class="term-pronunciation">kuh-LEK-tiv WELTH BIL-ding</div>
-                        </div>
-                        <div class="term-category">PTH</div>
-                    </div>
-                    <div class="term-definition">The systematic creation and accumulation of shared assets and economic value within a community rather than individual wealth extraction. PTH enables collective wealth building through shared ownership, community enterprises, cooperative development, and reinvestment of economic gains into community assets.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Instead of individual landlords extracting rent profits, PTH communities reinvest surpluses into improved facilities, community businesses, and resident services, building collective wealth that benefits everyone.</p>
-                    </div>
-                </div>
-
-                <!-- Community Assessment -->
-                <div class="term-card" id="community-assessment">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Community Assessment</div>
-                            <div class="term-pronunciation">kuh-MYOO-nuh-tee uh-SES-muhnt</div>
-                        </div>
-                        <div class="term-category">Governance</div>
-                    </div>
-                    <div class="term-definition">The systematic evaluation process for determining octave levels and personal multiplier rates through transparent, bias-resistant mechanisms. Combines objective metrics with community feedback, peer review, and democratic input while implementing safeguards against discrimination.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>The Northside CCO community uses quarterly assessment circles where residents evaluate contributions across multiple dimensions, with algorithmic bias detection and appeal processes ensuring fairness.</p>
-                    </div>
-                </div>
-
-                <!-- Compassionate Meritocracy -->
-                <div class="term-card" id="compassionate-meritocracy">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Compassionate Meritocracy</div>
-                            <div class="term-pronunciation">kuhm-PASH-uh-nit mer-i-TOK-ruh-see</div>
-                        </div>
-                        <div class="term-category">Governance</div>
-                    </div>
-                    <div class="term-definition">A governance philosophy (also called Compassionism) that recognizes merit and achievement while ensuring basic dignity and opportunity for all. Unlike harsh meritocracy that allows failure to result in destitution, compassionate meritocracy provides universal basic security while still rewarding excellence and contribution.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Compassionate meritocracy ensures everyone has housing, healthcare, and education, while still recognizing and rewarding those who contribute exceptional value to their communities.</p>
-                    </div>
-                </div>
-
-                <!-- Conversion Capacity -->
-                <div class="term-card" id="conversion-capacity">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Conversion Capacity</div>
-                            <div class="term-pronunciation">kuhn-VUR-zhuhn kuh-PAS-uh-tee</div>
-                        </div>
-                        <div class="term-category">CCO</div>
-                    </div>
-                    <div class="term-definition">The maximum number of basic units an individual can convert to unrestricted currency within a given time period, determined by their octave level. Capacity increases exponentially with octave advancement (doubling at each level), creating strong incentives for sustained community contribution.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Someone at Octave 2 has a conversion capacity of 2,000 basic units monthly, while Octave 4 provides 8,000 unit capacity, rewarding consistent long-term community engagement.</p>
-                    </div>
-                </div>
-
-                <!-- Conversion System -->
-                <div class="term-card" id="conversion-system">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Conversion System</div>
-                            <div class="term-pronunciation">kuhn-VUR-zhuhn SIS-tuhm</div>
-                        </div>
-                        <div class="term-category">CCO</div>
-                    </div>
-                    <div class="term-definition">The mechanism by which community members convert expired basic units into unrestricted primary currency through productive activities. Conversion rates depend on both octave level (capacity) and personal multiplier rates (quality). Activities include essential services, creative work, skill development, and community building.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Marcus, at Octave 3 with a 4x multiplier, can convert up to 4,000 basic units monthly by teaching guitar lessons, participating in community gardens, and mentoring youth.</p>
+                        <h4>Implementation:</h4>
+                        <p>Basic units can be distributed digitally for debit card use, as well as printed at ATMs as receipt-paper currency with QR scan codes for cash transactions.</p>
                     </div>
                 </div>
 
                 <!-- Creative Currency Octaves -->
-                <div class="term-card" id="creative-currency-octaves">
+                <div class="term-card" data-category="cco">
                     <div class="term-header">
                         <div>
                             <div class="term-title">Creative Currency Octaves (CCO)</div>
@@ -384,143 +437,35 @@
                         </div>
                         <div class="term-category">CCO</div>
                     </div>
-                    <div class="term-definition">A dual-currency economic system that provides universal basic income through restricted 'basic units' while maintaining strong work incentives through a productive conversion system. Named for the octave-like doubling pattern of conversion capacities across advancement levels. CCO addresses welfare cliff problems by never reducing benefits while rewarding productive contribution.</div>
+                    <div class="term-definition">A dual-currency economic system that provides universal basic income through restricted 'basic units' while maintaining strong work incentives through a productive conversion system. Named for the octave-like doubling pattern of conversion capacities across advancement levels. CCO addresses welfare cliff problems by never reducing benefits while rewarding productive contribution through enhanced conversion opportunities.</div>
                     <div class="term-example">
                         <h4>Example:</h4>
                         <p>The Riverside Community implemented CCO, providing every resident with basic units for essentials while creating conversion opportunities through community service, artistic creation, and skill development.</p>
                     </div>
                 </div>
 
-                <!-- Cultural Value Integration -->
-                <div class="term-card" id="cultural-value-integration">
+                <!-- Creative Collectives -->
+                <div class="term-card" data-category="cco" id="creative-collectives">
                     <div class="term-header">
                         <div>
-                            <div class="term-title">Cultural Value Integration</div>
-                            <div class="term-pronunciation">KUL-chuhr-uhl VAL-yoo in-tuh-GRAY-shuhn</div>
+                            <div class="term-title">Creative Collectives</div>
+                            <div class="term-pronunciation">kree-AY-tiv kuh-LEK-tivs</div>
                         </div>
                         <div class="term-category">CCO</div>
                     </div>
-                    <div class="term-definition">The recognition and economic incorporation of artistic, creative, and cultural contributions within the CCO system. Unlike traditional economies that often undervalue cultural work, CCO explicitly rewards artistic excellence, cultural preservation, creative innovation, and community cultural development through enhanced multiplier rates.</div>
+                    <div class="term-definition">Community-organized groups of artists, creators, and cultural contributors within the CCO system who collaborate on projects, share resources, and collectively advance through octave levels. Creative Collectives receive enhanced recognition and multiplier rates for collaborative artistic and cultural work that benefits the broader community.</div>
                     <div class="term-example">
                         <h4>Example:</h4>
-                        <p>The local poetry circle, traditional craftsmen, and community theater group all receive high multiplier rates for their cultural contributions, making artistic work economically viable within the CCO framework.</p>
+                        <p>The Northside Creative Collective includes musicians, visual artists, writers, and craftspeople who collaborate on community festivals, public art installations, and cultural education programs, earning enhanced conversion rates for their collective contributions.</p>
                     </div>
-                </div>
-
-                <!-- Democratic Governance -->
-                <div class="term-card" id="democratic-governance">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Democratic Governance</div>
-                            <div class="term-pronunciation">dem-uh-KRAT-ik GUV-ur-nuhnts</div>
-                        </div>
-                        <div class="term-category">Governance</div>
-                    </div>
-                    <div class="term-definition">Participatory decision-making structures within PTH communities where residents have meaningful input into community policies, resource allocation, development priorities, and conflict resolution. Democratic governance ensures community self-determination while maintaining accountability and inclusive representation.</div>
                     <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>The Westside PTH community holds monthly assemblies where residents vote on budget priorities, housing policies, and community rules, with working groups handling detailed implementation.</p>
-                    </div>
-                </div>
-
-                <!-- Dual-Tier Incentives -->
-                <div class="term-card" id="dual-tier-incentives">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Dual-Tier Incentives</div>
-                            <div class="term-pronunciation">DOO-uhl TIER in-SEN-tivz</div>
-                        </div>
-                        <div class="term-category">CCO</div>
-                    </div>
-                    <div class="term-definition">The sophisticated two-dimensional recognition system in CCO that combines volumetric capacity expansion (octave levels) with qualitative conversion enhancement (personal multiplier rates). This design rewards both consistent participation and exceptional quality, creating incentives for sustained community engagement while recognizing diverse forms of excellence.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>The dual-tier system allows both steady contributors (high octave, moderate multiplier) and exceptional artists (moderate octave, high multiplier) to achieve significant economic success through different pathways.</p>
-                    </div>
-                </div>
-
-                <!-- Essential Expenditures -->
-                <div class="term-card" id="essential-expenditures">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Essential Expenditures</div>
-                            <div class="term-pronunciation">uh-SEN-shuhl ik-SPEN-duh-churz</div>
-                        </div>
-                        <div class="term-category">CCO</div>
-                    </div>
-                    <div class="term-definition">Categories of spending where basic units can be used, typically including housing, food, healthcare, education, transportation, basic utilities, and other necessities for dignified living. The definition is designed to cover fundamental needs while excluding luxury or speculative purchases.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Essential expenditures include rent, groceries, medical care, school supplies, and public transit, but exclude luxury cars, jewelry, or speculative investments.</p>
-                    </div>
-                </div>
-
-                <!-- Expiration Cycle -->
-                <div class="term-card" id="expiration-cycle">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Expiration Cycle</div>
-                            <div class="term-pronunciation">ek-spuh-RAY-shuhn SY-kuhl</div>
-                        </div>
-                        <div class="term-category">CCO</div>
-                    </div>
-                    <div class="term-definition">The time period after which unused basic units expire and are removed from circulation. Typically monthly or quarterly, expiration prevents hoarding, maintains economic flow, ensures currency reflects current productive capacity, and prevents accumulation-based inequality within the basic units system.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Basic units expire monthly, encouraging regular economic participation and preventing individuals from accumulating large stores of restricted currency that could distort the system.</p>
-                    </div>
-                </div>
-
-                <!-- Housing Equity Accounts -->
-                <div class="term-card" id="housing-equity-accounts">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Housing Equity Accounts</div>
-                            <div class="term-pronunciation">HOW-zing EK-wi-tee uh-KOWTS</div>
-                        </div>
-                        <div class="term-category">PTH</div>
-                    </div>
-                    <div class="term-definition">Individual accounts that track each PTH resident's accumulated equity stake in the community's collective assets. Unlike traditional homeownership where equity is tied to specific property values, Housing Equity Accounts represent shared ownership in the entire community's growing wealth.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>After 5 years in PTH, Carlos has built $45,000 in his Housing Equity Account through rent payments and community contributions, giving him a proportional stake in the community's $12 million in collective assets.</p>
-                    </div>
-                </div>
-
-                <!-- Incentive Compatibility -->
-                <div class="term-card" id="incentive-compatibility">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Incentive Compatibility</div>
-                            <div class="term-pronunciation">in-SEN-tiv kuhm-PAT-uh-bil-uh-tee</div>
-                        </div>
-                        <div class="term-category">Economics</div>
-                    </div>
-                    <div class="term-definition">Economic design principle where individual rational behavior aligns with desired collective outcomes. CCO achieves incentive compatibility by making productive contribution the path to greater economic opportunity, ensuring that pursuing personal benefit also benefits the community.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>In CCO, the best way to maximize personal income is through high-quality community contribution, creating incentive compatibility between individual success and collective wellbeing.</p>
-                    </div>
-                </div>
-
-                <!-- Merit Recognition -->
-                <div class="term-card" id="merit-recognition">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Merit Recognition</div>
-                            <div class="term-pronunciation">MER-it rek-uhg-NISH-uhn</div>
-                        </div>
-                        <div class="term-category">Governance</div>
-                    </div>
-                    <div class="term-definition">The systematic acknowledgment and reward of valuable contributions to community wellbeing across diverse domains including essential services, creative work, innovation, mentorship, cultural preservation, and community building. Merit recognition in CCO avoids traditional meritocracy problems by recognizing multiple forms of value.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Merit recognition equally values the night-shift janitor maintaining community health, the teacher developing innovative curricula, and the artist creating inspiring murals - all contributing essential value in different ways.</p>
+                        <h4>Key Functions:</h4>
+                        <p>Collaborative project management, resource sharing, peer mentorship, community cultural programming, and collective octave advancement through group achievement recognition.</p>
                     </div>
                 </div>
 
                 <!-- Octave Levels -->
-                <div class="term-card" id="octave-levels">
+                <div class="term-card" data-category="cco" id="octave-levels">
                     <div class="term-header">
                         <div>
                             <div class="term-title">Octave Levels</div>
@@ -528,7 +473,7 @@
                         </div>
                         <div class="term-category">CCO</div>
                     </div>
-                    <div class="term-definition">Progressive advancement tiers in the CCO system that determine conversion capacity levels. Each octave level doubles the previous level's conversion capacity (Base_Capacity × 2^n). Advancement is based on consistency of contribution, community engagement, skill development, and long-term commitment. Named after musical octaves due to the doubling frequency pattern.</div>
+                    <div class="term-definition">Progressive advancement tiers in the CCO system that determine conversion capacity levels. Each octave level doubles the previous level's conversion capacity (Base_Capacity × 2^n). Advancement is based on consistency of contribution, community engagement, skill development, and long-term commitment to community wellbeing. Named after musical octaves due to the doubling frequency pattern.</div>
                     <div class="term-example">
                         <h4>Example:</h4>
                         <p>Octave 1 allows 1,000 basic unit conversions monthly, Octave 2 allows 2,000, Octave 3 allows 4,000, etc. Advanced practitioners might reach Octave 6+ with conversion capacities of 32,000+ basic units monthly.</p>
@@ -536,7 +481,7 @@
                 </div>
 
                 <!-- Personal Multiplier Rates -->
-                <div class="term-card" id="personal-multiplier-rates">
+                <div class="term-card" data-category="cco" id="multiplier-rates">
                     <div class="term-header">
                         <div>
                             <div class="term-title">Personal Multiplier Rates</div>
@@ -544,47 +489,15 @@
                         </div>
                         <div class="term-category">CCO</div>
                     </div>
-                    <div class="term-definition">Quality-based conversion multipliers ranging from 1x to 14x+ that determine the value of each converted basic unit. Higher multipliers are earned through exceptional quality, innovation, cultural contribution, and positive community impact. Combined with octave levels, they create the dual-tier incentive system.</div>
+                    <div class="term-definition">Quality-based conversion multipliers ranging from 1x to 14x+ that determine the value of each converted basic unit. Higher multipliers are earned through exceptional quality, innovation, cultural contribution, and positive community impact. Combined with octave levels, they create the dual-tier incentive system that rewards both consistency and excellence.</div>
                     <div class="term-example">
                         <h4>Example:</h4>
                         <p>Lisa has a 6x multiplier for her innovative teaching methods and community leadership. When she converts basic units through educational activities, each unit becomes worth 6x the base value.</p>
                     </div>
                 </div>
 
-                <!-- Post-Scarcity Economics -->
-                <div class="term-card" id="post-scarcity-economics">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Post-Scarcity Economics</div>
-                            <div class="term-pronunciation">POHST-SKAR-suh-tee ek-uh-NOM-iks</div>
-                        </div>
-                        <div class="term-category">Economics</div>
-                    </div>
-                    <div class="term-definition">Economic frameworks designed for conditions where basic human needs can be met abundantly for all, allowing focus to shift from survival to creativity, relationships, and self-actualization. CCO and PTH represent transition mechanisms toward post-scarcity by ensuring basic security while incentivizing innovation.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>As automation reduces the cost of basic goods, post-scarcity economics focuses on how to distribute abundance fairly while maintaining incentives for human flourishing and continued innovation.</p>
-                    </div>
-                </div>
-
-                <!-- Productive Activities -->
-                <div class="term-card" id="productive-activities">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Productive Activities</div>
-                            <div class="term-pronunciation">pruh-DUK-tiv ak-TIV-uh-teez</div>
-                        </div>
-                        <div class="term-category">CCO</div>
-                    </div>
-                    <div class="term-definition">Diverse forms of valuable contribution that enable basic unit conversion, including essential services, creative work, education, healthcare, childcare, eldercare, environmental stewardship, skill development, community building, cultural activities, and innovation. The definition is intentionally broad to recognize multiple forms of social value creation.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Productive activities range from traditional employment to community gardening, from artistic creation to peer tutoring, from childcare to organizing neighborhood events - all recognized as valuable community contributions.</p>
-                    </div>
-                </div>
-
                 <!-- Public Trust Housing -->
-                <div class="term-card" id="public-trust-housing">
+                <div class="term-card" data-category="pth" id="pth">
                     <div class="term-header">
                         <div>
                             <div class="term-title">Public Trust Housing (PTH)</div>
@@ -592,63 +505,19 @@
                         </div>
                         <div class="term-category">PTH</div>
                     </div>
-                    <div class="term-definition">A community-owned housing model that creates pathways for collective wealth building while providing stable, affordable housing. Properties are held in public trust and owned collectively by residents through democratic governance structures. PTH integrates housing with services like childcare, healthcare, education, and skill development.</div>
+                    <div class="term-definition">A community-owned housing model that creates pathways for collective wealth building while providing stable, affordable housing. Properties are held in public trust and owned collectively by residents through democratic governance structures. PTH integrates housing with services like childcare, healthcare, education, and skill development, while residents build equity in collective assets rather than individual property.</div>
                     <div class="term-example">
                         <h4>Example:</h4>
                         <p>The Riverside Trust Housing community of 200 units operates democratically, with residents voting on improvements and sharing in the community's growing asset value through their Housing Equity Accounts.</p>
                     </div>
-                </div>
-
-                <!-- Restricted Currency -->
-                <div class="term-card" id="restricted-currency">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Restricted Currency</div>
-                            <div class="term-pronunciation">ri-STRIK-tuhd KUR-uhn-see</div>
-                        </div>
-                        <div class="term-category">CCO</div>
-                    </div>
-                    <div class="term-definition">Currency units that can only be spent on predetermined categories of essential goods and services such as housing, food, healthcare, education, and transportation. In CCO, basic units function as restricted currency designed to mitigate inflationary pressure in non-essential markets while ensuring universal access to necessities.</div>
                     <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Restricted currency prevents housing speculation and luxury inflation while ensuring everyone can afford basic needs. It's like food stamps, but expanded to cover all essential categories of spending.</p>
-                    </div>
-                </div>
-
-                <!-- Social Zone Harmonization -->
-                <div class="term-card" id="social-zone-harmonization">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Social Zone Harmonization (SZH)</div>
-                            <div class="term-pronunciation">SOH-shuhl ZOHN har-muh-nuh-ZAY-shuhn</div>
-                        </div>
-                        <div class="term-category">SZH</div>
-                    </div>
-                    <div class="term-definition">A comprehensive framework for organizing communities and regions to optimize social, economic, and environmental outcomes through coordinated planning and resource allocation. SZH works to balance diverse community needs while maintaining local autonomy and democratic governance through voluntary inter-municipal cooperation.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>The Greater Metro SZH initiative coordinates transportation, shared services, and environmental management across twelve municipalities while preserving each community's local character and decision-making authority.</p>
-                    </div>
-                </div>
-
-                <!-- Universal Distribution -->
-                <div class="term-card" id="universal-distribution">
-                    <div class="term-header">
-                        <div>
-                            <div class="term-title">Universal Distribution</div>
-                            <div class="term-pronunciation">yoo-nuh-VUR-suhl dis-truh-BYOO-shuhn</div>
-                        </div>
-                        <div class="term-category">CCO</div>
-                    </div>
-                    <div class="term-definition">The provision of basic units to all community members regardless of employment status, income level, family composition, or other qualifying factors. Universal distribution eliminates administrative complexity, removes stigma, and ensures no one falls through bureaucratic cracks.</div>
-                    <div class="term-example">
-                        <h4>Example:</h4>
-                        <p>Every registered community member receives the same basic unit allocation - students, retirees, caregivers, employees, and entrepreneurs all receive equal access to essential currency.</p>
+                        <h4>Market Integration:</h4>
+                        <p>PTH complements rather than replaces the private real estate market, offering an additional housing option alongside traditional homeownership and rental markets.</p>
                     </div>
                 </div>
 
                 <!-- Welfare Cliffs -->
-                <div class="term-card" id="welfare-cliffs">
+                <div class="term-card" data-category="economics" id="welfare-cliffs">
                     <div class="term-header">
                         <div>
                             <div class="term-title">Welfare Cliffs</div>
@@ -663,44 +532,166 @@
                     </div>
                 </div>
 
-                <!-- Zone Classifications -->
-                <div class="term-card" id="zone-classifications">
+                <!-- Conversion System -->
+                <div class="term-card" data-category="cco" id="conversion-system">
                     <div class="term-header">
                         <div>
-                            <div class="term-title">Zone Classifications</div>
-                            <div class="term-pronunciation">ZOHN klas-uh-fuh-KAY-shuhns</div>
+                            <div class="term-title">Conversion System</div>
+                            <div class="term-pronunciation">kuhn-VUR-zhuhn SIS-tuhm</div>
                         </div>
-                        <div class="term-category">SZH</div>
+                        <div class="term-category">CCO</div>
                     </div>
-                    <div class="term-definition">Different zone types within Social Zone Harmonization based on community characteristics and development priorities. Classifications include Urban Innovation Zones (high-density technology/culture focus), Suburban Transition Zones (mixed-density residential/commercial), Rural Stewardship Zones (agriculture/conservation focus), and Special Purpose Zones (unique functions like education or cultural preservation).</div>
+                    <div class="term-definition">The mechanism by which community members convert expired basic units into unrestricted primary currency through productive activities. Conversion rates depend on both octave level (capacity) and personal multiplier rates (quality). Activities include essential services, creative work, skill development, community building, and cultural contribution.</div>
                     <div class="term-example">
                         <h4>Example:</h4>
-                        <p>The valley's SZH framework designates the downtown as an Urban Innovation Zone for tech startups, surrounding areas as Suburban Transition Zones for families, and the hillsides as Rural Stewardship Zones for sustainable agriculture.</p>
+                        <p>Marcus, at Octave 3 with a 4x multiplier, can convert up to 4,000 basic units monthly by teaching guitar lessons, participating in community gardens, and mentoring youth.</p>
                     </div>
                 </div>
 
+                <!-- Social Zone Harmonization -->
+                <div class="term-card" data-category="szh" id="szh">
+                    <div class="term-header">
+                        <div>
+                            <div class="term-title">Social Zone Harmonization (SZH)</div>
+                            <div class="term-pronunciation">SOH-shuhl ZOHN har-muh-nuh-ZAY-shuhn</div>
+                        </div>
+                        <div class="term-category">SZH</div>
+                    </div>
+                    <div class="term-definition">A comprehensive framework for organizing communities and regions to optimize social, economic, and environmental outcomes through coordinated planning and resource allocation. SZH works to balance diverse community needs while maintaining local autonomy and democratic governance through voluntary inter-municipal cooperation.</div>
+                    <div class="term-example">
+                        <h4>Example:</h4>
+                        <p>The Greater Metro SZH initiative coordinates transportation, shared services, and environmental management across twelve municipalities while preserving each community's local character and decision-making authority.</p>
+                    </div>
+                </div>
+
+                <!-- Citizen Internet Portal -->
+                <div class="term-card" data-category="cip">
+                    <div class="term-header">
+                        <div>
+                            <div class="term-title">Citizen Internet Portal (CIP)</div>
+                            <div class="term-pronunciation">SIT-uh-zuhn IN-tur-net POR-tuhl</div>
+                        </div>
+                        <div class="term-category">CIP</div>
+                    </div>
+                    <div class="term-definition">Digital infrastructure platform that enables democratic participation, transparent governance, and community-controlled economic systems. CIP facilitates CCO operations, PTH governance, community assessment, and civic engagement through secure, user-controlled technology with privacy-by-design principles.</div>
+                    <div class="term-example">
+                        <h4>Example:</h4>
+                        <p>Through CIP, residents access their basic units, participate in community votes, view transparent budgets, engage in assessment processes, and coordinate community activities all through one integrated platform.</p>
+                    </div>
+                </div>
+
+                <!-- Continue with more terms as needed... -->
+            </div>
+            
+            <div class="no-results" id="noResults" style="display: none;">
+                <h3>No terms found</h3>
+                <p>Try adjusting your search or filter criteria.</p>
             </div>
         </div>
     </main>
 
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+
     <script>
-        function searchTerms() {
-            const input = document.getElementById('searchInput');
-            const filter = input.value.toLowerCase();
-            const cards = document.getElementsByClassName('term-card');
-            
-            for (let i = 0; i < cards.length; i++) {
-                const title = cards[i].getElementsByClassName('term-title')[0];
-                const definition = cards[i].getElementsByClassName('term-definition')[0];
-                const txtValue = title.textContent + ' ' + definition.textContent;
-                
-                if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                    cards[i].style.display = "";
+        // Simple filtering functionality
+        function setupFilters() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const termCards = document.querySelectorAll('.term-card');
+            const searchInput = document.getElementById('searchInput');
+            const noResults = document.getElementById('noResults');
+            const glossaryGrid = document.getElementById('glossaryGrid');
+
+            // Filter by category
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const category = btn.dataset.category;
+                    filterTerms(category, searchInput.value.toLowerCase());
+                });
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', () => {
+                const activeBtn = document.querySelector('.filter-btn.active');
+                const category = activeBtn.dataset.category;
+                filterTerms(category, searchInput.value.toLowerCase());
+            });
+
+            function filterTerms(category, searchQuery) {
+                let visibleCount = 0;
+
+                termCards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+                    const cardText = card.textContent.toLowerCase();
+                    
+                    let showCard = true;
+
+                    // Filter by category
+                    if (category !== 'all' && cardCategory !== category) {
+                        showCard = false;
+                    }
+
+                    // Filter by search query
+                    if (searchQuery && !cardText.includes(searchQuery)) {
+                        showCard = false;
+                    }
+
+                    // Show/hide card
+                    if (showCard) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // Show/hide no results message
+                if (visibleCount === 0) {
+                    glossaryGrid.style.display = 'none';
+                    noResults.style.display = 'block';
                 } else {
-                    cards[i].style.display = "none";
+                    glossaryGrid.style.display = 'grid';
+                    noResults.style.display = 'none';
                 }
             }
         }
+
+        // Smooth scrolling for quick links
+        document.querySelectorAll('.quick-link-item').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to top
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        window.addEventListener('scroll', () => {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', () => {
+            setupFilters();
+        });
     </script>
 </body>
 </html>
