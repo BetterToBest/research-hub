@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki & Resources - Better To Best Research Hub</title>
     <meta name="description" content="Comprehensive wiki, glossary, and FAQ for Creative Currency Octaves, Public Trust Housing, and post-scarcity economics research.">
-    <meta name="keywords" content="wiki, glossary, FAQ, Creative Currency Octaves, Public Trust Housing, economics, research resources">
-    <meta name="author" content="Duke Johnson">
-    
-    <link rel="canonical" href="https://bettertobest.github.io/research-hub/wiki/">
     
     <style>
         * {
@@ -17,35 +13,11 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #3b82f6;
-            --background: #ffffff;
-            --surface: #f8fafc;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --border-color: #e2e8f0;
-            --success-color: #10b981;
-            --warning-color: #f59e0b;
-            --error-color: #ef4444;
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        [data-theme="dark"] {
-            --background: #0f172a;
-            --surface: #1e293b;
-            --text-primary: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --border-color: #334155;
-        }
-
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--background);
-            transition: all 0.3s ease;
+            color: #0f172a;
+            background: #ffffff;
         }
 
         .container {
@@ -56,19 +28,18 @@
 
         /* Header */
         header {
-            background: var(--surface);
-            border-bottom: 1px solid var(--border-color);
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            backdrop-filter: blur(10px);
         }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 0;
             flex-wrap: wrap;
             gap: 1rem;
         }
@@ -76,46 +47,30 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: #1a3d8f;
             text-decoration: none;
         }
 
-        nav ul {
+        nav {
             display: flex;
-            list-style: none;
-            gap: 2rem;
             align-items: center;
+            gap: 2rem;
         }
 
         nav a {
-            color: var(--text-secondary);
+            color: #475569;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
         nav a:hover, nav a.active {
-            color: var(--primary-color);
-        }
-
-        .theme-toggle {
-            background: none;
-            border: 1px solid var(--border-color);
-            border-radius: 0.5rem;
-            padding: 0.5rem;
-            cursor: pointer;
-            color: var(--text-secondary);
-            transition: all 0.3s ease;
-        }
-
-        .theme-toggle:hover {
-            color: var(--primary-color);
-            border-color: var(--primary-color);
+            color: #1a3d8f;
         }
 
         /* Hero Section */
         .hero {
-            background: var(--gradient);
+            background: linear-gradient(135deg, #5a6fd8 0%, #6b4298 100%);
             color: white;
             padding: 4rem 0;
             text-align: center;
@@ -125,7 +80,6 @@
             font-size: 3rem;
             font-weight: 800;
             margin-bottom: 1rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .hero p {
@@ -134,7 +88,7 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            opacity: 0.9;
+            opacity: 0.95;
         }
 
         /* Main Content */
@@ -150,11 +104,11 @@
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: var(--text-primary);
+            color: #0f172a;
         }
 
         .section p {
-            color: var(--text-secondary);
+            color: #475569;
             margin-bottom: 1.5rem;
             max-width: 70ch;
         }
@@ -168,8 +122,8 @@
         }
 
         .resource-card {
-            background: var(--surface);
-            border: 1px solid var(--border-color);
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
             border-radius: 1rem;
             padding: 2rem;
             transition: all 0.3s ease;
@@ -184,7 +138,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: var(--gradient);
+            background: linear-gradient(135deg, #5a6fd8 0%, #6b4298 100%);
         }
 
         .resource-card:hover {
@@ -203,7 +157,7 @@
             width: 3rem;
             height: 3rem;
             border-radius: 0.5rem;
-            background: var(--gradient);
+            background: linear-gradient(135deg, #5a6fd8 0%, #6b4298 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -214,17 +168,17 @@
         .card-title {
             font-size: 1.25rem;
             font-weight: 600;
-            color: var(--text-primary);
+            color: #0f172a;
         }
 
         .card-description {
-            color: var(--text-secondary);
+            color: #475569;
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
 
         .card-link {
-            color: var(--primary-color);
+            color: #1a3d8f;
             text-decoration: none;
             font-weight: 600;
             display: inline-flex;
@@ -236,16 +190,27 @@
             text-decoration: underline;
         }
 
+        .card-status {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: #fef3c7;
+            color: #92400e;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
         /* Quick Links */
         .quick-links {
-            background: var(--surface);
+            background: #f8fafc;
             border-radius: 1rem;
             padding: 2rem;
             margin: 2rem 0;
         }
 
         .quick-links h3 {
-            color: var(--text-primary);
+            color: #0f172a;
             margin-bottom: 1.5rem;
             font-size: 1.25rem;
         }
@@ -258,11 +223,11 @@
 
         .quick-link-item {
             padding: 0.75rem 1rem;
-            background: var(--background);
-            border: 1px solid var(--border-color);
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
             border-radius: 0.5rem;
             text-decoration: none;
-            color: var(--text-primary);
+            color: #0f172a;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
@@ -270,53 +235,24 @@
         }
 
         .quick-link-item:hover {
-            background: var(--primary-color);
+            background: #1a3d8f;
             color: white;
-            border-color: var(--primary-color);
+            border-color: #1a3d8f;
         }
 
         /* Footer */
         footer {
-            background: var(--surface);
-            border-top: 1px solid var(--border-color);
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
             padding: 3rem 0 1rem;
             margin-top: 4rem;
         }
 
         .footer-content {
             text-align: center;
-            color: var(--text-secondary);
+            color: #475569;
         }
 
-        /* Back to Top Button */
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 3rem;
-            height: 3rem;
-            cursor: pointer;
-            font-size: 1.25rem;
-            transition: all 0.3s ease;
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        /* Mobile responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -326,14 +262,9 @@
                 grid-template-columns: 1fr;
             }
 
-            nav ul {
+            nav {
                 flex-direction: column;
                 gap: 1rem;
-            }
-
-            .header-content {
-                flex-direction: column;
-                align-items: stretch;
             }
         }
     </style>
@@ -344,16 +275,11 @@
             <div class="header-content">
                 <a href="../" class="logo">Better To Best Research Hub</a>
                 <nav>
-                    <ul>
-                        <li><a href="../">Home</a></li>
-                        <li><a href="../#papers">Research Papers</a></li>
-                        <li><a href="./" class="active">Wiki & FAQ</a></li>
-                        <li><a href="../#about">About / Contact</a></li>
-                    </ul>
+                    <a href="../">Home</a>
+                    <a href="../#papers">Research Papers</a>
+                    <a href="./" class="active">Wiki & FAQ</a>
+                    <a href="../#about">About / Contact</a>
                 </nav>
-                <button class="theme-toggle" id="themeToggle" title="Toggle theme">
-                    <span id="themeIcon">🌙</span>
-                </button>
             </div>
         </div>
     </header>
@@ -375,7 +301,83 @@
                 <div class="resource-grid">
                     <div class="resource-card">
                         <div class="card-header">
-                            <div class="card-icon">📚</div>
+                            <div class="card-icon">🤝</div>
+                            <div class="card-title">Collaboration Portal</div>
+                        </div>
+                        <div class="card-description">
+                            Information for researchers, communities, and policymakers interested in collaboration opportunities.
+                        </div>
+                        <a href="../#contact" class="card-link">
+                            Contact Us →
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- External Resources -->
+            <section class="section">
+                <h2>External Links & Resources</h2>
+                <p>Additional resources and related projects.</p>
+                
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📖</div>
+                            <div class="card-title">Better To Best Book</div>
+                        </div>
+                        <div class="card-description">
+                            The original book "Better To Best: Novel Ideas to Improve Governments, Economies, and Societies" by Duke Johnson.
+                        </div>
+                        <a href="https://bettertobest.wixsite.com/book" target="_blank" class="card-link">
+                            View Book →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤲</div>
+                            <div class="card-title">Compassionate Meritocracy</div>
+                        </div>
+                        <div class="card-description">
+                            Learn about Compassionate Meritocracy (Compassionism) - the governance philosophy underlying CCO and PTH frameworks.
+                        </div>
+                        <a href="https://sites.google.com/view/compassionatemeritocracy/home" target="_blank" class="card-link">
+                            Learn More →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <div class="card-icon">📺</div>
+                            <div class="card-title">YouTube Channel</div>
+                        </div>
+                        <div class="card-description">
+                            Video explanations and discussions about CCO, PTH, and economic innovation on Duke Johnson's YouTube channel.
+                        </div>
+                        <a href="https://www.youtube.com/@AuthorDukeJohnson" target="_blank" class="card-link">
+                            Watch Videos →
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Duke Johnson & Claude (Anthropic). Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: #1a3d8f;">Creative Commons Attribution 4.0</a></p>
+                <p style="margin-top: 1rem;">
+                    <a href="../" style="color: #1a3d8f; margin: 0 1rem;">Home</a> |
+                    <a href="../#papers" style="color: #1a3d8f; margin: 0 1rem;">Papers</a> |
+                    <a href="./" style="color: #1a3d8f; margin: 0 1rem;">Wiki</a> |
+                    <a href="../#about" style="color: #1a3d8f; margin: 0 1rem;">Contact</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> class="card-icon">📚</div>
                             <div class="card-title">Comprehensive Glossary</div>
                         </div>
                         <div class="card-description">
@@ -407,21 +409,21 @@
                         <div class="card-description">
                             Step-by-step instructions for communities interested in implementing CCO and PTH systems, including pilot program design and best practices.
                         </div>
-                        <a href="./implementation-guide.html" class="card-link">
+                        <a href="https://claude.ai/public/artifacts/b96a0930-7992-4cb6-a8e1-c99a7c29c30a" target="_blank" class="card-link">
                             View Guide →
                         </a>
                     </div>
 
                     <div class="resource-card">
                         <div class="card-header">
-                            <div class="card-icon">📊</div>
-                            <div class="card-title">Technical Specifications</div>
+                            <div class="card-icon">📋</div>
+                            <div class="card-title">Hypothetical Plan</div>
                         </div>
                         <div class="card-description">
-                            Detailed technical documentation for developers and policymakers, including system architecture, API specifications, and integration protocols.
+                            Detailed hypothetical implementation plan for Compassionate Meritocracy including CCO and PTH deployment strategies.
                         </div>
-                        <a href="./technical-specs.html" class="card-link">
-                            View Specs →
+                        <a href="https://bettertobest.github.io/compassionate-meritocracy-plan/" target="_blank" class="card-link">
+                            View Plan →
                         </a>
                     </div>
 
@@ -429,13 +431,14 @@
                         <div class="card-header">
                             <div class="card-icon">🎓</div>
                             <div class="card-title">Educational Materials</div>
+                            <span class="card-status">Coming Soon</span>
                         </div>
                         <div class="card-description">
                             Presentations, infographics, and educational resources for teaching CCO and PTH concepts to diverse audiences.
                         </div>
-                        <a href="./education.html" class="card-link">
-                            Access Materials →
-                        </a>
+                        <span class="card-link" style="color: #94a3b8;">
+                            In Development
+                        </span>
                     </div>
 
                     <div class="resource-card">
@@ -446,7 +449,7 @@
                         <div class="card-description">
                             Join discussions with researchers, practitioners, and communities exploring economic innovation and policy implementation.
                         </div>
-                        <a href="https://www.reddit.com/r/EconomicIdeas/" class="card-link" target="_blank">
+                        <a href="https://www.reddit.com/r/EconomicIdeas/" target="_blank" class="card-link">
                             Join Discussion →
                         </a>
                     </div>
@@ -484,9 +487,9 @@
                 </div>
             </section>
 
-            <!-- Additional Resources -->
+            <!-- Research Tools -->
             <section class="section">
-                <h2>Research Tools & Citations</h2>
+                <h2>Research Tools & Resources</h2>
                 <p>Tools and resources for researchers and academics working with CCO and PTH frameworks.</p>
                 
                 <div class="resource-grid">
@@ -494,98 +497,30 @@
                         <div class="card-header">
                             <div class="card-icon">📖</div>
                             <div class="card-title">Citation Generator</div>
+                            <span class="card-status">Coming Soon</span>
                         </div>
                         <div class="card-description">
                             Generate properly formatted citations for all research papers in APA, MLA, Chicago, and BibTeX formats.
                         </div>
-                        <a href="./citations.html" class="card-link">
-                            Generate Citations →
-                        </a>
+                        <span class="card-link" style="color: #94a3b8;">
+                            In Development
+                        </span>
                     </div>
 
                     <div class="resource-card">
                         <div class="card-header">
                             <div class="card-icon">📈</div>
                             <div class="card-title">Data & Models</div>
+                            <span class="card-status">Coming Soon</span>
                         </div>
                         <div class="card-description">
                             Access economic models, simulation data, and analysis tools used in our research papers.
                         </div>
-                        <a href="./data-models.html" class="card-link">
-                            Access Data →
-                        </a>
+                        <span class="card-link" style="color: #94a3b8;">
+                            In Development
+                        </span>
                     </div>
 
                     <div class="resource-card">
                         <div class="card-header">
-                            <div class="card-icon">🤝</div>
-                            <div class="card-title">Collaboration Portal</div>
-                        </div>
-                        <div class="card-description">
-                            Information for researchers, communities, and policymakers interested in collaboration opportunities.
-                        </div>
-                        <a href="./collaboration.html" class="card-link">
-                            Learn More →
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Duke Johnson & Claude (Anthropic). Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: var(--primary-color);">Creative Commons Attribution 4.0</a></p>
-                <p style="margin-top: 1rem;">
-                    <a href="../" style="color: var(--primary-color); margin: 0 1rem;">Home</a> |
-                    <a href="../#papers" style="color: var(--primary-color); margin: 0 1rem;">Papers</a> |
-                    <a href="./" style="color: var(--primary-color); margin: 0 1rem;">Wiki</a> |
-                    <a href="../#about" style="color: var(--primary-color); margin: 0 1rem;">Contact</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
-
-    <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const body = document.body;
-
-        // Check for saved theme preference or default to light
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        body.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-
-        function updateThemeIcon(theme) {
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-        }
-
-        // Back to top button
-        function scrollToTop() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-
-        window.addEventListener('scroll', () => {
-            const backToTop = document.getElementById('backToTop');
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-    </script>
-</body>
-</html>
+                            <div
