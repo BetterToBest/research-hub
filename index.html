@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Better To Best Research Hub</title>
     <meta name="description" content="Open-access research on Creative Currency Octaves, Public Trust Housing, and post-scarcity economics">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bettertobest.github.io/research-hub/">
+    <meta property="og:title" content="Better To Best Research Hub">
+    <meta property="og:description" content="Open-access research on Creative Currency Octaves, Public Trust Housing, and post-scarcity economics">
     
     <style>
         body {
@@ -86,14 +93,20 @@
             margin-top: 10px;
         }
         
-        .links a {
+        .links a, .paper-links a {
             color: #1a3d8f;
             text-decoration: none;
             margin-right: 15px;
+            padding: 8px 16px;
+            background: #f0f4ff;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 8px;
         }
         
-        .links a:hover {
-            text-decoration: underline;
+        .links a:hover, .paper-links a:hover {
+            background: #e0e8ff;
+            text-decoration: none;
         }
         
         .contact-info {
@@ -122,17 +135,41 @@
             color: #1a3d8f;
             text-decoration: none;
         }
+        
+        .comprehensive-btn {
+            background: #28a745;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .comprehensive-btn:hover {
+            background: #218838;
+            color: white;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Better To Best Research Hub</h1>
-        <p class="tagline">An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.</p>
+        <p class="tagline">Open-access research on Creative Currency Octaves, Public Trust Housing, and post-scarcity economics</p>
         
         <nav>
             <a href="#papers">Research Papers</a>
             <a href="#concepts">Key Concepts</a>
-            <a href="#wiki">Wiki & FAQ</a>
+            <a href="./wiki/">Wiki & FAQ</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -146,9 +183,9 @@
             <h3>Optimal Transfer Design in Post-Scarcity Economies</h3>
             <p><strong>Authors:</strong> Duke Johnson & Claude (Anthropic) | <strong>Date:</strong> August 28, 2025</p>
             <p>This paper examines an integrated welfare framework combining Creative Currency Octaves (CCO) with dual-tier incentive mechanisms that addresses persistent challenges in transfer system design: work disincentive effects, welfare cliffs, and administrative inefficiency.</p>
-            <div class="links">
+            <div class="paper-links">
                 <a href="./papers/optimal-transfer-design.html">Read Paper</a>
-                <a href="./papers/optimal-transfer-design.pdf">Download PDF</a>
+                <a href="https://authordukejohnson.substack.com/p/optimal-transfer-design-in-post-scarcity" target="_blank" class="comprehensive-btn">Comprehensive Version</a>
             </div>
         </div>
         
@@ -156,9 +193,9 @@
             <h3>Economic Modeling and Simulation Analysis of Creative Currency Octaves</h3>
             <p><strong>Authors:</strong> Duke Johnson & Claude (Anthropic) | <strong>Date:</strong> August 28, 2025</p>
             <p>Comprehensive economic modeling and simulation analysis of CCO implementation across diverse community scenarios using agent-based modeling and Monte Carlo simulation techniques.</p>
-            <div class="links">
+            <div class="paper-links">
                 <a href="./papers/economic-modeling-analysis.html">Read Paper</a>
-                <a href="./papers/economic-modeling-analysis.pdf">Download PDF</a>
+                <a href="https://authordukejohnson.substack.com/p/economic-modeling-and-simulation" target="_blank" class="comprehensive-btn">Comprehensive Version</a>
             </div>
         </div>
         
@@ -166,30 +203,14 @@
             <h3>Public Trust Housing: Technical Specifications</h3>
             <p><strong>Authors:</strong> Duke Johnson & Claude (Anthropic) | <strong>Date:</strong> August 28, 2025</p>
             <p>Comprehensive technical specifications for Public Trust Housing implementation, including governance structures, financial mechanisms, and community development protocols.</p>
-            <div class="links">
+            <div class="paper-links">
                 <a href="./papers/pth-technical-specifications.html">Read Paper</a>
-                <a href="./papers/pth-technical-specifications.pdf">Download PDF</a>
+                <a href="https://authordukejohnson.substack.com/p/public-trust-housing-technical" target="_blank" class="comprehensive-btn">Comprehensive Version</a>
             </div>
         </div>
 
-        <div class="paper-item">
-            <h3>Community-Based Monetary Innovation for Development</h3>
-            <p><strong>Authors:</strong> Duke Johnson & Claude (Anthropic) | <strong>Date:</strong> August 28, 2025</p>
-            <p>An exploration of how Creative Currency Octaves can serve as a development finance mechanism in emerging economies, with case studies from community implementations.</p>
-            <div class="links">
-                <a href="./papers/community-monetary-innovation.html">Read Paper</a>
-                <a href="./papers/community-monetary-innovation.pdf">Download PDF</a>
-            </div>
-        </div>
-
-        <div class="paper-item">
-            <h3>Dual Currency Systems and Inflation: CCO's Price Stability Mechanisms</h3>
-            <p><strong>Authors:</strong> Duke Johnson & Claude (Anthropic) | <strong>Date:</strong> August 28, 2025</p>
-            <p>Analysis of inflationary effects in dual currency frameworks and how CCO's restricted basic units mitigate price pressures.</p>
-            <div class="links">
-                <a href="./papers/dual-currency-inflation.html">Read Paper</a>
-                <a href="./papers/dual-currency-inflation.pdf">Download PDF</a>
-            </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="./papers/" style="background: #1a3d8f; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">View All Research Papers →</a>
         </div>
     </section>
 
@@ -206,11 +227,23 @@
             <h3>Public Trust Housing (PTH)</h3>
             <p>Community-owned housing model that creates pathways for collective wealth building while providing stable, affordable housing. Properties are held in public trust and owned collectively by residents through democratic governance structures.</p>
             <p><strong>Key Features:</strong> Democratic resident control, Housing Equity Accounts, Integrated services (childcare, healthcare, education), Collective wealth building</p>
+            <div class="note">
+                <strong>Note:</strong> PTH complements rather than replaces the private real estate market, offering an additional housing option alongside traditional homeownership and rental markets.
+            </div>
         </div>
         
         <div class="concept-item">
             <h3>Basic Units</h3>
             <p>The foundational currency units in the CCO system. Distributed universally to all community members, pegged 1:1 to primary currency, but restricted to essential expenditures (housing, food, healthcare, education, transportation). They expire at the end of each distribution cycle.</p>
+            <div class="note">
+                <strong>Implementation:</strong> Basic units can be distributed digitally for debit card use, as well as printed at ATMs as receipt-paper currency with QR scan codes for cash transactions.
+            </div>
+        </div>
+        
+        <div class="concept-item">
+            <h3>Creative Collectives</h3>
+            <p>Community-organized groups of artists, creators, and cultural contributors within the CCO system who collaborate on projects, share resources, and collectively advance through octave levels. Creative Collectives receive enhanced recognition and multiplier rates for collaborative artistic and cultural work that benefits the broader community.</p>
+            <p><strong>Key Functions:</strong> Collaborative project management, Resource sharing, Peer mentorship, Community cultural programming, Collective octave advancement</p>
         </div>
         
         <div class="concept-item">
