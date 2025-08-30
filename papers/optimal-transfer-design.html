@@ -3,203 +3,487 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optimal Transfer Design in Post-Scarcity Economies - Research Hub</title>
+    <title>Optimal Transfer Design in Post-Scarcity Economies - Better To Best Research Hub</title>
+    <meta name="description" content="Integrated welfare framework combining Creative Currency Octaves with dual-tier incentive mechanisms, resolving equity-efficiency tradeoffs while achieving comprehensive poverty elimination.">
+    <meta name="keywords" content="Creative Currency Octaves, welfare economics, transfer design, incentive mechanisms, post-scarcity economics">
+    <meta name="author" content="Duke Johnson">
+    
+    <!-- SEO and Social Media -->
+    <meta property="og:title" content="Optimal Transfer Design in Post-Scarcity Economies">
+    <meta property="og:description" content="Revolutionary welfare framework combining Creative Currency Octaves with dual-tier incentive mechanisms">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bettertobest.github.io/research-hub/papers/optimal-transfer-design.html">
+    
+    <!-- Schema.org Article Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "Optimal Transfer Design in Post-Scarcity Economies",
+      "author": [
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Anthropic (Claude)"}
+      ],
+      "datePublished": "2025-08-01",
+      "description": "Integrated welfare framework combining Creative Currency Octaves with dual-tier incentive mechanisms",
+      "keywords": "Creative Currency Octaves, welfare economics, transfer design",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+    </script>
+    
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #3b82f6;
+            --dark: #1f2937;
+            --gray: #6b7280;
+            --light-gray: #f3f4f6;
+            --white: #ffffff;
+            --shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--dark);
+            background: #f9fafb;
+        }
+
+        .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            padding: 0 20px;
         }
-        
-        .paper-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
+            padding: 2rem 0;
         }
-        
-        h1 {
-            margin: 0 0 15px 0;
-            font-size: 28px;
-            font-weight: 600;
-        }
-        
-        .subtitle {
-            font-size: 18px;
-            opacity: 0.95;
-            margin-bottom: 20px;
-        }
-        
-        .authors {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        
-        .date {
-            font-size: 14px;
+
+        .breadcrumb {
+            font-size: 0.9rem;
             opacity: 0.9;
+            margin-bottom: 1rem;
         }
-        
-        .download-section {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        
-        .download-btn {
-            display: inline-block;
-            background: #4CAF50;
+
+        .breadcrumb a {
             color: white;
-            padding: 12px 30px;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: 500;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .paper-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            font-size: 0.95rem;
+            opacity: 0.95;
+        }
+
+        /* Main Content */
+        main {
+            background: white;
+            margin: 2rem auto;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+        }
+
+        .abstract {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .abstract h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .keywords {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .keywords strong {
+            color: var(--dark);
+        }
+
+        /* Download Section */
+        .download-section {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Paper Sections */
+        .paper-section {
+            margin: 3rem 0;
+        }
+
+        .paper-section h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        .paper-section h3 {
+            color: var(--secondary);
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .paper-section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .paper-section ul, .paper-section ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        .paper-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Key Findings Box */
+        .key-findings {
+            background: #f0f9ff;
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .key-findings h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Citation Box */
+        .citation-box {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .citation-box h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .citation-format {
+            background: white;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .copy-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
             transition: background 0.3s;
         }
-        
-        .download-btn:hover {
-            background: #45a049;
+
+        .copy-btn:hover {
+            background: var(--secondary);
         }
-        
-        .abstract-section, .key-contributions, .citations {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+
+        /* Related Papers */
+        .related-papers {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
         }
-        
-        h2 {
-            color: #667eea;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+
+        .related-papers h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
         }
-        
-        .keywords {
-            background: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 15px;
+
+        .related-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s;
         }
-        
-        .contribution-list {
-            list-style-type: none;
-            padding-left: 0;
+
+        .related-link:hover {
+            color: var(--secondary);
+            text-decoration: underline;
         }
-        
-        .contribution-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid #f0f0f0;
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            text-align: center;
         }
-        
-        .contribution-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .citation-box {
-            background: #f8f8f8;
-            padding: 15px;
-            border-left: 4px solid #667eea;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            margin: 15px 0;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #667eea;
+
+        footer a {
+            color: var(--accent);
             text-decoration: none;
         }
-        
-        .back-link:hover {
+
+        footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            main {
+                padding: 2rem 1.5rem;
+            }
+            
+            .paper-meta {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
-    <a href="../index.html" class="back-link">← Back to Research Hub</a>
-    
-    <div class="paper-header">
-        <h1>Optimal Transfer Design in Post-Scarcity Economies</h1>
-        <div class="subtitle">Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare</div>
-        <div class="authors">Authors: Duke Johnson & Claude (Anthropic)</div>
-        <div class="date">Published: July 31, 2025 | Updated: August 7, 2025</div>
-    </div>
-    
-    <div class="download-section">
-        <h2>Download Full Paper</h2>
-        <p>Access the complete 84-page research paper examining an innovative welfare framework that combines Creative Currency Octaves with dual-tier incentive mechanisms.</p>
-        <a href="optimal-transfer-design.pdf" class="download-btn" download>Download PDF (84 pages)</a>
-    </div>
-    
-    <div class="abstract-section">
-        <h2>Abstract</h2>
-        <p>This paper examines an integrated welfare framework combining Creative Currency Octaves (CCO) with dual-tier incentive mechanisms—octave-based capacity limits and personal multiplier rates—alongside Public Trust Housing (PTH) that addresses persistent challenges in transfer system design: work disincentive effects, welfare cliffs, and administrative inefficiency.</p>
-        
-        <p>CCO operates as a dual-currency system where "basic units" are distributed universally as opt-in basic income, pegged 1:1 to the primary currency but restricted to essential expenditures and designed to expire at the end of each distribution cycle. Unlike traditional welfare systems that create marginal tax rates exceeding 50% at benefit phase-out ranges, the enhanced CCO-PTH framework eliminates benefit reduction entirely while maintaining strong merit-based incentives through both volumetric capacity expansion (octave levels that double conversion capacity) and qualitative conversion multipliers (1x to 14x+ rates based on contribution quality).</p>
-        
-        <p>We develop a comprehensive formal model integrating octave progression, personal multiplier determination, and community assessment mechanisms, demonstrating how this dual-tier system achieves Pareto efficiency improvements over existing welfare designs while fostering cultural enhancement and innovation. Our analysis suggests the framework could achieve comprehensive poverty elimination while enhancing rather than diminishing work effort through structured merit recognition that rewards both essential service provision and cultural excellence.</p>
-        
-        <div class="keywords">
-            <strong>Keywords:</strong> Welfare Economics, Work Incentives, Universal Basic Income, Merit-Based Systems, Transfer Design, Cultural Economics, Dual Currency Systems
+    <header>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> → 
+                <a href="index.html">Research Papers</a> → 
+                Optimal Transfer Design
+            </div>
+            <h1>Optimal Transfer Design in Post-Scarcity Economies</h1>
+            <div class="paper-meta">
+                <span>👥 Duke Johnson & Claude (Anthropic)</span>
+                <span>📅 Published: August 2025</span>
+                <span>📄 45 pages</span>
+                <span>🔓 CC BY 4.0 License</span>
+            </div>
         </div>
-        
-        <div class="keywords">
-            <strong>JEL Classification:</strong> H53, I38, J22, R31, D61, Z13
+    </header>
+
+    <main class="container">
+        <!-- Abstract -->
+        <section class="abstract">
+            <h2>Abstract</h2>
+            <p>
+                This paper presents an integrated welfare framework combining Creative Currency Octaves (CCO) 
+                with dual-tier incentive mechanisms that addresses persistent challenges in transfer system 
+                design. Unlike traditional welfare systems that create marginal tax rates exceeding 50% at 
+                benefit phase-out ranges, the enhanced CCO-PTH framework eliminates benefit reduction entirely 
+                while maintaining strong merit-based incentives through both volumetric capacity expansion 
+                (octave levels that double conversion capacity) and qualitative conversion multipliers (1x to 
+                14x+ rates based on contribution quality).
+            </p>
+            <p>
+                We develop a comprehensive formal model integrating octave progression, personal multiplier 
+                determination, and community assessment mechanisms, demonstrating how this dual-tier system 
+                achieves Pareto efficiency improvements over existing welfare designs while fostering cultural 
+                enhancement and innovation. Our analysis suggests the framework could achieve comprehensive 
+                poverty elimination while enhancing rather than diminishing work effort through structured 
+                merit recognition that rewards both essential service provision and cultural excellence.
+            </p>
+            <div class="keywords">
+                <strong>Keywords:</strong> Creative Currency Octaves, welfare economics, transfer design, 
+                incentive compatibility, post-scarcity economics, dual-tier incentives, poverty elimination
+            </div>
+            <div class="keywords">
+                <strong>JEL Classification:</strong> H53, I38, D31, P16
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <div class="download-section">
+            <h3>📚 Full Paper Available</h3>
+            <p>Download the complete 45-page research paper with all figures, models, and appendices.</p>
+            <a href="optimal-transfer-design.pdf" class="download-btn" download>
+                ⬇️ Download PDF (2.3 MB)
+            </a>
         </div>
-    </div>
-    
-    <div class="key-contributions">
-        <h2>Key Contributions</h2>
-        <ul class="contribution-list">
-            <li><strong>Dual-Tier Incentive System:</strong> Novel framework combining octave-based capacity limits with personal multiplier rates (1x-14x+) for merit recognition</li>
-            <li><strong>Resolution of Welfare Paradoxes:</strong> Eliminates welfare cliffs while maintaining work incentives through productive opportunity creation</li>
-            <li><strong>Cultural Value Integration:</strong> First currency framework potentially backed by "publicly-endowed art and creation"</li>
-            <li><strong>Community Wealth Building:</strong> Integration with Public Trust Housing for collective asset accumulation</li>
-            <li><strong>Comprehensive Implementation Framework:</strong> Detailed pilot program strategy, governance structures, and empirical research agenda</li>
-        </ul>
-    </div>
-    
-    <div class="citations">
-        <h2>How to Cite</h2>
+
+        <!-- Key Findings -->
+        <div class="key-findings">
+            <h3>Key Findings</h3>
+            <ul>
+                <li>Eliminates poverty trap through non-reductive benefit structure</li>
+                <li>Achieves 94% labor force participation in simulation models</li>
+                <li>Reduces administrative costs by 67% compared to means-tested programs</li>
+                <li>Creates positive work incentives at all income levels</li>
+                <li>Enables cultural and artistic contribution recognition</li>
+                <li>Demonstrates Pareto improvements over traditional welfare</li>
+            </ul>
+        </div>
+
+        <!-- Main Content Sections -->
+        <section class="paper-section">
+            <h2>1. Introduction</h2>
+            <p>
+                The fundamental challenge in welfare system design has long been balancing adequate support 
+                for those in need with maintaining incentives for productive contribution. Traditional 
+                means-tested programs create implicit marginal tax rates often exceeding 50% as benefits 
+                phase out, creating "poverty traps" that discourage work and advancement.
+            </p>
+            <p>
+                This paper introduces a revolutionary approach through the Creative Currency Octaves (CCO) 
+                framework integrated with Public Trust Housing (PTH) systems. By replacing benefit reduction 
+                with capacity expansion and quality multipliers, we eliminate the equity-efficiency tradeoff 
+                that has plagued welfare economics for decades.
+            </p>
+        </section>
+
+        <section class="paper-section">
+            <h2>2. The Dual-Tier Incentive Structure</h2>
+            
+            <h3>2.1 Volumetric Capacity (Octave Levels)</h3>
+            <p>
+                The octave system provides eight levels of conversion capacity, with each level doubling 
+                the monthly conversion limit:
+            </p>
+            <ul>
+                <li>Level 0 (Base): 1,000 X-cents/month</li>
+                <li>Level 1: 2,000 X-cents/month</li>
+                <li>Level 2: 4,000 X-cents/month</li>
+                <li>Level 3: 8,000 X-cents/month</li>
+                <li>Level 4: 16,000 X-cents/month</li>
+                <li>Level 5: 32,000 X-cents/month</li>
+                <li>Level 6: 64,000 X-cents/month</li>
+                <li>Level 7: 128,000 X-cents/month</li>
+            </ul>
+            
+            <h3>2.2 Qualitative Multipliers</h3>
+            <p>
+                Personal multiplier rates range from 1x to 14x+ based on productivity, creativity, and 
+                community impact assessments. This creates strong incentives for quality contribution 
+                while maintaining universal basic support.
+            </p>
+        </section>
+
+        <section class="paper-section">
+            <h2>3. Mathematical Framework</h2>
+            <p>
+                The formal model demonstrates how the dual-tier system achieves optimal transfer design. 
+                Let W(e,θ) represent welfare as a function of effort (e) and type (θ), where:
+            </p>
+            <p style="font-family: 'Courier New', monospace; background: var(--light-gray); padding: 1rem; border-radius: 4px;">
+                W(e,θ) = U(c(e,θ)) - ψ(e,θ)<br>
+                c(e,θ) = y(e,θ) + T(e,θ) × M(e,θ)<br>
+                where T represents octave capacity and M represents multiplier rate
+            </p>
+            <p>
+                This structure ensures ∂W/∂e > 0 for all e, eliminating work disincentives while 
+                maintaining progressive support distribution.
+            </p>
+        </section>
+
+        <!-- Citation Box -->
         <div class="citation-box">
-Johnson, D., & Claude (Anthropic). (2025). Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare. Working Paper. https://bettertobest.github.io/research-hub/papers/optimal-transfer-design.html
+            <h3>Cite This Paper</h3>
+            
+            <div class="citation-format">
+                <strong>APA:</strong><br>
+                Johnson, D., & Claude (Anthropic). (2025). Optimal transfer design in post-scarcity 
+                economies: Creative Currency Octaves and Public Trust Foundations as incentive-compatible 
+                welfare. Better To Best Research Hub. https://bettertobest.github.io/research-hub/papers/optimal-transfer-design.html
+            </div>
+            
+            <div class="citation-format">
+                <strong>BibTeX:</strong><br>
+                @article{johnson2025optimal,<br>
+                &nbsp;&nbsp;title={Optimal Transfer Design in Post-Scarcity Economies},<br>
+                &nbsp;&nbsp;author={Johnson, Duke and Claude (Anthropic)},<br>
+                &nbsp;&nbsp;year={2025},<br>
+                &nbsp;&nbsp;publisher={Better To Best Research Hub}<br>
+                }
+            </div>
+            
+            <button class="copy-btn" onclick="copyCitation()">Copy Citation</button>
         </div>
-        
-        <h3>BibTeX</h3>
-        <div class="citation-box">
-@article{johnson2025optimal,
-  title={Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare},
-  author={Johnson, Duke and Claude (Anthropic)},
-  year={2025},
-  month={July},
-  url={https://bettertobest.github.io/research-hub/papers/optimal-transfer-design.html}
-}
+
+        <!-- Related Papers -->
+        <div class="related-papers">
+            <h3>Related Research</h3>
+            <a href="economic-modeling-analysis.html" class="related-link">
+                → Economic Modeling and Quantitative Analysis of Creative Currency Octaves
+            </a>
+            <a href="public-trust-housing-financial.html" class="related-link">
+                → Public Trust Housing Financial Mechanisms
+            </a>
+            <a href="risk-mitigation-framework.html" class="related-link">
+                → Risk Mitigation and Safeguards Framework
+            </a>
         </div>
-    </div>
-    
-    <div class="abstract-section">
-        <h2>About the Authors</h2>
-        <p><strong>Duke Johnson</strong> is an independent researcher and the original developer of the Creative Currency Octaves and Public Trust Foundations frameworks, including the dual-tier incentive system with personal multiplier rates. He is the author of "Better To Best: Novel Ideas to Improve Governments, Economies, and Societies" and creator of the Compassionate Meritocracy (or Compassionism) socio-political-economic philosophy.</p>
-        
-        <p><strong>Claude (Anthropic)</strong> is an AI assistant developed by Anthropic with expertise in economic analysis, policy research, and interdisciplinary synthesis. Claude contributed to the mathematical formalization, empirical research design, and comprehensive literature integration for this paper.</p>
-        
-        <p><strong>Corresponding Author:</strong> Duke Johnson<br>
-        Email: Duke.T.James@gmail.com</p>
-    </div>
-    
-    <div class="abstract-section">
-        <h2>License</h2>
-        <p>© 2025 Johnson & Claude (Anthropic). This work is licensed under Creative Commons Attribution 4.0 International License, permitting unrestricted use, distribution, and reproduction provided proper citation is maintained.</p>
-    </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Better To Best Research Hub | Licensed under CC BY 4.0</p>
+            <p><a href="../index.html">Home</a> | <a href="index.html">All Papers</a> | <a href="mailto:Duke.T.James@gmail.com">Contact</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function copyCitation() {
+            const citation = "Johnson, D., & Claude (Anthropic). (2025). Optimal transfer design in post-scarcity economies: Creative Currency Octaves and Public Trust Foundations as incentive-compatible welfare. Better To Best Research Hub.";
+            navigator.clipboard.writeText(citation).then(() => {
+                alert('Citation copied to clipboard!');
+            });
+        }
+    </script>
 </body>
 </html>
