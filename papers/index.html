@@ -4,169 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Papers - Better To Best Research Hub</title>
-    <meta name="description" content="Comprehensive collection of open-access research papers on Creative Currency Octaves, Public Trust Housing, Citizen Internet Portal, and Social Zone Harmonization for post-scarcity economic frameworks.">
-    <meta name="keywords" content="Creative Currency Octaves, Public Trust Housing, Citizen Internet Portal, Social Zone Harmonization, economic research, policy papers, governance innovation, drug policy reform">
+    <meta name="description" content="Open-access research papers on Creative Currency Octaves, Public Trust Foundations, Citizen Internet Portal, and Social Zone Harmonization - advancing post-scarcity economic frameworks.">
+    <meta name="keywords" content="research papers, Creative Currency Octaves, Public Trust Foundations, Citizen Internet Portal, Social Zone Harmonization, economic policy, governance innovation">
     <meta name="author" content="Duke Johnson">
     
-    <!-- Search Engine Optimization -->
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-    <link rel="canonical" href="https://bettertobest.github.io/research-hub/papers/">
+    <!-- Enhanced bot accessibility -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     
-    <!-- Open Graph Meta Tags -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bettertobest.github.io/research-hub/papers/">
     <meta property="og:title" content="Research Papers - Better To Best Research Hub">
-    <meta property="og:description" content="Open-access research papers on Creative Currency Octaves and integrated economic frameworks">
-    <meta property="og:image" content="https://bettertobest.github.io/research-hub/assets/images/social-preview.jpg">
+    <meta property="og:description" content="Open-access research papers on Creative Currency Octaves and integrated governance systems">
     
-    <!-- Twitter Card Meta Tags -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://bettertobest.github.io/research-hub/papers/">
-    <meta property="twitter:title" content="Research Papers - Better To Best Research Hub">
-    <meta property="twitter:description" content="Open-access research papers on Creative Currency Octaves and integrated economic frameworks">
-    
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Better To Best Research Papers",
-      "description": "Comprehensive collection of research papers on Creative Currency Octaves and related frameworks",
-      "url": "https://bettertobest.github.io/research-hub/papers/",
-      "author": {
-        "@type": "Person",
-        "name": "Duke Johnson"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Better To Best Research Hub"
-      }
-    }
-    </script>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bettertobest.github.io/research-hub/papers/">
     
     <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary: #7c3aed;
+            --accent: #10b981;
+            --warning: #f59e0b;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --surface: #ffffff;
+            --background: #f9fafb;
+            --border: #e5e7eb;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+        }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e40af;
-            --accent: #3b82f6;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --danger: #ef4444;
-            --dark: #1f2937;
-            --gray: #6b7280;
-            --light-gray: #f3f4f6;
-            --white: #ffffff;
-            --shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-            --shadow-lg: 0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.10);
-        }
-
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
             line-height: 1.6;
-            color: var(--dark);
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
         }
-
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 2rem;
         }
-
-        /* Header Section */
+        
+        /* Header */
         header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover,
+        nav a.active {
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             padding: 3rem 0;
-            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
         }
-
-        header h1 {
+        
+        .hero h1 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
             letter-spacing: -0.02em;
         }
-
-        header .subtitle {
-            font-size: 1.2rem;
+        
+        .hero p {
+            font-size: 1.15rem;
             opacity: 0.95;
             max-width: 800px;
-            line-height: 1.8;
+            line-height: 1.7;
         }
-
-        .breadcrumb {
-            margin-top: 1.5rem;
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-
-        .breadcrumb a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        .breadcrumb a:hover {
-            opacity: 0.7;
-        }
-
-        /* Main Content */
-        main {
-            background: white;
-            margin: 2rem auto;
-            max-width: 1200px;
-            border-radius: 12px;
-            padding: 3rem;
-            box-shadow: var(--shadow-lg);
-        }
-
-        /* Section Styles */
+        
+        /* Section Headers */
         .section {
             margin-bottom: 4rem;
         }
-
-        .section h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid var(--accent);
-            display: inline-block;
-        }
-
-        .section-intro {
-            font-size: 1.1rem;
-            color: var(--gray);
+        
+        .section-header {
             margin-bottom: 2rem;
-            line-height: 1.8;
         }
-
-        /* Paper Grid */
+        
+        .section-header h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section-header h2::before {
+            content: '';
+            width: 4px;
+            height: 28px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .section-description {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 800px;
+        }
+        
+        /* Paper Cards */
         .papers-grid {
             display: grid;
             gap: 2rem;
-            margin-bottom: 3rem;
         }
-
+        
         .paper-card {
-            background: var(--light-gray);
-            border-radius: 10px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
             padding: 2rem;
             transition: all 0.3s ease;
-            border: 1px solid #e5e7eb;
             position: relative;
             overflow: hidden;
         }
-
+        
         .paper-card::before {
             content: '';
             position: absolute;
@@ -174,209 +177,206 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
-        }
-
-        .paper-card:hover {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
             transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-            background: white;
+            transition: transform 0.3s;
         }
-
-        .paper-title {
-            font-size: 1.5rem;
+        
+        .paper-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .paper-card:hover::before {
+            transform: translateY(0);
+        }
+        
+        .paper-status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
             font-weight: 600;
-            color: var(--dark);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+        
+        .status-published {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .status-draft {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .status-new {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .paper-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-primary);
             margin-bottom: 0.75rem;
             line-height: 1.3;
         }
-
-        .paper-authors {
-            color: var(--gray);
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
+        
+        .paper-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s;
         }
-
-        .paper-date {
-            color: var(--gray);
+        
+        .paper-title a:hover {
+            color: var(--primary);
+        }
+        
+        .paper-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
             font-size: 0.9rem;
-            margin-bottom: 1rem;
+            color: var(--text-secondary);
         }
-
-        .jel-codes {
-            font-size: 0.85rem;
-            color: var(--secondary);
-            font-style: italic;
-            margin-bottom: 1rem;
+        
+        .paper-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
         }
-
+        
         .paper-abstract {
-            color: var(--dark);
+            color: var(--text-secondary);
             line-height: 1.7;
             margin-bottom: 1.5rem;
+            font-size: 0.95rem;
         }
-
-        .paper-tags {
+        
+        .paper-keywords {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
             margin-bottom: 1.5rem;
         }
-
-        .tag {
-            background: var(--primary);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
+        
+        .keyword {
+            background: #f3f4f6;
+            color: var(--text-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
             font-size: 0.85rem;
-            font-weight: 500;
         }
-
-        .paper-links {
+        
+        .paper-actions {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
         }
-
+        
         .btn {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.75rem 1.25rem;
-            border-radius: 6px;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 0.9rem;
             transition: all 0.3s ease;
-            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
         }
-
+        
         .btn-primary {
             background: var(--primary);
             color: white;
         }
-
+        
         .btn-primary:hover {
-            background: var(--secondary);
-            transform: translateY(-2px);
+            background: var(--primary-dark);
+            transform: translateY(-1px);
         }
-
-        .btn-secondary {
-            background: white;
+        
+        .btn-outline {
+            background: transparent;
             color: var(--primary);
             border: 2px solid var(--primary);
         }
-
-        .btn-secondary:hover {
+        
+        .btn-outline:hover {
             background: var(--primary);
             color: white;
         }
-
-        /* Statistics Section */
-        .stats-section {
-            background: linear-gradient(135deg, var(--light-gray), white);
-            border-radius: 12px;
-            padding: 3rem;
-            margin: 3rem 0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .stat-item h3 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-item p {
-            color: var(--gray);
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        /* Working Papers Section */
-        .working-papers {
-            background: linear-gradient(135deg, #fef3c7, #fde68a);
-            border-left: 4px solid var(--warning);
-        }
-
-        .working-papers .paper-title {
-            color: #92400e;
-        }
-
-        .status-badge {
-            display: inline-block;
-            background: var(--warning);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
+        
         /* Footer */
         footer {
-            background: var(--dark);
-            color: white;
+            background: var(--surface);
+            border-top: 1px solid var(--border);
             padding: 3rem 0;
-            margin-top: 4rem;
+            margin-top: 5rem;
         }
-
+        
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
         }
-
+        
         .footer-section h3 {
+            font-weight: 600;
             margin-bottom: 1rem;
-            color: var(--accent);
+            color: var(--text-primary);
         }
-
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        
         .footer-section a {
-            color: #cbd5e1;
+            color: var(--text-secondary);
             text-decoration: none;
-            display: block;
-            padding: 0.25rem 0;
             transition: color 0.3s;
         }
-
+        
         .footer-section a:hover {
-            color: white;
+            color: var(--primary);
         }
-
-        .copyright {
+        
+        .footer-bottom {
             text-align: center;
             padding-top: 2rem;
-            border-top: 1px solid #374151;
-            color: #9ca3af;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
         }
-
-        /* Responsive Design */
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            header h1 {
+            .hero h1 {
                 font-size: 2rem;
             }
             
-            main {
-                padding: 2rem 1.5rem;
-            }
-            
-            .paper-links {
+            .header-content {
                 flex-direction: column;
+                gap: 1rem;
             }
             
-            .btn {
-                width: 100%;
-                justify-content: center;
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
             }
         }
     </style>
@@ -384,373 +384,323 @@
 <body>
     <header>
         <div class="container">
-            <h1>Research Papers Collection</h1>
-            <p class="subtitle">
-                Comprehensive open-access research on Creative Currency Octaves, Public Trust Housing, 
-                Citizen Internet Portal, and Social Zone Harmonization — advancing frameworks for 
-                post-scarcity economics and democratic governance.
-            </p>
-            <div class="breadcrumb">
-                <a href="../index.html">Home</a> → Research Papers
+            <div class="header-content">
+                <a href="/research-hub/" class="logo">Better To Best Research Hub</a>
+                <nav>
+                    <ul>
+                        <li><a href="/research-hub/">Home</a></li>
+                        <li><a href="/research-hub/papers/" class="active">Papers</a></li>
+                        <li><a href="/research-hub/wiki/">Wiki</a></li>
+                        <li><a href="/research-hub/about/">About</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
-
-    <main>
-        <!-- Published Papers Section -->
-        <section class="section">
-            <h2>Published Research Papers</h2>
-            <p class="section-intro">
-                Our peer-reviewed research papers explore theoretical foundations and practical implementations 
-                of integrated economic systems designed to eliminate poverty while fostering innovation and 
-                community development.
-            </p>
-
-            <div class="papers-grid">
-                <!-- Paper 1: Optimal Transfer Design -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves 
-                        and Public Trust Foundations as Incentive-Compatible Welfare
-                    </h3>
-                    <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
-                    <p class="paper-date">Published: August 2025</p>
-                    <p class="jel-codes">JEL Classification: H53, I38, D31, P16</p>
-                    <p class="paper-abstract">
-                        This paper presents an integrated welfare framework combining Creative Currency Octaves 
-                        with dual-tier incentive mechanisms. We demonstrate how volumetric capacity expansion 
-                        through octave levels (doubling conversion limits at each level) combined with qualitative 
-                        multipliers (1x to 14x+ rates) resolves traditional equity-efficiency tradeoffs while 
-                        achieving comprehensive poverty elimination.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Welfare Economics</span>
-                        <span class="tag">Creative Currency</span>
-                        <span class="tag">Incentive Design</span>
-                        <span class="tag">Post-Scarcity</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="optimal-transfer-design.html" class="btn btn-primary">
-                            📄 Read Paper
-                        </a>
-                        <a href="optimal-transfer-design.pdf" class="btn btn-secondary" download>
-                            ⬇️ Download PDF
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Paper 2: Drug Policy Harmonization -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        Drug Policy Harmonization Through Creative Currency Octaves Integration: 
-                        Evidence-Based Reform with Economic Innovation
-                    </h3>
-                    <p class="paper-authors">Duke Johnson & Claude Opus</p>
-                    <p class="paper-date">Published: August 2025</p>
-                    <p class="jel-codes">JEL Classification: I18, K42, H75, Z13</p>
-                    <p class="paper-abstract">
-                        Comprehensive analysis integrating evidence-based drug policy reform with Creative 
-                        Currency Octaves economic frameworks. We examine how harm reduction approaches enhanced 
-                        through innovative economic structures can reduce social costs by 85% while improving 
-                        public health outcomes. Includes detailed implementation pathways and international 
-                        policy comparisons.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Drug Policy</span>
-                        <span class="tag">Public Health</span>
-                        <span class="tag">Harm Reduction</span>
-                        <span class="tag">Social Zone Harmonization</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="drug-policy-harmonization.html" class="btn btn-primary">
-                            📄 Read Paper
-                        </a>
-                        <a href="drug-policy-harmonization.pdf" class="btn btn-secondary" download>
-                            ⬇️ Download PDF
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Paper 3: Risk Mitigation Framework -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        Risk Mitigation and Safeguards Framework for CCO-PTF-CIP-SZH Integrated System
-                    </h3>
-                    <p class="paper-authors">Duke Johnson & Claude Opus</p>
-                    <p class="paper-date">Published: August 2025</p>
-                    <p class="jel-codes">JEL Classification: G32, H11, D81, L31</p>
-                    <p class="paper-abstract">
-                        Comprehensive risk assessment and mitigation strategies for implementing the integrated 
-                        Creative Currency Octaves, Public Trust Foundations, Citizen Internet Portal, and Social 
-                        Zone Harmonization system. We identify 47 potential risk vectors across economic, social, 
-                        technical, and governance domains, providing detailed safeguards and monitoring protocols 
-                        for each.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Risk Management</span>
-                        <span class="tag">Implementation</span>
-                        <span class="tag">Governance</span>
-                        <span class="tag">System Integration</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="risk-mitigation-framework.html" class="btn btn-primary">
-                            📄 Read Paper
-                        </a>
-                        <a href="risk-mitigation-framework.pdf" class="btn btn-secondary" download>
-                            ⬇️ Download PDF
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Paper 4: Public Trust Housing Financial Mechanisms -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        Public Trust Housing Financial Mechanisms: Government-Independent Models 
-                        Compared to Government-Integrated Systems
-                    </h3>
-                    <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
-                    <p class="paper-date">Published: August 2025</p>
-                    <p class="jel-codes">JEL Classification: R31, H42, P13, L31</p>
-                    <p class="paper-abstract">
-                        Comparative analysis of Public Trust Housing implementation pathways, examining both 
-                        government-independent community models and integrated federal systems. We model four 
-                        funding scenarios from grassroots ($0 federal) to transformational ($500B federal), 
-                        demonstrating scalability and adaptation strategies for diverse political and economic 
-                        contexts.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Housing Policy</span>
-                        <span class="tag">Financial Models</span>
-                        <span class="tag">Community Development</span>
-                        <span class="tag">Public Trust</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="public-trust-housing-financial.html" class="btn btn-primary">
-                            📄 Read Paper
-                        </a>
-                        <a href="public-trust-housing-financial.pdf" class="btn btn-secondary" download>
-                            ⬇️ Download PDF
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Paper 5: Economic Modeling and Quantitative Analysis -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        Economic Modeling and Quantitative Analysis of Creative Currency Octaves: 
-                        Equilibrium Dynamics and Welfare Implications
-                    </h3>
-                    <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
-                    <p class="paper-date">Published: August 2025</p>
-                    <p class="jel-codes">JEL Classification: E42, C68, D58, I31</p>
-                    <p class="paper-abstract">
-                        Rigorous mathematical modeling of Creative Currency Octaves system dynamics, including 
-                        general equilibrium analysis, welfare optimization proofs, and Monte Carlo simulations. 
-                        We demonstrate Pareto improvements over traditional welfare systems across 10,000 
-                        simulated economies with varying parameters, showing robust performance under diverse 
-                        conditions.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Economic Modeling</span>
-                        <span class="tag">Quantitative Analysis</span>
-                        <span class="tag">Welfare Economics</span>
-                        <span class="tag">Simulation</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="economic-modeling-analysis.html" class="btn btn-primary">
-                            📄 Read Paper
-                        </a>
-                        <a href="economic-modeling-analysis.pdf" class="btn btn-secondary" download>
-                            ⬇️ Download PDF
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Paper 6: Digital Governance Integration -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        Integrated Digital Governance and Creative Currency Systems: 
-                        The Citizen Internet Portal Framework
-                    </h3>
-                    <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
-                    <p class="paper-date">Published: August 2025</p>
-                    <p class="jel-codes">JEL Classification: H11, D71, L86, O33</p>
-                    <p class="paper-abstract">
-                        Technical architecture and implementation framework for the Citizen Internet Portal, 
-                        enabling democratic participation and transparent governance within Creative Currency 
-                        Octaves ecosystems. We detail privacy-preserving technologies, consensus mechanisms, 
-                        and user interface designs that facilitate inclusive community decision-making while 
-                        maintaining system security and efficiency.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Digital Democracy</span>
-                        <span class="tag">Citizen Portal</span>
-                        <span class="tag">Governance Tech</span>
-                        <span class="tag">Privacy Systems</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="digital-governance-integration.html" class="btn btn-primary">
-                            📄 Read Paper
-                        </a>
-                        <a href="digital-governance-integration.pdf" class="btn btn-secondary" download>
-                            ⬇️ Download PDF
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Working Papers Section -->
-        <section class="section">
-            <h2>Working Papers & Drafts</h2>
-            <p class="section-intro">
-                Papers currently under development and peer review. These drafts represent ongoing research 
-                and may be subject to revision before final publication.
-            </p>
-
-            <div class="papers-grid">
-                <!-- Working Paper 1 -->
-                <article class="paper-card working-papers">
-                    <span class="status-badge">IN REVIEW</span>
-                    <h3 class="paper-title">
-                        Social Zone Harmonization: Community-Based Conflict Resolution and 
-                        Resource Allocation Mechanisms
-                    </h3>
-                    <p class="paper-authors">Duke Johnson & Research Team</p>
-                    <p class="paper-date">Expected: Q4 2025</p>
-                    <p class="paper-abstract">
-                        Exploring mechanisms for community-based governance and conflict resolution within 
-                        Social Zone Harmonization frameworks. This paper examines how diverse communities 
-                        can self-organize while maintaining cohesion with broader economic systems.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Social Zones</span>
-                        <span class="tag">Conflict Resolution</span>
-                        <span class="tag">Community Governance</span>
-                    </div>
-                    <div class="paper-links">
-                        <span class="btn btn-secondary" style="opacity: 0.6;">Coming Soon</span>
-                    </div>
-                </article>
-
-                <!-- Working Paper 2 -->
-                <article class="paper-card working-papers">
-                    <span class="status-badge">DRAFTING</span>
-                    <h3 class="paper-title">
-                        Cultural Value Recognition in Creative Currency Systems: 
-                        Measuring and Rewarding Artistic Contribution
-                    </h3>
-                    <p class="paper-authors">Duke Johnson & Claude</p>
-                    <p class="paper-date">Expected: Q1 2026</p>
-                    <p class="paper-abstract">
-                        Developing quantitative and qualitative frameworks for recognizing cultural 
-                        contributions within Creative Currency Octaves. We examine how artistic, musical, 
-                        literary, and other creative works can be valued and rewarded through economic 
-                        mechanisms that respect both market dynamics and intrinsic cultural worth.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Cultural Economics</span>
-                        <span class="tag">Creative Value</span>
-                        <span class="tag">Artist Support</span>
-                    </div>
-                    <div class="paper-links">
-                        <span class="btn btn-secondary" style="opacity: 0.6;">In Development</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Statistics Section -->
-        <div class="stats-section">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>6</h3>
-                    <p>Published Papers</p>
-                </div>
-                <div class="stat-item">
-                    <h3>2</h3>
-                    <p>Working Papers</p>
-                </div>
-                <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>Open Access</p>
-                </div>
-                <div class="stat-item">
-                    <h3>CC BY 4.0</h3>
-                    <p>License</p>
-                </div>
-            </div>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Research Papers</h1>
+            <p>Open-access research advancing Creative Currency Octaves, Public Trust Foundations, Citizen Internet Portal, and Social Zone Harmonization for post-scarcity economic frameworks. All papers are published under Creative Commons Attribution 4.0 International (CC BY 4.0) license.</p>
         </div>
-
-        <!-- Additional Resources -->
+    </section>
+    
+    <div class="container">
+        <!-- Economic Framework Papers -->
         <section class="section">
-            <h2>Using These Papers</h2>
-            <p class="section-intro">
-                All papers are published under Creative Commons Attribution 4.0 International License, 
-                enabling free use for research, education, policy development, and implementation.
-            </p>
+            <div class="section-header">
+                <h2>Economic Framework Papers</h2>
+                <p class="section-description">Core research on Creative Currency Octaves and dual-currency systems for sustainable economic transformation.</p>
+            </div>
             
             <div class="papers-grid">
-                <div class="paper-card" style="background: #f0fdf4;">
-                    <h3 style="color: var(--success); margin-bottom: 1rem;">For Researchers</h3>
-                    <p>
-                        Build upon our theoretical frameworks and empirical findings. All data, models, 
-                        and methodologies are documented for replication and extension. Citations in 
-                        standard academic formats are provided for each paper.
+                <!-- Optimal Transfer Design -->
+                <article class="paper-card">
+                    <span class="paper-status status-published">Published</span>
+                    <h3 class="paper-title">
+                        <a href="/research-hub/papers/optimal-transfer-design.html">Optimal Transfer Design in Post-Scarcity Economies</a>
+                    </h3>
+                    <div class="paper-meta">
+                        <span>📅 July 2025</span>
+                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
+                    </div>
+                    <p class="paper-abstract">
+                        Introduces a dual-tier incentive system combining octave-based capacity limits (volume-based conversion that doubles with each level) and personal multiplier rates (1x to 14x+ based on contribution quality). Resolves the equity-efficiency tradeoff by creating productive conversion opportunities rather than work disincentives, potentially achieving comprehensive poverty elimination while enhancing work effort through structured merit recognition.
                     </p>
-                </div>
+                    <div class="paper-keywords">
+                        <span class="keyword">Welfare Economics</span>
+                        <span class="keyword">Transfer Design</span>
+                        <span class="keyword">Incentive Systems</span>
+                        <span class="keyword">Post-Scarcity</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="/research-hub/papers/optimal-transfer-design.html" class="btn btn-primary">
+                            📖 Read Paper
+                        </a>
+                        <a href="/research-hub/papers/optimal-transfer-design.pdf" class="btn btn-outline">
+                            ⬇️ Download PDF
+                        </a>
+                    </div>
+                </article>
                 
-                <div class="paper-card" style="background: #eff6ff;">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem;">For Policymakers</h3>
-                    <p>
-                        Each paper includes executive summaries, implementation frameworks, and cost-benefit 
-                        analyses designed to support evidence-based policy development. Risk assessments 
-                        and pilot program guidelines are provided.
+                <!-- Community-Based Monetary Innovation -->
+                <article class="paper-card">
+                    <span class="paper-status status-new">New</span>
+                    <h3 class="paper-title">
+                        <a href="/research-hub/papers/community-monetary-innovation/">Community-Based Monetary Innovation for Development</a>
+                    </h3>
+                    <div class="paper-meta">
+                        <span>📅 July 31, 2025</span>
+                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
+                        <span>📊 JEL: O12, O17, O43, E42, Z13</span>
+                    </div>
+                    <p class="paper-abstract">
+                        Examines Creative Currency Octaves as a development finance mechanism for emerging economies facing persistent poverty, informal sector dominance, and limited access to capital markets. Demonstrates how CCO creates endogenous growth through community-based monetary innovation that rewards local knowledge production and cultural development, with particular promise for post-conflict societies and rural communities.
                     </p>
-                </div>
+                    <div class="paper-keywords">
+                        <span class="keyword">Development Economics</span>
+                        <span class="keyword">Endogenous Growth</span>
+                        <span class="keyword">Informal Economy</span>
+                        <span class="keyword">Post-Conflict Recovery</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="/research-hub/papers/community-monetary-innovation/" class="btn btn-primary">
+                            📖 Read Paper
+                        </a>
+                        <a href="/research-hub/pdfs/community-based-monetary-innovation.pdf" class="btn btn-outline">
+                            ⬇️ Download PDF
+                        </a>
+                    </div>
+                </article>
                 
-                <div class="paper-card" style="background: #fefce8;">
-                    <h3 style="color: var(--warning); margin-bottom: 1rem;">For Implementers</h3>
-                    <p>
-                        Technical specifications, operational protocols, and scaling strategies enable 
-                        practical deployment. Contact information for collaboration and consultation 
-                        is available for serious implementation efforts.
+                <!-- Dual-Currency Systems and Inflation Control -->
+                <article class="paper-card">
+                    <span class="paper-status status-new">New</span>
+                    <h3 class="paper-title">
+                        <a href="/research-hub/papers/dual-currency-inflation/">Dual-Currency Systems and Inflation Control</a>
+                    </h3>
+                    <div class="paper-meta">
+                        <span>📅 2025</span>
+                        <span>👥 Claude (Anthropic) & Duke Johnson</span>
+                        <span>📊 JEL: E42, E52, H53, I38</span>
+                    </div>
+                    <p class="paper-abstract">
+                        Examines Creative Currency Octaves as a dual-currency monetary framework designed to implement Universal Basic Income while mitigating inflationary pressures. Introduces expiring "basic units" restricted to essential consumption, coupled with merit-based conversion mechanisms. Analysis suggests CCO could achieve poverty reduction goals while maintaining price stability through sectoral demand isolation, velocity controls, and capacity-constrained conversion.
                     </p>
-                </div>
+                    <div class="paper-keywords">
+                        <span class="keyword">Universal Basic Income</span>
+                        <span class="keyword">Monetary Policy</span>
+                        <span class="keyword">Inflation Control</span>
+                        <span class="keyword">Dual Currency</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="/research-hub/papers/dual-currency-inflation/" class="btn btn-primary">
+                            📖 Read Paper
+                        </a>
+                        <a href="/research-hub/pdfs/dual-currency-inflation-control.pdf" class="btn btn-outline">
+                            ⬇️ Download PDF
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Economic Modeling Analysis -->
+                <article class="paper-card">
+                    <span class="paper-status status-published">Published</span>
+                    <h3 class="paper-title">
+                        <a href="/research-hub/papers/economic-modeling/">Economic Modeling Analysis of Creative Currency Octaves</a>
+                    </h3>
+                    <div class="paper-meta">
+                        <span>📅 2025</span>
+                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
+                    </div>
+                    <p class="paper-abstract">
+                        Comprehensive economic modeling of CCO implementation scenarios using Monte Carlo simulations and agent-based models. Demonstrates superior outcomes in poverty reduction (40-60% improvement), economic growth (2.8% additional GDP), and social cohesion compared to existing welfare systems. Includes sensitivity analysis across diverse economic conditions and cultural contexts.
+                    </p>
+                    <div class="paper-keywords">
+                        <span class="keyword">Economic Modeling</span>
+                        <span class="keyword">Monte Carlo Simulation</span>
+                        <span class="keyword">Agent-Based Models</span>
+                        <span class="keyword">Welfare Economics</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="/research-hub/papers/economic-modeling/" class="btn btn-primary">
+                            📖 Read Paper
+                        </a>
+                        <a href="/research-hub/pdfs/economic-modeling-analysis.pdf" class="btn btn-outline">
+                            ⬇️ Download PDF
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
-    </main>
-
+        
+        <!-- Governance and Implementation Papers -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Governance and Implementation</h2>
+                <p class="section-description">Research on Public Trust Foundations, Citizen Internet Portal, and integrated governance mechanisms.</p>
+            </div>
+            
+            <div class="papers-grid">
+                <!-- Public Trust Foundations -->
+                <article class="paper-card">
+                    <span class="paper-status status-published">Published</span>
+                    <h3 class="paper-title">
+                        <a href="/research-hub/papers/public-trust-foundations/">Public Trust Foundations: Community-Owned Essential Services</a>
+                    </h3>
+                    <div class="paper-meta">
+                        <span>📅 2025</span>
+                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
+                    </div>
+                    <p class="paper-abstract">
+                        Introduces Public Trust Foundations as a revolutionary framework for community ownership and governance of essential services including housing, utilities, and healthcare. Details legal structures based on public trust doctrine, democratic governance mechanisms with weighted voting systems, and integration with Creative Currency Octaves for sustainable community wealth building. Demonstrates 30-50% cost reductions in service delivery while building permanent community assets.
+                    </p>
+                    <div class="paper-keywords">
+                        <span class="keyword">Public Trust</span>
+                        <span class="keyword">Community Ownership</span>
+                        <span class="keyword">Essential Services</span>
+                        <span class="keyword">Democratic Governance</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="/research-hub/papers/public-trust-foundations/" class="btn btn-primary">
+                            📖 Read Paper
+                        </a>
+                        <a href="/research-hub/pdfs/public-trust-foundations.pdf" class="btn btn-outline">
+                            ⬇️ Download PDF
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Citizen Internet Portal -->
+                <article class="paper-card">
+                    <span class="paper-status status-published">Published</span>
+                    <h3 class="paper-title">
+                        <a href="/research-hub/papers/citizen-internet-portal/">Citizen Internet Portal: Democratic Digital Infrastructure</a>
+                    </h3>
+                    <div class="paper-meta">
+                        <span>📅 2025</span>
+                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
+                    </div>
+                    <p class="paper-abstract">
+                        Proposes a comprehensive digital governance platform integrating democratic participation, service delivery, and community coordination. Features include secure digital identity systems, participatory budgeting tools, real-time voting mechanisms, and integrated service access. Details technical architecture with privacy-preserving technologies, blockchain integration for transparency, and implementation pathways for 21st century democratic infrastructure.
+                    </p>
+                    <div class="paper-keywords">
+                        <span class="keyword">Digital Democracy</span>
+                        <span class="keyword">E-Governance</span>
+                        <span class="keyword">Civic Technology</span>
+                        <span class="keyword">Privacy Protection</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="/research-hub/papers/citizen-internet-portal/" class="btn btn-primary">
+                            📖 Read Paper
+                        </a>
+                        <a href="/research-hub/pdfs/citizen-internet-portal.pdf" class="btn btn-outline">
+                            ⬇️ Download PDF
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Social Policy Papers -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Social Policy Integration</h2>
+                <p class="section-description">Research on Social Zone Harmonization and integrated policy frameworks for housing, healthcare, and social services.</p>
+            </div>
+            
+            <div class="papers-grid">
+                <!-- Social Zone Harmonization -->
+                <article class="paper-card">
+                    <span class="paper-status status-published">Published</span>
+                    <h3 class="paper-title">
+                        <a href="/research-hub/papers/social-zone-harmonization/">Drug Policy Harmonization Through Creative Currency Octaves Integration</a>
+                    </h3>
+                    <div class="paper-meta">
+                        <span>📅 2025</span>
+                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
+                    </div>
+                    <p class="paper-abstract">
+                        Comprehensive framework for evidence-based drug policy reform integrating harm reduction, public health, and community safety through Social Zone Harmonization. Demonstrates how CCO integration enables sustainable funding for treatment and support services while reducing criminalization. Projects 60% reduction in overdose deaths, 75% decrease in drug-related crime, and $15 billion annual savings through health-centered approaches backed by international evidence.
+                    </p>
+                    <div class="paper-keywords">
+                        <span class="keyword">Drug Policy</span>
+                        <span class="keyword">Harm Reduction</span>
+                        <span class="keyword">Public Health</span>
+                        <span class="keyword">Criminal Justice Reform</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="/research-hub/papers/social-zone-harmonization/" class="btn btn-primary">
+                            📖 Read Paper
+                        </a>
+                        <a href="/research-hub/pdfs/social-zone-harmonization.pdf" class="btn btn-outline">
+                            ⬇️ Download PDF
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Integrated Housing Solutions -->
+                <article class="paper-card">
+                    <span class="paper-status status-published">Published</span>
+                    <h3 class="paper-title">
+                        <a href="/research-hub/papers/integrated-housing/">Integrated Housing Solutions Through CCO-PTF Framework</a>
+                    </h3>
+                    <div class="paper-meta">
+                        <span>📅 2025</span>
+                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
+                    </div>
+                    <p class="paper-abstract">
+                        Details how Creative Currency Octaves and Public Trust Foundations create sustainable, affordable housing solutions through community land trusts and cooperative ownership models. Financial modeling demonstrates 30-50% cost reductions while building community wealth through shared equity mechanisms. Includes implementation guides for mixed-income developments, conversion of existing housing stock, and integration with transit-oriented development.
+                    </p>
+                    <div class="paper-keywords">
+                        <span class="keyword">Affordable Housing</span>
+                        <span class="keyword">Community Land Trusts</span>
+                        <span class="keyword">Housing Policy</span>
+                        <span class="keyword">Cooperative Economics</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="/research-hub/papers/integrated-housing/" class="btn btn-primary">
+                            📖 Read Paper
+                        </a>
+                        <a href="/research-hub/pdfs/integrated-housing.pdf" class="btn btn-outline">
+                            ⬇️ Download PDF
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Research Hub</h3>
-                    <a href="../index.html">Home</a>
-                    <a href="../papers/">Research Papers</a>
-                    <a href="../wiki/">Wiki & Resources</a>
-                    <a href="../about.html">About</a>
+                    <h3>Research Areas</h3>
+                    <ul>
+                        <li><a href="/research-hub/papers/#economic">Economic Frameworks</a></li>
+                        <li><a href="/research-hub/papers/#governance">Governance Systems</a></li>
+                        <li><a href="/research-hub/papers/#social">Social Policy</a></li>
+                        <li><a href="/research-hub/papers/#implementation">Implementation Guides</a></li>
+                    </ul>
                 </div>
-                
                 <div class="footer-section">
-                    <h3>Key Concepts</h3>
-                    <a href="../wiki/creative-currency-octaves.html">Creative Currency Octaves</a>
-                    <a href="../wiki/public-trust-housing.html">Public Trust Housing</a>
-                    <a href="../wiki/citizen-internet-portal.html">Citizen Internet Portal</a>
-                    <a href="../wiki/social-zone-harmonization.html">Social Zone Harmonization</a>
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="/research-hub/wiki/">Knowledge Wiki</a></li>
+                        <li><a href="/research-hub/media/">Media Kit</a></li>
+                        <li><a href="/research-hub/citations/">Citation Guide</a></li>
+                        <li><a href="/research-hub/contact/">Contact</a></li>
+                    </ul>
                 </div>
-                
                 <div class="footer-section">
-                    <h3>Connect</h3>
-                    <a href="mailto:Duke.T.James@gmail.com">Email</a>
-                    <a href="https://x.com/Author_Duke_J">X (Twitter)</a>
-                    <a href="https://authordukejohnson.bsky.social">Bluesky</a>
-                    <a href="https://github.com/bettertobest">GitHub</a>
+                    <h3>License</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+                        All research papers are published under Creative Commons Attribution 4.0 International (CC BY 4.0) license. You are free to share and adapt with attribution.
+                    </p>
                 </div>
             </div>
-            
-            <div class="copyright">
-                <p>© 2025 Better To Best Research Hub. All papers licensed under CC BY 4.0.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Better To Best Research Hub. Advancing post-scarcity economics through open research.</p>
             </div>
         </div>
     </footer>
