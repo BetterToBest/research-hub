@@ -313,6 +313,39 @@
             color: white;
         }
         
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+            border: none;
+            font-size: 1.2rem;
+        }
+        
+        #back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
         /* Footer */
         footer {
             background: var(--surface);
@@ -378,10 +411,17 @@
             .container {
                 padding: 0 1rem;
             }
+            
+            #back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
         }
     </style>
 </head>
-<body>
+<body id="top">
     <header>
         <div class="container">
             <div class="header-content">
@@ -391,7 +431,7 @@
                         <li><a href="/research-hub/">Home</a></li>
                         <li><a href="/research-hub/papers/" class="active">Papers</a></li>
                         <li><a href="/research-hub/wiki/">Wiki</a></li>
-                        <li><a href="/research-hub/#about">About</a></li>
+                        <li><a href="/research-hub/">About</a></li>
                     </ul>
                 </nav>
             </div>
@@ -418,7 +458,7 @@
                 <article class="paper-card">
                     <span class="paper-status status-published">Published</span>
                     <h3 class="paper-title">
-                        <a href="/research-hub/papers/optimal-transfer-design.html">Optimal Transfer Design in Post-Scarcity Economies</a>
+                        <a href="optimal-transfer-design.html">Optimal Transfer Design in Post-Scarcity Economies</a>
                     </h3>
                     <div class="paper-meta">
                         <span>📅 July 2025</span>
@@ -434,10 +474,10 @@
                         <span class="keyword">Post-Scarcity</span>
                     </div>
                     <div class="paper-actions">
-                        <a href="/research-hub/papers/optimal-transfer-design.html" class="btn btn-primary">
+                        <a href="optimal-transfer-design.html" class="btn btn-primary">
                             📖 Read Paper
                         </a>
-                        <a href="/research-hub/papers/optimal-transfer-design.pdf" class="btn btn-outline">
+                        <a href="optimal-transfer-design.pdf" class="btn btn-outline">
                             ⬇️ Download PDF
                         </a>
                     </div>
@@ -447,7 +487,7 @@
                 <article class="paper-card">
                     <span class="paper-status status-new">New</span>
                     <h3 class="paper-title">
-                        <a href="/research-hub/papers/community-monetary-innovation/">Community-Based Monetary Innovation for Development</a>
+                        <a href="community-monetary-innovation.html">Community-Based Monetary Innovation for Development</a>
                     </h3>
                     <div class="paper-meta">
                         <span>📅 July 31, 2025</span>
@@ -464,10 +504,10 @@
                         <span class="keyword">Post-Conflict Recovery</span>
                     </div>
                     <div class="paper-actions">
-                        <a href="/research-hub/papers/community-monetary-innovation.html" class="btn btn-primary">
+                        <a href="community-monetary-innovation.html" class="btn btn-primary">
                             📖 Read Paper
                         </a>
-                        <a href="/research-hub/pdfs/community-based-monetary-innovation.pdf" class="btn btn-outline">
+                        <a href="../pdfs/community-based-monetary-innovation.pdf" class="btn btn-outline">
                             ⬇️ Download PDF
                         </a>
                     </div>
@@ -477,7 +517,7 @@
                 <article class="paper-card">
                     <span class="paper-status status-new">New</span>
                     <h3 class="paper-title">
-                        <a href="/research-hub/papers/dual-currency-inflation/">Dual-Currency Systems and Inflation Control</a>
+                        <a href="dual-currency-inflation.html">Dual-Currency Systems and Inflation Control</a>
                     </h3>
                     <div class="paper-meta">
                         <span>📅 2025</span>
@@ -494,10 +534,10 @@
                         <span class="keyword">Dual Currency</span>
                     </div>
                     <div class="paper-actions">
-                        <a href="/research-hub/papers/dual-currency-inflation.html" class="btn btn-primary">
+                        <a href="dual-currency-inflation.html" class="btn btn-primary">
                             📖 Read Paper
                         </a>
-                        <a href="/research-hub/pdfs/dual-currency-inflation-control.pdf" class="btn btn-outline">
+                        <a href="../pdfs/dual-currency-inflation-control.pdf" class="btn btn-outline">
                             ⬇️ Download PDF
                         </a>
                     </div>
@@ -507,7 +547,7 @@
                 <article class="paper-card">
                     <span class="paper-status status-published">Published</span>
                     <h3 class="paper-title">
-                        <a href="/research-hub/papers/economic-modeling/">Economic Modeling Analysis of Creative Currency Octaves</a>
+                        <a href="economic-modeling.html">Economic Modeling Analysis of Creative Currency Octaves</a>
                     </h3>
                     <div class="paper-meta">
                         <span>📅 2025</span>
@@ -523,10 +563,10 @@
                         <span class="keyword">Welfare Economics</span>
                     </div>
                     <div class="paper-actions">
-                        <a href="/research-hub/papers/economic-modeling/" class="btn btn-primary">
+                        <a href="economic-modeling.html" class="btn btn-primary">
                             📖 Read Paper
                         </a>
-                        <a href="/research-hub/pdfs/economic-modeling-analysis.pdf" class="btn btn-outline">
+                        <a href="economic-modeling-analysis.pdf" class="btn btn-outline">
                             ⬇️ Download PDF
                         </a>
                     </div>
@@ -546,7 +586,7 @@
                 <article class="paper-card">
                     <span class="paper-status status-published">Published</span>
                     <h3 class="paper-title">
-                        <a href="/research-hub/papers/public-trust-foundations/">Public Trust Foundations: Community-Owned Essential Services</a>
+                        <a href="public-trust-foundations.html">Public Trust Foundations: Community-Owned Essential Services</a>
                     </h3>
                     <div class="paper-meta">
                         <span>📅 2025</span>
@@ -562,10 +602,10 @@
                         <span class="keyword">Democratic Governance</span>
                     </div>
                     <div class="paper-actions">
-                        <a href="/research-hub/papers/public-trust-foundations/" class="btn btn-primary">
+                        <a href="public-trust-foundations.html" class="btn btn-primary">
                             📖 Read Paper
                         </a>
-                        <a href="/research-hub/pdfs/public-trust-foundations.pdf" class="btn btn-outline">
+                        <a href="public-trust-foundations.pdf" class="btn btn-outline">
                             ⬇️ Download PDF
                         </a>
                     </div>
@@ -575,7 +615,7 @@
                 <article class="paper-card">
                     <span class="paper-status status-published">Published</span>
                     <h3 class="paper-title">
-                        <a href="/research-hub/papers/citizen-internet-portal/">Citizen Internet Portal: Democratic Digital Infrastructure</a>
+                        <a href="citizen-internet-portal.html">Citizen Internet Portal: Democratic Digital Infrastructure</a>
                     </h3>
                     <div class="paper-meta">
                         <span>📅 2025</span>
@@ -591,10 +631,10 @@
                         <span class="keyword">Privacy Protection</span>
                     </div>
                     <div class="paper-actions">
-                        <a href="/research-hub/papers/citizen-internet-portal/" class="btn btn-primary">
+                        <a href="citizen-internet-portal.html" class="btn btn-primary">
                             📖 Read Paper
                         </a>
-                        <a href="/research-hub/pdfs/citizen-internet-portal.pdf" class="btn btn-outline">
+                        <a href="citizen-internet-portal.pdf" class="btn btn-outline">
                             ⬇️ Download PDF
                         </a>
                     </div>
@@ -614,7 +654,7 @@
                 <article class="paper-card">
                     <span class="paper-status status-published">Published</span>
                     <h3 class="paper-title">
-                        <a href="/research-hub/papers/social-zone-harmonization/">Drug Policy Harmonization Through Creative Currency Octaves Integration</a>
+                        <a href="social-zone-harmonization.html">Drug Policy Harmonization Through Creative Currency Octaves Integration</a>
                     </h3>
                     <div class="paper-meta">
                         <span>📅 2025</span>
@@ -630,10 +670,10 @@
                         <span class="keyword">Criminal Justice Reform</span>
                     </div>
                     <div class="paper-actions">
-                        <a href="/research-hub/papers/social-zone-harmonization/" class="btn btn-primary">
+                        <a href="social-zone-harmonization.html" class="btn btn-primary">
                             📖 Read Paper
                         </a>
-                        <a href="/research-hub/pdfs/social-zone-harmonization.pdf" class="btn btn-outline">
+                        <a href="social-zone-harmonization.pdf" class="btn btn-outline">
                             ⬇️ Download PDF
                         </a>
                     </div>
@@ -643,7 +683,7 @@
                 <article class="paper-card">
                     <span class="paper-status status-published">Published</span>
                     <h3 class="paper-title">
-                        <a href="/research-hub/papers/integrated-housing/">Integrated Housing Solutions Through CCO-PTF Framework</a>
+                        <a href="integrated-housing.html">Integrated Housing Solutions Through CCO-PTF Framework</a>
                     </h3>
                     <div class="paper-meta">
                         <span>📅 2025</span>
@@ -659,10 +699,10 @@
                         <span class="keyword">Cooperative Economics</span>
                     </div>
                     <div class="paper-actions">
-                        <a href="/research-hub/papers/integrated-housing/" class="btn btn-primary">
+                        <a href="integrated-housing.html" class="btn btn-primary">
                             📖 Read Paper
                         </a>
-                        <a href="/research-hub/pdfs/integrated-housing.pdf" class="btn btn-outline">
+                        <a href="integrated-housing.pdf" class="btn btn-outline">
                             ⬇️ Download PDF
                         </a>
                     </div>
@@ -680,23 +720,26 @@
                         <li><a href="#economic-framework">Economic Frameworks</a></li>
                         <li><a href="#governance">Governance Systems</a></li>
                         <li><a href="#social-policy">Social Policy</a></li>
-                        <li><a href="/research-hub/">Implementation Guides</a></li>
+                        <li><a href="https://claude.ai/public/artifacts/b96a0930-7992-4cb6-a8e1-c99a7c29c30a" target="_blank" rel="noopener noreferrer">Implementation Guide</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Resources</h3>
                     <ul>
                         <li><a href="/research-hub/wiki/">Knowledge Wiki</a></li>
-                        <li><a href="/research-hub/#media">Media Kit</a></li>
+                        <li><a href="/research-hub/">Media Kit</a></li>
                         <li><a href="#" onclick="alert('Citation guide coming soon!'); return false;">Citation Guide</a></li>
-                        <li><a href="mailto:Duke.T.James@gmail.com">Contact</a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=Duke.T.James@gmail.com" target="_blank" rel="noopener noreferrer">Contact Email</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>License</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-                        All research papers are published under Creative Commons Attribution 4.0 International (CC BY 4.0) license. You are free to share and adapt with attribution.
-                    </p>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/research-hub/">Homepage</a></li>
+                        <li><a href="#top">Back to Top</a></li>
+                        <li><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0 License</a></li>
+                        <li><a href="https://github.com/bettertobest/research-hub" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -704,5 +747,50 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()" aria-label="Back to top">↑</button>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#top') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Back to top button functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
 </body>
 </html>
