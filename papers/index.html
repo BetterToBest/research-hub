@@ -76,14 +76,18 @@
         .header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
-            padding: 2rem 0;
+            padding: 1.5rem 0;
             box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         
-        .header-content {
+        .header-top {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 1rem;
         }
         
         .site-title {
@@ -93,21 +97,64 @@
             color: white;
         }
         
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
+        .search-box {
+            flex: 1;
+            max-width: 500px;
+            margin-left: 2rem;
         }
         
-        .nav-links a {
+        .search-input {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: rgba(255,255,255,0.1);
             color: white;
-            text-decoration: none;
-            opacity: 0.9;
-            transition: opacity 0.3s;
+            transition: all 0.3s;
         }
         
-        .nav-links a:hover {
-            opacity: 1;
+        .search-input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            background: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.5);
+        }
+        
+        .filter-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        .filter-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-tag {
+            padding: 0.25rem 0.75rem;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.75rem;
+            color: white;
+        }
+        
+        .filter-tag:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.5);
+        }
+        
+        .filter-tag.active {
+            background: white;
+            color: var(--primary);
+            border-color: white;
         }
         
         /* Hero Section */
@@ -115,6 +162,7 @@
             background: white;
             padding: 3rem 0;
             border-bottom: 1px solid var(--border);
+            margin-top: 0;
         }
         
         .hero h1 {
@@ -127,63 +175,6 @@
             font-size: 1.125rem;
             color: var(--text-secondary);
             max-width: 800px;
-        }
-        
-        /* Search and Filter */
-        .controls {
-            background: white;
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .search-box {
-            margin-bottom: 1.5rem;
-        }
-        
-        .search-input {
-            width: 100%;
-            max-width: 500px;
-            padding: 0.75rem 1rem;
-            border: 2px solid var(--border);
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-        
-        .search-input:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-        
-        .filter-tags {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        
-        .filter-tag {
-            padding: 0.5rem 1rem;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 0.875rem;
-        }
-        
-        .filter-tag:hover {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-        
-        .filter-tag.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
         }
         
         /* Section Headers */
@@ -383,19 +374,26 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header with integrated search and filters -->
     <header class="header">
         <div class="container">
-            <div class="header-content">
+            <div class="header-top">
                 <a href="../index.html" class="site-title">Better To Best Research Hub</a>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../index.html#about">About</a></li>
-                        <li><a href="#papers">Papers</a></li>
-                        <li><a href="../index.html#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="search-box">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search papers by title, author, or keyword...">
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-tags">
+                    <button class="filter-tag active" data-filter="all">All</button>
+                    <button class="filter-tag" data-filter="cco">CCO</button>
+                    <button class="filter-tag" data-filter="ptf">PTF</button>
+                    <button class="filter-tag" data-filter="cip">CIP</button>
+                    <button class="filter-tag" data-filter="szh">SZH</button>
+                    <button class="filter-tag" data-filter="welfare">Welfare</button>
+                    <button class="filter-tag" data-filter="governance">Governance</button>
+                    <button class="filter-tag" data-filter="implementation">Implementation</button>
+                </div>
             </div>
         </div>
     </header>
@@ -408,25 +406,6 @@
                 Open-access academic research advancing post-scarcity economics and democratic governance. 
                 All papers are freely available for download and licensed under Creative Commons Attribution 4.0.
             </p>
-        </div>
-    </section>
-    
-    <!-- Search and Filter Controls -->
-    <section class="controls">
-        <div class="container">
-            <div class="search-box">
-                <input type="text" class="search-input" id="searchInput" placeholder="Search papers by title, author, or keyword...">
-            </div>
-            <div class="filter-tags">
-                <button class="filter-tag active" data-filter="all">All Papers</button>
-                <button class="filter-tag" data-filter="cco">Creative Currency</button>
-                <button class="filter-tag" data-filter="ptf">Public Trust</button>
-                <button class="filter-tag" data-filter="cip">Citizens Portal</button>
-                <button class="filter-tag" data-filter="szh">Social Zones</button>
-                <button class="filter-tag" data-filter="welfare">Welfare Economics</button>
-                <button class="filter-tag" data-filter="governance">Governance</button>
-                <button class="filter-tag" data-filter="implementation">Implementation</button>
-            </div>
         </div>
     </section>
     
@@ -607,47 +586,98 @@
                         <a href="pdfs/economic-modeling-simulation.pdf" class="paper-link secondary" download>⬇️ Download PDF</a>
                     </div>
                 </article>
+                
+                <!-- Community-Based Monetary Innovation -->
+                <article class="paper-card" data-tags="cco development economics">
+                    <span class="status-badge published">Published</span>
+                    <h3 class="paper-title">
+                        <a href="community-monetary-development.html">Community-Based Monetary Innovation for Development: Creative Currency Octaves in Emerging Economies</a>
+                    </h3>
+                    <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
+                    <p class="paper-date">Published: August 29, 2025</p>
+                    <p class="jel-classification">JEL Classification: O16, E42, R11, Z13</p>
+                    <p class="paper-abstract">
+                        Explores how Creative Currency Octaves can serve as a development finance mechanism in emerging economies, with case studies from community implementations demonstrating poverty reduction through cultural value recognition and local economic circulation enhancement.
+                    </p>
+                    <div class="paper-tags">
+                        <span class="tag">Development Economics</span>
+                        <span class="tag">Community Currency</span>
+                        <span class="tag">Monetary Innovation</span>
+                        <span class="tag">Emerging Economies</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="community-monetary-development.html" class="paper-link">📄 Read Paper</a>
+                        <a href="pdfs/community-monetary-development.pdf" class="paper-link secondary" download>⬇️ Download PDF</a>
+                    </div>
+                </article>
+                
+                <!-- Public Trust Financial Mechanisms -->
+                <article class="paper-card" data-tags="ptf finance implementation">
+                    <span class="status-badge published">Published</span>
+                    <h3 class="paper-title">
+                        <a href="public-trust-financial.html">Public Trust Financial Mechanisms: Sustainable Financing for Community-Owned Housing</a>
+                    </h3>
+                    <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
+                    <p class="paper-date">Published: August 30, 2025</p>
+                    <p class="jel-classification">JEL Classification: G21, R31, H42, P13</p>
+                    <p class="paper-abstract">
+                        Comprehensive analysis of financial structures enabling Public Trust Housing implementation, including mixed capital stacks, community investment mechanisms, and sustainable revenue models that preserve affordability while building collective wealth through innovative financing approaches.
+                    </p>
+                    <div class="paper-tags">
+                        <span class="tag">Housing Finance</span>
+                        <span class="tag">Community Investment</span>
+                        <span class="tag">Public Trust</span>
+                        <span class="tag">Sustainable Finance</span>
+                    </div>
+                    <div class="paper-actions">
+                        <a href="public-trust-financial.html" class="paper-link">📄 Read Paper</a>
+                        <a href="pdfs/public-trust-financial.pdf" class="paper-link secondary" download>⬇️ Download PDF</a>
+                    </div>
+                </article>
             </div>
             
             <!-- Working Papers Section -->
             <div class="section-header">
-                <h2 class="section-title">Working Papers & Forthcoming Research</h2>
-                <p class="section-description">Papers currently in development or under review.</p>
+                <h2 class="section-title">Recent Publications</h2>
+                <p class="section-description">Latest papers exploring democratic governance and cultural value integration.</p>
             </div>
             
             <div class="papers-grid">
                 <!-- Democratic Governance -->
                 <article class="paper-card" data-tags="ptf governance democracy">
-                    <span class="status-badge development">In Development</span>
+                    <span class="status-badge published">Published</span>
                     <h3 class="paper-title">
-                        Democratic Governance in Economic Systems: Lessons from Public Trust Housing
+                        <a href="democratic-governance-pth.html">Democratic Governance in Economic Systems: Lessons from Public Trust Housing</a>
                     </h3>
                     <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
-                    <p class="paper-date">Expected: Q4 2025</p>
+                    <p class="paper-date">Published: August 31, 2025</p>
+                    <p class="jel-classification">JEL Classification: P13, R31, D71, H42, Z13</p>
                     <p class="paper-abstract">
-                        Analysis of community governance mechanisms in Public Trust Housing implementations, examining how democratic decision-making can effectively manage complex economic systems while maintaining accountability.
+                        Examines democratic governance mechanisms preventing power concentration in collective economic systems, with focus on Public Trust Housing applications. Analyzes quadratic voting, liquid democracy, and diverse charter models while providing opt-in benefit structures for non-PTF homeowners.
                     </p>
                     <div class="paper-tags">
                         <span class="tag">Governance</span>
                         <span class="tag">Democracy</span>
                         <span class="tag">Housing Policy</span>
-                        <span class="tag">Community Management</span>
+                        <span class="tag">Cooperative Economics</span>
                     </div>
                     <div class="paper-actions">
-                        <span class="paper-link secondary">📝 Coming Soon</span>
+                        <a href="democratic-governance-pth.html" class="paper-link">📄 Read Paper</a>
+                        <a href="pdfs/democratic-governance-pth.pdf" class="paper-link secondary" download>⬇️ Download PDF</a>
                     </div>
                 </article>
                 
                 <!-- Cultural Value Integration -->
                 <article class="paper-card" data-tags="cco culture economics">
-                    <span class="status-badge development">In Development</span>
+                    <span class="status-badge published">Published</span>
                     <h3 class="paper-title">
-                        Cultural Value Integration in Economic Systems: The Creative Currency Octaves Framework
+                        <a href="cultural-value-integration.html">Cultural Value Integration in Economic Systems: The Creative Currency Octaves Framework</a>
                     </h3>
                     <p class="paper-authors">Duke Johnson & Claude (Anthropic)</p>
-                    <p class="paper-date">Expected: Q4 2025</p>
+                    <p class="paper-date">Published: August 31, 2025</p>
+                    <p class="jel-classification">JEL Classification: Z11, E42, D83, O35, P40, L82</p>
                     <p class="paper-abstract">
-                        Examination of how Creative Currency Octaves explicitly recognizes and economically supports cultural and artistic contributions, representing the first currency framework backed by "publicly-endowed art and creation."
+                        Examines how Creative Currency Octaves explicitly recognizes and economically supports cultural and artistic contributions through multi-tier conversion rates, peer review mechanisms, and the Phi rate for productive beauty, representing the first currency framework backed by "publicly-endowed art and creation."
                     </p>
                     <div class="paper-tags">
                         <span class="tag">Cultural Economics</span>
@@ -656,7 +686,8 @@
                         <span class="tag">Arts Funding</span>
                     </div>
                     <div class="paper-actions">
-                        <span class="paper-link secondary">📝 Coming Soon</span>
+                        <a href="cultural-value-integration.html" class="paper-link">📄 Read Paper</a>
+                        <a href="pdfs/cultural-value-integration.pdf" class="paper-link secondary" download>⬇️ Download PDF</a>
                     </div>
                 </article>
             </div>
