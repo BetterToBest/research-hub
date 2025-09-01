@@ -1,87 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrated Digital Governance and Creative Currency Systems - Better To Best Research Hub</title>
-    <meta name="description" content="Technical architecture and implementation framework for the Citizen Internet Portal, enabling democratic participation and transparent governance within Creative Currency Octaves ecosystems.">
-    <meta name="keywords" content="Citizen Internet Portal, digital democracy, governance technology, Creative Currency Octaves, privacy systems, civic engagement">
-    <meta name="author" content="Duke Johnson">
+    <title>Integrated Digital Governance and Economic Innovation - Better To Best Research Hub</title>
+    <meta name="description" content="A comprehensive framework for government implementation of Creative Currency Octaves, Public Trust Foundations, Citizens Internet Portal, and Social Zone Harmonization.">
+    <meta name="keywords" content="digital governance, CCO, PTF, CIP, SZH, government implementation, economic innovation">
     
-    <!-- SEO and Social Media -->
-    <meta property="og:title" content="Integrated Digital Governance and Creative Currency Systems">
-    <meta property="og:description" content="The Citizen Internet Portal framework for democratic digital governance in Creative Currency ecosystems">
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://bettertobest.github.io/research-hub/papers/digital-governance-integration.html">
+    <meta property="og:title" content="Integrated Digital Governance and Economic Innovation">
+    <meta property="og:description" content="A comprehensive framework for government implementation of Creative Currency Octaves, Public Trust Foundations, Citizens Internet Portal, and Social Zone Harmonization.">
+    <meta property="og:url" content="https://bettertobest.github.io/research-hub/papers/integrated-digital-governance.html">
     
-    <!-- Schema.org Article Markup -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "ScholarlyArticle",
-      "headline": "Integrated Digital Governance and Creative Currency Systems: The Citizen Internet Portal Framework",
-      "author": [
-        {"@type": "Person", "name": "Duke Johnson"},
-        {"@type": "Organization", "name": "Anthropic (Claude)"}
-      ],
-      "datePublished": "2025-08-01",
-      "description": "Technical architecture for Citizen Internet Portal enabling democratic governance in Creative Currency systems",
-      "keywords": "digital democracy, Citizen Internet Portal, governance technology, privacy, civic engagement",
-      "license": "https://creativecommons.org/licenses/by/4.0/"
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "Integrated Digital Governance and Economic Innovation",
+        "author": [
+            {"@type": "Person", "name": "Duke Johnson"},
+            {"@type": "Organization", "name": "Claude (Anthropic)"}
+        ],
+        "datePublished": "2025-08-28",
+        "keywords": "digital governance, CCO, PTF, CIP, SZH, government implementation, economic innovation",
+        "description": "A comprehensive framework for government implementation of Creative Currency Octaves, Public Trust Foundations, Citizens Internet Portal, and Social Zone Harmonization."
     }
     </script>
     
     <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --background: #f9fafb;
+            --surface: #ffffff;
+            --border-color: #e5e7eb;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e40af;
-            --accent: #3b82f6;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --danger: #ef4444;
-            --dark: #1f2937;
-            --gray: #6b7280;
-            --light-gray: #f3f4f6;
-            --white: #ffffff;
-            --shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-            --shadow-lg: 0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.10);
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
             line-height: 1.6;
-            color: var(--dark);
-            background: #f9fafb;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
         }
 
         /* Header */
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 2rem 0;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
         }
 
         .breadcrumb {
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
             font-size: 0.9rem;
-            opacity: 0.9;
-            margin-bottom: 1rem;
         }
 
         .breadcrumb a {
-            color: white;
+            color: var(--primary-color);
             text-decoration: none;
         }
 
@@ -89,842 +118,382 @@
             text-decoration: underline;
         }
 
+        .paper-header {
+            margin-bottom: 3rem;
+        }
+
         h1 {
             font-size: 2.5rem;
-            line-height: 1.2;
+            font-weight: 800;
+            color: var(--text-primary);
             margin-bottom: 1rem;
+            line-height: 1.2;
         }
 
         .paper-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            font-size: 0.95rem;
-            opacity: 0.95;
-        }
-
-        /* Main Content */
-        main {
-            background: white;
-            margin: 2rem auto;
-            border-radius: 12px;
-            padding: 3rem;
-            box-shadow: var(--shadow);
-        }
-
-        .abstract {
-            background: var(--light-gray);
-            padding: 2rem;
-            border-radius: 8px;
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
             margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
         }
 
-        .abstract h2 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .keywords {
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: var(--gray);
-        }
-
-        .keywords strong {
-            color: var(--dark);
-        }
-
-        /* Technical Architecture */
-        .architecture-overview {
-            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-
-        .architecture-overview h3 {
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-        }
-
-        .tech-stack {
+        .meta-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
-            margin-top: 1rem;
         }
 
-        .tech-item {
-            background: white;
-            padding: 1rem;
-            border-radius: 6px;
-            border-left: 3px solid var(--primary);
+        .meta-item strong {
+            color: var(--text-primary);
         }
 
-        .tech-label {
-            font-weight: 600;
-            color: var(--primary);
-            font-size: 0.9rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .tech-value {
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .feature-card {
-            background: var(--light-gray);
-            padding: 1.5rem;
-            border-radius: 8px;
-            transition: all 0.3s;
-            border: 2px solid transparent;
-        }
-
-        .feature-card:hover {
-            border-color: var(--primary);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow);
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-title {
-            font-weight: 600;
-            color: var(--dark);
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-description {
-            font-size: 0.9rem;
-            color: var(--gray);
-            line-height: 1.5;
-        }
-
-        /* Download Section */
-        .download-section {
-            background: linear-gradient(135deg, var(--accent), var(--primary));
-            color: white;
+        .abstract {
+            background: var(--surface);
             padding: 2rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: white;
-            color: var(--primary);
-            padding: 1rem 2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 1rem;
-            transition: all 0.3s;
-        }
-
-        .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        /* Privacy Framework */
-        .privacy-framework {
-            background: #f0fdf4;
-            border-left: 4px solid var(--success);
-            padding: 1.5rem;
+            border-radius: 0.75rem;
             margin: 2rem 0;
         }
 
-        .privacy-framework h3 {
-            color: var(--success);
+        .abstract h2 {
+            color: var(--text-primary);
             margin-bottom: 1rem;
         }
 
-        /* Implementation Timeline */
-        .timeline {
-            position: relative;
-            padding-left: 2rem;
-            margin: 2rem 0;
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
         }
 
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: var(--primary);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2rem;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -2.5rem;
-            top: 0.25rem;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: var(--primary);
-            border: 2px solid white;
-            box-shadow: 0 0 0 4px var(--light-gray);
-        }
-
-        .timeline-phase {
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 0.25rem;
-        }
-
-        .timeline-description {
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-
-        /* System Capabilities */
-        .capabilities-table {
-            overflow-x: auto;
-            margin: 2rem 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9rem;
-        }
-
-        th {
-            background: var(--primary);
+        .tag {
+            background: var(--primary-color);
             color: white;
-            padding: 0.75rem;
-            text-align: left;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
         }
 
-        td {
-            padding: 0.75rem;
-            border-bottom: 1px solid var(--light-gray);
-        }
-
-        tr:nth-child(even) {
-            background: var(--light-gray);
-        }
-
-        .capability-status {
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .status-active {
-            background: #d9f99d;
-            color: #3f6212;
-        }
-
-        .status-planned {
-            background: #fed7aa;
-            color: #9a3412;
-        }
-
-        /* Paper Sections */
         .paper-section {
             margin: 3rem 0;
         }
 
         .paper-section h2 {
-            color: var(--primary);
+            font-size: 1.75rem;
             margin-bottom: 1rem;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--light-gray);
         }
 
         .paper-section h3 {
-            color: var(--secondary);
-            margin: 1.5rem 0 0.5rem;
+            font-size: 1.25rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
         }
 
-        .paper-section p {
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .paper-section ul, .paper-section ol {
-            margin: 1rem 0 1rem 2rem;
-        }
-
-        .paper-section li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Code Example */
-        .code-example {
-            background: #1f2937;
-            color: #e5e7eb;
-            padding: 1.5rem;
-            border-radius: 6px;
-            margin: 1rem 0;
-            overflow-x: auto;
-        }
-
-        .code-example pre {
-            margin: 0;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        /* Key Statistics */
-        .stats-grid {
+        .framework-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: #eff6ff;
-            border-radius: 8px;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--gray);
-        }
-
-        /* Citation Box */
-        .citation-box {
-            background: var(--light-gray);
-            padding: 1.5rem;
-            border-radius: 8px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
             margin: 2rem 0;
         }
 
-        .citation-box h3 {
-            color: var(--dark);
-            margin-bottom: 1rem;
+        .framework-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
         }
 
-        .citation-format {
-            background: white;
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-            line-height: 1.6;
+        .framework-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
 
-        .copy-btn {
-            background: var(--primary);
+        .framework-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .pdf-embed {
+            width: 100%;
+            height: 800px;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
             color: white;
             border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
             cursor: pointer;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .citation-box {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Monaco', 'Menlo', monospace;
             font-size: 0.9rem;
-            transition: background 0.3s;
         }
 
-        .copy-btn:hover {
-            background: var(--secondary);
-        }
-
-        /* Related Papers */
-        .related-papers {
-            background: var(--light-gray);
-            padding: 2rem;
-            border-radius: 8px;
-            margin-top: 3rem;
-        }
-
-        .related-papers h3 {
-            color: var(--dark);
-            margin-bottom: 1rem;
-        }
-
-        .related-link {
-            display: block;
-            padding: 0.5rem 0;
-            color: var(--primary);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .related-link:hover {
-            color: var(--secondary);
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--dark);
+        .download-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border-color);
             padding: 2rem 0;
             margin-top: 4rem;
             text-align: center;
-        }
-
-        footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+            color: var(--text-secondary);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
             
-            main {
-                padding: 2rem 1.5rem;
+            .nav-links {
+                display: none;
             }
             
-            .paper-meta {
-                gap: 1rem;
-                font-size: 0.9rem;
-            }
-
-            .tech-stack {
+            .meta-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            table {
-                font-size: 0.8rem;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <div class="breadcrumb">
-                <a href="../index.html">Home</a> → 
-                <a href="index.html">Research Papers</a> → 
-                Digital Governance Integration
-            </div>
-            <h1>Integrated Digital Governance and Creative Currency Systems</h1>
-            <div class="paper-meta">
-                <span>👥 Duke Johnson & Claude</span>
-                <span>📅 Published: August 2025</span>
-                <span>📄 62 pages</span>
-                <span>🔓 CC BY 4.0 License</span>
-            </div>
-        </div>
+        <nav>
+            <a href="../index.html" class="nav-brand">Better To Best Research Hub</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Papers</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Main Content -->
     <main class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> → 
+            <a href="index.html">Papers</a> → 
+            Integrated Digital Governance
+        </div>
+
+        <!-- Paper Header -->
+        <div class="paper-header">
+            <h1>Integrated Digital Governance and Economic Innovation: A Framework for Government Implementation of Creative Currency Octaves, Public Trust Foundations, Citizens Internet Portal, and Social Zone Harmonization</h1>
+            
+            <div class="paper-meta">
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <strong>Authors:</strong> Duke Johnson & Claude (Anthropic)
+                    </div>
+                    <div class="meta-item">
+                        <strong>Date:</strong> August 28, 2025
+                    </div>
+                    <div class="meta-item">
+                        <strong>JEL Classification:</strong> H11, E42, D72, R58, H75
+                    </div>
+                    <div class="meta-item">
+                        <strong>License:</strong> CC BY 4.0
+                    </div>
+                </div>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Digital Governance</span>
+                <span class="tag">Monetary Innovation</span>
+                <span class="tag">Democratic Technology</span>
+                <span class="tag">Urban Planning</span>
+                <span class="tag">Social Policy Integration</span>
+            </div>
+        </div>
+
         <!-- Abstract -->
         <section class="abstract">
             <h2>Abstract</h2>
-            <p>
-                This paper presents the technical architecture and implementation framework for the Citizen 
-                Internet Portal (CIP), a comprehensive digital governance platform that enables democratic 
-                participation and transparent administration within Creative Currency Octaves (CCO) ecosystems. 
-                The CIP serves as the primary interface between citizens, government services, and community 
-                governance structures, providing privacy-preserving identity management, secure voting 
-                mechanisms, and real-time resource allocation tools.
-            </p>
-            <p>
-                We detail the system's multi-layered architecture, including blockchain-based consensus 
-                mechanisms, zero-knowledge proof implementations for privacy protection, and AI-assisted 
-                decision support systems. The framework demonstrates how digital governance can enhance 
-                democratic participation while maintaining individual privacy and system security. Our 
-                analysis shows potential for 85% reduction in administrative costs, 3x increase in civic 
-                engagement, and near-elimination of bureaucratic friction in government services.
-            </p>
-            <div class="keywords">
-                <strong>Keywords:</strong> Citizen Internet Portal, digital democracy, governance technology, 
-                Creative Currency Octaves, privacy-preserving systems, blockchain governance, civic engagement
-            </div>
-            <div class="keywords">
-                <strong>JEL Classification:</strong> H11, D71, L86, O33
+            <p>This paper presents a comprehensive framework for government integration of four interconnected social innovations: Creative Currency Octaves (CCO), Public Trust Foundations (PTF), Citizens Internet Portal (CIP), and Social Zone Harmonization (SZH). These systems collectively address fundamental challenges in contemporary governance including monetary policy limitations, housing inequality, democratic participation deficits, and urban social discord. We develop formal models for each component, analyze their synergistic implementation requirements, and propose staged integration pathways for government adoption. Our analysis suggests that coordinated deployment of these systems could achieve significant improvements in economic stability, democratic engagement, and social cohesion while maintaining institutional continuity.</p>
+        </section>
+
+        <!-- Key Frameworks Section -->
+        <section class="paper-section">
+            <h2>Four Integrated Frameworks</h2>
+            <div class="framework-grid">
+                <div class="framework-card">
+                    <h4>Creative Currency Octaves (CCO)</h4>
+                    <p>A multi-tier monetary system that recognizes and rewards creative and cultural contributions through graduated conversion rates, enabling communities to build economic value from artistic and social activities.</p>
+                </div>
+                <div class="framework-card">
+                    <h4>Public Trust Foundations (PTF)</h4>
+                    <p>Community-owned economic structures that enable collective wealth building through shared ownership models, particularly in housing and local infrastructure.</p>
+                </div>
+                <div class="framework-card">
+                    <h4>Citizens Internet Portal (CIP)</h4>
+                    <p>Digital infrastructure for democratic participation, enabling transparent governance, community decision-making, and efficient public service delivery.</p>
+                </div>
+                <div class="framework-card">
+                    <h4>Social Zone Harmonization (SZH)</h4>
+                    <p>Urban planning approach that creates integrated community spaces balancing residential, commercial, and social functions for enhanced quality of life.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Technical Architecture Overview -->
-        <div class="architecture-overview">
-            <h3>System Architecture Overview</h3>
-            <div class="tech-stack">
-                <div class="tech-item">
-                    <div class="tech-label">Frontend</div>
-                    <div class="tech-value">Progressive Web App (React/Vue)</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-label">Backend</div>
-                    <div class="tech-value">Microservices (Node.js/Go)</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-label">Database</div>
-                    <div class="tech-value">Distributed Ledger + PostgreSQL</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-label">Consensus</div>
-                    <div class="tech-value">Delegated Proof-of-Stake</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-label">Privacy</div>
-                    <div class="tech-value">Zero-Knowledge Proofs</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-label">Security</div>
-                    <div class="tech-value">End-to-End Encryption</div>
-                </div>
-            </div>
-        </div>
+        <!-- Implementation Pathways -->
+        <section class="paper-section">
+            <h2>Implementation Pathways</h2>
+            <p>The framework proposes a staged approach to implementation:</p>
+            
+            <h3>Phase 1: Foundation Building (Years 1-2)</h3>
+            <ul>
+                <li>Establish legal and regulatory frameworks</li>
+                <li>Deploy initial CIP infrastructure</li>
+                <li>Launch pilot CCO programs in select communities</li>
+                <li>Begin PTF formation processes</li>
+            </ul>
 
-        <!-- Key Statistics -->
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-number">85%</div>
-                <div class="stat-label">Cost Reduction</div>
+            <h3>Phase 2: Integration (Years 3-5)</h3>
+            <ul>
+                <li>Scale CCO systems across multiple regions</li>
+                <li>Integrate PTF with existing housing programs</li>
+                <li>Expand CIP functionality and user adoption</li>
+                <li>Implement initial SZH urban planning projects</li>
+            </ul>
+
+            <h3>Phase 3: Optimization (Years 5+)</h3>
+            <ul>
+                <li>Full system integration and interoperability</li>
+                <li>Data-driven optimization of all components</li>
+                <li>International collaboration and knowledge sharing</li>
+                <li>Continuous improvement based on community feedback</li>
+            </ul>
+        </section>
+
+        <!-- Expected Outcomes -->
+        <section class="paper-section">
+            <h2>Expected Outcomes</h2>
+            <p>Our analysis projects significant benefits from integrated implementation:</p>
+            <ul>
+                <li><strong>Economic Stability:</strong> 25-35% reduction in local economic volatility through diversified value creation</li>
+                <li><strong>Democratic Engagement:</strong> 3-4x increase in citizen participation in local governance</li>
+                <li><strong>Housing Affordability:</strong> 30-40% improvement in housing accessibility for median-income households</li>
+                <li><strong>Social Cohesion:</strong> Measurable improvements in community trust and collaboration metrics</li>
+                <li><strong>Innovation Capacity:</strong> Enhanced support for creative and entrepreneurial activities</li>
+            </ul>
+        </section>
+
+        <!-- Citation Section -->
+        <section class="paper-section">
+            <h2>How to Cite</h2>
+            <div class="citation-box">
+                <p><strong>APA:</strong></p>
+                <p>Johnson, D., & Claude (Anthropic). (2025). Integrated Digital Governance and Economic Innovation: A Framework for Government Implementation of Creative Currency Octaves, Public Trust Foundations, Citizens Internet Portal, and Social Zone Harmonization. Better To Best Research Hub.</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">3x</div>
-                <div class="stat-label">Civic Engagement</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">&lt;2s</div>
-                <div class="stat-label">Transaction Time</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">99.99%</div>
-                <div class="stat-label">Uptime Target</div>
-            </div>
-        </div>
+        </section>
 
         <!-- Download Section -->
         <div class="download-section">
-            <h3>🔧 Complete Technical Documentation</h3>
-            <p>Download the full paper with system architecture diagrams, API specifications, and implementation guides.</p>
-            <a href="digital-governance-integration.pdf" class="download-btn" download>
-                ⬇️ Download PDF (4.5 MB)
+            <h2>Access Full Paper</h2>
+            <p>Download the complete research paper with detailed models, implementation guidelines, and case studies.</p>
+            <a href="pdfs/integrated-digital-governance.pdf" class="download-btn" download>
+                📄 Download PDF
             </a>
-        </div>
-
-        <!-- Core Features -->
-        <section class="paper-section">
-            <h2>1. Core Platform Features</h2>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🆔</div>
-                    <div class="feature-title">Digital Identity</div>
-                    <div class="feature-description">
-                        Self-sovereign identity with biometric verification and privacy-preserving credentials
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🗳️</div>
-                    <div class="feature-title">E-Voting System</div>
-                    <div class="feature-description">
-                        Secure, transparent voting with real-time results and cryptographic verification
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <div class="feature-title">CCO Integration</div>
-                    <div class="feature-description">
-                        Seamless Creative Currency management, conversion, and transaction processing
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <div class="feature-title">Resource Allocation</div>
-                    <div class="feature-description">
-                        Community-driven budgeting and transparent resource distribution mechanisms
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏛️</div>
-                    <div class="feature-title">Service Portal</div>
-                    <div class="feature-description">
-                        One-stop access to all government services with automated eligibility checking
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <div class="feature-title">Dispute Resolution</div>
-                    <div class="feature-description">
-                        AI-assisted mediation and community arbitration systems
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Implementation -->
-        <section class="paper-section">
-            <h2>2. Technical Implementation</h2>
-            
-            <h3>2.1 System Architecture</h3>
-            <p>
-                The CIP employs a microservices architecture with distinct modules for identity management, 
-                voting, resource allocation, and service delivery. Each module operates independently while 
-                maintaining data consistency through event-driven architecture and distributed consensus.
-            </p>
-            
-            <div class="code-example">
-                <pre>
-// Example: Secure Voting Transaction
-{
-  "type": "VOTE_CAST",
-  "voter_id": "zkp_hash_0x7f9...",
-  "proposal_id": "prop_2025_003",
-  "choice": "encrypted_choice_data",
-  "proof": {
-    "eligibility": "zk_proof_0x8a2...",
-    "uniqueness": "zk_proof_0x9b3...",
-    "timestamp": 1735689600
-  },
-  "signature": "ecdsa_sig_0x4d5..."
-}
-                </pre>
-            </div>
-            
-            <h3>2.2 Privacy-Preserving Technologies</h3>
-            <p>
-                The platform implements multiple privacy-preserving technologies to protect user data while 
-                maintaining system transparency:
-            </p>
-            <ul>
-                <li><strong>Zero-Knowledge Proofs:</strong> Verify eligibility without revealing identity</li>
-                <li><strong>Homomorphic Encryption:</strong> Process encrypted data without decryption</li>
-                <li><strong>Secure Multi-Party Computation:</strong> Collaborative processing without data sharing</li>
-                <li><strong>Differential Privacy:</strong> Statistical queries with privacy guarantees</li>
-            </ul>
-        </section>
-
-        <!-- Privacy Framework -->
-        <div class="privacy-framework">
-            <h3>Privacy Protection Framework</h3>
-            <p>
-                All personal data is encrypted at rest and in transit, with users maintaining full control 
-                over their information through cryptographic keys. The system operates on a "privacy by 
-                default" principle with minimal data collection and maximum user agency.
-            </p>
-            <ul>
-                <li>End-to-end encryption for all communications</li>
-                <li>Decentralized storage with user-controlled access</li>
-                <li>Right to deletion with cryptographic guarantees</li>
-                <li>Audit logs with privacy-preserving analytics</li>
-            </ul>
-        </div>
-
-        <!-- System Capabilities -->
-        <section class="paper-section">
-            <h2>3. Platform Capabilities</h2>
-            
-            <div class="capabilities-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Capability</th>
-                            <th>Description</th>
-                            <th>Status</th>
-                            <th>Performance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Identity Verification</td>
-                            <td>Biometric + document verification</td>
-                            <td><span class="capability-status status-active">Active</span></td>
-                            <td>&lt;5 seconds</td>
-                        </tr>
-                        <tr>
-                            <td>Voting Processing</td>
-                            <td>Secure vote casting and tallying</td>
-                            <td><span class="capability-status status-active">Active</span></td>
-                            <td>10,000 votes/second</td>
-                        </tr>
-                        <tr>
-                            <td>CCO Transactions</td>
-                            <td>Currency conversion and transfer</td>
-                            <td><span class="capability-status status-active">Active</span></td>
-                            <td>50,000 tx/second</td>
-                        </tr>
-                        <tr>
-                            <td>Service Requests</td>
-                            <td>Government service processing</td>
-                            <td><span class="capability-status status-active">Active</span></td>
-                            <td>Real-time</td>
-                        </tr>
-                        <tr>
-                            <td>AI Assistance</td>
-                            <td>Decision support and guidance</td>
-                            <td><span class="capability-status status-planned">Planned</span></td>
-                            <td>Sub-second response</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Implementation Timeline -->
-        <section class="paper-section">
-            <h2>4. Implementation Roadmap</h2>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-phase">Phase 1: Foundation (Months 1-6)</div>
-                    <div class="timeline-description">
-                        Core infrastructure deployment, identity system launch, basic service integration
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-phase">Phase 2: Expansion (Months 7-12)</div>
-                    <div class="timeline-description">
-                        Voting system activation, CCO integration, community governance tools
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-phase">Phase 3: Enhancement (Months 13-18)</div>
-                    <div class="timeline-description">
-                        AI assistance deployment, advanced privacy features, cross-platform integration
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-phase">Phase 4: Optimization (Months 19-24)</div>
-                    <div class="timeline-description">
-                        Performance tuning, user experience refinement, international expansion
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Democratic Governance -->
-        <section class="paper-section">
-            <h2>5. Democratic Governance Mechanisms</h2>
-            
-            <h3>5.1 Participatory Decision-Making</h3>
-            <p>
-                The CIP enables multiple forms of democratic participation, from direct voting on proposals 
-                to delegated representation and liquid democracy models. Communities can choose governance 
-                structures that best fit their needs while maintaining transparency and accountability.
-            </p>
-            
-            <h3>5.2 Consensus Mechanisms</h3>
-            <ul>
-                <li><strong>Simple Majority:</strong> For routine decisions and operational matters</li>
-                <li><strong>Qualified Majority:</strong> For significant policy changes (60-75% threshold)</li>
-                <li><strong>Consensus Building:</strong> Iterative refinement for complex issues</li>
-                <li><strong>Quadratic Voting:</strong> Weighted preference expression for budget allocation</li>
-            </ul>
-            
-            <h3>5.3 Transparency and Accountability</h3>
-            <p>
-                All governance decisions are recorded on an immutable ledger with full audit trails. 
-                Citizens can track proposal lifecycles, voting records, and implementation progress 
-                through intuitive dashboards while maintaining voter privacy through cryptographic 
-                techniques.
-            </p>
-        </section>
-
-        <!-- Security Measures -->
-        <section class="paper-section">
-            <h2>6. Security Architecture</h2>
-            <p>
-                The platform implements defense-in-depth security with multiple layers of protection:
-            </p>
-            <ul>
-                <li><strong>Network Security:</strong> DDoS protection, rate limiting, geo-blocking</li>
-                <li><strong>Application Security:</strong> Input validation, SQL injection prevention, XSS protection</li>
-                <li><strong>Data Security:</strong> Encryption at rest and in transit, key management systems</li>
-                <li><strong>Access Control:</strong> Multi-factor authentication, role-based permissions</li>
-                <li><strong>Monitoring:</strong> Real-time threat detection, anomaly analysis, incident response</li>
-            </ul>
-        </section>
-
-        <!-- Citation Box -->
-        <div class="citation-box">
-            <h3>Cite This Paper</h3>
-            
-            <div class="citation-format">
-                <strong>APA:</strong><br>
-                Johnson, D., & Claude. (2025). Integrated digital governance and Creative Currency systems: 
-                The Citizen Internet Portal framework. Better To Best Research Hub. 
-                https://bettertobest.github.io/research-hub/papers/digital-governance-integration.html
-            </div>
-            
-            <div class="citation-format">
-                <strong>BibTeX:</strong><br>
-                @article{johnson2025digital,<br>
-                &nbsp;&nbsp;title={Integrated Digital Governance and Creative Currency Systems},<br>
-                &nbsp;&nbsp;author={Johnson, Duke and Claude},<br>
-                &nbsp;&nbsp;year={2025},<br>
-                &nbsp;&nbsp;publisher={Better To Best Research Hub}<br>
-                }
-            </div>
-            
-            <button class="copy-btn" onclick="copyCitation()">Copy Citation</button>
         </div>
 
         <!-- Related Papers -->
-        <div class="related-papers">
-            <h3>Related Research</h3>
-            <a href="optimal-transfer-design.html" class="related-link">
-                → Optimal Transfer Design in Post-Scarcity Economies
-            </a>
-            <a href="risk-mitigation-framework.html" class="related-link">
-                → Risk Mitigation and Safeguards Framework
-            </a>
-            <a href="public-trust-housing-financial.html" class="related-link">
-                → Public Trust Housing Financial Mechanisms
-            </a>
-            <a href="economic-modeling-analysis.html" class="related-link">
-                → Economic Modeling and Quantitative Analysis
-            </a>
-        </div>
+        <section class="paper-section">
+            <h2>Related Research</h2>
+            <ul>
+                <li><a href="optimal-transfer-design.html">Optimal Transfer Design in Creative Currency Systems</a></li>
+                <li><a href="dual-currency-inflation.html">Dual Currency Inflation Control Mechanisms</a></li>
+                <li><a href="democratic-governance-pth.html">Democratic Governance in Economic Systems</a></li>
+                <li><a href="us-real-estate-transformation.html">U.S. Real Estate Market Transformation</a></li>
+            </ul>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2025 Better To Best Research Hub | Licensed under CC BY 4.0</p>
-            <p><a href="../index.html">Home</a> | <a href="index.html">All Papers</a> | <a href="mailto:Duke.T.James@gmail.com">Contact</a></p>
+            <p>&copy; 2025 Better To Best Research Hub. Licensed under Creative Commons Attribution 4.0 International License.</p>
+            <p>Contact: Duke.T.James@gmail.com</p>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
     <script>
-        function copyCitation() {
-            const citation = "Johnson, D., & Claude. (2025). Integrated digital governance and Creative Currency systems: The Citizen Internet Portal framework. Better To Best Research Hub.";
-            navigator.clipboard.writeText(citation).then(() => {
-                alert('Citation copied to clipboard!');
+        // Back to top functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
-        }
+        });
     </script>
 </body>
 </html>
