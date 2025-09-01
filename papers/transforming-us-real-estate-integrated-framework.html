@@ -1,1 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforming the U.S. Real Estate Market - Better To Best Research Hub</title>
+    <meta name="description" content="Analysis of how Public Trust Housing could reshape American real estate markets while preserving private ownership options, introducing Acre Equity concepts for community wealth building.">
+    <meta name="keywords" content="Real Estate Policy, Public Trust Housing, Market Transformation, Community Ownership, Acre Equity, Housing Affordability">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Transforming the U.S. Real Estate Market Through Public Trust Foundations">
+    <meta property="og:description" content="PTH could achieve 15-20% market penetration within a decade, creating $70,000 in average wealth accumulation over 20 years.">
+    <meta property="og:url" content="https://bettertobest.github.io/research-hub/papers/us-real-estate-transformation.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "Transforming the U.S. Real Estate Market Through Public Trust Foundations",
+        "author": [
+            {"@type": "Organization", "name": "Claude A.I. Sonnet (Anthropic)"},
+            {"@type": "Person", "name": "Duke Johnson"}
+        ],
+        "datePublished": "2025-08",
+        "keywords": "Real Estate Policy, Public Trust Housing, Community Ownership, Acre Equity",
+        "description": "Analysis of Public Trust Housing integration with Creative Currency Octaves"
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --background: #f9fafb;
+            --surface: #ffffff;
+            --border-color: #e5e7eb;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --info-color: #06b6d4;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .breadcrumb {
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .paper-header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .paper-meta {
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .meta-item strong {
+            color: var(--text-primary);
+        }
+
+        .abstract {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 0.75rem;
+            margin: 2rem 0;
+        }
+
+        .abstract h2 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .paper-section {
+            margin: 3rem 0;
+        }
+
+        .paper-section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .paper-section h3 {
+            font-size: 1.25rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        /* Acre Equity Diagram */
+        .acre-equity-diagram {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .acre-flow {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .flow-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .flow-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .flow-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Market Impact Grid */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .impact-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .impact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .impact-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .impact-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Implementation Timeline */
+        .implementation-phases {
+            background: var(--surface);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .phase {
+            display: flex;
+            gap: 2rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .phase:last-child {
+            border-bottom: none;
+        }
+
+        .phase-year {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            white-space: nowrap;
+            align-self: flex-start;
+        }
+
+        .phase-content h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Comparison Chart */
+        .comparison-chart {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        table {
+            width: 100%;
+            background: var(--surface);
+            border-collapse: collapse;
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--background);
+        }
+
+        .highlight {
+            background: #fef3c7;
+            font-weight: 600;
+        }
+
+        /* Wealth Building Visual */
+        .wealth-visual {
+            background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .wealth-bars {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 300px;
+            margin: 2rem 0;
+        }
+
+        .wealth-bar {
+            width: 120px;
+            background: linear-gradient(to top, var(--primary-color), var(--accent-color));
+            border-radius: 0.5rem 0.5rem 0 0;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            padding-bottom: 1rem;
+        }
+
+        .wealth-bar.traditional {
+            height: 20%;
+            background: linear-gradient(to top, #ef4444, #f87171);
+        }
+
+        .wealth-bar.pth {
+            height: 80%;
+        }
+
+        .bar-label {
+            position: absolute;
+            bottom: -2rem;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .citation-box {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+        }
+
+        .download-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .meta-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .phase {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .wealth-bars {
+                height: 200px;
+            }
+
+            .wealth-bar {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="../index.html" class="nav-brand">Better To Best Research Hub</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Papers</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> → 
+            <a href="index.html">Papers</a> → 
+            U.S. Real Estate Transformation
+        </div>
+
+        <!-- Paper Header -->
+        <div class="paper-header">
+            <h1>Transforming the U.S. Real Estate Market Through Public Trust Foundations and Creative Currency Integration</h1>
+            
+            <div class="paper-meta">
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <strong>Authors:</strong> Claude A.I. Sonnet (Anthropic) & Duke Johnson
+                    </div>
+                    <div class="meta-item">
+                        <strong>Date:</strong> August 2025
+                    </div>
+                    <div class="meta-item">
+                        <strong>JEL Classification:</strong> R31, R38, P13, H42
+                    </div>
+                    <div class="meta-item">
+                        <strong>License:</strong> CC BY 4.0
+                    </div>
+                </div>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Real Estate Policy</span>
+                <span class="tag">Public Trust Housing</span>
+                <span class="tag">Market Transformation</span>
+                <span class="tag">Community Ownership</span>
+                <span class="tag">Acre Equity</span>
+            </div>
+        </div>
+
+        <!-- Abstract -->
+        <section class="abstract">
+            <h2>Abstract</h2>
+            <p>This paper analyzes how Public Trust Housing (PTH) integrated with Creative Currency Octaves (CCO) could transform the U.S. real estate market to address the housing affordability crisis while preserving private ownership options. We introduce the concept of "Acre Equity" as a mechanism for collective wealth building without traditional ownership barriers. Our modeling suggests PTH could achieve 15-20% market penetration within a decade through strategic deployment of $100 billion in federal investment, creating downward pressure on housing costs while enabling participants to accumulate average wealth of $70,000 over 20 years. The framework demonstrates how community ownership can coexist with private markets, offering pathways from rental to ownership through innovative financing mechanisms. Implementation analysis reveals that active investment models could achieve 50% market coverage within 5-19 years, compared to 18-142 years for passive benefit distribution, highlighting the critical importance of user engagement in system scalability.</p>
+        </section>
+
+        <!-- Acre Equity Concept -->
+        <section class="paper-section">
+            <h2>Introducing Acre Equity</h2>
+            <div class="acre-equity-diagram">
+                <h3>How Acre Equity Transforms Rent into Wealth</h3>
+                <div class="acre-flow">
+                    <div class="flow-item">
+                        <div class="flow-icon">🏠</div>
+                        <h4>Monthly Rent</h4>
+                        <p>Traditional rent payments become equity contributions</p>
+                    </div>
+                    <div class="flow-item">
+                        <div class="flow-icon">💰</div>
+                        <h4>Equity Accumulation</h4>
+                        <p>70-80% of rent converts to personal stake</p>
+                    </div>
+                    <div class="flow-item">
+                        <div class="flow-icon">📈</div>
+                        <h4>Wealth Growth</h4>
+                        <p>$70,000 average over 20 years</p>
+                    </div>
+                    <div class="flow-item">
+                        <div class="flow-icon">🔄</div>
+                        <h4>Transferable Value</h4>
+                        <p>Portable between PTH properties</p>
+                    </div>
+                </div>
+            </div>
+            <p>Acre Equity represents a revolutionary approach to housing wealth: a non-monetary stake that provides governance rights, wealth accumulation, and housing security without requiring traditional down payments or credit qualifications. Unlike conventional ownership, Acre Equity remains liquid and transferable within the PTH network, enabling mobility while building community wealth.</p>
+        </section>
+
+        <!-- Market Impact Analysis -->
+        <section class="paper-section">
+            <h2>Projected Market Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-number">15-20%</div>
+                    <div class="impact-label">Market Penetration in 10 Years</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">25-35%</div>
+                    <div class="impact-label">Overall Price Reduction</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">60%</div>
+                    <div class="impact-label">Cost Reduction for Participants</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">$100B</div>
+                    <div class="impact-label">Initial Federal Investment</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">3.5M</div>
+                    <div class="impact-label">Housing Units Created</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">10M</div>
+                    <div class="impact-label">People Housed Affordably</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Timeline -->
+        <section class="paper-section">
+            <h2>Implementation Pathway</h2>
+            <div class="implementation-phases">
+                <div class="phase">
+                    <div class="phase-year">Years 1-2</div>
+                    <div class="phase-content">
+                        <h4>Foundation Phase</h4>
+                        <p>Establish legal frameworks, create initial PTH entities, launch pilot programs in 5-10 cities. Convert existing public housing and partner with community land trusts. Deploy $20 billion in seed funding.</p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-year">Years 3-5</div>
+                    <div class="phase-content">
+                        <h4>Scaling Phase</h4>
+                        <p>Expand to 50+ cities, integrate CCO payment systems, enable mortgage conversions. Build 500,000 units, establish Acre Equity portability standards. Deploy additional $30 billion.</p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-year">Years 5-10</div>
+                    <div class="phase-content">
+                        <h4>Market Integration</h4>
+                        <p>Achieve 15-20% market penetration, create secondary markets for Acre Equity, enable private-to-PTH conversions. Build 3 million additional units, establish self-sustaining financing.</p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-year">Years 10+</div>
+                    <div class="phase-content">
+                        <h4>Mature System</h4>
+                        <p>Full market integration with 25-30% penetration potential, international expansion of model, complete financial self-sufficiency through community wealth generation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wealth Building Comparison -->
+        <section class="paper-section">
+            <h2>Wealth Building: Traditional Rental vs. PTH</h2>
+            <div class="wealth-visual">
+                <h3>20-Year Wealth Accumulation Comparison</h3>
+                <div class="wealth-bars">
+                    <div class="wealth-bar traditional">
+                        -$380,000
+                        <span class="bar-label">Traditional Rental</span>
+                    </div>
+                    <div class="wealth-bar pth">
+                        +$70,000
+                        <span class="bar-label">PTH with Acre Equity</span>
+                    </div>
+                </div>
+                <p><strong>$450,000 difference</strong> in net wealth position over 20 years</p>
+            </div>
+        </section>
+
+        <!-- Entry Pathways -->
+        <section class="paper-section">
+            <h2>Multiple Entry Pathways</h2>
+            <h3>1. Direct Entry</h3>
+            <ul>
+                <li>No down payment required</li>
+                <li>Income-based qualification</li>
+                <li>Immediate equity accumulation begins</li>
+            </ul>
+
+            <h3>2. Mortgage Conversion</h3>
+            <ul>
+                <li>Convert existing mortgage to PTH membership</li>
+                <li>Reduce monthly payments by 30-40%</li>
+                <li>Maintain equity position through Acre system</li>
+            </ul>
+
+            <h3>3. Creative Contribution</h3>
+            <ul>
+                <li>Earn entry through CCO elevated rates</li>
+                <li>Construction, maintenance, or community service</li>
+                <li>Accelerated equity accumulation</li>
+            </ul>
+
+            <h3>4. Employer Sponsorship</h3>
+            <ul>
+                <li>Companies provide PTH benefits</li>
+                <li>Workforce housing solutions</li>
+                <li>Retention through equity vesting</li>
+            </ul>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="paper-section">
+            <h2>System Comparison: Active vs. Passive Models</h2>
+            <div class="comparison-chart">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Passive Benefit Distribution</th>
+                            <th>Active Investment (PTH-CCO)</th>
+                            <th>Advantage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Time to 50% Coverage</td>
+                            <td>18-142 years</td>
+                            <td class="highlight">5-19 years</td>
+                            <td>7.5x faster</td>
+                        </tr>
+                        <tr>
+                            <td>User Engagement</td>
+                            <td>Passive recipient</td>
+                            <td class="highlight">Active participant</td>
+                            <td>Ownership mentality</td>
+                        </tr>
+                        <tr>
+                            <td>Wealth Building</td>
+                            <td>Limited</td>
+                            <td class="highlight">$70,000 average</td>
+                            <td>Generational impact</td>
+                        </tr>
+                        <tr>
+                            <td>Government Cost</td>
+                            <td>Ongoing subsidy</td>
+                            <td class="highlight">Self-sustaining</td>
+                            <td>One-time investment</td>
+                        </tr>
+                        <tr>
+                            <td>Market Impact</td>
+                            <td>Minimal</td>
+                            <td class="highlight">25-35% price reduction</td>
+                            <td>System-wide benefit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- International Precedents -->
+        <section class="paper-section">
+            <h2>Learning from International Models</h2>
+            
+            <h3>Singapore's HDB System</h3>
+            <p>Singapore successfully houses 80% of its population in public housing that builds equity. PTH adapts these principles to the American context through voluntary participation and democratic governance, while maintaining the wealth-building aspects that make Singapore's model successful.</p>
+
+            <h3>Vienna's Social Housing</h3>
+            <p>Vienna demonstrates that public housing can be desirable and mixed-income, with 60% of the population in social housing. PTH incorporates Vienna's quality standards and social integration while adding the crucial wealth-building mechanisms absent in the European model.</p>
+
+            <h3>Community Land Trusts</h3>
+            <p>Building on successful CLT models in Burlington, VT and other cities, PTH scales these proven concepts through CCO integration and federal support, transforming local successes into national solutions.</p>
+        </section>
+
+        <!-- Policy Framework -->
+        <section class="paper-section">
+            <h2>Required Policy Framework</h2>
+            
+            <h3>Federal Level</h3>
+            <ul>
+                <li>Authorize CCO as legal tender for housing payments</li>
+                <li>Create tax advantages for PTH participation</li>
+                <li>Establish national Acre Equity portability standards</li>
+                <li>Provide initial $100 billion infrastructure investment</li>
+            </ul>
+
+            <h3>State Level</h3>
+            <ul>
+                <li>Enable PTH legal structures and governance</li>
+                <li>Reform zoning for mixed-income development</li>
+                <li>Create conversion incentives for existing properties</li>
+                <li>Establish dispute resolution mechanisms</li>
+            </ul>
+
+            <h3>Local Level</h3>
+            <ul>
+                <li>Designate initial pilot zones</li>
+                <li>Provide land for PTH development</li>
+                <li>Integrate with existing housing programs</li>
+                <li>Support community organizing efforts</li>
+            </ul>
+        </section>
+
+        <!-- Citation Section -->
+        <section class="paper-section">
+            <h2>How to Cite</h2>
+            <div class="citation-box">
+                <p><strong>APA:</strong></p>
+                <p>Claude A.I. Sonnet (Anthropic) & Johnson, D. (2025). Transforming the U.S. Real Estate Market Through Public Trust Foundations and Creative Currency Integration. Better To Best Research Hub.</p>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <div class="download-section">
+            <h2>Access Full Paper</h2>
+            <p>Download the complete research paper with detailed financial models, implementation strategies, and case studies.</p>
+            <a href="pdfs/us-real-estate-transformation.pdf" class="download-btn" download>
+                📄 Download PDF
+            </a>
+        </div>
+
+        <!-- Related Papers -->
+        <section class="paper-section">
+            <h2>Related Research</h2>
+            <ul>
+                <li><a href="public-trust-financial.html">Public Trust Foundations: Financial Architecture</a></li>
+                <li><a href="democratic-governance-pth.html">Democratic Governance in Economic Systems</a></li>
+                <li><a href="optimal-transfer-design.html">Optimal Transfer Design in Creative Currency Systems</a></li>
+                <li><a href="community-monetary-development.html">Community-Based Monetary Development</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Better To Best Research Hub. Licensed under Creative Commons Attribution 4.0 International License.</p>
+            <p>Contact: Duke.T.James@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script>
+        // Back to top functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
