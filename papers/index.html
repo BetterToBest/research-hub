@@ -4,595 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Papers - Better To Best Research Hub</title>
-    <meta name="description" content="Academic research papers on Creative Currency Octaves, Public Trust Foundations, Citizens Internet Portal, and Social Zone Harmonization.">
-    <meta name="keywords" content="CCO, PTF, CIP, SZH, economic research, alternative currency, public trust housing">
-    
-    <style>
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e40af;
-            --accent: #3b82f6;
-            --text-primary: #1f2937;
-            --text-secondary: #6b7280;
-            --background: #f9fafb;
-            --surface: #ffffff;
-            --border: #e5e7eb;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
-            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: var(--background);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-        
-        /* Header */
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 1rem 0;
-            box-shadow: var(--shadow-md);
-        }
-        
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-brand {
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-decoration: none;
-            color: white;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-        
-        .nav-links a:hover {
-            opacity: 0.8;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-        }
-        
-        .hero-subtitle {
-            font-size: 1.25rem;
-            opacity: 0.95;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-        
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        /* Section */
-        .section {
-            margin-bottom: 4rem;
-        }
-        
-        .section-header {
-            margin-bottom: 2rem;
-        }
-        
-        .section-header h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .section-header h2::before {
-            content: '';
-            width: 4px;
-            height: 28px;
-            background: var(--accent);
-            border-radius: 2px;
-        }
-        
-        .section-description {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-            max-width: 800px;
-        }
-        
-        /* Papers Grid */
-        .papers-grid {
-            display: grid;
-            gap: 2rem;
-        }
-        
-        .paper-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .paper-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            transform: translateY(-4px);
-            transition: transform 0.3s;
-        }
-        
-        .paper-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .paper-card:hover::before {
-            transform: translateY(0);
-        }
-        
-        .paper-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.75rem;
-            line-height: 1.3;
-        }
-        
-        .paper-title a {
-            color: inherit;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .paper-title a:hover {
-            color: var(--primary);
-        }
-        
-        .paper-meta {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-        
-        .paper-abstract {
-            color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        
-        .paper-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .tag {
-            background: var(--primary);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 999px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-        
-        .paper-links {
-            display: flex;
-            gap: 1rem;
-        }
-        
-        .btn {
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: var(--secondary);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: var(--primary);
-            border: 1px solid var(--border);
-        }
-        
-        .btn-secondary:hover {
-            background: var(--background);
-        }
-        
-        /* Footer */
-        footer {
-            background: var(--surface);
-            border-top: 1px solid var(--border);
-            padding: 3rem 0;
-            margin-top: 4rem;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            text-align: center;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-        }
-    </style>
+    <meta name="description" content="Collection of 11 open-access research papers on Creative Currency Octaves, Public Trust Housing, and post-scarcity economics under CC BY 4.0 license.">
+    <meta name="keywords" content="Creative Currency Octaves, Public Trust Housing, post-scarcity economics, economic modeling, governance">
+    <meta property="og:title" content="Research Papers - Better To Best Research Hub">
+    <meta property="og:description" content="Open-access papers on innovative economic and governance systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bettertobest.github.io/research-hub/papers/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Research Papers Collection",
+      "description": "11 open-access papers on post-scarcity economics.",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "item": {"@type": "ScholarlyArticle", "name": "Optimal Transfer Design in Post-Scarcity Economies", "url": "https://bettertobest.github.io/research-hub/optimal-transfer-design.html"}},
+        {"@type": "ListItem", "position": 2, "item": {"@type": "ScholarlyArticle", "name": "Dual Currency Inflation Control Mechanisms", "url": "https://bettertobest.github.io/research-hub/dual-currency-inflation.html"}},
+        {"@type": "ListItem", "position": 3, "item": {"@type": "ScholarlyArticle", "name": "Economic Modeling and Simulation Analysis", "url": "https://bettertobest.github.io/research-hub/economic-modeling-simulation.html"}},
+        {"@type": "ListItem", "position": 4, "item": {"@type": "ScholarlyArticle", "name": "Integrated Digital Governance and Economic Innovation", "url": "https://bettertobest.github.io/research-hub/integrated-digital-governance.html"}},
+        {"@type": "ListItem", "position": 5, "item": {"@type": "ScholarlyArticle", "name": "Drug Policy Reform and Integrated Economic Governance", "url": "https://bettertobest.github.io/research-hub/drug-policy-reform.html"}},
+        {"@type": "ListItem", "position": 6, "item": {"@type": "ScholarlyArticle", "name": "Democratic Governance in Economic Systems", "url": "https://bettertobest.github.io/research-hub/democratic-governance-pth.html"}},
+        {"@type": "ListItem", "position": 7, "item": {"@type": "ScholarlyArticle", "name": "Risk Mitigation Framework for PTH Implementation", "url": "https://bettertobest.github.io/research-hub/risk-mitigation-framework.html"}},
+        {"@type": "ListItem", "position": 8, "item": {"@type": "ScholarlyArticle", "name": "U.S. Real Estate Market Transformation", "url": "https://bettertobest.github.io/research-hub/us-real-estate-transformation.html"}},
+        {"@type": "ListItem", "position": 9, "item": {"@type": "ScholarlyArticle", "name": "Cultural Value Integration in Economic Systems", "url": "https://bettertobest.github.io/research-hub/cultural-value-integration.html"}},
+        {"@type": "ListItem", "position": 10, "item": {"@type": "ScholarlyArticle", "name": "Community-Based Monetary Development Systems", "url": "https://bettertobest.github.io/research-hub/community-monetary-development.html"}},
+        {"@type": "ListItem", "position": 11, "item": {"@type": "ScholarlyArticle", "name": "Public Trust Financial Mechanisms", "url": "https://bettertobest.github.io/research-hub/public-trust-financial.html"}}
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <nav>
-            <a href="/research-hub/" class="nav-brand">Better To Best Research Hub</a>
-            <ul class="nav-links">
-                <li><a href="/research-hub/">Home</a></li>
-                <li><a href="#economic-framework">Economic</a></li>
-                <li><a href="#governance">Governance</a></li>
-                <li><a href="#implementation">Implementation</a></li>
-            </ul>
-        </nav>
+        <h1>Research Papers</h1>
+        <p>Open-access collection focusing on Creative Currency Octaves (CCO), Public Trust Housing (PTH), Citizen Internet Portal (CIP), and Social Zone Harmonization (SZH). All under CC BY 4.0 license.</p>
+        <a href="../">Back to Hub</a>
     </header>
     
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Research Papers</h1>
-        <p class="hero-subtitle">Academic research on Creative Currency Octaves, Public Trust Foundations, Citizens Internet Portal, and Social Zone Harmonization. All papers are published under Creative Commons Attribution 4.0 International (CC BY 4.0) license.</p>
+    <section>
+        <h2>Economic Framework Papers</h2>
+        <p>Core research on Creative Currency Octaves (CCO) and dual-currency systems for sustainable economic transformation.</p>
+        <ul>
+            <li class="paper-item">
+                <h3><a href="../optimal-transfer-design.html">Optimal Transfer Design in Post-Scarcity Economies</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Introduces a dual-tier incentive system combining octave-based capacity limits and personal multiplier rates (1x to 14x+). Resolves the equity-efficiency tradeoff by creating productive conversion opportunities.</p>
+                <p><a href="../papers/pdfs/optimal-transfer-design.pdf">Download PDF</a></p>
+            </li>
+            <li class="paper-item">
+                <h3><a href="../dual-currency-inflation.html">Dual Currency Inflation Control Mechanisms</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Examines inflation dynamics in CCO systems, demonstrating stable equilibrium through sectoral restrictions and conversion limits. Mathematical models show effective price control mechanisms.</p>
+                <p><a href="../papers/pdfs/dual-currency-inflation.pdf">Download PDF</a></p>
+            </li>
+            <li class="paper-item">
+                <h3><a href="../economic-modeling-simulation.html">Economic Modeling and Simulation Analysis</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Comprehensive computational analysis of CCO implementation scenarios using agent-based modeling and Monte Carlo simulations across diverse economic conditions.</p>
+                <p><a href="../papers/pdfs/economic-modeling-simulation.pdf">Download PDF</a></p>
+            </li>
+        </ul>
     </section>
     
-    <div class="container">
-        <!-- Economic Framework Papers -->
-        <section class="section" id="economic-framework">
-            <div class="section-header">
-                <h2>Economic Framework Papers</h2>
-                <p class="section-description">Core research on Creative Currency Octaves and dual-currency systems for sustainable economic transformation.</p>
-            </div>
-            
-            <div class="papers-grid">
-                <!-- Paper 1: Optimal Transfer Design -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/optimal-transfer-design.html">Optimal Transfer Design in Post-Scarcity Economies</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 July 2025</span>
-                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Introduces a dual-tier incentive system combining octave-based capacity limits and personal multiplier rates (1x to 14x+). Resolves the equity-efficiency tradeoff by creating productive conversion opportunities.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Creative Currency</span>
-                        <span class="tag">Economic Theory</span>
-                        <span class="tag">UBI</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/optimal-transfer-design.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/optimal-transfer-design.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-                
-                <!-- Paper 2: Dual Currency Inflation -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/dual-currency-inflation.html">Dual Currency Inflation Control Mechanisms</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Examines inflation dynamics in CCO systems, demonstrating stable equilibrium through sectoral restrictions and conversion limits. Mathematical models show effective price control mechanisms.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Monetary Policy</span>
-                        <span class="tag">Inflation Control</span>
-                        <span class="tag">Economic Modeling</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/dual-currency-inflation.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/dual-currency-inflation.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-                
-                <!-- Paper 3: Economic Modeling -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/economic-modeling-simulation.html">Economic Modeling and Simulation Analysis</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Comprehensive computational analysis of CCO implementation scenarios using agent-based modeling and Monte Carlo simulations across diverse economic conditions.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Economic Simulation</span>
-                        <span class="tag">Agent-Based Modeling</span>
-                        <span class="tag">Computational Economics</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/economic-modeling-simulation.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/economic-modeling-simulation.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-        
-        <!-- Governance & Policy Papers -->
-        <section class="section" id="governance">
-            <div class="section-header">
-                <h2>Governance & Policy Papers</h2>
-                <p class="section-description">Research on democratic governance, digital infrastructure, and policy implementation frameworks.</p>
-            </div>
-            
-            <div class="papers-grid">
-                <!-- Paper 4: Integrated Digital Governance -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/integrated-digital-governance.html">Integrated Digital Governance and Economic Innovation</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Framework for government implementation of CCO, PTF, CIP, and SZH systems. Demonstrates how coordinated deployment could achieve significant improvements in economic stability and social cohesion.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Digital Governance</span>
-                        <span class="tag">Policy Integration</span>
-                        <span class="tag">Government Innovation</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/integrated-digital-governance.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/integrated-digital-governance.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-                
-                <!-- Paper 5: Drug Policy Reform -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/drug-policy-reform.html">Drug Policy Reform and Integrated Economic Governance</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Claude A.I. (Anthropic) & Duke Johnson</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Cost-benefit analysis revealing $1.5 trillion in prohibition costs versus $847 billion potential savings over 25 years through regulatory frameworks within CCO-PTF-CIP-SZH systems.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Drug Policy</span>
-                        <span class="tag">Criminal Justice</span>
-                        <span class="tag">Public Health</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/drug-policy-reform.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/drug-policy-reform.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-                
-                <!-- Paper 7: Democratic Governance -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/democratic-governance-pth.html">Democratic Governance in Economic Systems</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Examines mechanisms preventing power concentration in collective economic systems, including quadratic voting, liquid democracy, and lessons from successful cooperatives.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Democratic Governance</span>
-                        <span class="tag">Cooperative Economics</span>
-                        <span class="tag">Voting Systems</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/democratic-governance-pth.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/democratic-governance-pth.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-                
-                <!-- Risk Mitigation Framework -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/risk-mitigation-framework.html">Risk Mitigation Framework for PTH Implementation</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Comprehensive analysis of implementation risks and mitigation strategies for Public Trust Housing systems, including financial, regulatory, social, and operational challenges.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Risk Management</span>
-                        <span class="tag">Implementation Strategy</span>
-                        <span class="tag">Public Trust Housing</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/risk-mitigation-framework.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/risk-mitigation-framework.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-        
-        <!-- Implementation & Applications -->
-        <section class="section" id="implementation">
-            <div class="section-header">
-                <h2>Implementation & Applications</h2>
-                <p class="section-description">Practical frameworks for real-world deployment of CCO and PTF systems across various sectors.</p>
-            </div>
-            
-            <div class="papers-grid">
-                <!-- Paper 6: Real Estate Transformation -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/us-real-estate-transformation.html">U.S. Real Estate Market Transformation</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Claude A.I. Sonnet (Anthropic) & Duke Johnson</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Introduces "Acre Equity" mechanism for collective wealth building. Models show PTH achieving 15-20% market penetration within a decade with $70,000 average wealth accumulation.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Real Estate</span>
-                        <span class="tag">Acre Equity</span>
-                        <span class="tag">Housing Policy</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/us-real-estate-transformation.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/us-real-estate-transformation.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-                
-                <!-- Paper 8: Cultural Value Integration -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/cultural-value-integration.html">Cultural Value Integration in Economic Systems</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
-                    </div>
-                    <p class="paper-abstract">
-                        The CCO Framework as the first currency system explicitly backed by "publicly-endowed art and creation," with multi-tier conversion rates and the Phi rate (1.618x) for productive beauty.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Cultural Economics</span>
-                        <span class="tag">Creative Currency</span>
-                        <span class="tag">Phi Rate</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/cultural-value-integration.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/cultural-value-integration.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-                
-                <!-- Paper 9: Community Monetary Development -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/community-monetary-development.html">Community-Based Monetary Development Systems</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Development economics framework achieving poverty reduction below 5% within 15 years. Superior ROI of $1,847 per beneficiary versus traditional aid approaches.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Development Economics</span>
-                        <span class="tag">Poverty Reduction</span>
-                        <span class="tag">Community Finance</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/community-monetary-development.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/community-monetary-development.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-                
-                <!-- Paper 10: Public Trust Financial -->
-                <article class="paper-card">
-                    <h3 class="paper-title">
-                        <a href="/research-hub/public-trust-financial.html">Public Trust Financial Mechanisms</a>
-                    </h3>
-                    <div class="paper-meta">
-                        <span>📅 August 2025</span>
-                        <span>👥 Duke Johnson & Claude (Anthropic)</span>
-                    </div>
-                    <p class="paper-abstract">
-                        Financial architecture for PTH systems demonstrating 50% market penetration achievable within 5-19 years through active investment models versus 18-142 years for passive approaches.
-                    </p>
-                    <div class="paper-tags">
-                        <span class="tag">Housing Finance</span>
-                        <span class="tag">Community Investment</span>
-                        <span class="tag">Sustainable Finance</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="/research-hub/public-trust-financial.html" class="btn btn-primary">Read Paper</a>
-                        <a href="/research-hub/papers/pdfs/public-trust-financial.pdf" class="btn btn-secondary">📄 PDF</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </div>
+    <section>
+        <h2>Governance & Policy Papers</h2>
+        <p>Research on democratic governance, digital infrastructure, and policy implementation frameworks.</p>
+        <ul>
+            <li class="paper-item">
+                <h3><a href="../integrated-digital-governance.html">Integrated Digital Governance and Economic Innovation</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Framework for government implementation of CCO, PTH, CIP, and SZH systems. Demonstrates how coordinated deployment could achieve significant improvements in economic stability and social cohesion.</p>
+                <p><a href="../papers/pdfs/integrated-digital-governance.pdf">Download PDF</a></p>
+            </li>
+            <li class="paper-item">
+                <h3><a href="../drug-policy-reform.html">Drug Policy Reform and Integrated Economic Governance</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Cost-benefit analysis revealing $1.5 trillion in prohibition costs versus $847 billion potential savings over 25 years through regulatory frameworks within CCO-PTH-CIP-SZH systems.</p>
+                <p><a href="../papers/pdfs/drug-policy-reform.pdf">Download PDF</a></p>
+            </li>
+            <li class="paper-item">
+                <h3><a href="../democratic-governance-pth.html">Democratic Governance in Economic Systems</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Examines mechanisms preventing power concentration in collective economic systems, including quadratic voting, liquid democracy, and lessons from successful cooperatives.</p>
+                <p><a href="../papers/pdfs/democratic-governance-pth.pdf">Download PDF</a></p>
+            </li>
+            <li class="paper-item">
+                <h3><a href="../risk-mitigation-framework.html">Risk Mitigation Framework for PTH Implementation</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Comprehensive analysis of implementation risks and mitigation strategies for Public Trust Housing systems, including financial, regulatory, social, and operational challenges.</p>
+                <p><a href="../papers/pdfs/risk-mitigation-framework.pdf">Download PDF</a></p>
+            </li>
+        </ul>
+    </section>
     
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Better To Best Research Hub. All papers published under Creative Commons Attribution 4.0 International License.</p>
-            <p>Contact: Duke.T.James@gmail.com</p>
-        </div>
-    </footer>
+    <section>
+        <h2>Implementation & Applications</h2>
+        <p>Practical frameworks for real-world deployment of CCO and Public Trust Housing (PTH) systems across various sectors.</p>
+        <ul>
+            <li class="paper-item">
+                <h3><a href="../us-real-estate-transformation.html">U.S. Real Estate Market Transformation</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Introduces "Acre Equity" mechanism for collective wealth building. Models show PTH achieving 15-20% market penetration within a decade with $70,000 average wealth accumulation.</p>
+                <p><a href="../papers/pdfs/us-real-estate-transformation.pdf">Download PDF</a></p>
+            </li>
+            <li class="paper-item">
+                <h3><a href="../cultural-value-integration.html">Cultural Value Integration in Economic Systems</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>The CCO Framework as the first currency system explicitly backed by "publicly-endowed art and creation," with multi-tier conversion rates and the Phi rate (1.618x) for productive beauty.</p>
+                <p><a href="../papers/pdfs/cultural-value-integration.pdf">Download PDF</a></p>
+            </li>
+            <li class="paper-item">
+                <h3><a href="../community-monetary-development.html">Community-Based Monetary Development Systems</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Development economics framework achieving poverty reduction below 5% within 15 years. Superior ROI of $1,847 per beneficiary versus traditional aid approaches.</p>
+                <p><a href="../papers/pdfs/community-monetary-development.pdf">Download PDF</a></p>
+            </li>
+            <li class="paper-item">
+                <h3><a href="../public-trust-financial.html">Public Trust Financial Mechanisms</a></h3>
+                <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+                <p>Published: August 2025</p>
+                <p>Financial architecture for PTH systems demonstrating 50% market penetration achievable within 5-19 years through active investment models versus 18-142 years for passive approaches.</p>
+                <p><a href="../papers/pdfs/public-trust-financial.pdf">Download PDF</a></p>
+            </li>
+        </ul>
+    </section>
 </body>
 </html>
