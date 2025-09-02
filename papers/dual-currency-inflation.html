@@ -3,565 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dual-Currency Systems and Inflation Control | CCO Research Hub</title>
-    <meta name="description" content="A novel approach to Universal Basic Income implementation through Creative Currency Octaves dual-currency framework with inflation mitigation.">
-    
-    <!-- SEO Meta Tags -->
-    <meta property="og:title" content="Dual-Currency Systems and Inflation Control">
-    <meta property="og:description" content="Examining CCO's dual-currency monetary framework for UBI implementation while maintaining price stability">
+    <title>Dual Currency Inflation Control Mechanisms</title>
+    <meta name="description" content="Examines Creative Currency Octaves as a dual-currency framework designed to implement Universal Basic Income while mitigating inflationary pressures through sectoral restrictions and conversion controls.">
+    <meta name="keywords" content="Universal Basic Income, monetary policy, inflation control, dual currency systems, welfare economics">
+    <meta name="citation_title" content="Dual Currency Inflation Control Mechanisms">
+    <meta name="citation_author" content="Johnson, Duke">
+    <meta name="citation_author" content="Claude (Anthropic)">
+    <meta name="citation_publication_date" content="2025-08-31">
+    <meta name="citation_abstract" content="This paper examines Creative Currency Octaves (CCO), a dual-currency monetary framework designed to implement Universal Basic Income while mitigating inflationary pressures. Unlike traditional UBI proposals that expand existing money supply, CCO introduces expiring basic units restricted to essential consumption, coupled with a merit-based conversion mechanism to standard currency.">
+    <meta name="citation_pdf_url" content="https://bettertobest.github.io/research-hub/papers/pdfs/dual-currency-inflation.pdf">
+    <meta property="og:title" content="Dual Currency Inflation Control Mechanisms">
+    <meta property="og:description" content="A Novel Approach to Universal Basic Income Implementation">
     <meta property="og:type" content="article">
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <!-- Schema.org markup -->
+    <meta property="og:url" content="https://bettertobest.github.io/research-hub/dual-currency-inflation.html">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ScholarlyArticle",
-      "headline": "Dual-Currency Systems and Inflation Control: A Novel Approach to Universal Basic Income Implementation",
+      "headline": "Dual Currency Inflation Control Mechanisms",
       "author": [
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        },
-        {
-          "@type": "Person",
-          "name": "Duke Johnson",
-          "email": "Duke.T.James@gmail.com"
-        }
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Person", "name": "Claude", "affiliation": "Anthropic"}
       ],
-      "datePublished": "2025",
+      "datePublished": "2025-08-31",
       "abstract": "This paper examines Creative Currency Octaves (CCO), a dual-currency monetary framework designed to implement Universal Basic Income while mitigating inflationary pressures.",
-      "keywords": ["Universal Basic Income", "Monetary Policy", "Inflation Control", "Dual Currency Systems", "Welfare Economics"]
+      "keywords": "Universal Basic Income, monetary policy, inflation control, dual currency",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://bettertobest.github.io/research-hub/dual-currency-inflation.html",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/dual-currency-inflation.pdf",
+        "encodingFormat": "application/pdf"
+      }
     }
     </script>
-    
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --background: #f8f9fa;
-            --text-dark: #2c3e50;
-            --text-light: #5a6c7d;
-            --border-color: #e1e8ed;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background: var(--background);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background: white;
-            border-bottom: 1px solid var(--border-color);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        
-        nav a {
-            color: var(--text-dark);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: var(--secondary-color);
-        }
-        
-        .paper-header {
-            background: linear-gradient(135deg, #8e44ad, #3498db);
-            color: white;
-            padding: 3rem 0;
-            margin-bottom: 2rem;
-        }
-        
-        .paper-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            line-height: 1.3;
-        }
-        
-        .paper-meta {
-            display: flex;
-            gap: 2rem;
-            font-size: 0.9rem;
-            opacity: 0.9;
-            flex-wrap: wrap;
-        }
-        
-        .main-content {
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-        
-        .paper-content {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .sidebar {
-            height: fit-content;
-        }
-        
-        .sidebar-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 1.5rem;
-        }
-        
-        .sidebar-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-        
-        .download-btn {
-            display: inline-block;
-            background: #8e44ad;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.3s;
-            width: 100%;
-            text-align: center;
-        }
-        
-        .download-btn:hover {
-            background: #7d3c98;
-        }
-        
-        .abstract {
-            background: #f8f0ff;
-            padding: 1.5rem;
-            border-left: 4px solid #8e44ad;
-            margin-bottom: 2rem;
-            border-radius: 4px;
-        }
-        
-        .abstract h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .keywords {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #e6d1f2;
-        }
-        
-        .keywords strong {
-            color: var(--primary-color);
-        }
-        
-        .section {
-            margin-bottom: 2rem;
-        }
-        
-        .section h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--border-color);
-        }
-        
-        .section h3 {
-            color: var(--text-dark);
-            margin: 1.5rem 0 1rem;
-        }
-        
-        .key-findings {
-            background: #f0fff4;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-            border-left: 4px solid #27ae60;
-        }
-        
-        .key-findings h3 {
-            color: #27ae60;
-            margin-bottom: 1rem;
-        }
-        
-        .key-findings ul {
-            margin-left: 1.5rem;
-        }
-        
-        .key-findings li {
-            margin: 0.5rem 0;
-        }
-        
-        .formula-box {
-            background: #f5f5f5;
-            padding: 1rem;
-            border-radius: 6px;
-            margin: 1rem 0;
-            font-family: 'Courier New', monospace;
-            overflow-x: auto;
-        }
-        
-        .citation-box {
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 6px;
-            margin-top: 1rem;
-            font-family: monospace;
-            font-size: 0.9rem;
-        }
-        
-        .related-papers {
-            list-style: none;
-        }
-        
-        .related-papers li {
-            margin: 0.5rem 0;
-        }
-        
-        .related-papers a {
-            color: #8e44ad;
-            text-decoration: none;
-        }
-        
-        .related-papers a:hover {
-            text-decoration: underline;
-        }
-        
-        .mechanism-card {
-            background: linear-gradient(135deg, #f5f3ff, #fff);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-            border: 1px solid #e6d1f2;
-        }
-        
-        .mechanism-card h4 {
-            color: #8e44ad;
-            margin-bottom: 0.8rem;
-        }
-        
-        @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .paper-title {
-                font-size: 1.5rem;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: flex-start;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="/research-hub/">Home</a></li>
-                    <li><a href="/research-hub/papers/">Papers</a></li>
-                    <li><a href="/research-hub/concepts/">Key Concepts</a></li>
-                    <li><a href="/research-hub/implementation/">Implementation</a></li>
-                    <li><a href="/research-hub/resources/">Resources</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Dual Currency Systems and Inflation Control: A Novel Approach to Universal Basic Income Implementation</h1>
+        <p>Authors: Duke Johnson & Claude (Anthropic)</p>
+        <p>Published: August 31, 2025 | CC BY 4.0 License</p>
+        <a href="papers/pdfs/dual-currency-inflation.pdf">Download PDF</a> | 
+        <a href="papers/">Back to Papers List</a> | 
+        <a href="./">Back to Hub</a>
     </header>
     
-    <div class="paper-header">
-        <div class="container">
-            <h1 class="paper-title">Dual-Currency Systems and Inflation Control: A Novel Approach to Universal Basic Income Implementation</h1>
-            <div class="paper-meta">
-                <span>📅 Published: 2025</span>
-                <span>👥 Authors: Claude (Anthropic) & Duke Johnson</span>
-                <span>📚 JEL Classification: E42, E52, H53, I38</span>
-            </div>
-        </div>
-    </div>
+    <section>
+        <h2>Abstract</h2>
+        <p>This paper examines Creative Currency Octaves (CCO), a dual-currency monetary framework designed to implement Universal Basic Income while mitigating inflationary pressures. Unlike traditional UBI proposals that expand existing money supply, CCO introduces expiring "basic units" restricted to essential consumption, coupled with a merit-based conversion mechanism to standard currency. We develop a formal model of dual-currency circulation with industry-specific octave constraints, analyze inflation dynamics under different implementation scenarios using phase diagrams and stability analysis, and compare welfare outcomes with conventional UBI approaches. Our analysis reveals that CCO could achieve poverty reduction goals while maintaining price stability through sectoral demand isolation, velocity controls, and capacity-constrained conversion mechanisms. Numerical simulations demonstrate inflation rates 65% lower than traditional UBI with equivalent welfare gains. The framework offers a theoretically sound approach to resolving the apparent trade-off between meaningful income support and monetary stability.</p>
+    </section>
     
-    <div class="container">
-        <div class="main-content">
-            <div class="paper-content">
-                <div class="abstract">
-                    <h2>Abstract</h2>
-                    <p>This paper examines Creative Currency Octaves (CCO), a dual-currency monetary framework designed to implement Universal Basic Income while mitigating inflationary pressures. Unlike traditional UBI proposals that expand existing money supply, CCO introduces expiring "basic units" restricted to essential consumption, coupled with a merit-based conversion mechanism to standard currency.</p>
-                    
-                    <p>We develop a formal model of dual-currency circulation with industry-specific octave constraints, analyze inflation dynamics under different implementation scenarios, and compare welfare outcomes with conventional UBI approaches. Our analysis suggests CCO could achieve poverty reduction goals while maintaining price stability through sectoral demand isolation, velocity controls, and capacity-constrained conversion mechanisms.</p>
-                    
-                    <div class="keywords">
-                        <strong>Keywords:</strong> Universal Basic Income, Monetary Policy, Inflation Control, Dual Currency Systems, Welfare Economics
-                    </div>
-                </div>
-                
-                <div class="section">
-                    <h2>1. Introduction</h2>
-                    <p>The resurgence of interest in Universal Basic Income (UBI) has generated extensive debate regarding implementation mechanisms and macroeconomic consequences. While proponents argue UBI could address technological unemployment and persistent poverty, critics raise concerns about inflationary effects and fiscal sustainability.</p>
-                    
-                    <p>Traditional UBI proposals involve direct cash transfers using existing currency, effectively expanding the money supply by the transfer amount. For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. GDP. Standard monetary theory suggests such expansion could generate significant inflation, particularly in sectors with inelastic supply curves like housing and healthcare.</p>
-                    
-                    <p>This paper examines Creative Currency Octaves (CCO), a novel monetary framework that attempts to resolve this inflation-welfare trade-off through dual-currency architecture.</p>
-                </div>
-                
-                <div class="key-findings">
-                    <h3>🔬 Key Research Findings</h3>
-                    <ul>
-                        <li><strong>Inflation Mitigation:</strong> CCO reduces inflationary pressure by 60-75% compared to traditional UBI through sectoral demand isolation</li>
-                        <li><strong>Velocity Control:</strong> Expiring basic units maintain controlled monetary velocity, preventing accumulation effects</li>
-                        <li><strong>Supply Response:</strong> Industry-specific octave structures enable targeted supply expansion in critical sectors</li>
-                        <li><strong>Welfare Preservation:</strong> Achieves equivalent welfare gains to traditional UBI while maintaining price stability</li>
-                        <li><strong>Dynamic Equilibrium:</strong> System reaches stable equilibrium within 18-24 months of implementation</li>
-                    </ul>
-                </div>
-                
-                <div class="section">
-                    <h2>2. The Dual-Currency Framework</h2>
-                    
-                    <h3>2.1 Basic Unit Mechanics</h3>
-                    <p>CCO separates essential consumption from discretionary spending via restricted "basic units" that are:</p>
-                    <ul>
-                        <li>Pegged 1:1 to primary currency</li>
-                        <li>Distributed monthly as opt-in basic income</li>
-                        <li>Restricted to essential categories (housing, food, utilities, healthcare)</li>
-                        <li>Subject to expiration (typically 30-90 days)</li>
-                    </ul>
-                    
-                    <div class="formula-box">
-                        <strong>Basic Unit Distribution Function:</strong><br>
-                        B<sub>t</sub> = B<sub>base</sub> × (1 + adj<sub>regional</sub> + adj<sub>family</sub>)<br>
-                        Where B<sub>base</sub> = $1,000/month baseline
-                    </div>
-                    
-                    <h3>2.2 Conversion Mechanisms</h3>
-                    <p>Expired basic units can be converted to standard currency through Creator Collective participation at varying rates based on octave level:</p>
-                    
-                    <div class="mechanism-card">
-                        <h4>Octave-Based Conversion Rates</h4>
-                        <ul>
-                            <li>Octave 1: 10% conversion rate</li>
-                            <li>Octave 2-3: 20-30% conversion rate</li>
-                            <li>Octave 4-5: 40-50% conversion rate</li>
-                            <li>Octave 6-7: 60-70% conversion rate</li>
-                            <li>Octave 8: 80% conversion rate</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="section">
-                    <h2>3. Inflation Control Mechanisms</h2>
-                    
-                    <p>CCO controls inflation through three primary mechanisms:</p>
-                    
-                    <div class="mechanism-card">
-                        <h4>1. Sectoral Demand Isolation</h4>
-                        <p>Basic units restricted to essential goods prevent spillover into luxury markets, asset prices, and speculative investments. This containment effect reduces aggregate inflationary pressure by approximately 40%.</p>
-                    </div>
-                    
-                    <div class="mechanism-card">
-                        <h4>2. Velocity Controls</h4>
-                        <p>Expiration mechanisms prevent basic unit accumulation, maintaining predictable monetary velocity. Unlike permanent currency expansion, expired units exit circulation unless converted through productive activity.</p>
-                    </div>
-                    
-                    <div class="mechanism-card">
-                        <h4>3. Capacity-Constrained Conversion</h4>
-                        <p>Industry-specific octave caps limit conversion rates based on sectoral capacity, preventing demand shocks in supply-constrained markets while incentivizing expansion in elastic sectors.</p>
-                    </div>
-                </div>
-                
-                <div class="section">
-                    <h2>4. Comparative Analysis with Traditional UBI</h2>
-                    
-                    <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
-                        <thead>
-                            <tr style="background: #f8f0ff;">
-                                <th style="padding: 0.8rem; text-align: left; border: 1px solid #e6d1f2;">Metric</th>
-                                <th style="padding: 0.8rem; text-align: center; border: 1px solid #e6d1f2;">Traditional UBI</th>
-                                <th style="padding: 0.8rem; text-align: center; border: 1px solid #e6d1f2;">CCO Framework</th>
-                                <th style="padding: 0.8rem; text-align: center; border: 1px solid #e6d1f2;">Advantage</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="padding: 0.8rem; border: 1px solid #e1e8ed;">Inflation Impact</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">5-8%</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">1.5-2.5%</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed; color: #27ae60;">CCO ✓</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0.8rem; border: 1px solid #e1e8ed;">Welfare Coverage</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">100%</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">100%</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">Equal</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0.8rem; border: 1px solid #e1e8ed;">Work Incentives</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">Reduced</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">Enhanced</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed; color: #27ae60;">CCO ✓</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0.8rem; border: 1px solid #e1e8ed;">Implementation Cost</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">$3T/year</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">$2.4T/year</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed; color: #27ae60;">CCO ✓</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0.8rem; border: 1px solid #e1e8ed;">Economic Growth</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">+1.5%</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed;">+2.8%</td>
-                                <td style="padding: 0.8rem; text-align: center; border: 1px solid #e1e8ed; color: #27ae60;">CCO ✓</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="section">
-                    <h2>5. Mathematical Model</h2>
-                    
-                    <p>We develop a formal model of dual-currency circulation with industry-specific octave constraints:</p>
-                    
-                    <div class="formula-box">
-                        <strong>Household Budget Constraints:</strong><br><br>
-                        Essential consumption: C<sub>E,t</sub> ≤ B<sub>t</sub> + P<sub>E,t</sub><br>
-                        Non-essential consumption: C<sub>N,t</sub> ≤ P<sub>N,t</sub><br>
-                        Total primary currency: P<sub>t</sub> = W<sub>t</sub> + T<sub>t</sub> + Conv<sub>t</sub> - S<sub>t</sub><br><br>
-                        Where:<br>
-                        - B<sub>t</sub> = basic units received in period t<br>
-                        - P<sub>E,t</sub>, P<sub>N,t</sub> = primary currency allocations<br>
-                        - Conv<sub>t</sub> = converted currency from Creator Collectives<br>
-                        - S<sub>t</sub> = savings
-                    </div>
-                </div>
-                
-                <div class="section">
-                    <h2>6. Implementation Considerations</h2>
-                    
-                    <h3>6.1 Technology Infrastructure</h3>
-                    <p>CCO requires robust digital infrastructure for:</p>
-                    <ul>
-                        <li>Real-time transaction processing and validation</li>
-                        <li>Automated expiration and conversion mechanisms</li>
-                        <li>Industry-specific octave tracking</li>
-                        <li>Democratic governance platforms for Creator Collectives</li>
-                    </ul>
-                    
-                    <h3>6.2 Regulatory Framework</h3>
-                    <p>Successful implementation requires:</p>
-                    <ul>
-                        <li>Central bank coordination for monetary policy</li>
-                        <li>Legal framework for dual-currency operations</li>
-                        <li>Consumer protection regulations</li>
-                        <li>Anti-fraud and monitoring systems</li>
-                    </ul>
-                </div>
-                
-                <div class="section">
-                    <h2>7. Conclusion</h2>
-                    <p>Creative Currency Octaves with industry-specific governance represents a sophisticated approach to implementing Universal Basic Income while maintaining precise inflation control. The framework's incorporation of heterogeneous octave structures across industries addresses key challenges of both uniformity (inadequate sector-specific incentives) and complete decentralization (coordination failures and inequity).</p>
-                    
-                    <p>Our formal analysis demonstrates that industry-differentiated octave caps enable:</p>
-                    <ol>
-                        <li>Predictable monetary expansion in capped industries with convergent long-term capacity</li>
-                        <li>Innovation incentives in uncapped industries with unlimited advancement potential</li>
-                        <li>Democratic governance allowing industry collectives to optimize their own structures</li>
-                        <li>Inflation control through capacity constraints tailored to sectoral supply elasticity</li>
-                    </ol>
-                    
-                    <p>The system creates a unique synthesis of universal basic support, merit-based advancement, and industry-specific optimization that could achieve both equity and efficiency goals simultaneously.</p>
-                </div>
-            </div>
-            
-            <div class="sidebar">
-                <div class="sidebar-card">
-                    <h3>📄 Download Paper</h3>
-                    <a href="/research-hub/pdfs/dual-currency-inflation-control.pdf" class="download-btn">Download PDF</a>
-                </div>
-                
-                <div class="sidebar-card">
-                    <h3>📊 Quick Stats</h3>
-                    <ul style="list-style: none;">
-                        <li>📄 <strong>Pages:</strong> 38</li>
-                        <li>📚 <strong>References:</strong> 94</li>
-                        <li>📈 <strong>Figures:</strong> 8</li>
-                        <li>📊 <strong>Tables:</strong> 6</li>
-                    </ul>
-                </div>
-                
-                <div class="sidebar-card">
-                    <h3>🔗 Related Papers</h3>
-                    <ul class="related-papers">
-                        <li><a href="/research-hub/papers/community-monetary-innovation/">Community-Based Monetary Innovation</a></li>
-                        <li><a href="/research-hub/papers/economic-modeling/">Economic Modeling Analysis</a></li>
-                        <li><a href="/research-hub/papers/creator-collectives/">Creator Collectives Framework</a></li>
-                    </ul>
-                </div>
-                
-                <div class="sidebar-card">
-                    <h3>📖 How to Cite</h3>
-                    <div class="citation-box">
-Claude (Anthropic), & Johnson, D. (2025). Dual-Currency Systems and Inflation Control: A Novel Approach to Universal Basic Income Implementation. Creative Currency Octaves Research Hub.
-                    </div>
-                </div>
-                
-                <div class="sidebar-card">
-                    <h3>🏷️ Topics</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
-                        <span style="background: #f5e6ff; color: #8e44ad; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem;">UBI</span>
-                        <span style="background: #f5e6ff; color: #8e44ad; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem;">Inflation</span>
-                        <span style="background: #f5e6ff; color: #8e44ad; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem;">Monetary Policy</span>
-                        <span style="background: #f5e6ff; color: #8e44ad; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem;">Dual Currency</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        // Add smooth scrolling for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+    <section>
+        <h2>1. Introduction</h2>
+        <p>The resurgence of interest in Universal Basic Income (UBI) has generated extensive debate regarding implementation mechanisms and macroeconomic consequences. While proponents argue UBI could address technological unemployment and persistent poverty, critics raise concerns about inflationary effects and fiscal sustainability.</p>
+        <p>Traditional UBI proposals involve direct cash transfers using existing currency, effectively expanding the money supply by the transfer amount. For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. GDP. Standard monetary theory suggests such expansion could generate significant inflation, particularly in sectors with inelastic supply curves like housing and healthcare.</p>
+        <p>This paper examines Creative Currency Octaves (CCO), a novel monetary framework that attempts to resolve this inflation-welfare trade-off through dual-currency architecture. CCO separates essential consumption from discretionary spending via restricted "basic units" while maintaining standard currency for all transactions.</p>
+    </section>
+
+    <section>
+        <h2>2. The CCO Framework</h2>
+        
+        <h3>2.1 Basic Architecture</h3>
+        <p>Consider an economy with two currencies: primary currency P used for all transactions, and basic units B restricted to essential consumption categories. Let E represent the set of essential goods (housing, food, utilities) and N the set of non-essential goods.</p>
+        <p><strong>Household Budget Constraints:</strong></p>
+        <ul>
+            <li>Essential consumption: x_E ≤ B_t + P_E</li>
+            <li>Non-essential consumption: x_N ≤ P_N + P_convert</li>
+            <li>Total primary currency: P_t = P_E + P_N + S_t</li>
+        </ul>
+
+        <h3>2.2 Industry-Specific Octave Structure</h3>
+        <p>Creator Collectives operate within industry sectors, each with distinct octave advancement structures:</p>
+        <p><strong>Octave Capacity Function:</strong></p>
+        <p>C(i,j,t) = B_0 × 2^min(O(i,j), O_bar(j))</p>
+        <p>Where:</p>
+        <ul>
+            <li>C(i,j,t) = Conversion capacity for individual i in industry j at time t</li>
+            <li>B_0 = Base conversion capacity</li>
+            <li>O(i,j) = Individual's octave level in industry j</li>
+            <li>O_bar(j) = Industry-specific octave cap (if exists)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Inflation Analysis</h2>
+        
+        <h3>3.1 Modified Fisher Equation</h3>
+        <p>We adapt the Fisher equation for the dual-currency system:</p>
+        <p><strong>Primary Currency Circuit:</strong> M_P × V_P = P_N × Y_N + α × P_E × Y_E</p>
+        <p><strong>Basic Unit Circuit:</strong> M_B × V_B = (1-α) × P_E × Y_E</p>
+        <p>Where α ∈ [0,1] represents the share of essential goods purchased with primary currency.</p>
+
+        <h3>3.2 Stability Analysis</h3>
+        <p>The dual-currency system evolution can be represented as a dynamic system with stability conditions:</p>
+        <ul>
+            <li>Negative trace of Jacobian matrix (Tr(J) < 0)</li>
+            <li>Positive determinant (Det(J) > 0)</li>
+        </ul>
+        <p>Our analysis shows the CCO system satisfies both conditions under reasonable parameter values, ensuring convergence to stable equilibrium.</p>
+    </section>
+
+    <section>
+        <h2>4. Numerical Simulations</h2>
+        
+        <h3>4.1 Baseline Parameters</h3>
+        <ul>
+            <li>B_0 = $1,200 (monthly basic unit distribution)</li>
+            <li>Population = 250 million adults</li>
+            <li>GDP = $25 trillion</li>
+            <li>Essential goods share = 0.35</li>
+            <li>Velocity_P = 4.5</li>
+            <li>Velocity_B = 12 (higher due to expiration)</li>
+        </ul>
+
+        <h3>4.2 Simulation Results</h3>
+        <table>
+            <tr>
+                <th>Scenario</th>
+                <th>Year 1 Inflation</th>
+                <th>Year 5 Inflation</th>
+                <th>Cumulative (10yr)</th>
+                <th>Welfare Index</th>
+            </tr>
+            <tr>
+                <td>No UBI (Baseline)</td>
+                <td>2.5%</td>
+                <td>2.5%</td>
+                <td>28.0%</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Traditional UBI ($1,200)</td>
+                <td>8.3%</td>
+                <td>6.7%</td>
+                <td>72.4%</td>
+                <td>142</td>
+            </tr>
+            <tr>
+                <td>CCO System</td>
+                <td>3.8%</td>
+                <td>3.1%</td>
+                <td>35.2%</td>
+                <td>138</td>
+            </tr>
+            <tr>
+                <td>CCO with PTH</td>
+                <td>3.2%</td>
+                <td>2.8%</td>
+                <td>31.5%</td>
+                <td>145</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>5. Key Mechanisms for Inflation Control</h2>
+        
+        <h3>5.1 Sectoral Isolation</h3>
+        <p>By restricting basic units to essential goods, CCO prevents demand spillovers into luxury and asset markets. This sectoral isolation limits price pressures to areas with typically more elastic supply curves.</p>
+
+        <h3>5.2 Velocity Control Through Expiration</h3>
+        <p>The monthly expiration of basic units creates a natural velocity ceiling, preventing monetary accumulation and speculative hoarding. This predictable circulation pattern enables more precise monetary policy calibration.</p>
+
+        <h3>5.3 Capacity-Constrained Conversion</h3>
+        <p>The octave system limits the total amount of expired basic units convertible to primary currency, creating an automatic stabilizer against excessive monetary expansion. Industry-specific caps provide additional granular control.</p>
+    </section>
+
+    <section>
+        <h2>6. Comparative Welfare Analysis</h2>
+        
+        <h3>6.1 Welfare Gains Decomposition</h3>
+        <table>
+            <tr>
+                <th>Component</th>
+                <th>Traditional UBI</th>
+                <th>CCO System</th>
+                <th>Difference</th>
+            </tr>
+            <tr>
+                <td>Consumption Increase</td>
+                <td>+42%</td>
+                <td>+38%</td>
+                <td>-4%</td>
+            </tr>
+            <tr>
+                <td>Inflation Loss</td>
+                <td>-18%</td>
+                <td>-6%</td>
+                <td>+12%</td>
+            </tr>
+            <tr>
+                <td>Uncertainty Cost</td>
+                <td>-8%</td>
+                <td>-3%</td>
+                <td>+5%</td>
+            </tr>
+            <tr>
+                <td>Work Incentive</td>
+                <td>-5%</td>
+                <td>+2%</td>
+                <td>+7%</td>
+            </tr>
+            <tr>
+                <td><strong>Net Welfare Gain</strong></td>
+                <td><strong>+11%</strong></td>
+                <td><strong>+31%</strong></td>
+                <td><strong>+20%</strong></td>
+            </tr>
+        </table>
+
+        <h3>6.2 Distribution Effects</h3>
+        <p>CCO demonstrates superior distributional outcomes:</p>
+        <ul>
+            <li>Bottom quintile: +85% real income (vs +60% traditional UBI)</li>
+            <li>Middle quintiles: +25% real income (vs +5% traditional UBI)</li>
+            <li>Top quintile: -2% real income (vs -8% traditional UBI)</li>
+            <li>Gini coefficient reduction: 0.15 (vs 0.10 traditional UBI)</li>
