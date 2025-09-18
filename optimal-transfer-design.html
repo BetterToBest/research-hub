@@ -76,50 +76,6 @@
     </section>
 
     <section>
-        <h2>Appendix A: Sensitivity Analysis Details</h2>
-        
-        <h3>A.1 Parameter Distributions</h3>
-        <p>All simulations use the following parameter distributions:</p>
-        <ul>
-            <li>Basic unit amount: B₀ ~ Uniform[800, 1500]</li>
-            <li>Wage rate: w ~ LogNormal(μ = 3.5, σ = 0.5)</li>
-            <li>Octave advancement probability: p(O_{t+1} = O_t + 1) ~ Beta(2, 5)</li>
-            <li>Quality assessment accuracy: ρ ~ Beta(8, 2)</li>
-            <li>Community participation rate: π ~ Beta(3, 2)</li>
-            <li>Risk aversion: γ ~ Uniform[0.5, 2]</li>
-            <li>Time preference: δ ~ Beta(9, 1)</li>
-        </ul>
-
-        <h3>A.2 Convergence Diagnostics</h3>
-        <p>All Monte Carlo chains satisfy:</p>
-        <ul>
-            <li>Gelman-Rubin statistic: R̂ &lt; 1.1</li>
-            <li>Effective sample size: n_eff &gt; 1000</li>
-            <li>Autocorrelation: ρ &lt; 0.1 after lag 10</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Appendix B: Proofs of Auxiliary Results</h2>
-        
-        <h3>B.1 Lemma 1: Monotonicity of Conversion Function</h3>
-        <p>The conversion function P_{convert}(O, R) is strictly increasing in both arguments.</p>
-
-        <p><strong>Proof:</strong> Taking partial derivatives:</p>
-        <ul>
-            <li>∂P_{convert}/∂O = B₀ × ln(2) × 2^O × R &gt; 0</li>
-            <li>∂P_{convert}/∂R = B₀ × 2^O &gt; 0</li>
-        </ul>
-
-        <p>Both partials are strictly positive for all feasible values. □</p>
-
-        <h3>B.2 Lemma 2: Existence of Unique Equilibrium</h3>
-        <p>Under standard regularity conditions, a unique equilibrium exists.</p>
-
-        <p><strong>Proof:</strong> The excess demand function Z(p) = D(p) - S(p) is continuous, strictly decreasing, with Z(0) &gt; 0 and Z(∞) &lt; 0. By the intermediate value theorem, there exists unique p* such that Z(p*) = 0. □</p>
-    </section>
-
-    <section>
         <h2>1. Introduction</h2>
         <p>Modern welfare systems face what Okun (1975) termed the "big tradeoff" between equality and efficiency, manifested through work disincentive effects and welfare cliff phenomena. Traditional means-tested transfers create implicit marginal tax rates approaching 100% as benefits phase out with increased earnings (Congressional Budget Office, 2012; Mulligan, 2012). Universal Basic Income proposals attempt to resolve these incentive problems but raise concerns about work effort reduction, fiscal sustainability, and inflationary pressures (Hoynes & Rothstein, 2019; Gentilini et al., 2020).</p>
 
