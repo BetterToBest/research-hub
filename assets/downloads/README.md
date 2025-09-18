@@ -76,7 +76,7 @@ For technical support, implementation questions, or collaboration:
 
 ## Version History
 
-- **v1.0.0** (January 2025) - Initial release with core simulation framework
+- **v1.0.0** (September 2025) - Initial release with core simulation framework
 - **v1.1.0** (Planned) - Enhanced visualization tools and additional validation scenarios
 
 ---
