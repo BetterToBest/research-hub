@@ -81,4 +81,4 @@ For technical support, implementation questions, or collaboration:
 
 ---
 
-*Last updated: January 18, 2025*
+*Last updated: September 18, 2025*
