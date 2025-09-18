@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this research, please cite it as below."
+authors:
+  - family-names: Johnson
+    given-names: Duke
+    email: Duke.T.James@gmail.com
+  - name: "Claude (Anthropic)"
+title: "Better To Best Research Hub: Open Access Research on Creative Currency Octaves"
+abstract: "An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, Public Trust Housing, Citizens Internet Portal, and Social Zone Harmonization."
+version: 1.0.0
+date-released: 2025-01-01
+url: "https://bettertobest.github.io/research-hub/"
+repository-code: "https://github.com/BetterToBest/research-hub"
+keywords:
+  - "Creative Currency Octaves"
+  - "Public Trust Housing"
+  - "Social Zone Harmonization"
+  - "Citizens Internet Portal"
+  - "economic innovation"
+  - "governance systems"
+license: CC-BY-4.0
+preferred-citation:
+  type: generic
+  authors:
+    - family-names: Johnson
+      given-names: Duke
+    - name: "Claude (Anthropic)"
+  title: "Better To Best Research Hub"
+  year: 2025
+  url: "https://bettertobest.github.io/research-hub/"
