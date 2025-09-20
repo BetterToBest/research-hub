@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Better To Best Research Hub</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Explore our research on Creative Currency Octaves, Public Trust Housing, and innovative economic frameworks.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #1e3a8a;
+            --accent-color: #2563eb;
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --border-color: #e2e8f0;
+            --success-color: #10b981;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--background);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 0;
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .error-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .navigation-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .nav-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .nav-card-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .nav-card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-card-description {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .search-box {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--text-secondary);
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 4rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .navigation-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-nav">
+                <a href="/" class="logo">Better To Best Research Hub</a>
+                <nav class="breadcrumb">
+                    <a href="/">Home</a>
+                    <span>/</span>
+                    <span>404 Error</span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="error-container">
+                <div class="error-code">404</div>
+                <h1 class="error-title">Page Not Found</h1>
+                <p class="error-description">
+                    The page you're looking for doesn't exist or may have been moved. 
+                    Explore our research on Creative Currency Octaves, Public Trust Housing, 
+                    and innovative economic frameworks below.
+                </p>
+
+                <div class="navigation-options">
+                    <a href="/" class="nav-card">
+                        <span class="nav-card-icon">🏠</span>
+                        <div class="nav-card-title">Research Hub Home</div>
+                        <div class="nav-card-description">Start from the main page and explore our research</div>
+                    </a>
+
+                    <a href="/papers/" class="nav-card">
+                        <span class="nav-card-icon">📄</span>
+                        <div class="nav-card-title">All Research Papers</div>
+                        <div class="nav-card-description">Browse our 14 open-access research papers</div>
+                    </a>
+
+                    <a href="/wiki/" class="nav-card">
+                        <span class="nav-card-icon">📚</span>
+                        <div class="nav-card-title">Wiki & Documentation</div>
+                        <div class="nav-card-description">Comprehensive glossary, FAQ, and resources</div>
+                    </a>
+                </div>
+
+                <a href="/" class="btn">
+                    ← Return to Homepage
+                </a>
+
+                <div class="search-box">
+                    <h3>Search Our Research</h3>
+                    <input type="text" class="search-input" placeholder="Search for papers, concepts, or topics..." id="searchInput">
+                    <button class="btn" onclick="performSearch()">Search Research Hub</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Better To Best Research Hub. Licensed under Creative Commons Attribution 4.0 International License.</p>
+        </div>
+    </footer>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.trim();
+            if (query) {
+                // Redirect to home page with search intent
+                window.location.href = `/?search=${encodeURIComponent(query)}`;
+            }
+        }
+
+        // Allow Enter key to trigger search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Simple client-side search suggestions
+        const searchTerms = [
+            'Creative Currency Octaves',
+            'Public Trust Housing',
+            'Social Zone Harmonization',
+            'Citizen Internet Portal',
+            'CCO implementation',
+            'PTH technical specifications',
+            'Economic modeling',
+            'Drug policy reform',
+            'Democratic governance',
+            'Risk mitigation',
+            'Cultural value integration',
+            'Optimal transfer design'
+        ];
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const value = e.target.value.toLowerCase();
+            if (value.length > 2) {
+                const matches = searchTerms.filter(term => 
+                    term.toLowerCase().includes(value)
+                );
+                
+                if (matches.length > 0) {
+                    e.target.placeholder = `Try: ${matches[0]}`;
+                }
+            } else {
+                e.target.placeholder = 'Search for papers, concepts, or topics...';
+            }
+        });
+    </script>
+</body>
+</html>
