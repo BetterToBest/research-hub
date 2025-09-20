@@ -827,6 +827,21 @@ function copyCitation() {
     }
 }
 
+// Show copy success feedback - Fixed to work with proper event handling
+function showCopySuccess() {
+    const btn = document.querySelector('.btn[onclick="copyCitation()"]');
+    if (btn) {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '✅ Copied!';
+        btn.style.background = 'var(--success-color)';
+        
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.style.background = 'var(--primary-color)';
+        }, 2000);
+    }
+}
+
 // Fallback copy method for older browsers
 function fallbackCopy(text) {
     const textArea = document.createElement('textarea');
