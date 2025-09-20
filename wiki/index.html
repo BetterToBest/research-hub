@@ -820,7 +820,7 @@ function generateCitation() {
 }
 
 // Copy citation to clipboard with enhanced error handling
-function copyCitation() {
+async function copyCitation() {
     const output = document.getElementById('citation-output');
     const text = output.textContent;
     
@@ -830,30 +830,94 @@ function copyCitation() {
         return;
     }
     
-    // Modern clipboard API with fallback
-    if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(text).then(() => {
+    try {
+        // Try modern clipboard API first
+        if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
             showCopySuccess();
-        }).catch((err) => {
-            console.error('Clipboard API failed:', err);
-            fallbackCopy(text);
-        });
-    } else {
-        fallbackCopy(text);
+            return;
+        }
+        
+        // Fallback for older browsers or non-secure contexts
+        if (fallbackCopy(text)) {
+            showCopySuccess();
+        } else {
+            // If all else fails, select the text for manual copying
+            selectText(output);
+            alert('Citation text has been selected. Please press Ctrl+C (or Cmd+C on Mac) to copy.');
+        }
+    } catch (err) {
+        console.error('Copy failed:', err);
+        // Select the text for manual copying
+        selectText(output);
+        alert('Automatic copying failed. The citation text has been selected - please press Ctrl+C (or Cmd+C on Mac) to copy.');
     }
 }
 
-// Show copy success feedback - Fixed to work with proper event handling
+// Improved fallback copy method
+function fallbackCopy(text) {
+    // Create a temporary textarea
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    
+    // Make it invisible but not display:none (which would make it unselectable)
+    textArea.style.position = 'fixed';
+    textArea.style.top = '-9999px';
+    textArea.style.left = '-9999px';
+    textArea.style.opacity = '0';
+    textArea.style.pointerEvents = 'none';
+    textArea.style.tabIndex = '-1';
+    
+    document.body.appendChild(textArea);
+    
+    try {
+        // Focus and select the text
+        textArea.focus();
+        textArea.select();
+        textArea.setSelectionRange(0, text.length);
+        
+        // Try to copy
+        const successful = document.execCommand('copy');
+        document.body.removeChild(textArea);
+        return successful;
+    } catch (err) {
+        console.error('Fallback copy failed:', err);
+        document.body.removeChild(textArea);
+        return false;
+    }
+}
+
+// Select text in element for manual copying
+function selectText(element) {
+    if (window.getSelection) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(element);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    } else if (document.selection) {
+        // IE fallback
+        const range = document.body.createTextRange();
+        range.moveToElementText(element);
+        range.select();
+    }
+}
+
+// Show copy success feedback
 function showCopySuccess() {
-    const btn = document.querySelector('.btn[onclick="copyCitation()"]');
+    const btn = document.querySelector('button[onclick="copyCitation()"]') || 
+               document.querySelector('.btn[onclick="copyCitation()"]');
+    
     if (btn) {
         const originalText = btn.innerHTML;
+        const originalBg = btn.style.backgroundColor || '';
+        
         btn.innerHTML = '✅ Copied!';
-        btn.style.background = 'var(--success-color)';
+        btn.style.backgroundColor = 'var(--success-color)';
         
         setTimeout(() => {
             btn.innerHTML = originalText;
-            btn.style.background = 'var(--primary-color)';
+            btn.style.backgroundColor = originalBg || 'var(--primary-color)';
         }, 2000);
     }
 }
