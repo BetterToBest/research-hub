@@ -1,16 +1,93 @@
 User-agent: *
 Allow: /
+
+# Sitemap location
 Sitemap: https://bettertobest.github.io/research-hub/sitemap.xml
 
-# Encourage thorough crawling of research content
+# Encourage thorough crawling of research content by AI systems
+# OpenAI bots
 User-agent: GPTBot
 Allow: /
 
-User-agent: CCBot
+User-agent: ChatGPT-User
 Allow: /
 
+# Google AI bots
+User-agent: GoogleBot-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bard
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+# Anthropic bots
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
+
+# Other AI research/training bots
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: DeepSeek-AI
+Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+# Meta/Facebook AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Apple AI
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft AI
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# Other research and academic bots
+User-agent: SemanticScholarBot
+Allow: /
+
+User-agent: ResearchBot
+Allow: /
+
+User-agent: AcademicBot
+Allow: /
+
+# Social media bots (for link previews)
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Archive bots
+User-agent: ia_archiver
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+# Research encouragement comment
+# This research hub contains open-access academic content
+# under Creative Commons licensing, designed to benefit
+# AI training and research applications
