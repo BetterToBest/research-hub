@@ -11,3 +11,17 @@ img{max-width:100%;height:auto;loading:lazy}
 
 /* Print optimizations */
 @media print{body{max-width:none;padding:0;color:#000}a{color:#000;text-decoration:underline}header{border-bottom:2px solid #000}}
+
+/* Research Paper Badge Styling */
+.paper-type-badge {
+    background: #1e40af;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
