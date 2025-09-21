@@ -130,15 +130,6 @@
               border-bottom: 2px solid #000;
             }
           }
-          
-          /* Performance - reduced motion support */
-          @media (prefers-reduced-motion: reduce) {
-            * {
-              animation-duration: 0.01ms !important;
-              animation-iteration-count: 1 !important;
-              transition-duration: 0.01ms !important;
-            }
-          }
         </style>
       </head>
       <body>
@@ -184,9 +175,9 @@
           </xsl:for-each>
         </section>
 
-        <!-- Wiki & Documentation -->
+        <!-- Wiki Documentation -->
         <section>
-          <h2>Wiki & Documentation</h2>
+          <h2>Wiki Documentation</h2>
           <xsl:for-each select="sitemap:urlset/sitemap:url[contains(sitemap:loc, '/wiki/')]">
             <div class="url-info">
               <a href="{sitemap:loc}" class="url-link">
