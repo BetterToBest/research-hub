@@ -3,6 +3,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://bettertobest.github.io/research-hub/sitemap.xml
+Sitemap: https://bettertobest.github.io/research-hub/research-index.json
 
 # Encourage thorough crawling of research content by AI systems
 # OpenAI bots
