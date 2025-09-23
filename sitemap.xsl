@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" 
-                xmlns:html="http://www.w3.org/TR/REC-html40"
-                xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9">
   <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml">
@@ -102,7 +99,6 @@
           section {
             margin-bottom: 40px;
           }
-          
           /* Mobile optimizations matching research hub */
           @media (max-width: 768px) {
             body {
@@ -114,7 +110,6 @@
             .url-info { margin-bottom: 25px; }
             section { margin-bottom: 30px; }
           }
-          
           /* Print optimizations */
           @media print {
             body {
@@ -141,7 +136,6 @@
           </div>
         </header>
 
-        <!-- Main Hub Pages -->
         <section>
           <h2>Main Hub Pages</h2>
           <xsl:for-each select="sitemap:urlset/sitemap:url[contains(sitemap:loc, '/research-hub/') and not(contains(sitemap:loc, '/wiki/')) and not(contains(sitemap:loc, '.html'))]">
@@ -158,7 +152,6 @@
           </xsl:for-each>
         </section>
 
-        <!-- Research Papers -->
         <section>
           <h2>Research Papers</h2>
           <xsl:for-each select="sitemap:urlset/sitemap:url[contains(sitemap:loc, '.html') and not(contains(sitemap:loc, '/wiki/'))]">
@@ -175,7 +168,6 @@
           </xsl:for-each>
         </section>
 
-        <!-- Wiki Documentation -->
         <section>
           <h2>Wiki Documentation</h2>
           <xsl:for-each select="sitemap:urlset/sitemap:url[contains(sitemap:loc, '/wiki/')]">
