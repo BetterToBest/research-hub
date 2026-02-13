@@ -2,7 +2,7 @@
 
 An open-access hub for research papers, working drafts, and supplemental resources on Creative Currency Octaves, governance, and future economics.
 
-<link rel="alternate" type="application/json" href="/ai-index.json" title="AI Research Index">
+**AI Index (machine-readable):** `/ai-index.json`
 
 ## 🚀 Quick Setup Guide
 
