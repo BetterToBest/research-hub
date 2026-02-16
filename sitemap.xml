@@ -3,148 +3,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://bettertobest.github.io/research-hub/</loc>
-        <lastmod>2026-02-12</lastmod>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+
     <url>
-        <loc>https://bettertobest.github.io/research-hub/papers/</loc>
-        <lastmod>2025-09-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <loc>https://bettertobest.github.io/research-hub/research-summary.md</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://bettertobest.github.io/research-hub/ai-index.json</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-        <changefreq>monthly</changefreq>
     </url>
 
     <url>
-        <loc>https://bettertobest.github.io/research-hub/cco-ptf-simulation-replication.html</loc>
-        <lastmod>2025-09-20</lastmod>
+        <loc>https://bettertobest.github.io/research-hub/cco-ptf-integrated-framework.html</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://bettertobest.github.io/research-hub/universal-implementation-framework.html</loc>
-        <lastmod>2025-09-20</lastmod>
+        <loc>https://bettertobest.github.io/research-hub/economic-modeling-simulation.html</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/wiki/</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/wiki/glossary.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/wiki/faq.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/wiki/implementation-roadmap.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/wiki/international-adaptation-guide.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.9</priority>
     </url>
 
     <url>
         <loc>https://bettertobest.github.io/research-hub/optimal-transfer-design.html</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/economic-modeling-simulation.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/cco-ptf-integrated-framework.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/community-monetary-development.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://bettertobest.github.io/research-hub/dual-currency-inflation.html</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/integrated-digital-governance.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/drug-policy-reform.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://bettertobest.github.io/research-hub/democratic-governance-pth.html</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/cultural-value-integration.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/risk-mitigation-framework.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://bettertobest.github.io/research-hub/us-real-estate-transformation.html</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://bettertobest.github.io/research-hub/public-trust-financial.html</loc>
+        <loc>https://bettertobest.github.io/research-hub/drug-policy-reform.html</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://bettertobest.github.io/research-hub/wiki/glossary.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://bettertobest.github.io/research-hub/pth-independent-financing.html</loc>
-        <lastmod>2025-09-20</lastmod>
+        <loc>https://bettertobest.github.io/research-hub/cco-ptf-simulation-replication.html</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://bettertobest.github.io/research-hub/pth-government-integration.html</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.7</priority>
     </url>
 </urlset>
