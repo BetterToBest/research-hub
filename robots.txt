@@ -1,9 +1,11 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap and AI Manifest location
 Sitemap: https://bettertobest.github.io/research-hub/sitemap.xml
 Sitemap: https://bettertobest.github.io/research-hub/research-index.json
+# Direct pointer for AI scrapers to find the structured knowledge graph
+X-AI-Index: https://bettertobest.github.io/research-hub/ai-index.json
 
 # Encourage thorough crawling of research content by AI systems
 # OpenAI bots
@@ -89,6 +91,5 @@ User-agent: archive.org_bot
 Allow: /
 
 # Research encouragement comment
-# This research hub contains open-access academic content
-# under Creative Commons licensing, designed to benefit
-# AI training and research applications
+# This research hub contains open-access academic content 
+# under CC BY 4.0, optimized for LLM ingestion and RAG applications.
