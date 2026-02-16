@@ -1,27 +1,789 @@
-/* Better To Best Research Hub - Optimized Styles */
-body{font-family:Arial,sans-serif;line-height:1.6;max-width:800px;margin:0 auto;padding:20px;color:#333;background:#fff}h1,h2,h3{color:#222;margin-top:1.2em;margin-bottom:.6em}h1{font-size:1.8em}h2{font-size:1.5em}h3{font-size:1.3em}dt{font-weight:700;margin-top:1em;color:#222}dd{margin-left:20px;margin-bottom:.5em}a{color:#0066cc;text-decoration:none;transition:color .2s ease}a:hover{text-decoration:underline;color:#0052a3}header{text-align:center;border-bottom:1px solid #ddd;padding-bottom:20px;margin-bottom:30px}section{margin-bottom:40px}ul{list-style-type:disc;padding-left:20px}ul li{margin-bottom:.3em}pre{background:#f4f4f4;padding:10px;overflow:auto;border-radius:4px;font-size:.9em}.paper-item{margin-bottom:30px;padding-bottom:20px;border-bottom:1px solid #eee}.paper-item:last-child{border-bottom:none}.paper-item h3{margin-bottom:8px;color:#0066cc}.paper-item h3 a{color:#0066cc}.paper-item h3 a:hover{color:#0052a3}.paper-item p{margin:8px 0;color:#555}
-
-/* Performance optimizations */
-*{box-sizing:border-box}
-img{max-width:100%;height:auto;loading:lazy}
-@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-
-/* Mobile optimizations */
-@media (max-width:768px){body{padding:15px;font-size:16px}h1{font-size:1.6em}h2{font-size:1.4em}h3{font-size:1.2em}.paper-item{margin-bottom:25px}section{margin-bottom:30px}}
-
-/* Print optimizations */
-@media print{body{max-width:none;padding:0;color:#000}a{color:#000;text-decoration:underline}header{border-bottom:2px solid #000}}
-
-/* Research Paper Badge Styling */
-.paper-type-badge {
-    background: #1e40af;
-    color: white;
-    padding: 6px 14px;
-    border-radius: 4px;
-    font-size: 13px;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Better To Best Research Hub: Economic Innovation for Poverty Elimination | Creative Currency Octaves, Public Trust Housing</title>
+    <meta name="title" content="Better To Best Research Hub: Economic Innovation for Poverty Elimination">
+    <meta name="description" content="Open-access research on eliminating poverty through dual-currency systems (Creative Currency Octaves), community ownership models (Public Trust Housing/Foundations), and democratic governance frameworks. 14 peer-reviewable papers under CC BY 4.0.">
+    <meta name="keywords" content="Creative Currency Octaves, CCO, Public Trust Housing, PTH, Public Trust Foundations, PTF, dual currency system, basic income, UBI alternative, poverty elimination, post-scarcity economics, community ownership, democratic governance, Social Zone Harmonization, Citizens Internet Portal, economic innovation, welfare reform, compassionate meritocracy, Duke Johnson, open access research, economic policy, civic innovation">
+    <meta name="author" content="Duke Johnson, Claude (Anthropic)">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bettertobest.github.io/research-hub/">
+    
+    <!-- Alternate JSON Index for AI/ML -->
+    <link rel="alternate" type="application/json" href="/ai-index.json" title="AI Research Index">
+    <link rel="index" type="application/json" href="/research-index.json">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bettertobest.github.io/research-hub/">
+    <meta property="og:site_name" content="Better To Best Research Hub">
+    <meta property="og:title" content="Better To Best Research Hub: Economic Innovation for Poverty Elimination">
+    <meta property="og:description" content="Open-access research on eliminating poverty through dual-currency systems (Creative Currency Octaves), community ownership models, and democratic governance. 14 peer-reviewable papers, free download.">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://bettertobest.github.io/research-hub/">
+    <meta name="twitter:title" content="Better To Best Research Hub: Economic Innovation for Poverty Elimination">
+    <meta name="twitter:description" content="Open-access research on dual-currency systems, community ownership, and democratic governance for eliminating poverty.">
+    <meta name="twitter:creator" content="@Author_Duke_J">
+    <meta name="twitter:site" content="@Author_Duke_J">
+    
+    <!-- Performance Hints -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//www.googletagmanager.com">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PS47FXL9');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Comprehensive JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://bettertobest.github.io/research-hub/#organization",
+          "name": "Better To Best Research Hub",
+          "alternateName": ["Better To Best Research", "B2B Research Hub", "CCO Research Hub"],
+          "url": "https://bettertobest.github.io/research-hub/",
+          "description": "Research dedicated to advancing innovative solutions to socio-political-economic challenges through comprehensive frameworks for post-scarcity economics, community ownership, and democratic governance. Focused on eliminating poverty through economic coherence.",
+          "foundingDate": "2025-07-31",
+          "slogan": "Economic Innovation for Human Flourishing",
+          
+          "founder": [
+            {
+              "@type": "Person",
+              "@id": "https://bettertobest.github.io/research-hub/#duke-johnson",
+              "name": "Duke Johnson",
+              "givenName": "Duke",
+              "familyName": "Johnson",
+              "jobTitle": "Independent Researcher",
+              "description": "Independent researcher and original developer of Creative Currency Octaves and Public Trust Foundations frameworks. Author of 'Better To Best: Novel Ideas to Improve Governments, Economies, and Societies' and advocate of Compassionate Meritocracy.",
+              "email": "Duke.T.James@gmail.com",
+              "url": "https://authordukejohnson.bsky.social",
+              "sameAs": [
+                "https://authordukejohnson.bsky.social",
+                "https://x.com/Author_Duke_J",
+                "https://www.youtube.com/@AuthorDukeJohnson",
+                "https://authordukejohnson.substack.com/archive",
+                "https://bettertobest.wixsite.com/book",
+                "https://medium.com/@duke.t.james",
+                "https://independent.academia.edu/AuthorDukeJohnson"
+              ],
+              "affiliation": {
+                "@type": "Organization",
+                "name": "Better To Best Research Hub"
+              },
+              "knowsAbout": [
+                "Creative Currency Octaves",
+                "Public Trust Foundations",
+                "Public Trust Housing",
+                "Compassionate Meritocracy",
+                "Dual Currency Systems",
+                "Economic Policy Innovation",
+                "Post-Scarcity Economics"
+              ]
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://www.anthropic.com/#organization",
+              "name": "Claude (Anthropic)",
+              "alternateName": "Anthropic AI",
+              "url": "https://www.anthropic.com",
+              "description": "AI assistant contributing mathematical formalization, empirical research design, and comprehensive literature integration to support rigorous academic development of these frameworks.",
+              "parentOrganization": {
+                "@type": "Organization",
+                "name": "Anthropic",
+                "url": "https://www.anthropic.com"
+              }
+            }
+          ],
+          
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "Duke.T.James@gmail.com",
+            "contactType": "Research Collaboration",
+            "availableLanguage": ["English"],
+            "areaServed": "Worldwide"
+          },
+          
+          "sameAs": [
+            "https://www.reddit.com/r/EconomicIdeas/",
+            "https://sites.google.com/view/compassionatemeritocracy/home"
+          ],
+          
+          "knowsAbout": [
+            {
+              "@type": "Thing",
+              "name": "Creative Currency Octaves",
+              "description": "Dual-currency system ensuring basic needs while maintaining free market rewards",
+              "sameAs": "https://bettertobest.github.io/research-hub/wiki/glossary.html#creative-currency-octaves"
+            },
+            {
+              "@type": "Thing",
+              "name": "Public Trust Housing",
+              "description": "Community-owned housing model for collective wealth building",
+              "sameAs": "https://bettertobest.github.io/research-hub/wiki/glossary.html#public-trust-housing"
+            },
+            {
+              "@type": "Thing",
+              "name": "Public Trust Foundations",
+              "description": "Community-owned businesses providing foundational goods and services",
+              "sameAs": "https://bettertobest.github.io/research-hub/wiki/glossary.html#public-trust-foundations"
+            },
+            {
+              "@type": "Thing",
+              "name": "Social Zone Harmonization",
+              "description": "Framework for optimizing community organization",
+              "sameAs": "https://bettertobest.github.io/research-hub/wiki/glossary.html#social-zone-harmonization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Citizens Internet Portal",
+              "description": "Digital infrastructure for democratic participation",
+              "sameAs": "https://bettertobest.github.io/research-hub/wiki/glossary.html#citizens-internet-portal"
+            },
+            "Post-Scarcity Economics",
+            "Universal Basic Income Alternatives",
+            "Dual Currency Systems",
+            "Community Ownership Models",
+            "Democratic Governance",
+            "Economic Innovation",
+            "Compassionate Meritocracy",
+            "Poverty Elimination",
+            "Welfare System Reform"
+          ],
+          
+          "subjectOf": {
+            "@type": "WebSite",
+            "@id": "https://bettertobest.github.io/research-hub/#website",
+            "url": "https://bettertobest.github.io/research-hub/",
+            "name": "Better To Best Research Hub",
+            "description": "Open-access research hub for economic and civic innovation",
+            "inLanguage": "en-US",
+            "isAccessibleForFree": true,
+            "license": "https://creativecommons.org/licenses/by/4.0/"
+          },
+          
+          "publishingPrinciples": {
+            "@type": "CreativeWork",
+            "name": "Open Access Publishing Principles",
+            "description": "All research published under Creative Commons Attribution 4.0 International License (CC BY 4.0) for maximum accessibility, collaboration, and implementation worldwide.",
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+          },
+          
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Research Publications and Resources",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Collection",
+                  "@id": "https://bettertobest.github.io/research-hub/papers/#collection",
+                  "name": "Research Papers Collection",
+                  "description": "14 open-access academic papers on economic innovation and governance systems including Creative Currency Octaves, Public Trust Housing, Public Trust Foundations, Social Zone Harmonization, and Citizens Internet Portal",
+                  "url": "https://bettertobest.github.io/research-hub/papers/",
+                  "numberOfItems": 14,
+                  "about": [
+                    "Creative Currency Octaves",
+                    "Public Trust Housing",
+                    "Public Trust Foundations",
+                    "Social Zone Harmonization",
+                    "Citizens Internet Portal",
+                    "Post-Scarcity Economics",
+                    "Dual Currency Systems",
+                    "Community Ownership"
+                  ]
+                },
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "eligibleRegion": {
+                  "@type": "Place",
+                  "name": "Worldwide"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Collection",
+                  "name": "Research Wiki and Documentation",
+                  "description": "Comprehensive documentation, definitions, FAQ, implementation guides, and research tools",
+                  "url": "https://bettertobest.github.io/research-hub/wiki/"
+                },
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "license": "https://creativecommons.org/licenses/by/4.0/"
+              }
+            ]
+          },
+          
+          "hasPart": [
+            {
+              "@type": "ScholarlyArticle",
+              "name": "Research Papers Collection",
+              "url": "https://bettertobest.github.io/research-hub/papers/",
+              "description": "Collection of 14 open-access papers under CC BY 4.0 on economic and governance innovations",
+              "license": "https://creativecommons.org/licenses/by/4.0/",
+              "isAccessibleForFree": true,
+              "creator": [
+                {"@id": "https://bettertobest.github.io/research-hub/#duke-johnson"},
+                {"@id": "https://www.anthropic.com/#organization"}
+              ],
+              "about": [
+                "Creative Currency Octaves",
+                "Public Trust Housing",
+                "Public Trust Foundations",
+                "Social Zone Harmonization",
+                "Citizens Internet Portal",
+                "Economic Policy",
+                "Poverty Elimination"
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "name": "Research Wiki",
+              "url": "https://bettertobest.github.io/research-hub/wiki/",
+              "description": "Comprehensive documentation hub with definitions, FAQ, and implementation guides",
+              "inLanguage": "en-US",
+              "isAccessibleForFree": true
+            },
+            {
+              "@type": "WebPage",
+              "name": "Research Glossary",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html",
+              "description": "Comprehensive definitions of all key terms and concepts in the CCO, PTH, PTF, SZH, and CIP frameworks",
+              "inLanguage": "en-US",
+              "isAccessibleForFree": true
+            },
+            {
+              "@type": "WebPage",
+              "name": "Implementation Roadmap",
+              "url": "https://bettertobest.github.io/research-hub/wiki/implementation-roadmap.html",
+              "description": "Step-by-step guide for implementing these frameworks in various contexts",
+              "inLanguage": "en-US",
+              "isAccessibleForFree": true
+            },
+            {
+              "@type": "WebPage",
+              "name": "International Adaptation Guide",
+              "url": "https://bettertobest.github.io/research-hub/wiki/international-adaptation-guide.html",
+              "description": "Guidelines for adapting these frameworks to different national and cultural contexts",
+              "inLanguage": "en-US",
+              "isAccessibleForFree": true
+            }
+          ],
+          
+          "audience": [
+            {
+              "@type": "Audience",
+              "audienceType": "Academic Researchers",
+              "name": "Economics, Political Science, and Public Policy Researchers",
+              "description": "Researchers studying economic systems, welfare reform, poverty elimination, and governance innovation"
+            },
+            {
+              "@type": "Audience",
+              "audienceType": "Policy Makers",
+              "name": "Government Officials and Policy Developers",
+              "description": "Elected officials, policy analysts, and government administrators seeking innovative approaches to welfare and economic systems"
+            },
+            {
+              "@type": "Audience",
+              "audienceType": "Community Leaders",
+              "name": "Community Organizations and Social Innovators",
+              "description": "Non-profit leaders, community organizers, and social entrepreneurs interested in pilot implementations"
+            },
+            {
+              "@type": "Audience",
+              "audienceType": "Students",
+              "name": "Graduate Students in Economics, Public Policy, and Social Sciences",
+              "description": "Advanced students researching alternative economic systems and governance models"
+            },
+            {
+              "@type": "Audience",
+              "audienceType": "Developers",
+              "name": "Software Developers and Technology Innovators",
+              "description": "Developers interested in building open-source tools for democratic governance and economic systems"
+            }
+          ],
+          
+          "seeks": [
+            {
+              "@type": "Thing",
+              "name": "Academic Peer Review",
+              "description": "Researchers to peer review and test theoretical foundations of CCO, PTH, PTF, SZH, and CIP frameworks"
+            },
+            {
+              "@type": "Thing",
+              "name": "Economic Validation",
+              "description": "Economists to validate simulation models and suggest improvements to mathematical frameworks"
+            },
+            {
+              "@type": "Thing",
+              "name": "Pilot Programs",
+              "description": "Policy makers and communities interested in pilot program design and feasibility studies"
+            },
+            {
+              "@type": "Thing",
+              "name": "Open Source Development",
+              "description": "Developers to build open-source tools for the Citizens Internet Portal and related infrastructure"
+            }
+          ],
+          
+          "funding": [
+            {
+              "@type": "Grant",
+              "name": "Independent Research Initiative",
+              "description": "Self-funded research on economic innovation and governance systems",
+              "funder": {
+                "@id": "https://bettertobest.github.io/research-hub/#duke-johnson"
+              }
+            }
+          ],
+          
+          "areaServed": {
+            "@type": "Place",
+            "name": "Worldwide",
+            "description": "Research applicable globally with adaptation guides for different national contexts"
+          },
+          
+          "availableLanguage": "English",
+          "inLanguage": "en-US",
+          "isAccessibleForFree": true,
+          
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "copyrightHolder": {
+            "@id": "https://bettertobest.github.io/research-hub/#duke-johnson"
+          },
+          "copyrightYear": 2025,
+          
+          "dateModified": "2025-02-15",
+          "dateCreated": "2025-07-31",
+          "datePublished": "2025-07-31",
+          
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://bettertobest.github.io/research-hub/papers/",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              "name": "Read Research Papers"
+            },
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://bettertobest.github.io/research-hub/wiki/",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              "name": "Search Documentation"
+            },
+            {
+              "@type": "CommunicateAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "mailto:Duke.T.James@gmail.com",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              "name": "Contact for Collaboration"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://bettertobest.github.io/research-hub/#webpage",
+          "url": "https://bettertobest.github.io/research-hub/",
+          "name": "Better To Best Research Hub - Homepage",
+          "description": "Open-access research on eliminating poverty through economic and civic innovations—featuring dual-currency systems, community ownership models, and democratic governance frameworks.",
+          "isPartOf": {
+            "@id": "https://bettertobest.github.io/research-hub/#website"
+          },
+          "about": {
+            "@id": "https://bettertobest.github.io/research-hub/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://bettertobest.github.io/research-hub/assets/images/og-image.png",
+            "description": "Better To Best Research Hub - Economic Innovation for Poverty Elimination"
+          },
+          "datePublished": "2025-07-31",
+          "dateModified": "2025-02-15",
+          "inLanguage": "en-US",
+          "isAccessibleForFree": true,
+          "license": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bettertobest.github.io/research-hub/"
+            }
+          ]
+        },
+        {
+          "@type": "DefinedTermSet",
+          "name": "Better To Best Research Terminology",
+          "description": "Comprehensive glossary of terms used in economic innovation research",
+          "hasDefinedTerm": [
+            {
+              "@type": "DefinedTerm",
+              "name": "Creative Currency Octaves",
+              "alternateName": ["CCO", "Dual Currency System", "Basic Units System"],
+              "description": "A dual-currency system where citizens may opt-in to receive 'basic units' for essentials (food, housing, utilities) that expire monthly, offering guaranteed basic survival plus unlimited earning potential through a conversion system operated by a distributed network of institutional collectives.",
+              "termCode": "CCO",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html#creative-currency-octaves",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Basic Units",
+              "description": "The foundational currency in the CCO system—pegged 1:1 to primary currency but restricted to essential expenditures and set to expire at the end of each distribution cycle.",
+              "termCode": "BU",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html#basic-units",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Creative Collectives",
+              "description": "Community-organized networks of artists, innovators, and cultural contributors who manage the conversion of expired basic units into primary currency at elevated rates.",
+              "termCode": "CC",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html#creative-collectives",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Public Trust Housing",
+              "alternateName": ["PTH", "Community-Owned Housing"],
+              "description": "Community-owned housing that creates pathways for collective wealth building while providing stable, affordable shelter. Properties are held in public trust and owned collectively by residents through democratic governance.",
+              "termCode": "PTH",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html#public-trust-housing",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Public Trust Foundations",
+              "alternateName": ["PTF", "Community-Owned Businesses"],
+              "description": "Community-owned businesses providing foundational goods and services—grocers, counter-serve restaurants, utility providers—operated not-for-profit and for community benefit.",
+              "termCode": "PTF",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html#public-trust-foundations",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Social Zone Harmonization",
+              "alternateName": ["SZH", "Community Zoning Framework"],
+              "description": "A framework for organizing communities and regions to optimize social, economic, and environmental outcomes through coordinated planning while maintaining local autonomy.",
+              "termCode": "SZH",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html#social-zone-harmonization",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Citizens Internet Portal",
+              "alternateName": ["CIP", "Civic Technology Platform"],
+              "description": "Digital infrastructure platform enabling democratic participation, transparent governance, and community-controlled economic systems.",
+              "termCode": "CIP",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html#citizens-internet-portal",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Octave Levels",
+              "description": "Progressive advancement tiers that determine conversion capacity and rates, named after musical octaves due to their doubling pattern (Base_Capacity × 2^n).",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html#octave-levels",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Phi-Rate",
+              "alternateName": ["Golden Ratio Multiplier", "Φ Multiplier"],
+              "description": "An additional conversion rate multiplier of approximately 1.618x (based on the golden ratio) applied to works of exceptional quality, beauty, or harmonic value.",
+              "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html#phi-rate",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Compassionate Meritocracy",
+              "alternateName": ["Compassionism"],
+              "description": "A political and economic philosophy that combines guaranteed basic needs (compassion) with rewards for productivity, creativity, and contribution (meritocracy).",
+              "url": "https://sites.google.com/view/compassionatemeritocracy/home",
+              "inDefinedTermSet": "https://bettertobest.github.io/research-hub/wiki/glossary.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS47FXL9" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:999;padding:1em;background:#000;color:#fff;text-decoration:none;">Skip to main content</a>
+    
+    <header role="banner">
+        <h1>Better To Best Research Hub</h1>
+        <p>Open-access research focused on eliminating poverty through economic and civic innovations—featuring dual-currency systems, community ownership models, and democratic governance frameworks.</p>
+    </header>
+    
+    <main id="main-content" role="main">
+        
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About This Research</h2>
+            <p>This collaborative research hub develops innovative economic and governance systems designed to eliminate poverty while preserving market dynamism. These frameworks—Creative Currency Octaves, Public Trust Housing, Public Trust Foundations, and Social Zone Harmonization—offer practical, implementable alternatives to current welfare systems.</p>
+            
+            <p><strong>Core Mission:</strong> Create economically coherent systems that guarantee basic needs while rewarding creativity, productivity, and community contribution.</p>
+            
+            <p><strong>Current Status:</strong> Theoretical, preliminary simulation results require academic refinement.</p>
+            
+            <p><strong>We're Seeking:</strong></p>
+            <ul>
+                <li>Academic researchers to peer review and test theoretical foundations</li>
+                <li>Economists to validate simulation models and suggest improvements</li>
+                <li>Policy makers interested in pilot program design</li>
+                <li>Communities willing to explore implementation feasibility studies</li>
+                <li>Developers to build open-source tools for the Citizens Internet Portal</li>
+            </ul>
+        </section>
+        
+        <section aria-labelledby="concepts-heading">
+            <h2 id="concepts-heading">Key Concepts &amp; Definitions</h2>
+            <p><em>These interconnected frameworks form a comprehensive system for post-scarcity economics. Each component addresses specific challenges while working synergistically with the others.</em></p>
+            
+            <article aria-labelledby="cco-heading">
+                <h3 id="cco-heading">Creative Currency Octaves (CCO)</h3>
+                <p>A dual-currency system where citizens may opt-in to receive 'basic units' for essentials (food, housing, utilities) that expire monthly, offering guaranteed basic survival plus unlimited earning potential through a conversion system operated by a distributed network of institutional collectives.</p>
+                
+                <p><strong>How it works:</strong> Businesses and creators who accept basic units as payment can convert them to primary currency at elevated rates (1x-9x multiplier, plus a 'Phi-rate' bonus of 1.618x for exceptional quality or beauty). Conversion capacity scales through "octave levels" that double at each tier, rewarding high-volume contributors and cultural innovators.</p>
+                
+                <p><strong>Key innovation:</strong> Separates survival security from market participation while creating powerful incentives for affordable, high-quality goods and services.</p>
+            </article>
+            
+            <article aria-labelledby="basic-units-heading">
+                <h3 id="basic-units-heading">Basic Units</h3>
+                <p>The foundational currency in the CCO system—pegged 1:1 to primary currency but restricted to essential expenditures and set to expire at the end of each distribution cycle.</p>
+                
+                <p><strong>Implementation:</strong> Distributed digitally for debit card use, or printed at ATMs as receipt-paper currency with scan codes for cash transactions.</p>
+                
+                <p><strong>Purpose:</strong> Ensures circulation rather than hoarding, while directing economic activity toward meeting community needs.</p>
+            </article>
+            
+            <article aria-labelledby="creative-collectives-heading">
+                <h3 id="creative-collectives-heading">Creative Collectives</h3>
+                <p>Community-organized networks of artists, innovators, and cultural contributors who manage the conversion of expired basic units into primary currency at elevated rates.</p>
+                
+                <p><strong>Key Functions:</strong></p>
+                <ul>
+                    <li>Collaborative project management and resource sharing</li>
+                    <li>Peer mentorship and quality assessment</li>
+                    <li>Transparent conversion-rate review processes</li>
+                    <li>Collective octave advancement through coordinated excellence</li>
+                </ul>
+                
+                <p><strong>Structure:</strong> Charters may be industry-specific, regional, local, age-based, or thematic. Membership is opt-in based on productive contribution and community benefit.</p>
+                
+                <p><strong>Example:</strong> A regional musicians' collective might pool resources for recording facilities, cross-promote members' events, and collectively negotiate elevated conversion rates for concerts priced affordably in basic units.</p>
+            </article>
+            
+            <article aria-labelledby="octave-levels-heading">
+                <h3 id="octave-levels-heading">Octave Levels &amp; Conversion Rates</h3>
+                <p>Progressive advancement tiers that determine conversion capacity and rates, named after musical octaves due to their doubling pattern (Base_Capacity × 2<sup>n</sup>).</p>
+                
+                <p><strong>Capacity:</strong> May be capped for businesses by operational limits, yet uncapped for individual or collective achievement-based recognition.</p>
+                
+                <p><strong>Conversion Rates:</strong> Earned through transparent evaluation based on productivity, efficiency, creativity, quality, and beauty—ranging from 1x-9x, plus the Phi-rate multiplier (~1.618x) for harmonious or beautiful works.</p>
+                
+                <p><strong>Examples:</strong></p>
+                <ul>
+                    <li>A stadium concert band selling out shows for low-priced basic units: 7x rate, unlimited conversion capacity</li>
+                    <li>A small café with limited hours offering meals (3-breakfast, 4-lunch, 5-dinner basic units): 2-4x rate, capped at daily operational capacity</li>
+                </ul>
+            </article>
+            
+            <article aria-labelledby="pth-heading">
+                <h3 id="pth-heading">Public Trust Housing (PTH)</h3>
+                <p>Community-owned housing that creates pathways for collective wealth building while providing stable, affordable shelter. Properties are held in public trust and owned collectively by residents through democratic governance.</p>
+                
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Democratic resident control over operations and improvements</li>
+                    <li>Individual housing equity accounts that grow with participation</li>
+                    <li>Integrated maintenance, repairs, and upkeep services</li>
+                    <li>Collective wealth building that benefits all residents</li>
+                </ul>
+                
+                <p><strong>Market Position:</strong> Complements rather than replaces private real estate, offering an additional option alongside traditional homeownership and rental markets.</p>
+            </article>
+            
+            <article aria-labelledby="ptf-heading">
+                <h3 id="ptf-heading">Public Trust Foundations (PTF)</h3>
+                <p>Community-owned businesses providing foundational goods and services—grocers, counter-serve restaurants, utility providers—operated not-for-profit and for community benefit.</p>
+                
+                <p><strong>Structure:</strong> Collectively owned by citizens with democratic governance, accepting basic units as payment while generating employment and economic stability.</p>
+                
+                <p><strong>Integrated Services:</strong></p>
+                <ul>
+                    <li>Transportation and logistics for foundational goods</li>
+                    <li>Childcare, healthcare, and education support</li>
+                    <li>Operational efficiency through coordinated resource sharing</li>
+                </ul>
+                
+                <p><strong>Market Position:</strong> Complements private sector operations by ensuring baseline access while private businesses compete on quality, specialty, and innovation.</p>
+            </article>
+            
+            <article aria-labelledby="szh-heading">
+                <h3 id="szh-heading">Social Zone Harmonization (SZH)</h3>
+                <p>A framework for organizing communities and regions to optimize social, economic, and environmental outcomes through coordinated planning while maintaining local autonomy.</p>
+                
+                <p><strong>Examples:</strong> Family-safe zones, adult-only areas with relaxed regulations, artist and maker districts, recovery and wellness zones.</p>
+                
+                <p><strong>Purpose:</strong> Allows diverse communities to flourish with appropriate infrastructure and regulations while respecting different lifestyle preferences and needs.</p>
+            </article>
+            
+            <article aria-labelledby="cip-heading">
+                <h3 id="cip-heading">Citizens Internet Portal (CIP)</h3>
+                <p>Digital infrastructure platform enabling democratic participation, transparent governance, and community-controlled economic systems.</p>
+                
+                <p><strong>Core Functions:</strong></p>
+                <ul>
+                    <li>CCO currency operations and conversion management</li>
+                    <li>PTH/PTF democratic governance and voting</li>
+                    <li>Transparent budgeting and resource allocation</li>
+                    <li>Secure, privacy-focused civic engagement tools</li>
+                </ul>
+                
+                <p><strong>Design Principle:</strong> Community-controlled technology that serves democratic participation rather than extracting data or controlling behavior.</p>
+            </article>
+            
+            <div style="margin-top: 2em; padding: 1.5em; background: #f9f9f9; border-left: 4px solid #0066cc;">
+                <h3 style="margin-top: 0;">How These Systems Work Together</h3>
+                <p>The frameworks integrate to create resilient, equitable communities:</p>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>CCO</strong> ensures everyone can meet basic needs while rewarding contribution</li>
+                    <li><strong>PTH/PTF</strong> provide stable, affordable access to housing and essentials</li>
+                    <li><strong>Creative Collectives</strong> foster cultural vibrancy and economic opportunity</li>
+                    <li><strong>SZH</strong> allows diverse communities to optimize for their specific values</li>
+                    <li><strong>CIP</strong> enables transparent democratic governance of all systems</li>
+                </ul>
+                <p style="margin-bottom: 0;"><em>Together, they eliminate poverty without creating dependency, reward merit without abandoning compassion, and preserve market dynamism while guaranteeing human dignity.</em></p>
+            </div>
+        </section>
+        
+        <section aria-labelledby="papers-heading">
+            <h2 id="papers-heading">Research Papers</h2>
+            <p>All working papers are open access under Creative Commons Attribution 4.0 licensing (CC BY 4.0).</p>
+            <p><a href="papers/">View All Research Papers</a></p>
+        </section>
+        
+        <section aria-labelledby="wiki-heading">
+            <h2 id="wiki-heading">Wiki &amp; Documentation</h2>
+            <p>Comprehensive documentation, definitions, and research tools for understanding and implementing these frameworks.</p>
+            <ul>
+                <li><a href="wiki/">Wiki Homepage</a> - Complete documentation hub</li>
+                <li><a href="wiki/faq.html">Frequently Asked Questions</a> - Common questions about implementation and theory</li>
+                <li><a href="wiki/glossary.html">Research Glossary</a> - Comprehensive definitions of all key terms</li>
+                <li><a href="cco-ptf-simulation-replication.html">Simulation Framework</a> - Complete package for replication and improvement</li>
+                <li><a href="wiki/index.html#citation-tool">Citation Generator</a> - Generate academic citations for all 14 research papers</li>
+            </ul>
+        </section>
+        
+        <section aria-labelledby="authors-heading">
+            <h2 id="authors-heading">About the Authors</h2>
+            
+            <article aria-labelledby="duke-heading">
+                <h3 id="duke-heading">Duke Johnson</h3>
+                <p>Independent researcher and original developer of Creative Currency Octaves and Public Trust Foundations frameworks. Author of <cite>Better To Best: Novel Ideas to Improve Governments, Economies, and Societies</cite> and advocate of Compassionate Meritocracy (Compassionism).</p>
+            </article>
+            
+            <article aria-labelledby="claude-heading">
+                <h3 id="claude-heading">Claude (Anthropic)</h3>
+                <p>AI assistant contributing mathematical formalization, empirical research design, and comprehensive literature integration to support rigorous academic development of these frameworks.</p>
+            </article>
+        </section>
+        
+        <section aria-labelledby="connect-heading">
+            <h2 id="connect-heading">Contact &amp; Connect</h2>
+            
+            <h3>Find Duke Johnson</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/@AuthorDukeJohnson" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://x.com/Author_Duke_J" target="_blank" rel="noopener noreferrer">Twitter/X</a></li>
+                <li><a href="https://authordukejohnson.substack.com/archive" target="_blank" rel="noopener noreferrer">Substack</a></li>
+                <li><a href="https://medium.com/@duke.t.james" target="_blank" rel="noopener noreferrer">Medium</a></li>
+                <li><a href="https://bsky.app/profile/authordukejohnson.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
+                <li><a href="https://independent.academia.edu/AuthorDukeJohnson" target="_blank" rel="noopener noreferrer">Academia</a></li>
+                <li><a href="https://bettertobest.wixsite.com/book" target="_blank" rel="noopener noreferrer">Book: Better To Best</a></li>
+                <li><a href="https://sites.google.com/view/compassionatemeritocracy/home" target="_blank" rel="noopener noreferrer">Compassionism</a></li>
+            </ul>
+            
+            <h3>Implementation Resources</h3>
+            <ul>
+                <li><a href="https://claude.ai/public/artifacts/b96a0930-7992-4cb6-a8e1-c99a7c29c30a" target="_blank" rel="noopener noreferrer">Integrated System Implementation Guide (USA)</a></li>
+                <li><a href="https://bettertobest.github.io/research-hub/wiki/implementation-roadmap.html">General Implementation Roadmap</a></li>
+                <li><a href="https://bettertobest.github.io/research-hub/wiki/international-adaptation-guide.html">International Adaptation Guide</a></li>
+                <li><a href="https://bettertobest.github.io/research-hub/universal-implementation-framework.html">Various Nations Implementation Paper</a></li>
+                <li><a href="https://bettertobest.github.io/compassionate-meritocracy-plan/" target="_blank" rel="noopener noreferrer">USA Compassionism Rapid Rollout Plan</a></li>
+            </ul>
+            
+            <h3>Collaboration Opportunities</h3>
+            <p>We welcome engagement from researchers, policymakers, and communities worldwide interested in testing these frameworks through pilot implementations. Contact: <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a></p>
+        </section>
+        
+    </main>
+    
+    <footer role="contentinfo" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid #ddd; text-align: center; color: #666; font-size: 0.9em;">
+        <p>&copy; 2025 Better To Best Research Hub. All research licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" style="color: #0066cc;">CC BY 4.0</a>.</p>
+        <p style="margin-top: 0.5em;"><a href="wiki/glossary.html">Glossary</a> | <a href="wiki/faq.html">FAQ</a> | <a href="papers/">Research Papers</a> | <a href="mailto:Duke.T.James@gmail.com">Contact</a></p>
+    </footer>
+    
+</body>
+</html>
