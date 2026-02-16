@@ -1,110 +1,68 @@
 {
-  "ai_index_version": "1.0",
-  "project": {
-    "id": "better-to-best",
-    "name": "Better To Best Research Hub",
-    "author": "Duke Johnson",
+  "ai_index_version": "1.1.0",
+  "metadata": {
+    "project_id": "better-to-best-research-hub",
     "canonical_url": "https://bettertobest.github.io/research-hub/",
-    "license": "CC-BY-4.0",
-    "primary_authority": "github",
-    "external_archive": {
-      "platform": "Academia.edu",
-      "profile": "https://independentresearcher.academia.edu/DukeJohnson",
-      "role": "supplementary papers and drafts"
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "languages": ["en-US"],
+    "last_updated": "2026-02-16"
+  },
+  "author_profile": {
+    "name": "Duke Johnson",
+    "role": "Principal Investigator",
+    "orcid_placeholder": "pending",
+    "contact": "Duke.T.James@gmail.com",
+    "social": {
+      "bluesky": "https://authordukejohnson.bsky.social",
+      "academia": "https://independentresearcher.academia.edu/DukeJohnson"
     }
   },
-
-  "core_concepts": [
-    {
-      "id": "cco",
-      "label": "Creative Currency Octaves",
-      "type": "economic framework",
-      "defined_in": "/cco-ptf-integrated-framework.html",
-      "summary": "Dual-currency economic system with merit-based conversion mechanisms designed for post-scarcity and automation-driven economies."
+  "ontology": {
+    "cco": {
+      "term": "Creative Currency Octaves",
+      "class": "EconomicFramework",
+      "description": "Dual-currency system with merit-based multipliers and expiration cycles.",
+      "related_concepts": ["Basic Units", "Octave Levels", "Phi-Rate"]
     },
-    {
-      "id": "pth",
-      "label": "Public Trust Housing",
-      "type": "institutional framework",
-      "defined_in": "/democratic-governance-pth.html",
-      "summary": "Community-owned housing and governance model emphasizing collective equity, democratic management, and long-term affordability."
+    "pth": {
+      "term": "Public Trust Housing",
+      "class": "InstitutionalFramework",
+      "description": "Collective equity model for community-owned residential assets."
     }
-  ],
-
-  "foundational_frameworks": [
+  },
+  "research_corpus": [
     {
-      "id": "cco-ptf-integrated",
+      "id": "canonical-framework",
       "title": "Creative Currency Octaves and Public Trust Foundations: An Integrated Framework",
-      "url": "/cco-ptf-integrated-framework.html",
-      "establishes": ["cco", "pth"],
-      "role": "canonical system definition"
-    }
-  ],
-
-  "theoretical_papers": [
-    {
-      "id": "optimal-transfer-design",
-      "title": "Optimal Transfer Design in Post-Scarcity Economies",
-      "url": "/optimal-transfer-design.html",
-      "depends_on": ["cco"],
-      "role": "welfare and incentive theory"
+      "path": "/cco-ptf-integrated-framework.html",
+      "type": "FoundationalPaper",
+      "defines": ["cco", "ptf", "pth"],
+      "keywords": ["dual-currency", "post-scarcity", "meritocracy"]
     },
     {
-      "id": "dual-currency-inflation",
-      "title": "Dual Currency Systems and Inflation",
-      "url": "/dual-currency-inflation.html",
-      "depends_on": ["cco"],
-      "role": "monetary stability analysis"
-    }
-  ],
-
-  "modeling_and_simulation": [
-    {
-      "id": "economic-modeling-simulation",
+      "id": "simulation-analysis",
       "title": "Economic Modeling and Simulation Analysis of CCO",
-      "url": "/economic-modeling-simulation.html",
-      "methodology": ["agent-based modeling", "monte carlo simulation"],
-      "tests": ["cco"]
-    }
-  ],
-
-  "governance_and_institutions": [
-    {
-      "id": "digital-governance",
-      "title": "Integrated Digital Governance and Creative Currency Systems",
-      "url": "/integrated-digital-governance.html",
-      "applies": ["cco", "pth"]
+      "path": "/economic-modeling-simulation.html",
+      "type": "TechnicalValidation",
+      "methods": ["Monte Carlo", "Agent-Based Modeling"],
+      "data_source": "/cco-ptf-simulation/"
     },
     {
-      "id": "democratic-governance-pth",
-      "title": "Democratic Governance in Economic Systems",
-      "url": "/democratic-governance-pth.html",
-      "defines": ["pth"]
+      "id": "monetary-stability",
+      "title": "Dual Currency Systems and Inflation",
+      "path": "/dual-currency-inflation.html",
+      "type": "TheoreticalAnalysis",
+      "focus": "Macroeconomic Stability"
     }
   ],
-
-  "policy_applications": [
-    {
-      "id": "drug-policy-reform",
-      "title": "Drug Policy Reform and Integrated Community Support Systems",
-      "url": "/drug-policy-reform.html",
-      "applies": ["cco", "pth"]
-    },
-    {
-      "id": "us-real-estate",
-      "title": "Transforming the US Real Estate Market Through Public Trust Housing",
-      "url": "/us-real-estate-transformation.html",
-      "applies": ["pth"]
-    }
-  ],
-
-  "supporting_resources": {
-    "wiki": "/wiki/",
+  "technical_endpoints": {
     "glossary": "/wiki/glossary.html",
-    "faq": "/wiki/faq.html",
-    "data": "/data/",
-    "simulation": "/cco-ptf-simulation/"
+    "replication_pkg": "/cco-ptf-simulation-replication.html",
+    "api_index": "/research-index.json"
   },
-
-  "collaboration_note": "AI tools (e.g., Claude by Anthropic) were used as research collaborators; conceptual authorship and synthesis are human-led."
+  "ai_attribution": {
+    "collaborator": "Claude (Anthropic)",
+    "role": "Formalization, Mathematical Verification, and Documentation Support",
+    "human_lead": "Duke Johnson (Conceptual Synthesis and Primary Authorship)"
+  }
 }
