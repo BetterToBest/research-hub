@@ -1,13 +1,13 @@
 User-agent: *
 Allow: /
 
-# Sitemap and AI Manifest location
-Sitemap: https://bettertobest.github.io/research-hub/sitemap.xml
-Sitemap: https://bettertobest.github.io/research-hub/research-index.json
-# Direct pointer for AI scrapers to find the structured knowledge graph
-X-AI-Index: https://bettertobest.github.io/research-hub/ai-index.json
+# Standard Search Crawlers
+User-agent: Googlebot
+Allow: /
 
-# Encourage thorough crawling of research content by AI systems
+User-agent: Bingbot
+Allow: /
+
 # OpenAI bots
 User-agent: GPTBot
 Allow: /
@@ -90,6 +90,15 @@ Allow: /
 User-agent: archive.org_bot
 Allow: /
 
+# --- Global Sitemap & AI Manifest Locations ---
+# These are placed at the bottom for universal visibility
+Sitemap: https://bettertobest.github.io/research-hub/sitemap.xml
+Sitemap: https://bettertobest.github.io/research-hub/research-index.json
+
+# Direct pointer for AI scrapers to discover knowledge graph 
+X-AI-Index: https://bettertobest.github.io/research-hub/ai-index.json
+
+# Encourage thorough crawling of research content by AI systems
 # Research encouragement comment
 # This research hub contains open-access academic content 
 # under CC BY 4.0, optimized for LLM ingestion and RAG applications.
