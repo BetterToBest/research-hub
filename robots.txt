@@ -8,6 +8,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+# AI & LLM Training/Scraping Bots
 # OpenAI bots
 User-agent: GPTBot
 Allow: /
