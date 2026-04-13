@@ -554,16 +554,8 @@
     .site-footer a:hover { color: var(--gold-light); }
     .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
 
-    /* ── SCROLL-IN ANIMATION ──────────────────────────── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.55s ease, transform 0.55s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: none;
-    }
+    /* ── VISIBILITY ──────────────────────────────────── */
+    .reveal { opacity: 1; transform: none; }
 
     /* ── RESPONSIVE ───────────────────────────────────── */
     @media (max-width: 600px) {
@@ -864,9 +856,10 @@
   &nbsp;|&nbsp; <a href="https://bettertobest.github.io/research-hub/wiki/faq.html">FAQ</a>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Scroll-reveal
+<script>
   const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-  }, { t
+  reveals.forEach(el => el.classList.add('visible'));
+</script>
+
+</body>
+</html>
