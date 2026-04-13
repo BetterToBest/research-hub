@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citizens' Referendum for Systemic Governance Reform | Better To Best Research Hub</title>
+  <meta name="description" content="A nationwide special vote on the architecture of democracy. Read, sign, and share the Citizens' Referendum for Systemic Governance Reform — grounded in the Compassionism research framework.">
+  <meta property="og:title" content="Citizens' Referendum for Systemic Governance Reform">
+  <meta property="og:description" content="A plan is better than no plan. Demand a referendum on the system itself.">
+  <meta property="og:url" content="https://bettertobest.github.io/research-hub/referendum.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:       #0f1e35;
+      --deep-blue:  #1a2e4a;
+      --mid-blue:   #2153a0;
+      --sky:        #3a7bd5;
+      --gold:       #c9920a;
+      --gold-light: #f0b429;
+      --parchment:  #faf7f2;
+      --warm-white: #f5f0e8;
+      --ink:        #1c1c2e;
+      --body-text:  #2d2d3a;
+      --muted:      #6b7280;
+      --rule:       #d4c9b0;
+      --seal-bg:    #0a1628;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--parchment);
+      color: var(--body-text);
+      line-height: 1.75;
+      font-size: 17px;
+    }
+
+    /* ── SITE NAV ─────────────────────────────────────── */
+    .site-nav {
+      background: var(--navy);
+      padding: 12px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .site-nav a {
+      color: #a8c4e8;
+      text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .site-nav a:hover { color: var(--gold-light); }
+    .site-nav .hub-home { color: #fff; font-weight: 700; font-size: 14px; }
+    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
+
+    /* ── HERO SEAL ────────────────────────────────────── */
+    .hero {
+      background: var(--seal-bg);
+      background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(33,83,160,0.25) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(201,146,10,0.12) 0%, transparent 50%);
+      padding: 80px 32px 70px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        0deg, transparent, transparent 39px,
+        rgba(255,255,255,0.02) 39px, rgba(255,255,255,0.02) 40px
+      );
+      pointer-events: none;
+    }
+
+    .stars {
+      font-size: 22px;
+      color: var(--gold);
+      letter-spacing: 18px;
+      margin-bottom: 28px;
+      opacity: 0.9;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--sky);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(36px, 6vw, 68px);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+
+    .hero h1 span { color: var(--gold-light); }
+
+    .hero-subtitle {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(16px, 2.2vw, 22px);
+      font-style: italic;
+      color: #b8cde8;
+      margin-bottom: 36px;
+      font-weight: 400;
+    }
+
+    .hero-rule {
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 0 auto 32px;
+    }
+
+    .hero-meta {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      color: #7a9bc4;
+      margin-bottom: 8px;
+    }
+
+    .hero-quote {
+      font-size: 18px;
+      font-style: italic;
+      color: #d4e4f7;
+      max-width: 560px;
+      margin: 24px auto 0;
+      padding: 20px 28px;
+      border-left: 3px solid var(--gold);
+      text-align: left;
+      background: rgba(255,255,255,0.04);
+      border-radius: 0 6px 6px 0;
+    }
+    .hero-quote cite {
+      display: block;
+      margin-top: 8px;
+      font-size: 13px;
+      font-style: normal;
+      color: #7a9bc4;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── ACTION BAR ───────────────────────────────────── */
+    .action-bar {
+      background: var(--gold);
+      padding: 18px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .action-bar p {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--navy);
+      text-transform: uppercase;
+    }
+    .btn-sign {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 12px 32px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-sign:hover { background: var(--deep-blue); transform: translateY(-1px); }
+
+    /* ── LAYOUT ───────────────────────────────────────── */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 32px;
+    }
+
+    /* ── SECTION LABELS ───────────────────────────────── */
+    .part-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--mid-blue);
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--deep-blue);
+      margin-bottom: 28px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--rule);
+    }
+
+    /* ── HORIZONTAL RULE ──────────────────────────────── */
+    .doc-rule {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--rule) 20%, var(--rule) 80%, transparent);
+      margin: 48px 0;
+    }
+
+    /* ── WHEREAS / RESOLVED BLOCKS ────────────────────── */
+    .whereas-block, .resolved-block {
+      padding: 14px 20px 14px 24px;
+      margin-bottom: 16px;
+      border-radius: 2px;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    .whereas-block {
+      border-left: 4px solid var(--mid-blue);
+      background: rgba(33,83,160,0.05);
+    }
+    .resolved-block {
+      border-left: 4px solid var(--gold);
+      background: rgba(201,146,10,0.06);
+    }
+    .whereas-block strong, .resolved-block strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-right: 8px;
+    }
+    .whereas-block strong { color: var(--mid-blue); }
+    .resolved-block strong { color: var(--gold); }
+
+    /* ── PREAMBLE TEXT ────────────────────────────────── */
+    .preamble {
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--body-text);
+      margin-bottom: 32px;
+      font-style: italic;
+    }
+
+    /* ── ARTICLE HEADINGS ─────────────────────────────── */
+    .article-head {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 48px 0 16px;
+    }
+    .article-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid-blue);
+      white-space: nowrap;
+    }
+    .article-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--deep-blue);
+    }
+
+    /* ── NUMBERED ITEMS ───────────────────────────────── */
+    .clause {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 14px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    .clause-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      color: var(--mid-blue);
+      min-width: 36px;
+      padding-top: 1px;
+      font-size: 15px;
+    }
+    .clause-body { flex: 1; }
+    .clause-body strong {
+      color: var(--deep-blue);
+      font-weight: 600;
+    }
+
+    .sub-clause {
+      display: flex;
+      gap: 14px;
+      margin: 8px 0 8px 36px;
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+    .sub-letter {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      color: var(--sky);
+      min-width: 24px;
+    }
+
+    /* ── REFERENDUM QUESTION BOX ──────────────────────── */
+    .question-box {
+      background: var(--warm-white);
+      border: 2px solid var(--gold);
+      border-radius: 4px;
+      padding: 40px 44px;
+      margin: 32px 0;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(201,146,10,0.12), 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .question-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--mid-blue);
+      margin-bottom: 20px;
+    }
+    .question-text {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(16px, 2.2vw, 19px);
+      font-style: italic;
+      color: var(--deep-blue);
+      line-height: 1.65;
+      margin-bottom: 28px;
+      font-weight: 400;
+    }
+    .vote-options {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .vote-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--body-text);
+    }
+    .vote-option input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--mid-blue);
+      cursor: pointer;
+    }
+
+    /* ── STANDARDS GRID ───────────────────────────────── */
+    .standards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .standard-card {
+      background: #fff;
+      border-top: 3px solid var(--mid-blue);
+      padding: 20px 18px;
+      border-radius: 3px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    }
+    .standard-card h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid-blue);
+      margin-bottom: 8px;
+    }
+    .standard-card p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--body-text);
+    }
+
+    /* ── SIGNATURE SECTION ────────────────────────────── */
+    .sig-section {
+      background: var(--warm-white);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 40px 44px;
+      margin: 40px 0;
+    }
+    .sig-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--deep-blue);
+      margin-bottom: 8px;
+    }
+    .sig-intro {
+      font-size: 15.5px;
+      font-style: italic;
+      color: var(--muted);
+      margin-bottom: 28px;
+      line-height: 1.65;
+    }
+    .sig-field {
+      margin-bottom: 20px;
+    }
+    .sig-field label {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--deep-blue);
+      margin-bottom: 6px;
+    }
+    .sig-field input {
+      width: 100%;
+      border: none;
+      border-bottom: 1.5px solid #bbb;
+      background: transparent;
+      padding: 6px 0;
+      font-family: 'Source Serif 4', serif;
+      font-size: 16px;
+      color: var(--body-text);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .sig-field input:focus { border-bottom-color: var(--mid-blue); }
+    .sig-optional {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-style: italic;
+    }
+    .sig-note {
+      font-size: 13px;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      line-height: 1.6;
+    }
+
+    .btn-petition {
+      display: inline-block;
+      background: var(--mid-blue);
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 36px;
+      border-radius: 3px;
+      text-decoration: none;
+      margin-top: 8px;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-petition:hover { background: var(--deep-blue); transform: translateY(-1px); }
+
+    /* ── REFERENCES ───────────────────────────────────── */
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .ref-item {
+      background: #fff;
+      border-left: 3px solid var(--sky);
+      padding: 14px 16px;
+      border-radius: 0 3px 3px 0;
+      font-size: 14px;
+    }
+    .ref-item .ref-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--mid-blue);
+      margin-bottom: 4px;
+    }
+    .ref-item a {
+      color: var(--deep-blue);
+      text-decoration: none;
+      word-break: break-word;
+      line-height: 1.5;
+    }
+    .ref-item a:hover { color: var(--mid-blue); text-decoration: underline; }
+
+    /* ── CLOSING ──────────────────────────────────────── */
+    .closing {
+      text-align: center;
+      padding: 48px 0 16px;
+    }
+    .closing blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(18px, 3vw, 24px);
+      font-style: italic;
+      color: var(--deep-blue);
+      line-height: 1.55;
+      max-width: 560px;
+      margin: 0 auto 16px;
+    }
+    .closing cite {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      font-style: normal;
+    }
+
+    /* ── SITE FOOTER ──────────────────────────────────── */
+    .site-footer {
+      background: var(--navy);
+      color: #7a9bc4;
+      padding: 32px;
+      text-align: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      line-height: 2;
+    }
+    .site-footer a { color: #a8c4e8; text-decoration: none; }
+    .site-footer a:hover { color: var(--gold-light); }
+    .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
+
+    /* ── SCROLL-IN ANIMATION ──────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── RESPONSIVE ───────────────────────────────────── */
+    @media (max-width: 600px) {
+      .page-wrap { padding: 40px 20px; }
+      .sig-section, .question-box { padding: 28px 22px; }
+      .action-bar { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- SITE NAV -->
+<nav class="site-nav">
+  <a href="https://bettertobest.github.io/research-hub/" class="hub-home">← Better To Best Research Hub</a>
+  <div class="nav-links">
+    <a href="https://bettertobest.github.io/research-hub/papers/">Research Papers</a>
+    <a href="https://bettertobest.github.io/research-hub/wiki/">Wiki</a>
+    <a href="https://bettertobest.github.io/research-hub/integrated-digital-governance.html">Digital Governance</a>
+    <a href="mailto:Duke.T.James@gmail.com">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="stars">★ ★ ★</div>
+  <p class="hero-eyebrow">Citizen-Initiated · Open Access · CC BY 4.0</p>
+  <h1>Citizens' <span>Referendum</span><br>for Systemic Governance Reform</h1>
+  <p class="hero-subtitle">A Nationwide Special Vote on the Architecture of Democracy</p>
+  <div class="hero-rule"></div>
+  <p class="hero-meta">Proposed by the People of the United States of America</p>
+  <p class="hero-meta">Grounded in the Compassionism Research Framework &nbsp;|&nbsp; Better To Best Research Hub</p>
+  <blockquote class="hero-quote">
+    "A plan is better than no plan."
+    <cite>— Compassionism Research Framework, 2026</cite>
+  </blockquote>
+</header>
+
+<!-- ACTION BAR -->
+<div class="action-bar">
+  <p>Read it. Sign it. Share it.</p>
+  <a href="https://www.change.org" target="_blank" class="btn-sign" id="sign-btn">Sign the Petition on Change.org →</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="page-wrap">
+
+  <!-- PART I -->
+  <div class="reveal">
+    <p class="part-label">Part I</p>
+    <h2 class="section-title">Citizen Petition &amp; Declaration</h2>
+
+    <p class="preamble">We, the undersigned citizens of the United States of America, acting in the exercise of our sovereign democratic authority, hereby declare that the present system of governance has failed to serve the fundamental interests of the people. We submit this petition not as partisans, but as citizens who recognize that the dysfunction we face is structural, not merely political — and that structural problems demand structural solutions.</p>
+
+    <div class="whereas-block reveal">
+      <strong>Whereas,</strong> the political spending enabled by the Citizens United v. FEC (2010) decision has allowed a small fraction of wealthy interests to dominate the legislative process, with documented political spending increasing by over 360% in a single decade, producing policy outcomes that consistently favor powerful special interests over the preferences of average citizens (Gilens &amp; Page, 2014);
+    </div>
+
+    <div class="whereas-block reveal">
+      <strong>Whereas,</strong> the revolving door between regulatory agencies and the industries they are meant to oversee has produced systemic capture of the institutions of democratic accountability, such that incremental reform operating within this captured framework cannot produce the structural change that citizens require;
+    </div>
+
+    <div class="whereas-block reveal">
+      <strong>Whereas,</strong> the wealth gap, the housing affordability crisis, the collapse of civic trust, and the erosion of transparency in public affairs represent compounding governance failures that no single electoral cycle has addressed, and that no electoral cycle operating within the current system architecture is likely to address;
+    </div>
+
+    <div class="whereas-block reveal">
+      <strong>Whereas,</strong> the architecture of a renewed, incorruptible, citizen-controlled governance platform — the Citizens Internet Portal (CIP) — has been formally developed, peer-documented, and published open-access, along with integrated economic frameworks (Creative Currency Octaves, Public Trust Foundations, and Social Zone Harmonization) that together offer a coherent and implementable alternative to the present system;
+    </div>
+
+    <div class="whereas-block reveal">
+      <strong>Whereas,</strong> the right of citizens to demand a direct referendum on the architecture of their own governance is consistent with the founding principles of this republic, with international democratic precedent — including Switzerland's permanent referendum system and Iceland's citizen-led constitutional process — and with the principle that governments derive their just powers from the consent of the governed;
+    </div>
+
+    <hr class="doc-rule">
+
+    <div class="resolved-block reveal">
+      <strong>Be It Resolved,</strong> that the citizens of the United States hereby demand a nationwide special referendum, to be conducted in lieu of the next scheduled midterm election cycle, and each subsequent election cycle thereafter until such time as a reformed governance architecture is established, ratified, and demonstrated to operate with honor, justice, accuracy, and accountability in the public interest;
+    </div>
+
+    <div class="resolved-block reveal">
+      <strong>Be It Resolved,</strong> that this referendum shall place before the citizenry the question of whether to establish the Citizens Internet Portal as a new distributed, citizen-controlled, cryptographically secured governance infrastructure to complement and ultimately supersede governance processes currently captured by private interests;
+    </div>
+
+    <div class="resolved-block reveal">
+      <strong>Be It Resolved,</strong> that the economic frameworks of Creative Currency Octaves and Public Trust Foundations shall be formally designated as Phase 2 priorities, to be implemented through the CIP governance platform once the referendum mandate is ratified and the foundational infrastructure is operational;
+    </div>
+
+    <div class="resolved-block reveal">
+      <strong>Be It Resolved,</strong> that this petition, once bearing sufficient signatures, shall be transmitted to the Congress of the United States, the office of the President, the Governors of all fifty states, and the relevant judiciary, as a formal expression of citizen demand for systemic reform.
+    </div>
+  </div>
+
+  <hr class="doc-rule">
+
+  <!-- PART II -->
+  <div class="reveal">
+    <p class="part-label">Part II</p>
+    <h2 class="section-title">Formal Articles of the Referendum</h2>
+    <p style="font-size:16px; font-style:italic; color:var(--muted); margin-bottom:8px;">The following Articles constitute the formal text of the Citizens' Referendum for Systemic Governance Reform (CRSGR). This document is submitted as a citizen-initiated measure and is intended to serve as the foundational text for ballot measure drafting, legislative introduction, and public deliberation at federal and state levels.</p>
+  </div>
+
+  <!-- ART I -->
+  <div class="reveal">
+    <div class="article-head">
+      <span class="article-num">Article I</span>
+      <span class="article-title">Name and Purpose</span>
+    </div>
+    <div class="clause"><span class="clause-num">1.1</span><div class="clause-body"><strong>Official Title:</strong> This measure shall be known as the Citizens' Referendum for Systemic Governance Reform (CRSGR), hereafter referred to as "the Referendum."</div></div>
+    <div class="clause"><span class="clause-num">1.2</span><div class="clause-body"><strong>Purpose:</strong> The purpose of the Referendum is to authorize and direct the establishment of a new citizen-controlled digital governance infrastructure — the Citizens Internet Portal (CIP) — and to mandate the suspension of standard electoral cycles until such time as the CIP is operational and governance has been demonstrably reformed in the public interest.</div></div>
+    <div class="clause"><span class="clause-num">1.3</span><div class="clause-body"><strong>Legal Basis:</strong> This Referendum is submitted pursuant to the First Amendment right of citizens to petition their government for redress of grievances, the Tenth Amendment reservation of powers to the states and to the people, and the foundational democratic principle that government derives its just powers from the consent of the governed.</div></div>
+  </div>
+
+  <!-- ART II -->
+  <div class="reveal">
+    <div class="article-head">
+      <span class="article-num">Article II</span>
+      <span class="article-title">The Referendum Mechanism</span>
+    </div>
+    <div class="clause"><span class="clause-num">2.1</span><div class="clause-body"><strong>Special Vote:</strong> In lieu of the next scheduled federal midterm election, the citizenry shall be called to participate in a nationwide Special Referendum Vote on the question set forth in Article III of this document.</div></div>
+    <div class="clause"><span class="clause-num">2.2</span><div class="clause-body"><strong>Subsequent Cycles:</strong> If the Referendum does not achieve ratification in its first cycle, subsequent special referendum votes shall replace each scheduled federal election cycle until either: (a) the Referendum is ratified, or (b) a superior reform proposal, as determined by citizen supermajority vote, supersedes this one.</div></div>
+    <div class="clause"><span class="clause-num">2.3</span><div class="clause-body"><strong>Conduct of the Vote:</strong> The special referendum vote shall be conducted by the following standards:
+      <div class="sub-clause"><span class="sub-letter">(a)</span><div>Paper-verifiable ballots with cryptographic audit trails shall be used in all jurisdictions.</div></div>
+      <div class="sub-clause"><span class="sub-letter">(b)</span><div>The Citizens Internet Portal pilot infrastructure, where available, shall be used to facilitate secure digital participation.</div></div>
+      <div class="sub-clause"><span class="sub-letter">(c)</span><div>All citizens registered to vote shall be eligible to participate; automatic voter registration shall apply.</div></div>
+      <div class="sub-clause"><span class="sub-letter">(d)</span><div>Results shall be tabulated and published in full within 24 hours of poll closure.</div></div>
+    </div></div>
+    <div class="clause"><span class="clause-num">2.4</span><div class="clause-body"><strong>Passage Threshold:</strong> Ratification shall require a simple majority (50% + 1) of valid votes cast, with participation from no fewer than 40% of eligible voters nationally.</div></div>
+    <div class="clause"><span class="clause-num">2.5</span><div class="clause-body"><strong>Binding Authority:</strong> Upon ratification, the results of this Referendum shall be binding on the Congress of the United States and shall direct the formation of a Transition Commission charged with implementing the Citizens Internet Portal as described in Article IV.</div></div>
+  </div>
+
+  <!-- ART III — QUESTION -->
+  <div class="reveal">
+    <div class="article-head">
+      <span class="article-num">Article III</span>
+      <span class="article-title">The Referendum Question</span>
+    </div>
+    <div class="question-box">
+      <p class="question-label">Referendum Question</p>
+      <p class="question-text">Shall the citizens of the United States authorize the establishment of the Citizens Internet Portal — a distributed, cryptographically secured, citizen-controlled governance platform — as the foundational infrastructure of a reformed democratic system, to be implemented through a citizen-led Transition Commission, with Creative Currency Octaves, Public Trust Foundations, and Social Zone Harmonization designated as Phase 2 priorities?</p>
+      <div class="vote-options">
+        <label class="vote-option"><input type="radio" name="vote" value="yes"> YES — I authorize this reform and the establishment of the CIP.</label>
+        <label class="vote-option"><input type="radio" name="vote" value="no"> NO — I do not authorize this reform at this time.</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ART IV -->
+  <div class="reveal">
+    <div class="article-head">
+      <span class="article-num">Article IV</span>
+      <span class="article-title">The Citizens Internet Portal — Phase 1 Mandate</span>
+    </div>
+    <div class="clause"><span class="clause-num">4.1</span><div class="clause-body"><strong>Establishment:</strong> Upon ratification, the Congress of the United States shall, within 180 days, enact enabling legislation establishing the Citizens Internet Portal as a federally recognized governance infrastructure, governed by the architectural principles set forth in <a href="https://www.academia.edu/145659338/Citizens_Internet_Portal_Structural_Incorruptibility_Through_Distributed_Democratic_Architecture_A_Framework_for_Democratic_Governance_Immune_to_Capture" target="_blank" style="color:var(--mid-blue)">Citizens Internet Portal: Structural Incorruptibility Through Distributed Democratic Architecture</a> (Johnson &amp; Claude, 2025).</div></div>
+    <div class="clause"><span class="clause-num">4.2</span><div class="clause-body"><strong>Core Architecture:</strong> The CIP shall be designed and operated according to the following principles:
+      <div class="sub-clause"><span class="sub-letter">(a)</span><div><strong>Distributed Architecture:</strong> No single entity — governmental, corporate, or individual — shall control more than 5% of CIP node operations. Nodes shall be operated by public universities, public libraries, non-profit civic organizations, and registered citizens.</div></div>
+      <div class="sub-clause"><span class="sub-letter">(b)</span><div><strong>Cryptographic Integrity:</strong> All votes and governance actions recorded on the CIP shall be secured by blockchain consensus and zero-knowledge proof privacy protocols, ensuring both verifiability and voter anonymity.</div></div>
+      <div class="sub-clause"><span class="sub-letter">(c)</span><div><strong>No Single Point of Capture:</strong> The system shall be designed such that corruption of any single node, agency, or official does not compromise the integrity of the whole.</div></div>
+      <div class="sub-clause"><span class="sub-letter">(d)</span><div><strong>Universal Accessibility:</strong> CIP participation shall be available via web, mobile, phone, in-person at public libraries, and by mail-in paper ballot with digital verification, with no citizen excluded due to technological barriers.</div></div>
+      <div class="sub-clause"><span class="sub-letter">(e)</span><div><strong>Transparent Operations:</strong> All governance actions, proposal submissions, vote tallies, and budget allocations conducted through the CIP shall be publicly auditable in real time.</div></div>
+    </div></div>
+    <div class="clause"><span class="clause-num">4.3</span><div class="clause-body"><strong>The Judicial Guard:</strong> Concurrent with the establishment of the CIP, a Judicial Guard shall be constituted — a distributed corps of 500 to 2,000 independent field investigators with individual statutory authority to investigate, arrest, and refer for prosecution any attempt to capture, manipulate, or corrupt the CIP infrastructure. The Judicial Guard shall operate with multiple concurrent prosecution pathways — federal, state, local, and special counsel — ensuring that no single compromised official can block accountability.</div></div>
+    <div class="clause"><span class="clause-num">4.4</span><div class="clause-body"><strong>Transition Commission:</strong> A citizen-elected Transition Commission of 21 members — drawn from diverse regional, professional, and demographic backgrounds, with no more than three members from any single state — shall oversee CIP implementation, report publicly on a quarterly basis, and present a full operational report to the citizenry within 36 months of ratification.</div></div>
+    <div class="clause"><span class="clause-num">4.5</span><div class="clause-body"><strong>Funding:</strong> Initial CIP funding shall be drawn from a dedicated federal appropriation of no less than $500 million in Year 1, with multi-source supplemental funding from state appropriations, philanthropic endowment, and civil asset forfeiture from corruption prosecutions. The CIP budget shall be publicly itemized and audited annually.</div></div>
+  </div>
+
+  <!-- ART V -->
+  <div class="reveal">
+    <div class="article-head">
+      <span class="article-num">Article V</span>
+      <span class="article-title">Phase 2 Priorities — Economic Architecture</span>
+    </div>
+    <div class="clause"><span class="clause-num">5.1</span><div class="clause-body"><strong>Designation:</strong> The following frameworks are hereby formally designated as Phase 2 governance priorities, to be implemented through the CIP once the foundational infrastructure is operational and ratified by a follow-on citizen vote conducted via the CIP itself:
+      <div class="sub-clause"><span class="sub-letter">(a)</span><div><strong>Creative Currency Octaves (CCO):</strong> A dual-currency economic system providing universal basic survival security through expiring basic units, with merit-based conversion multipliers rewarding community contribution, civic participation, and cultural creation.</div></div>
+      <div class="sub-clause"><span class="sub-letter">(b)</span><div><strong>Public Trust Foundations (PTF):</strong> Community-owned, democratically governed providers of housing, essential goods, and services that accept basic units as payment — operated both not-for-profit and in-parallel to private markets, eliminating the extractive landlord-tenant dynamic that transfers wealth upward across generations.</div></div>
+      <div class="sub-clause"><span class="sub-letter">(c)</span><div><strong>Social Zone Harmonization (SZH):</strong> A spatial governance framework organizing communities around genuine preference diversity — enabling family, adult, artist, wellness, and other community zone types — while maintaining broader civic integration.</div></div>
+    </div></div>
+    <div class="clause"><span class="clause-num">5.2</span><div class="clause-body"><strong>Research Foundation:</strong> Phase 2 implementation shall draw upon the open-access research corpus at <a href="https://bettertobest.github.io/research-hub/" target="_blank" style="color:var(--mid-blue)">BetterToBest.github.io/research-hub/</a>, including formal quantitative modeling, Monte Carlo simulations, and mechanism design specifications developed by the Compassionism Research Initiative.</div></div>
+    <div class="clause"><span class="clause-num">5.3</span><div class="clause-body"><strong>Non-Preemption:</strong> Nothing in this Article shall be construed to limit the ability of states, municipalities, or communities to pilot Phase 2 frameworks independently prior to federal ratification, provided such pilots comply with applicable law.</div></div>
+  </div>
+
+  <!-- ART VI -->
+  <div class="reveal">
+    <div class="article-head">
+      <span class="article-num">Article VI</span>
+      <span class="article-title">Standards for a Settled System</span>
+    </div>
+    <p style="font-size:16px; line-height:1.75; margin-bottom:20px;">The Referendum cycle shall continue until the following conditions are demonstrably met and certified by the Transition Commission, an independent audit body, and a supermajority (67%) affirmative vote of participating citizens via the CIP:</p>
+    <div class="standards-grid">
+      <div class="standard-card">
+        <h4>Honor</h4>
+        <p>Governance is conducted with transparency and fidelity to the public interest, with no systemic evidence of institutional capture by private financial interests.</p>
+      </div>
+      <div class="standard-card">
+        <h4>Justice</h4>
+        <p>Policy outcomes reflect citizen preferences across economic, regional, and demographic lines, and legal accountability is applied equitably regardless of wealth or position.</p>
+      </div>
+      <div class="standard-card">
+        <h4>Accuracy</h4>
+        <p>Information produced through official governance channels is verifiably factual, auditable, and free from systemic manipulation or suppression.</p>
+      </div>
+      <div class="standard-card">
+        <h4>Truth in Public Affairs</h4>
+        <p>Officials are held to enforceable standards of factual honesty, with documented violations subject to Judicial Guard referral and prosecution.</p>
+      </div>
+    </div>
+    <p style="font-size:15.5px; font-style:italic; color:var(--muted); margin-top:20px; line-height:1.7;">Upon certification that these conditions are met, standard electoral cycles may resume operating through the CIP. The Referendum cycle shall be reinstated upon petition by 5% of the eligible voting population if these conditions are found to have lapsed.</p>
+  </div>
+
+  <!-- ART VII -->
+  <div class="reveal">
+    <div class="article-head">
+      <span class="article-num">Article VII</span>
+      <span class="article-title">Amendment and Supersession</span>
+    </div>
+    <div class="clause"><span class="clause-num">7.1</span><div class="clause-body"><strong>Living Document:</strong> This Referendum text is submitted as a starting framework, not a final word. Citizens, researchers, and civic organizations are expressly invited to propose amendments, improvements, and superior alternatives through the CIP deliberative platform once operational.</div></div>
+    <div class="clause"><span class="clause-num">7.2</span><div class="clause-body"><strong>Supersession:</strong> Any amendment or alternative framework that achieves a supermajority (60%) vote via the CIP shall supersede the relevant Article of this Referendum. The foundational commitment to structural incorruptibility, citizen control, and governance serving the public interest shall not be superseded by any amendment.</div></div>
+    <div class="clause"><span class="clause-num">7.3</span><div class="clause-body"><strong>Open-Access Principle:</strong> All research, models, and implementation specifications underlying this Referendum are published under Creative Commons Attribution 4.0 International License and are freely available for replication, critique, and improvement by any party.</div></div>
+  </div>
+
+  <hr class="doc-rule">
+
+  <!-- PART III — SIGNATURE -->
+  <div class="reveal">
+    <p class="part-label">Part III</p>
+    <h2 class="section-title">Citizen Signature &amp; Affirmation</h2>
+
+    <div class="sig-section">
+      <h3>Add Your Name</h3>
+      <p class="sig-intro">I, the undersigned, affirm that I am a citizen or lawful permanent resident of the United States of America, that I have read and understood the foregoing Referendum text, and that I hereby add my name in support of this petition demanding a nationwide special referendum on systemic governance reform.</p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:0 32px;">
+        <div class="sig-field">
+          <label>Full Legal Name</label>
+          <input type="text" placeholder="Your full name">
+        </div>
+        <div class="sig-field">
+          <label>State of Residence</label>
+          <input type="text" placeholder="e.g. California">
+        </div>
+        <div class="sig-field">
+          <label>City or County</label>
+          <input type="text" placeholder="Your city or county">
+        </div>
+        <div class="sig-field">
+          <label>Date</label>
+          <input type="text" placeholder="Today's date">
+        </div>
+      </div>
+
+      <p class="sig-optional">Optional — Email address (for campaign updates only, never shared):</p>
+      <div class="sig-field" style="max-width:360px;">
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+
+      <p style="margin:24px 0 8px; font-size:15px; font-weight:600; color:var(--deep-blue);">To formally record your signature, sign the petition on Change.org:</p>
+      <a href="https://www.change.org" target="_blank" class="btn-petition" id="sign-btn-2">Sign the Official Petition →</a>
+
+      <p class="sig-note">This form is for informational and awareness purposes. Official signatures are recorded via the Change.org petition linked above. The full referendum document is available for download and distribution under Creative Commons Attribution 4.0.</p>
+    </div>
+  </div>
+
+  <hr class="doc-rule">
+
+  <!-- REFERENCES -->
+  <div class="reveal">
+    <p class="part-label">Research &amp; Reference</p>
+    <h2 class="section-title">Supporting Documentation</h2>
+    <p style="font-size:15.5px; font-style:italic; color:var(--muted); margin-bottom:20px;">This Referendum is grounded in open-access research published under Creative Commons Attribution 4.0:</p>
+    <div class="ref-grid">
+      <div class="ref-item">
+        <p class="ref-label">Research Hub</p>
+        <a href="https://bettertobest.github.io/research-hub/" target="_blank">BetterToBest.github.io/research-hub/</a>
+      </div>
+      <div class="ref-item">
+        <p class="ref-label">CIP — Full Paper</p>
+        <a href="https://www.academia.edu/145659338/Citizens_Internet_Portal_Structural_Incorruptibility_Through_Distributed_Democratic_Architecture_A_Framework_for_Democratic_Governance_Immune_to_Capture" target="_blank">Citizens Internet Portal: Structural Incorruptibility Through Distributed Democratic Architecture</a>
+      </div>
+      <div class="ref-item">
+        <p class="ref-label">Integrated Digital Governance</p>
+        <a href="https://bettertobest.github.io/research-hub/integrated-digital-governance.html" target="_blank">BetterToBest.github.io/research-hub/integrated-digital-governance.html</a>
+      </div>
+      <div class="ref-item">
+        <p class="ref-label">Medium Article</p>
+        <a href="https://medium.com/@duke.t.james/the-system-wont-fix-itself-8e48291657a9" target="_blank">The System Won't Fix Itself — Duke Johnson, 2026</a>
+      </div>
+      <div class="ref-item">
+        <p class="ref-label">Academia Profile</p>
+        <a href="https://independentresearcher.academia.edu/DukeJohnson" target="_blank">independentresearcher.academia.edu/DukeJohnson</a>
+      </div>
+      <div class="ref-item">
+        <p class="ref-label">Contact</p>
+        <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing reveal">
+    <div class="hero-rule" style="margin:48px auto 40px;"></div>
+    <blockquote>
+      "The next step is not another election.<br>
+      It is a referendum on the system itself."
+    </blockquote>
+    <cite>— The System Won't Fix Itself, Duke Johnson, 2026</cite>
+    <div class="stars" style="margin-top:36px; color:var(--gold); opacity:0.7;">★ ★ ★</div>
+  </div>
+
+</main>
+
+<!-- SITE FOOTER -->
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="https://bettertobest.github.io/research-hub/">Research Hub</a>
+    <a href="https://bettertobest.github.io/research-hub/papers/">Papers</a>
+    <a href="https://bettertobest.github.io/research-hub/wiki/">Wiki</a>
+    <a href="https://independent.academia.edu/AuthorDukeJohnson">Academia</a>
+    <a href="https://medium.com/@duke.t.james">Medium</a>
+    <a href="https://bsky.app/profile/authordukejohnson.bsky.social">Bluesky</a>
+    <a href="mailto:Duke.T.James@gmail.com">Contact</a>
+  </div>
+  © 2026 Better To Best Research Hub &nbsp;|&nbsp; All research licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+  &nbsp;|&nbsp; <a href="https://bettertobest.github.io/research-hub/wiki/glossary.html">Glossary</a>
+  &nbsp;|&nbsp; <a href="https://bettertobest.github.io/research-hub/wiki/faq.html">FAQ</a>
+</footer>
+
+<script>
+  // Scroll-reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // Update Change.org links once you have the URL
+  // Replace 'https://www.change.org' with your actual petition URL
+  // e.g. document.querySelectorAll('[id^="sign-btn"]').forEach(el => el.href = 'YOUR_URL');
+</script>
+
+</body>
+</html>
