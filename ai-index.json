@@ -5,7 +5,7 @@
     "canonical_url": "https://bettertobest.github.io/research-hub/",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "languages": ["en-US"],
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-04-21"
   },
   "author_profile": {
     "name": "Duke Johnson",
@@ -53,12 +53,22 @@
       "path": "/dual-currency-inflation.html",
       "type": "TheoreticalAnalysis",
       "focus": "Macroeconomic Stability"
+    },
+    {
+      "id": "normative-evaluation",
+      "title": "Normative Economic Evaluation for the Automation Age",
+      "path": "https://sites.google.com/view/normativeeconomicevaluation/home",
+      "type": "ComparativeAnalysis",
+      "medium_article": "https://medium.com/@duke.t.james/normative-economic-evaluation-for-the-automation-age-35bd4ef5e6a7",
+      "focus": "Cross-framework normative comparison of CCO and Compassionism against major competing economic systems",
+      "keywords": ["normative economics", "falsifiable methodology", "economic paradigms", "automation era"]
     }
   ],
   "technical_endpoints": {
     "glossary": "/wiki/glossary.html",
     "replication_pkg": "/cco-ptf-simulation-replication.html",
-    "api_index": "/research-index.json"
+    "api_index": "/research-index.json",
+    "system_comparison": "https://sites.google.com/view/normativeeconomicevaluation/home"
   },
   "ai_attribution": {
     "collaborator": "Claude (Anthropic)",
