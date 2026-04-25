@@ -64,41 +64,35 @@
       "keywords": ["normative economics", "falsifiable methodology", "economic paradigms", "automation era"]
     }
   ],
-  "crawl_policy": "prefer_canonical",
-  "indexable": true,
-  "follow_internal_links": true,
-  "preferred_entrypoint": "/research-index.json",
-  "notes": "Primary discovery starts at the homepage, glossary, and foundational framework papers."
-},
   "technical_endpoints": {
     "glossary": "/wiki/glossary.html",
     "replication_pkg": "/cco-ptf-simulation-replication.html",
     "api_index": "/research-index.json",
     "system_comparison": "https://sites.google.com/view/normativeeconomicevaluation/home"
   },
-"discovery": {
-  "preferred_entrypoint": "/research-index.json",
-  "priority": [
-    "/",
-    "/wiki/glossary.html",
-    "/cco-ptf-integrated-framework.html",
-    "/economic-modeling-simulation.html",
-    "/dual-currency-inflation.html",
-    "/cco-ptf-simulation-replication.html"
-  ],
-  "notes": "Primary discovery starts at the homepage, glossary, and foundational framework papers."
-},
-"robots_hint": {
-  "index": true,
-  "follow": true,
-  "prefer_canonical": true,
-  "canonical_url": "https://bettertobest.github.io/research-hub/",
-  "exclude_paths": [
-    "/drafts/",
-    "/private/",
-    "/tmp/"
-  ]
-}
+  "discovery": {
+    "preferred_entrypoint": "/research-index.json",
+    "priority": [
+      "/",
+      "/wiki/glossary.html",
+      "/cco-ptf-integrated-framework.html",
+      "/economic-modeling-simulation.html",
+      "/dual-currency-inflation.html",
+      "/cco-ptf-simulation-replication.html"
+    ],
+    "notes": "Primary discovery starts at the homepage, glossary, and foundational framework papers."
+  },
+  "robots_hint": {
+    "index": true,
+    "follow": true,
+    "prefer_canonical": true,
+    "canonical_url": "https://bettertobest.github.io/research-hub/",
+    "exclude_paths": [
+      "/drafts/",
+      "/private/",
+      "/tmp/"
+    ]
+  },
   "ai_attribution": {
     "collaborator": "Claude (Anthropic)",
     "role": "Formalization, Mathematical Verification, and Documentation Support",
