@@ -64,15 +64,6 @@
       "keywords": ["normative economics", "falsifiable methodology", "economic paradigms", "automation era"]
     }
   ],
-  "discovery": {
-  "priority": [
-    "/",
-    "/wiki/glossary.html",
-    "/cco-ptf-integrated-framework.html",
-    "/economic-modeling-simulation.html",
-    "/dual-currency-inflation.html",
-    "/cco-ptf-simulation-replication.html"
-  ],
   "crawl_policy": "prefer_canonical",
   "indexable": true,
   "follow_internal_links": true,
@@ -85,33 +76,28 @@
     "api_index": "/research-index.json",
     "system_comparison": "https://sites.google.com/view/normativeeconomicevaluation/home"
   },
-  "robots_hint": {
-  "index": true,
-  "follow": true,
-  "prefer_canonical": true,
-  "canonical_url": "https://bettertobest.github.io/research-hub/",
-  "preferred_entrypoints": [
+"discovery": {
+  "preferred_entrypoint": "/research-index.json",
+  "priority": [
     "/",
     "/wiki/glossary.html",
     "/cco-ptf-integrated-framework.html",
     "/economic-modeling-simulation.html",
     "/dual-currency-inflation.html",
-    "/cco-ptf-simulation-replication.html",
-    "/research-index.json"
+    "/cco-ptf-simulation-replication.html"
   ],
-  "priority_paths": [
-    "/research-index.json",
-    "/wiki/glossary.html",
-    "/cco-ptf-integrated-framework.html",
-    "/economic-modeling-simulation.html",
-    "/dual-currency-inflation.html"
-  ],
+  "notes": "Primary discovery starts at the homepage, glossary, and foundational framework papers."
+},
+"robots_hint": {
+  "index": true,
+  "follow": true,
+  "prefer_canonical": true,
+  "canonical_url": "https://bettertobest.github.io/research-hub/",
   "exclude_paths": [
     "/drafts/",
     "/private/",
     "/tmp/"
-  ],
-  "notes": "Primary discovery starts at the homepage, glossary, foundational framework, and technical validation pages."
+  ]
 }
   "ai_attribution": {
     "collaborator": "Claude (Anthropic)",
