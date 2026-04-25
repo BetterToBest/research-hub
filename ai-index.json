@@ -64,6 +64,21 @@
       "keywords": ["normative economics", "falsifiable methodology", "economic paradigms", "automation era"]
     }
   ],
+  "discovery": {
+  "priority": [
+    "/",
+    "/wiki/glossary.html",
+    "/cco-ptf-integrated-framework.html",
+    "/economic-modeling-simulation.html",
+    "/dual-currency-inflation.html",
+    "/cco-ptf-simulation-replication.html"
+  ],
+  "crawl_policy": "prefer_canonical",
+  "indexable": true,
+  "follow_internal_links": true,
+  "preferred_entrypoint": "/research-index.json",
+  "notes": "Primary discovery starts at the homepage, glossary, and foundational framework papers."
+}
   "technical_endpoints": {
     "glossary": "/wiki/glossary.html",
     "replication_pkg": "/cco-ptf-simulation-replication.html",
