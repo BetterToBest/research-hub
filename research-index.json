@@ -2,14 +2,19 @@
   "@context": "https://schema.org",
   "@type": "Collection",
   "name": "Better To Best Research Hub",
-  "description": "Open-access research on Creative Currency Octaves, governance, and future economics. Collection includes 14 research papers covering economic modeling, welfare design, digital governance, and community development.",
+  "description": "Open-access research on Creative Currency Octaves, governance, and future economics. Collection includes 16+ research papers covering economic modeling, welfare design, digital governance, anti-corruption infrastructure, corporate transformation, and community development.",
   "url": "https://bettertobest.github.io/research-hub/",
   "creator": {
     "@type": "Person",
     "name": "Duke Johnson",
-    "@id": "https://authordukejohnson.bsky.social",
+    "@id": "https://independentresearcher.academia.edu/DukeJohnson",
     "email": "Duke.T.James@gmail.com",
-    "url": "https://authordukejohnson.bsky.social"
+    "url": "https://authordukejohnson.bsky.social",
+    "sameAs": [
+      "https://authordukejohnson.bsky.social",
+      "https://x.com/Author_Duke_J",
+      "https://independentresearcher.academia.edu/DukeJohnson"
+    ]
   },
   "authorship": {
     "primary_author": {
@@ -24,11 +29,15 @@
     },
     "attribution_note": "Claude is credited as a co-author because the work relied on substantive AI-assisted intellectual development and drafting support."
   },
-  "license": "https://creativecommons.org/licenses/by/4.0/"
-  "dateModified": "2025-09-21",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "dateModified": "2026-04-24",
+  "numberOfItems": 16,
   "keywords": [
     "Creative Currency Octaves",
-    "Public Trust Housing", 
+    "Public Trust Housing",
+    "Public Trust Foundations",
+    "Citizens Internet Portal",
+    "Social Zone Harmonization",
     "Economic Modeling",
     "Digital Governance",
     "Welfare Economics",
@@ -36,18 +45,45 @@
     "Alternative Currencies",
     "Poverty Reduction",
     "Agent-Based Modeling",
-    "Monte Carlo Simulation"
+    "Monte Carlo Simulation",
+    "Anti-Corruption Infrastructure",
+    "Structural Incorruptibility",
+    "Judicial Guard",
+    "Corporate Transformation",
+    "Federal Reserve Reform",
+    "Automation Economics",
+    "Quantum Computing"
   ],
   "about": [
     {
       "@type": "Thing",
       "name": "Creative Currency Octaves",
-      "description": "Dual-currency system with merit-based conversion mechanisms"
+      "description": "Dual-currency system with merit-based conversion mechanisms",
+      "additionalType": "EconomicEngine"
     },
     {
-      "@type": "Thing", 
+      "@type": "Thing",
       "name": "Public Trust Housing",
-      "description": "Community wealth-building framework with collective ownership"
+      "description": "Community wealth-building framework with collective ownership",
+      "additionalType": "CommunityAssetLayer"
+    },
+    {
+      "@type": "Thing",
+      "name": "Public Trust Foundations",
+      "description": "Community-owned businesses providing foundational goods and services",
+      "additionalType": "CommunityAssetLayer"
+    },
+    {
+      "@type": "Thing",
+      "name": "Citizens Internet Portal",
+      "description": "Distributed democratic governance platform achieving structural incorruptibility",
+      "additionalType": "DigitalGovernanceInfrastructure"
+    },
+    {
+      "@type": "Thing",
+      "name": "Social Zone Harmonization",
+      "description": "Framework for organizing communities to optimize social, economic, and environmental outcomes",
+      "additionalType": "SocialCoordinationLayer"
     },
     {
       "@type": "Thing",
@@ -58,252 +94,265 @@
   "hasPart": [
     {
       "@type": "ScholarlyArticle",
-      "name": "Optimal Transfer Design in Post-Scarcity Economies",
+      "name": "Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare",
       "url": "https://bettertobest.github.io/research-hub/optimal-transfer-design.html",
-      "datePublished": "2025-08-31",
+      "datePublished": "2025-07-31",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization", 
-          "name": "Claude (Anthropic)"
-        }
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
       ],
       "keywords": ["Welfare Economics", "Universal Basic Income", "Merit-Based Systems", "Transfer Design"],
       "abstract": "Integrated welfare framework combining Creative Currency Octaves with dual-tier incentive mechanisms and Public Trust Foundations, addressing work disincentive effects, welfare cliffs, and administrative inefficiency.",
-      "wordCount": 12000,
       "encoding": {
         "@type": "MediaObject",
         "encodingFormat": "application/pdf",
-        "contentUrl": "https://bettertobest.github.io/research-hub/papers/optimal-transfer-design.pdf"
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/optimal-transfer-design.pdf"
       }
-    },
-    {
-      "@type": "ScholarlyArticle", 
-      "name": "Economic Modeling and Simulation Analysis of Creative Currency Octaves",
-      "url": "https://bettertobest.github.io/research-hub/economic-modeling-simulation.html",
-      "datePublished": "2025-08-28",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
-      ],
-      "keywords": ["Economic Modeling", "Agent-Based Modeling", "Monte Carlo Simulation", "Policy Evaluation"],
-      "abstract": "Comprehensive economic modeling and simulation analysis of Creative Currency Octaves implementation across diverse community scenarios using agent-based modeling and Monte Carlo simulation techniques.",
-      "wordCount": 8500
-    },
-    {
-      "@type": "ScholarlyArticle",
-      "name": "Creative Currency Octaves and Public Trust Foundations: An Integrated Framework", 
-      "url": "https://bettertobest.github.io/research-hub/cco-ptf-integrated-framework.html",
-      "datePublished": "2025-09-06",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
-      ],
-      "keywords": ["Alternative Currencies", "Poverty Reduction", "Community Wealth Building"],
-      "abstract": "Innovative economic framework combining mathematically progressive benefit structures with Public Trust Foundations to achieve comprehensive poverty elimination and economic stabilization.",
-      "wordCount": 15000
-    },
-    {
-      "@type": "ScholarlyArticle",
-      "name": "Community-Based Monetary Innovation for Development",
-      "url": "https://bettertobest.github.io/research-hub/community-monetary-development.html", 
-      "datePublished": "2025-09-20",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
-      ],
-      "keywords": ["Development Economics", "Community Currency", "Emerging Economies"]
     },
     {
       "@type": "ScholarlyArticle",
       "name": "Dual Currency Systems and Inflation: CCO's Price Stability Mechanisms",
       "url": "https://bettertobest.github.io/research-hub/dual-currency-inflation.html",
-      "datePublished": "2025-09-20", 
+      "datePublished": "2025-08-15",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
       ],
-      "keywords": ["Monetary Theory", "Inflation Analysis", "Price Stability"]
+      "keywords": ["Monetary Theory", "Inflation Analysis", "Dual Currency Systems", "Price Stability"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/dual-currency-inflation.pdf"
+      }
     },
     {
       "@type": "ScholarlyArticle",
-      "name": "Integrated Digital Governance and Creative Currency Systems",
+      "name": "Economic Modeling and Simulation Analysis of Creative Currency Octaves",
+      "url": "https://bettertobest.github.io/research-hub/economic-modeling-simulation.html",
+      "datePublished": "2025-08-20",
+      "author": [
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
+      ],
+      "keywords": ["Economic Modeling", "Agent-Based Modeling", "Monte Carlo Simulation", "Policy Evaluation"],
+      "abstract": "Comprehensive economic modeling and simulation analysis of Creative Currency Octaves implementation across diverse community scenarios using agent-based modeling and Monte Carlo simulation techniques.",
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/economic-modeling-simulation.pdf"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Creative Currency Octaves and Public Trust Foundations: An Integrated Framework",
+      "url": "https://bettertobest.github.io/research-hub/cco-ptf-integrated-framework.html",
+      "datePublished": "2025-08-25",
+      "author": [
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
+      ],
+      "keywords": ["Alternative Currencies", "Poverty Reduction", "Community Wealth Building", "Systems Integration"],
+      "abstract": "Innovative economic framework combining mathematically progressive benefit structures with Public Trust Foundations to achieve comprehensive poverty elimination and economic stabilization.",
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/cco-ptf-integrated-framework.pdf"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Integrated Digital Governance and Economic Innovation: CIP-CCO-PTH-SZH Framework",
       "url": "https://bettertobest.github.io/research-hub/integrated-digital-governance.html",
-      "datePublished": "2025-09-20",
+      "datePublished": "2025-08-28",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
-      ], 
-      "keywords": ["Digital Governance", "Citizen Internet Portal", "Democratic Participation"]
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
+      ],
+      "keywords": ["Digital Governance", "Citizens Internet Portal", "Democratic Participation", "Systems Coordination"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/integrated-digital-governance.pdf"
+      }
     },
     {
       "@type": "ScholarlyArticle",
-      "name": "Drug Policy Reform and Integrated Community Support Systems", 
+      "name": "Drug Policy Reform and Integrated Community Support Systems",
       "url": "https://bettertobest.github.io/research-hub/drug-policy-reform.html",
-      "datePublished": "2025-09-20",
+      "datePublished": "2025-08-31",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
       ],
-      "keywords": ["Drug Policy", "Public Health", "Community Support"]
+      "keywords": ["Drug Policy", "Public Health", "Community Support", "Cost-Benefit Analysis"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/drug-policy-reform.pdf"
+      }
     },
     {
       "@type": "ScholarlyArticle",
       "name": "Democratic Governance in Economic Systems: Lessons from Public Trust Housing",
       "url": "https://bettertobest.github.io/research-hub/democratic-governance-pth.html",
-      "datePublished": "2025-09-20",
+      "datePublished": "2025-08-30",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
       ],
-      "keywords": ["Governance", "Democracy", "Housing Policy", "Community Management"]
-    },
-    {
-      "@type": "ScholarlyArticle", 
-      "name": "Cultural Value Integration in Economic Systems: The CCO Framework",
-      "url": "https://bettertobest.github.io/research-hub/cultural-value-integration.html",
-      "datePublished": "2025-09-20",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
-      ],
-      "keywords": ["Cultural Economics", "Creative Industries", "Value Recognition"]
+      "keywords": ["Governance", "Democracy", "Housing Policy", "Community Management"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/democratic-governance-pth.pdf"
+      }
     },
     {
       "@type": "ScholarlyArticle",
-      "name": "Risk Mitigation Framework for Economic Innovation",
-      "url": "https://bettertobest.github.io/research-hub/risk-mitigation-framework.html", 
-      "datePublished": "2025-09-20",
+      "name": "Risk Mitigation Framework for CCO-PTH-CIP-SZH Implementation",
+      "url": "https://bettertobest.github.io/research-hub/risk-mitigation-framework.html",
+      "datePublished": "2025-08-31",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
       ],
-      "keywords": ["Risk Management", "Economic Innovation", "Implementation Planning"]
+      "keywords": ["Risk Management", "Economic Innovation", "Implementation Planning", "Crisis Response"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/risk-mitigation-framework.pdf"
+      }
     },
     {
       "@type": "ScholarlyArticle",
       "name": "Transforming the US Real Estate Market Through Public Trust Housing",
       "url": "https://bettertobest.github.io/research-hub/us-real-estate-transformation.html",
-      "datePublished": "2025-09-20", 
+      "datePublished": "2025-08-25",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
       ],
-      "keywords": ["Real Estate Policy", "Market Transformation", "Housing Affordability"]
+      "keywords": ["Real Estate Policy", "Market Transformation", "Housing Affordability", "Acre Equity"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/us-real-estate-transformation.pdf"
+      }
     },
     {
       "@type": "ScholarlyArticle",
-      "name": "Public Trust Financial Systems and Economic Resilience",
-      "url": "https://bettertobest.github.io/research-hub/public-trust-financial.html",
-      "datePublished": "2025-09-20",
+      "name": "Cultural Value Integration in Economic Systems: The CCO Framework",
+      "url": "https://bettertobest.github.io/research-hub/cultural-value-integration.html",
+      "datePublished": "2025-08-20",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
-      ], 
-      "keywords": ["Financial Systems", "Economic Resilience", "Public Trust"]
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
+      ],
+      "keywords": ["Cultural Economics", "Creative Industries", "Value Recognition", "Phi Rate"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/cultural-value-integration.pdf"
+      }
     },
     {
       "@type": "ScholarlyArticle",
-      "name": "PTH Independent Financing Mechanisms",
+      "name": "Community-Based Monetary Innovation for Development",
+      "url": "https://bettertobest.github.io/research-hub/community-monetary-development.html",
+      "datePublished": "2025-08-18",
+      "author": [
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
+      ],
+      "keywords": ["Development Economics", "Community Currency", "Emerging Economies", "Poverty Reduction"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/community-monetary-development.pdf"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "PTH Independent Financing Models: From Grassroots Cooperation to Philanthropic Scale",
       "url": "https://bettertobest.github.io/research-hub/pth-independent-financing.html",
-      "datePublished": "2025-09-20",
+      "datePublished": "2025-09-05",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
       ],
-      "keywords": ["Housing Finance", "Independent Funding", "Community Development"]
+      "keywords": ["Housing Finance", "Independent Funding", "Community Development", "Cooperative Models"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/pth-independent-financing.pdf"
+      }
     },
     {
-      "@type": "ScholarlyArticle", 
-      "name": "PTH Government Integration Pathways",
-      "url": "https://bettertobest.github.io/research-hub/pth-government-integration.html",
-      "datePublished": "2025-09-20",
+      "@type": "ScholarlyArticle",
+      "name": "Universal Implementation Framework for Human Thriving: CCO-PTF-CIP-SZH",
+      "url": "https://bettertobest.github.io/research-hub/universal-implementation-framework.html",
+      "datePublished": "2025-09-11",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Duke Johnson"
-        },
-        {
-          "@type": "Organization",
-          "name": "Claude (Anthropic)"
-        }
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
       ],
-      "keywords": ["Government Integration", "Public Policy", "Implementation Strategy"]
+      "keywords": ["Implementation Framework", "Technology Specifications", "International Development", "Human Thriving"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/universal-implementation-framework.pdf"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "PTH Government Integration: Scaling Through Public Investment",
+      "url": "https://bettertobest.github.io/research-hub/pth-government-integration.html",
+      "datePublished": "2025-09-08",
+      "author": [
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
+      ],
+      "keywords": ["Government Integration", "Public Policy", "Implementation Strategy", "Scaling"],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/pth-government-integration.pdf"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Citizens Internet Portal: Structural Incorruptibility Through Distributed Democratic Architecture",
+      "url": "https://bettertobest.github.io/research-hub/citizens-internet-portal.html",
+      "datePublished": "2025-12-29",
+      "author": [
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
+      ],
+      "keywords": ["Digital Democracy", "Anti-Corruption Infrastructure", "Distributed Governance", "Blockchain Voting", "Inverse Elite", "Structural Incorruptibility", "Judicial Guard"],
+      "abstract": "Proposes the Citizens Internet Portal as a comprehensive solution to the corruption paradox through distributed architecture, the Judicial Guard concept, and integration with CCO-PTF-SZH to make corruption structurally impossible, economically irrational, and technically infeasible.",
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/citizens-internet-portal.pdf"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Corporate Transformation Under CCO-PTF Integration: Reimagining Work Structure in the Age of A.I., Automation, and Quantum Computing",
+      "url": "https://bettertobest.github.io/research-hub/corporate-transformation.html",
+      "datePublished": "2025-11-22",
+      "dateModified": "2026-01-08",
+      "author": [
+        {"@type": "Person", "name": "Duke Johnson"},
+        {"@type": "Organization", "name": "Claude (Anthropic)"}
+      ],
+      "keywords": ["Corporate Transformation", "Federal Reserve Reform", "Work Structure Evolution", "Automation Impact", "Creator Collective Economics", "Monetary Policy", "Quantum Computing"],
+      "abstract": "Examines corporate structure transformation following CCO-PTF integration and Federal Reserve mandate reform. Key findings: 25-hour workweeks with CCO supplementation maintain productivity while reducing overhead 35-50%. Proposes shifting the Fed mandate to a human flourishing orientation enabling the full transition from fractional reserve to full creative reserve economics.",
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://bettertobest.github.io/research-hub/papers/pdfs/corporate-transformation.pdf"
+      }
     },
     {
       "@type": "WebPage",
@@ -312,16 +361,16 @@
       "description": "Frequently asked questions about Creative Currency Octaves, Public Trust Housing, and implementation"
     },
     {
-      "@type": "WebPage", 
+      "@type": "WebPage",
       "name": "Glossary of Terms",
       "url": "https://bettertobest.github.io/research-hub/wiki/glossary.html",
       "description": "Definitions of key concepts and terminology"
     },
     {
       "@type": "WebPage",
-      "name": "Citation Generator", 
+      "name": "Citation Generator",
       "url": "https://bettertobest.github.io/research-hub/wiki/index.html#citation-tool",
-      "description": "Generate properly formatted citations for research papers"
+      "description": "Generate properly formatted citations for 16+ research papers"
     }
   ]
 }
