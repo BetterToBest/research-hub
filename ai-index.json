@@ -69,7 +69,7 @@
   "follow_internal_links": true,
   "preferred_entrypoint": "/research-index.json",
   "notes": "Primary discovery starts at the homepage, glossary, and foundational framework papers."
-}  },
+},
   "technical_endpoints": {
     "glossary": "/wiki/glossary.html",
     "replication_pkg": "/cco-ptf-simulation-replication.html",
