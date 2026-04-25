@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki & Resources - Better To Best Research Hub</title>
     <meta name="description" content="Comprehensive wiki, glossary, FAQ, and resources for Creative Currency Octaves, Public Trust Housing, Social Zone Harmonization, and innovative economic frameworks.">
-    <meta name="keywords" content="wiki, Creative Currency Octaves, Public Trust Housing, FAQ, glossary, resources, documentation">
+    <meta name="keywords" content="wiki, Creative Currency Octaves, Public Trust Housing, FAQ, glossary, resources, documentation, system interaction model, framework dependencies">
     <meta name="author" content="Duke Johnson">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="googlebot" content="index, follow">
@@ -297,6 +297,110 @@
             border-color: var(--primary-color);
         }
 
+        /* System Interaction Model */
+        .interaction-model {
+            background: var(--surface);
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .interaction-model-intro {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .layer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .layer-card {
+            background: var(--background);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .layer-card-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .layer-card-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .layer-card-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .dependency-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .dependency-table th {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .dependency-table th:first-child {
+            border-radius: 0.5rem 0 0 0;
+        }
+
+        .dependency-table th:last-child {
+            border-radius: 0 0.5rem 0 0;
+        }
+
+        .dependency-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+
+        .dependency-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .dependency-table tr:nth-child(even) td {
+            background: var(--surface);
+        }
+
+        .dep-relation {
+            font-family: monospace;
+            font-weight: 600;
+            color: var(--primary-color);
+            white-space: nowrap;
+        }
+
+        .dep-note {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-top: 0.2rem;
+        }
+
         /* Citation Generator */
         .citation-tool {
             background: var(--surface);
@@ -403,6 +507,25 @@
             .links-grid {
                 grid-template-columns: 1fr;
             }
+
+            .layer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .dependency-table {
+                font-size: 0.8rem;
+            }
+
+            .dependency-table td,
+            .dependency-table th {
+                padding: 0.5rem 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .layer-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -435,7 +558,7 @@
                     <span class="hero-stat-label">FAQ Answers</span>
                 </div>
                 <div class="hero-stat">
-                    <span class="hero-stat-number">14</span>
+                    <span class="hero-stat-number">16+</span>
                     <span class="hero-stat-label">Research Papers</span>
                 </div>
             </div>
@@ -619,10 +742,90 @@
                 </div>
             </section>
 
+            <!-- System Interaction Model -->
+            <section class="section" id="system-interaction-model">
+                <h2>System Interaction Model</h2>
+                <p>How the five frameworks depend on, govern, and reinforce one another — the architecture of Compassionism as a unified system.</p>
+
+                <div class="interaction-model">
+                    <p class="interaction-model-intro">Each framework occupies a distinct functional layer. Understanding their relationships is essential for implementation sequencing — dependencies must be in place before dependent systems can operate effectively.</p>
+
+                    <!-- Layer Cards -->
+                    <div class="layer-grid">
+                        <div class="layer-card">
+                            <div class="layer-card-label">Economic Layer</div>
+                            <div class="layer-card-name">CCO</div>
+                            <div class="layer-card-desc">Creative Currency Octaves — generates value signals and circulation incentives through the dual-currency system</div>
+                        </div>
+                        <div class="layer-card">
+                            <div class="layer-card-label">Asset Layer</div>
+                            <div class="layer-card-name">PTF</div>
+                            <div class="layer-card-desc">Public Trust Foundations — builds collective ownership and community wealth through community-operated businesses</div>
+                        </div>
+                        <div class="layer-card">
+                            <div class="layer-card-label">Asset Layer</div>
+                            <div class="layer-card-name">PTH</div>
+                            <div class="layer-card-desc">Public Trust Housing — creates collective housing equity through resident-owned community properties</div>
+                        </div>
+                        <div class="layer-card">
+                            <div class="layer-card-label">Spatial Layer</div>
+                            <div class="layer-card-name">SZH</div>
+                            <div class="layer-card-desc">Social Zone Harmonization — organizes physical and social structure through coordinated community planning</div>
+                        </div>
+                        <div class="layer-card">
+                            <div class="layer-card-label">Democratic Layer</div>
+                            <div class="layer-card-name">CIP</div>
+                            <div class="layer-card-desc">Citizens Internet Portal — governs currency operations and democratic participation across all systems</div>
+                        </div>
+                    </div>
+
+                    <!-- Dependency Table -->
+                    <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">Framework Dependencies &amp; Relationships</h3>
+                    <table class="dependency-table">
+                        <thead>
+                            <tr>
+                                <th>Relationship</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="dep-relation">PTF depends_on CCO</span></td>
+                                <td>PTF accepts basic units as payment; CCO funds PTF operations and provides the currency infrastructure PTF businesses require</td>
+                            </tr>
+                            <tr>
+                                <td><span class="dep-relation">PTH depends_on CCO</span></td>
+                                <td>Housing costs settled in basic units; CCO provides the economic security that makes collective housing participation viable</td>
+                            </tr>
+                            <tr>
+                                <td><span class="dep-relation">CIP governs CCO</span></td>
+                                <td>CIP manages conversion rates, merit assessment, and basic unit distribution — the democratic layer controls the economic engine</td>
+                            </tr>
+                            <tr>
+                                <td><span class="dep-relation">CIP governs PTF + PTH</span></td>
+                                <td>Democratic oversight of all collective assets; residents and members vote on key decisions through the CIP platform</td>
+                            </tr>
+                            <tr>
+                                <td><span class="dep-relation">SZH stabilizes PTF + PTH</span></td>
+                                <td>Zoning shapes service and housing deployment; SZH ensures PTF businesses and PTH communities are spatially coherent</td>
+                            </tr>
+                            <tr>
+                                <td><span class="dep-relation">CCO feeds_into SZH</span></td>
+                                <td>Creative collectives anchor zone formation; economic activity patterns inform how social zones are structured and evolved</td>
+                            </tr>
+                            <tr>
+                                <td><span class="dep-relation">PTF enhances CCO</span></td>
+                                <td>PTF venues reduce Creative Collective overhead by 40–60%; PTF workers receive a 50% conversion bonus, strengthening the CCO incentive structure</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
             <!-- Citation Tool -->
             <section class="section" id="citation-tool">
                 <h2>Citation Generator</h2>
-                <p>Generate properly formatted citations for any of our 14 research papers in multiple academic formats.</p>
+                <p>Generate properly formatted citations for any of our 16+ research papers in multiple academic formats.</p>
                 
                 <div class="citation-tool">
                     <div class="citation-form">
@@ -644,6 +847,8 @@
                                 <option value="risk-framework">Risk Mitigation and Safeguards Framework for CCO-PTF-CIP-SZH Integrated System</option>
                                 <option value="social-zone">Social Zone Harmonization: Implementation Framework for Coordinated Community Development</option>
                                 <option value="pilot-evaluation">Pilot Program Design and Evaluation Framework for Creative Currency Octaves</option>
+                                <option value="citizens-internet-portal">Citizens Internet Portal: Structural Incorruptibility Through Distributed Democratic Architecture</option>
+                                <option value="corporate-transformation">Corporate Transformation Under CCO-PTF Integration: Reimagining Work Structure in the Age of A.I., Automation, and Quantum Computing</option>
                             </select>
                         </div>
                         
@@ -674,116 +879,128 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Better To Best Research Hub. Licensed under Creative Commons Attribution 4.0 International License.</p>
+                <p>&copy; 2025-2026 Better To Best Research Hub. Licensed under Creative Commons Attribution 4.0 International License.</p>
                 <p>Created by Duke Johnson in collaboration with Claude (Anthropic)</p>
             </div>
         </div>
     </footer>
 
     <script>
-// Citation data - cleaned and corrected
 const citations = {
     'optimal-transfer': {
         title: 'Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/optimal-transfer-design.html',
+        url: 'https://bettertobest.github.io/research-hub/optimal-transfer-design.html',
         type: 'research-paper'
     },
     'economic-modeling': {
         title: 'Economic Modeling and Simulation Analysis of Creative Currency Octaves: Implementation Scenarios and Policy Implications',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/economic-modeling-simulation.html',
+        url: 'https://bettertobest.github.io/research-hub/economic-modeling-simulation.html',
         type: 'research-paper'
     },
     'pth-technical': {
         title: 'Public Trust Housing: Technical Specifications and Implementation Framework',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/pth-technical-specifications.html',
+        url: 'https://bettertobest.github.io/research-hub/pth-technical-specifications.html',
         type: 'research-paper'
     },
     'community-monetary': {
         title: 'Community-Based Monetary Innovation for Development',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/community-monetary-innovation.html',
+        url: 'https://bettertobest.github.io/research-hub/community-monetary-development.html',
         type: 'research-paper'
     },
     'dual-currency': {
         title: 'Dual Currency Systems and Inflation: CCO\'s Price Stability Mechanisms',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/dual-currency-inflation.html',
+        url: 'https://bettertobest.github.io/research-hub/dual-currency-inflation.html',
         type: 'research-paper'
     },
     'digital-governance': {
         title: 'Integrated Digital Governance and Creative Currency Systems',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/digital-governance.html',
+        url: 'https://bettertobest.github.io/research-hub/integrated-digital-governance.html',
         type: 'research-paper'
     },
     'real-estate': {
         title: 'Transforming the US Real Estate Market Through Public Trust Housing',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/real-estate-transformation.html',
+        url: 'https://bettertobest.github.io/research-hub/us-real-estate-transformation.html',
         type: 'research-paper'
     },
     'drug-policy': {
         title: 'Drug Policy Reform and Integrated Community Support Systems',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/drug-policy-reform.html',
+        url: 'https://bettertobest.github.io/research-hub/drug-policy-reform.html',
         type: 'research-paper'
     },
     'drug-policy-harmonization': {
         title: 'Drug Policy Harmonization Through Creative Currency Octaves Integration',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/drug-policy-harmonization.html',
+        url: 'https://bettertobest.github.io/research-hub/drug-policy-harmonization.html',
         type: 'research-paper'
     },
     'democratic-governance': {
         title: 'Democratic Governance in Economic Systems: Lessons from Public Trust Housing',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/democratic-governance-pth.html',
+        url: 'https://bettertobest.github.io/research-hub/democratic-governance-pth.html',
         type: 'research-paper'
     },
     'cultural-value': {
         title: 'Cultural Value Integration in Economic Systems: The CCO Framework',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/cultural-value-integration.html',
+        url: 'https://bettertobest.github.io/research-hub/cultural-value-integration.html',
         type: 'research-paper'
     },
     'risk-framework': {
         title: 'Risk Mitigation and Safeguards Framework for CCO-PTF-CIP-SZH Integrated System',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/risk-mitigation-framework.html',
+        url: 'https://bettertobest.github.io/research-hub/risk-mitigation-framework.html',
         type: 'research-paper'
     },
     'social-zone': {
         title: 'Social Zone Harmonization: Implementation Framework for Coordinated Community Development',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/social-zone-harmonization.html',
+        url: 'https://bettertobest.github.io/research-hub/social-zone-harmonization.html',
         type: 'research-paper'
     },
     'pilot-evaluation': {
         title: 'Pilot Program Design and Evaluation Framework for Creative Currency Octaves',
         authors: 'Johnson, D., & Claude (Anthropic)',
         year: '2025',
-        url: 'https://bettertobest.github.io/research-hub/papers/pilot-evaluation-framework.html',
+        url: 'https://bettertobest.github.io/research-hub/pilot-evaluation-framework.html',
+        type: 'research-paper'
+    },
+    'citizens-internet-portal': {
+        title: 'Citizens Internet Portal: Structural Incorruptibility Through Distributed Democratic Architecture',
+        authors: 'Johnson, D., & Claude (Anthropic)',
+        year: '2025',
+        url: 'https://bettertobest.github.io/research-hub/citizens-internet-portal.html',
+        type: 'research-paper'
+    },
+    'corporate-transformation': {
+        title: 'Corporate Transformation Under CCO-PTF Integration: Reimagining Work Structure in the Age of A.I., Automation, and Quantum Computing',
+        authors: 'Johnson, D., & Claude (Anthropic)',
+        year: '2025',
+        url: 'https://bettertobest.github.io/research-hub/corporate-transformation.html',
         type: 'research-paper'
     }
 };
 
-// Generate citation based on selection
 function generateCitation() {
     const paperSelect = document.getElementById('paper-select');
     const formatSelect = document.getElementById('format-select');
@@ -817,49 +1034,36 @@ function generateCitation() {
             citation = `${data.authors}. "${data.title}." Better To Best Research Hub. ${data.year}. ${data.url}.`;
             break;
         case 'bibtex':
-            const key = `${paper.replace('-', '_')}_${data.year}`;
-            citation = `@article{${key},
-  title={${data.title}},
-  author={${data.authors.replace(', &', ' and')}},
-  journal={Better To Best Research Hub},
-  year={${data.year}},
-  url={${data.url}},
-  license={CC BY 4.0}
-}`;
+            const key = `${paper.replace(/-/g, '_')}_${data.year}`;
+            citation = `@article{${key},\n  title={${data.title}},\n  author={${data.authors.replace(', &', ' and')}},\n  journal={Better To Best Research Hub},\n  year={${data.year}},\n  url={${data.url}},\n  license={CC BY 4.0}\n}`;
             break;
     }
     
     output.textContent = citation;
 }
 
-// Simple and reliable copy function
 function copyCitation() {
     const output = document.getElementById('citation-output');
     const text = output.textContent;
     
-    if (text === 'Please select a paper and format to generate a citation.' || 
+    if (text === 'Please select a paper and format to generate a citation.' ||
         text === 'Selected paper not found in database.') {
         alert('Please generate a citation first by selecting a paper and format.');
         return;
     }
     
-    // Try clipboard API for modern browsers
     if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(text).then(() => {
             showCopySuccess();
         }).catch(() => {
-            // If clipboard API fails, just select the text
             selectTextAndPrompt(output);
         });
     } else {
-        // For older browsers or non-secure contexts, just select the text
         selectTextAndPrompt(output);
     }
 }
 
-// Select text and show helpful message
 function selectTextAndPrompt(element) {
-    // Select all text in the citation output
     if (window.getSelection) {
         const selection = window.getSelection();
         const range = document.createRange();
@@ -867,85 +1071,29 @@ function selectTextAndPrompt(element) {
         selection.removeAllRanges();
         selection.addRange(range);
     }
-    
-    // Show a more helpful message
     const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
     const copyKey = isMac ? 'Cmd+C' : 'Ctrl+C';
-    
     showCopyMessage(`Citation selected! Press ${copyKey} to copy.`);
 }
 
-// Show copy success or instruction message
 function showCopySuccess() {
     showCopyMessage('✅ Copied to clipboard!');
 }
 
-// Generic message display function
 function showCopyMessage(message) {
-    const btn = document.querySelector('button[onclick="copyCitation()"]') || 
-               document.querySelector('.btn[onclick="copyCitation()"]');
-    
+    const btn = document.querySelector('button[onclick="copyCitation()"]');
     if (btn) {
         const originalText = btn.innerHTML;
         btn.innerHTML = message;
         btn.style.backgroundColor = 'var(--success-color)';
-        
         setTimeout(() => {
             btn.innerHTML = originalText;
-            btn.style.backgroundColor = 'var(--primary-color)';
-        }, 3000); // Longer timeout for instruction messages
+            btn.style.backgroundColor = '';
+        }, 3000);
     }
 }
 
-// Fallback copy method for older browsers
-function fallbackCopy(text) {
-    const textArea = document.createElement('textarea');
-    textArea.value = text;
-    textArea.style.position = 'fixed';
-    textArea.style.top = '0';
-    textArea.style.left = '0';
-    textArea.style.width = '2em';
-    textArea.style.height = '2em';
-    textArea.style.padding = '0';
-    textArea.style.border = 'none';
-    textArea.style.outline = 'none';
-    textArea.style.boxShadow = 'none';
-    textArea.style.background = 'transparent';
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-    
-    try {
-        const successful = document.execCommand('copy');
-        if (successful) {
-            showCopySuccess();
-        } else {
-            alert('Unable to copy citation. Please select and copy manually.');
-        }
-    } catch (err) {
-        console.error('Fallback copy failed:', err);
-        alert('Unable to copy citation. Please select and copy manually.');
-    }
-    
-    document.body.removeChild(textArea);
-}
-
-// Show copy success feedback
-function showCopySuccess() {
-    const btn = event.target;
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '✅ Copied!';
-    btn.style.background = 'var(--success-color)';
-    
-    setTimeout(() => {
-        btn.innerHTML = originalText;
-        btn.style.background = 'var(--primary-color)';
-    }, 2000);
-}
-
-// Initialize citation tool when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    // Event listeners for citation tool
     const paperSelect = document.getElementById('paper-select');
     const formatSelect = document.getElementById('format-select');
     
@@ -954,49 +1102,16 @@ document.addEventListener('DOMContentLoaded', function() {
         formatSelect.addEventListener('change', generateCitation);
     }
     
-    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });
     });
 });
-
-// Debug function to test citation tool
-function testCitationTool() {
-    console.log('Citation data loaded:', Object.keys(citations).length, 'papers');
-    console.log('Available papers:', Object.keys(citations));
-    
-    // Test each citation format
-    const testPaper = 'optimal-transfer';
-    const formats = ['apa', 'mla', 'chicago', 'bibtex'];
-    
-    formats.forEach(format => {
-        const data = citations[testPaper];
-        console.log(`${format.toUpperCase()} test:`, generateTestCitation(data, format));
-    });
-}
-
-// Helper function for testing
-function generateTestCitation(data, format) {
-    switch (format) {
-        case 'apa':
-            return `${data.authors} (${data.year}). ${data.title}. Better To Best Research Hub. ${data.url}`;
-        case 'mla':
-            return `${data.authors.replace(', &', ', and')}. "${data.title}." Better To Best Research Hub, ${data.year}, ${data.url}.`;
-        case 'chicago':
-            return `${data.authors}. "${data.title}." Better To Best Research Hub. ${data.year}. ${data.url}.`;
-        case 'bibtex':
-            return `@article{optimal_transfer_${data.year},\n  title={${data.title}},\n  author={${data.authors.replace(', &', ' and')}},\n  journal={Better To Best Research Hub},\n  year={${data.year}},\n  url={${data.url}},\n  license={CC BY 4.0}\n}`;
-    }
-}
     </script>
 </body>
 </html>
