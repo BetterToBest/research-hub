@@ -11,7 +11,20 @@
     "email": "Duke.T.James@gmail.com",
     "url": "https://authordukejohnson.bsky.social"
   },
-  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "authorship": {
+    "primary_author": {
+      "name": "Duke Johnson",
+      "role": "Principal Investigator",
+      "contribution": "Conceptual synthesis, project leadership, and final authorship responsibility"
+    },
+    "co_author": {
+      "name": "Claude (Anthropic)",
+      "role": "Co-author",
+      "contribution": "Formalization, verification, drafting support, and documentation assistance"
+    },
+    "attribution_note": "Claude is credited as a co-author because the work relied on substantive AI-assisted intellectual development and drafting support."
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/"
   "dateModified": "2025-09-21",
   "keywords": [
     "Creative Currency Octaves",
