@@ -5,53 +5,200 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Executive Summary | Better To Best Research Hub</title>
-  <meta name="description" content="Executive summary of the Better To Best Research Hub, including Creative Currency Octaves (CCO), Public Trust Foundations (PTF), and civic-economic frameworks." />
+  <meta name="description" content="Executive summary and central navigation hub for the Better To Best Research Hub — featuring Creative Currency Octaves (CCO), Public Trust Housing (PTH), Public Trust Foundations (PTF), Social Zone Harmonization (SZH), and the Citizens Internet Portal (CIP): a comprehensive Compassionist framework for poverty elimination and democratic governance." />
+  <meta name="keywords" content="Compassionism, Creative Currency Octaves, CCO, Public Trust Housing, PTH, Public Trust Foundations, PTF, Social Zone Harmonization, SZH, Citizens Internet Portal, CIP, dual currency, basic income, post-scarcity economics, compassionate meritocracy, poverty elimination, democratic governance, Duke Johnson" />
 
   <link rel="canonical" href="https://bettertobest.github.io/research-hub/research-summary.html" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Better To Best Research Hub: Executive Summary" />
-  <meta property="og:description" content="Overview of the Better To Best Research Hub and its economic and civic frameworks." />
+  <meta property="og:title" content="Better To Best Research Hub: Executive Summary & Research Index" />
+  <meta property="og:description" content="Central hub for the Compassionism framework — 14 peer-reviewable papers on Creative Currency Octaves, Public Trust Housing, democratic governance, and post-scarcity economics." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://bettertobest.github.io/research-hub/research-summary.html" />
 
   <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
     body {
       font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      line-height: 1.6;
+      line-height: 1.7;
       margin: 0;
       padding: 0;
       background: #ffffff;
       color: #111;
     }
+
     main {
-      max-width: 800px;
+      max-width: 860px;
       margin: auto;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1.25rem 4rem;
     }
-    h1, h2, h3 {
-      line-height: 1.25;
-      margin-top: 2rem;
-    }
-    nav {
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-    nav a {
+
+    /* Nav */
+    nav.breadcrumb {
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
       color: #555;
-      text-decoration: none;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    a {
-      color: #0a58ca;
-    }
-    section {
+    nav.breadcrumb a { color: #555; text-decoration: none; }
+    nav.breadcrumb a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid #111;
+      padding-bottom: 1.5rem;
       margin-bottom: 2rem;
     }
-    ul {
+    header h1 {
+      font-size: 1.9rem;
+      margin: 0 0 0.75rem;
+      line-height: 1.2;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.3rem 1.5rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .meta-grid span { font-weight: 600; color: #111; }
+
+    /* TOC */
+    .toc {
+      background: #f7f7f7;
+      border-left: 4px solid #111;
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    .toc h2 {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0 0 0.75rem;
+      color: #555;
+    }
+    .toc ol {
+      margin: 0;
       padding-left: 1.2rem;
+    }
+    .toc li { margin-bottom: 0.25rem; font-size: 0.92rem; }
+    .toc a { color: #0a58ca; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+
+    /* Sections */
+    section { margin-bottom: 3rem; }
+
+    h2 {
+      font-size: 1.35rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.4rem;
+      margin-top: 2.5rem;
+    }
+    h3 { font-size: 1.1rem; margin-top: 1.75rem; color: #111; }
+
+    a { color: #0a58ca; }
+    a:hover { text-decoration: underline; }
+
+    ul, ol { padding-left: 1.3rem; }
+    li { margin-bottom: 0.35rem; }
+
+    /* Paper cards */
+    .paper-grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .paper-card {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      transition: border-color 0.15s;
+    }
+    .paper-card:hover { border-color: #0a58ca; }
+    .paper-card h4 {
+      margin: 0 0 0.4rem;
+      font-size: 0.95rem;
+      line-height: 1.35;
+    }
+    .paper-card h4 a { text-decoration: none; color: #0a58ca; }
+    .paper-card h4 a:hover { text-decoration: underline; }
+    .paper-card p {
+      margin: 0 0 0.5rem;
+      font-size: 0.875rem;
+      color: #444;
+      line-height: 1.5;
+    }
+    .paper-links { font-size: 0.8rem; }
+    .paper-links a { color: #555; margin-right: 0.75rem; }
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: #f0f0f0;
+      color: #555;
+      padding: 0.1rem 0.45rem;
+      border-radius: 3px;
+      margin-bottom: 0.4rem;
+    }
+
+    /* Wiki links */
+    .wiki-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 0.65rem;
+      margin-top: 0.75rem;
+    }
+    .wiki-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 0.65rem 0.9rem;
+      font-size: 0.9rem;
+    }
+    .wiki-item a { text-decoration: none; font-weight: 600; color: #0a58ca; }
+    .wiki-item a:hover { text-decoration: underline; }
+    .wiki-item p { margin: 0.2rem 0 0; font-size: 0.8rem; color: #555; }
+
+    /* Architecture overview table */
+    .arch-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin-top: 1rem;
+    }
+    .arch-table th {
+      background: #111;
+      color: #fff;
+      padding: 0.55rem 0.75rem;
+      text-align: left;
+    }
+    .arch-table td {
+      padding: 0.55rem 0.75rem;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    .arch-table tr:hover td { background: #fafafa; }
+
+    /* Callout */
+    .callout {
+      background: #f0f4ff;
+      border-left: 4px solid #0a58ca;
+      padding: 1rem 1.25rem;
+      border-radius: 0 5px 5px 0;
+      margin: 1.5rem 0;
+      font-size: 0.93rem;
+    }
+    .callout strong { color: #0a3d9c; }
+
+    footer-note {
+      display: block;
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 3rem;
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
     }
   </style>
 
@@ -60,131 +207,438 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "Better To Best Research Hub: Executive Summary",
+    "headline": "Better To Best Research Hub: Executive Summary & Research Index",
+    "description": "Central hub and executive overview for the Compassionism framework — 14 peer-reviewable open-access papers covering Creative Currency Octaves (CCO), Public Trust Housing (PTH), Public Trust Foundations (PTF), Social Zone Harmonization (SZH), and the Citizens Internet Portal (CIP).",
     "author": {
       "@type": "Person",
       "name": "Duke Johnson"
     },
     "datePublished": "2026-02",
+    "dateModified": "2026-04",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "url": "https://bettertobest.github.io/research-hub/research-summary.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Better To Best Research Hub",
+      "url": "https://bettertobest.github.io/research-hub/"
+    },
     "about": [
       "Creative Currency Octaves",
       "Public Trust Foundations",
-      "Economic Systems",
-      "Civic Infrastructure"
-    ]
+      "Public Trust Housing",
+      "Social Zone Harmonization",
+      "Citizens Internet Portal",
+      "Compassionate Meritocracy",
+      "Post-Scarcity Economics",
+      "Poverty Elimination",
+      "Democratic Governance",
+      "Dual Currency Systems"
+    ],
+    "keywords": "Compassionism, CCO, PTH, PTF, SZH, CIP, dual currency, basic units, post-scarcity, poverty elimination, democratic governance, Duke Johnson"
   }
   </script>
 </head>
 
 <body>
+<main id="main-content">
 
-<main>
-
-  <!-- Breadcrumb -->
-  <nav aria-label="Breadcrumb">
-    <a href="/research-hub/">Home</a> / 
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/research-hub/">Home</a> /
     <span>Executive Summary</span>
   </nav>
 
   <header>
-    <h1>Better To Best Research Hub: Executive Summary</h1>
-    <p><strong>Author:</strong> Duke Johnson</p>
-    <p><strong>License:</strong> 
-      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
-    </p>
-    <p><strong>Last Updated:</strong> February 2026</p>
-    <p><strong>Project URL:</strong> 
-      <a href="https://bettertobest.github.io/research-hub/" target="_blank">
-        https://bettertobest.github.io/research-hub/
-      </a>
-    </p>
+    <h1>Better To Best Research Hub: Executive Summary &amp; Research Index</h1>
+    <div class="meta-grid">
+      <div><span>Author:</span> Duke Johnson</div>
+      <div><span>License:</span> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
+      <div><span>Last Updated:</span> April 2026</div>
+      <div><span>Papers:</span> 14 peer-reviewable, open-access</div>
+      <div><span>Project:</span> <a href="https://bettertobest.github.io/research-hub/">bettertobest.github.io/research-hub</a></div>
+      <div><span>Contact:</span> <a href="mailto:BetterToBestResearch@gmail.com">BetterToBestResearch@gmail.com</a></div>
+    </div>
   </header>
 
+  <!-- Table of Contents -->
+  <nav class="toc" aria-label="Page contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Project Overview</a></li>
+      <li><a href="#architectures">The Five Core Architectures</a></li>
+      <li><a href="#papers-economic">Research Papers: Economic Framework</a></li>
+      <li><a href="#papers-governance">Research Papers: Digital Governance &amp; Policy</a></li>
+      <li><a href="#papers-implementation">Research Papers: Implementation &amp; Applications</a></li>
+      <li><a href="#papers-financing">Research Papers: Financing &amp; Scaling</a></li>
+      <li><a href="#wiki">Wiki &amp; Documentation</a></li>
+      <li><a href="#implementation">Implementation Resources</a></li>
+      <li><a href="#collaboration">Collaboration &amp; Peer Review</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. Overview -->
   <section id="overview">
     <h2>1. Project Overview</h2>
     <p>
-      The <strong>Better To Best Research Hub</strong> is an open-access initiative comprising 
-      14 peer-reviewable papers. The research focuses on the structural elimination of poverty 
-      through integrated economic and civic architectures. It proposes a 
-      <strong>"Compassionate Meritocracy"</strong> that secures basic human needs while 
-      incentivizing high-value productivity and community contribution.
+      The <strong>Better To Best Research Hub</strong> is an open-access initiative comprising 14 peer-reviewable working papers. The research addresses a foundational challenge of the automation age: how to structurally eliminate poverty without undermining market dynamism or creating dependency. The answer proposed is a <strong>Compassionate Meritocracy</strong> — a system that guarantees basic human needs as a floor, then rewards creativity, productivity, and community contribution above that floor without upper limits.
     </p>
+    <p>
+      The framework is composed of five integrated architectures that operate as a single coordinated system: a dual-currency layer (<a href="/research-hub/cco-ptf-integrated-framework.html">Creative Currency Octaves</a>), a collective asset layer (<a href="/research-hub/democratic-governance-pth.html">Public Trust Housing</a> and <a href="/research-hub/cco-ptf-integrated-framework.html">Public Trust Foundations</a>), a spatial planning layer (<a href="/research-hub/integrated-digital-governance.html">Social Zone Harmonization</a>), and a democratic governance layer (<a href="/research-hub/citizens-internet-portal.html">Citizens Internet Portal</a>).
+    </p>
+
+    <div class="callout">
+      <strong>The core thesis:</strong> poverty is not a moral failure but a systems failure — one that coordinated economic and civic infrastructure can resolve without requiring authoritarian control, unconditional redistribution, or the dismantling of private markets.
+    </div>
   </section>
 
-  <section id="economic-architectures">
-    <h2>2. Core Economic Architectures</h2>
+  <!-- 2. Architectures -->
+  <section id="architectures">
+    <h2>2. The Five Core Architectures</h2>
+    <p>Each architecture targets a specific layer of economic and civic life. Together, they form a self-reinforcing system that is more stable than any single component.</p>
+
+    <table class="arch-table" aria-label="Five core architectures overview">
+      <thead>
+        <tr>
+          <th>Architecture</th>
+          <th>Layer</th>
+          <th>Core Function</th>
+          <th>Key Paper</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Creative Currency Octaves (CCO)</strong></td>
+          <td>Economic</td>
+          <td>Dual-currency system generating value signals and circulation incentives through opt-in basic units and a 1x–9x conversion multiplier</td>
+          <td><a href="/research-hub/optimal-transfer-design.html">Optimal Transfer Design</a></td>
+        </tr>
+        <tr>
+          <td><strong>Public Trust Foundations (PTF)</strong></td>
+          <td>Asset</td>
+          <td>Not-for-profit community businesses providing foundational goods — grocers, utilities, childcare — that accept basic units and build collective wealth</td>
+          <td><a href="/research-hub/cco-ptf-integrated-framework.html">CCO-PTF Integrated Framework</a></td>
+        </tr>
+        <tr>
+          <td><strong>Public Trust Housing (PTH)</strong></td>
+          <td>Asset</td>
+          <td>Community-owned housing with democratic resident governance, collective equity accounts, and an "Acre Equity" wealth-building mechanism</td>
+          <td><a href="/research-hub/us-real-estate-transformation.html">US Real Estate Transformation</a></td>
+        </tr>
+        <tr>
+          <td><strong>Social Zone Harmonization (SZH)</strong></td>
+          <td>Spatial</td>
+          <td>Regional self-organization allowing communities to optimize infrastructure and regulation for specific lifestyle needs while maintaining democratic coordination</td>
+          <td><a href="/research-hub/integrated-digital-governance.html">Integrated Digital Governance</a></td>
+        </tr>
+        <tr>
+          <td><strong>Citizens Internet Portal (CIP)</strong></td>
+          <td>Democratic</td>
+          <td>Privacy-first digital infrastructure managing CCO currency operations, PTH/PTF democratic voting, public surveys, and transparent resource allocation</td>
+          <td><a href="/research-hub/citizens-internet-portal.html">Citizens Internet Portal</a></td>
+        </tr>
+      </tbody>
+    </table>
 
     <h3>Creative Currency Octaves (CCO)</h3>
     <p>
-      CCO is a dual-currency system designed for post-scarcity and automation-driven economies.
+      CCO is a <a href="/research-hub/dual-currency-inflation.html">dual-currency system</a> designed for post-scarcity and automation-driven economies. Citizens may opt in to receive <strong>Basic Units (BU)</strong> — a currency pegged 1:1 to primary currency but restricted to essential expenditures (food, housing, utilities) and set to expire at the end of each monthly distribution cycle. This prevents hoarding while ensuring circulation toward genuine need.
     </p>
     <ul>
-      <li><strong>Basic Units (BU):</strong> An opt-in currency for essentials (food, housing, utilities) that expires monthly to prevent hoarding and ensure circulation.</li>
-      <li><strong>Primary Currency:</strong> Used for discretionary spending and long-term wealth.</li>
-      <li><strong>Conversion Multipliers:</strong> Businesses and creators can convert BU into primary currency at rates ranging from <strong>1x to 9x</strong>, depending on their "Octave Level."</li>
-      <li><strong>The Phi-Rate:</strong> A qualitative multiplier (~1.618x) applied to work recognized for exceptional beauty, utility, or social harmony.</li>
+      <li><strong>Conversion Multipliers (1x–9x):</strong> Businesses and creators who accept basic units can convert them to primary currency at elevated rates, scaled by their <a href="/research-hub/optimal-transfer-design.html">Octave Level</a> — a transparent, merit-based tier system that doubles conversion capacity at each level.</li>
+      <li><strong>The Phi-Rate (Φ ≈ 1.618x):</strong> A qualitative multiplier applied on top of the base rate for work recognized as exhibiting exceptional beauty, utility, or social harmony — making <a href="/research-hub/cultural-value-integration.html">cultural value a first-class economic signal</a>.</li>
+      <li><strong>Creative Collectives:</strong> Opt-in networks of artists, innovators, and contributors who manage peer-reviewed conversion processes and advance collectively through octave tiers.</li>
     </ul>
 
-    <h3>Public Trust Foundations (PTF) & Housing (PTH)</h3>
+    <h3>Public Trust Housing (PTH) &amp; Public Trust Foundations (PTF)</h3>
     <p>
-      These entities provide the physical and commercial stability required for the CCO system to function.
+      These <a href="/research-hub/cco-ptf-integrated-framework.html">collective asset institutions</a> provide the physical and commercial stability required for CCO to function. PTH properties are held in democratic trust, with residents building individual equity accounts that grow through participation. PTF businesses — grocers, counter-service restaurants, utility providers — operate not-for-profit, accept basic units, and reduce collective overhead by an estimated 40–60%.
     </p>
-    <ul>
-      <li><strong>Public Trust Foundations:</strong> Not-for-profit community businesses that provide foundational goods.</li>
-      <li><strong>Public Trust Housing:</strong> A model for community-owned housing where residents hold collective equity and exercise democratic control.</li>
-    </ul>
-  </section>
-
-  <section id="governance">
-    <h2>3. Civic & Governance Frameworks</h2>
-
-    <h3>Citizens Internet Portal (CIP)</h3>
-    <p>The digital infrastructure for the entire ecosystem. It handles:</p>
-    <ul>
-      <li>Secure management of CCO basic units and primary currency.</li>
-      <li>Transparent democratic voting for PTH/PTF management.</li>
-      <li>Direct communication between citizens and regional planners.</li>
-    </ul>
+    <p>
+      PTH can be financed <a href="/research-hub/pth-independent-financing.html">independently through grassroots cooperation</a> or <a href="/research-hub/pth-government-integration.html">scaled through public investment</a>, with modeling showing 50% market penetration achievable within 5–19 years depending on investment scenario.
+    </p>
 
     <h3>Social Zone Harmonization (SZH)</h3>
     <p>
-      A framework for regional organization that allows communities to self-sort based on lifestyle preferences 
-      (e.g., family-focused, wellness-focused, or high-creativity zones) while maintaining overarching democratic coordination.
+      SZH provides a <a href="/research-hub/integrated-digital-governance.html">spatial governance framework</a> for organizing communities around shared values — family-focused zones, artist and maker districts, recovery and wellness zones, and more — while maintaining overarching democratic coordination and preventing segregation by fiat.
+    </p>
+
+    <h3>Citizens Internet Portal (CIP)</h3>
+    <p>
+      The <a href="/research-hub/citizens-internet-portal.html">CIP</a> is the democratic nervous system of the entire framework. It handles CCO currency operations and conversion management, PTH/PTF governance and voting (including quadratic voting and liquid democracy mechanisms), public policy surveys, and transparent budgeting — all on community-controlled infrastructure designed around privacy and resilience rather than data extraction.
     </p>
   </section>
 
-  <section id="papers">
-    <h2>4. Key Research Papers</h2>
-    <p>The hub includes specialized analysis on:</p>
-    <ol>
-      <li><strong>Optimal Transfer Design:</strong> Mathematics of the 1x–9x multiplier system.</li>
-      <li><strong>Dual-Currency Inflation:</strong> Stability analysis of expiring vs. non-expiring currency.</li>
-      <li><strong>Simulation Analysis:</strong> Monte Carlo and agent-based modeling of the CCO-PTF framework.</li>
-      <li><strong>Real Estate Transformation:</strong> Strategies for transitioning to Public Trust Housing.</li>
-    </ol>
+  <!-- 3. Papers: Economic Framework -->
+  <section id="papers-economic">
+    <h2>3. Research Papers: Economic Framework</h2>
+    <p>Core research on Creative Currency Octaves and dual-currency system design for sustainable economic transformation.</p>
+
+    <div class="paper-grid">
+      <div class="paper-card">
+        <div class="tag">CCO · Mechanism Design</div>
+        <h4><a href="/research-hub/optimal-transfer-design.html">Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare</a></h4>
+        <p>Introduces the dual-tier incentive system combining octave-based capacity limits and personal multiplier rates (1x to 14x+). Resolves the classical equity-efficiency tradeoff by creating productive conversion opportunities rather than passive transfers.</p>
+        <div class="paper-links">
+          <a href="/research-hub/optimal-transfer-design.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/optimal-transfer-design.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">CCO · Monetary Stability</div>
+        <h4><a href="/research-hub/dual-currency-inflation.html">Dual Currency Systems and Inflation: CCO's Price Stability Mechanisms</a></h4>
+        <p>Examines inflation dynamics in dual-currency CCO systems, demonstrating stable equilibrium through sectoral restrictions and conversion limits. Provides mathematical models for preventing monetary disruption in expiring vs. non-expiring currency environments.</p>
+        <div class="paper-links">
+          <a href="/research-hub/dual-currency-inflation.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/dual-currency-inflation.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">CCO · Simulation</div>
+        <h4><a href="/research-hub/economic-modeling-simulation.html">Economic Modeling and Simulation Analysis of Creative Currency Octaves</a></h4>
+        <p>Comprehensive simulation modeling of CCO system dynamics. Agent-based models demonstrate stability across varied economic scenarios and implementation pathways, with Monte Carlo analysis of key parameter sensitivities.</p>
+        <div class="paper-links">
+          <a href="/research-hub/economic-modeling-simulation.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/economic-modeling-simulation.pdf">PDF</a>
+          <a href="/research-hub/cco-ptf-simulation-replication.html">Replication Package</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">CCO · PTF · Integrated Framework</div>
+        <h4><a href="/research-hub/cco-ptf-integrated-framework.html">Creative Currency Octaves and Public Trust Foundations: Integrated Framework</a></h4>
+        <p>Establishes the theoretical foundation for the combined CCO-PTF system, demonstrating synergistic effects between currency innovation and collective ownership. PTF venues reduce collective overhead 40–60%; PTF workers receive conversion bonuses that reinforce essential-market participation.</p>
+        <div class="paper-links">
+          <a href="/research-hub/cco-ptf-integrated-framework.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/cco-ptf-integrated-framework.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">CCO · Cultural Economics</div>
+        <h4><a href="/research-hub/cultural-value-integration.html">Cultural Value Integration in Economic Systems: The CCO Framework</a></h4>
+        <p>Presents CCO as the first currency system explicitly backed by "publicly-endowed art and creation," with the Phi-rate (1.618x) as a formal mechanism for recognizing beauty and social harmony as productive economic contributions.</p>
+        <div class="paper-links">
+          <a href="/research-hub/cultural-value-integration.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/cultural-value-integration.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- 4. Papers: Digital Governance & Policy -->
+  <section id="papers-governance">
+    <h2>4. Research Papers: Digital Governance &amp; Policy Integration</h2>
+    <p>Research on the Citizens Internet Portal, coordinated system deployment, and policy integration across CCO-PTH-PTF-SZH.</p>
+
+    <div class="paper-grid">
+      <div class="paper-card">
+        <div class="tag">CIP · SZH · Full Integration</div>
+        <h4><a href="/research-hub/integrated-digital-governance.html">Integrated Digital Governance and Economic Innovation: CIP-CCO-PTH-SZH Framework</a></h4>
+        <p>Demonstrates how coordinated deployment of all five systems achieves significant improvements in economic stability and social cohesion through unified digital platforms and democratic participation infrastructure.</p>
+        <div class="paper-links">
+          <a href="/research-hub/integrated-digital-governance.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/integrated-digital-governance.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">CIP · Citizens Internet Portal</div>
+        <h4><a href="/research-hub/citizens-internet-portal.html">Citizens Internet Portal: Democratic Infrastructure for the Compassionism Framework</a></h4>
+        <p>Technical and governance specification for the CIP — the digital layer managing CCO currency operations, community voting, transparent budgeting, and policy participation across the full Compassionism framework.</p>
+        <div class="paper-links">
+          <a href="/research-hub/citizens-internet-portal.html">HTML →</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">PTH · Democratic Governance</div>
+        <h4><a href="/research-hub/democratic-governance-pth.html">Democratic Governance in Economic Systems: Lessons from Public Trust Housing</a></h4>
+        <p>Examines mechanisms for preventing power concentration in collective economic systems — including quadratic voting, liquid democracy, and lessons from successful cooperatives worldwide — applied to PTH governance design.</p>
+        <div class="paper-links">
+          <a href="/research-hub/democratic-governance-pth.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/democratic-governance-pth.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">Policy Reform · Drug Policy</div>
+        <h4><a href="/research-hub/drug-policy-reform.html">Drug Policy Reform and Integrated Community Support Systems</a></h4>
+        <p>Cost-benefit analysis revealing $1.5 trillion in prohibition costs versus $847 billion in potential savings over 25 years. Presents a comprehensive drug policy reform approach integrated with CCO-PTH-CIP-SZH community support systems.</p>
+        <div class="paper-links">
+          <a href="/research-hub/drug-policy-reform.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/drug-policy-reform.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">Risk Management</div>
+        <h4><a href="/research-hub/risk-mitigation-framework.html">Risk Mitigation Framework for CCO-PTH-CIP-SZH Implementation</a></h4>
+        <p>Comprehensive analysis of financial, regulatory, social, and operational risks in integrated systems implementation, with evidence-based mitigation strategies and failure-mode analysis.</p>
+        <div class="paper-links">
+          <a href="/research-hub/risk-mitigation-framework.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/risk-mitigation-framework.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Papers: Implementation -->
+  <section id="papers-implementation">
+    <h2>5. Research Papers: Implementation &amp; Applications</h2>
+    <p>Practical frameworks for real-world deployment of CCO and Public Trust Housing across specific sectors and geographies.</p>
+
+    <div class="paper-grid">
+      <div class="paper-card">
+        <div class="tag">PTH · Real Estate</div>
+        <h4><a href="/research-hub/us-real-estate-transformation.html">Transforming the US Real Estate Market Through Public Trust Housing</a></h4>
+        <p>Introduces the "Acre Equity" collective wealth-building mechanism. Modeling shows PTH achieving 15–20% market penetration within a decade, with average household wealth accumulation of $70,000 — without displacing private homeownership.</p>
+        <div class="paper-links">
+          <a href="/research-hub/us-real-estate-transformation.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/us-real-estate-transformation.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">Development Economics</div>
+        <h4><a href="/research-hub/community-monetary-development.html">Community-Based Monetary Innovation for Development</a></h4>
+        <p>Development economics framework targeting poverty reduction below 5% within 15 years, with a superior ROI of $1,847 per beneficiary compared to traditional foreign aid models — applicable across emerging and transitional economies.</p>
+        <div class="paper-links">
+          <a href="/research-hub/community-monetary-development.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/community-monetary-development.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">Corporate Transformation</div>
+        <h4><a href="/research-hub/corporate-transformation.html">Corporate Transformation Within the Compassionism Framework</a></h4>
+        <p>Explores how existing corporate structures can integrate with and transition toward Compassionism-compatible models, including PTF participation, CCO acceptance, and democratic governance adoption.</p>
+        <div class="paper-links">
+          <a href="/research-hub/corporate-transformation.html">HTML →</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">Universal Implementation</div>
+        <h4><a href="/research-hub/universal-implementation-framework.html">Universal Implementation Framework for Human Thriving: CCO-PTF-CIP-SZH</a></h4>
+        <p>Comprehensive guide for deploying all five systems together across diverse national contexts, with technology specifications, legal frameworks, and phased scaling strategies for achieving post-scarcity economic conditions.</p>
+        <div class="paper-links">
+          <a href="/research-hub/universal-implementation-framework.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/universal-implementation-framework.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Papers: Financing -->
+  <section id="papers-financing">
+    <h2>6. Research Papers: Financing &amp; Scaling Strategies</h2>
+    <p>Financial mechanisms and scaling pathways for systematic PTH deployment — from community grassroots to government investment.</p>
+
+    <div class="paper-grid">
+      <div class="paper-card">
+        <div class="tag">PTH · Grassroots Finance</div>
+        <h4><a href="/research-hub/pth-independent-financing.html">PTH Independent Financing Models: From Grassroots Cooperation to Philanthropic Scale</a></h4>
+        <p>Examines government-independent financing for PTH, including the "avalanche method" for collective mortgage payoff — achieving $85,000 in interest savings — with sustainability demonstrated at just 30–40 participating households.</p>
+        <div class="paper-links">
+          <a href="/research-hub/pth-independent-financing.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/pth-independent-financing.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="tag">PTH · Public Investment</div>
+        <h4><a href="/research-hub/pth-government-integration.html">PTH Government Integration: Scaling Through Public Investment</a></h4>
+        <p>Analyzes government investment scenarios from pilot programs ($50B) to transformational scale ($500B), with financial architecture demonstrating 50% market penetration achievable within 5–19 years depending on political and funding context.</p>
+        <div class="paper-links">
+          <a href="/research-hub/pth-government-integration.html">HTML →</a>
+          <a href="/research-hub/papers/pdfs/pth-government-integration.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Wiki & Documentation -->
+  <section id="wiki">
+    <h2>7. Wiki &amp; Documentation</h2>
+    <p>
+      The <a href="/research-hub/wiki/">Better To Best Wiki</a> provides comprehensive reference documentation, definitions, and tools for understanding, citing, and implementing the Compassionism framework.
+    </p>
+
+    <div class="wiki-list">
+      <div class="wiki-item">
+        <a href="/research-hub/wiki/">Wiki Homepage</a>
+        <p>Complete documentation hub and entry point</p>
+      </div>
+      <div class="wiki-item">
+        <a href="/research-hub/wiki/glossary.html">Research Glossary</a>
+        <p>Comprehensive definitions of all key terms — CCO, BU, Phi-rate, octave levels, and more</p>
+      </div>
+      <div class="wiki-item">
+        <a href="/research-hub/wiki/faq.html">Frequently Asked Questions</a>
+        <p>Common questions about implementation, theory, and economic validity</p>
+      </div>
+      <div class="wiki-item">
+        <a href="/research-hub/wiki/implementation-roadmap.html">Implementation Roadmap</a>
+        <p>Phased general roadmap for policy and community-level deployment</p>
+      </div>
+      <div class="wiki-item">
+        <a href="/research-hub/wiki/international-adaptation-guide.html">International Adaptation Guide</a>
+        <p>Country-specific guidance for adapting the framework to diverse legal and cultural contexts</p>
+      </div>
+      <div class="wiki-item">
+        <a href="/research-hub/cco-ptf-simulation-replication.html">Simulation Replication Package</a>
+        <p>Complete code, data, and documentation for replicating and extending the Monte Carlo and agent-based models</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Implementation Resources -->
+  <section id="implementation">
+    <h2>8. Implementation Resources</h2>
+    <ul>
+      <li><a href="https://bettertobest.github.io/compassionate-meritocracy-plan/" target="_blank">USA Compassionism Rapid Rollout Plan</a> — accelerated national implementation strategy</li>
+      <li><a href="/research-hub/wiki/implementation-roadmap.html">General Implementation Roadmap</a> — phased framework for any jurisdiction</li>
+      <li><a href="/research-hub/wiki/international-adaptation-guide.html">International Adaptation Guide</a> — nation-by-nation customization strategies</li>
+      <li><a href="/research-hub/universal-implementation-framework.html">Universal Implementation Framework</a> — comprehensive multi-system deployment guide</li>
+      <li><a href="/research-hub/referendum.html">Citizens' Referendum for Systemic Governance Reform</a> — democratic mandate framework</li>
+      <li><a href="https://sites.google.com/view/normativeeconomicevaluation/home" target="_blank">Economic System Comparison Research</a> — falsifiable methodology benchmarking Compassionism against competing systems</li>
+    </ul>
+  </section>
+
+  <!-- 9. Collaboration -->
   <section id="collaboration">
-    <h2>5. Collaboration & Peer Review</h2>
+    <h2>9. Collaboration &amp; Peer Review</h2>
     <p>
-      This research is released under <strong>CC BY 4.0</strong> to encourage academic scrutiny and 
-      pilot-program development.
+      All research is released under <strong>CC BY 4.0</strong> to encourage academic scrutiny, replication, and pilot-program development. The initiative actively seeks collaborators across several disciplines.
     </p>
 
-    <p><strong>Principal Investigator:</strong> Duke Johnson</p>
+    <p><strong>Principal Investigator:</strong> Duke Johnson<br>
+    <strong>Contact:</strong> <a href="mailto:BetterToBestResearch@gmail.com">BetterToBestResearch@gmail.com</a> · <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a></p>
+
+    <p><strong>Currently Seeking:</strong></p>
+    <ul>
+      <li>Academic economists to validate simulation models and develop improved methodologies</li>
+      <li>Policy researchers to review theoretical foundations and identify implementation gaps</li>
+      <li>Government agencies and municipalities interested in pilot feasibility studies</li>
+      <li>Communities willing to explore early-stage implementation of PTH or CCO components</li>
+      <li>Open-source developers to build Citizens Internet Portal infrastructure</li>
+      <li>Grant writers to identify and secure philanthropic and institutional funding</li>
+    </ul>
+
     <p>
-      <strong>Contact:</strong> 
-      <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a>
-    </p>
-    <p>
-      <strong>Contribution Areas:</strong> Economic validation, software development (CIP), 
-      and pilot feasibility studies.
+      <strong>Support this research:</strong> <a href="https://www.patreon.com/cw/AuthorDukeJohnson" target="_blank">Patreon</a> · 
+      <strong>Full paper index:</strong> <a href="/research-hub/papers/">Research Papers</a> · 
+      <strong>External publications:</strong> <a href="https://independentresearcher.academia.edu/DukeJohnson" target="_blank">Academia.edu</a> · <a href="https://medium.com/@duke.t.james" target="_blank">Medium</a>
     </p>
   </section>
+
+  <footer-note>
+    © 2025–2026 Better To Best Research Hub. All research licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. 
+    Principal Investigator: Duke Johnson. 
+    <a href="/research-hub/">Home</a> · <a href="/research-hub/papers/">All Papers</a> · <a href="/research-hub/wiki/">Wiki</a> · <a href="/research-hub/wiki/glossary.html">Glossary</a>
+  </footer-note>
 
 </main>
-
 </body>
 </html>
