@@ -1,0 +1,169 @@
+Template-Type: ReDIF-Series 1.0
+Name: Better To Best Working Papers
+Handle: RePEc:btb:wpaper
+Maintainer-Name: Duke Johnson
+Maintainer-Email: BetterToBestResearch@gmail.com
+Type: ReDIF-Paper
+Provider-Name: Better To Best Research Hub
+Provider-Homepage: https://bettertobest.github.io/research-hub/
+Description: Working paper series on economic system design, dual-currency systems, governance architecture, and post-scarcity modeling.
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:001
+Title: Optimal Transfer Design in Post-Scarcity Economies: Creative Currency Octaves and Public Trust Foundations as Incentive-Compatible Welfare
+Author-Name: Duke Johnson
+Creation-Date: 2025-07-31
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/optimal-transfer-design.pdf
+File-Format: Application/pdf
+Classification-JEL: D63, H53, E42
+Keywords: dual currency, welfare economics, mechanism design, post-scarcity
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:002
+Title: Dual Currency Systems and Inflation: CCO's Price Stability Mechanisms
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-15
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/dual-currency-inflation.pdf
+File-Format: Application/pdf
+Classification-JEL: E31, E42
+Keywords: inflation, dual currency, monetary stability
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:003
+Title: Economic Modeling and Simulation Analysis of Creative Currency Octaves
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-20
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/economic-modeling-simulation.pdf
+File-Format: Application/pdf
+Classification-JEL: C63, D58
+Keywords: simulation, agent-based modeling, economic systems
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:004
+Title: Creative Currency Octaves and Public Trust Foundations: Integrated Framework
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-25
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/cco-ptf-integrated-framework.pdf
+File-Format: Application/pdf
+Classification-JEL: D47, L31
+Keywords: nonprofit economics, system integration
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:005
+Title: Cultural Value Integration in Economic Systems: The CCO Framework
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-20
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/cultural-value-integration.pdf
+File-Format: Application/pdf
+Classification-JEL: Z1, D63
+Keywords: cultural economics, value systems
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:006
+Title: Integrated Digital Governance and Economic Innovation: CIP-CCO-PTH-SZH Framework
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-28
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/integrated-digital-governance.pdf
+File-Format: Application/pdf
+Classification-JEL: H11, O38
+Keywords: governance, digital systems
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:007
+Title: Citizens Internet Portal: Structural Incorruptibility Through Distributed Democratic Architecture
+Author-Name: Duke Johnson
+Creation-Date: 2025-12-29
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/citizens-internet-portal.pdf
+File-Format: Application/pdf
+Classification-JEL: D72, H11
+Keywords: democracy, digital governance
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:008
+Title: Democratic Governance in Economic Systems: Lessons from Public Trust Housing
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-30
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/democratic-governance-pth.pdf
+File-Format: Application/pdf
+Classification-JEL: D71, R31
+Keywords: governance, housing, cooperatives
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:009
+Title: Drug Policy Reform and Integrated Community Support Systems
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-31
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/drug-policy-reform.pdf
+File-Format: Application/pdf
+Classification-JEL: I18, K42
+Keywords: drug policy, public health
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:010
+Title: Risk Mitigation Framework for CCO-PTH-CIP-SZH Implementation
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-31
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/risk-mitigation-framework.pdf
+File-Format: Application/pdf
+Classification-JEL: D81, G32
+Keywords: risk management, systems design
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:011
+Title: Transforming the US Real Estate Market Through Public Trust Housing
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-25
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/us-real-estate-transformation.pdf
+File-Format: Application/pdf
+Classification-JEL: R31, G21
+Keywords: housing, real estate
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:012
+Title: Community-Based Monetary Innovation for Development
+Author-Name: Duke Johnson
+Creation-Date: 2025-08-18
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/community-monetary-development.pdf
+File-Format: Application/pdf
+Classification-JEL: O15, E42
+Keywords: development economics, monetary innovation
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:013
+Title: Corporate Transformation Under CCO-PTF Integration: Reimagining Work Structure in the Age of AI and Automation
+Author-Name: Duke Johnson
+Creation-Date: 2025-11-22
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/corporate-transformation.pdf
+File-Format: Application/pdf
+Classification-JEL: J24, O33
+Keywords: automation, labor economics
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:014
+Title: Universal Implementation Framework for Human Thriving: CCO-PTF-CIP-SZH
+Author-Name: Duke Johnson
+Creation-Date: 2025-09-11
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/universal-implementation-framework.pdf
+File-Format: Application/pdf
+Classification-JEL: O20, H11
+Keywords: implementation, systems policy
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:015
+Title: PTH Independent Financing Models: From Grassroots Cooperation to Philanthropic Scale
+Author-Name: Duke Johnson
+Creation-Date: 2025-09-05
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/pth-independent-financing.pdf
+File-Format: Application/pdf
+Classification-JEL: G21, R31
+Keywords: financing, housing
+
+Template-Type: ReDIF-Paper 1.0
+Handle: RePEc:btb:wpaper:016
+Title: PTH Government Integration: Scaling Through Public Investment
+Author-Name: Duke Johnson
+Creation-Date: 2025-09-08
+File-URL: https://bettertobest.github.io/research-hub/papers/pdfs/pth-government-integration.pdf
+File-Format: Application/pdf
+Classification-JEL: H54, R31
+Keywords: public investment, housing policy
