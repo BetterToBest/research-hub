@@ -88,9 +88,6 @@ Allow: /
 User-agent: ia_archiver
 Allow: /
 
-User-agent: archive.org_bot
-Allow: /
-
 # --- Global Sitemap & AI Manifest Locations ---
 # These are placed at the bottom for universal visibility
 Sitemap: https://bettertobest.github.io/research-hub/sitemap.xml
