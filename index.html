@@ -220,16 +220,9 @@
             "Welfare System Reform"
           ],
           
-          "subjectOf": {
-            "@type": "WebSite",
-            "@id": "https://bettertobest.github.io/research-hub/#website",
-            "url": "https://bettertobest.github.io/research-hub/",
-            "name": "Better To Best Research Hub",
-            "description": "Open-access research hub for economic and civic innovation",
-            "inLanguage": "en-US",
-            "isAccessibleForFree": true,
-            "license": "https://creativecommons.org/licenses/by/4.0/"
-          },
+                  "subjectOf": {
+                      "@id": "https://bettertobest.github.io/research-hub/#website"
+        },
           
           "publishingPrinciples": {
             "@type": "CreativeWork",
@@ -463,17 +456,17 @@
               "name": "Read Research Papers"
             },
             {
-              "@type": "SearchAction",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://bettertobest.github.io/research-hub/wiki/",
-                "actionPlatform": [
-                  "http://schema.org/DesktopWebPlatform",
-                  "http://schema.org/MobileWebPlatform"
-                ]
-              },
-              "name": "Search Documentation"
-            },
+  "@type": "ViewAction",
+  "target": {
+    "@type": "EntryPoint",
+    "urlTemplate": "https://bettertobest.github.io/research-hub/wiki/",
+    "actionPlatform": [
+      "http://schema.org/DesktopWebPlatform",
+      "http://schema.org/MobileWebPlatform"
+    ]
+  },
+  "name": "Browse Documentation"
+},
             {
               "@type": "CommunicateAction",
               "target": {
@@ -488,6 +481,24 @@
             }
           ]
         },
+        {
+  "@type": "WebSite",
+  "@id": "https://bettertobest.github.io/research-hub/#website",
+  "url": "https://bettertobest.github.io/research-hub/",
+  "name": "Better To Best Research Hub",
+  "description": "Open-access research hub for economic and civic innovation",
+  "inLanguage": "en-US",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://bettertobest.github.io/research-hub/wiki/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+},
         {
           "@type": "WebPage",
           "@id": "https://bettertobest.github.io/research-hub/#webpage",
