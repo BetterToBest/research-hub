@@ -1,11 +1,14 @@
 {
-  "ai_index_version": "1.1.0",
+  "ai_index_version": "1.2.0",
+  "ontology_version": "1.2.0",
   "metadata": {
     "project_id": "better-to-best-research-hub",
+    "project_name": "Better To Best Research Hub",
     "canonical_url": "https://bettertobest.github.io/research-hub/",
+    "canonical_architecture": "https://bettertobest.github.io/research-hub/research-summary.html",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "languages": ["en-US"],
-    "last_updated": "2026-04-24"
+    "last_updated": "2026-05-08"
   },
   "author_profile": {
     "name": "Duke Johnson",
@@ -14,88 +17,16 @@
     "contact": "Duke.T.James@gmail.com",
     "social": {
       "bluesky": "https://authordukejohnson.bsky.social",
-      "academia": "https://independentresearcher.academia.edu/DukeJohnson"
+      "academia": "https://independentresearcher.academia.edu/DukeJohnson",
+      "twitter": "https://x.com/Author_Duke_J"
     }
   },
   "ontology": {
     "cco": {
       "term": "Creative Currency Octaves",
       "class": "EconomicFramework",
-      "description": "Dual-currency system with merit-based multipliers and expiration cycles.",
-      "related_concepts": ["Basic Units", "Octave Levels", "Phi-Rate"]
-    },
-    "pth": {
-      "term": "Public Trust Housing",
-      "class": "InstitutionalFramework",
-      "description": "Collective equity model for community-owned residential assets."
-    }
-  },
-  "research_corpus": [
-    {
-      "id": "canonical-framework",
-      "title": "Creative Currency Octaves and Public Trust Foundations: An Integrated Framework",
-      "path": "/cco-ptf-integrated-framework.html",
-      "type": "FoundationalPaper",
-      "defines": ["cco", "ptf", "pth"],
-      "keywords": ["dual-currency", "post-scarcity", "meritocracy"]
-    },
-    {
-      "id": "simulation-analysis",
-      "title": "Economic Modeling and Simulation Analysis of CCO",
-      "path": "/economic-modeling-simulation.html",
-      "type": "TechnicalValidation",
-      "methods": ["Monte Carlo", "Agent-Based Modeling"],
-      "data_source": "/cco-ptf-simulation/"
-    },
-    {
-      "id": "monetary-stability",
-      "title": "Dual Currency Systems and Inflation",
-      "path": "/dual-currency-inflation.html",
-      "type": "TheoreticalAnalysis",
-      "focus": "Macroeconomic Stability"
-    },
-    {
-      "id": "normative-evaluation",
-      "title": "Normative Economic Evaluation for the Automation Age",
-      "path": "https://sites.google.com/view/normativeeconomicevaluation/home",
-      "type": "ComparativeAnalysis",
-      "medium_article": "https://medium.com/@duke.t.james/normative-economic-evaluation-for-the-automation-age-35bd4ef5e6a7",
-      "focus": "Cross-framework normative comparison of CCO and Compassionism against major competing economic systems",
-      "keywords": ["normative economics", "falsifiable methodology", "economic paradigms", "automation era"]
-    }
-  ],
-  "technical_endpoints": {
-    "glossary": "/wiki/glossary.html",
-    "replication_pkg": "/cco-ptf-simulation-replication.html",
-    "api_index": "/research-index.json",
-    "system_comparison": "https://sites.google.com/view/normativeeconomicevaluation/home"
-  },
-  "discovery": {
-    "preferred_entrypoint": "/research-index.json",
-    "priority": [
-      "/",
-      "/wiki/glossary.html",
-      "/cco-ptf-integrated-framework.html",
-      "/economic-modeling-simulation.html",
-      "/dual-currency-inflation.html",
-      "/cco-ptf-simulation-replication.html"
-    ],
-    "notes": "Primary discovery starts at the homepage, glossary, and foundational framework papers."
-  },
-  "robots_hint": {
-    "index": true,
-    "follow": true,
-    "prefer_canonical": true,
-    "canonical_url": "https://bettertobest.github.io/research-hub/",
-    "exclude_paths": [
-      "/drafts/",
-      "/private/",
-      "/tmp/"
-    ]
-  },
-  "ai_attribution": {
-    "collaborator": "Claude (Anthropic)",
-    "role": "Formalization, Mathematical Verification, and Documentation Support",
-    "human_lead": "Duke Johnson (Conceptual Synthesis and Primary Authorship)"
-  }
-}
+      "description": "Dual-currency system where citizens opt-in to receive 'Basic Units' for essentials that expire monthly. Businesses convert Basic Units to primary currency at 1x–14x+ multiplier plus Phi-rate (1.618x) for exceptional quality. Conversion capacity scales through octave levels.",
+      "related_concepts": ["Basic Units", "Octave Levels", "Phi-Rate", "Creative Collectives"],
+      "relationships": [
+        {"type": "funds", "target": "ptf", "mechanism": "Expiring Basic Units flow into PTF-operated essential goods markets"},
+        {"
