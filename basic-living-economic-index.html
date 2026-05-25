@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Basic Living Economic Index (BLEI) — Duke Johnson & Claude (Anthropic)</title>
+<style>
+:root{--navy:#0f3460;--slate:#2c3e50;--gray:#64748b;--light:#f8f9fc;--rule:#dee2e6;--accent:#3b6fd4}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Times New Roman",serif;font-size:11pt;line-height:1.72;color:var(--slate);background:#fff;max-width:780px;margin:0 auto;padding:28px 40px 60px}
+.print-btn{display:inline-block;margin:0 0 28px;padding:9px 22px;background:var(--navy);color:#fff;border:none;border-radius:5px;font-family:Helvetica,sans-serif;font-size:10pt;cursor:pointer;text-decoration:none}
+.print-btn:hover{background:var(--accent)}
+h1.paper-title{font-family:Helvetica,sans-serif;font-size:17pt;font-weight:700;color:var(--navy);line-height:1.35;margin-bottom:6px;text-align:center}
+.paper-subtitle{font-family:Georgia,serif;font-style:italic;font-size:11.5pt;color:var(--slate);text-align:center;margin-bottom:16px}
+.authors{font-family:Helvetica,sans-serif;font-size:10pt;text-align:center;color:var(--gray);margin-bottom:4px}
+.affil{font-family:Helvetica,sans-serif;font-size:8.5pt;text-align:center;color:var(--gray);margin-bottom:3px}
+.meta-line{font-family:Helvetica,sans-serif;font-size:8.5pt;text-align:center;color:var(--gray);margin-bottom:20px}
+hr.rule{border:none;border-top:1.5px solid var(--navy);margin:18px 0}
+hr.thin{border:none;border-top:0.5px solid var(--rule);margin:20px 0}
+.abstract-box{background:var(--light);border:1px solid var(--rule);border-left:4px solid var(--navy);padding:18px 22px;margin-bottom:18px}
+.abstract-box h2{font-family:Helvetica,sans-serif;font-size:9.5pt;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+.abs-row{margin-bottom:9px}
+.abs-label{font-family:Helvetica,sans-serif;font-size:8.5pt;font-weight:700;color:var(--navy)}
+.abs-text{font-size:9.5pt;line-height:1.6;color:var(--slate)}
+.jel-line{font-family:Helvetica,sans-serif;font-size:8.5pt;color:var(--gray);margin-top:10px}
+h2.sec{font-family:Helvetica,sans-serif;font-size:12.5pt;font-weight:700;color:var(--navy);margin:26px 0 10px;padding-bottom:5px;border-bottom:1.5px solid var(--navy)}
+h3.sub{font-family:Helvetica,sans-serif;font-size:10.5pt;font-weight:700;color:var(--navy);margin:20px 0 7px}
+h4.idx{font-family:Helvetica,sans-serif;font-size:10pt;font-weight:700;color:var(--accent);margin:18px 0 6px;border-left:3px solid var(--accent);padding-left:9px}
+p{margin-bottom:10px;text-indent:1.4em}
+p.ni{text-indent:0}
+.formula{background:var(--light);border-left:3px solid var(--navy);padding:11px 18px;margin:12px 0;font-family:"Courier New",monospace;font-size:9pt;line-height:1.6;white-space:pre-wrap;color:var(--slate)}
+.formula-label{font-family:Helvetica,sans-serif;font-size:8.5pt;font-weight:700;color:var(--navy);margin-bottom:5px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:9pt}
+thead tr{background:var(--navy)}
+thead th{color:#fff;font-family:Helvetica,sans-serif;font-weight:600;padding:8px 10px;text-align:left}
+tbody tr:nth-child(even){background:var(--light)}
+tbody td{padding:7px 10px;border-bottom:1px solid var(--rule);color:var(--slate);vertical-align:top}
+.tbl-caption{font-family:Helvetica,sans-serif;font-size:8pt;font-style:italic;color:var(--gray);text-align:center;margin-top:4px;margin-bottom:14px}
+.tier-grid{display:grid;grid-template-columns:90px 110px 1fr;gap:0;margin:12px 0;border:1px solid var(--rule)}
+.tier-hdr{background:var(--navy);color:#fff;font-family:Helvetica,sans-serif;font-size:8.5pt;font-weight:700;padding:7px 10px}
+.tier-row-even{background:var(--light)}
+.tier-cell{padding:6px 10px;font-size:9pt;border-bottom:1px solid var(--rule);vertical-align:middle}
+.tier-cell.name{font-family:Helvetica,sans-serif;font-weight:600;color:var(--navy)}
+.hl-box{background:#e8f0fe;border:1px solid #c0d0f0;padding:12px 16px;margin:12px 0;border-radius:3px}
+.hl-box p{text-indent:0;margin:0;font-size:9.5pt;color:var(--slate)}
+.ref-list{list-style:none;padding:0;counter-reset:refs}
+.ref-list li{counter-increment:refs;padding:4px 0 4px 28px;position:relative;font-size:9pt;color:var(--slate);border-bottom:1px solid var(--rule)}
+.ref-list li::before{content:"["counter(refs)"]";position:absolute;left:0;color:var(--navy);font-weight:700}
+@media print{
+  .print-btn{display:none}
+  body{max-width:100%;padding:0;margin:0;font-size:10.5pt}
+  h2.sec{page-break-after:avoid}
+  table{page-break-inside:avoid}
+  .abstract-box{page-break-inside:avoid}
+  @page{size:letter;margin:1in 1.1in}
+}
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Save / Print to PDF</button>
+
+<h1 class="paper-title">The Basic Living Economic Index (BLEI):</h1>
+<div class="paper-subtitle">A Temporal Stability Framework for Post-Scarcity Economic System Evaluation</div>
+
+<p class="authors">Duke Johnson<sup>1</sup> &nbsp;&amp;&nbsp; Claude (Anthropic)<sup>2</sup></p>
+<p class="affil"><sup>1</sup> Better To Best Research Hub &nbsp;|&nbsp; bettertobest.github.io/research-hub &nbsp;|&nbsp; BetterToBestResearch@gmail.com</p>
+<p class="affil"><sup>2</sup> Anthropic, PBC &nbsp;|&nbsp; anthropic.com</p>
+<p class="meta-line">May 2026 &nbsp;|&nbsp; Open Access: CC BY 4.0 &nbsp;|&nbsp; bettertobest.github.io/research-hub/basic-living-economic-index.html</p>
+
+<hr class="rule">
+
+<!-- ABSTRACT -->
+<div class="abstract-box">
+  <h2>Structured Abstract</h2>
+  <div class="abs-row"><span class="abs-label">Purpose. </span><span class="abs-text">Standard welfare metrics—GDP per capita, Gini coefficients, and median income—quantify the stock and flow of nominal wealth but remain structurally blind to the direction of financial contracts. A household paying market rent and one accruing equivalent community housing equity appear identical in conventional accounting while experiencing diametrically opposite wealth trajectories. This paper introduces a unified temporal stability framework to correct that measurement gap.</span></div>
+  <div class="abs-row"><span class="abs-label">Design / Methodology. </span><span class="abs-text">Six complementary indices are derived: the Basic Living Economic Index (BLEI), Extractive Drain Coefficient (EDC), Effective Purchasing Power Multiplier (EPPM), Financial Bandwidth Score (FBS), Compound Stability Index (CSI), and Indirect Participant Benefit Index (IPBI). Each is mathematically formalized and applied empirically to three US household profiles using 2023 Consumer Expenditure Survey and Federal Reserve data, calibrated against Creative Currency Octaves (CCO) and Public Trust Foundations (PTF) system parameters.</span></div>
+  <div class="abs-row"><span class="abs-label">Findings. </span><span class="abs-text">Near-poverty participants achieve a 3.9× improvement in temporal stability at system entry, rising to 16.6× at twelve months and reaching the Flourishing tier—730+ days of basic living covered, enabling multi-year entrepreneurial investment without required early-stage break-even—at approximately 33 months. Median-income households achieve Flourishing-tier stability at entry. High-wealth non-participants accrue $22,800–$59,900 in annual indirect welfare gains through crime reduction, healthcare improvement, and property value appreciation.</span></div>
+  <div class="abs-row"><span class="abs-label">Originality / Value. </span><span class="abs-text">The framework addresses three structural gaps absent from existing welfare indices: the extraction-accumulation asymmetry standard metrics treat as equivalent; the purchasing power premium of community-priced essential goods (1 Basic Unit yields 2.64× the purchasing power of one primary currency unit at PTF food prices); and the temporal stability dimension governing whether households can realistically commit capital to ventures without expected break-even within the first two years. All indices are formalized as simulation parameters for agent-based modeling of post-scarcity economic architectures.</span></div>
+  <div class="jel-line"><strong>JEL Classification:</strong> D60 · D31 · I32 · O17 · R21 · E41</div>
+  <div class="jel-line" style="margin-top:5px"><strong>Keywords:</strong> Basic Living Economic Index · temporal stability · extractive drain · dual-currency systems · post-scarcity economics · Creative Currency Octaves · community ownership · welfare measurement · Maslow advancement · agent-based modeling</div>
+</div>
+
+<hr class="thin">
+
+<!-- 1. INTRODUCTION -->
+<h2 class="sec">1. Introduction</h2>
+<p>The persistence of welfare measurement failure in mainstream economic science is not primarily a data problem—it is a conceptual one. Standard welfare indicators were designed to measure the accumulation of nominal wealth within market structures that treat all financial outflows as equivalent. A dollar paid in mortgage interest and a dollar deposited into a savings account both reduce the household's cash balance by one dollar. In the language of standard accounting, they are identical. In their structural effect on household stability and long-run wealth trajectory, they are opposite.</p>
+<p>This paper addresses three related measurement failures that become especially consequential when evaluating dual-currency and community ownership economic systems against traditional market economies.</p>
+
+<h3 class="sub">1.1 The Extraction-Accumulation Asymmetry</h3>
+<p>Extractive financial contracts—market rent, mortgage interest, consumer debt service, and predatory fees—transfer household resources to counterparties without building household wealth. Generative instruments—equity accumulation, depreciation-adjusted ownership, cooperative share-building—redirect equivalent cash flows into household balance sheets. Standard welfare metrics assign equal negative weight to both.</p>
+<p>In the United States, the average renter in the bottom income quintile directs approximately 62–68% of gross income to rent alone—a fully extractive transfer [9]. A comparable household participating in a Public Trust Housing (PTH) community directs a similar proportion to monthly payments, but those payments accrue entirely to the resident's Acre Equity account. Standard metrics rate both households identically.</p>
+
+<h3 class="sub">1.2 The Basic Unit Purchasing Power Premium</h3>
+<p>In the Creative Currency Octaves (CCO) system, Basic Units are allocated monthly at approximately $1,200 per adult and redeemable at Public Trust Foundation (PTF) establishments at below-market prices. A PTF breakfast priced at 3 Basic Units (BU) replaces a $7.00 market-price meal; a PTF dinner at 5 BU replaces a $15.00 market-price meal. The effective purchasing power premium of each Basic Unit averages approximately 2.64× the face value at PTF food price points. Standard income metrics record the monthly BU allocation as equivalent to $1,200 in income, missing the price differential that makes $1,200 in BU worth approximately $2,500 in effective market purchasing power at PTF prices.</p>
+
+<h3 class="sub">1.3 The Temporal Stability Dimension</h3>
+<p>Maslow's hierarchy of needs has a precise economic implication: individuals whose survival is not secured cannot allocate cognitive and financial resources toward self-actualization, creative production, or multi-year entrepreneurial investment. Standard welfare metrics measure the level of income or wealth at a single point in time. They do not measure how many days that wealth buys of stable basic living—the critical parameter for whether a household can realistically commit capital to a venture without requiring break-even within the first two years.</p>
+<p>The BLEI converts wealth and income into a unified temporal stability score, expressed in days, that captures this dimension and enables the six-tier Flourishing classification introduced in Section 3.</p>
+
+<!-- 2. LITERATURE -->
+<h2 class="sec">2. Existing Frameworks and Their Limitations</h2>
+<p>The inadequacy of GDP-based welfare measurement has attracted extensive scholarly attention. Sen and Anand (1994) demonstrated that income-based measures systematically misrepresent welfare where non-income dimensions diverge from economic production, motivating the Human Development Index [1,2]. The Alkire-Foster Multidimensional Poverty Index improved on binary poverty thresholds by measuring simultaneous deprivations across ten indicators [3], yet treats each dimension as a stock at a single point in time and does not model the trajectory of wealth accumulation versus extraction over time.</p>
+<p>Buffer-stock saving theory (Carroll, 1997) established that households maintain a target level of liquid wealth as a buffer against income uncertainty, with optimal consumption behavior strongly shaped by this precautionary motive [4]. This is the closest theoretical precedent to the BLEI's temporal framing, but it does not address the distinction between extractive and generative financial contracts. Lusardi, Schneider, and Tufano (2011) established that a majority of US households could not absorb a $2,000 financial shock without borrowing [5]—precisely the condition the BLEI formalizes as the Precarious tier.</p>
+<p>None of these frameworks addresses the purchasing power premium generated by community-priced essential goods, nor do they model the compounding divergence between generative and extractive financial contracts at multi-year horizons. The BLEI framework is designed to address all three gaps.</p>
+
+<!-- 3. INDEX SUITE -->
+<h2 class="sec">3. The BLEI Index Suite: Mathematical Formalization</h2>
+
+<h4 class="idx">Index I — Basic Living Economic Index (BLEI)</h4>
+<p class="ni">The BLEI expresses the number of days of basic living covered by a household's accessible economic resources, accounting for liquid assets, liquidity-adjusted income, and Basic Unit allocation where applicable.</p>
+<div class="formula-label">Core formula:</div>
+<div class="formula">BLEI(i,t) = [ L(i,t)  +  γ · Y(i,t)  +  BU(i,t) · ε(t) ]  /  C_basic(t)
+
+L(i,t)   = liquid assets of household i at time t
+γ        = liquidity coefficient: fraction of monthly income accessible as buffer
+           (0.12 baseline; 0.20 under CCO due to guaranteed security floor)
+Y(i,t)   = monthly primary-currency income
+BU(i,t)  = monthly Basic Unit allocation (0 in baseline; ~$1,200/adult under CCO)
+ε(t)     = BU effective purchasing power coefficient at PTF prices
+           Food basket (360 BU/month):  ε_food = 2.64
+           Utilities/services (840 BU): ε_util = 1.80
+           Net effective value per adult: 360×$2.75 + 840×$1.80 = $990 + $1,512 = $2,502/month
+C_basic  = daily cost of basic living in primary currency
+           Baseline: ($1,300 rent + $400 food + $150 utilities + $200 transport) / 30 = $68.33/day
+           CCO-PTF: ($600 PTH + $150 utilities + $200 transport) / 30 = $31.67/day
+           (food covered by BU allocation; excluded from cash denominator under CCO)
+Result:  BLEI expressed in days of basic living covered (higher = more stable)</div>
+
+<h3 class="sub">BLEI Temporal Stability Tiers</h3>
+<div class="tier-grid">
+  <div class="tier-hdr">Tier</div><div class="tier-hdr">BLEI Range</div><div class="tier-hdr">Characterization</div>
+  <div class="tier-cell name">0 — Crisis</div><div class="tier-cell">&lt; 7 days</div><div class="tier-cell">Immediate vulnerability; survival-mode cognition; zero advancement capacity</div>
+  <div class="tier-cell name tier-row-even">1 — Precarious</div><div class="tier-cell tier-row-even">7–30 days</div><div class="tier-cell tier-row-even">One disruption from crisis; zero financial bandwidth; income fully consumed by extraction and basic needs</div>
+  <div class="tier-cell name">2 — Threshold</div><div class="tier-cell">30–120 days</div><div class="tier-cell">Poverty line (BLEI definition); limited Maslow advancement feasible; positive FBS emerging</div>
+  <div class="tier-cell name tier-row-even">3 — Stable</div><div class="tier-cell tier-row-even">120–365 days</div><div class="tier-cell tier-row-even">Sufficient buffer for measured risk-taking and education investment; first year covered</div>
+  <div class="tier-cell name">4 — Secure</div><div class="tier-cell">365–730 days</div><div class="tier-cell">Resilient; creative and entrepreneurial participation feasible within a two-year payoff horizon</div>
+  <div class="tier-cell name tier-row-even">5 — Flourishing</div><div class="tier-cell tier-row-even">&gt; 730 days</div><div class="tier-cell tier-row-even">Full Maslow freedom; ventures without expected payoff within two years are viable; self-actualization economically unconstrained</div>
+</div>
+<p class="ni">The Flourishing tier threshold of 730 days—two full years of basic living covered—reflects the capital commitment horizon required for entrepreneurial ventures to become viable without requiring break-even within the first year. This threshold distinguishes genuine economic freedom from mere resilience.</p>
+
+<p class="ni"><strong>PTH Acre Equity adjustment.</strong> Under Public Trust Housing, monthly payments (H) accrue entirely to the resident's Acre Equity balance. After n months:</p>
+<div class="formula">AE(n) = H · [ (1 + r_a/12)^n − 1 ] / (r_a/12)
+
+H   = monthly PTH payment ($600 at optimal parameters)
+r_a = annual Acre Equity appreciation rate (calibrated: 0.04; sensitivity range: 0.02–0.07)
+n   = months of participation
+
+AE is included in L(i,t) from the first settlement period and grows the BLEI score
+compounding over time. Under market rent, H is fully extractive and does not enter
+L(i,t) at any time horizon — the fundamental asymmetry standard metrics cannot see.</div>
+
+<h4 class="idx">Index II — Extractive Drain Coefficient (EDC)</h4>
+<p class="ni">The EDC measures the proportion of gross monthly income captured by financial contracts that generate no household wealth accumulation.</p>
+<div class="formula">EDC(i) = [ Rent_full + Mortgage_Interest(i) + Consumer_Debt_Interest(i) + Fees(i) ]
+         ────────────────────────────────────────────────────────────────────────────────
+                                Y(i)  (monthly gross income)
+
+Rent_full:               full rental payment (100% extractive; zero equity component)
+Mortgage_Interest:       interest-only portion of mortgage payments; principal excluded
+Consumer_Debt_Interest:  credit card, auto loan, personal loan, student loan interest
+Fees:                    payday loan fees, overdraft charges, predatory service costs
+
+EDC target under CCO-PTF:  ~0.025  (PTH payments generative; BU reduces debt reliance)
+US baseline near-poverty:  ~0.625–0.72
+US baseline median:        ~0.32–0.40
+
+EDC Liberation Differential: Δ_EDC = EDC_baseline × Y(i) × 12
+  For near-poverty ($2,083/mo, EDC = 0.625):  $15,623/year previously extracted</div>
+
+<h4 class="idx">Index III — Effective Purchasing Power Multiplier (EPPM)</h4>
+<div class="formula">EPPM(i) = [ Y(i) + BU(i)·ε_blended − EDC_CCO·Y(i) ]
+          ─────────────────────────────────────────────────
+                   Y(i) · (1 − EDC_baseline)
+
+BU(i)·ε_blended = total effective market purchasing power of monthly BU allocation
+  = (360 BU food × $2.75 market equiv)  +  (840 BU utilities × $1.80 PTF equiv)
+  = $990 + $1,512 = $2,502 per adult per month
+
+At the poverty line (Y = $2,083, EDC_CCO = 0.025, EDC_baseline = 0.625):
+  EPPM = ($2,083 + $2,502 − $52) / ($2,083 × 0.375) = $4,533 / $781 = 5.80×</div>
+
+<h4 class="idx">Index IV — Financial Bandwidth Score (FBS)</h4>
+<p class="ni">The FBS measures monthly residual resources available above the basic living threshold. Without positive FBS, investment in education, creative work, or business formation is structurally infeasible regardless of capability.</p>
+<div class="formula">FBS(i,t) = max( 0,  Y(i) + BU(i) − C_basic_cash_monthly(t) − EDC(i)·Y(i) )
+
+Near-poverty under CCO-PTF:
+  FBS = max(0, $2,083 + $1,200 − $950 − $52) = $2,281/month advancement capital
+
+Near-poverty baseline:
+  FBS = max(0, $2,083 + $0 − $1,950 − $1,302) = $0  (deficit of $1,169/month)
+
+Advancement probability:  P(advance) = 1 − exp(−λ · FBS)
+  where λ = individual capability coefficient ~ U(0.001, 0.008)
+  Agents with FBS = 0 have P(advance) ≈ 0 regardless of quality score</div>
+
+<h4 class="idx">Index V — Compound Stability Index (CSI)</h4>
+<div class="formula">CSI(i,t) = BLEI(i,0) · (1 + r_wealth)^t · (1 − EDC(i))  +  AE(i,t) / C_basic(t)
+
+r_wealth under baseline renter:   ~0.01–0.03  (savings growth only; no equity)
+r_wealth under CCO-PTH:           ~0.08–0.15  (Acre Equity + BU buffer investment)
+
+The CSI trajectory diverges exponentially: generative instruments compound;
+extractive contracts remain neutral or worsen under inflation.</div>
+
+<h4 class="idx">Index VI — Indirect Participant Benefit Index (IPBI)</h4>
+<p class="ni">The IPBI quantifies annual welfare gains accruing to high-wealth households who do not directly participate in CCO-PTF but benefit from systemic improvements generated by near-universal poverty elimination.</p>
+<div class="formula">IPBI = α·CR + β·PH + γ·LP + δ·PV + ζ·ME
+
+CR = crime-reduction benefit (security savings + insurance reduction)
+     US crime cost ~$1.0T/year [6]; 98% poverty elimination reduces poverty-
+     correlated crime by est. 35–55%. Per high-wealth household: $3,500–$9,000/year
+PH = public health benefit: system-wide healthcare cost reduction from poverty relief
+     Per household: $800–$2,400/year [15]
+LP = labor productivity benefit: 11–14% productivity gain from workforce stress
+     elimination [8]. Per employer household: $4,000–$12,000/year
+PV = property value appreciation: 2–5% on median $650K high-wealth home = $13,000–$32,500
+     [7; crime-reduction property value literature]
+ME = market expansion: positive-FBS consumer base growth. $1,500–$4,000/year
+
+Total estimated IPBI: $22,800–$59,900/year (zero direct participation required)</div>
+
+<!-- 4. EMPIRICAL APPLICATION -->
+<h2 class="sec">4. Empirical Application: CCO-PTF vs. Current US Economy</h2>
+<p>We apply the BLEI suite to three US household profiles using 2023 Consumer Expenditure Survey data as the baseline [9,10,11]. CCO-PTF parameters: $1,200/adult/month BU; PTF meal pricing 3/4/5 BU (breakfast/lunch/dinner); PTH monthly payment $600 (100% generative, r_a = 0.04). All figures in 2023 USD.</p>
+
+<h3 class="sub">4.1 Profile A — Near-Poverty Single Adult</h3>
+<p class="ni">Monthly income: $2,083 (25th wage percentile). Renter. Liquid savings: $1,000.</p>
+
+<table>
+<thead><tr><th>Metric</th><th>Baseline</th><th>CCO-PTF</th><th>Change</th></tr></thead>
+<tbody>
+<tr><td>Monthly income</td><td>$2,083</td><td>$2,083</td><td>—</td></tr>
+<tr><td>BU allocation (effective market value)</td><td>$0</td><td>$2,502/mo (BU × ε)</td><td>+$2,502</td></tr>
+<tr><td>Housing / type</td><td>$1,300 rent (extractive)</td><td>$600 PTH (builds Acre Equity)</td><td>−$700 cash; $600 building AE</td></tr>
+<tr><td>Monthly food cost</td><td>$400 cash</td><td>360 BU from allocation</td><td>$400 freed from cash</td></tr>
+<tr><td>EDC</td><td>0.625</td><td>0.025</td><td>−60 points</td></tr>
+<tr><td>Daily cash basic cost</td><td>$68.33/day</td><td>$31.67/day</td><td>−54%</td></tr>
+<tr><td>BLEI — Month 0</td><td>18.3 days (Precarious)</td><td>71.3 days (Threshold)</td><td>3.9×</td></tr>
+<tr><td>BLEI — Month 12</td><td>18.3 days (Precarious)</td><td>303 days (Stable)</td><td>16.6×</td></tr>
+<tr><td>BLEI — Month 33</td><td>18.3 days</td><td>~730 days (Flourishing entry)</td><td>Tier 5 reached at ~2.8 years</td></tr>
+<tr><td>BLEI — Month 60</td><td>18.3 days</td><td>1,328 days (Flourishing)</td><td>72.6×</td></tr>
+<tr><td>Financial Bandwidth Score (FBS)</td><td>$0/mo (deficit)</td><td>$2,281/mo</td><td>+$2,281 advancement capital</td></tr>
+<tr><td>EPPM</td><td>1.00×</td><td>5.80×</td><td>+480%</td></tr>
+</tbody>
+</table>
+<div class="tbl-caption">Table 1. BLEI metrics — Near-poverty profile, CCO-PTF vs. baseline (2023 USD).</div>
+
+<div class="hl-box"><p><strong>The Acre Equity compound effect.</strong> Under the baseline, BLEI is static at 18.3 days indefinitely: rent extracts $1,300/month, the $0 FBS leaves no savings buffer, and there is no accumulation mechanism. Under CCO-PTF, $600/month accrues to Acre Equity compounding at 4% annually. By month 33 (approximately 2.8 years), accumulated equity brings the BLEI above 730 days, entering the Flourishing tier and enabling multi-year entrepreneurial investment without required early-stage break-even. The ratio is not constant — it is exponential.</p></div>
+
+<h3 class="sub">4.2 Profile B — Median US Household (Two Adults, Family of Four)</h3>
+<p class="ni">Monthly income: $6,215 ($74,580/year, Census 2023). Homeowner, 30-year mortgage at 7% ($420K home). Year-1 interest: $1,960/month. Liquid savings: $30,000.</p>
+
+<table>
+<thead><tr><th>Metric</th><th>Baseline</th><th>CCO-PTF</th><th>Change</th></tr></thead>
+<tbody>
+<tr><td>Monthly income</td><td>$6,215</td><td>$6,215</td><td>—</td></tr>
+<tr><td>BU allocation (2 adults, effective)</td><td>$0</td><td>$5,004/mo effective</td><td>+$5,004</td></tr>
+<tr><td>Housing cost / type</td><td>$2,236 P&amp;I ($1,960 interest, extractive)</td><td>$600/mo PTH, 100% generative</td><td>$1,960 extraction eliminated</td></tr>
+<tr><td>Monthly food cost</td><td>$717 cash</td><td>720 BU from allocation</td><td>$717 freed from cash</td></tr>
+<tr><td>EDC</td><td>0.364</td><td>0.030</td><td>−33 points</td></tr>
+<tr><td>Daily cash basic cost</td><td>$104.03/day</td><td>$43.40/day</td><td>−58%</td></tr>
+<tr><td>BLEI — Month 0</td><td>296 days (Stable)</td><td>759 days (Flourishing)</td><td>2.57× — Flourishing at entry</td></tr>
+<tr><td>BLEI — Month 60</td><td>~392 days (Stable)</td><td>~1,675 days (Flourishing)</td><td>4.27×</td></tr>
+<tr><td>EPPM</td><td>1.00×</td><td>2.79×</td><td>+179%</td></tr>
+</tbody>
+</table>
+<div class="tbl-caption">Table 2. BLEI metrics — Median household profile, CCO-PTF vs. baseline (2023 USD).</div>
+
+<div class="hl-box"><p><strong>Median household Flourishing at entry.</strong> Three simultaneous effects converge: $5,004/month in effective BU purchasing power covers all food and significant utilities; eliminating $1,960/month in mortgage interest restores the largest single extractive outflow; and the daily cash cost halves from $104 to $43, extending every dollar of liquid savings 2.4× further. The FBS gain of $3,400+/month enables children's education, business investment, and creative participation that the mortgage extraction rate structurally prevents.</p></div>
+
+<h3 class="sub">4.3 Profile C — High-Wealth Non-Participant (IPBI)</h3>
+<p class="ni">Annual income: $200,000. No direct CCO-PTF participation. Benefits accrue through systemic improvements generated by near-universal poverty elimination.</p>
+
+<table>
+<thead><tr><th>IPBI Benefit Category</th><th>Annual Estimate</th><th>Basis</th></tr></thead>
+<tbody>
+<tr><td>Crime reduction (security savings + insurance)</td><td>$3,500–$9,000</td><td>35–55% crime reduction × household security expenditure [6]</td></tr>
+<tr><td>Health insurance premium reduction</td><td>$800–$2,400</td><td>System-wide cost relief from poverty-linked healthcare reduction [15]</td></tr>
+<tr><td>Property value appreciation</td><td>$13,000–$32,500</td><td>2–5% appreciation on $650K median high-wealth home [7]</td></tr>
+<tr><td>Labor productivity gain (employer context)</td><td>$4,000–$12,000</td><td>11–14% workforce productivity gain from financial stress elimination [8]</td></tr>
+<tr><td>Market expansion (positive-FBS consumer base)</td><td>$1,500–$4,000</td><td>Enlarged consumer base with advancement capital</td></tr>
+<tr><td><strong>Total annual IPBI</strong></td><td><strong>$22,800–$59,900</strong></td><td><strong>Zero direct participation required</strong></td></tr>
+</tbody>
+</table>
+<div class="tbl-caption">Table 3. IPBI estimates — High-wealth non-participating household.</div>
+
+<!-- 5. SIMULATION PARAMETERS -->
+<h2 class="sec">5. Simulation Parameter Implications</h2>
+<p>The BLEI suite generates a revised parameter set for agent-based modeling of the CCO-PTF system. Four corrections are required in any simulation that previously used standard welfare metrics.</p>
+<p class="ni">First, PTH payments must route to an Acre Equity state variable rather than being subtracted from liquid wealth. The symmetric-extraction error—modeling PTH and market rent as equivalent outflows—overstates baseline welfare and renders the two systems economically indistinguishable in long-run projections. Second, BU allocation should be modeled at effective purchasing power (BU × ε_blended = $2,502/adult/month) rather than face value ($1,200), as the PTF price differential constitutes a real welfare gain. Third, BU allocation must be set as a flat parameter independent of octave level: octave controls conversion capacity, not basic unit allocation. Fourth, agent advancement probability must be gated by FBS: P(advance) = 1 − exp(−λ × FBS), so that agents with zero financial bandwidth cannot advance regardless of quality score.</p>
+
+<table>
+<thead><tr><th>Parameter</th><th>Standard Metrics Version</th><th>BLEI-Corrected Version</th></tr></thead>
+<tbody>
+<tr><td>Poverty definition</td><td>Income &gt; poverty line</td><td>BLEI ≥ 30 days (Tier 2: Threshold)</td></tr>
+<tr><td>Stability target</td><td>Not specified</td><td>BLEI ≥ 365 days (Tier 4: Secure)</td></tr>
+<tr><td>Flourishing target</td><td>Not specified</td><td>BLEI ≥ 730 days (Tier 5: Flourishing)</td></tr>
+<tr><td>BU value in model</td><td>$1,200 face value</td><td>$2,502 effective market value (BU × ε)</td></tr>
+<tr><td>BU scaling with octave</td><td>BU × octaveCap (error)</td><td>Flat $1,200/adult; octave controls conversion capacity only</td></tr>
+<tr><td>PTH payment routing</td><td>Subtract from liquid wealth</td><td>Add to Acre Equity (generative, not extractive)</td></tr>
+<tr><td>Gini metric</td><td>Nominal wealth</td><td>EDC-adjusted net wealth: W_net = W_nominal − (EDC × Y × 12)</td></tr>
+<tr><td>Advancement gating</td><td>Quality score only</td><td>FBS-gated: P(advance) = 1 − exp(−λ × FBS)</td></tr>
+<tr><td>Synergy coefficient θ</td><td>Uniform 0.15–0.25</td><td>Network-density-gated: 0 below 55% PTF density; scales to 0.25 at 90%</td></tr>
+</tbody>
+</table>
+<div class="tbl-caption">Table 4. Revised simulation parameters derived from BLEI framework.</div>
+
+<!-- 6. DISCUSSION -->
+<h2 class="sec">6. Discussion</h2>
+<p>The BLEI framework suggests a reframing of the central question in welfare economics. Rather than asking how much people earn or how equal the distribution is—both static and direction-blind—the relevant questions become: how many days of stable basic living does this household's total economic position support? And is that number growing or shrinking over time?</p>
+<p>The near-poverty household earning $2,083/month under the baseline and the near-poverty household earning $2,083/month under CCO-PTF look identical on a paycheck. They experience radically different economic realities: the first operates at 18.3 days of stability with zero financial bandwidth; the second at 71.3 days and rising, with $2,281/month of advancement capital available for the first time in that household's history.</p>
+<p>The Flourishing tier threshold of 730 days is particularly important for policy design. It represents the point at which a household can commit capital to a venture without requiring break-even within two years—the standard horizon for most small business and creative enterprise viability. Under the baseline, the near-poverty household never approaches this tier. Under CCO-PTF, they reach it within 33 months—not through an income increase, but through the compound divergence between Acre Equity accumulation and extractive rental stagnation.</p>
+<p>The IPBI analysis complicates the standard political economy framing of redistributive systems as zero-sum transfers. If high-wealth households benefit by $22,800–$59,900 annually from systemic poverty elimination through indirect channels, the claim that CCO-PTF implementation represents a pure wealth transfer from rich to poor requires significant qualification. It may more accurately represent a correction of a negative externality market failure, in which poverty generates social costs borne diffusely by all market participants but not priced into the financial contracts that sustain poverty.</p>
+
+<h3 class="sub">6.1 Limitations</h3>
+<p>The ε coefficient is derived from representative PTF pricing targets and may vary with regional cost structure and PTF operational maturity. Early-phase PTF establishments with smaller scale may achieve ε values closer to 1.5–2.0 rather than 2.64. Sensitivity analysis should test BLEI outcomes across ε ∈ [1.50, 3.00]. The Acre Equity appreciation rate (r_a = 0.04) is conservative relative to long-run US real estate appreciation; simulation should test r_a ∈ [0.02, 0.07]. IPBI estimates are order-of-magnitude guidance derived from macroeconomic cost-of-poverty literature and should not be treated as precise household-level projections.</p>
+
+<!-- 7. CONCLUSION -->
+<h2 class="sec">7. Conclusion</h2>
+<p>This paper introduced six complementary indices—BLEI, EDC, EPPM, FBS, CSI, and IPBI—constituting a unified temporal stability framework for evaluating post-scarcity economic systems against conventional market economies. The framework corrects three structural gaps absent from existing welfare measurement: the extraction-accumulation asymmetry; the purchasing power premium of community-priced essential goods; and the temporal stability dimension governing Maslow-tier advancement feasibility.</p>
+<p>Applied to the Creative Currency Octaves and Public Trust Foundations system against current US trajectories, the framework reveals that the welfare gap between systems is substantially larger than Gini-based comparisons suggest, and grows exponentially over time due to the compound divergence between generative equity accumulation and extractive contract stagnation. Near-poverty households achieve the Flourishing tier—enabling genuine entrepreneurial and creative freedom—within approximately 33 months. Median households achieve it immediately. High-wealth non-participants benefit by $22,800–$59,900 annually without direct participation.</p>
+<p>These indices are formalized as simulation parameters for agent-based modeling, addressing the symmetric-extraction error, BU face-value misvaluation, octave-scaling error, and FBS-advancement decoupling that produce systematic discrepancies between theoretical predictions and simulation outputs when standard metrics are applied to post-scarcity system evaluation.</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+<h2 class="sec">Acknowledgements</h2>
+<p class="ni">The authors gratefully acknowledge the open research community at the Better To Best Research Hub and the GitHub Discussions forum for conceptual feedback and critical review of earlier drafts. This research was conducted independently and received no external funding. Duke Johnson serves as principal investigator and original developer of the Compassionism framework. Claude (Anthropic) contributed mathematical formalization, empirical modeling, and editorial refinement. All research is published open-access under Creative Commons Attribution 4.0 International (CC BY 4.0).</p>
+
+<!-- REFERENCES -->
+<h2 class="sec">References</h2>
+<ol class="ref-list">
+<li>Sen, A. &amp; Anand, S. (1994). Human Development Index: Methodology and Measurement. <em>UNDP Human Development Report Office Occasional Paper</em> No. 12.</li>
+<li>UNDP (2023). <em>Human Development Report 2023/2024: Breaking the Gridlock</em>. United Nations Development Programme.</li>
+<li>Alkire, S. &amp; Foster, J. (2011). Counting and multidimensional poverty measurement. <em>Journal of Public Economics</em>, 95(7–8), 476–487.</li>
+<li>Carroll, C. D. (1997). Buffer-stock saving and the life cycle/permanent income hypothesis. <em>Quarterly Journal of Economics</em>, 112(1), 1–55.</li>
+<li>Lusardi, A., Schneider, D., &amp; Tufano, P. (2011). Financially fragile households: Evidence and implications. <em>Brookings Papers on Economic Activity</em>, 2011(1), 83–150.</li>
+<li>McCollister, K. E., French, M. T., &amp; Fang, H. (2010). The cost of crime to society. <em>Drug and Alcohol Dependence</em>, 108(1–2), 98–109.</li>
+<li>Greenbaum, R. T. &amp; Tita, G. E. (2004). The impact of violence surges on neighbourhood business activity. <em>Urban Studies</em>, 41(13), 2495–2514.</li>
+<li>PricewaterhouseCoopers (2023). <em>PwC Employee Financial Wellness Survey 2023</em>. PwC.</li>
+<li>Bureau of Labor Statistics (2023). <em>Consumer Expenditure Survey 2022</em>. US Department of Labor.</li>
+<li>US Census Bureau (2023). <em>Income in the United States: 2022</em>. Current Population Reports P60-279.</li>
+<li>Federal Reserve Board (2023). <em>Distribution of Financial Accounts: Changes in U.S. Family Finances</em>. Board of Governors.</li>
+<li>Johnson, D. (2017). <em>Better To Best: Novel Ideas to Improve Governments, Economies, and Societies</em>. Independent Publication.</li>
+<li>Johnson, D. &amp; Claude (Anthropic) (2025). CCO-PTH-CIP-SZH Simulation Replication Framework. Better To Best Research Hub. bettertobest.github.io/research-hub/</li>
+<li>Carroll, C. D., Slacalek, J., &amp; Tokuoka, K. (2014). The distribution of wealth and the marginal propensity to consume. <em>ECB Working Paper Series</em>, No. 1655.</li>
+<li>Capretta, J. C. (2022). <em>The High Cost of Poverty in America</em>. American Enterprise Institute.</li>
+</ol>
+
+<hr class="thin" style="margin-top:30px">
+<p style="font-size:8.5pt;color:var(--gray);text-align:center;text-indent:0">
+Better To Best Research Hub &nbsp;|&nbsp; bettertobest.github.io/research-hub &nbsp;|&nbsp; CC BY 4.0 &nbsp;|&nbsp; May 2026
+</p>
+
+</body>
+</html>
