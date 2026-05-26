@@ -1153,6 +1153,202 @@
     </table>
 
     <!-- ═══════════════════════════════════════════════════════════
+         SYSTEM DEFINITIONS (full detail per architecture)
+    ════════════════════════════════════════════════════════════════ -->
+
+    <dl data-system="CCO" data-layer="economic" data-id="https://bettertobest.github.io/research-hub/wiki/glossary.html#creative-currency-octaves">
+      <dt>System: Creative Currency Octaves (CCO)</dt>
+      <dd><strong>Type:</strong> Economic Layer</dd>
+      <dd><strong>Aliases:</strong> CCO, dual-currency system, basic units system</dd>
+      <dd><strong>Definition:</strong> CCO is a dual-currency system with opt-in Basic Units (BU) that expire monthly. "Octaves" are progressive advancement tiers that determine conversion capacity — how many Basic Units an individual or business can convert per cycle. Each level doubles the previous: Base_Capacity × 2^n. Octave 1 = 1,000 BU/mo, Octave 2 = 2,000/mo, Octave 3 = 4,000/mo, and so on. For individuals, advancement reflects sustained contribution and community engagement. For PTF businesses, capacity tracks market throughput.</dd>
+      <dd><strong>Quantitative parameters:</strong>
+        <ul>
+          <li>Conversion rate range: 1× – 9× (base tiers, productivity/quality-based)</li>
+          <li>Phi-rate (Φ): 1.618× qualitative multiplier for exceptional quality or beauty</li>
+          <li>Maximum effective rate: 9× × 1.618× = ~14.56× </li>
+          <li>Basic Units peg: 1 BU = 1 primary currency unit (at point of acceptance)</li>
+          <li>Expiry cycle: monthly (end of distribution cycle)</li>
+          <li>Octave capacity formula: C_n = C_base × 2^n (where n = octave level)</li>
+          <li>Inflation control mechanism: BU restricted to essential expenditures; non-essential market insulated</li>
+        </ul>
+      </dd>
+      <dd><strong>Boundary conditions (what CCO does NOT do):</strong>
+        <ul>
+          <li>Does not replace primary currency or existing market structures</li>
+          <li>Does not impose mandatory participation — opt-in only</li>
+          <li>Does not set prices in primary currency markets</li>
+          <li>Does not create permanent entitlements without participation</li>
+        </ul>
+      </dd>
+      <dd><strong>Relationships:</strong>
+        <ul>
+          <li data-rel="funds" data-target="PTF">funds → PTF: Basic Units flow into PTF-operated essential goods markets</li>
+          <li data-rel="enables" data-target="PTH">enables → PTH: Basic Units accepted for primary housing costs</li>
+          <li data-rel="anchors" data-target="Creative Collectives">anchors → Creative Collectives: Octave conversion tier system provides advancement structure</li>
+          <li data-rel="governed_by" data-target="CIP">governed_by ← CIP: Conversion, distribution, and merit assessment managed by CIP</li>
+        </ul>
+      </dd>
+      <dd><strong>Canonical ID:</strong> https://bettertobest.github.io/research-hub/wiki/glossary.html#creative-currency-octaves</dd>
+    </dl>
+
+    <dl data-system="PTF" data-layer="asset" data-id="https://bettertobest.github.io/research-hub/wiki/glossary.html#public-trust-foundations">
+      <dt>System: Public Trust Foundations (PTF)</dt>
+      <dd><strong>Type:</strong> Asset Layer</dd>
+      <dd><strong>Aliases:</strong> PTF, community-owned businesses, community trust enterprises</dd>
+      <dd><strong>Definition:</strong> PTF is a not-for-profit community business layer that provides foundational goods — grocers, utilities, childcare, counter-serve restaurants — accepting CCO Basic Units and building collective community wealth. Governance is democratic; ownership is collective.</dd>
+      <dd><strong>Quantitative parameters:</strong>
+        <ul>
+          <li>Overhead reduction vs. comparable private operations: 40–60%</li>
+          <li>Worker conversion bonus: PTF workers receive elevated CCO conversion rates as an employment incentive</li>
+          <li>Essential-market incentives: PTF acceptance of BU activates higher conversion tiers for participating merchants</li>
+          <li>Synergy coefficient (θ): 0.15–0.25 — captures positive externalities from CCO-PTF integration in the integrated wealth function W(t). Baseline: θ is measured against a counterfactual in which CCO and PTF operate independently with no shared infrastructure, merchant network, or currency flows; θ therefore represents the additional community wealth generated exclusively by integration, above and beyond what each system would produce in isolation. Estimation method: θ is derived from Monte Carlo simulations calibrated against comparable real-world community economy dyads (e.g., credit unions co-located with food cooperatives in shared service zones), then stress-tested across a range of participation rate scenarios to establish the 0.15–0.25 confidence interval.</li>
+        </ul>
+      </dd>
+      <dd><strong>Boundary conditions (what PTF does NOT do):</strong>
+        <ul>
+          <li>Does not compete in specialty, luxury, or innovation markets — complements private sector</li>
+          <li>Does not mandate where citizens shop</li>
+          <li>Does not distribute profits to private shareholders</li>
+        </ul>
+      </dd>
+      <dd><strong>Relationships:</strong>
+        <ul>
+          <li data-rel="depends_on" data-target="CCO">depends_on ← CCO: Receives funding from CCO Basic Unit currency flows</li>
+          <li data-rel="enhances" data-target="CCO">enhances → CCO: Provides stable merchant network for BU redemption; reduces collective overhead 40–60%</li>
+          <li data-rel="organized_by" data-target="SZH">organized_by ← SZH: Geographic zone boundaries define PTF service catchments</li>
+          <li data-rel="governed_by" data-target="CIP">governed_by ← CIP: Democratic oversight, transparent budgeting via CIP</li>
+        </ul>
+      </dd>
+      <dd><strong>Canonical ID:</strong> https://bettertobest.github.io/research-hub/wiki/glossary.html#public-trust-foundations</dd>
+    </dl>
+
+    <dl data-system="PTH" data-layer="asset" data-id="https://bettertobest.github.io/research-hub/wiki/glossary.html#public-trust-housing">
+      <dt>System: Public Trust Housing (PTH)</dt>
+      <dd><strong>Type:</strong> Asset Layer</dd>
+      <dd><strong>Aliases:</strong> PTH, community-owned housing, public trust residential</dd>
+      <dd><strong>Definition:</strong> PTH is a community-owned housing system that creates collective residential equity through democratic resident governance and an "Acre Equity" wealth-building mechanism. Housing costs are settled primarily in CCO Basic Units. Properties held in public trust; residents hold individual equity accounts that grow with participation and tenure.</dd>
+      <dd><strong>Quantitative parameters:</strong>
+        <ul>
+          <li>Target market penetration: 50% PTH share within 5–19 years depending on investment level</li>
+          <li>Equity mechanism: individual "Acre Equity" accounts — balance grows with contributions, improvements, and tenure</li>
+          <li>Democratic control threshold: resident supermajority governs operational decisions</li>
+        </ul>
+      </dd>
+      <dd><strong>Boundary conditions (what PTH does NOT do):</strong>
+        <ul>
+          <li>Does not eliminate private homeownership or rental markets — coexists as a third option</li>
+          <li>Does not force residents to remain in perpetuity</li>
+          <li>Does not transfer collective equity to departing residents as liquid cash by default (equity is redeemable per charter terms)</li>
+        </ul>
+      </dd>
+      <dd><strong>Relationships:</strong>
+        <ul>
+          <li data-rel="depends_on" data-target="CCO">depends_on ← CCO: Integrates CCO Basic Unit circulation into residential infrastructure</li>
+          <li data-rel="stabilized_by" data-target="SZH">stabilized_by ← SZH: Community coherence from zone harmonization supports PTH democratic governance</li>
+          <li data-rel="governed_by" data-target="CIP">governed_by ← CIP: Digital voting infrastructure for resident governance and budgeting</li>
+        </ul>
+      </dd>
+      <dd><strong>Canonical ID:</strong> https://bettertobest.github.io/research-hub/wiki/glossary.html#public-trust-housing</dd>
+    </dl>
+
+    <dl data-system="SZH" data-layer="spatial" data-id="https://bettertobest.github.io/research-hub/wiki/glossary.html#social-zone-harmonization">
+      <dt>System: Social Zone Harmonization (SZH)</dt>
+      <dd><strong>Type:</strong> Spatial Layer</dd>
+      <dd><strong>Aliases:</strong> SZH, community zoning framework, social zone governance</dd>
+      <dd><strong>Definition:</strong> SZH is a spatial governance framework that organizes the geographic deployment of PTF businesses and PTH communities around shared values and lifestyle preferences, while maintaining overarching democratic coordination. Example zone types: family-safe zones, adult-only districts with relaxed regulations, artist and maker districts, recovery and wellness zones.</dd>
+      <dd><strong>Quantitative parameters:</strong>
+        <ul>
+          <li>Zone formation threshold: determined by public survey majority via CIP</li>
+          <li>Minimum zone cohesion: defined by shared governance charter adopted by resident supermajority</li>
+          <li>No fixed geographic size — zones scale from neighborhood to regional depending on context</li>
+        </ul>
+      </dd>
+      <dd><strong>Boundary conditions (what SZH does NOT do):</strong>
+        <ul>
+          <li>Does not override national or state law</li>
+          <li>Does not mandate that residents move into matching zones</li>
+          <li>Does not segregate by protected characteristics (race, religion, national origin, etc.)</li>
+          <li>Does not prevent cross-zone economic activity</li>
+        </ul>
+      </dd>
+      <dd><strong>Relationships:</strong>
+        <ul>
+          <li data-rel="organizes" data-target="PTF">organizes → PTF: Defines geographic zone boundaries and service catchments for PTF businesses</li>
+          <li data-rel="stabilizes" data-target="PTH">stabilizes → PTH: Creates community coherence required for PTH democratic governance</li>
+          <li data-rel="coordinated_by" data-target="CIP">coordinated_by ← CIP: Zone formation enabled through CIP public surveys and voting infrastructure</li>
+        </ul>
+      </dd>
+      <dd><strong>Canonical ID:</strong> https://bettertobest.github.io/research-hub/wiki/glossary.html#social-zone-harmonization</dd>
+    </dl>
+
+    <dl data-system="CIP" data-layer="democratic" data-id="https://bettertobest.github.io/research-hub/wiki/glossary.html#citizens-internet-portal">
+      <dt>System: Citizens Internet Portal (CIP)</dt>
+      <dd><strong>Type:</strong> Democratic Layer</dd>
+      <dd><strong>Aliases:</strong> CIP, civic technology platform, digital governance infrastructure</dd>
+      <dd><strong>Definition:</strong> CIP is a privacy-first digital governance platform that governs CCO currency operations — conversion, distribution, merit assessment — and manages PTH/PTF democratic voting, public surveys, and transparent budgeting. Designed for community control; no single point of failure architecture.</dd>
+      <dd><strong>Quantitative parameters:</strong>
+        <ul>
+          <li>Uptime target: no single point of failure; distributed architecture required</li>
+          <li>Privacy standard: data minimization, community-controlled; no behavioral extraction</li>
+          <li>Voting infrastructure: supports supermajority, simple majority, and ranked-choice configurations depending on decision type</li>
+          <li>CCO merit assessment: transparent, auditable scoring against productivity, efficiency, creativity, and quality axes</li>
+        </ul>
+      </dd>
+      <dd><strong>Boundary conditions (what CIP does NOT do):</strong>
+        <ul>
+          <li>Does not extract or monetize user behavioral data</li>
+          <li>Does not operate as a social media platform</li>
+          <li>Does not make unilateral governance decisions — enables democratic decisions</li>
+          <li>Does not replace physical civic institutions</li>
+        </ul>
+      </dd>
+      <dd><strong>Relationships:</strong>
+        <ul>
+          <li data-rel="governs" data-target="CCO">governs → CCO: Manages Octave conversion system, merit assessment, BU distribution</li>
+          <li data-rel="governs" data-target="PTH">governs → PTH: Provides digital voting infrastructure for resident governance</li>
+          <li data-rel="governs" data-target="PTF">governs → PTF: Manages democratic oversight and transparent budgeting</li>
+          <li data-rel="coordinates" data-target="SZH">coordinates → SZH: Enables zone formation through public surveys and voting</li>
+          <li data-rel="implements" data-target="CRSGR">implements → CRSGR: Digital platform through which CRSGR transition governance provisions are executed</li>
+        </ul>
+      </dd>
+      <dd><strong>Canonical ID:</strong> https://bettertobest.github.io/research-hub/wiki/glossary.html#citizens-internet-portal</dd>
+    </dl>
+
+    <dl data-system="CRSGR" data-layer="governance-meta" data-id="https://bettertobest.github.io/research-hub/referendum.html">
+      <dt>System: Citizens' Referendum for Systemic Governance Reform (CRSGR)</dt>
+      <dd><strong>Type:</strong> Governance Meta-Layer</dd>
+      <dd><strong>Aliases:</strong> CRSGR, governance referendum, transition governance framework</dd>
+      <dd><strong>Definition:</strong> CRSGR is the formal transition governance and democratic authorization framework for the Compassionism system as a whole. It specifies the constitutional and civic pathway by which CCO, PTF, PTH, SZH, and CIP are legitimated, piloted, and scaled. It contains formal articles, transition governance provisions, and a civic referendum mechanism. It is not an operational system but the authorization layer that governs the adoption of all operational systems.</dd>
+      <dd><strong>Status:</strong> Published as open civic document. Petition active at change.org/BetterToBest. Not yet enacted.</dd>
+      <dd><strong>Key provisions:</strong>
+        <ul>
+          <li>Formal articles of governance reform for each of the five architectures</li>
+          <li>Transition governance provisions for pilot → regional → national scaling</li>
+          <li>Citizen petition and ratification pathway</li>
+          <li>Democratic override and sunset clauses for each architecture</li>
+        </ul>
+      </dd>
+      <dd><strong>Boundary conditions:</strong>
+        <ul>
+          <li>Does not claim executive authority — is a civic proposal document</li>
+          <li>Does not override existing constitutional law without democratic ratification</li>
+          <li>Does not bind non-signatories</li>
+        </ul>
+      </dd>
+      <dd><strong>Relationships:</strong>
+        <ul>
+          <li data-rel="authorizes" data-target="CCO">authorizes → CCO: Provides democratic legitimacy for CCO deployment</li>
+          <li data-rel="authorizes" data-target="PTF">authorizes → PTF: Provides democratic legitimacy for PTF deployment</li>
+          <li data-rel="authorizes" data-target="PTH">authorizes → PTH: Provides democratic legitimacy for PTH deployment</li>
+          <li data-rel="authorizes" data-target="SZH">authorizes → SZH: Provides democratic legitimacy for SZH zone formation</li>
+          <li data-rel="mandates" data-target="CIP">mandates → CIP: Requires CIP as the implementation platform for all CRSGR governance provisions</li>
+        </ul>
+      </dd>
+      <dd><strong>Canonical document:</strong> <a href="https://bettertobest.github.io/research-hub/referendum.html">referendum.html</a></dd>
+      <dd><strong>Petition:</strong> <a href="https://www.change.org/BetterToBest">change.org/BetterToBest</a></dd>
+    </dl>
+    
+    <!-- ═══════════════════════════════════════════════════════════
          BLEI WELFARE MEASUREMENT SUITE (AI ingestion)
     ════════════════════════════════════════════════════════════════ -->
 
