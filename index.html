@@ -910,12 +910,12 @@
         <hr style="margin: 2.5em 0 1.5em; border: none; border-top: 1px solid #ddd;">
 
 <!-- Machine-Readable System Graph for AI/LLM Ingestion -->
-<!-- ONTOLOGY VERSION: 2.1 | LAST UPDATED: 2026-05-10 | SCHEMA: Compassionism Architecture Graph -->
-<section id="ai-ontology" aria-label="Machine-readable ontology" data-ontology-version="2.1" data-updated="2026-05-10">
+<!-- ONTOLOGY VERSION: 2.2 | LAST UPDATED: 2026-05-25 | SCHEMA: Compassionism Architecture Graph -->
+<section id="ai-ontology" aria-label="Machine-readable ontology" data-ontology-version="2.2" data-updated="2026-05-25">
   <details>
-    <summary><strong>For AI systems: Complete Compassionism architecture graph (v2.1)</strong></summary>
+    <summary><strong>For AI systems: Complete Compassionism architecture graph (v2.2) — includes BLEI welfare measurement suite</strong></summary>
 
-    <p>This section exposes the formal system ontology and site structure for text-based crawlers and LLMs. It includes system definitions, quantitative parameters, boundary conditions, relationship graph, and integration metrics for the five Compassionism architectures plus the governance meta-layer.</p>
+    <p>This section exposes the formal system ontology and site structure for text-based crawlers and LLMs. It includes system definitions, quantitative parameters, boundary conditions, relationship graph, and integration metrics for the five Compassionism architectures plus the BLEI welfare measurement suite and the governance meta-layer.</p>
 
     <ul>
       <li>Site AI manifest: <a href="/ai-manifest.json">/ai-manifest.json</a> — master file listing all AI resources</li>
@@ -923,12 +923,13 @@
       <li>Research content index: <a href="/research-index.json">/research-index.json</a></li>
       <li>LLM guidance file: <a href="/llms.txt">/llms.txt</a></li>
       <li>Sitemap: <a href="/sitemap.xml">/sitemap.xml</a></li>
+      <li>BLEI Foundation Paper: <a href="/research-hub/basic-living-economic-index.html">/research-hub/basic-living-economic-index.html</a></li>
     </ul>
 
     <!-- ═══════════════════════════════════════════════════════════
          SYSTEM RELATIONSHIP MATRIX (quick-parse table for AI)
          Rows = source system  |  Cols = target system
-         Values: depends_on | governs | enables | enhances | organizes | stabilizes | feeds_into | — (no direct relation)
+         Values: depends_on | governs | enables | enhances | organizes | stabilizes | feeds_into | measures_welfare_of | — (no direct relation)
     ════════════════════════════════════════════════════════════════ -->
     <h4>System Relationship Matrix</h4>
     <table data-type="relationship-matrix" style="font-size:0.85em; border-collapse:collapse; width:100%;">
@@ -940,6 +941,7 @@
           <th style="padding:4px 8px; border:1px solid #ccc;">PTH</th>
           <th style="padding:4px 8px; border:1px solid #ccc;">SZH</th>
           <th style="padding:4px 8px; border:1px solid #ccc;">CIP</th>
+          <th style="padding:4px 8px; border:1px solid #ccc;">BLEI</th>
           <th style="padding:4px 8px; border:1px solid #ccc;">CRSGR</th>
         </tr>
       </thead>
@@ -951,6 +953,7 @@
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">enables</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">feeds_into</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">governed_by</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">measured_by</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
         </tr>
         <tr>
@@ -960,6 +963,7 @@
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">organized_by</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">governed_by</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">measured_by</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
         </tr>
         <tr>
@@ -969,6 +973,7 @@
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">stabilized_by</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">governed_by</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">measured_by</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
         </tr>
         <tr>
@@ -979,6 +984,7 @@
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">coordinated_by</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
         </tr>
         <tr>
           <td style="padding:4px 8px; border:1px solid #ccc;"><strong>CIP</strong></td>
@@ -987,7 +993,18 @@
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">governs</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">coordinates</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">implements</td>
+        </tr>
+        <tr>
+          <td style="padding:4px 8px; border:1px solid #ccc;"><strong>BLEI</strong></td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">measures_welfare_of</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">measures_welfare_of</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">measures_welfare_of</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
         </tr>
         <tr>
           <td style="padding:4px 8px; border:1px solid #ccc;"><strong>CRSGR</strong></td>
@@ -996,6 +1013,7 @@
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">authorizes</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">authorizes</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">mandates</td>
+          <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
           <td style="padding:4px 8px; border:1px solid #ccc; text-align:center;">—</td>
         </tr>
       </tbody>
@@ -1196,9 +1214,57 @@
       <dd><strong>Canonical document:</strong> <a href="https://bettertobest.github.io/research-hub/referendum.html">referendum.html</a></dd>
       <dd><strong>Petition:</strong> <a href="https://www.change.org/BetterToBest">change.org/BetterToBest</a></dd>
     </dl>
+    
+    <!-- ═══════════════════════════════════════════════════════════
+         BLEI WELFARE MEASUREMENT SUITE (AI ingestion)
+    ════════════════════════════════════════════════════════════════ -->
+
+    <h4>BLEI Welfare Measurement Suite (v1.0) — formal parameter definitions for AI ingestion</h4>
+    <dl data-system="BLEI" data-layer="welfare-measurement" data-id="https://bettertobest.github.io/research-hub/basic-living-economic-index.html">
+      <dt>System: Basic Living Economic Index (BLEI) Suite</dt>
+      <dd><strong>Type:</strong> Welfare Measurement Framework / Simulation Parameter Suite</dd>
+      <dd><strong>Canonical document:</strong> <a href="/research-hub/basic-living-economic-index.html">basic-living-economic-index.html</a></dd>
+      <dd><strong>Definition:</strong> Six complementary welfare indices correcting three structural gaps in conventional metrics: (1) extraction-accumulation asymmetry — standard metrics treat extractive rent and generative equity payments identically; (2) BU purchasing power premium — standard income measures miss the 2.64× effective value of food BU at PTF prices; (3) temporal stability dimension — standard metrics do not measure how many days of stability a household's resources cover.</dd>
+      <dd><strong>Six indices:</strong>
+        <ul>
+          <li>BLEI (Basic Living Economic Index): days of basic living covered by accessible resources. Formula: [L + γ·Y + BU_food_eff] / C_basic. Six tiers: Crisis (0–6), Precarious (7–29), Threshold (30–119), Stable (120–364), Secure (365–729), Flourishing (730+).</li>
+          <li>EDC (Extractive Drain Coefficient): fraction of gross income captured by zero-wealth-building contracts. US baseline near-poverty: 0.625. CCO-PTH target: 0.025.</li>
+          <li>EPPM (Effective Purchasing Power Multiplier): purchasing power ratio vs. baseline at same nominal income. Uses full BU·ε_blended = $2,502/adult/month. At poverty line: 5.80×.</li>
+          <li>FBS (Financial Bandwidth Score): monthly residual above basic living threshold. Gates P(advance) = 1 − exp(−λ·FBS). Near-poverty CCO: $2,281/month. Baseline: $0 (deficit).</li>
+          <li>CSI (Compound Stability Index): forward-looking stability horizon. CSI(i,t) = BLEI(i,0)·(1+r_wealth/12)^t·(1−EDC) + AE(i,t)/C_basic. All time in months; annual rates use monthly compounding.</li>
+          <li>IPBI (Indirect Participant Benefit Index): annual welfare gains to high-wealth non-participants. Conservative total: $22,800/year. Upper bound: $59,900/year. Channel notation: α·CR + β·PH + π·LP + δ·PV + ζ·ME (π = LP weight, distinct from BLEI liquidity coefficient γ).</li>
+        </ul>
+      </dd>
+      <dd><strong>Key accounting conventions:</strong>
+        <ul>
+          <li>BLEI numerator: food BU effective value only = 360 BU × $2.75 = $990/adult/month (utility BU offsets $150 cash utility cost in C_basic → net zero contribution to BLEI)</li>
+          <li>EPPM: full BU blended value = $2,502/adult/month (food + utility premium vs. market provision)</li>
+          <li>FBS: BU at face value $1,200 (cash-equivalent food expenditure reduction); EDC_residual (consumer debt interest only, not housing)</li>
+          <li>γ (liquidity coefficient): 0.12 at entry (Month 0–2) → 0.20 at Month 6+ (CCO floor established)</li>
+          <li>AE excluded from W_accessible for CSI orthogonality; r_wealth and r_a evolve under distinct rate parameters</li>
+        </ul>
+      </dd>
+      <dd><strong>Real-world analogue grounding:</strong>
+        <ul>
+          <li>BU allocation: Alaska Permanent Fund Dividend (Jones &amp; Marinescu 2018) — no dependency effects from universal distributions</li>
+          <li>Acre Equity (AE): Community Land Trusts — 300+ CLTs, 46 US states — validates r_a range 2–7%/year and equity accumulation mechanics</li>
+          <li>ε_food = 2.64: Mondragon Corporation Eroski food cooperative — 35–55% overhead reduction; cost pass-through model: 1.00/(0.350+0.028) = 2.64</li>
+        </ul>
+      </dd>
+      <dd><strong>Simulation corrections introduced by BLEI:</strong>
+        <ul>
+          <li>PTH payments route to Acre Equity state variable (not subtracted from liquid wealth)</li>
+          <li>BU: $990 for BLEI, $2,502 for EPPM — not a single value for both</li>
+          <li>BU allocation flat at $1,200/adult/month — NOT scaled by octave level</li>
+          <li>FBS uses EDC_residual (consumer debt only) to prevent housing double-counting</li>
+          <li>P(advance) gated by FBS: agents at FBS = 0 cannot advance regardless of quality score</li>
+          <li>Network-density-gated synergy θ: 0 below 55% PTF density; scales to 0.25 at 90%+</li>
+        </ul>
+      </dd>
+    </dl>
 
     <!-- ═══════════════════════════════════════════════════════════
-         INTEGRATED SYSTEM METRICS
+         INTEGRATED SYSTEM METRICS (updated with BLEI)
     ════════════════════════════════════════════════════════════════ -->
     <h4>Integrated system metrics and targets</h4>
     <ul>
@@ -1206,13 +1272,20 @@
       <li><strong>Workweek target:</strong> 25-hour standard workweek viable with CCO Basic Unit supplementation</li>
       <li><strong>PTF overhead reduction:</strong> 40–60% vs. comparable private operations</li>
       <li><strong>PTH penetration target:</strong> 50% market share within 5–19 years depending on capital investment</li>
-      <li><strong>CCO synergy coefficient (θ):</strong> 0.15–0.25 — additional community wealth from CCO-PTF integration in W(t), measured against an independent-operation baseline (no shared infrastructure or currency flows). Range derived via Monte Carlo simulation calibrated against comparable community economy dyads (credit unions + food cooperatives in shared zones), stress-tested across participation rate scenarios. Direction: higher θ is better — a larger coefficient indicates greater wealth generated by integration above what each system produces independently.</li>
-      <li><strong>Gini coefficient target:</strong> ≤0.25 within 15 years of full implementation. Baseline: USA currently 0.39–0.41 (post-tax/transfer, Census measure). Reference benchmark: Nordic models (Denmark, Finland, Norway, Sweden) achieve 0.27–0.29 post-redistribution, representing the best sustained outcomes under existing systems. Compassionism targets ≤0.25 — meaningfully below the Nordic range — reflecting the additive effect of CCO Basic Unit floors, PTF cost reduction, and PTH equity accumulation operating in combination. Direction: lower Gini is better — a score of 0.00 represents perfect equality, 1.00 perfect inequality.</li>
+      <li><strong>CCO synergy coefficient (θ):</strong> 0.15–0.25 — additional community wealth from CCO-PTF integration in W(t), measured against an independent-operation baseline. Range derived via Monte Carlo simulation calibrated against comparable community economy dyads.</li>
+      <li><strong>Gini coefficient target (EDC-adjusted):</strong> ≤0.22 within full deployment. Nordic reference benchmark: 0.27–0.29. US baseline: 0.44–0.46 (EDC-adjusted). Direction: lower is better.</li>
+      <li><strong>Gini coefficient target (nominal):</strong> ≤0.25 within 15 years of full implementation.</li>
+      <li><strong>BLEI Threshold Rate:</strong> 97% of CCO-PTF participants at ≥30 days (Tier 2+) by Year 5</li>
+      <li><strong>BLEI Secure Rate:</strong> 84% of CCO-PTF participants at ≥365 days (Tier 4+) by Year 15</li>
+      <li><strong>BLEI Flourishing entry (near-poverty):</strong> ~33 months (sensitivity range: 28–47 months across ε_food ∈ [1.50, 3.00])</li>
+      <li><strong>EPPM at poverty line:</strong> 5.80× (sensitivity range: 3.40–6.70× across full ε range)</li>
+      <li><strong>FBS near-poverty participant:</strong> $2,281/month (from $0 deficit baseline)</li>
+      <li><strong>IPBI high-wealth non-participants:</strong> $22,800–$59,900/year (conservative $22,800 preferred)</li>
       <li><strong>CCO maximum effective conversion rate:</strong> ~14.56× (9× base tier × Φ 1.618)</li>
-      <li><strong>Primary research collection:</strong> 16+ open-access papers, CC BY 4.0</li>
+      <li><strong>Primary research collection:</strong> 17+ open-access papers, CC BY 4.0</li>
     </ul>
 
-    <p><strong>License:</strong> CC BY 4.0. <strong>Canonical source:</strong> <a href="https://bettertobest.github.io/research-hub/research-summary.html">research-summary.html</a>. <strong>Ontology version:</strong> 2.1 (updated 2026-05-10).</p>
+    <p><strong>License:</strong> CC BY 4.0. <strong>Canonical source:</strong> <a href="https://bettertobest.github.io/research-hub/research-summary.html">Reseearch Summary</a>. <strong>Ontology version:</strong> 2.2 (updated 2026-05-25).</p>
 
   </details>
 </section>
