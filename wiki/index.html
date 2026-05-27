@@ -528,24 +528,6 @@
             white-space: nowrap;
             font-size: 0.82rem;
         }
-
-        /* Simulation featured card */
-.sim-card{background:var(--bg);border:.5px solid var(--accent);border-radius:var(--r);padding:1.5rem;text-decoration:none;display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;margin-bottom:2.5rem;transition:box-shadow .15s}
-.sim-card:hover{box-shadow:0 4px 20px rgba(29,158,117,0.15)}
-.sim-card-body{}
-.sim-card-label{font-size:10.5px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.35rem}
-.sim-card-title{font-size:19px;font-weight:600;color:var(--text);margin-bottom:.5rem;line-height:1.25}
-.sim-card-desc{font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:.75rem}
-.sim-card-tags{display:flex;gap:.4rem;flex-wrap:wrap}
-.sim-tag{font-size:11px;padding:2px 8px;border-radius:20px;background:var(--accent-bg);color:var(--accent2);border:.5px solid rgba(29,158,117,0.25)}
-.sim-cta{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--accent);color:#fff;border:none;border-radius:var(--rs);padding:.75rem 1.5rem;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;transition:background .15s}
-.sim-cta:hover{background:var(--accent2)}
-@media(max-width:650px){.sim-card{grid-template-columns:1fr}.sim-cta{width:100%;justify-content:center}}
-.sim-preview{display:flex;flex-direction:column;gap:.3rem;padding:.75rem;background:var(--bg3);border-radius:var(--rs);margin-top:.5rem;min-width:200px}
-.sp-row{display:flex;justify-content:space-between;font-size:11px;color:var(--text2)}
-.sp-val{font-weight:600;color:var(--accent)}
-.sp-bar-wrap{height:3px;background:var(--border);border-radius:2px;margin-top:1px}
-.sp-bar{height:100%;border-radius:2px;background:var(--accent)}
         
         /* ── Citation tool ────────────────────────────────────── */
         .citation-box {
@@ -676,6 +658,20 @@
             .layer-grid { grid-template-columns: 1fr; }
             .qr-grid { grid-template-columns: 1fr 1fr; }
         }
+        /* ── Simulation featured card ── */
+.sim-featured-card{display:grid;grid-template-columns:1fr auto;gap:1.25rem;align-items:start;background:#ffffff;border:1px solid #1D9E75;border-radius:10px;padding:1.5rem;margin-bottom:1.5rem;text-decoration:none;transition:box-shadow .15s}
+.sim-featured-card:hover{box-shadow:0 4px 20px rgba(29,158,117,0.14)}
+@media(prefers-color-scheme:dark){.sim-featured-card{background:#1c1c1a;border-color:#1D9E75}}
+.sfc-label{font-size:10.5px;font-weight:700;color:#1D9E75;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
+.sfc-title{font-size:20px;font-weight:700;color:inherit;margin-bottom:.5rem;line-height:1.25}
+.sfc-desc{font-size:13px;color:#5a5a56;line-height:1.6;margin-bottom:.8rem}
+@media(prefers-color-scheme:dark){.sfc-desc{color:#a8a89f}}
+.sfc-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.5rem}
+.sfc-tag{font-size:11px;padding:2px 9px;border-radius:20px;background:#E1F5EE;color:#0F6E56;border:.5px solid rgba(29,158,117,0.3)}
+.sfc-cta{display:inline-flex;align-items:center;gap:.35rem;background:#1D9E75;color:#fff;padding:.7rem 1.4rem;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:background .15s}
+.sfc-cta:hover{background:#0F6E56}
+.sfc-meta{font-size:11px;color:#8a8a85;text-align:center;margin-top:.4rem;max-width:120px}
+@media(max-width:600px){.sim-featured-card{grid-template-columns:1fr}.sfc-meta{max-width:none;text-align:left}}
     </style>
 </head>
 <body>
@@ -983,37 +979,31 @@
             </div>
         </div>
 
-  <!-- ── Featured: Interactive Simulation ── -->
-  <div class="sec-head"><div class="sec-title">Interactive Simulation</div></div>
- 
-  <a class="sim-card" href="https://bettertobest.github.io/compassionism-simulation/" target="_blank">
-    <div class="sim-card-body">
-      <div class="sim-card-label">▶ Interactive Research Tool · Live</div>
-      <div class="sim-card-title">Compassionism Framework Simulation</div>
-      <div class="sim-card-desc">
-        Agent-based simulation of all five Compassionism architectures. Adjust BU allocation, octave levels, PTF market share, zone coherence (SZH), and democratic participation (CIP) to model poverty elimination, inequality, and BLEI temporal stability across 5–30 year horizons. BLEI-calibrated against 2023 US Consumer Expenditure Survey data.
-      </div>
-      <div class="sim-card-tags">
-        <span class="sim-tag">CCO · PTF · PTH</span>
-        <span class="sim-tag">SZH · CIP</span>
-        <span class="sim-tag">BLEI-calibrated</span>
-        <span class="sim-tag">US welfare baseline</span>
-        <span class="sim-tag">No install required</span>
-      </div>
-      <div class="sim-preview" style="margin-top:.85rem">
-        <div class="sp-row"><span>Poverty rate (full integration)</span><span class="sp-val">&lt;2%</span></div>
-        <div class="sp-bar-wrap"><div class="sp-bar" style="width:98%"></div></div>
-        <div class="sp-row" style="margin-top:.4rem"><span>Median BLEI (Flourishing tier)</span><span class="sp-val">730+ days</span></div>
-        <div class="sp-bar-wrap"><div class="sp-bar" style="width:85%;background:var(--gold)"></div></div>
-        <div class="sp-row" style="margin-top:.4rem"><span>Extractive Drain (EDC)</span><span class="sp-val">&lt;10%</span></div>
-        <div class="sp-bar-wrap"><div class="sp-bar" style="width:15%;background:var(--red)"></div></div>
-      </div>
+<!-- ▶ Compassionism Framework Simulation — featured card -->
+<a class="sim-featured-card" href="https://bettertobest.github.io/compassionism-simulation/" target="_blank">
+  <div>
+    <div class="sfc-label">▶ Interactive Tool · Live</div>
+    <div class="sfc-title">Compassionism Framework Simulation</div>
+    <div class="sfc-desc">
+      Agent-based simulation of all five Compassionism architectures. Adjust BU allocation,
+      octave levels, PTF market share, zone coherence (SZH), and democratic participation (CIP)
+      to model poverty elimination, inequality, and BLEI temporal stability across 5–30 year
+      horizons. BLEI-calibrated against 2023 US Consumer Expenditure Survey data.
+      No installation required — runs in any browser.
     </div>
-    <div style="display:flex;flex-direction:column;gap:.5rem;align-items:center">
-      <span class="sim-cta">Open Simulation ↗</span>
-      <span style="font-size:11px;color:var(--text3);text-align:center;max-width:130px">Runs in any browser · No install</span>
+    <div class="sfc-tags">
+      <span class="sfc-tag">CCO · PTF · PTH</span>
+      <span class="sfc-tag">SZH · CIP</span>
+      <span class="sfc-tag">BLEI-calibrated</span>
+      <span class="sfc-tag">US welfare baseline</span>
     </div>
-  </a>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem;flex-shrink:0">
+    <span class="sfc-cta">Open Simulation ↗</span>
+    <span class="sfc-meta">Runs in any browser · No install</span>
+  </div>
+</a>
+<!-- end simulation card -->
         
         <!-- ── Citation Tool ───────────────────────────────── -->
         <section class="section" id="citation-tool" aria-labelledby="citation-heading" style="margin-top:3.5rem;">
