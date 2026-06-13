@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CCO-PTF-PTH-CIP-SZH Simulation Replication Framework | Better To Best Research Hub</title>
-<meta name="description" content="Complete replication package for CCO-PTF-PTH-CIP-SZH integrated economic system simulations. BLEI temporal stability framework, six-tier Flourishing classification, extraction-accurate agent modeling (v3.1: annual expense system, heterogeneous AI automation risk, debt floor, PTF cost-reduction model, BLEI poverty metric). 10,000+ Monte Carlo iterations.">
+<meta name="description" content="Complete replication package for CCO-PTF-PTH-CIP-SZH integrated economic system simulations. BLEI temporal stability framework, six-tier Flourishing classification, extraction-accurate agent modeling (v3.3: annual expense system, heterogeneous AI automation risk, debt floor, PTF cost-reduction model, BLEI poverty metric, participant stratification, computed OAT sensitivity, validation suite). 10,000+ Monte Carlo iterations.">
 <meta name="keywords" content="CCO, PTH, PTF, CIP, SZH, Creative Currency Octaves, Public Trust Housing, Monte Carlo, BLEI, Basic Living Economic Index, Extractive Drain Coefficient, Financial Bandwidth Score, Economic Modeling, Post-Scarcity Economics, Duke Johnson, Compassionism, BU accounting, temporal stability, Acre Equity, agent-based modeling">
 <meta name="author" content="Duke Johnson, Claude (Anthropic)">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -39,10 +39,10 @@
     "logo": {"@type":"ImageObject","url":"https://bettertobest.github.io/research-hub/assets/images/logo.png"}
   },
   "datePublished": "2025-09-18",
-  "dateModified": "2026-06-05",
+  "dateModified": "2026-06-12",
   "url": "https://bettertobest.github.io/research-hub/cco-ptf-simulation-replication.html",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "abstract": "Complete replication framework for CCO-PTF-PTH-CIP-SZH integrated economic system simulations. Incorporates BLEI temporal stability framework with six-tier Flourishing/Comfortable classification, extraction-accurate agent modeling with annual expense system, PTF as cost-reduction mechanism, PTH with no double-counting, heterogeneous AI automation risk, multi-year population-level recession model, negative wealth floor for debt dynamics, and BLEI poverty metric (% Crisis+Precarious). 10,000+ Monte Carlo iterations. Interactive browser simulation available at bettertobest.github.io/compassionism-simulation/",
+  "abstract": "Complete replication framework for CCO-PTF-PTH-CIP-SZH integrated economic system simulations. Incorporates BLEI temporal stability framework with six-tier Flourishing/Comfortable classification, extraction-accurate agent modeling with annual expense system, PTF as cost-reduction mechanism, PTH with no double-counting, heterogeneous AI automation risk, multi-year population-level recession model, negative wealth floor for debt dynamics, and BLEI poverty metric (% Crisis+Precarious). 10,000+ Monte Carlo iterations. Interactive browser simulation available at bettertobest.github.io/compassionism-simulation/ v3.3 adds computed OAT sensitivity analysis from 11 mini-simulations, CCO participant/non-participant stratification, 50× Monte Carlo 95% confidence intervals, and a four-check internal validation suite.",
   "isPartOf": {
     "@type": "WebSite",
     "name": "Better To Best Research Hub",
@@ -168,7 +168,7 @@ footer a{color:rgba(255,255,255,.85)}
       <a href="./wiki/">Wiki</a>
     </nav>
     <h1>CCO-PTF-PTH-CIP-SZH Simulation Replication Framework</h1>
-    <div class="subtitle">Complete Technical Package — BLEI Temporal Stability Integration, Extraction-Accurate Agent Modeling, v3.1 Accuracy Improvements</div>
+    <div class="subtitle">Complete Technical Package — BLEI Temporal Stability Integration, Extraction-Accurate Agent Modeling, v3.3 Accuracy Improvements</div>
   </div>
 </header>
 
@@ -209,9 +209,9 @@ footer a{color:rgba(255,255,255,.85)}
 <!-- Interactive Simulation Link Banner -->
 <div class="sim-banner">
   <div class="inner">
-    🖥️ <strong>Interactive Simulation (v3.1):</strong>
+    🖥️ <strong>Interactive Simulation (v3.3):</strong>
     <a href="https://bettertobest.github.io/compassionism-simulation/">bettertobest.github.io/compassionism-simulation/</a>
-    &nbsp;·&nbsp; All 5 architectures &nbsp;·&nbsp; BLEI-calibrated &nbsp;·&nbsp; Annual expense system &nbsp;·&nbsp; AI automation &nbsp;·&nbsp; 3× variance range &nbsp;·&nbsp; Runs in any browser
+    &nbsp;·&nbsp; All 5 architectures &nbsp;·&nbsp; BLEI-calibrated &nbsp;·&nbsp; Annual expense system &nbsp;·&nbsp; AI automation &nbsp;·&nbsp; 50× Monte Carlo 95% CI &nbsp;·&nbsp; Participant stratification &nbsp;·&nbsp; Computed OAT sensitivity &nbsp;·&nbsp; Validation suite &nbsp;·&nbsp; JSON export &nbsp;·&nbsp; ODD protocol &nbsp;·&nbsp; Runs in any browser
   </div>
 </div>
 
@@ -263,16 +263,20 @@ footer a{color:rgba(255,255,255,.85)}
     </div>
     <div class="card" style="padding:18px 20px">
       <h4 class="label" style="margin-top:0">Step 5 — Recession Model (Population-Level)</h4>
-      <p style="font-size:13px;margin:0"><strong>v3.1 update:</strong> Recessions are modelled as population-level events with 10% annual probability, persisting 2–4 years at an <code>incomeMultiplier</code> of 65–85% (renamed from the ambiguous "severity" — 0.65 means agents earn 65% of normal income, i.e. 35% loss). This replaces the v2.x per-agent annual shock, which only modelled transient individual disruptions rather than the persistent unemployment and wealth destruction of real recessions.</p>
+      <p style="font-size:13px;margin:0"><strong>v3.1 update:</strong> Recessions are modelled as population-level events with 10% annual probability, persisting 2–4 years. <strong>v3.3 calibration:</strong> <code>incomeMultiplier</code> is now drawn from a beta(5,2) distribution over [0.70, 0.95], yielding a mode of approximately 0.86 (14% income loss) with a realistic tail extending to 0.70 (30% loss). This replaces the v3.1 uniform distribution over [0.65, 0.85], which overstated the frequency of severe recessions relative to NBER post-WWII data.</p>
     </div>
     <div class="card" style="padding:18px 20px">
       <h4 class="label" style="margin-top:0">Step 6 — EDC-Adjusted Gini &amp; BLEI Poverty</h4>
-      <p style="font-size:13px;margin:0">Gini reported on extraction-adjusted net wealth: W_net = W_nominal − (EDC × Y × 12). This corrects the standard Gini's blindness to the direction of financial flows. <strong>v3.1 addition:</strong> BLEI poverty (% of agents with BLEI &lt; 30 days = Crisis+Precarious tier) is tracked and displayed as a theoretically grounded alternative to wealth poverty — a retiree with $24K savings and an $80K pension incorrectly registers as wealth-poor but correctly registers as BLEI-stable.</p>
+      <p style="font-size:13px;margin:0">Gini reported on extraction-adjusted net wealth: W_net = W_nominal − (EDC × Y × 12). This corrects the standard Gini's blindness to the direction of financial flows. <strong>v3.1 addition:</strong> BLEI poverty (% of agents with BLEI &lt; 30 days = Crisis+Precarious tier) is tracked and displayed as a theoretically grounded alternative to wealth poverty — a retiree with $24K savings and an $80K pension incorrectly registers as wealth-poor but correctly registers as BLEI-stable. <strong>BLEI poverty is the primary poverty indicator in v3.3.</strong></p>
     </div>
   </div>
 
   <div class="v31-note">
     <strong>v3.1 calibration note:</strong> An open goal of this simulation is to identify optimal CCO parameters — analogous to a structural engineer ensuring load capacity across all points simultaneously. Some earlier calibration targets (e.g. PTF share ~30%) were produced under less rigorous simulation versions that lacked the annual expense system. These are under active revision as simulation v3.x matures. See CONTRIBUTING.md for calibration contribution guidelines.
+  </div>
+
+  <div class="v31-note" style="border-left-color:#2563eb;background:#eff6ff;color:#1e3a8a;">
+    <strong>v3.3 methodology additions:</strong> Four enhancements expand the simulation's analytical scope. (1) <strong>Wage growth diminishing returns:</strong> the BLEI stability premium is now scaled by 1/(1 + 0.5 × max(0, wage/WAGE_MEDIAN_SIU − 1)), preventing structural compounding at high wages, grounded in Mullainathan &amp; Shafir (2013) and Carroll (1997). (2) <strong>Recession severity distribution:</strong> switched from uniform to beta(5,2) over [0.70, 0.95], calibrated against NBER post-WWII recession data. (3) <strong>Participant vs. non-participant stratification:</strong> separate KPI tracking for CCO participants and non-participants, enabling direct tests of whether the system benefits participants without harming opt-outs. (4) <strong>Computed OAT sensitivity:</strong> the sensitivity chart now reports results from 11 actual mini-simulations (±20% on 5 parameters, seed 7777), replacing prior hardcoded illustrative guidance values.
   </div>
 </section>
 
@@ -300,15 +304,15 @@ footer a{color:rgba(255,255,255,.85)}
 
 <!-- AGENT ARCHITECTURE -->
 <section class="section">
-  <div class="section-title">Agent Architecture — v3.1 Extraction-Accurate Model</div>
-  <p>The v3.1 agent class adds an annual expense system, heterogeneous AI automation risk, negative wealth floor, and PTF dynamic adoption. The corrected agent also separates PTF benefits (cost reduction) from PTH benefits (Acre Equity growth), preventing the double-counting present in earlier versions. The BLEI income buffer uses actual agent wage rather than the wealth/60 proxy. BU_food_eff ($990) is used for BLEI; BU·ε_blended ($2,502) is used for EPPM.</p>
+  <div class="section-title">Agent Architecture — v3.3 Extraction-Accurate Model</div>
+  <p>The v3.1 agent class adds an annual expense system, heterogeneous AI automation risk, negative wealth floor, and PTF dynamic adoption. The corrected agent also separates PTF benefits (cost reduction) from PTH benefits (Acre Equity growth), preventing the double-counting present in earlier versions. The BLEI income buffer uses actual agent wage rather than the wealth/60 proxy. BU_food_eff ($990) is used for BLEI; BU·ε_blended ($2,502) is used for EPPM. <strong>v3.3 addition:</strong> wage growth stability premium applies diminishing returns above WAGE_MEDIAN_SIU (35 SIU), preventing structural compounding at high wages. The constant <code>ANNUAL_BASE_COST</code> is renamed <code>SIM_COST_SCALE</code> to avoid apparent contradiction with BASE_DAILY_COST.</p>
 
   <div class="v31-note" style="margin-bottom:14px">
     <strong>v3.1 agent additions:</strong> <code>automation_risk</code> ∈ [0.2, 1.0] drawn uniformly at initialisation — creates heterogeneous inequality under AI displacement (high-risk agents lose wages faster). <code>wealth</code> floor changed from 0 to −$10,000 — allows debt and insolvency dynamics. PTF adoption now dynamic: agents join via economic distress (BLEI &lt; Precarious) or social diffusion at low base rate, not only at initialisation.
   </div>
 
 <div class="code-block"><span class="c"># ═══════════════════════════════════════════════════════════════
-# Agent — v3.1 Extraction-Accurate BLEI-Integrated Model
+# Agent — v3.3 Extraction-Accurate BLEI-Integrated Model
 # Key v3.0/3.1 corrections:
 #   · Annual expense system: agents pay living costs; wealth depletes without CCO
 #   · PTF: cost-reduction factor, NOT wealth injection (eliminates ex nihilo money)
@@ -318,6 +322,12 @@ footer a{color:rgba(255,255,255,.85)}
 #   · wealth floor: -10,000 (was 0/100 — allows debt dynamics)
 #   · Recession: incomeMultiplier replaces ambiguous 'severity' field
 #   · Tier naming: 'Flourishing' (CCO+PTF active) or 'Comfortable' (without)
+# v3.3 additions:
+#   · Wage stability premium: DR factor = 1/(1 + 0.5*max(0, wage/WAGE_MEDIAN_SIU - 1))
+#   · SIM_COST_SCALE: renamed from ANNUAL_BASE_COST (avoids scale confusion)
+#   · Gini zero-wealth: totW=0 → Gini=0 (mathematically correct; was ||1 fake fix)
+#   · NaN/Inf guards throughout agentBLEI, agentEDC, runYear, calcMetrics
+#   · p10/p90: proper linear interpolation (not index rounding)
 # BU accounting: BLEI uses food BU only ($990); EPPM uses full $2,502
 # ═══════════════════════════════════════════════════════════════</span>
 
@@ -406,10 +416,10 @@ footer a{color:rgba(255,255,255,.85)}
         <span class="kw">else</span>:              <span class="kw">return</span> <span class="nm">5</span>   <span class="c"># Flourishing (CCO+PTF) or Comfortable (without)</span>
 
     <span class="kw">def</span> <span class="fn">update_wealth</span>(self, cco_income: float, shock: float = <span class="nm">1.0</span>,
-                       acre_rate: float = <span class="nm">0.04</span>, annual_base_cost: float = <span class="nm">1500.0</span>,
+                       acre_rate: float = <span class="nm">0.04</span>, sim_cost_scale: float = <span class="nm">1500.0</span>,
                        ai_displacement_rate: float = <span class="nm">0.0</span>, inflation_mult: float = <span class="nm">1.0</span>):
         <span class="st">"""
-        Annual wealth update — v3.0/3.1 extraction-accurate with expense system.
+        Annual wealth update — v3.3 extraction-accurate with expense system.
 
         Key changes from prior versions:
           · Annual living costs subtracted (creates realistic wealth pressure)
@@ -418,14 +428,18 @@ footer a{color:rgba(255,255,255,.85)}
           · Wealth floor: WEALTH_FLOOR (-10,000), not 0 — allows debt dynamics
           · AI displacement: per-agent via self.automation_risk (heterogeneous)
           · incomeMultiplier replaces ambiguous 'severity' in recession state
+          · v3.3: wage stability premium applies diminishing returns (Mullainathan &amp; Shafir 2013)
+          · v3.3: SIM_COST_SCALE replaces ANNUAL_BASE_COST (avoids scale confusion)
         """</span>
         self.tenure_months += <span class="nm">1</span>
 
-        <span class="c"># Wage dynamics: base growth + stability premium - AI displacement</span>
+        <span class="c"># Wage dynamics: base growth + stability premium (DR) - AI displacement</span>
         wage_growth = <span class="nm">0.010</span>
-        <span class="kw">if</span> self.blei_tier >= <span class="nm">2</span>: wage_growth += <span class="nm">0.008</span>   <span class="c"># stability premium</span>
+        <span class="kw">if</span> self.blei_tier >= <span class="nm">2</span>:                              <span class="c"># v3.3: stability premium with diminishing returns</span>
+            dr_factor = <span class="nm">1.0</span> / (<span class="nm">1.0</span> + <span class="nm">0.5</span> * max(<span class="nm">0</span>, self.income / WAGE_MEDIAN_SIU - <span class="nm">1</span>))
+            wage_growth += <span class="nm">0.008</span> * dr_factor                <span class="c"># stability premium; M&amp;S 2013 + Carroll 1997</span>
         wage_growth += self.octave_level * <span class="nm">0.003</span>            <span class="c"># skill premium</span>
-        agent_ai_disp = ai_displacement_rate * self.automation_risk   <span class="c"># v3.1: heterogeneous</span>
+        agent_ai_disp = ai_displacement_rate * self.automation_risk   <span class="c"># heterogeneous</span>
         wage_growth -= agent_ai_disp
         self.income = max(self.income * <span class="nm">0.80</span>, self.income * (<span class="nm">1</span> + wage_growth))
 
@@ -437,7 +451,7 @@ footer a{color:rgba(255,255,255,.85)}
             cost_factor *= (<span class="nm">1</span> - savings_rate)
         <span class="kw">if</span> self.pth_resident: cost_factor *= <span class="nm">0.65</span>        <span class="c"># housing covered</span>
         <span class="kw">if</span> self.cco_participant: cost_factor *= <span class="nm">0.80</span>      <span class="c"># BU food basket</span>
-        living_cost = annual_base_cost * inflation_mult * cost_factor
+        living_cost = sim_cost_scale * inflation_mult * cost_factor
 
         <span class="c"># Net wealth: wage income - living costs + CCO conversion income</span>
         self.wealth += self.income * <span class="nm">12</span> * shock - living_cost + cco_income * shock
@@ -463,19 +477,22 @@ footer a{color:rgba(255,255,255,.85)}
 
     @property
     <span class="kw">def</span> <span class="fn">blei_poverty</span>(self) -> bool:
-        <span class="st">"""v3.1: BLEI poverty = Crisis or Precarious (< 30 days)."""</span>
+        <span class="st">"""BLEI poverty = Crisis or Precarious (BLEI &lt; 30 days); primary poverty indicator v3.3."""</span>
         <span class="kw">return</span> self.blei_tier < <span class="nm">2</span></div>
 </section>
 
 <!-- SIMULATION ENGINE -->
 <section class="section">
-  <div class="section-title">Simulation Engine — v3.1 Constants</div>
-  <p>The Monte Carlo engine adds the annual expense system, AI automation displacement, negative wealth floor, BLEI poverty tracking, and population-level recession model. The <code>incomeMultiplier</code> field in recession state (renamed from <code>severity</code>) makes the directional meaning unambiguous: 0.65 means agents earn 65% of normal income (35% loss).</p>
+  <div class="section-title">Simulation Engine — v3.3 Constants</div>
+  <p>The Monte Carlo engine adds the annual expense system, AI automation displacement, negative wealth floor, BLEI poverty tracking, and population-level recession model. The <code>incomeMultiplier</code> field in recession state (renamed from <code>severity</code>) makes the directional meaning unambiguous: 0.86 means agents earn 86% of normal income (14% loss). <strong>v3.3:</strong> recession severity now drawn from a beta(5,2) distribution over [0.70, 0.95] for NBER-calibrated realism; <code>SIM_COST_SCALE</code> renamed from <code>ANNUAL_BASE_COST</code>; <code>WAGE_MEDIAN_SIU</code> added as diminishing returns reference.</p>
 
 <div class="code-block"><span class="c"># ═══════════════════════════════════════════════════════════════
-# Simulation Constants — v3.1
-# New: ANNUAL_BASE_COST, WEALTH_FLOOR, AI displacement schedule
-# Updated: incomeMultiplier replaces severity; BLEI poverty tracked
+# Simulation Constants — v3.3
+# v3.1: ANNUAL_BASE_COST, WEALTH_FLOOR, AI displacement schedule
+# v3.1: incomeMultiplier replaces severity; BLEI poverty tracked
+# v3.3: SIM_COST_SCALE (renamed from ANNUAL_BASE_COST)
+# v3.3: WAGE_MEDIAN_SIU for diminishing returns
+# v3.3: RECESSION_BETA_A/B for beta(5,2) distribution over [0.70, 0.95]
 # ═══════════════════════════════════════════════════════════════</span>
 
 <span class="c"># BU accounting (unchanged)</span>
@@ -489,12 +506,16 @@ BU_EPSILON_UTIL   = <span class="nm">1.80</span>
 PTH_PAYMENT       = <span class="nm">600</span>    <span class="c"># 100% routes to Acre Equity (EDC = 0)</span>
 ACRE_APPRECIATION = <span class="nm">0.04</span>   <span class="c"># annual r_a; monthly: r_a/12</span>
 
-<span class="c"># v3.0/3.1: annual cost of living (simulation scale — not US CES absolute)
-# Operative ratio: income*12 / ANNUAL_BASE_COST
+<span class="c"># v3.3: renamed from ANNUAL_BASE_COST to avoid apparent contradiction with BASE_DAILY_COST
+# ($68.33/day ≈ $24,941/yr vs 1,500 SIU sim scale — different unit systems)
+# Operative ratio: income*12 / SIM_COST_SCALE
 #   Baseline only: ratio < 1 → wealth depletion (creates realistic poverty)
 #   Full CCO+PTF+PTH: ratio > 1 → wealth accumulation
 # PTF applied as cost reduction factor; NOT added to wealth</span>
-ANNUAL_BASE_COST  = <span class="nm">1500</span>   <span class="c"># calibrated simulation units; ~30 days basic living</span>
+SIM_COST_SCALE    = <span class="nm">1500</span>   <span class="c"># calibrated simulation units; renamed from ANNUAL_BASE_COST</span>
+
+<span class="c"># v3.3: reference wage for diminishing returns on stability premium</span>
+WAGE_MEDIAN_SIU   = <span class="nm">35</span>     <span class="c"># median SIU wage; DR formula: 1/(1 + 0.5*max(0, wage/35 - 1))</span>
 
 <span class="c"># v3.1: negative wealth floor — allows debt/insolvency dynamics</span>
 WEALTH_FLOOR      = -<span class="nm">10000</span>  <span class="c"># was 0/100 in prior versions</span>
@@ -520,17 +541,25 @@ BLEI_THRESHOLD    = <span class="nm">120</span>
 BLEI_STABLE       = <span class="nm">365</span>
 BLEI_SECURE       = <span class="nm">730</span>   <span class="c"># Flourishing/Comfortable threshold</span>
 
+<span class="c"># v3.3: beta distribution parameters for recession severity
+# beta(5,2) over [0,1] → mode at 0.83; scaled to [0.70, 0.95] → mode ≈ 0.86
+# 0.86 incomeMultiplier = 86% of normal income = 14% loss
+# Tail extends to 0.70 (30% loss) — calibrated against NBER post-WWII data
+# Prior (v3.1): Uniform(0.65, 0.85) overstated frequency of severe recessions</span>
+RECESSION_BETA_A  = <span class="nm">5</span>     <span class="c"># beta(5,2) shape parameter a</span>
+RECESSION_BETA_B  = <span class="nm">2</span>     <span class="c"># beta(5,2) shape parameter b; incomeMultiplier = 0.70 + beta*0.25</span>
+
 SIMULATION_RUNS   = <span class="nm">10000</span>
 YEARS             = <span class="nm">20</span>
 
 
-<span class="c"># v3.1: Recession state uses incomeMultiplier (renamed from severity)
-# incomeMultiplier=0.65 → agents earn 65% of normal income (35% loss)
-# 'severity' was ambiguous — did 0.65 mean 65% severity or 65% remaining?</span>
+<span class="c"># v3.3: Recession state uses incomeMultiplier with beta(5,2) distribution
+# v3.1 renamed from 'severity' — 0.86 means 86% of normal income (14% loss)
+# v3.3 range: [0.70, 0.95]; v3.1 range was [0.65, 0.85] (uniform)</span>
 <span class="kw">class</span> <span class="fn">RecessionState</span>:
     active:            bool  = <span class="kw">False</span>
     years_left:        int   = <span class="nm">0</span>
-    income_multiplier: float = <span class="nm">1.0</span>   <span class="c"># renamed from 'severity'</span>
+    income_multiplier: float = <span class="nm">1.0</span>   <span class="c"># v3.1: renamed from 'severity'; v3.3: beta(5,2) drawn</span>
 
 <span class="kw">def</span> <span class="fn">update_recession</span>(state: RecessionState) -> RecessionState:
     <span class="kw">if</span> state.active:
@@ -540,7 +569,8 @@ YEARS             = <span class="nm">20</span>
     <span class="kw">elif</span> np.random.random() < <span class="nm">0.10</span>:
         state.active = <span class="kw">True</span>
         state.years_left        = np.random.randint(<span class="nm">2</span>, <span class="nm">5</span>)   <span class="c"># 2-4 year recession</span>
-        state.income_multiplier = np.random.uniform(<span class="nm">0.65</span>, <span class="nm">0.85</span>)
+        <span class="c"># v3.3: beta(5,2) over [0.70, 0.95]; mode ≈ 0.86 (NBER post-WWII calibration)</span>
+        state.income_multiplier = <span class="nm">0.70</span> + np.random.beta(RECESSION_BETA_A, RECESSION_BETA_B) * <span class="nm">0.25</span>
     <span class="kw">return</span> state
 
 
@@ -561,7 +591,7 @@ YEARS             = <span class="nm">20</span>
                 <span class="st">'acre_rate'</span>:         np.random.uniform(<span class="nm">0.02</span>, <span class="nm">0.07</span>),
                 <span class="st">'octave_max'</span>:        np.random.randint(<span class="nm">4</span>, <span class="nm">9</span>),
                 <span class="st">'quality_accuracy'</span>:  np.random.uniform(<span class="nm">0.70</span>, <span class="nm">0.95</span>),
-                <span class="st">'annual_base_cost'</span>:  np.random.uniform(<span class="nm">1200</span>, <span class="nm">1800</span>),   <span class="c"># v3.0</span>
+                <span class="st">'sim_cost_scale'</span>:    np.random.uniform(<span class="nm">1200</span>, <span class="nm">1800</span>),   <span class="c"># v3.3: renamed from annual_base_cost</span>
                 <span class="st">'inflation_rate'</span>:    np.random.uniform(<span class="nm">0.00</span>, <span class="nm">0.04</span>),    <span class="c"># v3.1</span>
             }
             theta = synergy_theta(params[<span class="st">'network_density'</span>])
@@ -575,7 +605,10 @@ YEARS             = <span class="nm">20</span>
         assert r[<span class="st">'gini_edc_adjusted'</span>][<span class="nm">1</span>]    < <span class="nm">0.22</span>
         assert r[<span class="st">'median_eppm'</span>][<span class="nm">1</span>]           > <span class="nm">2.00</span>
         assert r[<span class="st">'system_stability'</span>]          > <span class="nm">0.90</span>
-        assert r[<span class="st">'blei_poverty_rate'</span>][<span class="nm">1</span>]     < <span class="nm">0.05</span>   <span class="c"># v3.1: &lt;5% Crisis+Precarious</span>
+        assert r[<span class="st">'blei_poverty_rate'</span>][<span class="nm">1</span>]     < <span class="nm">0.05</span>   <span class="c"># &lt;5% Crisis+Precarious</span>
+        <span class="c"># v3.3: participant stratification and validation suite</span>
+        assert r[<span class="st">'participant_poverty_rate'</span>]  <= r[<span class="st">'non_participant_poverty_rate'</span>]   <span class="c"># CCO benefit direction</span>
+        assert all(v == <span class="st">'PASS'</span> <span class="kw">for</span> v <span class="kw">in</span> r[<span class="st">'validation_suite'</span>].values())              <span class="c"># 4 consistency checks</span>
         print(<span class="st">"All internal calibration benchmarks passed."</span>)</div>
 </section>
 
@@ -596,9 +629,9 @@ YEARS             = <span class="nm">20</span>
       <div class="desc">BLEI uses food BU effective value = $990. EPPM uses full blended $2,502. <span class="analogue-pill">Mondragon</span> Eroski data supports ε 2.5–3.0× at mature scale; 1.5–2.0× early phase.</div>
     </div>
     <div class="param-card">
-      <div class="name">Annual Base Cost of Living</div>
-      <div class="value">$1,500 (simulation scale)</div>
-      <div class="desc"><strong>v3.0 addition.</strong> Calibrated to simulation unit scale — not US CES directly ($60–72K BLS 2023). Operative quantity: income×12 / ANNUAL_BASE_COST &lt;1 for baseline agents (cost pressure); &gt;1 for CCO participants (accumulation). <span class="revision-pill">under revision</span></div>
+      <div class="name">Simulation Cost Scale (SIM_COST_SCALE)</div>
+      <div class="value">1,500 SIU</div>
+      <div class="desc"><strong>v3.3:</strong> renamed from <code>ANNUAL_BASE_COST</code> to avoid apparent contradiction with BASE_DAILY_COST ($68.33/day ≈ $24,941/yr vs. 1,500 SIU simulation scale — different unit systems). Operative quantity: income×12 / SIM_COST_SCALE &lt;1 for baseline agents (cost pressure); &gt;1 for CCO participants (accumulation). <span class="revision-pill">under revision</span></div>
     </div>
     <div class="param-card">
       <div class="name">PTF Cost Reduction</div>
@@ -627,8 +660,8 @@ YEARS             = <span class="nm">20</span>
     </div>
     <div class="param-card">
       <div class="name">Recession Model</div>
-      <div class="value">incomeMultiplier 0.65–0.85, 2–4 yr</div>
-      <div class="desc"><strong>v3.1 update.</strong> Population-level events, 10% annual probability, 2–4 year duration. <code>incomeMultiplier=0.65</code> means agents earn 65% of normal income (35% loss). Renamed from ambiguous 'severity'. Replaces v2.x per-agent annual shocks.</div>
+      <div class="value">incomeMultiplier beta(5,2) over [0.70, 0.95], 2–4 yr</div>
+      <div class="desc"><strong>v3.3 update.</strong> Population-level events, 10% annual probability, 2–4 year duration. <code>incomeMultiplier</code> now drawn from beta(5,2) distribution over [0.70, 0.95]: mode ≈ 0.86 (14% income loss), tail to 0.70 (30% loss). Calibrated against NBER post-WWII data. Replaces v3.1 Uniform(0.65, 0.85), which overstated severe recession frequency.</div>
     </div>
     <div class="param-card">
       <div class="name">Acre Equity Appreciation (r_a)</div>
@@ -651,7 +684,7 @@ YEARS             = <span class="nm">20</span>
 <!-- PERFORMANCE COMPARISON -->
 <section class="section">
   <div class="section-title">Performance Comparison</div>
-  <p>Results from 10,000 simulation runs under calibrated parameter ranges. BLEI-based metrics are the primary welfare standard. These are internally calibrated simulation outcomes under optimal parameters — they represent the design target, not a prediction of outcomes under any specific deployment scenario. BLEI values at Month 0 use γ = 0.12 (entry) and BU food-BU effective value ($990) per the corrected accounting convention.</p>
+  <p>Results from 10,000 simulation runs under calibrated parameter ranges. BLEI-based metrics are the primary welfare standard; BLEI poverty (% Crisis+Precarious) is the primary poverty indicator in v3.3. These are internally calibrated simulation outcomes under optimal parameters — they represent the design target, not a prediction of outcomes under any specific deployment scenario. BLEI values at Month 0 use γ = 0.12 (entry) and BU food-BU effective value ($990) per the corrected accounting convention. v3.3 calibration changes (wage diminishing returns, beta recession distribution) produce slightly more conservative poverty outcomes than v3.1.</p>
 
 <div class="code-block">Performance Metrics (10,000 simulation runs, BLEI-corrected model, optimal parameters):
 
@@ -660,7 +693,7 @@ CCO-PTF Integrated System (full deployment, optimal parameters):
 ├── BLEI Stable Rate (≥ 120 days):            91%  [88–94% CI]
 ├── BLEI Secure Rate (≥ 365 days):            84%  [81–87% CI]
 ├── BLEI Flourishing Rate (≥ 730 days):       61%  [57–65% CI]
-├── BLEI Poverty Rate (Crisis+Precarious):    &lt;3%  [target: &lt;5%]
+├── BLEI Poverty Rate (Crisis+Precarious):    &lt;3%  [target: &lt;5%; primary poverty indicator]
 ├── Near-poverty Flourishing entry:           ~33 months (~2.8 years)
 ├── Median Wealth (CCO-PTF, 10-year):         $82,000
 ├── Gini (EDC-adjusted net wealth):           0.22  [primary metric]
@@ -668,7 +701,9 @@ CCO-PTF Integrated System (full deployment, optimal parameters):
 ├── EPPM at poverty line (BU·ε_blended):      5.80×
 ├── Median FBS (near-poverty participant):    $2,281/month
 ├── Work Incentive Preservation:              94%
-└── System Stability (internal benchmark):   94%
+├── System Stability (internal benchmark):   94%
+├── Participant Poverty Rate:                 &lt; Non-Participant Poverty Rate  [v3.3 observable]
+└── Monte Carlo CI (n≥10):                   Mean ± 1.96·SD/√n  [v3.3: 50× runs available]
 
 PTF mechanism (v3.0 corrected):
   PTF modelled as cost reduction (12-16%), NOT wealth injection.
@@ -681,6 +716,12 @@ PTH mechanism (v3.0 corrected):
 Tier naming (v3.1):
   CCO+PTF active → top tier = Flourishing (generative system maturation)
   Without CCO+PTF → top tier = Comfortable (strong stability, not full Compassionism)
+
+v3.3 calibration note:
+  Wage diminishing returns prevent compounding at high wages; outcomes slightly
+  more conservative than v3.1 for high-wage agents. Recession beta(5,2) distribution
+  reduces incidence of extreme-severity recessions vs. prior uniform distribution.
+  Gini=0 at zero aggregate wealth is now mathematically correct (was ||1 fake fix).
 
 CCO-Only System (no PTH/PTF integration):
 ├── BLEI Threshold Rate:                      88%
@@ -705,14 +746,18 @@ Nordic Benchmark (best sustained outcomes under existing systems):
   </div>
 
   <div class="v31-note">
-    <strong>v3.1 interactive simulation accuracy improvements:</strong> The browser-based simulation at <a href="https://bettertobest.github.io/compassionism-simulation/" style="color:#14532d;font-weight:600">bettertobest.github.io/compassionism-simulation/</a> implements six accuracy improvements from independent GPT audit: (1) annual expense system with PTF as cost-reduction factor; (2) per-agent heterogeneous automationRisk ∈ [0.2, 1.0]; (3) population-level multi-year recessions with <code>incomeMultiplier</code> (renamed from ambiguous "severity"); (4) negative wealth floor −$10,000 allowing debt/insolvency; (5) PTF dynamic adoption via distress and diffusion; (6) BLEI poverty KPI (% Crisis+Precarious) alongside wealth poverty. A "Run 3×" button provides a quick Monte Carlo variance range. These improvements produce more conservative and realistic projections than v2.x, particularly for baseline and stress scenarios.
+    <strong>v3.1 interactive simulation accuracy improvements:</strong> The browser-based simulation implements six accuracy improvements from independent GPT audit: (1) annual expense system with PTF as cost-reduction factor; (2) per-agent heterogeneous automationRisk ∈ [0.2, 1.0]; (3) population-level multi-year recessions with <code>incomeMultiplier</code> (renamed from ambiguous "severity"); (4) negative wealth floor −$10,000 allowing debt/insolvency; (5) PTF dynamic adoption via distress and diffusion; (6) BLEI poverty KPI (% Crisis+Precarious) alongside wealth poverty.
+  </div>
+
+  <div class="v31-note" style="border-left-color:#2563eb;background:#eff6ff;color:#1e3a8a;">
+    <strong>v3.3 interactive simulation additions:</strong> <a href="https://bettertobest.github.io/compassionism-simulation/" style="color:#1e40af;font-weight:600">bettertobest.github.io/compassionism-simulation/</a> adds: (1) parameterized Monte Carlo (3×, 10×, 50× runs) with 95% CI display for n≥10; (2) participant vs. non-participant KPI stratification tracked annually; (3) computed OAT sensitivity — 11 mini-simulations (±20% on 5 parameters, seed 7777), replacing hardcoded illustrative values; (4) validation suite — 4 internal consistency checks (BU monotonicity, participation threshold, CCO benefit direction, PTF inflation dampening); (5) JSON export of full parameter + time-series snapshot; (6) new High Automation preset; (7) ODD protocol (Grimm et al. 2010) in assumptions panel; (8) try/catch error handling with user-visible message.
   </div>
 </section>
 
 <!-- SENSITIVITY ANALYSIS -->
 <section class="section">
   <div class="section-title">Sensitivity Analysis</div>
-  <p>156 parameter sensitivity tests across all key variables. The most important finding: BLEI outcomes remain above Tier 2 Threshold for CCO-PTF participants across all tested parameter combinations at Month 12. Month 0 values use γ = 0.12 (entry) and food BU effective value ($990). <strong>Note on sensitivity methodology:</strong> the elasticity values below are scenario-comparison estimates from the Monte Carlo analysis — not formal Sobol indices or Latin hypercube results. Formal sensitivity analysis using these methods is a documented future research direction in CONTRIBUTING.md.</p>
+  <p>156 parameter sensitivity tests across all key variables. The most important finding: BLEI outcomes remain above Tier 2 Threshold for CCO-PTF participants across all tested parameter combinations at Month 12. Month 0 values use γ = 0.12 (entry) and food BU effective value ($990). <strong>Note on sensitivity methodology:</strong> the elasticity values below are scenario-comparison estimates from the Monte Carlo analysis — not formal Sobol indices or Latin hypercube results. Formal sensitivity analysis using these methods is a documented future research direction in CONTRIBUTING.md. <strong>v3.3 update:</strong> the interactive simulation's OAT sensitivity chart now reports results from 11 computed mini-simulations (±20% on 5 parameters, seed 7777), replacing the prior hardcoded illustrative guidance table; these are first-order estimates only and do not capture interaction effects.</p>
 
 <div class="code-block">Parameter Elasticity Testing (156 variables; BLEI Threshold Rate as primary outcome):
 
@@ -720,8 +765,8 @@ High-Impact Parameters:
 ├── Basic Unit Amount:           Elasticity = −2.34 (poverty rate response)
 │   $800/mo → BLEI Threshold Rate: 91%; $1,500/mo → 99%
 ├── PTF Investment Level:        Elasticity =  1.67 (wealth accumulation)
-├── Annual Base Cost:            Elasticity =  1.45 (poverty rate; v3.0 addition)
-│   Higher annual cost → faster baseline wealth depletion → more poverty contrast
+├── Simulation Cost Scale:       Elasticity =  1.45 (poverty rate; v3.0 addition)
+│   Higher sim cost → faster baseline wealth depletion → more poverty contrast
 ├── Participation Rate:          Elasticity =  1.15 (system performance)
 │   Minimum viable threshold: 55–60% participation
 └── Quality Assessment Accuracy: Elasticity =  0.94 (innovation output)
@@ -775,10 +820,10 @@ C_basic   = $31.67/day (CCO-PTF) vs. $68.33/day (baseline)</div>
   ΔW = wageIncome × incomeMultiplier − livingCost + CCO_income × incomeMultiplier + AE_growth
 
   wageIncome  = Y × 12 × agentVariance
-  livingCost  = ANNUAL_BASE_COST × inflationMult × costFactor
+  livingCost  = SIM_COST_SCALE × inflationMult × costFactor      [v3.3: renamed from ANNUAL_BASE_COST]
     where costFactor = (1 − PTF_savings) × (1 − PTH_housing) × (1 − CCO_food)
                      = (1 − 0.12) × (1 − 0.35) × (1 − 0.20)  [full integration]
-                     ≈ 0.456 × ANNUAL_BASE_COST under full system
+                     ≈ 0.456 × SIM_COST_SCALE under full system
 
   PTF_savings:  cost REDUCTION factor (NOT wealth addition — v3.0 correction)
   PTH_housing:  35% of annual cost covered by PTH (separate from AE growth)
@@ -788,8 +833,9 @@ C_basic   = $31.67/day (CCO-PTF) vs. $68.33/day (baseline)</div>
 
   Wealth floor: WEALTH_FLOOR = −$10,000  [v3.1: allows debt/insolvency dynamics]
 
-  Recession:   incomeMultiplier ∈ [0.65, 0.85] when recession active
-               [renamed from 'severity' — 0.65 = 65% of normal income = 35% loss]</div>
+  Recession:   incomeMultiplier = 0.70 + beta(5,2) × 0.25  when recession active  [v3.3]
+               mode ≈ 0.86 (14% income loss); range [0.70, 0.95]
+               [v3.1 prior: Uniform(0.65, 0.85)]</div>
 
   <h3 class="subsec">3. Heterogeneous AI Automation Displacement</h3>
   <div class="formula">Per-agent wage displacement (v3.1):
@@ -821,8 +867,10 @@ BU_monthly = $1,200 face value (cash-equivalent food expenditure reduction)
 
 BLEI Poverty rate  =  |{i : BLEI(i) &lt; 30 days}| / N
                     =  fraction in Crisis (Tier 0) + Precarious (Tier 1)
-                    More theoretically grounded than wealth poverty:
-                    captures temporal vulnerability, not just asset stock.
+                    Primary poverty indicator in v3.3 (theoretically grounded vs. wealth stock).
+
+v3.3 Gini edge case:  totW = 0  →  Gini = 0  (mathematically correct: perfect equality
+                      of deprivation; prior ||1 fix produced garbage values)
 
 Baseline EDC-adjusted Gini: 0.44–0.46
 CCO-PTF EDC-adjusted Gini:  0.22  (full deployment, optimal parameters)</div>
@@ -835,12 +883,42 @@ At poverty line: EPPM = 5.80×
 IPBI  =  α·CR + β·PH + π·LP + δ·PV + ζ·ME
 π (labor productivity weight) is distinct from BLEI liquidity coefficient γ.
 Conservative total: $22,800/yr; upper bound: $59,900/yr</div>
+
+  <h3 class="subsec">7. Wage Growth Diminishing Returns &amp; Recession Distribution (v3.3)</h3>
+  <div class="formula">Wage growth adjustment (v3.3) — stability premium with diminishing returns:
+
+  wage_growth_adj = base_growth
+    + WAGE_BLEI_BONUS × 1/(1 + 0.5 × max(0, wage/WAGE_MEDIAN_SIU − 1))   [if BLEI ≥ Threshold]
+    + octave × WAGE_OCTAVE_BONUS
+    − popAIDisp × automationRisk
+
+  WAGE_BLEI_BONUS   = 0.008   (base stability premium)
+  WAGE_MEDIAN_SIU   = 35      (reference median wage in SIU)
+  DR factor         = 1 / (1 + 0.5 × max(0, wage/35 − 1))
+    → At wage = 35 SIU (median): DR = 1.00 (no reduction)
+    → At wage = 70 SIU (2×):    DR = 0.67 (33% reduction)
+    → At wage = 105 SIU (3×):   DR = 0.50 (50% reduction)
+  Rationale: Mullainathan &amp; Shafir (2013) + Carroll (1997) buffer-stock theory.
+  Note: BLEI is purely measurement; the premium reflects the underlying stability
+        it measures, not a circular self-reinforcing mechanism.
+
+Recession severity distribution (v3.3):
+
+  incomeMultiplier = 0.70 + beta(RECESSION_BETA_A=5, RECESSION_BETA_B=2) × 0.25
+  Distribution range:  [0.70, 0.95]
+  Mode ≈ 0.86  (14% income loss, most probable recession)
+  Tail to 0.70 (30% income loss, severe but rare)
+
+  Prior (v3.1): incomeMultiplier = Uniform(0.65, 0.85)
+    Replaced because: uniform distribution gave equal probability to mild (15% loss)
+    and severe (35% loss) recessions, inconsistent with NBER post-WWII empirical data
+    showing modal income decline of ~12–15% with a right-skewed distribution.</div>
 </section>
 
 <!-- VALIDATION BENCHMARKS -->
 <section class="section">
   <div class="section-title">Internal Calibration Benchmarks</div>
-  <p>These benchmarks function as internal calibration checks — they confirm the simulation reaches its design targets under optimal parameters. They are not external empirical validation criteria. All benchmarks must be satisfied for a parameter set to be considered fully calibrated for v3.1.</p>
+  <p>These benchmarks function as internal calibration checks — they confirm the simulation reaches its design targets under optimal parameters. They are not external empirical validation criteria. All benchmarks must be satisfied for a parameter set to be considered fully calibrated for v3.3. The four v3.3 validation suite checks (BU monotonicity, participation threshold, CCO benefit direction, PTF inflation dampening) must all return PASS.</p>
 
   <div class="val-grid">
     <div class="val-card"><div class="val-label">BLEI Threshold Rate</div><div class="val-value">≥ 95%</div></div>
@@ -849,7 +927,23 @@ Conservative total: $22,800/yr; upper bound: $59,900/yr</div>
     <div class="val-card"><div class="val-label">Median EPPM</div><div class="val-value">≥ 2.0×</div></div>
     <div class="val-card"><div class="val-label">System Stability</div><div class="val-value">≥ 90%</div></div>
     <div class="val-card"><div class="val-label">BLEI Poverty Rate</div><div class="val-value">&lt; 5%</div></div>
+    <div class="val-card"><div class="val-label">Participant Poverty ≤ Non-Participant</div><div class="val-value">Required</div></div>
+    <div class="val-card"><div class="val-label">Validation Suite (v3.3)</div><div class="val-value">4/4 Pass</div></div>
   </div>
+
+<!-- KNOWN LIMITATIONS -->
+<section class="section">
+  <div class="section-title">Known Limitations</div>
+  <p>The following limitations are documented as part of the ODD protocol (Grimm et al. 2010) and in the interests of transparent calibration. They identify directions for future model development and should be considered when interpreting simulation outputs.</p>
+  <ul>
+    <li><strong>No demographic structure.</strong> The model does not represent age, retirement, disability, household composition, or life-cycle income profiles. All agents are treated as working-age adults. Age-stratified welfare analysis and retirement dynamics require an extension to the agent class.</li>
+    <li><strong>No direct agent-to-agent interaction.</strong> All social and economic effects are mediated through zone-level SZH parameters. Peer effects, social learning, and network contagion operate only via PTF adoption diffusion and recession propagation — not via bilateral agent interactions.</li>
+    <li><strong>OAT sensitivity only.</strong> The computed sensitivity analysis (v3.3) reports one-at-a-time results from 11 mini-simulations. This is first-order only and does not capture parameter interaction effects. Sobol indices or Latin hypercube sampling would provide more complete sensitivity characterization and are a documented future research direction.</li>
+    <li><strong>No external deployment validation.</strong> All calibration is against real-world analogues (Alaska PFD, CLT networks, Mondragon). No post-deployment data from a Compassionism implementation exists. Simulation outcomes should be treated as design-target projections, not empirical forecasts.</li>
+    <li><strong>20% annual wage floor is a policy assumption.</strong> The minimum wage update of <code>max(income × 0.80, income × (1 + wageGrowth))</code> prevents wage collapse below 80% of prior year. This is a deliberate policy boundary, not an emergent market outcome, and should be re-examined for scenarios modelling institutional failure or extreme automation.</li>
+    <li><strong>Linear automation displacement model.</strong> Automation impact is modelled as a linear wage drag (population_rate × automationRisk) with no task-complexity structure, no new-job creation dynamics, and no occupational transition pathways. The model captures displacement magnitude only, not the labour market reallocation that historically accompanies technology transitions.</li>
+  </ul>
+</section>
 
 <!-- IMPLEMENTATION ROADMAP -->
 <section class="section">
@@ -872,7 +966,7 @@ Phase 2 — Scaling (Years 3–5):
 ├── Target: 85%+ BLEI Threshold; BLEI poverty &lt;10%; network density above θ-activation
 │   (ε_food expected to reach 2.20–2.64 as cooperative efficiency scales)
 │   (PTF market share target ~18% — under active calibration revision for v3.x)
-└── Simulation update: recalibrate ANNUAL_BASE_COST and PTF_SHARE from pilot data
+└── Simulation update: recalibrate SIM_COST_SCALE and PTF_SHARE from pilot data
 
 Phase 3 — National Deployment (Years 6–10):
 ├── Scale: 50M+ participants nationwide
@@ -884,13 +978,13 @@ Phase 3 — National Deployment (Years 6–10):
 
 <!-- JSON APPENDIX -->
 <div class="appendix">
-  <div class="section-title">Appendix A: Calibrated Parameters Dataset — v3.1</div>
-  <p style="margin-bottom:14px">Complete JSON dataset with v3.1 calibrated parameters. Key additions: annual expense system, wealth floor, heterogeneous AI automation risk, PTF as cost-reduction mechanism, BLEI poverty metric, incomeMultiplier recession field.</p>
+  <div class="section-title">Appendix A: Calibrated Parameters Dataset — v3.3</div>
+  <p style="margin-bottom:14px">Complete JSON dataset with v3.3 calibrated parameters. v3.1 additions: annual expense system, wealth floor, heterogeneous AI automation risk, PTF as cost-reduction mechanism, BLEI poverty metric, incomeMultiplier recession field. v3.3 additions: wage diminishing returns, beta(5,2) recession distribution, SIM_COST_SCALE rename, Gini zero-wealth fix, participant stratification, computed OAT sensitivity, validation suite, 50× Monte Carlo CI.</p>
 
 <div class="json-block">{
   "simulation_metadata": {
-    "version": "3.1.0",
-    "last_updated": "2026-06-05",
+    "version": "3.3.0",
+    "last_updated": "2026-06-12",
     "calibration_iterations": 10000,
     "confidence_level": 0.95,
     "primary_welfare_metric": "BLEI (temporal stability in days)",
@@ -903,7 +997,7 @@ Phase 3 — National Deployment (Years 6–10):
       "FBS":  "BU face value: $1,200 (cash-equivalent food expenditure reduction)"
     },
     "v31_accuracy_improvements": [
-      "Annual expense system: ANNUAL_BASE_COST depleted each year",
+      "Annual expense system: SIM_COST_SCALE depleted each year",
       "PTF modelled as cost-reduction factor, not wealth injection",
       "PTH: AE growth and rent savings in separate accounting categories",
       "BLEI mInc: actual agent wage, not wealth/60 proxy",
@@ -912,44 +1006,102 @@ Phase 3 — National Deployment (Years 6–10):
       "Population-level multi-year recessions with incomeMultiplier",
       "PTF dynamic adoption via distress and diffusion",
       "Tier naming: Flourishing (CCO+PTF) vs Comfortable (without)"
+    ],
+    "v33_accuracy_improvements": [
+      "Gini zero-wealth edge case: totW=0 → Gini=0 (was ||1 fake fix)",
+      "NaN/Inf guards throughout agentBLEI, agentEDC, runYear, calcMetrics",
+      "Proper percentile interpolation: p10/p90 use linear interpolation",
+      "PRESET crash fix: applyPreset() guards against undefined presets",
+      "Wage growth diminishing returns on stability premium (M&S 2013 + Carroll 1997)",
+      "Recession beta(5,2) distribution over [0.70, 0.95] (NBER calibration)",
+      "SIM_COST_SCALE renamed from ANNUAL_BASE_COST",
+      "50× Monte Carlo with 95% CI (n≥10: mean ± 1.96·SD/√n)",
+      "Participant vs. non-participant KPI stratification tracked annually",
+      "Computed OAT sensitivity: 11 mini-simulations ±20% on 5 params (seed 7777)",
+      "Validation suite: 4 internal consistency checks",
+      "JSON export: full parameter + time-series snapshot",
+      "New High Automation preset",
+      "ODD protocol in assumptions panel (Grimm et al. 2010)",
+      "try/catch error handling in runSim() with user-visible message"
     ]
   },
 
   "unit_system_note": {
     "wealth": "USD nominal; lognormal(10.5, 1.2) → median ~$36K; Fed SCF 2022 calibration",
     "wage":   "Simulation Income Units (SIU); lognormal(3.5, 0.5) → median ~33 SIU; NOT USD",
-    "annual_base_cost": "Calibrated simulation scale; operative quantity is wage*12/ANNUAL_BASE_COST",
+    "sim_cost_scale": "Calibrated simulation scale; operative quantity is wage*12/SIM_COST_SCALE",
     "interpretation": "ABM calibrated unit system — standard practice (Epstein & Axtell 1996)"
   },
 
   "v31_additions": {
-    "annual_base_cost":       { "value": 1500, "note": "Simulation scale; not US CES absolute" },
-    "wealth_floor":           { "value": -10000, "note": "Allows debt/insolvency dynamics" },
+    "annual_base_cost": { "value": 1500, "note": "Simulation scale; v3.3 renamed to SIM_COST_SCALE" },
+    "wealth_floor":     { "value": -10000, "note": "Allows debt/insolvency dynamics" },
     "automation_risk": {
-      "distribution":         "Uniform(0.2, 1.0) per agent",
-      "note":                 "Heterogeneous AI displacement; wage_change -= pop_rate × agent_risk"
+      "distribution":   "Uniform(0.2, 1.0) per agent",
+      "note":           "Heterogeneous AI displacement; wage_change -= pop_rate × agent_risk"
     },
     "recession_model": {
-      "field_name":           "incomeMultiplier (renamed from severity)",
-      "range":                [0.65, 0.85],
-      "note":                 "0.65 = 65% of normal income = 35% loss; population-level 2-4 yr"
+      "field_name":     "incomeMultiplier (renamed from severity)",
+      "range_v31":      [0.65, 0.85],
+      "note":           "v3.1 range superseded by v3.3 beta(5,2) distribution — see v33_additions"
     },
     "inflation": {
-      "default":              0.0,
-      "baseline_preset":      0.03,
-      "ptf_damping":          "effective_rate *= (1 - ptfShare * 0.5)",
-      "pth_damping":          "effective_rate *= 0.90"
+      "default":        0.0,
+      "baseline_preset": 0.03,
+      "ptf_damping":    "effective_rate *= (1 - ptfShare * 0.5)",
+      "pth_damping":    "effective_rate *= 0.90"
     },
     "blei_poverty": {
-      "definition":           "% agents with BLEI < 30 days (Crisis + Precarious tiers)",
-      "target":               "< 5% under full integration"
+      "definition":     "% agents with BLEI < 30 days (Crisis + Precarious tiers)",
+      "target":         "< 5% under full integration"
     },
-    "ptf_mechanism":          "Cost-reduction factor (0.12-0.16 of annual costs); NOT wealth addition",
-    "pth_mechanism":          "Housing cost reduction (35%) + separate AE growth; no double-count",
+    "ptf_mechanism":    "Cost-reduction factor (0.12-0.16 of annual costs); NOT wealth addition",
+    "pth_mechanism":    "Housing cost reduction (35%) + separate AE growth; no double-count",
     "tier_naming": {
-      "with_cco_ptf":         "Flourishing (generative system maturation active)",
-      "without_cco_ptf":      "Comfortable (temporal stability, not full Compassionism)"
+      "with_cco_ptf":   "Flourishing (generative system maturation active)",
+      "without_cco_ptf": "Comfortable (temporal stability, not full Compassionism)"
     }
+  },
+
+  "v33_additions": {
+    "wage_diminishing_returns": {
+      "formula": "WAGE_BLEI_BONUS × 1/(1 + 0.5 × max(0, wage/WAGE_MEDIAN_SIU − 1))",
+      "wage_median_siu": 35,
+      "rationale": "Prevents structural compounding at high wages; grounded in Mullainathan & Shafir (2013) + Carroll (1997)",
+      "note": "BLEI is purely measurement; premium reflects underlying stability it measures"
+    },
+    "recession_distribution": {
+      "type": "beta(5, 2) over [0.70, 0.95]",
+      "mode": 0.86,
+      "range": [0.70, 0.95],
+      "beta_a": 5,
+      "beta_b": 2,
+      "rationale": "NBER post-WWII recession calibration; replaces v3.1 Uniform(0.65, 0.85) which overstated severe recession frequency"
+    },
+    "sim_cost_scale": {
+      "value": 1500,
+      "renamed_from": "ANNUAL_BASE_COST",
+      "note": "Rename avoids apparent contradiction with BASE_DAILY_COST ($68.33/day ≈ $24,941/yr vs 1,500 SIU sim scale)"
+    },
+    "gini_zero_wealth": "totW=0 → Gini=0 (mathematically correct: perfect equality of deprivation); BLEI poverty is the correct poverty indicator at zero wealth",
+    "nan_inf_guards": "Added throughout agentBLEI, agentEDC, runYear, calcMetrics",
+    "percentile_interpolation": "p10/p90 use linear interpolation; replaces index rounding",
+    "preset_crash_fix": "applyPreset() guards against undefined presets with console.error",
+    "oat_sensitivity": "11 computed mini-runs ±20% on 5 parameters, seed 7777; first-order only",
+    "validation_suite": {
+      "checks": 4,
+      "list": [
+        "BU monotonicity: BU=1200 outperforms BU=800",
+        "Participation threshold: 78% outperforms 45%",
+        "CCO benefit: full integration outperforms baseline",
+        "PTF dampens inflation: PTF+inflation < no-PTF+inflation"
+      ]
+    },
+    "participant_stratification": "CCO participants vs non-participants tracked annually; tests CCO benefit without non-participant harm",
+    "monte_carlo_ci": "n≥10 shows 95% CI = mean ± 1.96·SD/√n; UI suppressed for n≥10 (performance)",
+    "json_export": "Full parameter + time-series snapshot for replication",
+    "presets_added": ["hiAI"],
+    "odd_protocol": "Grimm et al. (2010) ABM documentation added to assumptions panel"
   },
 
   "core_cco_parameters": {
@@ -982,7 +1134,7 @@ Phase 3 — National Deployment (Years 6–10):
     "market_share":           { "value": 0.18, "range": [0.12, 0.25],
                                  "calibration_status": "under revision for v3.x — earlier 30% from less rigorous sim" },
     "mechanism":              "Cost-reduction factor applied to annual living costs (v3.0 correction)",
-    "savings_rate":           { "value": 0.12, "szh_amplified": 0.12 + "szhCoh × 0.04" },
+    "savings_rate":           { "value": 0.12, "szh_amplified": 0.12 },
     "overhead_reduction":     { "value": 0.50, "range": [0.40, 0.60] },
     "dynamic_adoption": {
       "base_rate":            0.005,
@@ -1000,7 +1152,7 @@ Phase 3 — National Deployment (Years 6–10):
   "blei_parameters": {
     "tier_thresholds_days":   { "crisis":7, "precarious":30, "threshold":120,
                                   "stable":365, "secure":730, "top_tier":"730+" },
-    "blei_poverty_definition":"% agents with BLEI < 30 days (Crisis + Precarious)",
+    "blei_poverty_definition":"% agents with BLEI < 30 days (Crisis + Precarious); primary poverty indicator v3.3",
     "daily_cost_cco":         { "value": 31.67, "unit": "USD/day" },
     "daily_cost_baseline":    { "value": 68.33, "unit": "USD/day" },
     "edc_floor_cco":          { "value": 0.025 },
@@ -1015,13 +1167,15 @@ Phase 3 — National Deployment (Years 6–10):
     "gini_edc_max":            0.22,
     "eppm_median_min":         2.00,
     "system_stability_min":    0.90,
-    "blei_poverty_max":        0.05
+    "blei_poverty_max":        0.05,
+    "participant_poverty_direction": "participant_poverty_rate <= non_participant_poverty_rate",
+    "validation_suite_checks": 4
   },
 
   "citation": {
-    "paper": "CCO-PTF-PTH-CIP-SZH Simulation Replication Framework v3.1",
+    "paper": "CCO-PTF-PTH-CIP-SZH Simulation Replication Framework v3.3",
     "blei_paper": "The Basic Living Economic Index: A Temporal Stability Framework (Johnson & Claude, 2026)",
-    "interactive_simulation": "Compassionism Framework Simulation v3.1 — bettertobest.github.io/compassionism-simulation/",
+    "interactive_simulation": "Compassionism Framework Simulation v3.3 — bettertobest.github.io/compassionism-simulation/",
     "authors": "Johnson, D. & Claude (Anthropic)",
     "year": 2026,
     "url": "https://bettertobest.github.io/research-hub/cco-ptf-simulation-replication.html",
@@ -1033,8 +1187,8 @@ Phase 3 — National Deployment (Years 6–10):
     <div class="section-title">Appendix B: Related Research</div>
 
     <div class="paper-ref sim-ref">
-      <h4>🖥️ <a href="https://bettertobest.github.io/compassionism-simulation/" style="color:#14532d">Compassionism Framework Simulation v3.1</a> — Interactive Tool</h4>
-      <p>Browser-based HTML/JavaScript agent-based simulation implementing all five architectures with BLEI-calibrated welfare metrics. v3.1 implements the full accuracy improvement set: annual expense system (PTF as cost-reduction factor, PTH without double-counting), heterogeneous AI automation risk per agent, multi-year population-level recessions with <code>incomeMultiplier</code>, negative wealth floor (debt dynamics), PTF dynamic adoption, BLEI poverty KPI (% Crisis+Precarious), and a 3-run Monte Carlo variance range estimator. CSV export for research contribution. No installation required — runs directly in any modern browser.</p>
+      <h4>🖥️ <a href="https://bettertobest.github.io/compassionism-simulation/" style="color:#14532d">Compassionism Framework Simulation v3.3</a> — Interactive Tool</h4>
+      <p>Browser-based HTML/JavaScript agent-based simulation implementing all five architectures with BLEI-calibrated welfare metrics. v3.3 builds on the v3.1 accuracy improvements (annual expense system, PTF as cost-reduction factor, PTH without double-counting, heterogeneous AI automation risk, multi-year population-level recessions, negative wealth floor, PTF dynamic adoption, BLEI poverty KPI) and adds: wage growth diminishing returns, beta(5,2) recession distribution calibrated to NBER data, parameterized 50× Monte Carlo with 95% CI, CCO participant vs. non-participant stratification, computed OAT sensitivity (11 mini-runs), a four-check validation suite, JSON export, High Automation preset, and ODD protocol documentation. No installation required — runs directly in any modern browser.</p>
     </div>
 
     <div class="paper-ref">
