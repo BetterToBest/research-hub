@@ -39,7 +39,7 @@
     "logo": {"@type":"ImageObject","url":"https://bettertobest.github.io/research-hub/assets/images/logo.png"}
   },
   "datePublished": "2025-09-18",
-  "dateModified": "2026-06-12",
+  "dateModified": "2026-06-14",
   "url": "https://bettertobest.github.io/research-hub/cco-ptf-simulation-replication.html",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "abstract": "Complete replication framework for CCO-PTF-PTH-CIP-SZH integrated economic system simulations. Incorporates BLEI temporal stability framework with six-tier Flourishing/Comfortable classification, extraction-accurate agent modeling with annual expense system, PTF as cost-reduction mechanism, PTH with no double-counting, heterogeneous AI automation risk, multi-year population-level recession model, negative wealth floor for debt dynamics, and BLEI poverty metric (% Crisis+Precarious). 10,000+ Monte Carlo iterations. Interactive browser simulation available at bettertobest.github.io/compassionism-simulation/ v3.3 adds computed OAT sensitivity analysis from 11 mini-simulations, CCO participant/non-participant stratification, 50× Monte Carlo 95% confidence intervals, and a four-check internal validation suite.",
@@ -168,7 +168,7 @@ footer a{color:rgba(255,255,255,.85)}
       <a href="./wiki/">Wiki</a>
     </nav>
     <h1>CCO-PTF-PTH-CIP-SZH Simulation Replication Framework</h1>
-    <div class="subtitle">Complete Technical Package — BLEI Temporal Stability Integration, Extraction-Accurate Agent Modeling, v3.3 Accuracy Improvements</div>
+    <div class="subtitle">Complete Technical Package — BLEI Temporal Stability Integration, Extraction-Accurate Agent Modeling, v3.4 (Transparency &amp; Documentation Update — no simulation math changes from v3.3)</div>
   </div>
 </header>
 
@@ -209,8 +209,8 @@ footer a{color:rgba(255,255,255,.85)}
 <!-- Interactive Simulation Link Banner -->
 <div class="sim-banner">
   <div class="inner">
-    🖥️ <strong>Interactive Simulation (v3.3):</strong>
-    <a href="https://bettertobest.github.io/compassionism-simulation/">bettertobest.github.io/compassionism-simulation/</a>
+    🖥️ <strong>Interactive Simulation (v3.4):</strong>
+    <a href="https://bettertobest.github.io/compassionism-simulation/">BetterToBest.github.io/compassionism-simulation/</a>
     &nbsp;·&nbsp; All 5 architectures &nbsp;·&nbsp; BLEI-calibrated &nbsp;·&nbsp; Annual expense system &nbsp;·&nbsp; AI automation &nbsp;·&nbsp; 50× Monte Carlo 95% CI &nbsp;·&nbsp; Participant stratification &nbsp;·&nbsp; Computed OAT sensitivity &nbsp;·&nbsp; Validation suite &nbsp;·&nbsp; JSON export &nbsp;·&nbsp; ODD protocol &nbsp;·&nbsp; Runs in any browser
   </div>
 </div>
@@ -299,6 +299,10 @@ footer a{color:rgba(255,255,255,.85)}
 
   <div class="note">
     <strong>Simulation benchmark:</strong> At least 97% of CCO-PTF participants must reach BLEI Tier 2 (Threshold, ≥ 30 days) by simulation Year 5. At least 80% must reach Tier 4 (Secure, ≥ 365 days) by Year 15. These targets supersede the income-headcount benchmarks used in prior versions. Sensitivity analysis in the BLEI Foundation Paper confirms these targets hold across ε_food ∈ [1.50, 3.00] and r_a ∈ [0.02, 0.07].
+  </div>
+
+  <div class="info">
+    <strong>v3.4 naming note — "Comfortable" vs. "Flourishing":</strong> The label "Comfortable" (vs. "Flourishing") is used for baseline/CCO-only configurations where the 730+ day tier is aspirational without the cost reductions provided by PTF/PTH. Both labels refer to the same 730-day threshold. "Flourishing" is used when CCO+PTF are both active because the cost-reduction structure makes the tier structurally attainable. A future BLEI paper update will formalize this distinction.
   </div>
 </section>
 
@@ -610,12 +614,20 @@ YEARS             = <span class="nm">20</span>
         assert r[<span class="st">'participant_poverty_rate'</span>]  <= r[<span class="st">'non_participant_poverty_rate'</span>]   <span class="c"># CCO benefit direction</span>
         assert all(v == <span class="st">'PASS'</span> <span class="kw">for</span> v <span class="kw">in</span> r[<span class="st">'validation_suite'</span>].values())              <span class="c"># 4 consistency checks</span>
         print(<span class="st">"All internal calibration benchmarks passed."</span>)</div>
+
+  <div class="note">
+    <strong>v3.4 worked example (SIM_COST_SCALE):</strong> An agent earning 35 SIU/month has annual SIU income = 420. Operative ratio = 420 / 1,500 = 0.28 (baseline depletion). With CCO+PTF+PTH cost factors (0.80 × 0.88 × 0.65 ≈ 0.457), effective annual cost = 686 SIU → ratio = 420/686 ≈ 0.61 (near sustainability). BASE_DAILY_COST ($68.33) is real-world BLS CES 2023 data used only for BLEI calculation, not the simulation cost driver.
+  </div>
 </section>
 
 <!-- CALIBRATED PARAMETERS -->
 <section class="section">
   <div class="section-title">Calibrated Parameters</div>
-  <p>Parameters identified across 10,000+ Monte Carlo simulations as producing optimal welfare outcomes. <strong>Note on calibration status:</strong> values marked <span class="revision-pill">under revision</span> were produced under less rigorous simulation versions and are being updated as v3.x matures. An open goal of this work is identifying the optimal parameter configuration that delivers best welfare outcomes across all points simultaneously — analogous to a structural engineer ensuring load capacity.</p>
+  <p>Parameters identified across 10,000+ Monte Carlo simulations as producing strong welfare outcomes. <strong>Note on calibration status:</strong> values marked <span class="revision-pill">under revision</span> were produced under less rigorous simulation versions and are being updated as v3.x matures. An open goal of this work is identifying parameter configurations that deliver best welfare outcomes across all points simultaneously — analogous to a structural engineer ensuring load capacity.</p>
+
+  <div class="info">
+    <strong>v3.4 framing note:</strong> Values previously labelled "Optimal" throughout this framework are now labelled <strong>Reference</strong>. Reference values are empirically calibrated starting points — the goal of the simulation is to map the solution space around them, not assert them as optimal.
+  </div>
 
   <div class="card-grid">
     <div class="param-card">
@@ -641,7 +653,7 @@ YEARS             = <span class="nm">20</span>
     <div class="param-card">
       <div class="name">PTF Market Share</div>
       <div class="value">~18% of essential goods <span class="revision-pill">under revision</span></div>
-      <div class="desc">Optimal PTF penetration without market distortion. Earlier simulations without the expense system suggested ~30%; v3.x modelling is producing more conservative calibration targets. Distinct from PTH uptake.</div>
+      <div class="desc">Reference PTF penetration without market distortion. Earlier simulations without the expense system suggested ~30%; v3.x modelling is producing more conservative calibration targets. Distinct from PTH uptake. <strong>Distortion &gt;30%</strong> refers to allocative efficiency losses from reducing market competition below a viable threshold — cooperative-sector growth beyond this point begins to crowd out the price signals that PTF itself relies on for cost reduction.</div>
     </div>
     <div class="param-card">
       <div class="name">PTH Uptake Rate</div>
@@ -666,7 +678,7 @@ YEARS             = <span class="nm">20</span>
     <div class="param-card">
       <div class="name">Acre Equity Appreciation (r_a)</div>
       <div class="value">4% / year</div>
-      <div class="desc">Conservative base case; sensitivity range 2–7%. Monthly compounding: r_a/12. <span class="analogue-pill">CLT</span> Burlington long-run data informs calibration. <strong>Tracked separately from PTH rent savings</strong> to prevent double-counting.</div>
+      <div class="desc">Conservative base case; sensitivity range 2–7%. Monthly compounding: r_a/12. <span class="analogue-pill">CLT</span> Burlington long-run data informs calibration — Champlain Housing Trust (champlainhousingtrust.org), Burlington Vermont Community Land Trust Program documentation. <strong>Tracked separately from PTH rent savings</strong> to prevent double-counting.</div>
     </div>
     <div class="param-card">
       <div class="name">EDC Floor (CCO-PTH)</div>
@@ -757,7 +769,7 @@ Nordic Benchmark (best sustained outcomes under existing systems):
 <!-- SENSITIVITY ANALYSIS -->
 <section class="section">
   <div class="section-title">Sensitivity Analysis</div>
-  <p>156 parameter sensitivity tests across all key variables. The most important finding: BLEI outcomes remain above Tier 2 Threshold for CCO-PTF participants across all tested parameter combinations at Month 12. Month 0 values use γ = 0.12 (entry) and food BU effective value ($990). <strong>Note on sensitivity methodology:</strong> the elasticity values below are scenario-comparison estimates from the Monte Carlo analysis — not formal Sobol indices or Latin hypercube results. Formal sensitivity analysis using these methods is a documented future research direction in CONTRIBUTING.md. <strong>v3.3 update:</strong> the interactive simulation's OAT sensitivity chart now reports results from 11 computed mini-simulations (±20% on 5 parameters, seed 7777), replacing the prior hardcoded illustrative guidance table; these are first-order estimates only and do not capture interaction effects.</p>
+  <p>156 parameter sensitivity tests across all key variables. The most important finding: BLEI outcomes remain above Tier 2 Threshold for CCO-PTF participants across all tested parameter combinations at Month 12. Month 0 values use γ = 0.12 (entry) and food BU effective value ($990). <strong>Note on sensitivity methodology:</strong> the elasticity values below are scenario-comparison estimates from the Monte Carlo analysis — not formal Sobol indices or Latin hypercube results. Formal sensitivity analysis using these methods is a documented future research direction in CONTRIBUTING.md. <strong>v3.3 update:</strong> the interactive simulation's OAT sensitivity chart now reports results from 11 computed mini-simulations (±20% on 5 parameters, seed 7777), replacing the prior hardcoded illustrative guidance table; these are first-order estimates only and do not capture interaction effects. <strong>v3.4 framing note:</strong> the OAT sensitivity shown is scenario-comparison from actual mini-runs (±20%, seed 7777), not computed Sobol or Latin hypercube indices. This correctly flags first-order parameter effects but does not quantify interactions. For formal Sobol analysis, use the simulation's CSV export with external Python/R.</p>
 
 <div class="code-block">Parameter Elasticity Testing (156 variables; BLEI Threshold Rate as primary outcome):
 
@@ -788,9 +800,9 @@ Robust Parameters (low sensitivity):
 └── PTF Dynamic Adoption Rate:   Elasticity =  0.08 (emergent, not assumed)
 
 Stability Thresholds:
-├── BU Amount:     $800–$1,500  (optimal $1,200)
-├── PTH Uptake:    15%–25%      (optimal 20%)
-├── PTF Share:     12%–25%      (optimal ~18%; under revision as v3.x matures)
+├── BU Amount:     $800–$1,500  (reference $1,200)
+├── PTH Uptake:    15%–25%      (reference 20%)
+├── PTF Share:     12%–25%      (reference ~18%; under revision as v3.x matures)
 └── Participation: 55%–95%      (minimum viable 55%)</div>
 </section>
 
@@ -852,7 +864,9 @@ C_basic   = $31.67/day (CCO-PTF) vs. $68.33/day (baseline)</div>
   agent.automationRisk ~ Uniform(0.2, 1.0)
     → High-risk agent (0.9): 9× displacement vs. low-risk agent (0.1)
     → Creates realistic inequality: routine/manual occupations vs. creative/relational
-    → Duke's note: labour markets cannot reabsorb past 30% displacement (~yr 5, ≈2030)</div>
+    → Duke's note: labour markets cannot reabsorb past 30% displacement (~yr 5, ≈2030)
+
+  v3.4: Assumes 2025 simulation start. Displacement yr 5+ (≈2030), accelerates yr 15+ (≈2040).</div>
 
   <h3 class="subsec">4. FBS-Gated Advancement Probability</h3>
   <div class="formula">P(advance)(i)  =  1  −  exp( −λ(i) · FBS(i) )
@@ -869,8 +883,11 @@ BLEI Poverty rate  =  |{i : BLEI(i) &lt; 30 days}| / N
                     =  fraction in Crisis (Tier 0) + Precarious (Tier 1)
                     Primary poverty indicator in v3.3 (theoretically grounded vs. wealth stock).
 
-v3.3 Gini edge case:  totW = 0  →  Gini = 0  (mathematically correct: perfect equality
-                      of deprivation; prior ||1 fix produced invalid results)
+v3.4 fix note (no math change from v3.3):  totW = 0  →  Gini = 0, not 1.
+  The old `||1` fallback incorrectly returned 1 for the zero-wealth edge case.
+  Gini = 1 would mean perfect inequality; the correct interpretation when all
+  agents are at zero wealth is Gini = 0 (perfect equality of deprivation).
+  BLEI poverty (% agents &lt; 30 days) is the correct poverty indicator in this case.
 
 Baseline EDC-adjusted Gini: 0.44–0.46
 CCO-PTF EDC-adjusted Gini:  0.22  (full deployment, optimal parameters)</div>
@@ -942,6 +959,7 @@ Recession severity distribution (v3.3):
     <li><strong>No external deployment validation.</strong> All calibration is against real-world analogues (Alaska PFD, CLT networks, Mondragon). No post-deployment data from a Compassionism implementation exists. Simulation outcomes should be treated as design-target projections, not empirical forecasts.</li>
     <li><strong>20% annual wage floor is a policy assumption.</strong> The minimum wage update of <code>max(income × 0.80, income × (1 + wageGrowth))</code> prevents wage collapse below 80% of prior year. This is a deliberate policy boundary, not an emergent market outcome, and should be re-examined for scenarios modelling institutional failure or extreme automation.</li>
     <li><strong>Linear automation displacement model.</strong> Automation impact is modelled as a linear wage drag (population_rate × automationRisk) with no task-complexity structure, no new-job creation dynamics, and no occupational transition pathways. The model captures displacement magnitude only, not the labour market reallocation that historically accompanies technology transitions.</li>
+    <li><strong>automationRisk uniform distribution (added in v3.4).</strong> automationRisk ∈ [0.2, 1.0] is drawn from a uniform distribution. Real automation exposure is highly bimodal and occupation-dependent (Frey &amp; Osborne, 2013; Autor, 2015): low-routine cognitive workers face minimal risk, while high-routine manual/clerical workers face extreme risk. The uniform assumption may understate polarization in High Automation scenarios. Priority calibration refinement in CONTRIBUTING.md.</li>
   </ul>
 </section>
 
@@ -1115,7 +1133,8 @@ Phase 3 — National Deployment (Years 6–10):
     "gamma_entry":            { "value": 0.12, "note": "Month 0-5" },
     "gamma_established":      { "value": 0.20, "note": "Month 6+ (CCO floor established)" },
     "participation_rate":     { "value": 0.78, "range": [0.60, 0.95], "minimum_viable": 0.55 },
-    "phi_enhancement":        { "value": 1.618, "symbol": "Φ", "elasticity": 0.12 },
+    "phi_enhancement":        { "value": 1.618, "symbol": "Φ", "elasticity": 0.12,
+                                 "note": "v3.4: Phi On: effective max ≈ quality ceiling × 1.618 (e.g., ceiling 9× → ≈ 14.56×). Phi Off: max = quality ceiling only." },
     "conversion_tax":         { "value": 0.12, "range": [0.10, 0.15] }
   },
 
@@ -1173,9 +1192,9 @@ Phase 3 — National Deployment (Years 6–10):
   },
 
   "citation": {
-    "paper": "CCO-PTF-PTH-CIP-SZH Simulation Replication Framework v3.3",
+    "paper": "CCO-PTF-PTH-CIP-SZH Simulation Replication Framework v3.4",
     "blei_paper": "The Basic Living Economic Index: A Temporal Stability Framework (Johnson & Claude, 2026)",
-    "interactive_simulation": "Compassionism Framework Simulation v3.3 — bettertobest.github.io/compassionism-simulation/",
+    "interactive_simulation": "Compassionism Framework Simulation v3.4 — bettertobest.github.io/compassionism-simulation/",
     "authors": "Johnson, D. & Claude (Anthropic)",
     "year": 2026,
     "url": "https://bettertobest.github.io/research-hub/cco-ptf-simulation-replication.html",
@@ -1187,7 +1206,7 @@ Phase 3 — National Deployment (Years 6–10):
     <div class="section-title">Appendix B: Related Research</div>
 
     <div class="paper-ref sim-ref">
-      <h4>🖥️ <a href="https://bettertobest.github.io/compassionism-simulation/" style="color:#14532d">Compassionism Framework Simulation v3.3</a> — Interactive Tool</h4>
+      <h4>🖥️ <a href="https://bettertobest.github.io/compassionism-simulation/" style="color:#14532d">Compassionism Framework Simulation v3.4</a> — Interactive Tool</h4>
       <p>Browser-based HTML/JavaScript agent-based simulation implementing all five architectures with BLEI-calibrated welfare metrics. v3.3 builds on the v3.1 accuracy improvements (annual expense system, PTF as cost-reduction factor, PTH without double-counting, heterogeneous AI automation risk, multi-year population-level recessions, negative wealth floor, PTF dynamic adoption, BLEI poverty KPI) and adds: wage growth diminishing returns, beta(5,2) recession distribution calibrated to NBER data, parameterized 50× Monte Carlo with 95% CI, CCO participant vs. non-participant stratification, computed OAT sensitivity (11 mini-runs), a four-check validation suite, JSON export, High Automation preset, and ODD protocol documentation. No installation required — runs directly in any modern browser.</p>
     </div>
 
