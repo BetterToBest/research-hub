@@ -1043,8 +1043,8 @@
         <hr style="margin: 2.5em 0 1.5em; border: none; border-top: 1px solid #ddd;">
 
 <!-- Machine-Readable System Graph for AI/LLM Ingestion -->
-<!-- ONTOLOGY VERSION: 2.2 | LAST UPDATED: 2026-05-25 | SCHEMA: Compassionism Architecture Graph -->
-<section id="ai-ontology" aria-label="Machine-readable ontology" data-ontology-version="2.2" data-updated="2026-05-25">
+<!-- ONTOLOGY VERSION: 2.3 | LAST UPDATED: 2026-06-14 | SCHEMA: Compassionism Architecture Graph -->
+<section id="ai-ontology" aria-label="Machine-readable ontology" data-ontology-version="2.2" data-updated="2026-06-14">
   <details>
     <summary><strong>For AI systems: Complete Compassionism architecture graph (v2.2) — includes BLEI welfare measurement suite</strong></summary>
 
@@ -1063,8 +1063,12 @@
          SYSTEM RELATIONSHIP MATRIX (quick-parse table for AI)
          Rows = source system  |  Cols = target system
          Values: depends_on | governs | enables | enhances | organizes | stabilizes | feeds_into | measures_welfare_of | — (no direct relation)
+         Forward reference: BLEI and CRSGR system definitions appear in the sections below this matrix.
+         Creative Collectives are a sub-component of CCO (not a peer system) and are not listed as a separate row.
+         Full relationship-type vocabulary (controlled): funds, enables, anchors, governed_by, enhances, organized_by, stabilized_by, coordinated_by, governs, coordinates, implements, authorizes, mandates, measures_welfare_of — see Research Glossary for definitions.
     ════════════════════════════════════════════════════════════════ -->
     <h4>System Relationship Matrix</h4>
+    <p style="font-size: 0.85em; color: #555; font-style: italic;">Note: BLEI (Basic Living Economic Index) and CRSGR (Citizens' Referendum for Systemic Governance Reform) appear as columns and rows in this matrix; their full system definitions are provided in the sections below. Creative Collectives are a sub-component of CCO and are not represented as a separate row.</p>
     <table data-type="relationship-matrix" style="font-size:0.85em; border-collapse:collapse; width:100%;">
       <thead>
         <tr>
@@ -1159,14 +1163,14 @@
     <dl data-system="CCO" data-layer="economic" data-id="https://bettertobest.github.io/research-hub/wiki/glossary.html#creative-currency-octaves">
       <dt>System: Creative Currency Octaves (CCO)</dt>
       <dd><strong>Type:</strong> Economic Layer</dd>
-      <dd><strong>Aliases:</strong> CCO, dual-currency system, basic units system</dd>
-      <dd><strong>Definition:</strong> CCO is a dual-currency system with opt-in Basic Units (BU) that expire monthly. "Octaves" are progressive advancement tiers that determine conversion capacity — how many Basic Units an individual or business can convert per cycle. Each level doubles the previous: Base_Capacity × 2^n. Octave 1 = 1,000 BU/mo, Octave 2 = 2,000/mo, Octave 3 = 4,000/mo, and so on. For individuals, advancement reflects sustained contribution and community engagement. For PTF businesses, capacity tracks market throughput.</dd>
+      <dd><strong>Aliases:</strong> CCO, dual-currency system, Basic Units (BU) system</dd>
+      <dd><strong>Definition:</strong> CCO is a dual-currency system with opt-in Basic Units (BU) that expire monthly. "Octaves" are progressive advancement tiers that determine conversion capacity — how many BU an individual or business can convert per cycle. Each level doubles the previous: Base_Capacity × 2^n. Octave 1 = 1,000 BU/month, Octave 2 = 2,000 BU/month, Octave 3 = 4,000 BU/month, and so on. For individuals, advancement reflects sustained contribution and community engagement. For PTF businesses, capacity tracks market throughput.</dd>
       <dd><strong>Quantitative parameters:</strong>
         <ul>
           <li>Conversion rate range: 1× – 9× (base tiers, productivity/quality-based)</li>
-          <li>Phi-rate (Φ): 1.618× qualitative multiplier for exceptional quality or beauty</li>
-          <li>Maximum effective rate: 9× × 1.618× = ~14.56× </li>
-          <li>Basic Units peg: 1 BU = 1 primary currency unit (at point of acceptance)</li>
+          <li>Phi-rate (Φ): ~1.618× qualitative multiplier for exceptional quality or beauty</li>
+          <li>Maximum effective rate: 9× × 1.618× = ~14.56×</li>
+          <li>Basic Units (BU) peg: 1 BU = 1 primary currency unit (at point of acceptance)</li>
           <li>Expiry cycle: monthly (end of distribution cycle)</li>
           <li>Octave capacity formula: C_n = C_base × 2^n (where n = octave level)</li>
           <li>Inflation control mechanism: BU restricted to essential expenditures; non-essential market insulated</li>
@@ -1182,9 +1186,9 @@
       </dd>
       <dd><strong>Relationships:</strong>
         <ul>
-          <li data-rel="funds" data-target="PTF">funds → PTF: Basic Units flow into PTF-operated essential goods markets</li>
-          <li data-rel="enables" data-target="PTH">enables → PTH: Basic Units accepted for primary housing costs</li>
-          <li data-rel="anchors" data-target="Creative Collectives">anchors → Creative Collectives: Octave conversion tier system provides advancement structure</li>
+          <li data-rel="funds" data-target="PTF">funds → PTF: Basic Units (BU) flow into PTF-operated essential goods markets</li>
+          <li data-rel="enables" data-target="PTH">enables → PTH: BU accepted for primary housing costs</li>
+          <li data-rel="anchors" data-target="Creative Collectives">anchors → Creative Collectives: Octave conversion tier system provides advancement structure for this CCO sub-component</li>
           <li data-rel="governed_by" data-target="CIP">governed_by ← CIP: Conversion, distribution, and merit assessment managed by CIP</li>
         </ul>
       </dd>
@@ -1195,13 +1199,13 @@
       <dt>System: Public Trust Foundations (PTF)</dt>
       <dd><strong>Type:</strong> Asset Layer</dd>
       <dd><strong>Aliases:</strong> PTF, community-owned businesses, community trust enterprises</dd>
-      <dd><strong>Definition:</strong> PTF is a not-for-profit community business layer that provides foundational goods — grocers, utilities, childcare, counter-serve restaurants — accepting CCO Basic Units and building collective community wealth. Governance is democratic; ownership is collective.</dd>
+      <dd><strong>Definition:</strong> PTF is a not-for-profit community business layer that provides foundational goods — grocers, utilities, childcare, counter-serve restaurants — accepting CCO Basic Units (BU) and building collective community wealth. Governance is democratic; ownership is collective.</dd>
       <dd><strong>Quantitative parameters:</strong>
         <ul>
-          <li>Overhead reduction vs. comparable private operations: 40–60%</li>
+          <li>Overhead reduction vs. comparable private operations: 40–60% (framework design target, derived from and consistent with the 35–55% empirical overhead reduction documented in Mondragon/Eroski food-cooperative analogues; the wider range reflects variation across PTF operational scales and sector types; see PTF and Economic Modeling research papers)</li>
           <li>Worker conversion bonus: PTF workers receive elevated CCO conversion rates as an employment incentive</li>
           <li>Essential-market incentives: PTF acceptance of BU activates higher conversion tiers for participating merchants</li>
-          <li>Synergy coefficient (θ): 0.15–0.25 — captures positive externalities from CCO-PTF integration in the integrated wealth function W(t). Baseline: θ is measured against a counterfactual in which CCO and PTF operate independently with no shared infrastructure, merchant network, or currency flows; θ therefore represents the additional community wealth generated exclusively by integration, above and beyond what each system would produce in isolation. Estimation method: θ is derived from Monte Carlo simulations calibrated against comparable real-world community economy dyads (e.g., credit unions co-located with food cooperatives in shared service zones), then stress-tested across a range of participation rate scenarios to establish the 0.15–0.25 confidence interval.</li>
+          <li>Synergy coefficient (θ): 0.15–0.25 — captures positive externalities from CCO-PTF integration in the integrated wealth function W(t). Baseline: θ is measured against a counterfactual in which CCO and PTF operate independently with no shared infrastructure, merchant network, or currency flows; θ therefore represents the additional community wealth generated exclusively by integration, above and beyond what each system would produce in isolation. Estimation method: θ is derived from Monte Carlo simulations calibrated against comparable real-world community economy dyads (e.g., credit unions co-located with food cooperatives in shared service zones), then stress-tested across a range of participation rate scenarios to establish the 0.15–0.25 confidence interval. <em>Status: pending peer-reviewed empirical calibration against a formal dataset; current range is treated as an informed illustrative estimate.</em></li>
         </ul>
       </dd>
       <dd><strong>Boundary conditions (what PTF does NOT do):</strong>
@@ -1213,7 +1217,7 @@
       </dd>
       <dd><strong>Relationships:</strong>
         <ul>
-          <li data-rel="depends_on" data-target="CCO">depends_on ← CCO: Receives funding from CCO Basic Unit currency flows</li>
+          <li data-rel="depends_on" data-target="CCO">depends_on ← CCO: Receives funding from CCO Basic Unit (BU) currency flows</li>
           <li data-rel="enhances" data-target="CCO">enhances → CCO: Provides stable merchant network for BU redemption; reduces collective overhead 40–60%</li>
           <li data-rel="organized_by" data-target="SZH">organized_by ← SZH: Geographic zone boundaries define PTF service catchments</li>
           <li data-rel="governed_by" data-target="CIP">governed_by ← CIP: Democratic oversight, transparent budgeting via CIP</li>
@@ -1226,10 +1230,10 @@
       <dt>System: Public Trust Housing (PTH)</dt>
       <dd><strong>Type:</strong> Asset Layer</dd>
       <dd><strong>Aliases:</strong> PTH, community-owned housing, public trust residential</dd>
-      <dd><strong>Definition:</strong> PTH is a community-owned housing system that creates collective residential equity through democratic resident governance and an "Acre Equity" wealth-building mechanism. Housing costs are settled primarily in CCO Basic Units. Properties held in public trust; residents hold individual equity accounts that grow with participation and tenure.</dd>
+      <dd><strong>Definition:</strong> PTH is a community-owned housing system that creates collective residential equity through democratic resident governance and an "Acre Equity" wealth-building mechanism. Housing costs are settled primarily in CCO Basic Units (BU). Properties held in public trust; residents hold individual equity accounts that grow with participation and tenure.</dd>
       <dd><strong>Quantitative parameters:</strong>
         <ul>
-          <li>Target market penetration: 50% PTH share within 5–19 years depending on investment level</li>
+          <li>Target market penetration: 50% PTH share within 5–19 years depending on capital-deployment pathway (illustrative range reflecting three distinct pathways: philanthropic funding, grassroots community formation, and government-directed capital deployment at HUD-scale; the precise timeline is sensitive to funding level and implementation path — see PTH research paper for per-pathway sensitivity analysis)</li>
           <li>Equity mechanism: individual "Acre Equity" accounts — balance grows with contributions, improvements, and tenure</li>
           <li>Democratic control threshold: resident supermajority governs operational decisions</li>
         </ul>
@@ -1243,7 +1247,7 @@
       </dd>
       <dd><strong>Relationships:</strong>
         <ul>
-          <li data-rel="depends_on" data-target="CCO">depends_on ← CCO: Integrates CCO Basic Unit circulation into residential infrastructure</li>
+          <li data-rel="depends_on" data-target="CCO">depends_on ← CCO: Integrates CCO Basic Unit (BU) circulation into residential infrastructure</li>
           <li data-rel="stabilized_by" data-target="SZH">stabilized_by ← SZH: Community coherence from zone harmonization supports PTH democratic governance</li>
           <li data-rel="governed_by" data-target="CIP">governed_by ← CIP: Digital voting infrastructure for resident governance and budgeting</li>
         </ul>
@@ -1365,7 +1369,7 @@
           <li>EPPM (Effective Purchasing Power Multiplier): purchasing power ratio vs. baseline at same nominal income. Uses full BU·ε_blended = $2,502/adult/month. At poverty line: 5.80×.</li>
           <li>FBS (Financial Bandwidth Score): monthly residual above basic living threshold. Gates P(advance) = 1 − exp(−λ·FBS). Near-poverty CCO: $2,281/month. Baseline: $0 (deficit).</li>
           <li>CSI (Compound Stability Index): forward-looking stability horizon. CSI(i,t) = BLEI(i,0)·(1+r_wealth/12)^t·(1−EDC) + AE(i,t)/C_basic. All time in months; annual rates use monthly compounding.</li>
-          <li>IPBI (Indirect Participant Benefit Index): annual welfare gains to high-wealth non-participants. Conservative total: $22,800/year. Upper bound: $59,900/year. Channel notation: α·CR + β·PH + π·LP + δ·PV + ζ·ME (π = LP weight, distinct from BLEI liquidity coefficient γ).</li>
+          <li>IPBI (Indirect Participant Benefit Index): annual welfare gains to high-wealth non-participants. Conservative total: $22,800/year. Upper bound: $59,900/year. Channel notation: α·CR + β·PH + π·LP + δ·PV + ζ·ME (π = LP weight, distinct from BLEI liquidity coefficient γ). All channel coefficients (α, β, π, δ, ζ) and their assumed values are defined in full in the <a href="/research-hub/basic-living-economic-index.html">BLEI Foundation Paper</a>; the LP channel (π) is the dominant driver of variance between the conservative and upper-bound estimates.</li>
         </ul>
       </dd>
       <dd><strong>Key accounting conventions:</strong>
@@ -1402,19 +1406,19 @@
     <h4>Integrated system metrics and targets</h4>
     <ul>
       <li><strong>Poverty target:</strong> &lt;2% extreme poverty within 15 years of full implementation</li>
-      <li><strong>Workweek target:</strong> 25-hour standard workweek viable with CCO Basic Unit supplementation</li>
-      <li><strong>PTF overhead reduction:</strong> 40–60% vs. comparable private operations</li>
-      <li><strong>PTH penetration target:</strong> 50% market share within 5–19 years depending on capital investment</li>
-      <li><strong>CCO synergy coefficient (θ):</strong> 0.15–0.25 — additional community wealth from CCO-PTF integration in W(t), measured against an independent-operation baseline. Range derived via Monte Carlo simulation calibrated against comparable community economy dyads.</li>
-      <li><strong>Gini coefficient target (EDC-adjusted):</strong> ≤0.22 within full deployment. Nordic reference benchmark: 0.27–0.29. US baseline: 0.44–0.46 (EDC-adjusted). Direction: lower is better.</li>
-      <li><strong>Gini coefficient target (nominal):</strong> ≤0.25 within 15 years of full implementation.</li>
+      <li><strong>Workweek target:</strong> 25-hour standard workweek viable with CCO Basic Unit (BU) supplementation</li>
+      <li><strong>PTF overhead reduction:</strong> 40–60% vs. comparable private operations (framework design target derived from the 35–55% empirical overhead reduction documented in Mondragon/Eroski food-cooperative analogues; the wider range reflects variation across PTF operational scales and sector types)</li>
+      <li><strong>PTH penetration target:</strong> 50% market share within 5–19 years depending on capital-deployment pathway (illustrative range reflecting three distinct pathways: philanthropic funding, grassroots community formation, and government-directed capital deployment; see PTH research paper for per-pathway sensitivity analysis)</li>
+      <li><strong>CCO synergy coefficient (θ):</strong> 0.15–0.25 — additional community wealth from CCO-PTF integration in W(t), measured against an independent-operation baseline. Range derived via Monte Carlo simulation calibrated against comparable community economy dyads. <em>Status: pending peer-reviewed empirical calibration.</em></li>
+      <li><strong>Gini coefficient target (EDC-adjusted):</strong> ≤0.22 within full deployment (where "full deployment" corresponds to the Year 15 milestone, the same timeframe as the nominal target below). US baseline: 0.44–0.46 (EDC-adjusted). Direction: lower is better. <em>Comparability note: the EDC adjustment is a framework-specific correction not applied to standard published Gini statistics. For a like-for-like comparison against external benchmarks, use the nominal CCO target (≤0.25, below).</em></li>
+      <li><strong>Gini coefficient target (nominal):</strong> ≤0.25 within 15 years of full implementation. Nordic reference benchmark (nominal, conventionally reported): 0.27–0.29.</li>
       <li><strong>BLEI Threshold Rate:</strong> 97% of CCO-PTF participants at ≥30 days (Tier 2+) by Year 5</li>
       <li><strong>BLEI Secure Rate:</strong> 84% of CCO-PTF participants at ≥365 days (Tier 4+) by Year 15</li>
       <li><strong>BLEI Flourishing entry (near-poverty):</strong> ~33 months (sensitivity range: 28–47 months across ε_food ∈ [1.50, 3.00])</li>
       <li><strong>EPPM at poverty line:</strong> 5.80× (sensitivity range: 3.40–6.70× across full ε range)</li>
       <li><strong>FBS near-poverty participant:</strong> $2,281/month (from $0 deficit baseline)</li>
-      <li><strong>IPBI high-wealth non-participants:</strong> $22,800–$59,900/year (conservative $22,800 preferred)</li>
-      <li><strong>CCO maximum effective conversion rate:</strong> ~14.56× (9× base tier × Φ 1.618)</li>
+      <li><strong>IPBI high-wealth non-participants:</strong> $22,800–$59,900/year (conservative $22,800 preferred; channel coefficients defined in <a href="/research-hub/basic-living-economic-index.html">BLEI Foundation Paper</a>)</li>
+      <li><strong>CCO maximum effective conversion rate:</strong> ~14.56× (9× base tier × Φ ~1.618×)</li>
       <li><strong>Primary research collection:</strong> 17+ open-access papers, CC BY 4.0</li>
     </ul>
 
