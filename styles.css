@@ -3,7 +3,7 @@ body{font-family:Arial,sans-serif;line-height:1.6;max-width:800px;margin:0 auto;
 
 /* Performance optimizations */
 *{box-sizing:border-box}
-img{max-width:100%;height:auto;loading:lazy}
+img{max-width:100%;height:auto;}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
 /* Mobile optimizations */
