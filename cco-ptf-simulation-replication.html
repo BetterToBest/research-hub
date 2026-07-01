@@ -39,14 +39,20 @@
     "logo": {"@type":"ImageObject","url":"https://bettertobest.github.io/research-hub/assets/images/logo.png"}
   },
   "datePublished": "2025-09-18",
-  "dateModified": "2026-06-14",
+  "dateModified": "2026-06-30",
   "url": "https://bettertobest.github.io/research-hub/cco-ptf-simulation-replication.html",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "abstract": "Complete replication framework for CCO-PTF-PTH-CIP-SZH integrated economic system simulations. Incorporates BLEI temporal stability framework with six-tier Flourishing/Comfortable classification, extraction-accurate agent modeling with annual expense system, PTF as cost-reduction mechanism, PTH with no double-counting, heterogeneous AI automation risk, multi-year population-level recession model, negative wealth floor for debt dynamics, and BLEI poverty metric (% Crisis+Precarious). 10,000+ Monte Carlo iterations. Interactive browser simulation available at bettertobest.github.io/compassionism-simulation/ v3.3 adds computed OAT sensitivity analysis from 11 mini-simulations, CCO participant/non-participant stratification, 50× Monte Carlo 95% confidence intervals, and a four-check internal validation suite.",
+  "abstract": "Complete replication framework for CCO-PTF-PTH-CIP-SZH integrated economic system simulations. Incorporates BLEI temporal stability framework with six-tier Flourishing/Comfortable classification, extraction-accurate agent modeling with annual expense system, PTF as cost-reduction mechanism, PTH with no double-counting, heterogeneous AI automation risk, multi-year population-level recession model, negative wealth floor for debt dynamics, and BLEI poverty metric (% Crisis+Precarious). 10,000+ Monte Carlo iterations. Interactive browser simulation available at bettertobest.github.io/compassionism-simulation/ v3.3 adds computed OAT sensitivity analysis from 11 mini-simulations, CCO participant/non-participant stratification, 50× Monte Carlo 95% confidence intervals, and a four-check internal validation suite. v3.5 adds a permanent DOI (10.17605/OSF.IO/QWTE2), consolidates version/citation metadata, and clarifies UI labeling — no simulation math changes from v3.4.",
   "isPartOf": {
     "@type": "WebSite",
     "name": "Better To Best Research Hub",
     "url": "https://bettertobest.github.io/research-hub/"
+  },
+  "citation": {
+    "@type": "SoftwareApplication",
+    "name": "Compassionism Framework Simulation v3.5",
+    "url": "https://bettertobest.github.io/compassionism-simulation/",
+    "identifier": "https://doi.org/10.17605/OSF.IO/QWTE2"
   }
 }
 </script>
@@ -168,7 +174,7 @@ footer a{color:rgba(255,255,255,.85)}
       <a href="./wiki/">Wiki</a>
     </nav>
     <h1>CCO-PTF-PTH-CIP-SZH Simulation Replication Framework</h1>
-    <div class="subtitle">Complete Technical Package — BLEI Temporal Stability Integration, Extraction-Accurate Agent Modeling, v3.4 (Transparency &amp; Documentation Update — no simulation math changes from v3.3)</div>
+    <div class="subtitle">Complete Technical Package — BLEI Temporal Stability Integration, Extraction-Accurate Agent Modeling, v3.5 (Version/Citation Consolidation &amp; DOI — no simulation math changes from v3.4)</div>
   </div>
 </header>
 
@@ -209,9 +215,9 @@ footer a{color:rgba(255,255,255,.85)}
 <!-- Interactive Simulation Link Banner -->
 <div class="sim-banner">
   <div class="inner">
-    🖥️ <strong>Interactive Simulation (v3.4):</strong>
+    🖥️ <strong>Interactive Simulation (v3.5):</strong>
     <a href="https://bettertobest.github.io/compassionism-simulation/">BetterToBest.github.io/compassionism-simulation/</a>
-    &nbsp;·&nbsp; All 5 architectures &nbsp;·&nbsp; BLEI-calibrated &nbsp;·&nbsp; Annual expense system &nbsp;·&nbsp; AI automation &nbsp;·&nbsp; 50× Monte Carlo 95% CI &nbsp;·&nbsp; Participant stratification &nbsp;·&nbsp; Computed OAT sensitivity &nbsp;·&nbsp; Validation suite &nbsp;·&nbsp; JSON export &nbsp;·&nbsp; ODD protocol &nbsp;·&nbsp; Runs in any browser
+    &nbsp;·&nbsp; All 5 architectures &nbsp;·&nbsp; BLEI-calibrated &nbsp;·&nbsp; Annual expense system &nbsp;·&nbsp; AI automation &nbsp;·&nbsp; 50× Monte Carlo 95% CI &nbsp;·&nbsp; Participant stratification &nbsp;·&nbsp; Computed OAT sensitivity &nbsp;·&nbsp; Validation suite &nbsp;·&nbsp; JSON export &nbsp;·&nbsp; ODD protocol &nbsp;·&nbsp; DOI: <a href="https://doi.org/10.17605/OSF.IO/QWTE2" target="_blank" rel="noopener" style="color:#7edd7e">10.17605/OSF.IO/QWTE2</a> &nbsp;·&nbsp; Runs in any browser
   </div>
 </div>
 
@@ -277,6 +283,10 @@ footer a{color:rgba(255,255,255,.85)}
 
   <div class="v31-note" style="border-left-color:#2563eb;background:#eff6ff;color:#1e3a8a;">
     <strong>v3.3 methodology additions:</strong> Four enhancements expand the simulation's analytical scope. (1) <strong>Wage growth diminishing returns:</strong> the BLEI stability premium is now scaled by 1/(1 + 0.5 × max(0, wage/WAGE_MEDIAN_SIU − 1)), preventing structural compounding at high wages, grounded in Mullainathan &amp; Shafir (2013) and Carroll (1997). (2) <strong>Recession severity distribution:</strong> switched from uniform to beta(5,2) over [0.70, 0.95], calibrated against NBER post-WWII recession data. (3) <strong>Participant vs. non-participant stratification:</strong> separate KPI tracking for CCO participants and non-participants, enabling direct tests of whether the system benefits participants without harming opt-outs. (4) <strong>Computed OAT sensitivity:</strong> the sensitivity chart now reports results from 11 actual mini-simulations (±20% on 5 parameters, seed 7777), replacing prior hardcoded illustrative guidance values.
+  </div>
+
+  <div class="v31-note" style="border-left-color:#7c3aed;background:#f5f3ff;color:#4c1d95;">
+    <strong>v3.5 version &amp; citation consolidation:</strong> No changes to simulation math, calibration constants, or formulas — this release addresses metadata integrity so the tool is citable as a stable research artifact. (1) <strong>Permanent DOI</strong> assigned: <a href="https://doi.org/10.17605/OSF.IO/QWTE2" target="_blank" rel="noopener" style="color:#4c1d95;font-weight:600">10.17605/OSF.IO/QWTE2</a>, added to the tool's schema.org metadata, footer, References panel, and both CSV/JSON exports. (2) <strong>Version-string drift fixed:</strong> exported CSV/JSON files previously self-reported "v3.3" in headers and filenames while the interface displayed v3.4 — a single source-of-truth version constant now keeps all exports consistent with the displayed version. (3) <strong>Internal preset naming:</strong> the <code>optimal</code> preset key was renamed <code>reference</code> to match the "Reference" terminology already shown in the UI (see v3.4 framing note below). (4) <strong>Effective-max UI indicator:</strong> the Quality Multiplier Ceiling slider now displays the Phi-adjusted effective maximum live (e.g. "Effective max with Phi: 14.58×"). Regression baseline (seed 42, Full Integration, 20 yr) produces identical numerical output to v3.4.
   </div>
 </section>
 
@@ -1001,8 +1011,9 @@ Phase 3 — National Deployment (Years 6–10):
 
 <div class="json-block">{
   "simulation_metadata": {
-    "version": "3.3.0",
-    "last_updated": "2026-06-12",
+    "version": "3.5.0",
+    "doi": "https://doi.org/10.17605/OSF.IO/QWTE2",
+    "last_updated": "2026-06-30",
     "calibration_iterations": 10000,
     "confidence_level": 0.95,
     "primary_welfare_metric": "BLEI (temporal stability in days)",
@@ -1192,9 +1203,10 @@ Phase 3 — National Deployment (Years 6–10):
   },
 
   "citation": {
-    "paper": "CCO-PTF-PTH-CIP-SZH Simulation Replication Framework v3.4",
+    "paper": "CCO-PTF-PTH-CIP-SZH Simulation Replication Framework (Johnson & Claude, 2026)",
     "blei_paper": "The Basic Living Economic Index: A Temporal Stability Framework (Johnson & Claude, 2026)",
-    "interactive_simulation": "Compassionism Framework Simulation v3.4 — bettertobest.github.io/compassionism-simulation/",
+    "interactive_simulation": "Compassionism Framework Simulation v3.5 — bettertobest.github.io/compassionism-simulation/",
+    "interactive_simulation_doi": "https://doi.org/10.17605/OSF.IO/QWTE2",
     "authors": "Johnson, D. & Claude (Anthropic)",
     "year": 2026,
     "url": "https://bettertobest.github.io/research-hub/cco-ptf-simulation-replication.html",
@@ -1206,8 +1218,8 @@ Phase 3 — National Deployment (Years 6–10):
     <div class="section-title">Appendix B: Related Research</div>
 
     <div class="paper-ref sim-ref">
-      <h4>🖥️ <a href="https://bettertobest.github.io/compassionism-simulation/" style="color:#14532d">Compassionism Framework Simulation v3.4</a> — Interactive Tool</h4>
-      <p>Browser-based HTML/JavaScript agent-based simulation implementing all five architectures with BLEI-calibrated welfare metrics. v3.3 builds on the v3.1 accuracy improvements (annual expense system, PTF as cost-reduction factor, PTH without double-counting, heterogeneous AI automation risk, multi-year population-level recessions, negative wealth floor, PTF dynamic adoption, BLEI poverty KPI) and adds: wage growth diminishing returns, beta(5,2) recession distribution calibrated to NBER data, parameterized 50× Monte Carlo with 95% CI, CCO participant vs. non-participant stratification, computed OAT sensitivity (11 mini-runs), a four-check validation suite, JSON export, High Automation preset, and ODD protocol documentation. No installation required — runs directly in any modern browser.</p>
+      <h4>🖥️ <a href="https://bettertobest.github.io/compassionism-simulation/" style="color:#14532d">Compassionism Framework Simulation v3.5</a> — Interactive Tool</h4>
+      <p>Browser-based HTML/JavaScript agent-based simulation implementing all five architectures with BLEI-calibrated welfare metrics. v3.3 builds on the v3.1 accuracy improvements (annual expense system, PTF as cost-reduction factor, PTH without double-counting, heterogeneous AI automation risk, multi-year population-level recessions, negative wealth floor, PTF dynamic adoption, BLEI poverty KPI) and adds: wage growth diminishing returns, beta(5,2) recession distribution calibrated to NBER data, parameterized 50× Monte Carlo with 95% CI, CCO participant vs. non-participant stratification, computed OAT sensitivity (11 mini-runs), a four-check validation suite, JSON export, High Automation preset, and ODD protocol documentation. v3.5 adds a permanent archival DOI (<a href="https://doi.org/10.17605/OSF.IO/QWTE2" target="_blank" rel="noopener" style="color:#14532d;font-weight:600">10.17605/OSF.IO/QWTE2</a>), fixes version-string drift between the displayed version and exported CSV/JSON files, and adds a live effective-max-multiplier indicator — no simulation math changes. No installation required — runs directly in any modern browser.</p>
     </div>
 
     <div class="paper-ref">
