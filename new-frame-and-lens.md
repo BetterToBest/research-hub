@@ -32,14 +32,14 @@
   the page will pick them up automatically on next load.
 -->
 
-SUBTITLE: How does the Better To Best framework compare within current left/right US political dynamics? See below for a topic by topic working answer.
+SUBTITLE: How does the Better To Best framework compare within current left/right US political dynamics? See below for a topic-by-topic working answer.
 DISCLAIMER: We may not all agree on everything at all times, yet this new frame and lens just might reveal where we, as a collective, overwhelmingly agree.
 UPDATED: 2026-07-07
 
 ## Framework Glossary {#glossary}
 GLOSS: CCO | Creative Currency Octaves | A dual-currency system: expiring Basic Units cover everyday essentials for anyone who opts in, while ordinary earning in primary currency stays unlimited above that floor.
 GLOSS: PTF | Public Trust Foundations | Not-for-profit, community-owned businesses — grocers, clinics, utilities — that accept Basic Units and keep essentials affordable, operating alongside private competitors.
-GLOSS: PTH | Public Trust Housing | Community-owned and democratically-operated housing where residents hold real, growing equity. A third option alongside renting and private ownership.
+GLOSS: PTH | Public Trust Housing | Community-owned and democratically operated housing where residents hold real, growing equity. A third option alongside renting and private ownership.
 GLOSS: SZH | Social Zone Harmonization | Lets neighborhoods and regions organize locally around shared values and priorities, while core rights stay uniform nationally.
 GLOSS: CIP | Citizens Internet Portal | Public, community-governed digital infrastructure for currency, voting, and direct citizen input — not a privately owned, ad-driven platform.
 GLOSS: BLEI | Basic Living Economic Index | A welfare measurement suite that tracks households over time — whether people are gaining ground — instead of a single, income-based poverty-line snapshot.
@@ -47,7 +47,7 @@ GLOSS: BLEI | Basic Living Economic Index | A welfare measurement suite that tra
 ## Taxes & Public Spending {#taxes}
 TAG: Economy & Money
 LEFT: Progressive taxation funds public goods and narrows inequality; the wealthy and large corporations should pay a larger share.
-RIGHT: Lower taxes leaves more money with the people who earned it and lets markets, not bureaucracies, decide where capital goes; high rates chase away investment and jobs.
+RIGHT: Lower taxes leave more money with the people who earned it and let markets, not bureaucracies, decide where capital goes; high rates chase away investment and jobs.
 HEAD: Compassionism changes the question from "how much to tax" to "how cheap can living become." Basic Units (CCO) cover essentials directly through Public Trust Foundations, so whatever tax rate exists, and whatever wage someone earns, goes further — and public spending can focus on cutting waste, fraud, and corruption rather than growing new bureaucracy.
 TAIL: Fight only over the tax rate and never the cost of living, and average earners lose either way — in prices if taxes fall, in paychecks if they rise.
 
@@ -55,8 +55,8 @@ TAIL: Fight only over the tax rate and never the cost of living, and average ear
 TAG: Economy & Money
 LEFT: Raise the minimum wage so a full-time job reliably covers rent, food, and basic needs.
 RIGHT: Mandated wage floors above the market rate cost entry-level jobs, hit small businesses hardest, and often get passed straight into prices.
-HEAD: The framework sidesteps the wage-versus-price spiral by lowering the price of living instead of only raising the price of labor. When Public Trust Housing and Public Trust Foundations bring rent, food, and utilities down, a modest wage buys more without a mandate. Goal: make living cheap, so life isn't.
-TAIL: Keep raising the wage floor without ever lowering the cost of living, and the same fight just repeats every few years as prices catch back up and business become strained or go under. 
+HEAD: The framework sidesteps the wage-versus-price spiral by lowering the price of living instead of only raising the price of labor. When Public Trust Housing and Public Trust Foundations bring rent, food, and utilities down, a modest wage buys more without a mandate — the goal is to make living cheap, so life isn't.
+TAIL: Keep raising the wage floor without ever lowering the cost of living, and the same fight just repeats every few years as prices catch back up and businesses become strained or go under.
 
 ## Money in Politics & Corruption {#money-politics}
 TAG: Economy & Money
@@ -67,7 +67,7 @@ TAIL: Without a visible, participatory alternative, money keeps finding the shor
 
 ## Social Welfare & Poverty {#welfare}
 TAG: Welfare, Housing & Health
-LEFT: Government must guarantee a real safety net — healthcare, housing, food — because markets alone leave too many people behind whether by design or concequence.
+LEFT: Government must guarantee a real safety net — healthcare, housing, food — because markets alone leave too many people behind, whether by design or consequence.
 RIGHT: Means-tested welfare programs can trap people in dependency and burn money on caseworkers and eligibility bureaucracy that could go directly to people or growth.
 HEAD: CCO's Basic Units are an opt-in floor for essentials, without the stigma, paperwork, or clawback cliffs of legacy welfare — while unlimited earning above that floor stays fully intact. The Basic Living Economic Index (BLEI) then tracks whether households are actually gaining ground year over year, not just clearing a snapshot poverty line.
 TAIL: Keep arguing only over eligibility rules and caseloads, and the debate just cycles between "too generous" and "not enough" without ever addressing what basic living actually costs those at the bottom, and society as a whole.
@@ -83,7 +83,7 @@ TAIL: Leave supply and ownership as the only two levers on the table, and the ne
 TAG: Welfare, Housing & Health
 LEFT: Healthcare is a right; a single-payer or heavily regulated system is needed to guarantee coverage and control costs.
 RIGHT: Government-run healthcare rations care and slows innovation; competition and consumer choice control costs better than mandates do.
-HEAD: Public Trust Foundations can run not-for-profit community clinics that accept Basic Units for baseline preventive and primary care, guaranteeing access to essential care without eliminating a competitive private tier for elective and specialty medicine. 
+HEAD: Public Trust Foundations can run not-for-profit community clinics that accept Basic Units for baseline preventive and primary care, guaranteeing access to essential care without eliminating a competitive private tier for elective and specialty medicine.
 TAIL: Argue only over who pays without building a baseline that doesn't depend on employment or means-testing, and coverage keeps lapsing exactly when people need it most.
 
 ## Criminal Justice & Policing {#criminal-justice}
@@ -104,29 +104,29 @@ TAIL: Prohibition without treatment infrastructure just relocates the harm from 
 TAG: Justice & Safety
 LEFT: Common-sense regulation — background checks, red-flag laws — reduces mass shootings and gun deaths without banning ownership.
 RIGHT: The Second Amendment was written specifically as a check against government overreach, not just personal defense, and the overwhelming majority of gun owners are law-abiding. Because illegal firearms already circulate widely outside any regulated market, new restrictions tend to fall hardest on people who follow the law already, since those intent on violence usually aren't the ones filling out paperwork. A further, more skeptical strain of this view holds that public fear after high-profile shootings gets leveraged to build political momentum for disarmament, whether or not tighter laws would have changed that particular outcome — a suspicion that shapes the debate even when it resists case-by-case verification.
-HEAD: Danger in this world seems ever-present, and the framework doesn't pretend it can argue that away or settle the Second Amendment question outright. What it can do is mitigate the desperation, untreated crisis, and economic precarity that drive a meaningful share of gun violence in the first place via CCO, PTH, and real healthcare access — making people safer on the front both sides claim to care about, rather than just refighting the same enforcement-versus-rights argument after every tragedy. Once "Compassionism" matures, its later stage "Passionism" points at a further version of that same safety: a population secure enough in its basic needs that grievance and zero-sum desperation, the fuel behind a lot of violence, has less to feed on to begin with.
+HEAD: Danger in this world seems ever-present, and the framework doesn't pretend it can argue that away or settle the Second Amendment question outright. What it can do is mitigate the desperation, untreated crisis, and economic precarity that drive a meaningful share of gun violence in the first place via CCO, PTH, and real healthcare access — making people safer on the front both sides claim to care about, rather than just refighting the same enforcement-versus-rights argument after every tragedy. Once "Compassionism" matures, its later stage, "Passionism," points at a further version of that same safety: a population secure enough in its basic needs that grievance and zero-sum desperation, the fuel behind a lot of violence, has less to feed on to begin with.
 TAIL: Treat gun policy as pure enforcement or pure rights without addressing what drives the violence, and the same argument just resets after the next tragedy.
 
 ## Abortion & Reproductive Choice {#abortion}
 TAG: Rights & Society
-LEFT: Bodily autonomy means the decision belongs to the pregnant person, not the state. Legally speaing, there will always be abortions, the choice is whether or not they'll be performed by regulated providers, or by illegal / unsafe options.
+LEFT: Bodily autonomy means the decision belongs to the pregnant person, not the state. Legally speaking, there will always be abortions; the choice is whether they'll be performed by regulated providers or by illegal, unsafe options.
 RIGHT: Protecting potential life is a core moral obligation, deserving legal weight from conception or viability onward.
 HEAD: Compassionism doesn't resolve that underlying moral disagreement, and isn't trying to. What it can do is shrink the number of abortions driven by economic desperation rather than genuine preference, by guaranteeing basic housing, healthcare, and childcare support through PTH, PTF, and CCO regardless of income — so that whatever the decision is, it's made freely rather than being weighed heavily by economic circumstance.
 TAIL: Leave the economic pressures untouched while the legal fight rages on, and the choice keeps getting made under duress no matter which law wins.
 
 ## Human & Civil Rights {#human-rights}
 TAG: Rights & Society
-LEFT: Equal protection requires proactively dismantling systemic discrimination against marginalized groups, including LGBTQ+ people.
-RIGHT: Equal treatment under existing law is the goal; identity-based carve-outs or mandates risk creating new forms of unequal treatment.
-HEAD: Social Zone Harmonization is explicit about this tension: it lets family-focused, LGBTQ+-affirming, faith-based, or otherwise value-aligned communities each organize locally around their own norms, while the Citizens Internet Portal keeps baseline civil-rights and child protections uniform and non-negotiable nationally.
-TAIL: Force one national template onto every community's values instead, and the backlash from whichever side loses just fuels the next round of the same fight.
+LEFT: Equal protection requires proactively dismantling systemic discrimination against marginalized groups, including LGBTQ+ people — and that includes supporting transgender youth with the same care and respect given any other child.
+RIGHT: Equal treatment under existing law is the goal; identity-based carve-outs or mandates risk creating new forms of unequal treatment. On transgender youth specifically, many conservatives argue further: minors don't yet have the maturity to weigh irreversible, life-altering medical decisions, and guiding a child toward medical transition — rather than supporting them as they are and waiting until adulthood for anything irreversible — asks them to make a permanent choice before they're old enough to fully understand it.
+HEAD: Social Zone Harmonization lets family-focused, LGBTQ+-affirming, faith-based, or otherwise value-aligned communities each organize locally around their own approach to raising children, while the Citizens Internet Portal keeps baseline civil-rights and anti-discrimination protections uniform nationally — no child should be bullied, fired, evicted, or denied services for who they are, in any zone. On the narrower question of medical care for minors, the framework draws a real distinction rather than picking a side outright: reversible social support — a name, pronouns, counseling, protection from harassment — is available everywhere, while irreversible medical intervention is treated as serious enough to warrant extra safeguards, extended evaluation, and a higher age threshold, protecting children from a permanent choice made before they're old enough to fully weigh it.
+TAIL: Force one national template onto every community's values and every family's parenting decisions, and the backlash from whichever side loses just fuels the next round of the same fight.
 
 ## Free Speech & Big Tech {#free-speech}
 TAG: Rights & Society
 LEFT: Unmoderated platforms amplify hate speech and disinformation; some content moderation is a public-safety necessity.
 RIGHT: Moderation by a handful of private tech giants amounts to de facto censorship of disfavored viewpoints. Hate speech is protected speech.
 HEAD: The Citizens Internet Portal is built as public, community-governed digital infrastructure rather than a privately owned platform optimizing for engagement or advertiser preference — removing the profit motive both sides distrust, without requiring a new government speech mandate.
-TAIL: Leave moderation entirely to a few companies chasing engagement, and both under-moderation and over-moderation keep getting blamed on "the algorithm" that fuels and profits from polarization. 
+TAIL: Leave moderation entirely to a few companies chasing engagement, and both under-moderation and over-moderation keep getting blamed on "the algorithm" that fuels and profits from polarization.
 
 ## Immigration {#immigration}
 TAG: Governance & World
@@ -140,7 +140,7 @@ TAG: Governance & World
 LEFT: Public schools need more funding and equity between rich and poor districts; school choice can drain resources from the schools that need them most.
 RIGHT: Parents should be free to choose the best school for their child, including through vouchers, without top-down curriculum mandates.
 HEAD: PTF-style community institutions and SZH-organized zoning could support tuition-free public options and choice-based options side by side within the same community, funded so a family's zip code stops being the main predictor of school quality — without forcing every family into one model.
-TAIL: Keep funding polarization and school-choice fights running as separate battles, and zip codes will continue deciding outcomes no matter which policy wins this decade.
+TAIL: Keep funding fights and school-choice fights running as separate battles, and zip codes will continue deciding outcomes no matter which policy wins this decade.
 
 ## Climate & Environment {#climate}
 TAG: Governance & World
