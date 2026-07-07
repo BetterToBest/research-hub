@@ -56,6 +56,7 @@ TAG: Economy & Money
 LEFT: Raise the minimum wage so a full-time job reliably covers rent, food, and basic needs.
 RIGHT: Mandated wage floors above the market rate cost entry-level jobs, hit small businesses hardest, and often get passed straight into prices.
 HEAD: The framework sidesteps the wage-versus-price spiral by lowering the price of living instead of only raising the price of labor. When Public Trust Housing and Public Trust Foundations bring rent, food, and utilities down, a modest wage buys more without a mandate — make living cheap, so life isn't.
+TAIL: Keep raising the wage floor without ever lowering the cost of living, and the same fight just repeats every few years as prices catch back up.
 
 ## Money in Politics & Corruption {#money-politics}
 TAG: Economy & Money
@@ -69,24 +70,28 @@ TAG: Welfare, Housing & Health
 LEFT: Government must guarantee a real safety net — healthcare, housing, food — because markets alone leave too many people behind.
 RIGHT: Means-tested welfare programs can trap people in dependency and burn money on caseworkers and eligibility bureaucracy that could go directly to people or growth.
 HEAD: CCO's Basic Units act like an opt-in floor for essentials, without the stigma, paperwork, or clawback cliffs of legacy welfare — while unlimited earning above that floor stays fully intact. The Basic Living Economic Index (BLEI) then tracks whether households are actually gaining ground year over year, not just clearing a snapshot poverty line.
+TAIL: Keep arguing only over eligibility rules and caseloads, and the debate just cycles between "too generous" and "not enough" without ever touching what things actually cost.
 
 ## Housing & Homelessness {#housing}
 TAG: Welfare, Housing & Health
 LEFT: Housing is a human right; speculative investment has made it unaffordable, and stronger tenant protections and public housing are overdue.
 RIGHT: Zoning restrictions and permitting delays — not private ownership — are the real bottleneck; unleash private development and supply will follow.
 HEAD: Public Trust Housing offers a third lane alongside both: community-owned buildings where residents hold real equity and vote on their own building's decisions, competing with — not replacing — private homeownership and rental markets.
+TAIL: Leave supply and ownership as the only two levers on the table, and the next generation still gets priced out no matter which side wins the argument.
 
 ## Healthcare {#healthcare}
 TAG: Welfare, Housing & Health
 LEFT: Healthcare is a right; a single-payer or heavily regulated system is needed to guarantee coverage and control costs.
 RIGHT: Government-run healthcare rations care and slows innovation; competition and consumer choice control costs better than mandates do.
 HEAD: Public Trust Foundations can run not-for-profit community clinics that accept Basic Units for baseline preventive and primary care, guaranteeing access to essential care without eliminating a competitive private tier for elective and specialty medicine.
+TAIL: Argue only over who pays without building a baseline that doesn't depend on employment or means-testing, and coverage keeps lapsing exactly when people need it most.
 
 ## Criminal Justice & Policing {#criminal-justice}
 TAG: Justice & Safety
 LEFT: Policing needs reform to address racial disparities and over-incarceration, with more resources shifted toward prevention and social services.
 RIGHT: Public safety depends on well-resourced, respected law enforcement; "defund" framing undermines both officers and the communities they serve.
 HEAD: Social Zone Harmonization lets neighborhoods organize around the safety measures and services they actually vote for locally, while CIP gives residents a standing, transparent channel to shape policing priorities year-round instead of once every four years at the ballot box.
+TAIL: Swing policy from over-policing to under-policing with every election cycle, and neighborhoods never get the stable, locally accountable safety either side actually wants.
 
 ## Drug Policy {#drug-policy}
 TAG: Justice & Safety
@@ -98,7 +103,7 @@ TAIL: Prohibition without treatment infrastructure just relocates the harm from 
 ## Gun Rights & Public Safety {#guns}
 TAG: Justice & Safety
 LEFT: Common-sense regulation — background checks, red-flag laws — reduces mass shootings and gun deaths without banning ownership.
-RIGHT: The Second Amendment was written specifically as a check against government tyranny, not just personal defense, and most owners are law-abiding. Illegal firearms already circulate freely on the black market — the cat isn't going back in the bag — so new restrictions mainly disarm the people who follow the law, since criminals by definition don't. Some gun-rights advocates go further, suspecting that tragic shootings are exploited, or in the most distrustful accounts even provoked, to manufacture public support for disarmament; that deeper suspicion is a minority view even within the movement, but it circulates widely enough in gun-rights discourse to be worth naming honestly here.
+RIGHT: The Second Amendment was written specifically as a check against government overreach, not just personal defense, and the overwhelming majority of gun owners are law-abiding. Because illegal firearms already circulate widely outside any regulated market, new restrictions tend to fall hardest on people who follow the law already, since those intent on violence usually aren't the ones filling out paperwork. A further, more skeptical strain of this view holds that public fear after high-profile shootings gets leveraged to build political momentum for disarmament, whether or not tighter laws would have changed that particular outcome — a suspicion that shapes the debate even when it resists case-by-case verification.
 HEAD: Danger in this world seems ever-present, and the framework doesn't pretend it can argue that away or settle the Second Amendment question outright. What it can do is attack the desperation, untreated crisis, and economic precarity that drive a meaningful share of gun violence in the first place, through CCO, PTH, and real healthcare access — making people safer on the front both sides claim to care about, rather than just refighting the same enforcement-versus-rights argument after every tragedy. Its later stage, Passionism, points at a further version of that same safety: a population secure enough in its basic needs that grievance and zero-sum desperation, the fuel behind a lot of violence, has less to feed on to begin with.
 TAIL: Treat gun policy as pure enforcement or pure rights without addressing what drives the violence, and the same argument just resets after the next tragedy.
 
@@ -107,12 +112,14 @@ TAG: Rights & Society
 LEFT: Bodily autonomy means the decision belongs to the pregnant person, not the state.
 RIGHT: Protecting potential life is a core moral obligation, deserving legal weight from conception or viability onward.
 HEAD: Compassionism doesn't resolve that underlying moral disagreement, and isn't trying to. What it can do is shrink the number of abortions driven by economic desperation rather than genuine preference, by guaranteeing basic housing, healthcare, and childcare support through PTH, PTF, and CCO regardless of income — so that whatever the decision is, it's made freely rather than forced by circumstance.
+TAIL: Leave the economic pressures untouched while the legal fight rages on, and the choice keeps getting made under duress no matter which law wins.
 
 ## Human & Civil Rights {#human-rights}
 TAG: Rights & Society
 LEFT: Equal protection requires proactively dismantling systemic discrimination against marginalized groups, including LGBTQ+ people.
 RIGHT: Equal treatment under existing law is the goal; identity-based carve-outs or mandates risk creating new forms of unequal treatment.
 HEAD: Social Zone Harmonization is explicit about this tension: it lets family-focused, LGBTQ+-affirming, faith-based, or otherwise value-aligned communities each organize locally around their own norms, while the Citizens Internet Portal keeps baseline civil-rights and anti-discrimination protections uniform and non-negotiable nationally.
+TAIL: Force one national template onto every community's values instead, and the backlash from whichever side loses just fuels the next round of the same fight.
 
 ## Free Speech & Big Tech {#free-speech}
 TAG: Rights & Society
@@ -133,9 +140,11 @@ TAG: Governance & World
 LEFT: Public schools need more funding and equity between rich and poor districts; school choice can drain resources from the schools that need them most.
 RIGHT: Parents should be free to choose the best school for their child, including through vouchers, without top-down curriculum mandates.
 HEAD: PTF-style community institutions and SZH-organized zoning could support tuition-free public options and choice-based options side by side within the same community, funded so a family's zip code stops being the main predictor of school quality — without forcing every family into one model.
+TAIL: Keep funding fights and school-choice fights running as separate battles, and zip code keeps deciding outcomes no matter which policy wins this decade.
 
 ## Climate & Environment {#climate}
 TAG: Governance & World
 LEFT: Aggressive regulation and public investment are needed to head off catastrophic climate change; the market alone moves too slowly.
 RIGHT: Heavy-handed climate regulation costs jobs and raises energy prices; innovation and market incentives, not mandates, will solve this.
 HEAD: SZH zoning and not-for-profit PTF utilities can pilot green infrastructure — community solar, efficient housing — at the local level with no single top-down federal mandate, letting different regions adopt at whatever pace their economy and geography support, while CIP publishes the results transparently so what works spreads by evidence rather than by decree.
+TAIL: Wait for one federal mandate to resolve it nationwide, and regions that need different solutions on different timelines just stall out or resist the one-size-fits-all rule.
