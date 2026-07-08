@@ -124,6 +124,35 @@
     .wingsvg .fill-shape{ animation: none; opacity: 1; }
   }
 
+  /* ---------- wing hover zones + tooltip ---------- */
+  .wing-zone{ cursor: pointer; }
+  .wing-zone path{ transition: stroke-width .2s ease, opacity .2s ease; }
+  .wing-zone:hover path[data-draw], .wing-zone:focus-visible path[data-draw]{ stroke-width: 3; }
+  .wing-zone:hover .fill-shape, .wing-zone:focus-visible .fill-shape{ opacity: .22 !important; }
+  .wing-zone:focus-visible{ outline: none; }
+  .wing-zone.head-zone:hover circle:nth-child(2), .wing-zone.head-zone:focus-visible circle:nth-child(2){ r: 12; }
+  .wing-zone.head-zone circle{ transition: r .25s ease; }
+  .wing-hitbox{ fill: transparent; pointer-events: all; }
+  @media (prefers-reduced-motion: reduce){
+    .wing-zone path, .wing-zone.head-zone circle{ transition: none; }
+  }
+
+  .wing-tip{
+    position: fixed; z-index: 40; max-width: 240px;
+    background: var(--panel-2); border: 1px solid var(--border); border-radius: 6px;
+    padding: 10px 13px; font-size: .86rem; line-height: 1.45; color: #e7e2d5;
+    pointer-events: none; opacity: 0; transform: translateY(4px);
+    transition: opacity .15s ease, transform .15s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  }
+  .wing-tip.visible{ opacity: 1; transform: translateY(0); }
+  .wing-tip .wing-tip-label{
+    display:block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  @media (prefers-reduced-motion: reduce){ .wing-tip{ transition: none; } }
+  @media (hover: none){ .wing-tip{ max-width: 200px; } }
+
   /* ---------- disclaimer callout ---------- */
   .callout{
     max-width: 1040px; margin: 6px auto 0; padding: 0 24px;
@@ -284,33 +313,54 @@
       </linearGradient>
     </defs>
 
-    <!-- soft wing body shapes -->
+    <!-- left wing zone -->
+    <g class="wing-zone left-zone" tabindex="0" role="button" aria-label="Left wing: the dominant left instinct" data-tip-label="Left Wing" data-tip="The dominant left instinct: protect the vulnerable, share risk collectively, and correct for inequities the market won't fix on its own.">
+    <path class="wing-hitbox" d="M480,78 C 360,90 200,130 80,220 L150,235 C 260,150 380,110 480,98 Z" stroke="none"/>
+    <!-- soft wing body shape -->
     <path class="fill-shape" d="M480,78 C 360,95 200,140 90,235 C 230,205 360,175 480,150 Z" fill="#4a90bd" opacity=".10"/>
-    <path class="fill-shape" d="M480,78 C 600,95 760,140 870,235 C 730,205 600,175 480,150 Z" fill="#c14b3a" opacity=".10"/>
 
     <!-- left wing feathers -->
     <path data-draw pathLength="1" d="M480,88 C 400,100 260,120 150,190" fill="none" stroke="#4a90bd" stroke-width="2" style="animation-delay:.05s"/>
     <path data-draw pathLength="1" d="M480,92 C 390,112 240,148 120,225" fill="none" stroke="#4a90bd" stroke-width="2" style="animation-delay:.15s"/>
     <path data-draw pathLength="1" d="M480,96 C 380,124 220,176 95,258" fill="none" stroke="#4a90bd" stroke-width="2" style="animation-delay:.25s"/>
     <path data-draw pathLength="1" d="M480,100 C 375,138 205,204 78,272" fill="none" stroke="#4a90bd" stroke-width="1.5" opacity=".7" style="animation-delay:.35s"/>
+    </g>
+
+    <!-- right wing zone -->
+    <g class="wing-zone right-zone" tabindex="0" role="button" aria-label="Right wing: the dominant right instinct" data-tip-label="Right Wing" data-tip="The dominant right instinct: reward merit, protect individual liberty, and trust personal responsibility over centralized control.">
+    <path class="wing-hitbox" d="M480,78 C 600,90 760,130 880,220 L810,235 C 700,150 580,110 480,98 Z" stroke="none"/>
+    <path class="fill-shape" d="M480,78 C 600,95 760,140 870,235 C 730,205 600,175 480,150 Z" fill="#c14b3a" opacity=".10"/>
 
     <!-- right wing feathers (mirrored) -->
     <path data-draw pathLength="1" d="M480,88 C 560,100 700,120 810,190" fill="none" stroke="#c14b3a" stroke-width="2" style="animation-delay:.05s"/>
     <path data-draw pathLength="1" d="M480,92 C 570,112 720,148 840,225" fill="none" stroke="#c14b3a" stroke-width="2" style="animation-delay:.15s"/>
     <path data-draw pathLength="1" d="M480,96 C 580,124 740,176 865,258" fill="none" stroke="#c14b3a" stroke-width="2" style="animation-delay:.25s"/>
     <path data-draw pathLength="1" d="M480,100 C 585,138 755,204 882,272" fill="none" stroke="#c14b3a" stroke-width="1.5" opacity=".7" style="animation-delay:.35s"/>
+    </g>
 
-    <!-- tail -->
+    <!-- tail zone -->
+    <g class="wing-zone tail-zone" tabindex="0" role="button" aria-label="Tail: what happens if the wings never let the head in" data-tip-label="The Tail" data-tip="What's left when neither wing lets the head in: a narrow, low path — polarization without resolution, splitting even further apart.">
+    <path class="wing-hitbox" d="M462,118 C 445,155 445,190 435,255 L525,255 C 515,190 515,155 498,118 Z" stroke="none"/>
     <path data-draw pathLength="1" d="M480,118 C 468,150 492,175 480,225" fill="none" stroke="url(#tailFade)" stroke-width="1.5" style="animation-delay:.5s"/>
     <path data-draw pathLength="1" d="M480,225 C 472,238 462,246 452,252" fill="none" stroke="#9a6b60" stroke-width="1.2" opacity=".6" style="animation-delay:.7s"/>
     <path data-draw pathLength="1" d="M480,225 C 488,238 498,246 508,252" fill="none" stroke="#9a6b60" stroke-width="1.2" opacity=".6" style="animation-delay:.7s"/>
+    </g>
 
-    <!-- head -->
+    <!-- head zone -->
+    <g class="wing-zone head-zone" tabindex="0" role="button" aria-label="Head: the synthesis both wings could live with" data-tip-label="The Head" data-tip="A small sun, rising: the head's synthesis, the shared ground both wings could actually stand on — meant to grow as it gains awareness and support.">
+    <path class="wing-hitbox" d="M446,50 L514,50 L514,110 L446,110 Z" stroke="none"/>
     <circle cx="480" cy="82" r="34" fill="url(#headGlow)"/>
     <circle data-draw pathLength="1" cx="480" cy="82" r="10" fill="none" stroke="#dfae4a" stroke-width="2" style="animation-delay:.8s"/>
     <circle cx="480" cy="82" r="3.4" fill="#dfae4a"/>
+    </g>
   </svg>
+  <p style="font-family:var(--mono);font-size:11px;color:var(--muted);text-align:center;margin:2px 0 0;">Hover or tap a section of the diagram above · illustration by Claude Sonnet 5</p>
 </header>
+
+<div class="wing-tip" id="wingTip" role="tooltip">
+  <span class="wing-tip-label" id="wingTipLabel"></span>
+  <span id="wingTipText"></span>
+</div>
 
 <div class="callout">
   <blockquote id="disclaimerText">We may not all agree on everything, yet this new frame and lens may show us where we, as a collective, agree overwhelmingly.</blockquote>
@@ -359,6 +409,50 @@
 <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
 
 <script>
+(function(){
+  // ---- wing diagram tooltips ----
+  const tip = document.getElementById('wingTip');
+  const tipLabel = document.getElementById('wingTipLabel');
+  const tipText = document.getElementById('wingTipText');
+  const zones = document.querySelectorAll('.wing-zone');
+  let activeZone = null;
+
+  function showTip(zone){
+    tipLabel.textContent = zone.getAttribute('data-tip-label') || '';
+    tipText.textContent = zone.getAttribute('data-tip') || '';
+    tip.classList.add('visible');
+    activeZone = zone;
+  }
+  function hideTip(){
+    tip.classList.remove('visible');
+    activeZone = null;
+  }
+  function positionTip(x, y){
+    const pad = 14;
+    let left = x + pad, top = y + pad;
+    const rect = tip.getBoundingClientRect();
+    if (left + rect.width + pad > window.innerWidth) left = x - rect.width - pad;
+    if (top + rect.height + pad > window.innerHeight) top = y - rect.height - pad;
+    tip.style.left = Math.max(8, left) + 'px';
+    tip.style.top = Math.max(8, top) + 'px';
+  }
+
+  zones.forEach(function(zone){
+    zone.addEventListener('mouseenter', function(e){ showTip(zone); positionTip(e.clientX, e.clientY); });
+    zone.addEventListener('mousemove', function(e){ if (activeZone === zone) positionTip(e.clientX, e.clientY); });
+    zone.addEventListener('mouseleave', hideTip);
+    zone.addEventListener('focus', function(){
+      const r = zone.getBoundingClientRect();
+      showTip(zone); positionTip(r.left + r.width / 2, r.bottom);
+    });
+    zone.addEventListener('blur', hideTip);
+    zone.addEventListener('click', function(e){
+      if (activeZone === zone){ hideTip(); return; }
+      showTip(zone); positionTip(e.clientX || (zone.getBoundingClientRect().left), e.clientY || (zone.getBoundingClientRect().bottom));
+    });
+  });
+})();
+
 (function(){
   const LABELS = ['TAG','LEFT','RIGHT','HEAD','TAIL'];
   const labelPattern = LABELS.join('|');
