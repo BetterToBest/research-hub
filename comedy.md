@@ -417,7 +417,7 @@ number: 4
 title: On Who Actually Wants This Fixed
 meta: Exchange · cable-news parody
 line: PUNDIT A | Everyone at the table wants this problem solved!
-line: PUNDIT B | Gary, half the table gets paid by the hour the problem stays unsolved.
+line: PUNDIT B | Gary, half the table gets paid by the hour, resulting in greater job security when the problem stays unsolved.
 line: PUNDIT A | That's... a conflict of interest.
 line: PUNDIT B | It's not a conflict. It's the business model.
 
