@@ -285,7 +285,7 @@ number: 3
 title: Prestige & Associates — Your Voice, Amplified (For A Fee)
 meta: :30 spot · corporate parody
 dir: Smooth, reassuring narrator, soft piano.
-line: ANNCR | At Prestige & Associates, we believe every citizen deserves a voice in Washington. That voice just happens to cost four hundred dollars an hour and know a guy.
+line: ANNCR | At Prestige & Associates, we believe every citizen deserves a voice in Washington. That voice just happens to cost four hundred dollars an hour and knows a guy.
 line: ANNCR | Prestige & Associates: technically legal since 1974.
 dir: [super] Individual voices also welcome. Results may vary. Wildly.
 
@@ -311,4 +311,3 @@ p: The Fed raised rates again. My rent went up too. We're just out here octave-i
 p: We built an app for everything except the one thing — a functioning DMV line.
 p: My council member says he "hears my concerns." So does my smart speaker, and it also doesn't do anything about them.
 p: Congress took a two-week recess to "reconnect with constituents," which is Washington for "vacation with a press release."
-punch: We didn't fix the government. We just gave it better branding.
