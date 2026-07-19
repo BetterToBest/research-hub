@@ -285,7 +285,7 @@ number: 3
 title: Prestige & Associates — Your Voice, Amplified (For A Fee)
 meta: :30 spot · corporate parody
 dir: Smooth, reassuring narrator, soft piano.
-line: ANNCR | At Prestige & Associates, we believe every citizen deserves a voice in Washington. That voice just happens to cost four hundred dollars an hour and knows a guy.
+line: ANNCR | At Prestige & Associates, we believe every citizen deserves a voice in Washington. That voice just happens to cost four hundred dollars an hour and know a guy.
 line: ANNCR | Prestige & Associates: technically legal since 1974.
 dir: [super] Individual voices also welcome. Results may vary. Wildly.
 
@@ -311,3 +311,119 @@ p: The Fed raised rates again. My rent went up too. We're just out here octave-i
 p: We built an app for everything except the one thing — a functioning DMV line.
 p: My council member says he "hears my concerns." So does my smart speaker, and it also doesn't do anything about them.
 p: Congress took a two-week recess to "reconnect with constituents," which is Washington for "vacation with a press release."
+punch: We didn't fix the government. We just gave it better branding.
+
+## volume
+label: V
+
+## issue
+label: Academia
+
+## standup
+number: 1
+title: Vice Provost of Vice Provosts
+meta: Bit · on administrative bloat
+p: My university has more vice provosts than tenured professors. There's an actual Vice Provost for Strategic Initiatives, whose strategic initiative, as far as I can tell, is having the job.
+punch: We didn't inflate the currency. We inflated the org chart.
+
+## news
+number: 2
+title: University Announces 41st Assistant Dean, Says This One Will Definitely Be The One Who Fixes Parking
+kicker: Higher Ed
+meta: Headline · wire desk parody
+p: The newly created Office of Parking Innovation Strategy will convene a task force next semester to study whether a committee is the correct format for addressing a problem that is, at its core, about paint and asphalt.
+
+## commercial
+number: 3
+title: Apex Academic Publishing — Pay To Say It
+meta: :30 spot · corporate parody
+dir: Slick corporate narrator, clean office backdrop.
+line: ANNCR | Got groundbreaking research nobody's read? At Apex Academic Publishing, for just $2,400, we'll put your paper behind a paywall so effectively even you won't be able to access it!
+line: ANNCR | Peer review completed in as little as six hours, by a very tired grad student and a strong cup of coffee.
+dir: [super] Apex Academic Publishing. Impact Factor: Yes.
+
+## debate
+number: 4
+title: On the Replication Crisis
+meta: Exchange · cable-news parody
+line: PUNDIT A | Science is self-correcting!
+line: PUNDIT B | Gary, nobody's replicated the self-correcting part.
+line: PUNDIT A | ...that's fair, actually.
+line: PUNDIT B | We should probably fund a study on that. Right after this one about power poses.
+
+## issue
+label: .org Scams
+
+## standup
+number: 1
+title: Ribbon Fatigue
+meta: Bit · on awareness campaigns
+p: I own eleven awareness ribbons. I am now more aware of how many diseases exist than I am equipped to do anything about any of them. At some point "awareness" became the whole product.
+punch: We didn't cure anything, but boy, do we know about it now.
+
+## news
+number: 2
+title: Charity CEO Earns $890,000 A Year Ensuring The Cause Remains Well-Funded, Specifically His Position
+kicker: Nonprofits
+meta: Headline · wire desk parody
+p: The organization's latest annual report notes a twelve percent increase in "administrative excellence" spending, alongside a modest half-percent increase in the actual thing the charity was founded to address.
+
+## commercial
+number: 3
+title: The Foundation For A Better Tomorrow, Eventually
+meta: :30 spot · nonprofit ad parody
+dir: Somber piano, slow-motion black-and-white footage, single tear implied.
+line: NARR | For just $19 a month, you can help The Foundation For A Better Tomorrow, Eventually keep sending you emails asking for $19 a month.
+line: NARR | Ninety-one cents of every dollar goes directly toward asking you for another dollar.
+dir: [super] A Better Tomorrow: perpetually two fiscal quarters away.
+
+## debate
+number: 4
+title: On Nonprofit Overhead
+meta: Exchange · cable-news parody
+line: PUNDIT A | Ninety percent goes straight to the cause!
+line: PUNDIT B | Gary, ninety percent goes to a gala where they discuss the other ten percent.
+line: PUNDIT A | Galas raise awareness!
+line: PUNDIT B | Of the gala.
+
+## issue
+label: Perverse Incentives
+
+## standup
+number: 1
+title: The Consultant Who Fixed The Consultants
+meta: Bit · on consulting culture
+p: My company hired a consulting firm to fix the problems caused by the last consulting firm. Next quarter, we're hiring a third firm to evaluate whether the first two firms should still be invoiced.
+punch: At some point the real innovation was just billing hours forever.
+
+## news
+number: 2
+title: Task Force Formed To Study Why Task Forces Haven't Solved Anything Yet
+kicker: Governance
+meta: Headline · wire desk parody
+p: The newly convened Task Force on Task Force Efficacy will spend the next eighteen months determining whether eighteen months is an appropriate timeline, before recommending a follow-up task force.
+
+## commercial
+number: 3
+title: Forever Solutions Consulting
+meta: :30 spot · corporate parody
+dir: Confident, generic-corporate narrator.
+line: ANNCR | At Forever Solutions Consulting, we don't just solve your problem. We solve it just enough that you still need us next year.
+line: ANNCR | Our motto: why fix it once when you can fix it quarterly?
+dir: [super] Forever Solutions Consulting. Retainer required. Forever.
+
+## debate
+number: 4
+title: On Who Actually Wants This Fixed
+meta: Exchange · cable-news parody
+line: PUNDIT A | Everyone at the table wants this problem solved!
+line: PUNDIT B | Gary, half the table gets paid by the hour the problem stays unsolved.
+line: PUNDIT A | That's... a conflict of interest.
+line: PUNDIT B | It's not a conflict. It's the business model.
+
+## standup
+number: 5
+title: The Nonprofit Industrial Complex
+meta: Bit · closer
+p: Somewhere out there is a task force, funded by a foundation, studying a consulting firm's report about why the committee that funds the task force hasn't solved the problem the consulting firm was hired to fix.
+punch: It's turtles all the way down, except every turtle bills $400 an hour and has a mission statement.
