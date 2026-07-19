@@ -86,9 +86,43 @@
     border: 1px solid var(--rule);
     border-radius: var(--radius);
     margin-top: 24px;
-    padding: 30px 32px 32px;
     position: relative;
     box-shadow: 0 1px 0 #00000008;
+  }
+
+  .entry summary{
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 24px;
+    user-select: none;
+  }
+  .entry summary::-webkit-details-marker{ display: none; }
+  .entry summary::before{
+    content: "+";
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--ink-soft);
+    width: 12px;
+    flex-shrink: 0;
+  }
+  .entry[open] summary::before{ content: "\2013"; }
+
+  .entry-title{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 16.5px;
+    line-height: 1.3;
+    color: var(--ink);
+  }
+
+  .entry-content{
+    padding: 4px 28px 30px;
+    border-top: 1px solid var(--rule);
+    padding-top: 22px;
   }
 
   .stamp{
@@ -104,8 +138,7 @@
     border: 1.5px solid currentColor;
     border-radius: 2px;
     transform: rotate(-2deg);
-    position: relative;
-    top: -4px;
+    flex-shrink: 0;
   }
   .stamp::before{ content: "◆"; font-size: 8px; }
 
@@ -113,14 +146,6 @@
   .stamp.news{ color: var(--c-news); background: color-mix(in srgb, var(--c-news) 8%, transparent); }
   .stamp.commercial{ color: var(--c-commercial); background: color-mix(in srgb, var(--c-commercial) 8%, transparent); }
   .stamp.debate{ color: var(--c-debate); background: color-mix(in srgb, var(--c-debate) 8%, transparent); }
-
-  .entry h2{
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 24px;
-    margin: 14px 0 4px;
-    line-height: 1.25;
-  }
 
   .entry .meta{
     font-family: 'IBM Plex Mono', monospace;
@@ -317,7 +342,8 @@
 
   @media (max-width: 520px){
     .wrap{ padding: 0 16px 80px; }
-    .entry{ padding: 24px 20px 26px; }
+    .entry summary{ padding: 16px 18px; }
+    .entry-content{ padding: 4px 20px 24px; padding-top: 18px; }
     .script-line{ grid-template-columns: 84px 1fr; gap: 10px; }
   }
 </style>
@@ -354,7 +380,7 @@
      label: I
 
      ## issue
-     number: 1
+     label: Politics
 
      ## standup
      title: ...
@@ -364,7 +390,7 @@
    block. To start a new issue in the same volume:
 
      ## issue
-     number: 2
+     label: Housing
 
    To start a new volume entirely:
 
@@ -452,28 +478,26 @@ function renderBody(entry) {
   }).join('');
 }
 
-function renderEntry(entry) {
+function renderEntry(entry, isOpen) {
   const stampLabel = STAMP_LABELS[entry.format] || entry.format;
-  let headBlock = '';
-  let heading = `<h2>${entry.title}</h2>`;
-
-  if (entry.format === 'news') {
-    headBlock = `
+  const headBlock = entry.format === 'news' ? `
       <div class="headline-block">
         ${entry.kicker ? `<p class="kicker">${entry.kicker}</p>` : ''}
         <p class="hed">${entry.title}</p>
-      </div>`;
-    heading = '';
-  }
+      </div>` : '';
 
   return `
-    <article class="entry ${entry.format}">
-      <span class="stamp ${entry.format}">${entry.number ? entry.number + '. ' : ''}${stampLabel}</span>
-      ${headBlock}
-      ${heading}
-      ${entry.meta ? `<p class="meta">${entry.meta}</p>` : ''}
-      <div class="body">${renderBody(entry)}</div>
-    </article>`;
+    <details class="entry ${entry.format}"${isOpen ? ' open' : ''}>
+      <summary>
+        <span class="stamp ${entry.format}">${entry.number ? entry.number + '. ' : ''}${stampLabel}</span>
+        <span class="entry-title">${entry.title}</span>
+      </summary>
+      <div class="entry-content">
+        ${headBlock}
+        ${entry.meta ? `<p class="meta">${entry.meta}</p>` : ''}
+        <div class="body">${renderBody(entry)}</div>
+      </div>
+    </details>`;
 }
 
 function groupIntoVolumes(blocks) {
@@ -488,11 +512,11 @@ function groupIntoVolumes(blocks) {
       curIssue = null;
     } else if (b.format === 'issue') {
       if (!curVol) { curVol = { label: '', issues: [] }; volumes.push(curVol); }
-      curIssue = { number: b.number, entries: [] };
+      curIssue = { label: b.label, entries: [] };
       curVol.issues.push(curIssue);
     } else {
       if (!curVol) { curVol = { label: '', issues: [] }; volumes.push(curVol); }
-      if (!curIssue) { curIssue = { number: '', entries: [] }; curVol.issues.push(curIssue); }
+      if (!curIssue) { curIssue = { label: '', entries: [] }; curVol.issues.push(curIssue); }
       if (!b.number) b.number = String(curIssue.entries.length + 1);
       curIssue.entries.push(b);
     }
@@ -506,13 +530,17 @@ function renderIssue(iss, idx, isFirstInVolume) {
     .map(e => `<span class="block-tag">${e.number}. ${STAMP_LABELS[e.format] || e.format}</span>`)
     .join('');
 
+  const entriesHtml = iss.entries
+    .map((e, i) => renderEntry(e, isFirstInVolume && i === 0))
+    .join('');
+
   return `
     <details class="issue-block"${isFirstInVolume ? ' open' : ''}>
       <summary>
-        <span class="issue-label">Issue ${iss.number || (idx + 1)}</span>
+        <span class="issue-label">Issue: ${iss.label || (idx + 1)}</span>
         ${tagsHtml}
       </summary>
-      <div class="issue-entries">${iss.entries.map(renderEntry).join('')}</div>
+      <div class="issue-entries">${entriesHtml}</div>
     </details>`;
 }
 
