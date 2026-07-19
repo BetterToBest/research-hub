@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Political Comedy — Dossier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F1EFE7;
+    --paper-raised: #FBFAF5;
+    --ink: #211E19;
+    --ink-soft: #5B564C;
+    --rule: #D8D3C3;
+
+    /* one distinct ink color per format */
+    --c-standup: #9C3B33;     /* brick red */
+    --c-news: #8A6A16;        /* ochre */
+    --c-commercial: #33506C;  /* slate blue */
+    --c-debate: #3F6B4A;      /* olive green */
+
+    --radius: 3px;
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle at 20% 10%, #00000006 0, transparent 40%),
+      radial-gradient(circle at 80% 90%, #00000005 0, transparent 45%);
+    z-index: 0;
+  }
+
+  .wrap{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header.masthead{
+    padding: 56px 0 28px;
+    border-bottom: 3px double var(--ink);
+    text-align: center;
+  }
+  .eyebrow{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 10px;
+  }
+  h1.title{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(34px, 6vw, 52px);
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+  }
+  .subtitle{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+  .subtitle span{ color: var(--c-standup); }
+
+  .entry{
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    margin-top: 24px;
+    padding: 30px 32px 32px;
+    position: relative;
+    box-shadow: 0 1px 0 #00000008;
+  }
+
+  .stamp{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 5px 10px 5px 9px;
+    border: 1.5px solid currentColor;
+    border-radius: 2px;
+    transform: rotate(-2deg);
+    position: relative;
+    top: -4px;
+  }
+  .stamp::before{ content: "◆"; font-size: 8px; }
+
+  .stamp.standup{ color: var(--c-standup); background: color-mix(in srgb, var(--c-standup) 8%, transparent); }
+  .stamp.news{ color: var(--c-news); background: color-mix(in srgb, var(--c-news) 8%, transparent); }
+  .stamp.commercial{ color: var(--c-commercial); background: color-mix(in srgb, var(--c-commercial) 8%, transparent); }
+  .stamp.debate{ color: var(--c-debate); background: color-mix(in srgb, var(--c-debate) 8%, transparent); }
+
+  .entry h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 14px 0 4px;
+    line-height: 1.25;
+  }
+
+  .entry .meta{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+
+  .entry .body p{ margin: 0 0 14px; }
+  .entry .body p:last-child{ margin-bottom: 0; }
+  .body .punch{ font-weight: 600; }
+
+  .headline-block{
+    border-left: 3px solid var(--c-news);
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+  .headline-block .kicker{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .headline-block .hed{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.35;
+  }
+
+  .script-line{
+    display: grid;
+    grid-template-columns: 108px 1fr;
+    gap: 14px;
+    margin-bottom: 12px;
+    align-items: baseline;
+  }
+  .script-line .speaker{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-align: right;
+  }
+  .entry.commercial .script-line .speaker{ color: var(--c-commercial); }
+  .entry.debate .script-line .speaker{ color: var(--c-debate); }
+  .script-line.stagedir .speaker{ color: var(--ink-soft) !important; }
+  .script-line.stagedir .line{ font-style: italic; color: var(--ink-soft); }
+
+  .volume{
+    margin-top: 36px;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--paper-raised);
+    overflow: hidden;
+  }
+  .volume summary{
+    list-style: none;
+    cursor: pointer;
+    padding: 22px 28px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 21px;
+    user-select: none;
+  }
+  .volume summary::-webkit-details-marker{ display: none; }
+  .volume summary::before{
+    content: "+";
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--ink-soft);
+    width: 14px;
+  }
+  .volume[open] summary::before{ content: "\2013"; }
+  .volume summary .count{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    margin-left: auto;
+    text-transform: uppercase;
+  }
+  .volume .issues{
+    border-top: 1px solid var(--rule);
+    padding: 4px 28px 26px;
+  }
+  .issue-block{
+    border-top: 1px dashed var(--rule);
+  }
+  .issue-block:first-child{ border-top: none; }
+  .issue-block summary{
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 0 14px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    user-select: none;
+  }
+  .issue-block summary::-webkit-details-marker{ display: none; }
+  .issue-block summary::before{
+    content: "+";
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--ink-soft);
+    width: 12px;
+    flex-shrink: 0;
+  }
+  .issue-block[open] summary::before{ content: "\2013"; }
+  .issue-label{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .block-tag{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    color: var(--ink-soft);
+  }
+  .block-tag + .block-tag::before{
+    content: "·";
+    margin-right: 12px;
+    color: var(--rule);
+  }
+  .issue-entries{
+    padding-bottom: 8px;
+  }
+  .issue-entries .entry:first-child{ margin-top: 0; }
+
+  footer.note{
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    text-align: center;
+  }
+  footer.note a{
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  footer.note a:hover{ border-bottom-color: var(--ink); }
+
+  #status{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #back-to-top{
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--paper-raised);
+    color: var(--ink);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 10px 14px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity .18s ease, transform .18s ease, border-color .18s ease;
+    box-shadow: 0 2px 8px #00000014;
+    z-index: 2;
+  }
+  #back-to-top.visible{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  #back-to-top:hover{ border-color: var(--ink); }
+
+  @media (max-width: 520px){
+    .wrap{ padding: 0 16px 80px; }
+    .entry{ padding: 24px 20px 26px; }
+    .script-line{ grid-template-columns: 84px 1fr; gap: 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <h1 class="title">A Political Comedy</h1>
+    <p class="subtitle">Satire on the record <span>·</span> nobody named, everybody implicated</p>
+  </header>
+
+  <main id="entries">
+    <p id="status">Loading dossier…</p>
+  </main>
+
+  <footer class="note">
+    Compassionism / Better To Best <a href="https://bettertobest.github.io/research-hub/" target="_blank" rel="noopener">Research Hub</a>, run through a comedy filter.
+  </footer>
+
+</div>
+
+<button id="back-to-top" aria-label="Back to top">&uarr; Top</button>
+
+<script>
+/* ============================================================
+   DATA SOURCE: comedy.md (same folder)
+
+   Structure: volume > issue > bits. Start a new volume, then a
+   new issue inside it, then append bits — they collect into the
+   most recent issue until the next ## volume or ## issue marker.
+
+     ## volume
+     label: I
+
+     ## issue
+     number: 1
+
+     ## standup
+     title: ...
+     ...
+
+   To add a new bit to the current issue, just append a new
+   block. To start a new issue in the same volume:
+
+     ## issue
+     number: 2
+
+   To start a new volume entirely:
+
+     ## volume
+     label: II
+
+   Bit block fields:
+
+     ## <format>
+     number: <position within this issue, e.g. 1, 2, 3...>
+     title: <headline / bit title>
+     meta: <small caption line>
+     p: <paragraph>              (standup / news — repeat for more paragraphs)
+     punch: <bold closing line>  (standup only, optional)
+     kicker: <section label>     (news only, optional)
+     dir: <stage direction>      (commercial / debate — repeat as needed)
+     line: SPEAKER | <dialogue>  (commercial / debate — repeat as needed)
+
+   <format> is one of: standup, news, commercial, debate
+   Lines render in the order they appear in the block.
+   Separate blocks with a blank line.
+   ============================================================ */
+
+const STAMP_LABELS = {
+  standup: 'Stand-Up',
+  news: 'News Satire',
+  commercial: 'Fake Commercial',
+  debate: 'Honest Debate'
+};
+
+function parseEntries(text) {
+  const blocks = text
+    .split(/\n(?=##\s)/)
+    .map(b => b.trim())
+    .filter(Boolean);
+
+  return blocks.map(block => {
+    const lines = block.split('\n');
+    const format = lines.shift().replace(/^##\s*/, '').trim();
+    const entry = { format, title: '', meta: '', kicker: '', label: '', number: '', items: [] };
+
+    for (const raw of lines) {
+      const line = raw.trim();
+      if (!line) continue;
+      const idx = line.indexOf(':');
+      if (idx === -1) continue;
+      const key = line.slice(0, idx).trim();
+      const val = line.slice(idx + 1).trim();
+
+      if (key === 'title') entry.title = val;
+      else if (key === 'meta') entry.meta = val;
+      else if (key === 'kicker') entry.kicker = val;
+      else if (key === 'label') entry.label = val;
+      else if (key === 'number') entry.number = val;
+      else if (key === 'p') entry.items.push({ type: 'p', text: val });
+      else if (key === 'punch') entry.items.push({ type: 'punch', text: val });
+      else if (key === 'dir') entry.items.push({ type: 'dir', text: val });
+      else if (key === 'line') {
+        const [speaker, ...rest] = val.split('|');
+        entry.items.push({ type: 'line', speaker: (speaker || '').trim(), text: rest.join('|').trim() });
+      }
+    }
+    return entry;
+  });
+}
+
+function renderBody(entry) {
+  if (entry.format === 'commercial' || entry.format === 'debate') {
+    return entry.items.map(item => {
+      if (item.type === 'dir') {
+        return `<div class="script-line stagedir"><span class="speaker">&mdash;</span><span class="line">${item.text}</span></div>`;
+      }
+      if (item.type === 'line') {
+        return `<div class="script-line"><span class="speaker">${item.speaker}</span><span class="line">${item.text}</span></div>`;
+      }
+      return '';
+    }).join('');
+  }
+
+  // standup / news: paragraphs
+  return entry.items.map(item => {
+    if (item.type === 'punch') return `<p class="punch">${item.text}</p>`;
+    if (item.type === 'p') return `<p>${item.text}</p>`;
+    return '';
+  }).join('');
+}
+
+function renderEntry(entry) {
+  const stampLabel = STAMP_LABELS[entry.format] || entry.format;
+  let headBlock = '';
+  let heading = `<h2>${entry.title}</h2>`;
+
+  if (entry.format === 'news') {
+    headBlock = `
+      <div class="headline-block">
+        ${entry.kicker ? `<p class="kicker">${entry.kicker}</p>` : ''}
+        <p class="hed">${entry.title}</p>
+      </div>`;
+    heading = '';
+  }
+
+  return `
+    <article class="entry ${entry.format}">
+      <span class="stamp ${entry.format}">${entry.number ? entry.number + '. ' : ''}${stampLabel}</span>
+      ${headBlock}
+      ${heading}
+      ${entry.meta ? `<p class="meta">${entry.meta}</p>` : ''}
+      <div class="body">${renderBody(entry)}</div>
+    </article>`;
+}
+
+function groupIntoVolumes(blocks) {
+  const volumes = [];
+  let curVol = null;
+  let curIssue = null;
+
+  blocks.forEach(b => {
+    if (b.format === 'volume') {
+      curVol = { label: b.label, issues: [] };
+      volumes.push(curVol);
+      curIssue = null;
+    } else if (b.format === 'issue') {
+      if (!curVol) { curVol = { label: '', issues: [] }; volumes.push(curVol); }
+      curIssue = { number: b.number, entries: [] };
+      curVol.issues.push(curIssue);
+    } else {
+      if (!curVol) { curVol = { label: '', issues: [] }; volumes.push(curVol); }
+      if (!curIssue) { curIssue = { number: '', entries: [] }; curVol.issues.push(curIssue); }
+      if (!b.number) b.number = String(curIssue.entries.length + 1);
+      curIssue.entries.push(b);
+    }
+  });
+
+  return volumes;
+}
+
+function renderIssue(iss, idx, isFirstInVolume) {
+  const tagsHtml = iss.entries
+    .map(e => `<span class="block-tag">${e.number}. ${STAMP_LABELS[e.format] || e.format}</span>`)
+    .join('');
+
+  return `
+    <details class="issue-block"${isFirstInVolume ? ' open' : ''}>
+      <summary>
+        <span class="issue-label">Issue ${iss.number || (idx + 1)}</span>
+        ${tagsHtml}
+      </summary>
+      <div class="issue-entries">${iss.entries.map(renderEntry).join('')}</div>
+    </details>`;
+}
+
+function renderVolume(vol, isFirst) {
+  const issuesHtml = vol.issues
+    .map((iss, i) => renderIssue(iss, i, isFirst && i === 0))
+    .join('');
+
+  return `
+    <details class="volume"${isFirst ? ' open' : ''}>
+      <summary>Volume ${vol.label}</summary>
+      <div class="issues">${issuesHtml}</div>
+    </details>`;
+}
+
+fetch('comedy.md')
+  .then(res => {
+    if (!res.ok) throw new Error('comedy.md not found');
+    return res.text();
+  })
+  .then(text => {
+    const blocks = parseEntries(text);
+    const volumes = groupIntoVolumes(blocks);
+    document.getElementById('entries').innerHTML =
+      volumes.map((vol, i) => renderVolume(vol, i === 0)).join('');
+  })
+  .catch(err => {
+    document.getElementById('status').innerHTML =
+      'Could not load comedy.md (' + err.message + ').<br>' +
+      'If you opened this file directly, browsers block local file loads &mdash; ' +
+      'serve the folder instead, e.g. run <code>python3 -m http.server</code> in it, then open ' +
+      '<code>http://localhost:8000</code>.';
+  });
+
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
