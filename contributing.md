@@ -19,8 +19,6 @@ Every bit is one of:
 | `commercial` | A fake ad / infomercial / campaign-spot script |
 | `debate` | A scripted back-and-forth exchange (cable-news pundits, etc.) |
 
-No memes — this page is text only. Meme concepts go elsewhere (Imgflip).
-
 ---
 
 ## Required structure
