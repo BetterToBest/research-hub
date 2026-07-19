@@ -2,7 +2,7 @@
 
 This page (`comedy.html`) pulls all its content from `comedy.md`. You don't need to touch any HTML or CSS to add a new bit — just email a properly formatted block, and it gets pasted into `comedy.md`.
 
-**Send submissions to:** `[email protected]`
+**Send submissions to:** `[BetterToBestResearch@gmail.com]`
 
 Paste your bit directly in the body of the email using the format below. One bit per email is fine, or send a batch. If you used an AI system to help write it, that's welcome — just make sure the output matches the exact syntax on this page before sending, since the page is a plain-text parser, not a full markdown renderer.
 
