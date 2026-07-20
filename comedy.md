@@ -580,7 +580,7 @@ number: 4
 title: Force Without the Fine Print
 meta: Bit · closer
 p: We built an entire civilization's worth of laws, contracts, courts, and fine print — for everything except the one decision that kills the most people. Return a toaster, there's a 30-day policy and a customer service line. Start a war, there's a press conference and a flag pin.
-punch: Maybe the real innovation isn't a better weapon, but a system where the people who choose the violence are the first ones exposed to it.
+p: Maybe the real innovation isn't a better weapon, but a system where the people who choose the violence are the first ones exposed to it.
 
-Or maybe instead of normalizing economic hit-men calling shots with other people’s savings, we build a system that prioritizes peace and stability–ike how the Better To Best Research Hub presents and simulates. 
+punch: Or maybe instead of normalizing economic hit-men calling shots with other people’s savings, we just build a system that prioritizes peace and stability–ike how the Better To Best Research Hub presents and simulates. 
 
