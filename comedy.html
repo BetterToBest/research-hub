@@ -55,16 +55,20 @@ header.masthead{
 }
 .masthead-row{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 18px;
+  margin-bottom: 10px;
 }
 .mask-icon{
   width: 40px;
   height: 45px;
   flex-shrink: 0;
   filter: drop-shadow(0 1px 2px #00000022);
+  transform-origin: 50% 100%;
 }
+.mask-icon.comedy{ transform: rotate(-9deg); }
+.mask-icon.tragedy{ transform: rotate(9deg); }
 .masthead-titles{ min-width: 0; }
 .eyebrow{
   font-family: 'IBM Plex Mono', monospace;
@@ -79,13 +83,15 @@ h1.title{
   font-weight: 600;
   font-size: clamp(34px, 6vw, 52px);
   letter-spacing: -0.01em;
-  margin: 0 0 10px;
+  margin: 0;
+  line-height: 1;
 }
 .subtitle{
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12.5px;
   color: var(--ink-soft);
   letter-spacing: 0.02em;
+  margin-top: 4px;
 }
 .subtitle span{ color: var(--c-standup); }
 .entry{
@@ -360,6 +366,10 @@ footer.note br + a{
           <stop offset="1" stop-color="#8C6A1E"/>
         </linearGradient>
       </defs>
+      <path d="M13 46Q3 51 6 61" fill="none" stroke="#6E5117" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="6" cy="61" r="2.4" fill="#6E5117"/>
+      <path d="M87 46Q97 51 94 61" fill="none" stroke="#6E5117" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="94" cy="61" r="2.4" fill="#6E5117"/>
       <path d="M22 12Q50 18 78 12C88 18 85 32 85 40C85 55 78 62 76 72C74 84 66 96 50 105C34 96 26 84 24 72C22 62 15 55 15 40C15 32 12 18 22 12Z" fill="url(#goldComedy)" stroke="#6E5117" stroke-width="2"/>
       <path d="M27 32Q36 24 45 31" fill="none" stroke="#2A1D0C" stroke-width="3.4" stroke-linecap="round"/>
       <path d="M55 31Q64 24 73 32" fill="none" stroke="#2A1D0C" stroke-width="3.4" stroke-linecap="round"/>
@@ -367,10 +377,7 @@ footer.note br + a{
       <ellipse cx="64" cy="43" rx="7.5" ry="5" transform="rotate(10 64 43)" fill="#2A1D0C"/>
       <path d="M27 61Q50 98 73 61Q50 76 27 61Z" fill="#2A1D0C"/>
     </svg>
-    <div class="masthead-titles">
-      <h1 class="title">A Political Comedy</h1>
-      <p class="subtitle">Satire on the record <span>·</span> nobody named, everybody implicated</p>
-    </div>
+    <h1 class="title">A Political Comedy</h1>
     <svg class="mask-icon tragedy" viewBox="0 0 100 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs>
         <linearGradient id="goldTragedy" x1="82" y1="5" x2="18" y2="105" gradientUnits="userSpaceOnUse">
@@ -379,6 +386,10 @@ footer.note br + a{
           <stop offset="1" stop-color="#8C6A1E"/>
         </linearGradient>
       </defs>
+      <path d="M13 46Q3 51 6 61" fill="none" stroke="#6E5117" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="6" cy="61" r="2.4" fill="#6E5117"/>
+      <path d="M87 46Q97 51 94 61" fill="none" stroke="#6E5117" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="94" cy="61" r="2.4" fill="#6E5117"/>
       <path d="M22 12Q50 18 78 12C88 18 85 32 85 40C85 55 78 62 76 72C74 84 66 96 50 105C34 96 26 84 24 72C22 62 15 55 15 40C15 32 12 18 22 12Z" fill="url(#goldTragedy)" stroke="#6E5117" stroke-width="2"/>
       <path d="M27 37Q36 30 45 25" fill="none" stroke="#2A1D0C" stroke-width="3.4" stroke-linecap="round"/>
       <path d="M55 25Q64 30 73 37" fill="none" stroke="#2A1D0C" stroke-width="3.4" stroke-linecap="round"/>
@@ -387,6 +398,7 @@ footer.note br + a{
       <path d="M27 85Q50 48 73 85Q50 68 27 85Z" fill="#2A1D0C"/>
     </svg>
   </div>
+  <p class="subtitle">Satire on the record <span>·</span> nobody named, everybody implicated</p>
 </header>
 
 <main id="entries">
