@@ -582,5 +582,171 @@ meta: Bit · closer
 p: We built an entire civilization's worth of laws, contracts, courts, and fine print — for everything except the one decision that kills the most people. Return a toaster, there's a 30-day policy and a customer service line. Start a war, there's a press conference and a flag pin.
 p: Maybe the real innovation isn't a better weapon, but a system where the people who choose the violence are the first ones exposed to it.
 
-punch: Or maybe instead of normalizing economic hit-men calling shots with other people’s savings, we just build a system that prioritizes peace and stability–like how the Better To Best Research Hub presents and simulates. 
+punch: Or maybe instead of normalizing economic hit-men calling shots with other people's savings, we just build a system that prioritizes peace and stability–like how the Better To Best Research Hub presents and simulates. 
 
+## volume
+label: VIII
+
+## issue
+label: Show Your Work
+
+## standup
+number: 1
+title: The Fourteen-Day Economy
+meta: Bit · on measuring poverty honestly
+p: Every year some official stands at a podium and says "the economy is strong." Strong for who, for how long? There's a metric that just asks one blunt question: how many days can you go before this collapses? For a lot of people the honest answer is "eleven," and nobody's ever put that on a poster.
+p: They're calling it the Basic Living Economic Index — days of stability, not vibes. Crisis, Precarious, Threshold, Stable, Secure, Flourishing. Most of us have never seen the top of that list, we've just seen the bottom of it with better lighting.
+punch: "The economy is strong" is doing a lot of work for a sentence with zero units attached.
+
+## news
+number: 2
+title: New Welfare Index Measures Days Of Stability Instead Of Vibes, Analysts Unsure How To Turn That Into A Chart That Goes Up
+kicker: Economy
+meta: Headline · wire desk parody
+p: The index, which tracks how long a household's accessible resources would actually last, reportedly triggered a brief existential crisis at three major news networks, none of which had a graphic template for "occasionally goes down and that's the point."
+
+## commercial
+number: 3
+title: BLEI: The Index That Refuses To Be Exciting
+meta: :30 spot · policy-explainer parody
+dir: Flat, deliberately unglamorous narrator. No music.
+line: NARR | Tired of economic numbers that sound great and mean nothing? Introducing the Basic Living Economic Index. It won't trend. It won't excite your uncle at Thanksgiving.
+line: NARR | It just tells you, in days, how long you're actually okay for. Sometimes that number is seven hundred and thirty. Sometimes it's six. Either way, now you'll know.
+dir: [super] BLEI. Deliberately boring since the day we realized boring was the only honest option.
+
+## debate
+number: 4
+title: On The Gini Coefficient, Adjusted
+meta: Exchange · cable-news parody
+line: PUNDIT A | Inequality's actually improving, look at the Gini number!
+line: PUNDIT B | Gary, that's the nominal Gini. Adjust it for who's actually building equity versus who's just paying rent forever, and it gets a lot less flattering.
+line: PUNDIT A | Well, which number should people believe?
+line: PUNDIT B | Both, honestly. That's the uncomfortable part.
+
+## issue
+label: Acre By Acre
+
+## standup
+number: 1
+title: The Word "Equity"
+meta: Bit · on renting versus owning
+p: I rented the same one-bedroom for nine years. Paid it off completely — several times over, structurally speaking. At the end I owned exactly none of it, plus a security deposit dispute over a ceiling fan I never touched.
+p: Turns out there's a model where residents build something called Acre Equity just for staying and participating, the way a homeowner builds equity, except the roof belongs to everybody, not one landlord I've still never met.
+punch: I don't need to own the whole building. I'd just like nine years of my life to have bought me something besides a strongly worded email chain.
+
+## news
+number: 2
+title: Renter Discovers The Word "Equity" Exists After Nine Years Of Paying Someone Else's Mortgage, Local Economists Unsurprised
+kicker: Housing
+meta: Headline · wire desk parody
+p: The renter, reached for comment, said he'd "always assumed equity was a fancy word for exercise." Housing researchers noted the confusion is common in a market where roughly none of the paperwork mentions the word until it's someone else's signature on it.
+
+## commercial
+number: 3
+title: Acre Equity: Not A Timeshare, We Checked
+meta: :30 spot · real-estate parody
+dir: Warm, slightly over-earnest narrator, community garden b-roll.
+line: NARR | You've heard the pitches before. This one's different, mostly because nobody's trying to sell you a week in Cabo.
+line: NARR | Public Trust Housing means the property's held in trust, residents vote on what happens to it, and every month of participation quietly builds you an actual equity account. Slowly. Boringly. Reliably.
+dir: [super] Acre Equity. It's basically a savings account that also has a roof.
+
+## issue
+label: Two Currencies Walk Into A Grocery Store
+
+## standup
+number: 1
+title: The Golden Ratio Croissant
+meta: Bit · on the Phi-rate bonus
+p: There's a bonus multiplier in this currency system for work of "exceptional quality or beauty." It's based on the golden ratio. I don't know what a golden-ratio-approved croissant looks like, but I assume it involves a committee, a protractor, and one very confident baker.
+punch: We finally found a use for geometry class, and it's arguing about pastry.
+
+## news
+number: 2
+title: Local Bakery Awarded Golden-Ratio Bonus Rate For Croissant, Baker Says He "Just Rolled It Kind Of A Lot"
+kicker: Economy
+meta: Headline · wire desk parody
+p: A review panel confirmed the croissant met the qualitative multiplier's design intent, though it noted the baker's own explanation of his technique — "instinct, mostly, and a little bit of anger" — has not yet been formally incorporated into the evaluation criteria.
+
+## debate
+number: 3
+title: On Calling It "Octaves"
+meta: Exchange · cable-news parody
+line: PUNDIT A | Naming the currency tiers after musical octaves is pretentious!
+line: PUNDIT B | Gary, it's a doubling formula. They could've called it "Tier 1, Tier 2." They chose whimsy. I respect the whimsy.
+line: PUNDIT A | It just seems like a lot for a spreadsheet.
+line: PUNDIT B | Everything's a lot for a spreadsheet if the spreadsheet is honest about what it's tracking.
+
+## volume
+label: IX
+
+## issue
+label: Democracy dot Exe
+
+## standup
+number: 1
+title: The Platform That Doesn't Want Anything From You
+meta: Bit · on privacy-first civic tech
+p: Every app I own wants my location, my contacts, and apparently my read receipts. Then there's a civic platform proposal that just... doesn't. No ads, no data resale, no engagement algorithm quietly radicalizing your uncle.
+p: It's suspicious how suspicious that makes me. We've been conditioned so hard to expect the catch that "we don't want anything but your vote" reads like a scam.
+punch: Somewhere, a product manager is furious that "not spying on you" is the whole pitch.
+
+## news
+number: 2
+title: New Civic Platform Confirmed To Not Sell User Data, Local Man Waiting For The Catch
+kicker: Civic Tech
+meta: Headline · wire desk parody
+p: Sources close to the platform confirm there is, in fact, no catch — a claim the local man described as "exactly what a catch would say."
+
+## commercial
+number: 3
+title: CIP — We Promise Nothing Except What We Said
+meta: :30 spot · civic-tech parody
+dir: Clean, modern, slightly self-aware narrator.
+line: NARR | Other platforms give you free stuff by selling everything about you. We built ours the boring way — no single point of failure, no data harvesting, no engagement traps.
+line: NARR | It handles your city's budget votes, your housing co-op's decisions, and your zone's next town hall. That's it. That's the whole feature list.
+dir: [super] Citizens Internet Portal. Aggressively unexciting, deliberately unsellable — to advertisers, anyway.
+
+## debate
+number: 4
+title: On Whether Boring Tech Can Get Funded
+meta: Exchange · cable-news parody
+line: PUNDIT A | Nobody funds a platform with no ad model!
+line: PUNDIT B | Gary, credit unions have existed for a century without selling your data. It's not impossible, it's just unfashionable.
+line: PUNDIT A | Unfashionable doesn't pay engineers.
+line: PUNDIT B | Neither does the current model, apparently, given how much of it runs on venture debt and vibes.
+
+## issue
+label: The Referendum
+
+## standup
+number: 1
+title: Change Dot Org Slash Everything
+meta: Bit · on petitions nobody reads
+p: I've signed sixty petitions in my life. I could not tell you what a single one of them actually proposed. I saw a sad photo, felt a feeling, typed my name, closed the tab, felt spiritually accomplished for eleven seconds.
+p: Then there's a referendum that's actually just the terms and conditions for how the rest of this gets adopted — pilot, then regional, then national, with an actual sunset clause if it doesn't work. It's the first petition I've read that comes with an exit plan in case it's wrong.
+punch: A political proposal that admits it might fail is either very honest or very new. Possibly both.
+
+## news
+number: 2
+title: Governance Referendum Includes Its Own Undo Button, Nation Unsure How To Feel About A Plan That Admits It Might Not Work
+kicker: Governance
+meta: Headline · wire desk parody
+p: Analysts note the inclusion of democratic override and sunset clauses is either refreshingly humble or a marketing disaster, depending entirely on how used the reader is to politicians promising certainty they don't have.
+
+## commercial
+number: 3
+title: The Five-Piece Set — As Seen In This Entire Publication
+meta: :30 spot · as-seen-on-TV parody
+dir: Overcaffeinated infomercial energy, quick cuts between b-roll of a currency card, a housing co-op, a grocery counter, a zoning map, and a phone screen.
+line: ANNCR | You've spent this whole dossier watching things fall apart. The bird. The zones. The task forces. The nice men in good suits who "already got paid." So here's the other half of the pitch.
+line: ANNCR | Currency that doesn't sit in someone's offshore account. Housing that builds YOUR equity, not a landlord's. Zones people actually chose. A grocery store that isn't quietly owned by three guys in a different state. And a voting app that doesn't sell your grandmother's location data to a mattress company.
+line: ANNCR | Five pieces. One system. Zero yachts financed by your rent.
+dir: [super] Available now, for free, under a license that legally cannot be taken back from you.
+
+## standup
+number: 4
+title: The Callback
+meta: Bit · closer
+p: Somewhere back in this dossier there's a bird that needed both wings, a pothole with a plaque, a filibuster store that never restocks, and a spokesman in a quarter-zip who already got paid before you finished reading his apology.
+p: None of that was fiction, exactly. It's just the news, with the names sanded off and the punchlines left in, because apparently that's the only format left where people will actually read to the end of a policy proposal.
+punch: If the jokes made you angry, good — that means you were paying attention. The research is at bettertobest.github.io/research-hub, they call the whole philosophy Compassionism, and unlike everything else in this dossier, nobody's trying to sell you a timeshare in Cabo.
