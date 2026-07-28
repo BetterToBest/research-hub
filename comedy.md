@@ -432,6 +432,80 @@ punch: It's turtles all the way down, except every turtle bills $400 an hour and
 label: VI
 
 ## issue
+label: The Meeting That Could Have Been An Email, For Twelve Years
+
+## standup
+number: 1
+title: The Reply-All Wars
+meta: Bit · on academic office politics
+p: Every university department runs on two currencies: publications, and who CC'd whom on the email where someone got quietly blamed for the printer. I've seen tenure decisions turn on citation counts. I've also seen them turn on who brought store-bought cookies to the retirement party instead of homemade.
+p: Nobody puts "excellent at hallway alliances" on a CV, but it's the only skill that actually predicts who gets the corner office.
+punch: We built an entire caste system out of who remembers to say "great question" in a seminar.
+
+## news
+number: 2
+title: Department Forms Committee To Determine Whether The Committee That Reviews Committees Needs A Committee
+kicker: Higher Ed
+meta: Headline · wire desk parody
+p: Faculty describe the proposal as "long overdue," noting the current review committee hasn't met in eleven months due to a scheduling conflict with the committee that schedules it.
+
+## commercial
+number: 3
+title: Collegiality™ — Say Nothing, Advance Anyway
+meta: :30 spot · corporate-training parody
+dir: Bright, HR-training-video energy, stock office footage.
+line: ANNCR | Struggling to get promoted despite doing all the actual work? Try Collegiality™ — the professional development seminar that teaches you to nod supportively in meetings you disagree with!
+line: ANNCR | Learn to say "I hear you, and" instead of "no." Master the art of taking credit gently, so it doesn't feel like theft!
+dir: [super] Collegiality™. Because your best idea means nothing if the wrong person says it first.
+
+## debate
+number: 4
+title: On "Fit"
+meta: Exchange · cable-news parody
+line: PUNDIT A | Hiring committees just want someone who's a good "fit" for the department!
+line: PUNDIT B | Gary, "fit" is the only interview criterion that's never once been written down, and somehow it's the one nobody can be appealed on.
+line: PUNDIT A | It protects culture!
+line: PUNDIT B | It protects whoever already has tenure and doesn't want to be interesting at faculty dinner.
+
+## issue
+label: The Six-Figure Ribbon
+
+## standup
+number: 1
+title: The Cause Has A Chief Vision Officer Now
+meta: Bit · on nonprofit executive pay
+p: A charity near me has a Chief Vision Officer. Not a director, not a coordinator — a Chief Vision Officer, salary comfortably in the low seven figures, whose stated vision, as far as I can piece together, is "continuing to have this job."
+p: Meanwhile the actual shelter it funds is still asking for sock donations on a laminated sign taped to the door.
+punch: Somewhere between "the cause" and "the org chart," we lost the plot and kept the letterhead.
+
+## news
+number: 2
+title: Foundation Spends Forty Percent Of Annual Budget Studying Why It Only Spends Twelve Percent On The Cause
+kicker: Nonprofits
+meta: Headline · wire desk parody
+p: The internal report, itself commissioned from an outside consultancy for an undisclosed but "very reasonable" fee, concludes further study is needed before any changes to the study process can be responsibly considered.
+
+## commercial
+number: 3
+title: Legacy & Impact Advisory Group
+meta: :30 spot · corporate-consulting parody
+dir: Warm, aspirational narrator, soft-focus office plants.
+line: ANNCR | At Legacy & Impact Advisory Group, we help mission-driven organizations maximize their impact — starting with our fee, which comes right off the top, before the mission gets a turn.
+line: ANNCR | Ask about our Impact Amplification Retainer! It amplifies. Something. We're still measuring which part.
+dir: [super] Legacy & Impact Advisory Group. Technically a nonprofit ourselves. Don't look too closely at the org chart.
+
+## standup
+number: 4
+title: The Actually Free Ones
+meta: Bit · on solutions with no budget for a gala
+p: Every extraction-funded org I just made fun of has a gala. A gala with a step-and-repeat banner and a silent auction basket full of spa gift cards nobody asked for.
+p: Meanwhile there's research proposing an actual fix to some of this — free to read, no paywall, no executive suite — and its entire marketing budget is one guy with a Bluesky account and a comedy dossier he wrote himself because nobody else would cover it.
+punch: One of these operations has a Chief Vision Officer. The other one just has a vision. Guess which one gets the segment on the evening news.
+
+## volume
+label: VII
+
+## issue
 label: The Buyout
 
 ## standup
@@ -511,7 +585,7 @@ line: PUNDIT A | The risk of... reputational... hmm.
 line: PUNDIT B | Take your time.
 
 ## volume
-label: VII
+label: VIII
 
 ## issue
 label: The Monopoly on Force
@@ -585,7 +659,7 @@ p: Maybe the real innovation isn't a better weapon, but a system where the peopl
 punch: Or maybe instead of normalizing economic hit-men calling shots with other people's savings, we just build a system that prioritizes peace and stability–like how the Better To Best Research Hub presents and simulates. 
 
 ## volume
-label: VIII
+label: IX
 
 ## issue
 label: Show Your Work
@@ -677,7 +751,72 @@ line: PUNDIT A | It just seems like a lot for a spreadsheet.
 line: PUNDIT B | Everything's a lot for a spreadsheet if the spreadsheet is honest about what it's tracking.
 
 ## volume
-label: IX
+label: X
+
+## issue
+label: Nothing To Click Out Of
+
+## standup
+number: 1
+title: The Miracle Of Nothing Happening
+meta: Bit · on reading this without being interrupted
+p: I opened this page and nothing asked me to accept cookies. Nothing slid up from the bottom offering me ten percent off a newsletter I'll never read. No video autoplayed with a stranger explaining REITs. I just... read the thing. It was disorienting, like walking into a room and realizing no one's going to pitch you a timeshare.
+punch: We've been trained so hard to expect friction that its absence now reads as a design flaw.
+
+## news
+number: 2
+title: Local Reader Finishes Entire Article Without Closing A Single Pop-Up, Reports Feeling "Vaguely Suspicious"
+kicker: Media
+meta: Headline · wire desk parody
+p: The reader, later reached for comment, said the experience of scrolling without dodging a "before you go" modal was "nice, honestly, in a way I didn't know I was allowed to want."
+
+## commercial
+number: 3
+title: Ad Space Available: None
+meta: :30 spot · self-aware parody
+dir: Deadpan narrator over a plain, static page.
+line: ANNCR | This research hub does not run ads. It does not sell your data. It does not have a newsletter that texts you at 8 AM about a flash sale on productivity journals.
+line: ANNCR | There is no premium tier. There is no "continue reading" paywall that appears exactly one sentence before the interesting part.
+dir: [super] We know. It's weird. We're weird. The papers are still free.
+
+## debate
+number: 4
+title: On Whether A Website Can Just... Not
+meta: Exchange · cable-news parody
+line: PUNDIT A | Every site needs a monetization strategy, Gary, that's just modern publishing!
+line: PUNDIT B | Does it, though? Or did we just collectively agree that "annoying you slightly, forever" was a business model and stop questioning it?
+line: PUNDIT A | Someone has to pay for the servers!
+line: PUNDIT B | Sure. Turns out that someone can just be one guy who thinks pop-ups are rude.
+
+## issue
+label: Zero and Zero
+
+## standup
+number: 1
+title: The Segment That Never Airs
+meta: Bit · on where attention actually goes
+p: A defense contractor buys a Super Bowl ad. A hedge fund gets a glowing profile about its "contrarian vision." A charity with a Chief Vision Officer gets a gala covered by three local news vans. Meanwhile a guy proposing an actual structural fix for some of this gets zero of that — zero ad budget, zero press release, zero mainstream anything.
+p: It's not that the solution's bad. It's that attention, like everything else in this dossier, follows the money, and the money's still busy funding the problem.
+punch: Turns out the hardest part of fixing the system was never the math. It was getting anyone with a microphone to care before the ad break.
+
+## news
+number: 2
+title: Research Hub Proposing Fixes To Extraction Economy Receives Zero Dollars In Funding From The Extraction Economy, Analysts Baffled
+kicker: Media
+meta: Headline · wire desk parody
+p: Industry observers noted the lack of coverage is "not entirely surprising," given that most outlets capable of amplifying the story are, in one way or another, downstream of the exact incentive structures the research proposes replacing.
+
+## commercial
+number: 3
+title: As Seen On Nowhere
+meta: :30 spot · anti-infomercial parody
+dir: Intentionally low-budget, single static shot, no music, slightly too close to the camera.
+line: NARR | This has not been reviewed by a major outlet. It has not been fact-checked by a cable panel. No one with a syndicated podcast has weighed in.
+line: NARR | It's just some open research, free to read, sitting quietly on the internet, hoping someone forwards it before the next news cycle eats the news cycle.
+dir: [super] Zero funding. Zero pop-ups. Zero idea if this reaches anyone. Here it is anyway.
+
+## volume
+label: XI
 
 ## issue
 label: Democracy dot Exe
