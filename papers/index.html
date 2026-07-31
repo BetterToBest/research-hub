@@ -414,13 +414,46 @@
       BLEI indices: BLEI (temporal stability days), EDC (extractive drain coefficient), EPPM (purchasing power multiplier), FBS (financial bandwidth score), CSI (compound stability index), IPBI (indirect participant benefit)
     </div>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="../assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png">
+
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <header>
+        <div class="btb-mark-wrap">
+            <button type="button" class="btb-mark-button" id="btbMarkToggle" aria-expanded="false" aria-controls="btbGeometryNote" aria-label="Show the geometric construction of the Better To Best mark">
+                <img src="../assets/bettertobest-mark-warm-earthen.svg" alt="" width="56" height="56">
+            </button>
+        </div>
+        <div class="btb-geometry-note" id="btbGeometryNote" role="region" aria-label="Mark geometric construction">
+            <h2>Symmetrical Geometric Construction</h2>
+            <p>This logo's inner circle features two golden-section arcs (green and purple). The inner and outer sections are also in Phi proportion to each other.</p>
+            <table>
+                <tr><td>Golden angle</td><td>~137.508&deg;</td></tr>
+                <tr><td>Golden ratio (&Phi;)</td><td>~1.618</td></tr>
+                <tr><td>Outer radius</td><td>90</td></tr>
+                <tr><td>Inner radius (outer &divide; &Phi;)</td><td>~55.62</td></tr>
+            </table>
+        </div>
         <h1>Research Papers</h1>
         <p>Open-access collection focusing on Creative Currency Octaves (CCO), Public Trust Housing (PTH), Citizens Internet Portal (CIP), Social Zone Harmonization (SZH), and the Basic Living Economic Index (BLEI) welfare measurement framework. All under CC BY 4.0 license.</p>
         <p><a href="../">Back to Hub</a> | <a href="https://independentresearcher.academia.edu/DukeJohnson" target="_blank" rel="noopener noreferrer">Related Research Papers</a></p>
+        <script>
+            (function(){
+                var btn = document.getElementById('btbMarkToggle');
+                var note = document.getElementById('btbGeometryNote');
+                btn.addEventListener('click', function(){
+                    var isOpen = note.getAttribute('data-open') === 'true';
+                    note.setAttribute('data-open', isOpen ? 'false' : 'true');
+                    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+                });
+            })();
+        </script>
     </header>
 
     <section>
