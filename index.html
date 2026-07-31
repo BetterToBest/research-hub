@@ -61,6 +61,13 @@
     <link rel="preconnect" href="//www.googletagmanager.com">
     <meta http-equiv="x-dns-prefetch-control" content="on">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
     
@@ -666,8 +673,34 @@
     <a href="#main-content" style="position:absolute;left:-9999px;z-index:999;padding:1em;background:#000;color:#fff;text-decoration:none;border-radius:4px;" onfocus="this.style.left='10px';this.style.top='10px';" onblur="this.style.left='-9999px';this.style.top='auto';">Skip to main content</a>
     
    <header role="banner">
+    <div class="btb-mark-wrap">
+        <button type="button" class="btb-mark-button" id="btbMarkToggle" aria-expanded="false" aria-controls="btbGeometryNote" aria-label="Show the geometric construction of the Better To Best mark">
+            <img src="assets/bettertobest-mark-cool-academic.svg" alt="" width="56" height="56">
+        </button>
+    </div>
     <h1>Better To Best Research Hub</h1>
     <p>Open-access research specializing in economic, social, and civic innovations designed for enhancing human cultures—featuring dual-currency systems, community ownership models, and democratic governance frameworks.</p>
+    <div class="btb-geometry-note" id="btbGeometryNote" role="region" aria-label="Mark geometric construction">
+        <h2>Symmetrical Geometric Construction</h2>
+        <p>This logo's inner circle features two golden-section arcs (green and purple). The inner and outer sections are also in Phi proportion to each other.</p>
+        <table>
+            <tr><td>Golden angle</td><td>~137.508&deg;</td></tr>
+            <tr><td>Golden ratio (&Phi;)</td><td>~1.618</td></tr>
+            <tr><td>Outer radius</td><td>90</td></tr>
+            <tr><td>Inner radius (outer &divide; &Phi;)</td><td>~55.62</td></tr>
+        </table>
+    </div>
+    <script>
+        (function(){
+            var btn = document.getElementById('btbMarkToggle');
+            var note = document.getElementById('btbGeometryNote');
+            btn.addEventListener('click', function(){
+                var isOpen = note.getAttribute('data-open') === 'true';
+                note.setAttribute('data-open', isOpen ? 'false' : 'true');
+                btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+            });
+        })();
+    </script>
 </header>
 
 <main id="main-content" role="main">
