@@ -240,13 +240,13 @@ footer a{color:rgba(255,255,255,.85)}
 <div class="kpi-section">
   <div class="inner">
     <div class="kpi-row">
-      <div class="kpi"><div class="kpi-val">92%</div><div class="kpi-lbl">BLEI Threshold Rate<br>(≥ 30 days, N=5,000, v4.0/v4.1)</div></div>
-      <div class="kpi"><div class="kpi-val">40%</div><div class="kpi-lbl">Secure Rate<br>(≥ 365 days, N=5,000, v4.0/v4.1)</div></div>
-      <div class="kpi"><div class="kpi-val">0.48</div><div class="kpi-lbl">EDC-Adjusted Gini<br>(full deployment, N=5,000, v4.0/v4.1)</div></div>
-      <div class="kpi"><div class="kpi-val">$82.0K→$81.6K</div><div class="kpi-lbl">Target vs. Measured Median Wealth<br>(20yr, N=5,000, v4.0/v4.1)</div></div>
-      <div class="kpi"><div class="kpi-val">97%</div><div class="kpi-lbl">System Stability<br>(heuristic; N=5,000, v4.0/v4.1)</div></div>
-      <div class="kpi"><div class="kpi-val">~14 yr</div><div class="kpi-lbl">Near-Poverty Cohort → Stable Tier<br>(N=5,000, v4.0/v4.1; see note)</div></div>
-      <div class="kpi"><div class="kpi-val">Not by yr 40</div><div class="kpi-lbl">Cohort → Flourishing, Extended Horizon<br>(N=1,000, new in v4.1; see note)</div></div>
+      <div class="kpi"><div class="kpi-val">92%</div><div class="kpi-lbl">BLEI Threshold Rate<br>(≥ 30 days, N=5,000, v4.2)</div></div>
+      <div class="kpi"><div class="kpi-val">40%</div><div class="kpi-lbl">Secure Rate<br>(≥ 365 days, N=5,000, v4.2)</div></div>
+      <div class="kpi"><div class="kpi-val">0.48</div><div class="kpi-lbl">EDC-Adjusted Gini<br>(full deployment, N=5,000, v4.2)</div></div>
+      <div class="kpi"><div class="kpi-val">$82.0K→$81.6K</div><div class="kpi-lbl">Target vs. Measured Median Wealth<br>(20yr, N=5,000, v4.2)</div></div>
+      <div class="kpi"><div class="kpi-val">95%</div><div class="kpi-lbl">System Stability<br>(structural metric; N=5,000, v4.2)</div></div>
+      <div class="kpi"><div class="kpi-val">~13.2 yr</div><div class="kpi-lbl">Near-Poverty Cohort → Stable Tier<br>(N=5,000, v4.2; see note)</div></div>
+      <div class="kpi"><div class="kpi-val">Not by yr 40</div><div class="kpi-lbl">Cohort → Flourishing, Extended Horizon<br>(N=1,000, v4.1 mechanics; see note)</div></div>
     </div>
   </div>
 </div>
@@ -254,7 +254,7 @@ footer a{color:rgba(255,255,255,.85)}
 <!-- v4.2 Update Banner -->
 <div style="background:#eef2ff;border-bottom:1px solid #c7d2fe;padding:10px 0">
   <div class="inner" style="max-width:1100px;margin:0 auto;padding:0 20px;font-size:12.5px;color:#312e81;line-height:1.5">
-    <strong>v4.2 update (Aug 2026):</strong> common-random-numbers population pairing and a structural System Stability metric (see Methodology Overview below) — unlike v4.1, this release <em>does</em> change population-generation and stability-metric mechanics, so the KPI figures above are not automatically reconfirmed. A 300-seed spot-check landed close to the existing N=5,000 figures (EDC-adjusted Gini 0.485 vs. 0.484 documented; median wealth $81.8K) but is not a substitute for a full reconfirmation, which is pending. The <strong>System Stability</strong> tile specifically reflects the old heuristic, not the new structural metric — expect that one to read differently once reconfirmed, by construction rather than by drift.
+    <strong>v4.2 update (Aug 2026):</strong> common-random-numbers population pairing and a structural System Stability metric (see Methodology Overview below). The full N=5,000 reconfirmation is now complete — the KPI figures above are current, not a spot-check. Poverty, wealth, and Gini figures across all three scenarios land within a few hundredths of a percentage point of the v4.0/v4.1 numbers they replace, confirming the population-pairing fix changes which specific agents get compared, not the model's aggregate behavior. Two figures changed as expected, by construction: <strong>System Stability</strong> now reflects the new structural metric (not comparable to the old heuristic's number), and the near-poverty cohort's median time to the Stable tier shifted modestly to ~13.2 years (was ~13.7). Full methodology and figures in Methodology Overview and Performance Comparison, below.
   </div>
 </div>
 
