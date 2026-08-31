@@ -223,7 +223,7 @@ footer a{color:rgba(255,255,255,.85)}
 <!-- Interactive Simulation Link Banner -->
 <div class="sim-banner">
   <div class="inner">
-    🖥️ <strong>Interactive Simulation (v4.2):</strong>
+    🖥️ <strong>Interactive Simulation (v4.4):</strong>
     <a href="https://bettertobest.github.io/compassionism-simulation/">BetterToBest.github.io/compassionism-simulation/</a>
     &nbsp;·&nbsp; All 5 architectures &nbsp;·&nbsp; BLEI-calibrated &nbsp;·&nbsp; Annual expense system &nbsp;·&nbsp; AI automation &nbsp;·&nbsp; 50× Monte Carlo 95% CI &nbsp;·&nbsp; Participant stratification &nbsp;·&nbsp; Computed OAT sensitivity &nbsp;·&nbsp; 6-check validation suite &nbsp;·&nbsp; JSON export &nbsp;·&nbsp; ODD protocol &nbsp;·&nbsp; MC cancel control &nbsp;·&nbsp; DOI: <a href="https://doi.org/10.17605/OSF.IO/QWTE2" target="_blank" rel="noopener" style="color:#7edd7e">10.17605/OSF.IO/QWTE2</a> &nbsp;·&nbsp; Runs in any browser
   </div>
@@ -240,21 +240,35 @@ footer a{color:rgba(255,255,255,.85)}
 <div class="kpi-section">
   <div class="inner">
     <div class="kpi-row">
-      <div class="kpi"><div class="kpi-val">92%</div><div class="kpi-lbl">BLEI Threshold Rate<br>(≥ 30 days, N=5,000, v4.2)</div></div>
-      <div class="kpi"><div class="kpi-val">40%</div><div class="kpi-lbl">Secure Rate<br>(≥ 365 days, N=5,000, v4.2)</div></div>
-      <div class="kpi"><div class="kpi-val">0.48</div><div class="kpi-lbl">EDC-Adjusted Gini<br>(full deployment, N=5,000, v4.2)</div></div>
-      <div class="kpi"><div class="kpi-val">$82.0K→$81.6K</div><div class="kpi-lbl">Target vs. Measured Median Wealth<br>(20yr, N=5,000, v4.2)</div></div>
-      <div class="kpi"><div class="kpi-val">95%</div><div class="kpi-lbl">System Stability<br>(structural metric; N=5,000, v4.2)</div></div>
-      <div class="kpi"><div class="kpi-val">~13.2 yr</div><div class="kpi-lbl">Near-Poverty Cohort → Stable Tier<br>(N=5,000, v4.2; see note)</div></div>
-      <div class="kpi"><div class="kpi-val">Not by yr 40</div><div class="kpi-lbl">Cohort → Flourishing, Extended Horizon<br>(N=1,000, v4.1 mechanics; see note)</div></div>
+      <div class="kpi"><div class="kpi-val">87.5%</div><div class="kpi-lbl">BLEI Threshold Rate<br>(≥ 30 days, N=5,000, v4.4)</div></div>
+      <div class="kpi"><div class="kpi-val">78.6%</div><div class="kpi-lbl">Secure Rate<br>(≥ 365 days, N=5,000, v4.4)</div></div>
+      <div class="kpi"><div class="kpi-val">0.52</div><div class="kpi-lbl">EDC-Adjusted Gini<br>(full deployment, N=5,000, v4.4)</div></div>
+      <div class="kpi"><div class="kpi-val">$82.0K→$526.1K</div><div class="kpi-lbl">Legacy Target vs. Measured Median Wealth<br>(20yr, N=5,000, v4.4; see note — target predates v4.3's unit fix)</div></div>
+      <div class="kpi"><div class="kpi-val">88.6%</div><div class="kpi-lbl">System Stability<br>(structural metric; N=5,000, v4.4; see note)</div></div>
+      <div class="kpi"><div class="kpi-val">~3.0 yr</div><div class="kpi-lbl">Near-Poverty Cohort → Stable Tier<br>(N=5,000, v4.4; was ~13.2 yr pre-v4.3; see note)</div></div>
+      <div class="kpi"><div class="kpi-val">~13.0 yr</div><div class="kpi-lbl">Cohort → Flourishing, Within 20yr Horizon<br>(N=5,000, v4.4; was NOT reached even by yr 40 pre-v4.3; see note)</div></div>
     </div>
+  </div>
+</div>
+
+<!-- v4.4 Update Banner -->
+<div style="background:#fffbeb;border-bottom:1px solid #fde68a;padding:10px 0">
+  <div class="inner" style="max-width:1100px;margin:0 auto;padding:0 20px;font-size:12.5px;color:#78350f;line-height:1.5">
+    <strong>v4.4 update (Aug 2026):</strong> unified the wage/income scale across BLEI, FBS, and Gini onto the same real-dollar anchor the main wealth loop already used since v4.3 (previously ~6× apart at the median wage — the legacy conversion is retired), a compensating recalibration of the FBS advancement-probability coefficient, true common-random-numbers pairing across the Baseline/CCO-Only/Main comparison (previously population-only, not trajectory-level), removed an unexplained baseline initial-wealth haircut, paired automation exposure across scenarios, and fixed a random-number-generator bug that silently returned a constant instead of a proper random draw on every call. Full N=5,000 re-study complete — the KPI figures above are current. This page's own sync skipped directly from v4.2 to v4.4: v4.3's sync was deliberately deferred pending an independent adversarial audit (two audit passes, most findings on the second held up on independent verification) before touching a published research artifact. Full notes in Version History below.
+  </div>
+</div>
+
+<!-- v4.3 Update Banner -->
+<div style="background:#FCEBEB;border-bottom:1px solid #f0c4c4;padding:10px 0">
+  <div class="inner" style="max-width:1100px;margin:0 auto;padding:0 20px;font-size:12.5px;color:#5c1a1a;line-height:1.5">
+    <strong>v4.3 update (Aug 2026, synced to this page as part of the v4.4 update above — no intermediate snapshot of this page was ever published at v4.3):</strong> the main wealth-accumulation loop's unit fix (wage and cost sides both converted to real USD via sourced anchors — see Version History), the runYear() RNG-coupling fix, a bimodal automationRisk distribution, per-agent PTH tenure tracking, and a new Social-Security-anchored income cohort study — the sharpest test of the framework's poverty-elimination claim run to date. This is not a clean win: it redistributes as well as it grows. Full notes in Version History below.
   </div>
 </div>
 
 <!-- v4.2 Update Banner -->
 <div style="background:#eef2ff;border-bottom:1px solid #c7d2fe;padding:10px 0">
   <div class="inner" style="max-width:1100px;margin:0 auto;padding:0 20px;font-size:12.5px;color:#312e81;line-height:1.5">
-    <strong>v4.2 update (Aug 2026):</strong> common-random-numbers population pairing and a structural System Stability metric (see Methodology Overview below). The full N=5,000 reconfirmation is now complete — the KPI figures above are current, not a spot-check. Poverty, wealth, and Gini figures across all three scenarios land within a few hundredths of a percentage point of the v4.0/v4.1 numbers they replace, confirming the population-pairing fix changes which specific agents get compared, not the model's aggregate behavior. Two figures changed as expected, by construction: <strong>System Stability</strong> now reflects the new structural metric (not comparable to the old heuristic's number), and the near-poverty cohort's median time to the Stable tier shifted modestly to ~13.2 years (was ~13.7). Full methodology and figures in Methodology Overview and Performance Comparison, below.
+    <strong>v4.2 update (Aug 2026):</strong> common-random-numbers population pairing and a structural System Stability metric (see Methodology Overview below). The full N=5,000 reconfirmation is now complete. Poverty, wealth, and Gini figures across all three scenarios landed within a few hundredths of a percentage point of the v4.0/v4.1 numbers they replaced at the time, confirming the population-pairing fix changes which specific agents get compared, not the model's aggregate behavior — since superseded by v4.3/v4.4's mechanics changes, see the banners above. Full methodology and figures in Methodology Overview and Performance Comparison, below.
   </div>
 </div>
 
@@ -285,7 +299,7 @@ footer a{color:rgba(255,255,255,.85)}
     </div>
     <div class="card" style="padding:18px 20px">
       <h4 class="label" style="margin-top:0">Step 3 — FBS-Gated Advancement</h4>
-      <p style="font-size:13px;margin:0">Octave advancement probability is gated by Financial Bandwidth Score. P(advance) = 1 − exp(−λ × FBS). Agents at FBS = 0 cannot advance regardless of quality score. This reflects Mullainathan &amp; Shafir's (2013) cognitive bandwidth research. γ transitions from 0.12 (entry) to 0.20 (CCO-established) as the guaranteed BU floor matures. <strong>v3.1:</strong> PTF members join dynamically over time via economic distress and social diffusion, not only at initialisation.</p>
+      <p style="font-size:13px;margin:0">Octave advancement probability is gated by Financial Bandwidth Score. P(advance) = 1 − exp(−λ × FBS). Agents at FBS = 0 cannot advance regardless of quality score. This reflects Mullainathan &amp; Shafir's (2013) cognitive bandwidth research. γ transitions from 0.12 (entry) to 0.20 (CCO-established) as the guaranteed BU floor matures. <strong>v3.1:</strong> PTF members join dynamically over time via economic distress and social diffusion, not only at initialisation. <span style="font-size:11px;color:var(--muted,#666)">(v4.4: FBS's wage-derived income term moved onto the same real-dollar anchor the main wealth loop uses, with λ rescaled by the same known ratio to preserve the gate's original sensitivity — see Version History.)</span></p>
     </div>
     <div class="card" style="padding:18px 20px">
       <h4 class="label" style="margin-top:0">Step 4 — Network-Density Synergy &amp; Inflation</h4>
@@ -297,14 +311,14 @@ footer a{color:rgba(255,255,255,.85)}
     </div>
     <div class="card" style="padding:18px 20px">
       <h4 class="label" style="margin-top:0">Step 6 — EDC-Adjusted Gini &amp; BLEI Poverty</h4>
-      <p style="font-size:13px;margin:0">Gini reported on extraction-adjusted net wealth: W_net = W_nominal − (EDC × Y × 12). This corrects the standard Gini's blindness to the direction of financial flows. <strong>v3.1 addition:</strong> BLEI poverty (% of agents with BLEI &lt; 30 days = Crisis+Precarious tier) is tracked and displayed as a theoretically grounded alternative to wealth poverty — a retiree with $24K savings and an $80K pension incorrectly registers as wealth-poor but correctly registers as BLEI-stable. <strong>BLEI poverty is the primary poverty indicator in v3.3.</strong></p>
+      <p style="font-size:13px;margin:0">Gini reported on extraction-adjusted net wealth: W_net = W_nominal − (EDC × Y × 12). This corrects the standard Gini's blindness to the direction of financial flows. <strong>v3.1 addition:</strong> BLEI poverty (% of agents with BLEI &lt; 30 days = Crisis+Precarious tier) is tracked and displayed as a theoretically grounded alternative to wealth poverty — a retiree with $24K savings and an $80K pension incorrectly registers as wealth-poor but correctly registers as BLEI-stable. <strong>BLEI poverty is the primary poverty indicator in v3.3.</strong> <span style="font-size:11px;color:var(--muted,#666)">(v4.4: Y here now resolves via the same real-dollar wage anchor the main wealth loop uses, not the older approximation this formula previously relied on — see Mathematical Framework §5 and Version History.)</span></p>
     </div>
   </div>
 
   <button class="changelog-toggle" aria-expanded="false" aria-controls="changelog-body" onclick="toggleChangelog(this)">
     <span>
-      <span class="toggle-label">Version History (v3.1 → v4.2)</span>
-      <span class="toggle-sub">Ten revision notes — what changed in each release and why, in chronological order.</span>
+      <span class="toggle-label">Version History (v3.1 → v4.4)</span>
+      <span class="toggle-sub">Twelve revision notes — what changed in each release and why, in chronological order.</span>
     </span>
     <span class="chevron">▾</span>
   </button>
@@ -384,6 +398,34 @@ footer a{color:rgba(255,255,255,.85)}
     <strong>What changed as expected, by construction, not by drift.</strong> <strong>System Stability</strong> now reports the new structural metric — Full Integration 94.7%, CCO-Only 95.3%, Traditional Welfare Baseline 80.6% — not comparable to the old heuristic's numbers, which is exactly what a redefined metric should produce. The near-poverty cohort's median time to the Stable tier is now 158.8 months / 13.2 years (was ~165 months / 13.7 years) — a genuine, modest shift (95% CI ±0.4 months on N=5,000, so not sampling noise), consistent with a slightly different random population per seed under the new RNG threading. The cohort's Threshold crossing is better described as immediate (month 0, from initial liquid wealth alone, in 5,000/5,000 runs) than the previous "~12 months" — this is a measurement-granularity refinement, not a changed finding: this document's own prior wording ("essentially immediate — driven by initial liquid wealth, not simulated improvement") already said as much, the new methodology just adds a pre-dynamics data point to confirm it. Flourishing remains unreached by the cohort median within 20 years (0 of 5,000 runs, same as before).
     <br><br>
     <strong>What did NOT get fixed, and why (carried forward from v4.0's note, above, still current):</strong> the main wealth loop's unit simplification; a genuine aggregate production/treasury constraint on BU conversion proceeds; a shared parameter-builder across <code>getCurrentParams()</code>/OAT/validation (still an accepted, if imperfect, duplication). All tracked as open items in <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" style="color:inherit;font-weight:600">CONTRIBUTING.md</a>. One figure on this page was deliberately <em>not</em> re-run: the v4.1 40-year Flourishing-horizon extension (N=1,000) remains a v4.1-mechanics result — that specific reconfirmation is tracked as a separate open item rather than assumed. Full seed-42 single-run figures (distinct from this large-N study) are in CONTRIBUTING.md's Reproducibility Testing table.
+  </div>
+
+  <div class="v31-note" style="border-left-color:#A32D2D;background:#FCEBEB;color:#5c1a1a;">
+    <strong>v4.3 main wealth-loop unit fix — the highest-priority open item since v4.0, and not a clean win (Aug 2026):</strong> This page's own v4.0 note above already flagged this as deliberately left unfixed — "extremely sensitive to the conversion constant over multi-decade runs." v4.3 ships a validated fix: two new constants, <code>WAGE_TO_USD</code> (≈100.52, derived from $42,220 median personal income, Census/BLS CPS ASEC 2023) and <code>LIVING_WAGE_ANNUAL</code> ($49,370, a national living-wage figure from World Population Review's MIT-sourced state table), replace netting a wage figure against <code>BASE_DAILY_COST</code> — a bare-subsistence floor, correct for BLEI's poverty-line use but wrong for a 20-year compounding loop netted against real wage, which produced an ~11× wealth explosion and broke BU-monotonicity on 2 of 5 seeds when tested with the wrong anchor. All six validation checks pass under the shipped anchor.
+    <br><br>
+    <strong>This is not a clean win — it redistributes as well as it grows, along more than one axis.</strong> At N=5,000: Full Integration median wealth rose from $80,008 to $495,411 (≈6.2×), but EDC-adjusted Gini rose from 0.479 to 0.536 and wealth poverty rose from 14.4% to 19.5% — low-wage-draw, high-automation-risk, and non-participating agents don't share proportionally in the wage-side correction the way median-and-above-wage agents do. The Traditional Welfare Baseline collapsed far more severely: with no CCO/PTF/PTH cost relief, its full weight lands on the new, roughly-doubled cost anchor — median wealth fell from $7,316 to exactly the wealth floor, −$10,000, meaning more than half the baseline population was pinned at the debt ceiling by year 20 for the first time, wealth poverty rose from 52.2% to 72.3%, and Gini rose from 0.800 to 0.855. Meanwhile the near-poverty cohort (low starting <em>wealth</em>, not low <em>wage</em> — most members have ordinary wage draws) reversed completely: cohort-median time to Stable dropped from 158.8 to 48 months, and the cohort reached Flourishing in 5,000 of 5,000 runs within the 20-year horizon, versus 0 of 5,000 even after extending to 40 years under pre-v4.3 mechanics. Together these say something more precise than "wealth up, Gini up": <strong>the fix helps agents by wage level, not by starting wealth.</strong>
+    <br><br>
+    <strong>A new Social-Security-anchored cohort study, prompted by that finding, is the sharpest test of the framework's poverty-elimination claim run so far — and the framework does not pass it.</strong> Comparing Compassionism to the US baseline using median-income anchors doesn't show how the framework treats the population most relevant to a poverty-elimination claim: people on a fixed, sub-median income, not median-wage workers. Real 2026 SSA figures (SSI, SSDI-average, average retired-worker benefit) tag three cohorts by initial wage via <code>WAGE_TO_USD</code>. Full Integration helps this population enormously in relative terms — 20–30× the baseline's BLEI, where these agents are functionally at zero — but median BLEI in the teens of days remains deep in the Precarious tier, nowhere near the 30-day Threshold, let alone the reference configuration's own 67.8% population-wide Flourishing rate. Full table in CONTRIBUTING.md; the underlying mechanism is direct — even with PTF/PTH cost reductions and BU support, an agent whose wage sits near or below Social-Security-benefit levels doesn't generate enough annual surplus for the model's other mechanisms to compound meaningfully within 20 years.
+    <br><br>
+    <strong>Three smaller fixes shipped alongside the headline change.</strong> The <code>runYear()</code> RNG-coupling fix: every conditional quantity in the per-agent loop (BU spend fraction, CIP quality bump, octave advancement, SZH→PTF induction, PTH appreciation noise, PTF Bass adoption) is now drawn unconditionally every year for every agent, mirroring v4.2's population-construction fix — only the <em>use</em> of the drawn value is gated. This let the non-participant-poverty validation check tighten back to strict per-seed agreement at n=200 (was a mean-across-5-seeds workaround at n=500, adopted specifically because of this coupling gap — see v4.2's note above). A bimodal <code>automationRisk</code> distribution replaces the previous uniform[0.2,1.0] — a 47%/53% high-risk/low-risk mixture sourced to Frey &amp; Osborne (2013) and Autor (2015). Per-agent PTH tenure tracking is added as a first step toward the variable liquidity haircut this page's Step 1 card already flags as unimplemented — tracking only this pass, the haircut formula itself remains flat 50%.
+    <br><br>
+    <strong>What did NOT get fixed, and why:</strong> the <code>WEALTH_FLOOR</code> of −$10,000 was designed for occasional insolvency, not a scenario where it binds for the median of an entire population — whether it's still the right value now that the cost anchor it's measured against roughly doubled is flagged as an open question this release surfaces, not resolves; a genuine aggregate production/treasury constraint on BU conversion proceeds; whether a mechanism specifically targeting low-<em>wage</em> (not just low-wealth) populations is a gap the framework's design should address. All tracked in CONTRIBUTING.md's Model Architecture Feedback, which is where this page's own reconciliation notes above point for the pre-existing Gini and target-calibration questions too. <strong>This page's own sync to v4.3 was deliberately deferred</strong> pending an independent adversarial audit of the release — that audit, and v4.3's resulting figures, are folded into the v4.4 entry below, since no intermediate v4.3 snapshot of this page was ever published.
+  </div>
+
+  <div class="v31-note" style="border-left-color:#b45309;background:#fffbeb;color:#78350f;">
+    <strong>v4.4 — two independent adversarial audits, and the fixes they confirmed (Aug 2026):</strong> Before touching a published research artifact's methodology further, v4.3 was put through two independent adversarial code-review passes rather than trusting its own validation suite alone. The first, an open-weight model (Qwen3-Coder-30B) orchestrated via RunPod Serverless with an explicitly skeptical prompt, returned seven structured findings — every one was independently re-verified against the actual code and rejected as a false positive (a self-contradicting RNG-stream claim, a misread of an existing guard clause, a misunderstanding of the documented PTH-equity accounting, among others). The second, a more rigorous pass, returned twelve findings — most held up under the same direct-code verification. Four were judged substantive and consequential enough to warrant their own mechanics-changing release rather than a quiet patch:
+    <br><br>
+    <strong>Wage/income scale unified across BLEI, FBS, and Gini.</strong> v4.0 had fixed unit-mixing inside these formulas using <code>SIU_TO_USD</code> (≈16.63) — a cost-side-derived approximation, invented because no real wage-side anchor existed yet. v4.3's <code>WAGE_TO_USD</code> (≈100.52, Census/BLS-sourced) was scoped to the main wealth loop only, leaving the same agent's wage worth roughly $3,518/month for wealth accumulation and roughly $582/month for welfare measurement simultaneously — a ~6× divergence the audit correctly identified as no longer defensible once one of the two anchors is empirically grounded and the other isn't. <code>SIU_TO_USD</code> is retired; <code>agentEDC()</code> was and remains unaffected, since it's a dimensionless SIU/SIU ratio that never used either constant. This is not a repeat of v4.3's compounding-loop risk (these formulas recompute fresh each year), but it does feed back into wealth accumulation indirectly through the FBS advancement gate — which required its own compensating fix: <code>FBS_LAMBDA</code>, whose units are literally 1/USD by its own original documentation, was left unscaled after its dominant input grew ~6×, pushing advancement probability toward saturation regardless of BU level and measurably weakening the BU-monotonicity validation check. Rescaled by the exact, known ratio the input changed by (not a fitted number) — full validation restored.
+    <br><br>
+    <strong>True common-random-numbers pairing, at last, across the full three-way comparison.</strong> v4.2 paired the Baseline/CCO-Only/Main populations but left their year-by-year trajectories on three independently-offset RNG streams — decorrelated from each other and from Main, not just from population construction, exactly as v4.2's own note above already flagged as a remaining gap. Since v4.3's <code>runYear()</code> fix made every scenario draw the same count and order of random values regardless of policy toggles, three independent same-seed generators now necessarily produce identical draw sequences at each (agent, year) position — isolating the policy effect from Monte Carlo noise, which is what CRN pairing is for. Verified to have zero effect on Main's own single-scenario trajectory.
+    <br><br>
+    <strong>An unexplained baseline initial-wealth penalty, and an exogenous-conditions asymmetry, both removed.</strong> Baseline agents received an extra ×0.85 wealth adjustment at construction, on top of sharing v4.2's paired latent population — applied before CCO has had any chance to act, embedding part of the treatment effect into the counterfactual's own starting point. Removed; no externally-sourced justification existed for the specific figure. Separately, Baseline was hardcoded exempt from AI automation exposure even when a user enabled it for the tested scenario, while CCO-Only already correctly mirrored the setting — now paired. Neither fix meaningfully changes the standard reference-configuration figures on this page (automation defaults off; and Baseline's median wealth remains exactly floor-pinned regardless — now confirmed in 100% of N=5,000 runs rather than "more than half," since the binding constraint turned out to be the ongoing annual cost/wage gap under 20 years of compounding, not the year-0 starting point).
+    <br><br>
+    <strong>A genuine bug, found independently of either audit while building this release's large-N harness.</strong> The general-purpose gamma-distribution sampler divides by <code>(a−1)</code> inside a log term; at <code>a=1</code> exactly this is <code>x/0</code>, making the acceptance test <code>0×log(∞)=NaN</code> and therefore always false — every call exhausted all 5,000 rejection iterations and silently returned the constant 1, not a random Exponential(1) draw (confirmed: 20 of 20 identical samples in testing). This directly narrows <code>drawAutomationRisk()</code>'s two component distributions, used once per agent on every simulation run, and wasted the full 5,000 dead iterations each time in the process. Fixed with the exact closed-form solution — Gamma(shape=1) is exactly Exponential(1) — which also produced a roughly 200× population-construction speedup as a side effect, without which this release's fresh N=5,000 study would not have been practical to run in the time available.
+    <br><br>
+    <strong>Full N=5,000 re-study, with a methodological correction worth naming.</strong> Figures throughout this page above reflect the fresh study (Full Integration median wealth $526,120, up modestly from v4.3's $495,411 — most of v4.3's much larger jump came from the wealth-loop fix itself, not this release's formula-unification work; BLEI poverty fell from 17.1% to 12.5%; participant poverty fell from 15.4% to 10.0% while non-participant poverty stayed <em>exactly</em> unchanged at 34.3%, a clean mechanistic confirmation that non-participants never execute the FBS-gated code path this release touches). The Social-Security-anchored cohorts (v4.3, above) improved measurably — SSDI-level median BLEI 16.4d→22.6d, retirement-level 16.6d→a median-of-medians 25.1d — but an initial mean-based reading of the retirement-level cohort would have overstated this as crossing the 30-day Threshold; BLEI is right-skewed for these small (≈4–86 agent) cohorts, and the mean (32.0d) sits above the line while the median-of-medians (25.1d) and the actual per-seed crossing rate (31.1% of seeds) both show the typical case still falls short. Caught before publication, corrected throughout this page and CONTRIBUTING.md — reported here because getting this distinction right mattered for what the framework can honestly claim, and because a large-N study is only as trustworthy as the statistics used to summarize it.
+    <br><br>
+    <strong>What did NOT get fixed, and why:</strong> <code>WEALTH_FLOOR</code>, the pre-existing wealth/poverty/Gini design targets, and a genuine production/treasury constraint on BU conversion remain open — all explicitly flagged in CONTRIBUTING.md as framework-level decisions requiring the framework's own authors' judgment, not code fixes; this release adds a direct in-app disclosure on the affected KPI badges (see the interactive tool) without picking new numbers. The v4.1 40-year cohort extension remains unreconfirmed, now three mechanics-changing releases stale — given how far the 20-year figures have moved, a fresh 40-year run would very likely show materially different results, tracked as an open item rather than assumed. Full technical detail, including exact line-level rationale for every change, is in <code>index.html</code>'s own changelog (search "v4.4") and CONTRIBUTING.md.
   </div>
 
   </div></div>
@@ -806,57 +848,108 @@ YEARS             = <span class="nm">20</span>
 <!-- PERFORMANCE COMPARISON -->
 <section class="section">
   <div class="section-title">Performance Comparison</div>
-  <p>Results from 5,000 independent seeded runs each of Full Integration, CCO-Only, and Traditional Welfare Baseline (v4.0 large-N study, reconfirmed unchanged under v4.1, reconfirmed again under v4.2's population-pairing mechanics — seeds 1–5,000, 500 agents, 20 years, shock disabled to match the Full Integration reference preset; methodology below). BLEI-based metrics are the primary welfare standard; BLEI poverty (% Crisis+Precarious) is the primary poverty indicator. These are internally calibrated simulation outcomes under the reference parameter configuration — they represent a design reference point, not a prediction of outcomes under any specific deployment scenario. 95% CI below is on the <em>mean of each statistic across the 5,000 runs</em> (not per-agent spread within one run) — narrow CIs here reflect a large, well-powered sample, not low real-world variance.</p>
+  <p>Results from 5,000 independent seeded runs each of Full Integration, CCO-Only, and Traditional Welfare Baseline (v4.0 large-N study, reconfirmed unchanged under v4.1, reconfirmed again under v4.2's population-pairing mechanics, <strong>superseded by v4.3's mechanics-changing main-wealth-loop unit fix and re-run again under v4.4's further mechanics changes</strong> — seeds 1–5,000, 500 agents, 20 years, shock disabled to match the Full Integration reference preset; methodology below). BLEI-based metrics are the primary welfare standard; BLEI poverty (% Crisis+Precarious) is the primary poverty indicator. These are internally calibrated simulation outcomes under the reference parameter configuration — they represent a design reference point, not a prediction of outcomes under any specific deployment scenario. 95% CI below is on the <em>mean of each statistic across the 5,000 runs</em> (not per-agent spread within one run) — narrow CIs here reflect a large, well-powered sample, not low real-world variance.</p>
 
-<div class="code-block">Performance Metrics (v4.2 large-N reconfirmation, Aug 2026: 5,000 seeded runs,
+<div class="code-block">Performance Metrics (v4.4 large-N study, Aug 2026: 5,000 seeded runs,
 seeds 1–5,000, 500 agents, 20 years each; Full Integration reference
-configuration; original v4.0 study reconfirmed unchanged under v4.1,
-reconfirmed again under v4.2 — see Methodology Overview for what changed):
+configuration; superseded the v4.0/v4.1/v4.2 figures below via v4.3's
+main-wealth-loop unit fix, then again via v4.4's wage-scale unification
+across BLEI/FBS/Gini + true CRN pairing — see Version History for what
+changed at each step):
 
 CCO-PTF Integrated System (full deployment, reference parameters):
-├── BLEI Threshold Rate (≥ 30 days):        92.1%  [95% CI 92.08–92.15%]
-├── BLEI Stable Rate (≥ 120 days):          80.8%  [95% CI 80.74–80.84%]
-├── BLEI Secure Rate (≥ 365 days):          39.7%  [95% CI 39.67–39.80%]
-├── BLEI Flourishing Rate (≥ 730 days):     15.2%  [95% CI 15.12–15.21%]
-├── BLEI Poverty Rate (Crisis+Precarious):   7.9%  [95% CI 7.85–7.92%; target &lt;5%, see note]
-├── Median BLEI, final year:                 294 days  [95% CI 293.3–294.0]
-├── Median Wealth, year 10:                $52,113  [95% CI $52,044–$52,182]
-├── Median Wealth, year 20:                $81,597  [95% CI $81,511–$81,684; target $82,000]
-├── Gini (EDC-adjusted net wealth):          0.4843  [95% CI 0.4836–0.4849; target ≤0.25, see note]
-├── Gini (nominal wealth, reference only):   0.4731  [95% CI 0.4725–0.4737]
-├── Median FBS, CCO participants:            $744/month  [95% CI $743–$745]
-├── Participant Poverty Rate:                 4.3%  [95% CI 4.26–4.31%]
-├── Non-Participant Poverty Rate:            52.0%  [95% CI 51.91–52.17%]
-├── System Stability (structural metric, new in v4.2 — see Known Limitations): 94.7%  [95% CI 94.68–94.71%]
+├── BLEI Threshold Rate (≥ 30 days):        87.5%  [95% CI 87.4–87.5%]
+├── BLEI Stable Rate (≥ 120 days):          84.1%  [95% CI 84.1–84.2%]
+├── BLEI Secure Rate (≥ 365 days):          78.6%  [95% CI 78.5–78.6%]
+├── BLEI Flourishing Rate (≥ 730 days):     71.6%  [95% CI 71.5–71.6%]
+├── BLEI Poverty Rate (Crisis+Precarious):  12.5%  [95% CI 12.5–12.6%; target &lt;5%, see note]
+├── Median BLEI, final year:               1,824 days  [95% CI 1,820–1,827]
+├── Median Wealth, year 10:               $191,754  [95% CI $191,339–$192,169]
+├── Median Wealth, year 20:               $526,120  [95% CI $525,196–$527,044; target $82,000 — see note, this target predates v4.3's wage-loop fix and is now far off-scale]
+├── Gini (EDC-adjusted net wealth):         0.5183  [95% CI 0.5179–0.5187; target ≤0.25, see note]
+├── Gini (nominal wealth, reference only):  0.5100  [95% CI 0.5096–0.5104]
+├── Median FBS, CCO participants:           not recomputed this pass (tracked open — v4.0's figure, $744/mo, predates the v4.3/v4.4 wage-scale changes and should not be read as current)
+├── Participant Poverty Rate:                10.0%
+├── Non-Participant Poverty Rate:            34.3%
+├── System Stability (structural metric — see Known Limitations for a v4.4 disclosure on how to read this number): 88.6%  [95% CI 88.6–88.6%]
 ├── EPPM at poverty line:                    not computed by the simulation engine (paper-level calculation only — see BLEI paper §6)
 ├── Work Incentive Preservation:              not computed by the simulation engine
 └── Monte Carlo CI (n≥10, in-app):           Mean ± 1.96·SD/√n  [10×/50× "Stochastic CI" buttons]
 
 Near-poverty cohort tracking (agents with year-0 wealth &lt; $25,000 poverty line;
-37.7% [95% CI 37.68–37.80%] of the population under the reference wealth distribution):
+37.8% of the population under the reference wealth distribution — consistent
+with prior versions, this tag is about initial wealth, not wage):
 ├── Reaches BLEI Threshold (≥30d), cohort median:   immediate (month 0, pre-dynamics),
 │     in 5,000 of 5,000 runs — from initial liquid wealth alone, not simulated
-│     improvement. Refines the earlier "~12 months" figure, which measured from the
-│     first post-dynamics year rather than initial state; the underlying finding
-│     ("essentially immediate") is unchanged, just now measured precisely.
-├── Reaches BLEI Stable (≥120d), cohort median:    158.8 months / 13.2 years  [95% CI
-│     158.4–159.2 mo] (was ~165 months / 13.7 years pre-v4.2 — a genuine, modest
-│     shift, not sampling noise at this CI width; see Methodology Overview)
-└── Reaches BLEI Flourishing (≥730d), cohort median: NOT REACHED within the 20-year horizon,
-      in 0 of 5,000 runs. Population-wide (all agents, not just the near-poverty cohort),
-      median BLEI also does not reach Flourishing within 20 years. Only the wealthiest
-      ~15% of agents individually reach Flourishing tier by year 20 (see Flourishing Rate
-      above) — the population and cohort MEDIANS do not. This supersedes the pre-v4.0
-      "~33 months to Flourishing" figure, which was generated before octave advancement
-      was FBS-gated (i.e., under a fixed-probability heuristic that advanced agents through
-      octaves much faster, regardless of whether they had the financial bandwidth to do so).
+│     improvement. Unaffected by v4.3/v4.4 — an initialization-state fact, not
+│     touched by either release's wage-scale or wealth-loop mechanics.
+├── Reaches BLEI Stable (≥120d), cohort median:    36.0 months / 3.0 years (mean 38.6mo)
+│     — dramatically faster than the pre-v4.3 figure (158.8 months / 13.2 years).
+│     This is a real, large, mechanistically-understood shift, not drift: this
+│     cohort is wealth-poor but not wage-poor (most members have ordinary wage
+│     draws), and v4.3's wealth-loop fix rewards wage level specifically — see
+│     Version History, v4.3 entry.
+├── Reaches BLEI Secure (≥365d), cohort median:     108.0 months / 9.0 years (mean 104.9mo)
+│     — new milestone, first tracked at this granularity in v4.3.
+└── Reaches BLEI Flourishing (≥730d), cohort median: 156.0 months / 13.0 years (mean
+      161.0mo), reached in 5,000 of 5,000 runs within the 20-year horizon — a complete
+      reversal from the pre-v4.3 figure (NOT reached, 0 of 5,000 runs, even after
+      extending to 40 years under pre-v4.3 mechanics). This is the single largest
+      change any release has produced in this table. See Version History, v4.3 entry,
+      for the mechanism and why it is a genuinely positive, not merely numerical, shift.
+
+Social-Security-anchored income cohorts (new in v4.3; N=5,000, Full Integration vs.
+Traditional Welfare Baseline, same seeds/methodology as above. Unlike the near-poverty
+cohort, these are tagged by initial WAGE against real 2026 SSA benefit levels via
+WAGE_TO_USD, not by initial wealth — the population most relevant to a genuine
+poverty-elimination claim, not median-wage workers. Figures below are v4.4; the
+original v4.3 figures are superseded — see Version History for both):
+├── SSI-level (≈0.8% of pop., $994/mo → 9.89 SIU via WAGE_TO_USD):
+│     Full Integration — wealth poverty 96.8%, BLEI poverty 82.7%, median-of-medians
+│     BLEI 19.8d [mean 26.7d — see note on why median, not mean, below], Flourishing 1.4%.
+│     Baseline — wealth poverty 99.8%, BLEI poverty 99.8%, median BLEI 1.9d.
+│     Cohort medians cross the 30-day Threshold in only 10.9% of seeds (533/4,888
+│     seeds that drew ≥1 qualifying agent — this cohort is small, ≈4 agents per
+│     500-agent run, so per-seed medians are noisy; directional, not precision-grade).
+├── SSDI-level (≈7.7% of pop., $1,630/mo → 16.22 SIU):
+│     Full Integration — wealth poverty 83.0%, BLEI poverty 75.4%, median-of-medians
+│     BLEI 22.6d [mean 22.6d — this cohort's distribution is not notably skewed],
+│     Flourishing 8.1%. Baseline — wealth poverty 99.7%, BLEI poverty 99.7%, median
+│     BLEI 3.0d. Cohort medians cross Threshold in 0.0% of seeds (2/5,000).
+└── Retirement-level (≈17.1% of pop., $2,071/mo → 20.60 SIU):
+      Full Integration — wealth poverty 64.7%, BLEI poverty 52.7%, median-of-medians
+      BLEI 25.1d [mean 32.0d], Flourishing 14.5%. Baseline — wealth poverty 99.6%,
+      BLEI poverty 99.6%, median BLEI 3.7d. Cohort medians cross Threshold in 31.1%
+      of seeds (1,554/5,000) — the closest of the three anchors, but the TYPICAL
+      (median) outcome still falls short.
+
+A note on median vs. mean for these cohorts: BLEI is right-skewed (bounded below
+at 0, long right tail), and these cohorts are small (≈4–86 agents per 500-agent
+run) — the MEAN of per-seed cohort-medians can be pulled well above the typical
+outcome by a small number of high-BLEI seeds. The retirement-level cohort's mean
+(32.0d) sits above the 30-day Threshold; its median-of-medians (25.1d) does not,
+and only 31.1% of individual seeds actually cross the line. Reporting the mean
+alone here would overstate this cohort's typical outcome — median-of-medians is
+the fairer summary, alongside the seed-crossing-rate for full transparency.
+
+Read plainly: Full Integration helps this population enormously in relative
+terms (originally measured at 20–30× baseline's BLEI under v4.3 mechanics;
+recomputed at ~7–10× under v4.4 — baseline's own BLEI also rose under the
+wage-scale fix, since baseline agents receive the same corrected wage-buffer
+term with no CCO/PTF/PTH mechanism to offset it) but does not come close to
+lifting it out of poverty in absolute terms by the simulation's own tier
+definitions, in the typical case, for any of the three anchors. This remains
+the sharpest test of the framework's poverty-elimination claim run so far.
 
 v4.1 extension — same cohort, tracked to a 40-year horizon (N=1,000 seeds, Full
-Integration; seeds 1–1,000; cohort size 37.7% [95% CI 37.60–37.86%], consistent with
-the 5,000-run figure above). NOT re-run under v4.2 mechanics — the 20-year Stable
-milestone above shifted modestly under v4.2 (13.2 vs 13.7 years), so the 40-year
-figures below should be read as a v4.1-mechanics result pending its own
-reconfirmation pass (tracked in CONTRIBUTING.md), not assumed unchanged:
+Integration; seeds 1–1,000). NOT re-run under v4.2, v4.3, or v4.4 mechanics — the
+20-year Stable milestone above shifted enormously under v4.3 (36.0 months vs. this
+extension's own 165-month reference point), so the 40-year figures below are a
+v4.1-mechanics result, now three mechanics-changing releases stale, and should be
+read as historical rather than current. Given how much the 20-year figures moved,
+a fresh 40-year run would very likely show the cohort reaching Flourishing well
+within 40 years, possibly well within 20 — not confirmed, tracked as an open item
+rather than assumed either way:
 ├── Threshold (≥30d) and Stable (≥120d) milestones reconfirmed almost exactly against
 │     the 5,000-run figures above (median 12 months and 165 months respectively) —
 │     expected, since v4.1 changes no simulation mechanics (see v4.1 note above).
@@ -885,42 +978,60 @@ Tier naming (v3.1):
   CCO+PTF active → top tier = Flourishing (generative system maturation)
   Without CCO+PTF → top tier = Comfortable (strong stability, not full Compassionism)
 
-Calibration notes (v4.0 finding, reconfirmed under v4.2):
-  Median Wealth (year 20) lands within 0.5% of the pre-existing $82,000 design target —
-  the main wealth-accumulation loop was deliberately left unchanged in v4.0, and v4.2's
-  population-pairing fix doesn't touch it either (see Mathematical Framework §2 note),
-  so this close match is expected, not new information. BLEI Poverty Rate (7.9%) and
-  EDC-adjusted Gini (0.484) both fall short of their pre-existing design targets (&lt;5%
-  and ≤0.25 respectively) by a wider margin — see "On calibration versus validation"
-  below and the Internal Calibration Benchmarks section for what this does and doesn't
-  imply.
+Calibration notes (v4.0 finding; substantially changed under v4.3/v4.4):
+  Median Wealth (year 20) landed within 0.5% of the pre-existing $82,000 design
+  target under v4.0-v4.2 mechanics — that close match no longer holds. v4.3's
+  main-wealth-loop unit fix (replacing a bare-subsistence cost anchor, wrong for
+  a 20-year compounding loop netted against real wage, with a genuine living-wage
+  anchor) moved median wealth to $495,411; v4.4 moved it further to $526,120 — more
+  than 6× the original target. This is a deliberate, documented consequence of a
+  unit-correctness fix, not drift, and TARGET_WEALTH itself has not been
+  reconsidered against the new mechanics (a framework-level decision, flagged as
+  open in CONTRIBUTING.md and, as of v4.4, disclosed directly on the interactive
+  tool's KPI badges — see Known Limitations). Reading "close to target" or "far from
+  target" against the old $82,000 figure is no longer meaningful either way. BLEI
+  Poverty Rate (12.5%) and EDC-adjusted Gini (0.518) both still fall short of their
+  own pre-existing design targets (&lt;5% and ≤0.25 respectively), though both moved
+  toward the target, not away from it, under v4.3/v4.4 — see "On calibration versus
+  validation" below and the Internal Calibration Benchmarks section for what this
+  does and doesn't imply.
 
 CCO-Only System (no PTH/PTF/SZH/CIP; N=5,000, same seed range; partRate 78%,
 matching the Full Integration reference preset — see the participation-rate note
 in Methodology Overview):
-├── BLEI Threshold Rate:                    90.3%  [95% CI 90.29–90.36%]
-├── BLEI Poverty Rate:                       9.7%  [95% CI 9.64–9.71%]
+├── BLEI Threshold Rate:                    79.0%
+├── BLEI Poverty Rate:                      21.0%
 ├── BLEI Tier at 730+ days:                 Comfortable (CCO active; PTF not)
-├── Median Wealth, year 20:                $73,001  [95% CI $72,909–$73,092]
-├── Gini (EDC-adjusted):                     0.5164  [95% CI 0.5158–0.5171]
-└── System Stability (structural metric, new in v4.2):  95.3%  [95% CI 95.26–95.29%]
+├── Median Wealth, year 20:                $391,742  [95% CI $390,856–$392,627]
+├── Gini (EDC-adjusted):                     0.5763  [95% CI 0.5759–0.5768]
+└── System Stability (structural metric):    88.4%
 
 Traditional Welfare Baseline (US + 3% CPI, no CCO/PTF/PTH/SZH/CIP; N=5,000, same seed range):
-├── BLEI Threshold Rate:                    47.8%  [95% CI 47.76–47.89%]
-├── BLEI Poverty Rate (Crisis+Precarious):  52.2%  [95% CI 52.11–52.24%]
-├── Median Wealth, year 20:                 $7,316  [95% CI $7,248–$7,383]
-├── Gini (EDC-adjusted):                     0.8003  [95% CI 0.7998–0.8008]
-├── System Stability (structural metric, new in v4.2):  80.6%  [95% CI 80.50–80.71%]
+├── BLEI Threshold Rate:                    29.4%
+├── BLEI Poverty Rate (Crisis+Precarious):  70.6%
+├── Median Wealth, year 20:                 −$10,000 — pinned exactly at WEALTH_FLOOR
+│     in 5,000 of 5,000 runs (100%). v4.3's living-wage cost anchor roughly doubled
+│     the pre-v4.3 cost figure baseline is measured against, without any offsetting
+│     mechanism; the floor is now binding for the entire population's median, not an
+│     occasional insolvency case as originally intended — see Known Limitations and
+│     CONTRIBUTING.md's Model Architecture Feedback. Not resolved by v4.4's removal
+│     of a separate, unrelated ×0.85 initial-wealth haircut (Version History,
+│     v4.4) — the binding constraint is the ongoing annual gap, not the starting point.
+├── Gini (EDC-adjusted):                     0.8580
+├── System Stability (structural metric):    99.0% — read this alongside the poverty
+│     figures above, not in isolation; see Known Limitations for why a population
+│     pinned at a hard floor scores as more "stable" than a thriving one under this
+│     metric's own definition.
 └── Note: wage income &lt; annual living costs at this inflation rate; wealth depletes
       over time by design (see Mathematical Framework §2)
 
 Nordic Benchmark (external reference, not simulation output):
 ├── Gini (post-redistribution):               0.27–0.29
-└── CCO-PTF EDC-adjusted Gini (0.484, v4.0 measured) exceeds the Nordic range —
+└── CCO-PTF EDC-adjusted Gini (0.518, v4.4 measured) exceeds the Nordic range —
       see "On calibration versus validation" below.</div>
 
   <div class="info">
-    <strong>On calibration versus validation:</strong> The pre-existing design targets (BLEI Threshold Rate ≥95%, EDC-adjusted Gini ≤0.25, System Stability ≥90%, BLEI Poverty &lt;5%) were aspirational internal calibration goals, not values the shipped code had been checked against — EDC-adjusted Gini specifically could not have been checked, since v4.0 is the first release to actually compute it. Measured against those targets, v4.0's large-N study meets or exceeds the Stability and Threshold-Rate targets, and comes very close on Median Wealth, but falls short on Poverty Rate (7.9% vs. &lt;5% target) and further short on Gini (0.484 vs. ≤0.25 target). The Gini gap has a specific, identified likely cause — see the Mathematical Framework §5 note and the Internal Calibration Benchmarks section — rather than being an unexplained miss. None of this is a forecast of outcomes in a partially deployed real system; the Nordic range (0.27–0.29) remains the best real-world reference point, and early-phase implementations should expect outcomes closer to it than to either the design targets above or this simulation's reference-configuration output.
+    <strong>On calibration versus validation:</strong> The pre-existing design targets (BLEI Threshold Rate ≥95%, EDC-adjusted Gini ≤0.25, System Stability ≥90%, BLEI Poverty &lt;5%, Median Wealth $82,000) were aspirational internal calibration goals, not values the shipped code had been checked against — EDC-adjusted Gini specifically could not have been checked before v4.0, since that release is the first to actually compute it. Measured against those targets, v4.4's large-N study exceeds the Threshold-Rate target, falls short on Poverty Rate (12.5% vs. &lt;5%) and Gini (0.518 vs. ≤0.25) — both closer to target than under v4.0-v4.2 mechanics, not further — and is now dramatically past the old Median Wealth target in the opposite direction (a unit-correctness fix, not an improvement or a regression against that particular number, which itself predates the fix and has not been reconsidered — see Calibration notes, above, and Known Limitations). The Gini gap has a specific, identified likely cause — see the Mathematical Framework §5 note and the Internal Calibration Benchmarks section — rather than being an unexplained miss. None of this is a forecast of outcomes in a partially deployed real system; the Nordic range (0.27–0.29) remains the best real-world reference point, and early-phase implementations should expect outcomes closer to it than to either the design targets above or this simulation's reference-configuration output.
   </div>
 
   <div class="v31-note">
@@ -937,6 +1048,10 @@ Nordic Benchmark (external reference, not simulation output):
 
   <div class="v31-note" style="border-left-color:#0f766e;background:#f0fdfa;color:#134e4a;">
     <strong>v4.1 confirmation &amp; extension methodology:</strong> Same harness and code path as the v4.0 study above, run two ways. (1) <em>Confirmation:</em> an independent N=1,000-seed sweep (seeds 1–1,000, not a subset of the v4.0 seed range's results — a fresh draw) of all three scenarios at the same 500-agent/20-year configuration, to empirically verify — not just argue from code inspection — that none of v4.1's fixes shifted the main simulation output. Every metric checked landed within or immediately adjacent to the v4.0 study's 95% CI (BLEI poverty, EDC-adjusted Gini, median wealth for all three scenarios; near-poverty cohort size and its Threshold/Stable crossing times for Full Integration). (2) <em>Extension:</em> the same N=1,000 seeds, Full Integration only, run to a 40-year horizon instead of 20, with the near-poverty cohort's median BLEI recorded at every year (not just at the 20-year endpoint) to identify when — if at all, within the extended window — it crosses into Threshold, Stable, and Flourishing. Total compute: roughly 4,000 runs across both studies, a smaller N than the original 5,000-per-scenario study by design — sufficient to confirm no material change and to characterise the extended-horizon trajectory, without re-running a study whose result was already determined by the (unchanged) code and a documented seed range. Raw year-by-year cohort data available on request via a GitHub issue.
+  </div>
+
+  <div class="v31-note" style="border-left-color:#b45309;background:#fffbeb;color:#78350f;">
+    <strong>v4.3/v4.4 large-N methodology, and why this page skipped straight from v4.2 to v4.4.</strong> Both releases are mechanics-changing (see Version History), so both required a fresh N=5,000 study rather than a reconfirmation — v4.3's was run and documented in CONTRIBUTING.md at the time; this page's own sync to v4.3 was deliberately deferred pending an independent adversarial audit of that release (two audit passes — see Version History, v4.4 entry), so the figures throughout this page jump directly from v4.2 to the current, v4.4-mechanics numbers, without an intermediate v4.3 snapshot ever having been published here. Same harness and code path as all prior large-N studies (<code>makeLatentPopulation()</code>, <code>instantiateAgent()</code>, <code>runYear()</code>, <code>calcMetrics()</code>, <code>bleiMetrics()</code>, <code>structuralStability()</code> called directly, seeds 1–5,000, 500 agents, 20 years, shock disabled). Two additions to the methodology, both new in v4.3 and carried through to this v4.4 re-run: the Social-Security-anchored cohort tagging (agents' initial, pre-dynamics wage compared against real 2026 SSA benefit levels via <code>WAGE_TO_USD</code> — SSI, SSDI, and average retired-worker levels — the same convention the near-poverty cohort already used for initial wealth), and reporting BLEI figures for small cohorts (≈4–86 agents per run) as median-of-medians across seeds rather than mean, since BLEI is right-skewed and a small cohort's mean is more exposed to a handful of high-BLEI seeds — a distinction that mattered directly for this release: an initial mean-based reading of the retirement-level cohort would have overstated its typical outcome as crossing the 30-day Threshold, when the median-of-medians and the per-seed crossing rate (31.1%) show the typical case still falls short. Two supplementary figures in the table above (year-10 median wealth, nominal-wealth Gini) required a small additional pass beyond the core headline metrics, run separately against the same seed range; median FBS among CCO participants was not recomputed this pass and is flagged accordingly in the table, since the pre-v4.3 figure predates the wage-scale changes and would be misleading if left uncaptioned.
   </div>
 </section>
 
@@ -1071,7 +1186,7 @@ v3.4 fix note (no math change from v3.3):  totW = 0  →  Gini = 0, not 1.
 Aspirational target (pre-v4.0, not yet measured against actual code):
   Baseline EDC-adjusted Gini: 0.44–0.46
   CCO-PTF EDC-adjusted Gini:  0.22  (full deployment, optimal parameters)</div>
-  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:-4px">v4.0 note: EDC-adjusted Gini is now actually computed by the simulation (previously the engine only ever computed nominal-wealth Gini; this formula existed here as a specification, not shipped code). Measured output from a 5,000-run large-N study at the Full Integration reference configuration (500 agents, 20 years, seeds 1–5,000; see Performance Comparison below for full methodology) is <strong>Gini = 0.800 [95% CI 0.7994–0.8003] at the Traditional Welfare Baseline</strong> and <strong>Gini = 0.484 [95% CI 0.4839–0.4851] under full deployment</strong> — both meaningfully higher than the aspirational 0.44–0.46 / 0.22 range above. The direction (full deployment well below baseline) is confirmed; the absolute levels are not. The most likely source: the wealth initialization itself, <code>lognormal(10.5, 1.2)</code>, has an inherent Gini coefficient of ≈0.60 <em>before any simulation dynamics or EDC adjustment are applied</em> (2Φ(σ/√2)−1 for σ=1.2) — already above the old baseline target, which suggests that target was a theoretical projection never checked against the actual coded initialization rather than a value the shipped model was failing to hit. Reconciling this — either by revisiting the wealth-initialization spread or by revisiting the target — is flagged as an open calibration item in <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>, not resolved here.</p>
+  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:-4px">v4.0 note: EDC-adjusted Gini is now actually computed by the simulation (previously the engine only ever computed nominal-wealth Gini; this formula existed here as a specification, not shipped code). v4.4 update: measured output from the current 5,000-run large-N study at the Full Integration reference configuration (500 agents, 20 years, seeds 1–5,000; see Performance Comparison below for full methodology and how these figures moved from the original v4.0 measurement through v4.3/v4.4) is <strong>Gini = 0.858 [95% CI 0.8577–0.8584] at the Traditional Welfare Baseline</strong> and <strong>Gini = 0.518 [95% CI 0.5179–0.5187] under full deployment</strong> — both meaningfully higher than the aspirational 0.44–0.46 / 0.22 range above, though both moved toward that range compared to the original v4.0 measurement (Baseline 0.800→0.858 is a move away, driven by v4.3's cost-anchor change pinning Baseline's wealth at the floor for effectively the whole population — see Performance Comparison; Full Integration 0.484→0.518 also moved away slightly, then improved again from a v4.3 peak of 0.536 once v4.4's wage-scale unification corrected the EDC-extraction calculation — see Version History for the full sequence). The direction (full deployment well below baseline) remains confirmed; the absolute levels remain off-target either way. The most likely source of the wealth-initialization contribution to this gap: <code>lognormal(10.5, 1.2)</code> has an inherent Gini coefficient of ≈0.60 <em>before any simulation dynamics or EDC adjustment are applied</em> (2Φ(σ/√2)−1 for σ=1.2) — already above the old baseline target, which suggests that target was a theoretical projection never checked against the actual coded initialization rather than a value the shipped model was failing to hit. Reconciling this — either by revisiting the wealth-initialization spread or by revisiting the target — is flagged as an open calibration item in <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>, not resolved here.</p>
 
   <h3 class="subsec">6. EPPM and IPBI</h3>
   <div class="formula">EPPM(i)  =  [ Y + BU·ε_blended − EDC_CCO·Y ]  /  [ Y · (1 − EDC_baseline) ]
@@ -1134,7 +1249,7 @@ Recession severity distribution (v3.3; mode figure corrected v4.0):
     <div class="val-card"><div class="val-label">Participant Poverty ≤ Non-Participant</div><div class="val-value">Required</div></div>
     <div class="val-card"><div class="val-label">Validation Suite (v3.3)</div><div class="val-value">4/4 Pass</div></div>
   </div>
-  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:8px">The Gini benchmark predates v4.0's actual implementation of EDC-adjusted Gini (see Mathematical Framework §5 above) — measured full-deployment output from the v4.2 large-N study (N=5,000, see Performance Comparison) is 0.4843 [95% CI 0.4836–0.4849], not ≤0.22. Marked <span class="revision-pill">under revision</span> pending the wealth-initialization/target reconciliation discussed there, rather than silently left as a passing claim.</p>
+  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:8px">The Gini benchmark predates v4.0's actual implementation of EDC-adjusted Gini (see Mathematical Framework §5 above) — measured full-deployment output from the current v4.4 large-N study (N=5,000, see Performance Comparison) is 0.5183 [95% CI 0.5179–0.5187], not ≤0.22 (was 0.4843 under v4.0-v4.2 mechanics; moved through 0.5359 under v4.3 before settling here under v4.4's wage-scale unification — see Version History). Marked <span class="revision-pill">under revision</span> pending the wealth-initialization/target reconciliation discussed there, rather than silently left as a passing claim.</p>
 </section>
 
 <!-- KNOWN LIMITATIONS -->
@@ -1151,7 +1266,8 @@ Recession severity distribution (v3.3; mode figure corrected v4.0):
     <li><strong>automationRisk uniform distribution (added in v3.4).</strong> automationRisk ∈ [0.2, 1.0] is drawn from a uniform distribution. Real automation exposure is highly bimodal and occupation-dependent (Frey &amp; Osborne, 2013; Autor, 2015): low-routine cognitive workers face minimal risk, while high-routine manual/clerical workers face extreme risk. The uniform assumption may understate polarization in High Automation scenarios. Priority calibration refinement in <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>.</li>
     <li><strong>System Stability was a trend heuristic, not a structural metric (flagged v3.6, resolved v4.2).</strong> Through v4.1 the displayed value was <code>stabBase = improving ? 0.88 : 0.60</code> (based on whether poverty fell over the run's final quarter), plus a small CIP bonus, plus bounded random noise — not derived from wealth variance, BLEI volatility, or agent-state transitions. As of v4.2 the metric is the inverse coefficient of variation of median wealth and median BLEI over the run's final quarter — no RNG call, no manual per-mechanism bonus. See the v4.2 note in Methodology Overview.</li>
     <li><strong>Within-run RNG coupling limits per-agent trajectory pairing across scenarios (found v4.2).</strong> v4.2's common-random-numbers fix (Methodology Overview) gives the main/CCO-only/baseline comparisons an identical <em>initial</em> population, but <code>runYear()</code> still consumes a variable number of RNG calls per agent depending on which of its own conditional branches that agent takes each year — participants trigger more draws than non-participants. Two scenarios whose agents end up on different branches (e.g. because participation composition differs) progressively diverge in RNG stream position year over year, so per-agent trajectory pairing holds exactly at year 0 but not for the full run. Aggregate comparisons (population-level poverty rate, median BLEI) are unaffected. A full fix would mean every RNG-consuming branch in <code>runYear()</code> drawing unconditionally, mirroring the v4.2 fix to agent construction — a larger change, tracked as an open item in <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>.</li>
-    <li><strong>Headline large-N figures on this page are reconfirmed under v4.2 (Aug 2026).</strong> Unlike v4.1 (which changed no simulation mechanics), v4.2 changed population-generation and the System Stability metric, so a full N=5,000 reconfirmation was run rather than assumed — see the v4.2 note in Methodology Overview and the figures in Performance Comparison. Poverty, wealth, and Gini figures across all three scenarios came back within a few hundredths of a percentage point of the pre-v4.2 numbers; System Stability and the near-poverty cohort's Stable-tier timing changed as expected, by construction, not by drift. The one figure NOT reconfirmed under v4.2 mechanics is the v4.1 40-year cohort-Flourishing extension (N=1,000) — still a v4.1-mechanics result, tracked in CONTRIBUTING.md for its own reconfirmation pass.</li>
+    <li><strong>Headline large-N figures on this page are current as of v4.4 (Aug 2026).</strong> v4.3 and v4.4 both changed simulation mechanics substantially — the main wealth-accumulation loop's unit fix (v4.3) and the wage-scale unification across BLEI/FBS/Gini plus true CRN pairing (v4.4) — so a full fresh N=5,000 study was run for v4.4 rather than assumed; this page's own sync skipped an intermediate v4.3 snapshot (deliberately deferred pending an independent audit — see Version History). Figures moved substantially from the v4.0-v4.2 era shown in older archived copies of this page — median wealth roughly 6× higher, BLEI poverty and Gini both improved, the near-poverty cohort now reaches every milestone including Flourishing well within the 20-year horizon (previously not reached even at 40 years) — see Performance Comparison for the full before/after and Version History for why each figure moved. The one figure NOT reconfirmed under current mechanics is the v4.1 40-year cohort extension (N=1,000) — a three-releases-stale result, now very likely superseded given how much the 20-year figures moved, tracked as an open item rather than assumed either way.</li>
+    <li><strong>System Stability can score a stagnant floor as "more stable" than a thriving population.</strong> The structural metric (v4.2) is the inverse coefficient of variation of median wealth and BLEI over a run's final quarter — a genuinely flat trajectory scores as maximally stable whether that flatness reflects a thriving equilibrium or a population pinned at a hard floor with nowhere left to fall. In the v4.4 study, the Traditional Welfare Baseline — median wealth pinned exactly at the wealth floor in 100% of runs by year 20 — scores 99.0% stability, higher than Full Integration's 88.6%, precisely because a hard floor has near-zero variance left to measure. Read this metric as trajectory steadiness, not as an endorsement of the outcome it describes, and always alongside the poverty and BLEI figures next to it. Not previously disclosed on this page; added as part of the v4.4 sync (the interactive tool itself carries the same disclosure as of v4.4 — see CONTRIBUTING.md).</li>
     <li><strong>Initial PTF share is not a hard cap (relabeled v3.6, unresolved).</strong> The PTF slider sets the <code>t=0</code> adoption probability only; independent per-agent adoption checks each simulated year — now including a Bass-diffusion imitation term as of v4.0 — mean the realised final PTF share can exceed the slider value with no aggregate feedback loop to constrain it. v3.6 corrected the UI label and documentation to reflect this; v4.0 makes adoption more realistic (imitation-driven) but does not add a cap. A quota-based or feedback-clamped adoption model remains an open item, tracked in <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>.</li>
     <li><strong>Main wealth-accumulation loop keeps its pre-v4.0 unit simplification.</strong> v4.0 closed a wage(SIU)/wealth(USD) unit mismatch in the BLEI, FBS, and EDC-adjusted-Gini formulas, but deliberately left the core annual wealth update (§2 above) unchanged — it remains extremely sensitive to any wage→USD conversion constant because wage compounds against cost over up to 30 years (candidate constants spanning a ~3.5× range swung 20-year outcomes from universal wealth-floor collapse to implausible multi-million-dollar median wealth in internal testing). A defensible fix needs a joint recalibration of the wage distribution, cost scale, and every target metric against real income data — flagged as a research direction in <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>, not attempted in v4.0.</li>
     <li><strong>CCO conversion proceeds are tracked but not production-constrained (v4.0).</strong> BU→wealth conversion credits agents without debiting a modelled treasury, PTF balance sheet, or production account — external review correctly flagged this as an open stock-flow accounting gap. v4.0 adds transparency only (cumulative conversion proceeds are tracked and exported). A genuine aggregate production constraint, with a defined production function and rationing behaviour when exhausted, is a further economic-modelling design decision not implemented here.</li>
