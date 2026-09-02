@@ -415,7 +415,7 @@ footer a{color:rgba(255,255,255,.85)}
   <div class="v31-note" style="border-left-color:#b45309;background:#fffbeb;color:#78350f;">
     <strong>v4.4 — two independent adversarial audits, and the fixes they confirmed (Aug 2026):</strong> Before touching a published research artifact's methodology further, v4.3 was put through two independent adversarial code-review passes rather than trusting its own validation suite alone. The first, an open-weight model (Qwen3-Coder-30B) orchestrated via RunPod Serverless with an explicitly skeptical prompt, returned seven structured findings — every one was independently re-verified against the actual code and rejected as a false positive (a self-contradicting RNG-stream claim, a misread of an existing guard clause, a misunderstanding of the documented PTH-equity accounting, among others). The second, a more rigorous pass, returned twelve findings — most held up under the same direct-code verification. Four were judged substantive and consequential enough to warrant their own mechanics-changing release rather than a quiet patch:
     <br><br>
-    <strong>Wage/income scale unified across BLEI, FBS, and Gini.</strong> v4.0 had fixed unit-mixing inside these formulas using <code>SIU_TO_USD</code> (≈16.63) — a cost-side-derived approximation, invented because no real wage-side anchor existed yet. v4.3's <code>WAGE_TO_USD</code> (≈100.52, Census/BLS-sourced) was scoped to the main wealth loop only, leaving the same agent's wage worth roughly $3,518/month for wealth accumulation and roughly $582/month for welfare measurement simultaneously — a ~6× divergence the audit correctly identified as no longer defensible once one of the two anchors is empirically grounded and the other isn't. <code>SIU_TO_USD</code> is retired; <code>agentEDC()</code> was and remains unaffected, since it's a dimensionless SIU/SIU ratio that never used either constant. This is not a repeat of v4.3's compounding-loop risk (these formulas recompute fresh each year), but it does feed back into wealth accumulation indirectly through the FBS advancement gate — which required its own compensating fix: <code>FBS_LAMBDA</code>, whose units are literally 1/USD by its own original documentation, was left unscaled after its dominant input grew ~6×, pushing advancement probability toward saturation regardless of BU level and measurably weakening the BU-monotonicity validation check. Rescaled by the exact, known ratio the input changed by (not a fitted number) — full validation restored.
+    <strong>Wage/income scale unified across BLEI, FBS, and Gini.</strong> v4.0 had fixed unit-mixing inside these formulas using <code>SIU_TO_USD</code> (≈16.63) — a cost-side-derived approximation, invented because no real wage-side anchor existed yet. v4.3's <code>WAGE_TO_USD</code> (≈100.52, Census/BLS-sourced) was scoped to the main wealth loop only, leaving the same agent's wage worth roughly $3,518/month for wealth accumulation and roughly $582/month for welfare measurement simultaneously — a ~6× divergence the audit correctly identified as no longer defensible once one of the two anchors is empirically grounded and the other isn't. <code>SIU_TO_USD</code> is retired; <code>agentEDC()</code> was and remains unaffected, since it's a dimensionless SIU/SIU ratio that never used either constant. This is not a repeat of v4.3's compounding-loop risk (these formulas recompute fresh each year), but it does feed back into wealth accumulation indirectly through the FBS advancement gate, which needed a compensating adjustment: <code>FBS_LAMBDA</code>, left unscaled after its dominant input (<code>Yusd</code>) grew ~6×, pushed advancement probability toward saturation regardless of BU level and measurably weakened the BU-monotonicity validation check. <strong>Correction (post-release review):</strong> this document previously described the <code>FBS_LAMBDA</code> rescale as a "dimensionally-necessary consequence" of λ's 1/USD units — that overstated the case. FBS mixes the wage-derived term that changed scale with fixed-dollar terms (BU face value, basic cost) that did not, so FBS itself does not scale by a single clean factor, and dividing λ by exactly 6.0456 is a chosen behavioral recalibration to restore useful dynamic range, not a unit identity. See the open calibration-status note under Mathematical Framework §4 for the full, corrected account, including why the original range saturates and why the rescaled range should not itself be read as empirically validated.
     <br><br>
     <strong>True common-random-numbers pairing, at last, across the full three-way comparison.</strong> v4.2 paired the Baseline/CCO-Only/Main populations but left their year-by-year trajectories on three independently-offset RNG streams — decorrelated from each other and from Main, not just from population construction, exactly as v4.2's own note above already flagged as a remaining gap. Since v4.3's <code>runYear()</code> fix made every scenario draw the same count and order of random values regardless of policy toggles, three independent same-seed generators now necessarily produce identical draw sequences at each (agent, year) position — isolating the policy effect from Monte Carlo noise, which is what CRN pairing is for. Verified to have zero effect on Main's own single-scenario trajectory.
     <br><br>
@@ -461,6 +461,9 @@ footer a{color:rgba(255,255,255,.85)}
 <!-- AGENT ARCHITECTURE -->
 <section class="section">
   <div class="section-title">Agent Architecture — v3.3 Extraction-Accurate Model</div>
+  <div class="info" style="margin-bottom:12px">
+    <strong>This Python reference implementation is a v3.3-era snapshot and has not been kept in sync with the shipped simulation, now at v4.4.</strong> Specific known-stale details include the automation-risk distribution (shows the pre-v4.3 uniform draw, not the current bimodal one — see Mathematical Framework §3), the FBS advancement coefficient λ (shows the pre-v4.4 range — see §4 and its calibration-status note), and the wealth-accumulation mechanic more broadly (this snippet predates v4.3's wage-scale unit fix entirely). Rather than risk introducing new errors by hand-porting three releases of mechanics changes into a second, untested implementation, this code is preserved as historical/illustrative rather than rewritten — for the authoritative, currently-validated model, see the actual JS source in <code>index.html</code> (github.com/BetterToBest/compassionism-simulation) and CONTRIBUTING.md's Cumulative Bug Fixes for exactly what changed and why.
+  </div>
   <p>The v3.1 agent class adds an annual expense system, heterogeneous AI automation risk, negative wealth floor, and PTF dynamic adoption. The corrected agent also separates PTF benefits (cost reduction) from PTH benefits (Acre Equity growth), preventing the double-counting present in earlier versions. The BLEI income buffer uses actual agent wage rather than the wealth/60 proxy. BU_food_eff ($990) is used for BLEI; BU·ε_blended ($2,502) is used for EPPM. <strong>v3.3 addition:</strong> wage growth stability premium applies diminishing returns above WAGE_MEDIAN_SIU (35 SIU), preventing structural compounding at high wages. The constant <code>ANNUAL_BASE_COST</code> is renamed <code>SIM_COST_SCALE</code> to avoid apparent contradiction with BASE_DAILY_COST.</p>
 
   <div class="v31-note" style="margin-bottom:14px">
@@ -507,7 +510,7 @@ footer a{color:rgba(255,255,255,.85)}
         # High risk (→1.0) = occupation highly exposed to automation displacement
         # Low risk (→0.2) = occupation resilient (creative, relational, novel)
         # Per-agent displacement = population_rate × automation_risk</span>
-        self.automation_risk = np.random.uniform(<span class="nm">0.2</span>, <span class="nm">1.0</span>)
+        self.automation_risk = np.random.uniform(<span class="nm">0.2</span>, <span class="nm">1.0</span>)  <span class="c"># STALE (v3.3) — v4.3+ uses a 47/53 bimodal Beta(6,1)/Beta(1,6) mixture, see §3</span>
 
         <span class="c"># ── BLEI state variables ───────────────────────────────────────</span>
         self.bu_monthly       = <span class="nm">1200.0</span> <span class="kw">if</span> self.cco_participant <span class="kw">else</span> <span class="nm">0.0</span>
@@ -520,7 +523,7 @@ footer a{color:rgba(255,255,255,.85)}
         self.fbs              = <span class="nm">0.0</span>
         self.blei_score       = <span class="nm">0.0</span>
         self.blei_tier        = <span class="nm">0</span>
-        self.lambda_cap       = np.random.uniform(<span class="nm">0.001</span>, <span class="nm">0.008</span>)
+        self.lambda_cap       = np.random.uniform(<span class="nm">0.001</span>, <span class="nm">0.008</span>)  <span class="c"># STALE (v3.3) — v4.4 uses U(0.0001654, 0.0013233), see Math. Framework §4</span>
         self._update_blei()
         self._update_fbs()
 
@@ -640,6 +643,9 @@ footer a{color:rgba(255,255,255,.85)}
 <!-- SIMULATION ENGINE -->
 <section class="section">
   <div class="section-title">Simulation Engine — v3.3 Constants</div>
+  <div class="info" style="margin-bottom:12px">
+    <strong>Same caveat as Agent Architecture, above: this is a v3.3-era Python snapshot, not kept in sync with the shipped v4.4 simulation.</strong> Most visibly, <code>SIM_COST_SCALE</code> is shown here as the operative driver of the wealth-accumulation ratio (<code>income×12 / SIM_COST_SCALE</code>) — that mechanic was replaced entirely in v4.3 by the <code>WAGE_TO_USD</code>/<code>LIVING_WAGE_ANNUAL</code> formula in Mathematical Framework §2, and the validation assertion below (<code>gini_edc_adjusted &lt; 0.22</code>) reflects a target value that was never reconciled with the shipped code's own <code>CFG.TARGET_GINI = 0.25</code>, let alone the model's actual measured Gini (0.518 under v4.4 — see Performance Comparison). Preserved as historical/illustrative rather than rewritten, for the same reasons given above — see <code>index.html</code> and CONTRIBUTING.md for the current, validated implementation.
+  </div>
   <p>The Monte Carlo engine adds the annual expense system, AI automation displacement, negative wealth floor, BLEI poverty tracking, and population-level recession model. The <code>incomeMultiplier</code> field in recession state (renamed from <code>severity</code>) makes the directional meaning unambiguous: 0.90 means agents earn 90% of normal income (10% loss) at the distribution's mode. <strong>v3.3:</strong> recession severity now drawn from a beta(5,2) distribution over [0.70, 0.95] for NBER-calibrated realism; <code>SIM_COST_SCALE</code> renamed from <code>ANNUAL_BASE_COST</code>; <code>WAGE_MEDIAN_SIU</code> added as diminishing returns reference.</p>
 
 <div class="code-block"><span class="c"># ═══════════════════════════════════════════════════════════════
@@ -758,7 +764,7 @@ YEARS             = <span class="nm">20</span>
         <span class="st">"""Internal calibration benchmarks — design targets, not external validation."""</span>
         assert r[<span class="st">'blei_threshold_rate'</span>][<span class="nm">1</span>]  > <span class="nm">0.95</span>
         assert r[<span class="st">'blei_secure_rate'</span>][<span class="nm">1</span>]     > <span class="nm">0.80</span>
-        assert r[<span class="st">'gini_edc_adjusted'</span>][<span class="nm">1</span>]    < <span class="nm">0.22</span>
+        assert r[<span class="st">'gini_edc_adjusted'</span>][<span class="nm">1</span>]    < <span class="nm">0.22</span>  <span class="c"># STALE target — CFG.TARGET_GINI=0.25 in shipped code; measured v4.4 output is 0.518</span>
         assert r[<span class="st">'median_eppm'</span>][<span class="nm">1</span>]           > <span class="nm">2.00</span>
         assert r[<span class="st">'system_stability'</span>]          > <span class="nm">0.90</span>
         assert r[<span class="st">'blei_poverty_rate'</span>][<span class="nm">1</span>]     < <span class="nm">0.05</span>   <span class="c"># &lt;5% Crisis+Precarious</span>
@@ -794,8 +800,8 @@ YEARS             = <span class="nm">20</span>
     </div>
     <div class="param-card">
       <div class="name">Simulation Cost Scale (SIM_COST_SCALE)</div>
-      <div class="value">1,500 SIU</div>
-      <div class="desc"><strong>v3.3:</strong> renamed from <code>ANNUAL_BASE_COST</code> to avoid apparent contradiction with BASE_DAILY_COST ($68.33/day ≈ $24,941/yr vs. 1,500 SIU simulation scale — different unit systems). Operative quantity: income×12 / SIM_COST_SCALE &lt;1 for baseline agents (cost pressure); &gt;1 for CCO participants (accumulation). <span class="revision-pill">under revision</span></div>
+      <div class="value">1,500 SIU <em style="font-size:11px;font-weight:400">(retired as a wage-conversion input, v4.4)</em></div>
+      <div class="desc"><strong>v4.4:</strong> no longer drives the main wealth-accumulation loop, which uses <code>WAGE_TO_USD</code>/<code>LIVING_WAGE_ANNUAL</code> instead (see Mathematical Framework §2) — that switch happened in v4.3. The constant survives in the codebase only as a historical value; it is not load-bearing anywhere in the current simulation. <span class="revision-pill">superseded</span></div>
     </div>
     <div class="param-card">
       <div class="name">PTF Cost Reduction</div>
@@ -815,12 +821,12 @@ YEARS             = <span class="nm">20</span>
     <div class="param-card">
       <div class="name">Wealth Floor (Debt Ceiling)</div>
       <div class="value">−$10,000</div>
-      <div class="desc"><strong>v3.1 addition.</strong> Agents can accumulate debt down to −$10,000 (was hard floor at $0/$100). Allows insolvency dynamics, cascading wealth destruction during recessions, and more realistic recovery periods. Critical for accurate poverty trajectory modelling.</div>
+      <div class="desc"><strong>v3.1 addition.</strong> Agents can accumulate debt down to −$10,000 (was hard floor at $0/$100). Allows insolvency dynamics, cascading wealth destruction during recessions, and more realistic recovery periods. <strong>v4.4 note:</strong> now under active reconsideration — the Traditional Welfare Baseline's median wealth sits exactly at this floor in 100% of N=5,000 runs (up from "more than half" at v4.3), following v4.3's roughly-doubled cost anchor. See CONTRIBUTING.md's Model Architecture Feedback. <span class="revision-pill">under revision</span></div>
     </div>
     <div class="param-card">
       <div class="name">AI Automation Risk</div>
-      <div class="value">automationRisk ∈ [0.2, 1.0]</div>
-      <div class="desc"><strong>v3.1 addition.</strong> Per-agent heterogeneous automation exposure drawn at initialisation. Displacement = population_rate × automationRisk. Creates realistic inequality: high-risk occupations experience faster wage erosion than creative/relational roles.</div>
+      <div class="value">47%/53% bimodal, Beta(6,1)/Beta(1,6) <em style="font-size:11px;font-weight:400">(v4.3; was Uniform[0.2,1.0])</em></div>
+      <div class="desc"><strong>v4.3:</strong> replaced the earlier uniform draw with a bimodal mixture sourced to Frey &amp; Osborne (2013)/Autor (2015) — ~47% of US employment sits above a 70% computerization-probability threshold. Displacement = population_rate × automationRisk. Creates realistic inequality: high-risk occupations experience faster wage erosion than creative/relational roles. <strong>v4.4 note:</strong> a bug in the underlying gamma-distribution sampler (affecting the Beta(a,b) construction) was found and fixed independently of this calibration change — see CONTRIBUTING.md's v4.4 Release Notes.</div>
     </div>
     <div class="param-card">
       <div class="name">Recession Model</div>
@@ -1114,33 +1120,35 @@ L(i,t)    = max(0, wealth) × 0.20 + h_AE · AE   (liquid; wealth floored at 0 f
 Y(i,t)    = agent's actual wage income  [v3.1 fix: not wealth/60 proxy]
 BU_food_eff = 360 BU × $2.75 = $990 (food BU only — utility BU net zero in BLEI)
 C_basic   = $31.67/day (CCO-PTF) vs. $68.33/day (baseline)</div>
-  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:-4px">v4.0 note: the simulation's internal wage state is tracked in Simulation Income Units (SIU), a separate calibration unit from the USD figures L, BU_food_eff, and C_basic use — so Y here is SIU_TO_USD-converted before entering this formula (SIU_TO_USD = BASE_DAILY_COST×365 / SIM_COST_SCALE). Prior versions added the raw SIU number directly into this USD-denominated sum; external review (Refine.ink, Aug 2026) flagged this as an unclosed unit system. The same conversion applies to Y wherever it appears in §4 (FBS) and §5 (EDC-adjusted Gini) below — but <em>not</em> in §2's wealth-accumulation formula, which is unchanged from prior versions and still combines Y and living cost in their native internal scale; see the note under §2.</p>
+  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:-4px">v4.4 note (supersedes the v4.0 note this paragraph previously carried): the simulation's internal wage state is tracked in Simulation Income Units (SIU), a separate calibration unit from the USD figures L, BU_food_eff, and C_basic use — so Y here is <code>WAGE_TO_USD</code>-converted before entering this formula. Through v4.3, this formula (and §4 FBS, §5 EDC-adjusted Gini) used a different, cost-side-derived constant, <code>SIU_TO_USD</code> (≈16.63), while the wealth-accumulation loop in §2 already used <code>WAGE_TO_USD</code> (≈100.52, Census/BLS-sourced) — leaving the same agent's wage worth roughly $582/month here versus roughly $3,518/month in §2, a ~6× divergence external audit correctly flagged as indefensible once one anchor is empirically grounded and the other isn't. <code>SIU_TO_USD</code> is retired as of v4.4; every formula in this section — §1 (this one), §2, §4, and §5 — now uses the same <code>WAGE_TO_USD</code> anchor throughout. <code>agentEDC()</code> was and remains unaffected by any of this — it's a dimensionless SIU/SIU ratio that never touched either constant.</p>
 
   <h3 class="subsec">2. Wealth Dynamics with Annual Expense System</h3>
-  <div class="formula">Annual wealth update (v3.0/3.1 corrected):
+  <div class="formula">Annual wealth update (v4.3/v4.4 — supersedes the SIM_COST_SCALE-driven
+formula this section described through v4.2, see the note below for what changed and why):
 
-  ΔW = wageIncome × incomeMultiplier − livingCost + CCO_income × incomeMultiplier + AE_growth
+  ΔW = annualWageUSD − costUSD
 
-  wageIncome  = Y × 12 × agentVariance
-  livingCost  = SIM_COST_SCALE × inflationMult × costFactor      [v3.3: renamed from ANNUAL_BASE_COST]
-    where costFactor = (1 − PTF_savings) × (1 − PTH_housing) × (1 − CCO_food)
-                     = (1 − 0.12) × (1 − 0.35) × (1 − 0.20)  [full integration]
-                     ≈ 0.456 × SIM_COST_SCALE under full system
+  annualWageUSD = wage × 12 × WAGE_TO_USD × incomeShock
+  costUSD       = LIVING_WAGE_ANNUAL × (1+inflRate)^year × costFactor
 
-  PTF_savings:  cost REDUCTION factor (NOT wealth addition — v3.0 correction)
-  PTH_housing:  35% of annual cost covered by PTH (separate from AE growth; v4.0 adds a
-                payment→equity contribution alongside it — see §5 of the Assumptions panel
-                in the simulation itself)
-  CCO_food:     20% of annual cost covered by BU food basket
+  incomeShock  = popShock × agentVariance   [recession multiplier × individual noise]
+  costFactor   = (1 − PTF_discount) × (1 − PTH_discount) × (1 − CCO_discount)
+    PTF_discount: cost reduction from PTF participation (SZH-boosted if active)
+    PTH_discount: 0.65 fixed reduction while in PTH (35% of cost covered)
+    CCO_discount: 0.80 fixed reduction while CCO-active with BU > 0 (20% covered)
 
-  AE_growth   = r_a/12 × AE  [tracked separately; NOT double-counted in livingCost]
+  AE_growth   = r_a/12 × AE  [tracked separately in Acre Equity, NOT part of ΔW above —
+                see the PTH equity block; a portion of appreciation separately credits
+                liquid wealth, documented in index.html's own code comments]
 
-  Wealth floor: WEALTH_FLOOR = −$10,000  [v3.1: allows debt/insolvency dynamics]
+  Wealth floor: WEALTH_FLOOR = −$10,000  [v3.1: allows debt/insolvency dynamics; v4.4
+    Model Architecture Feedback flags this floor as needing reconsideration now that
+    LIVING_WAGE_ANNUAL is roughly double the pre-v4.3 cost anchor — see Known Limitations]
 
   Recession:   incomeMultiplier = 0.70 + beta(5,2) × 0.25  when recession active  [v3.3]
                mode = 0.90 (10% income loss); mean ≈0.88 (~12% loss); range [0.70, 0.95]
                [v3.1 prior: Uniform(0.65, 0.85)]</div>
-  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:-4px">v4.0 note: unlike §1/§4/§5, Y and livingCost here are <em>intentionally left in their native internal scale</em> (Y in SIU, livingCost via SIM_COST_SCALE) rather than converted to USD — this formula is unchanged from every prior version. We built and tested a version that converts Y to USD here too; because wage compounds against cost over up to 30 years, that version turned out to be extremely sensitive to the conversion constant (a ~3.5× range of candidate values swung 20-year outcomes from universal wealth-floor collapse to implausible multi-million-dollar median wealth). A defensible fix requires a joint recalibration of the wage distribution, cost scale, and every target metric against real income data — flagged as a candidate research direction, not attempted inside this fix pass. The reported <code>wealth</code> figure therefore keeps its pre-v4.0 meaning: nominally USD, but accumulated from wage/cost flows still expressed in SIU-scale terms — a documented simplification, not a silent one.</p>
+  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:-4px">v4.3/v4.4 note (supersedes the v4.0 note this paragraph previously carried, which described an unresolved sensitivity problem — now resolved): through v4.2, Y and living cost here were intentionally left in native internal SIU/SIM_COST_SCALE terms rather than converted to USD, because an early tested USD-converting version was extremely sensitive to the conversion constant (a ~3.5× range of candidate values swung 20-year outcomes from universal wealth-floor collapse to implausible multi-million-dollar median wealth) — flagged then as a candidate research direction, not a solved problem. v4.3 resolved this: <code>WAGE_TO_USD</code> (≈100.52, Census/BLS CPS ASEC 2023 median personal income ÷ 35 SIU × 12) converts wage, and <code>LIVING_WAGE_ANNUAL</code> ($49,370, World Population Review's MIT-sourced state living-wage table) anchors cost — replacing the old <code>BASE_DAILY_COST</code>-netted-against-real-wage approach, which was a bare-subsistence floor correct for BLEI's poverty-line use but wrong for a 20-year compounding loop, and which produced an ~11× wealth explosion and broke BU-monotonicity when tested naively. <code>SIM_COST_SCALE</code> no longer drives this formula at all as of v4.3 — it survives in the codebase only as a historical constant. This is not a "clean win": it redistributes as well as it grows — see Performance Comparison and CONTRIBUTING.md's v4.3 Release Notes for the full finding, including the Traditional Welfare Baseline's collapse to the wealth floor as a direct consequence of this same fix.</p>
 
   <h3 class="subsec">3. Heterogeneous AI Automation Displacement</h3>
   <div class="formula">Per-agent wage displacement (v3.1):
@@ -1154,10 +1162,19 @@ C_basic   = $31.67/day (CCO-PTF) vs. $68.33/day (baseline)</div>
     yr ≥ AI_DISPLACEMENT_YEAR_2 (15):  [phase-1 total] + 0.022/yr × (yr − 15 + 1)
     capped at 0.10/yr
 
-  agent.automationRisk ~ Uniform(0.2, 1.0)
-    → High-risk agent (0.9): 9× displacement vs. low-risk agent (0.1)
+  agent.automationRisk ~ 47%/53% bimodal mixture (v4.3; was Uniform(0.2, 1.0) through v4.2)
+    High-risk agents (47%) ~ Beta(6,1), mean ≈0.857
+    Low-risk agents (53%) ~ Beta(1,6), mean ≈0.143
+    Sourced to Frey &amp; Osborne (2013)/Autor (2015): ~47% of US employment sits above a
+    70% computerization-probability threshold across 702 O*NET occupations — replacing
+    the earlier uniform draw's implicit assumption that automation exposure is evenly
+    spread across the workforce, which the cited literature does not support.
     → Creates realistic inequality: routine/manual occupations vs. creative/relational
     → Duke's note: labour markets cannot reabsorb past 30% displacement (~yr 5, ≈2030)
+    → v4.4 note: the underlying gamma-distribution sampler this bimodal draw depends on
+      (via Beta(a,b) = Gamma(a)/(Gamma(a)+Gamma(b))) had a real bug at gamma(a=1) — see
+      CONTRIBUTING.md v4.4 Release Notes. Fixed; the distribution choice itself (bimodal,
+      these sources) is unchanged by that fix.
 
   v3.4: Assumes 2025 simulation start. Displacement yr 5+ (≈2030), accelerates yr 15+ (≈2040).</div>
 
@@ -1167,8 +1184,37 @@ C_basic   = $31.67/day (CCO-PTF) vs. $68.33/day (baseline)</div>
 FBS(i)  =  max( 0,  Y + BU_monthly − C_basic_cash_monthly − EDC_residual · Y )
 EDC_residual = consumer debt interest only (NOT housing — already in C_basic)
 BU_monthly = $1,200 face value (cash-equivalent food expenditure reduction)
-λ(i) ~ Uniform(0.001, 0.008)</div>
-  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:-4px">v4.0 note: this formula is now implemented in the simulation engine exactly as specified above (see <code>runYear()</code>). Prior versions (through v3.9) computed advancement from a fixed-probability heuristic gated on BLEI &gt; 30 days instead of FBS — a gap identified in external review (Refine.ink, Aug 2026) between this specification and the shipped code. Y is SIU_TO_USD-converted as noted under §1 above; EDC_residual uses the worked values from Table 1b (0.12 baseline, 0.025 for CCO+PTH participants) as a fixed proxy, not a separately-modelled consumer-debt submodel.</p>
+λ(i) ~ Uniform(0.0001654, 0.0013233)  [v4.4; was Uniform(0.001, 0.008) through v4.3 —
+  see the note below for why this changed and what its status is]</div>
+  <div class="info" style="margin:8px 0 0">
+    <strong>λ calibration status — open.</strong> The original range (0.001–0.008) is BLEI paper
+    §4 Index IV's published specification. At that range, even λ's low end already produces
+    ~89.8% advancement probability at this paper's own $2,281/month FBS worked example, and
+    ~97.5% at the companion simulation's median-wage agent (~$3,680/month FBS under Full
+    Integration) — meaning λ, whose stated purpose is to differentiate agents by individual
+    capability, does little differentiating once FBS is solidly positive. v4.4 rescaled the
+    <em>simulation's own operational calibration</em> to U(0.0001654, 0.0013233) — preserving
+    the original 8× heterogeneity span (0.0013233/0.0001654 ≈ 8) while restoring meaningful
+    variation in advancement probability across the model's actual FBS distribution. This is a
+    <strong>provisional behavioral recalibration, not a dimensionally-forced conversion</strong>
+    — FBS mixes a wage-derived term (which did change scale under v4.4's wage-scale unification)
+    with fixed-dollar terms (BU face value, basic cost) that did not, so FBS as a whole does not
+    scale by a single clean factor, and dividing λ by exactly the wage-conversion ratio is a
+    chosen fix for saturation, not a unit identity. Passing the simulation's own validation suite
+    (BU-monotonicity and five other internal-consistency checks) demonstrates the rescaled range
+    restores useful behavioral heterogeneity — it does not establish that 0.0001654–0.0013233 are
+    empirically correct real-world advancement probabilities; λ's empirical grounding remains
+    open in both the original and rescaled form. The BLEI paper itself retains 0.001–0.008 as its
+    published theoretical specification rather than being silently rewritten to match an evolving
+    simulation calibration — see its own note at Index IV for the same discussion. A more
+    interpretable reparameterization — reporting the half-saturation point FBS₅₀ = ln(2)/λ instead
+    of a raw 1/USD coefficient — is a recommended future direction: the original range implies
+    FBS₅₀ ≈ $87–$693/month (a high-capability agent needs only $87/month of residual bandwidth for
+    even odds of advancing); the v4.4 range implies FBS₅₀ ≈ $524–$4,191/month, a substantially more
+    meaningful spread given the FBS levels the model actually generates. Tracked as an open
+    calibration item — see CONTRIBUTING.md's Model Architecture Feedback.
+  </div>
+  <p style="font-size:12.5px;color:var(--muted,#666);margin-top:-4px">v4.0 note: this formula is now implemented in the simulation engine exactly as specified above (see <code>runYear()</code>). Prior versions (through v3.9) computed advancement from a fixed-probability heuristic gated on BLEI &gt; 30 days instead of FBS — a gap identified in external review (Refine.ink, Aug 2026) between this specification and the shipped code. Y is <code>WAGE_TO_USD</code>-converted as noted under §1 above (was <code>SIU_TO_USD</code> through v4.3 — retired v4.4, see §1); EDC_residual uses the worked values from Table 1b (0.12 baseline, 0.025 for CCO+PTH participants) as a fixed proxy, not a separately-modelled consumer-debt submodel.</p>
 
   <h3 class="subsec">5. EDC-Adjusted Gini &amp; BLEI Poverty</h3>
   <div class="formula">W_net(i)  =  W_nominal(i)  −  EDC_full(i) · Y(i) · 12
@@ -1308,6 +1354,9 @@ Phase 3 — National Deployment (Years 6–10):
 <!-- JSON APPENDIX -->
 <div class="appendix">
   <div class="section-title">Appendix A: Calibrated Parameters Dataset — v3.3</div>
+  <div class="info" style="margin-bottom:12px">
+    <strong>Same caveat as Agent Architecture and Simulation Engine, above: this JSON dataset is a v3.5.0/v3.3-era snapshot, not kept in sync with the shipped v4.4 simulation.</strong> Its <code>unit_system_note.sim_cost_scale</code> field and <code>automation_risk</code> distribution both describe mechanics superseded in v4.3 (see Mathematical Framework §2, §3). Preserved as historical/illustrative rather than rewritten field-by-field — see <code>index.html</code>'s own CFG object and CONTRIBUTING.md's Calibration Validation table for the current, authoritative parameter set.
+  </div>
   <p style="margin-bottom:14px">Complete JSON dataset with v3.3 calibrated parameters. v3.1 additions: annual expense system, wealth floor, heterogeneous AI automation risk, PTF as cost-reduction mechanism, BLEI poverty metric, incomeMultiplier recession field. v3.3 additions: wage diminishing returns, beta(5,2) recession distribution, SIM_COST_SCALE rename, Gini zero-wealth fix, participant stratification, computed OAT sensitivity, validation suite, 50× Monte Carlo CI.</p>
 
 <div class="json-block">{
