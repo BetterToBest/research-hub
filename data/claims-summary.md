@@ -9,14 +9,14 @@ Figures: **6522** on 55 pages and PDFs.
 | Class | Figures | keep | correct | relabel | remove |
 |---|---|---|---|---|---|
 | simulation | 6 | 0 | 6 | 0 | 0 |
-| derived | 1036 | 828 | 172 | 36 | 0 |
-| external source | 189 | 152 | 37 | 0 | 0 |
-| design parameter | 1429 | 1299 | 50 | 80 | 0 |
-| illustrative projection | 308 | 255 | 41 | 12 | 0 |
-| corpus metadata | 647 | 629 | 3 | 0 | 15 |
-| no basis found | 2907 | 0 | 264 | 910 | 1733 |
+| derived | 1037 | 827 | 174 | 36 | 0 |
+| external source | 178 | 141 | 37 | 0 | 0 |
+| design parameter | 1509 | 1394 | 47 | 68 | 0 |
+| illustrative projection | 308 | 250 | 46 | 12 | 0 |
+| corpus metadata | 655 | 637 | 3 | 0 | 15 |
+| no basis found | 2829 | 0 | 285 | 949 | 1595 |
 
-Classed by a reviewed rule or the reference list: 5621; by a generic rule or a paper default: 901.
+Classed by a reviewed rule or the reference list: 6133; by a generic rule or a paper default: 389.
 
 ## By page
 
@@ -38,7 +38,7 @@ Classed by a reviewed rule or the reference list: 5621; by a generic rule or a p
 | dual-currency-inflation.html | 0 | 9 | 2 | 27 | 0 | 33 | 58 |
 | economic-modeling-simulation.html | 0 | 3 | 16 | 50 | 4 | 31 | 279 |
 | index.html | 0 | 29 | 5 | 48 | 6 | 9 | 16 |
-| integrated-digital-governance.html | 0 | 3 | 1 | 14 | 0 | 18 | 55 |
+| integrated-digital-governance.html | 0 | 0 | 1 | 20 | 0 | 24 | 46 |
 | integrated-implementation-roadmap.html | 0 | 0 | 0 | 93 | 1 | 4 | 34 |
 | new-frame-and-lens.html | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | new-frame-and-lens.md | 0 | 0 | 0 | 0 | 0 | 5 | 0 |
@@ -55,14 +55,14 @@ Classed by a reviewed rule or the reference list: 5621; by a generic rule or a p
 | papers/pdfs/drug-policy-reform.pdf | 0 | 0 | 6 | 0 | 0 | 14 | 124 |
 | papers/pdfs/dual-currency-inflation.pdf | 0 | 2 | 2 | 6 | 0 | 23 | 92 |
 | papers/pdfs/economic-modeling-simulation.pdf | 0 | 1 | 1 | 15 | 0 | 0 | 222 |
-| papers/pdfs/integrated-digital-governance.pdf | 0 | 2 | 4 | 22 | 0 | 16 | 49 |
+| papers/pdfs/integrated-digital-governance.pdf | 0 | 0 | 1 | 5 | 0 | 16 | 71 |
 | papers/pdfs/optimal-transfer-design.pdf | 0 | 19 | 4 | 8 | 0 | 27 | 29 |
 | papers/pdfs/pth-government-integration.pdf | 0 | 5 | 0 | 15 | 0 | 2 | 110 |
 | papers/pdfs/pth-independent-financing.pdf | 0 | 21 | 0 | 82 | 54 | 1 | 46 |
 | papers/pdfs/public-trust-financial.pdf | 0 | 0 | 0 | 33 | 9 | 2 | 51 |
 | papers/pdfs/risk-mitigation-framework.pdf | 0 | 14 | 0 | 1 | 0 | 6 | 19 |
-| papers/pdfs/universal-implementation-framework.pdf | 0 | 2 | 8 | 41 | 5 | 11 | 90 |
-| papers/pdfs/us-real-estate-transformation.pdf | 0 | 0 | 0 | 46 | 0 | 2 | 24 |
+| papers/pdfs/universal-implementation-framework.pdf | 0 | 0 | 0 | 143 | 0 | 9 | 5 |
+| papers/pdfs/us-real-estate-transformation.pdf | 0 | 3 | 0 | 1 | 2 | 1 | 65 |
 | pth-government-integration.html | 0 | 23 | 0 | 81 | 0 | 2 | 56 |
 | pth-independent-financing.html | 0 | 18 | 0 | 64 | 61 | 2 | 53 |
 | public-trust-financial.html | 0 | 8 | 0 | 47 | 14 | 4 | 54 |
@@ -70,8 +70,8 @@ Classed by a reviewed rule or the reference list: 5621; by a generic rule or a p
 | research-summary.html | 0 | 33 | 6 | 49 | 5 | 12 | 36 |
 | research-summary.md | 0 | 0 | 0 | 1 | 0 | 3 | 0 |
 | risk-mitigation-framework.html | 0 | 8 | 0 | 7 | 0 | 18 | 16 |
-| universal-implementation-framework.html | 0 | 0 | 0 | 3 | 1 | 1 | 64 |
-| us-real-estate-transformation.html | 0 | 0 | 0 | 32 | 0 | 5 | 38 |
+| universal-implementation-framework.html | 0 | 0 | 0 | 45 | 1 | 6 | 17 |
+| us-real-estate-transformation.html | 0 | 5 | 0 | 24 | 3 | 5 | 38 |
 | wiki/faq.html | 0 | 0 | 0 | 27 | 1 | 6 | 5 |
 | wiki/glossary.html | 0 | 0 | 0 | 22 | 15 | 3 | 1 |
 | wiki/implementation-roadmap.html | 0 | 0 | 0 | 41 | 0 | 1 | 6 |
@@ -988,61 +988,52 @@ Classed by a reviewed rule or the reference list: 5621; by a generic rule or a p
 | 79d9a7befc | index.html | 3.00 | calculation | correct |  | BLEI Flourishing entry (near-poverty): ~33 months (sensitivity range: 28–47 months across ε_food ∈ [1.50, 3.00]) |
 | 8eeb083621 | index.html | $22,800–$59,900 | estimate | relabel |  | IPBI high-wealth non-participants: $22,800–$59,900/year (conservative $22,800 preferred; channel coefficients defined in BLEI Foundation Paper) |
 | d5416b7532 | index.html | $22,800 | estimate | relabel |  | IPBI high-wealth non-participants: $22,800–$59,900/year (conservative $22,800 preferred; channel coefficients defined in BLEI Foundation Paper) |
-| 1f0be79aa8 | integrated-digital-governance.html | 31 | fact | remove |  | Date: August 31, 2025 |
-| e34b3ef759 | integrated-digital-governance.html | 0.49 to 0.28 | projection | relabel |  | …ployment of these systems could achieve significant improvements in economic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion  |
-| e4f2c81fcf | integrated-digital-governance.html | 55% | projection | relabel |  | …n economic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutio |
-| 2f8c9ec498 | integrated-digital-governance.html | 85% | projection | relabel |  | …mic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutional con |
-| c8bcbf23d6 | integrated-digital-governance.html | 0.65 to 0.88 | projection | relabel |  | …9 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutional continuity.… |
-| 2ffe7d5d7c | integrated-digital-governance.html | 0.15 | fact | remove |  | θ ∈ [0.15, 0.25] is the synergy coefficient capturing positive externalities |
-| d450eec8bb | integrated-digital-governance.html | 0.25 | fact | remove |  | θ ∈ [0.15, 0.25] is the synergy coefficient capturing positive externalities |
-| 5126916d39 | integrated-digital-governance.html | 50% | fact | remove |  | Conversion Premium: PTF workers receive 50% bonus on CCO conversion rates |
-| f3a9b7cd98 | integrated-digital-governance.html | 180% | projection | relabel | B075 | Quantitative analysis shows that integrated CCO-PTF implementation achieves 180% higher wealth accumulation compared to either system alone, with median participant wealth reaching $82,000 over 20 years versus $37,000 fo |
-| 79bd6fad9e | integrated-digital-governance.html | $82,000 | projection | relabel | B075 | Quantitative analysis shows that integrated CCO-PTF implementation achieves 180% higher wealth accumulation compared to either system alone, with median participant wealth reaching $82,000 over 20 years versus $37,000 fo |
-| 0669637f01 | integrated-digital-governance.html | 20 | projection | relabel | B075 | Quantitative analysis shows that integrated CCO-PTF implementation achieves 180% higher wealth accumulation compared to either system alone, with median participant wealth reaching $82,000 over 20 years versus $37,000 fo |
-| 24b25c9a04 | integrated-digital-governance.html | $37,000 | projection | relabel | B075 | Quantitative analysis shows that integrated CCO-PTF implementation achieves 180% higher wealth accumulation compared to either system alone, with median participant wealth reaching $82,000 over 20 years versus $37,000 fo |
-| a4780b9014 | integrated-digital-governance.html | 55% | projection | relabel |  | Modeling demonstrates participation rates increasing from current baseline of 55% to 85% with integrated CIP-SZH implementation, while deliberative quality scores improve by 67% due to enhanced information access and str |
-| 3f88a9cee0 | integrated-digital-governance.html | 85% | projection | relabel |  | Modeling demonstrates participation rates increasing from current baseline of 55% to 85% with integrated CIP-SZH implementation, while deliberative quality scores improve by 67% due to enhanced information access and str |
-| 5f08548514 | integrated-digital-governance.html | 67% | projection | relabel |  | Modeling demonstrates participation rates increasing from current baseline of 55% to 85% with integrated CIP-SZH implementation, while deliberative quality scores improve by 67% due to enhanced information access and str |
-| 20fc47d76b | integrated-digital-governance.html | 0.65 to 0.88 | projection | relabel |  | Social cohesion indices show improvement from 0.65 to 0.88 on standardized scales, with particular gains in inter-group trust (+34%) and collective efficacy (+52%). |
-| 21f85eb1e5 | integrated-digital-governance.html | +34% | projection | relabel |  | Social cohesion indices show improvement from 0.65 to 0.88 on standardized scales, with particular gains in inter-group trust (+34%) and collective efficacy (+52%). |
-| 4427605ca6 | integrated-digital-governance.html | +52% | projection | relabel |  | Social cohesion indices show improvement from 0.65 to 0.88 on standardized scales, with particular gains in inter-group trust (+34%) and collective efficacy (+52%). |
-| 5984785847 | integrated-digital-governance.html | 28% | fact | remove |  | Residential segregation indices decrease by 28% while maintaining community identity and cultural distinctiveness. |
-| bca525b9de | integrated-digital-governance.html | 1-9 | fact | remove |  | Phase 1: Foundation (Months 1-9) |
-| efe0ebc44b | integrated-digital-governance.html | 1,000 | fact | remove |  | Launch CCO pilot with 1,000 participants |
-| 0d3b48ba8d | integrated-digital-governance.html | 10-21 | fact | remove |  | Phase 2: Integration (Months 10-21) |
-| 425d1a3548 | integrated-digital-governance.html | 10,000 | fact | remove |  | Scale to 10,000 participants |
-| b35475c15c | integrated-digital-governance.html | 22-45 | fact | remove |  | Phase 3: Expansion (Months 22-45) |
-| 2907ef3681 | integrated-digital-governance.html | 100,000 | fact | remove |  | Scale to 100,000 participants |
-| a12ff06b97 | integrated-digital-governance.html | 4-5 | fact | remove |  | Phase 4: Maturation (Years 4-5) |
-| 74975a40da | integrated-digital-governance.html | 1-2 | fact | remove |  | / Category / Phase 1-2 (Years 1-2) / Phase 3-4 (Years 3-5) / Total |
-| 31d59cfde0 | integrated-digital-governance.html | 3-5 | fact | remove |  | / Category / Phase 1-2 (Years 1-2) / Phase 3-4 (Years 3-5) / Total |
-| ec59accce4 | integrated-digital-governance.html | $2.1B | fact | remove |  | / Technology Infrastructure / $2.1B / $1.8B / $3.9B |
-| 25df01c234 | integrated-digital-governance.html | $1.8B | fact | remove |  | / Technology Infrastructure / $2.1B / $1.8B / $3.9B |
-| aecbd63c06 | integrated-digital-governance.html | $3.9B | fact | remove |  | / Technology Infrastructure / $2.1B / $1.8B / $3.9B |
-| de9a08929a | integrated-digital-governance.html | $8.7B | fact | remove |  | / PTF Property Acquisition / $8.7B / $12.3B / $21.0B |
-| f65f49ff4e | integrated-digital-governance.html | $12.3B | fact | remove |  | / PTF Property Acquisition / $8.7B / $12.3B / $21.0B |
-| 568ceade28 | integrated-digital-governance.html | $21.0B | fact | remove |  | / PTF Property Acquisition / $8.7B / $12.3B / $21.0B |
-| 9ade060f6b | integrated-digital-governance.html | $4.2B | fact | remove |  | / CCO Initial Distribution / $4.2B / $18.6B / $22.8B |
-| 56f13f29bc | integrated-digital-governance.html | $18.6B | fact | remove |  | / CCO Initial Distribution / $4.2B / $18.6B / $22.8B |
-| 3d268449a8 | integrated-digital-governance.html | $22.8B | fact | remove |  | / CCO Initial Distribution / $4.2B / $18.6B / $22.8B |
-| 5b20f6f097 | integrated-digital-governance.html | $1.9B | fact | remove |  | / Personnel and Operations / $1.9B / $3.1B / $5.0B |
-| dba9f1133f | integrated-digital-governance.html | $3.1B | fact | remove |  | / Personnel and Operations / $1.9B / $3.1B / $5.0B |
-| cb2ab6fdd5 | integrated-digital-governance.html | $5.0B | fact | remove |  | / Personnel and Operations / $1.9B / $3.1B / $5.0B |
-| c8d97e7b2f | integrated-digital-governance.html | $0.8B | fact | remove |  | / Legal and Regulatory / $0.8B / $0.6B / $1.4B |
-| 9f8207216c | integrated-digital-governance.html | $0.6B | fact | remove |  | / Legal and Regulatory / $0.8B / $0.6B / $1.4B |
-| eeba698074 | integrated-digital-governance.html | $1.4B | fact | remove |  | / Legal and Regulatory / $0.8B / $0.6B / $1.4B |
-| f9e97ba526 | integrated-digital-governance.html | $17.7B | fact | remove |  | / Total / $17.7B / $36.4B / $54.1B |
-| 002930cd35 | integrated-digital-governance.html | $36.4B | fact | remove |  | / Total / $17.7B / $36.4B / $54.1B |
-| 6047142279 | integrated-digital-governance.html | $54.1B | fact | remove |  | / Total / $17.7B / $36.4B / $54.1B |
-| b835ff42d7 | integrated-digital-governance.html | 10 | projection | relabel |  | SDG 10 (Reduced Inequalities): PTF wealth redistribution mechanisms |
-| a3b79f4d97 | integrated-digital-governance.html | 11 | fact | remove |  | SDG 11 (Sustainable Cities): SZH urban planning integration |
-| d4ea45518d | integrated-digital-governance.html | 16 | fact | remove |  | SDG 16 (Peace and Justice): CIP democratic participation enhancement |
-| 5c3ed9453f | integrated-digital-governance.html | 27001 | fact | remove |  | ISO 27001 compliance for cybersecurity |
-| d0545905d1 | integrated-digital-governance.html | 0.49 to 0.28 | projection | relabel |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
-| abe490d054 | integrated-digital-governance.html | 55% | projection | relabel |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
-| 22a4613090 | integrated-digital-governance.html | 85% | projection | relabel |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
-| c94a89858a | integrated-digital-governance.html | 0.65 to 0.88 | projection | relabel |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
-| 415ee4ab47 | integrated-digital-governance.html | 2.0 | fact | remove |  | OAuth 2.0 + OpenID Connect for authentication |
+| e34b3ef759 | integrated-digital-governance.html | 0.49 to 0.28 | simulation result | remove |  | …ployment of these systems could achieve significant improvements in economic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion  |
+| e4f2c81fcf | integrated-digital-governance.html | 55% | simulation result | remove |  | …n economic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutio |
+| 2f8c9ec498 | integrated-digital-governance.html | 85% | simulation result | remove |  | …mic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutional con |
+| c8bcbf23d6 | integrated-digital-governance.html | 0.65 to 0.88 | simulation result | remove |  | …9 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutional continuity.… |
+| b7f52020b6 | integrated-digital-governance.html | 30% | simulation result | remove |  | Enhanced Velocity: Basic units accepted at PTF establishments increase monetary velocity by 30% |
+| f3a9b7cd98 | integrated-digital-governance.html | 180% | simulation result | remove | B075 | Quantitative analysis shows that integrated CCO-PTF implementation achieves 180% higher wealth accumulation compared to either system alone, with median participant wealth reaching $82,000 over 20 years versus $37,000 fo |
+| 79bd6fad9e | integrated-digital-governance.html | $82,000 | simulation result | remove | B075 | Quantitative analysis shows that integrated CCO-PTF implementation achieves 180% higher wealth accumulation compared to either system alone, with median participant wealth reaching $82,000 over 20 years versus $37,000 fo |
+| 0669637f01 | integrated-digital-governance.html | 20 | simulation result | remove | B075 | Quantitative analysis shows that integrated CCO-PTF implementation achieves 180% higher wealth accumulation compared to either system alone, with median participant wealth reaching $82,000 over 20 years versus $37,000 fo |
+| 24b25c9a04 | integrated-digital-governance.html | $37,000 | simulation result | remove | B075 | Quantitative analysis shows that integrated CCO-PTF implementation achieves 180% higher wealth accumulation compared to either system alone, with median participant wealth reaching $82,000 over 20 years versus $37,000 fo |
+| a4780b9014 | integrated-digital-governance.html | 55% | simulation result | remove |  | Modeling demonstrates participation rates increasing from current baseline of 55% to 85% with integrated CIP-SZH implementation, while deliberative quality scores improve by 67% due to enhanced information access and str |
+| 3f88a9cee0 | integrated-digital-governance.html | 85% | simulation result | remove |  | Modeling demonstrates participation rates increasing from current baseline of 55% to 85% with integrated CIP-SZH implementation, while deliberative quality scores improve by 67% due to enhanced information access and str |
+| 5f08548514 | integrated-digital-governance.html | 67% | simulation result | remove |  | Modeling demonstrates participation rates increasing from current baseline of 55% to 85% with integrated CIP-SZH implementation, while deliberative quality scores improve by 67% due to enhanced information access and str |
+| 20fc47d76b | integrated-digital-governance.html | 0.65 to 0.88 | simulation result | remove |  | Social cohesion indices show improvement from 0.65 to 0.88 on standardized scales, with particular gains in inter-group trust (+34%) and collective efficacy (+52%). |
+| 21f85eb1e5 | integrated-digital-governance.html | +34% | simulation result | remove |  | Social cohesion indices show improvement from 0.65 to 0.88 on standardized scales, with particular gains in inter-group trust (+34%) and collective efficacy (+52%). |
+| 4427605ca6 | integrated-digital-governance.html | +52% | simulation result | remove |  | Social cohesion indices show improvement from 0.65 to 0.88 on standardized scales, with particular gains in inter-group trust (+34%) and collective efficacy (+52%). |
+| 5984785847 | integrated-digital-governance.html | 28% | simulation result | remove |  | Residential segregation indices decrease by 28% while maintaining community identity and cultural distinctiveness. |
+| 986fd33a70 | integrated-digital-governance.html | 45% | simulation result | remove |  | Infrastructure cost reductions of 45% compared to separate system implementation, with enhanced reliability through shared redundancy and professional security management. |
+| 74975a40da | integrated-digital-governance.html | 1-2 | cost estimate | relabel |  | / Category / Phase 1-2 (Years 1-2) / Phase 3-4 (Years 3-5) / Total |
+| 31d59cfde0 | integrated-digital-governance.html | 3-5 | cost estimate | relabel |  | / Category / Phase 1-2 (Years 1-2) / Phase 3-4 (Years 3-5) / Total |
+| ec59accce4 | integrated-digital-governance.html | $2.1B | cost estimate | relabel |  | / Technology Infrastructure / $2.1B / $1.8B / $3.9B |
+| 25df01c234 | integrated-digital-governance.html | $1.8B | cost estimate | relabel |  | / Technology Infrastructure / $2.1B / $1.8B / $3.9B |
+| aecbd63c06 | integrated-digital-governance.html | $3.9B | cost estimate | relabel |  | / Technology Infrastructure / $2.1B / $1.8B / $3.9B |
+| de9a08929a | integrated-digital-governance.html | $8.7B | cost estimate | relabel |  | / PTF Property Acquisition / $8.7B / $12.3B / $21.0B |
+| f65f49ff4e | integrated-digital-governance.html | $12.3B | cost estimate | relabel |  | / PTF Property Acquisition / $8.7B / $12.3B / $21.0B |
+| 568ceade28 | integrated-digital-governance.html | $21.0B | cost estimate | relabel |  | / PTF Property Acquisition / $8.7B / $12.3B / $21.0B |
+| 9ade060f6b | integrated-digital-governance.html | $4.2B | cost estimate | relabel |  | / CCO Initial Distribution / $4.2B / $18.6B / $22.8B |
+| 56f13f29bc | integrated-digital-governance.html | $18.6B | cost estimate | relabel |  | / CCO Initial Distribution / $4.2B / $18.6B / $22.8B |
+| 3d268449a8 | integrated-digital-governance.html | $22.8B | cost estimate | relabel |  | / CCO Initial Distribution / $4.2B / $18.6B / $22.8B |
+| 5b20f6f097 | integrated-digital-governance.html | $1.9B | cost estimate | relabel |  | / Personnel and Operations / $1.9B / $3.1B / $5.0B |
+| dba9f1133f | integrated-digital-governance.html | $3.1B | cost estimate | relabel |  | / Personnel and Operations / $1.9B / $3.1B / $5.0B |
+| cb2ab6fdd5 | integrated-digital-governance.html | $5.0B | cost estimate | relabel |  | / Personnel and Operations / $1.9B / $3.1B / $5.0B |
+| c8d97e7b2f | integrated-digital-governance.html | $0.8B | cost estimate | relabel |  | / Legal and Regulatory / $0.8B / $0.6B / $1.4B |
+| 9f8207216c | integrated-digital-governance.html | $0.6B | cost estimate | relabel |  | / Legal and Regulatory / $0.8B / $0.6B / $1.4B |
+| eeba698074 | integrated-digital-governance.html | $1.4B | cost estimate | relabel |  | / Legal and Regulatory / $0.8B / $0.6B / $1.4B |
+| f9e97ba526 | integrated-digital-governance.html | $17.7B | cost estimate | relabel |  | / Total / $17.7B / $36.4B / $54.1B |
+| 002930cd35 | integrated-digital-governance.html | $36.4B | cost estimate | relabel |  | / Total / $17.7B / $36.4B / $54.1B |
+| 6047142279 | integrated-digital-governance.html | $54.1B | cost estimate | relabel |  | / Total / $17.7B / $36.4B / $54.1B |
+| e6d88463b4 | integrated-digital-governance.html | $89 billion | cost estimate | relabel |  | Long-term annual surplus projected at $89 billion by Year 10. |
+| 8c5d15dc20 | integrated-digital-governance.html | 10 | cost estimate | relabel |  | Long-term annual surplus projected at $89 billion by Year 10. |
+| d0545905d1 | integrated-digital-governance.html | 0.49 to 0.28 | simulation result | remove |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
+| abe490d054 | integrated-digital-governance.html | 55% | simulation result | remove |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
+| 22a4613090 | integrated-digital-governance.html | 85% | simulation result | remove |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
+| c94a89858a | integrated-digital-governance.html | 0.65 to 0.88 | simulation result | remove |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
+| 361998fb53 | integrated-digital-governance.html | $54.1 billion | cost estimate | relabel |  | Budget requirements of $54.1 billion over five years are substantial but achieve fiscal break-even by Year 6 through system-generated revenues and reduced social service costs. |
+| 853745c9a5 | integrated-digital-governance.html | $89 billion | simulation result | remove |  | Long-term projections show annual surpluses of $89 billion by Year 10. |
+| 9a70bf3726 | integrated-digital-governance.html | 10 | simulation result | remove |  | Long-term projections show annual surpluses of $89 billion by Year 10. |
 | 057a860d98 | integrated-implementation-roadmap.html | 80% | projection | relabel |  | 80% |
 | 99b498fdc0 | integrated-implementation-roadmap.html | 90% | projection | relabel |  | 90% |
 | 3f85d574f2 | integrated-implementation-roadmap.html | 95% | projection | relabel |  | 95% |
@@ -2239,55 +2230,77 @@ Classed by a reviewed rule or the reference list: 5621; by a generic rule or a p
 | f5a7375c6c | papers/pdfs/economic-modeling-simulation.pdf | 20 | simulation result | remove |  | Inequality Reduction: Gini coefficient reaches Nordic levels within 20 years 5. |
 | 90bd4a41d3 | papers/pdfs/economic-modeling-simulation.pdf | 94% | simulation result | remove |  | Systemic Stability: 94% resilience across diverse scenarios 6. |
 | aacfaed099 | papers/pdfs/economic-modeling-simulation.pdf | 45% | simulation result | remove |  | …Environmental Benefits: 45% carbon reduction through integrated design The model shows that PTF integration transforms CCO from a progressive welfa… |
-| 0b3a08a228 | papers/pdfs/integrated-digital-governance.pdf | 0.49 to 0.28 | projection | relabel |  | …ployment of these systems could achieve significant improvements in economic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion  |
-| 401d84c40b | papers/pdfs/integrated-digital-governance.pdf | 55% | projection | relabel |  | …n economic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutio |
-| 6764cd2169 | papers/pdfs/integrated-digital-governance.pdf | 85% | projection | relabel |  | …mic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutional con |
-| da95d2dae8 | papers/pdfs/integrated-digital-governance.pdf | 0.65 to 0.88 | projection | relabel |  | …9 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutional continuity.… |
-| d4012ddbdc | papers/pdfs/integrated-digital-governance.pdf | 0.15 | simulation result | remove |  | θ ∈ [0.15, 0.25] is the synergy coefficient capturing positive externalities 4.2 CIP Democratic Participation Model Citizen engagement follows a modified power law distribution with platform effects: |
-| 358b79f618 | papers/pdfs/integrated-digital-governance.pdf | 0.25 | simulation result | remove |  | θ ∈ [0.15, 0.25] is the synergy coefficient capturing positive externalities 4.2 CIP Democratic Participation Model Citizen engagement follows a modified power law distribution with platform effects: |
-| a9c53ca86d | papers/pdfs/integrated-digital-governance.pdf | 1-9 | fact | remove |  | …Implementation Strategy 6.1 Staged Deployment Pathway Phase 1: Foundation (Months 1-9) Establish legal and regulatory framework Deploy basic CIP infrastructure Launch CCO pilot with 1,000 participants Init… |
-| f27a576503 | papers/pdfs/integrated-digital-governance.pdf | 1,000 | fact | remove |  | … Foundation (Months 1-9) Establish legal and regulatory framework Deploy basic CIP infrastructure Launch CCO pilot with 1,000 participants Initiate PTF property acquisition Phase 2: Integration (Months 10-21) Connect CC |
-| 5e3389cf58 | papers/pdfs/integrated-digital-governance.pdf | 10-21 | fact | remove |  | … infrastructure Launch CCO pilot with 1,000 participants Initiate PTF property acquisition Phase 2: Integration (Months 10-21) Connect CCO and PTF systems Implement zone designation process Scale to 10,000 participants  |
-| 97d7442cbb | papers/pdfs/integrated-digital-governance.pdf | 10,000 | fact | remove |  | …acquisition Phase 2: Integration (Months 10-21) Connect CCO and PTF systems Implement zone designation process Scale to 10,000 participants Develop governance structures Phase 3: Expansion (Months 22-45) Full system int |
-| 6ecc09be13 | papers/pdfs/integrated-digital-governance.pdf | 22-45 | fact | remove |  | …mplement zone designation process Scale to 10,000 participants Develop governance structures Phase 3: Expansion (Months 22-45) Full system integration Scale to 100,000 participants Implement advanced features Establish  |
-| c96e4a70d5 | papers/pdfs/integrated-digital-governance.pdf | 100,000 | fact | remove |  | …to 10,000 participants Develop governance structures Phase 3: Expansion (Months 22-45) Full system integration Scale to 100,000 participants Implement advanced features Establish inter-regional connections Phase 4: Matu |
-| 9b594ee2d7 | papers/pdfs/integrated-digital-governance.pdf | 4-5 | fact | remove |  | …ale to 100,000 participants Implement advanced features Establish inter-regional connections Phase 4: Maturation (Years 4-5) Optimize based on data National policy integration International cooperation Self-sustaining o |
-| e692ac7c58 | papers/pdfs/integrated-digital-governance.pdf | $1.5B | projection | relabel |  | …uction: $3B (30% reduction for participants) Economic Productivity: $2B (enhanced creative economy) Healthcare Savings: $1.5B (improved social determinants) Crime Reduction: $800M (enhanced community cohesion) Administr |
-| aac1073b8a | papers/pdfs/integrated-digital-governance.pdf | $800M | projection | relabel |  | …Productivity: $2B (enhanced creative economy) Healthcare Savings: $1.5B (improved social determinants) Crime Reduction: $800M (enhanced community cohesion) Administrative Efficiency: $700M (reduced program redundancy) T |
-| 59485b089b | papers/pdfs/integrated-digital-governance.pdf | $700M | projection | relabel |  | …s: $1.5B (improved social determinants) Crime Reduction: $800M (enhanced community cohesion) Administrative Efficiency: $700M (reduced program redundancy) Total Five-Year Benefit: $8B… |
-| d625e52018 | papers/pdfs/integrated-digital-governance.pdf | $8B | projection | relabel |  | …0M (enhanced community cohesion) Administrative Efficiency: $700M (reduced program redundancy) Total Five-Year Benefit: $8B… |
-| aed4f2c405 | papers/pdfs/integrated-digital-governance.pdf | 55% | fact | remove |  | 0.49 55% |
-| 9d9358c7f5 | papers/pdfs/integrated-digital-governance.pdf | 30% | fact | remove |  | 30% burden |
-| 459240a74a | papers/pdfs/integrated-digital-governance.pdf | 75% | fact | remove |  | 75% |
-| e43a42a4df | papers/pdfs/integrated-digital-governance.pdf | 60% | fact | remove |  | 60% |
-| d17cd5b6af | papers/pdfs/integrated-digital-governance.pdf | 46.7% | fact | remove |  | 46.7% |
-| 71fa23e161 | papers/pdfs/integrated-digital-governance.pdf | 42% | fact | remove |  | 42% |
-| a531d8882f | papers/pdfs/integrated-digital-governance.pdf | 85% | projection | relabel |  | 85% (projected) |
-| 29cd69f201 | papers/pdfs/integrated-digital-governance.pdf | 20% | fact | remove |  | 20% |
-| 25120a4046 | papers/pdfs/integrated-digital-governance.pdf | 22% | fact | remove |  | 22% |
-| f9843a15d2 | papers/pdfs/integrated-digital-governance.pdf | 35% | fact | remove |  | 35% |
-| 1a3265f9f6 | papers/pdfs/integrated-digital-governance.pdf | 25% | fact | remove |  | 25% burden |
-| 6dcbd9ad4b | papers/pdfs/integrated-digital-governance.pdf | 18% | fact | remove |  | 18% burden |
-| b0cf476009 | papers/pdfs/integrated-digital-governance.pdf | 65% | fact | remove |  | 65% |
-| 6776ccd4b9 | papers/pdfs/integrated-digital-governance.pdf | 82% | fact | remove |  | 82% |
-| 2f7d7003ea | papers/pdfs/integrated-digital-governance.pdf | 89% | fact | remove |  | 89% |
-| db51bb7439 | papers/pdfs/integrated-digital-governance.pdf | 99% | fact | remove |  | 99% |
-| eea24343b1 | papers/pdfs/integrated-digital-governance.pdf | 92% | projection | relabel |  | 92% (projected) |
-| 9bdd2ad9fe | papers/pdfs/integrated-digital-governance.pdf | 97% | projection | relabel |  | …ulation uses i-Voting Blockchain-secured health records since 2023 Singapore's Smart Nation: National Digital Identity: 97% adoption LifeSG app: 400+ government services GovTech stack: 75% processing time reduction Indi |
-| a73965725b | papers/pdfs/integrated-digital-governance.pdf | 400+ | projection | relabel |  | …ckchain-secured health records since 2023 Singapore's Smart Nation: National Digital Identity: 97% adoption LifeSG app: 400+ government services GovTech stack: 75% processing time reduction India's Digital Public Infras |
-| 63b773b0d0 | papers/pdfs/integrated-digital-governance.pdf | 37120 | fact | remove |  | ISO 37120:2018 Sustainable Cities Standards |
-| d0de0dc262 | papers/pdfs/integrated-digital-governance.pdf | 55% | projection | relabel |  | …The framework addresses core democratic deficits through expanded citizen participation (projected increase from 55% to 85%), economic inequality through community wealth building (Gini coefficient reduction from 0.49 t |
-| f589d1c88a | papers/pdfs/integrated-digital-governance.pdf | 85% | projection | relabel |  | …The framework addresses core democratic deficits through expanded citizen participation (projected increase from 55% to 85%), economic inequality through community wealth building (Gini coefficient reduction from 0.49 t |
-| e1462a0ba4 | papers/pdfs/integrated-digital-governance.pdf | 0.49 to 0.28 | projection | relabel |  | …ected increase from 55% to 85%), economic inequality through community wealth building (Gini coefficient reduction from 0.49 to 0.28), housing insecurity through collective ownership structures (housing burden reduction |
-| 8a896b4f28 | papers/pdfs/integrated-digital-governance.pdf | 30% | projection | relabel |  | …reduction from 0.49 to 0.28), housing insecurity through collective ownership structures (housing burden reduction from 30% to 18%), and social fragmentation through voluntary community formation mechanisms (social cohe |
-| 1034e08a87 | papers/pdfs/integrated-digital-governance.pdf | 18% | projection | relabel |  | …on from 0.49 to 0.28), housing insecurity through collective ownership structures (housing burden reduction from 30% to 18%), and social fragmentation through voluntary community formation mechanisms (social cohesion in |
-| 7aea19c2bb | papers/pdfs/integrated-digital-governance.pdf | 0.65 to 0.88 | projection | relabel | B114 | …18%), and social fragmentation through voluntary community formation mechanisms (social cohesion index improvement from 0.65 to 0.88).… |
-| 0931bccddc | papers/pdfs/integrated-digital-governance.pdf | 66 | fact | remove |  | Public Administration Review, 66(s1), 66-75. |
-| c72d98bf05 | papers/pdfs/integrated-digital-governance.pdf | 66-75 | fact | remove |  | Public Administration Review, 66(s1), 66-75. |
-| 126c36b889 | papers/pdfs/integrated-digital-governance.pdf | 167 | fact | remove |  | Shelterforce, 167, 12-15. |
-| 126ea4e3ea | papers/pdfs/integrated-digital-governance.pdf | 12-15 | fact | remove |  | Shelterforce, 167, 12-15. |
-| 8d24f7f749 | papers/pdfs/integrated-digital-governance.pdf | 2,876 | fact | remove |  | Digital governance: A conceptual framework and research agenda based on bibliometric analysis of 2,876 publications. |
-| 84134cdc3a | papers/pdfs/integrated-digital-governance.pdf | 1403404 | fact | remove |  | Frontiers in Political Science, 6, 1403404. |
+| 0b3a08a228 | papers/pdfs/integrated-digital-governance.pdf | 0.49 to 0.28 | simulation result | remove |  | …ployment of these systems could achieve significant improvements in economic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion  |
+| 401d84c40b | papers/pdfs/integrated-digital-governance.pdf | 55% | simulation result | remove |  | …n economic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutio |
+| 6764cd2169 | papers/pdfs/integrated-digital-governance.pdf | 85% | simulation result | remove |  | …mic stability (Gini coefficient reduction from 0.49 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutional con |
+| da95d2dae8 | papers/pdfs/integrated-digital-governance.pdf | 0.65 to 0.88 | simulation result | remove |  | …9 to 0.28), democratic engagement (participation increase from 55% to 85%), and social cohesion (index improvement from 0.65 to 0.88) while maintaining institutional continuity.… |
+| f8c60a5c4b | papers/pdfs/integrated-digital-governance.pdf | 40-60% | simulation result | remove |  | …s: Reduced Overhead: PTF venues provide free or subsidized space for Creator Collectives, reducing operational costs by 40-60% Enhanced Velocity: Basic units accepted at PTF establishments increase monetary velocity by  |
+| 711d6f23b6 | papers/pdfs/integrated-digital-governance.pdf | 30% | simulation result | remove |  | …operational costs by 40-60% Enhanced Velocity: Basic units accepted at PTF establishments increase monetary velocity by 30% Conversion Premium: PTF workers receive 50% bonus on CCO conversion rates Collateral Access: Ac |
+| a9c53ca86d | papers/pdfs/integrated-digital-governance.pdf | 1-9 | simulation result | remove |  | …Implementation Strategy 6.1 Staged Deployment Pathway Phase 1: Foundation (Months 1-9) Establish legal and regulatory framework Deploy basic CIP infrastructure Launch CCO pilot with 1,000 participants Init… |
+| f27a576503 | papers/pdfs/integrated-digital-governance.pdf | 1,000 | simulation result | remove |  | … Foundation (Months 1-9) Establish legal and regulatory framework Deploy basic CIP infrastructure Launch CCO pilot with 1,000 participants Initiate PTF property acquisition Phase 2: Integration (Months 10-21) Connect CC |
+| 5e3389cf58 | papers/pdfs/integrated-digital-governance.pdf | 10-21 | simulation result | remove |  | … infrastructure Launch CCO pilot with 1,000 participants Initiate PTF property acquisition Phase 2: Integration (Months 10-21) Connect CCO and PTF systems Implement zone designation process Scale to 10,000 participants  |
+| 97d7442cbb | papers/pdfs/integrated-digital-governance.pdf | 10,000 | simulation result | remove |  | …acquisition Phase 2: Integration (Months 10-21) Connect CCO and PTF systems Implement zone designation process Scale to 10,000 participants Develop governance structures Phase 3: Expansion (Months 22-45) Full system int |
+| 6ecc09be13 | papers/pdfs/integrated-digital-governance.pdf | 22-45 | simulation result | remove |  | …mplement zone designation process Scale to 10,000 participants Develop governance structures Phase 3: Expansion (Months 22-45) Full system integration Scale to 100,000 participants Implement advanced features Establish  |
+| c96e4a70d5 | papers/pdfs/integrated-digital-governance.pdf | 100,000 | simulation result | remove |  | …to 10,000 participants Develop governance structures Phase 3: Expansion (Months 22-45) Full system integration Scale to 100,000 participants Implement advanced features Establish inter-regional connections Phase 4: Matu |
+| 9b594ee2d7 | papers/pdfs/integrated-digital-governance.pdf | 4-5 | simulation result | remove |  | …ale to 100,000 participants Implement advanced features Establish inter-regional connections Phase 4: Maturation (Years 4-5) Optimize based on data National policy integration International cooperation Self-sustaining o |
+| 13d60600a9 | papers/pdfs/integrated-digital-governance.pdf | $500M | simulation result | remove |  | …entation Costs Five-year implementation costs for metropolitan area (1 million population): Infrastructure Development: $500M (CIP platform, system integration) Property Acquisition: $2B (PTF initial portfolio) Program  |
+| ae65386da7 | papers/pdfs/integrated-digital-governance.pdf | $2B | simulation result | remove |  | …area (1 million population): Infrastructure Development: $500M (CIP platform, system integration) Property Acquisition: $2B (PTF initial portfolio) Program Administration: $300M (staff, operations) CCO Basic Units: $1.2 |
+| b11418a15b | papers/pdfs/integrated-digital-governance.pdf | $300M | simulation result | remove | B017 | …ent: $500M (CIP platform, system integration) Property Acquisition: $2B (PTF initial portfolio) Program Administration: $300M (staff, operations) CCO Basic Units: $1.2B annually (Universal Basic Income) Total Five-Year  |
+| 35c3b2729e | papers/pdfs/integrated-digital-governance.pdf | $1.2B | simulation result | remove | B017 | …n) Property Acquisition: $2B (PTF initial portfolio) Program Administration: $300M (staff, operations) CCO Basic Units: $1.2B annually (Universal Basic Income) Total Five-Year Cost: $8.5B… |
+| 6a6d0b587e | papers/pdfs/integrated-digital-governance.pdf | $8.5B | simulation result | remove | B017 | …dministration: $300M (staff, operations) CCO Basic Units: $1.2B annually (Universal Basic Income) Total Five-Year Cost: $8.5B… |
+| 01405cb68d | papers/pdfs/integrated-digital-governance.pdf | $3B | simulation result | remove |  | …7.2 Projected Benefits Five-year benefits from integrated implementation: Housing Cost Reduction: $3B (30% reduction for participants) Economic Productivity: $2B (enhanced creative economy) Healthcare Savings: $1.5B (im |
+| 2b5312bd86 | papers/pdfs/integrated-digital-governance.pdf | 30% | simulation result | remove |  | …7.2 Projected Benefits Five-year benefits from integrated implementation: Housing Cost Reduction: $3B (30% reduction for participants) Economic Productivity: $2B (enhanced creative economy) Healthcare Savings: $1.5B (im |
+| fa9287caff | papers/pdfs/integrated-digital-governance.pdf | $2B | simulation result | remove |  | …its from integrated implementation: Housing Cost Reduction: $3B (30% reduction for participants) Economic Productivity: $2B (enhanced creative economy) Healthcare Savings: $1.5B (improved social determinants) Crime Redu |
+| e692ac7c58 | papers/pdfs/integrated-digital-governance.pdf | $1.5B | simulation result | remove |  | …uction: $3B (30% reduction for participants) Economic Productivity: $2B (enhanced creative economy) Healthcare Savings: $1.5B (improved social determinants) Crime Reduction: $800M (enhanced community cohesion) Administr |
+| aac1073b8a | papers/pdfs/integrated-digital-governance.pdf | $800M | simulation result | remove |  | …Productivity: $2B (enhanced creative economy) Healthcare Savings: $1.5B (improved social determinants) Crime Reduction: $800M (enhanced community cohesion) Administrative Efficiency: $700M (reduced program redundancy) T |
+| 59485b089b | papers/pdfs/integrated-digital-governance.pdf | $700M | simulation result | remove |  | …s: $1.5B (improved social determinants) Crime Reduction: $800M (enhanced community cohesion) Administrative Efficiency: $700M (reduced program redundancy) Total Five-Year Benefit: $8B… |
+| d625e52018 | papers/pdfs/integrated-digital-governance.pdf | $8B | simulation result | remove |  | …0M (enhanced community cohesion) Administrative Efficiency: $700M (reduced program redundancy) Total Five-Year Benefit: $8B… |
+| fbb263ff71 | papers/pdfs/integrated-digital-governance.pdf | 10 | simulation result | remove |  | 7.3 Long-term Projections Break-even achieved in Year 6 with accelerating benefits: Year 10: Net benefit of $5B annually Year 20: Self-sustaining with $10B annual surplus Intergenerational wealth transfer: $50B over 30 y |
+| 6ff1f19829 | papers/pdfs/integrated-digital-governance.pdf | $5B | simulation result | remove |  | 7.3 Long-term Projections Break-even achieved in Year 6 with accelerating benefits: Year 10: Net benefit of $5B annually Year 20: Self-sustaining with $10B annual surplus Intergenerational wealth transfer: $50B over 30 y |
+| af629a70ab | papers/pdfs/integrated-digital-governance.pdf | 20 | simulation result | remove |  | 7.3 Long-term Projections Break-even achieved in Year 6 with accelerating benefits: Year 10: Net benefit of $5B annually Year 20: Self-sustaining with $10B annual surplus Intergenerational wealth transfer: $50B over 30 y |
+| 2f27621893 | papers/pdfs/integrated-digital-governance.pdf | $10B | simulation result | remove |  | 7.3 Long-term Projections Break-even achieved in Year 6 with accelerating benefits: Year 10: Net benefit of $5B annually Year 20: Self-sustaining with $10B annual surplus Intergenerational wealth transfer: $50B over 30 y |
+| fb7653b582 | papers/pdfs/integrated-digital-governance.pdf | $50B | simulation result | remove |  | 7.3 Long-term Projections Break-even achieved in Year 6 with accelerating benefits: Year 10: Net benefit of $5B annually Year 20: Self-sustaining with $10B annual surplus Intergenerational wealth transfer: $50B over 30 y |
+| 76229de8bf | papers/pdfs/integrated-digital-governance.pdf | 30 | simulation result | remove |  | 7.3 Long-term Projections Break-even achieved in Year 6 with accelerating benefits: Year 10: Net benefit of $5B annually Year 20: Self-sustaining with $10B annual surplus Intergenerational wealth transfer: $50B over 30 y |
+| aed4f2c405 | papers/pdfs/integrated-digital-governance.pdf | 55% | simulation result | remove |  | 0.49 55% |
+| 9d9358c7f5 | papers/pdfs/integrated-digital-governance.pdf | 30% | simulation result | remove |  | 30% burden |
+| 459240a74a | papers/pdfs/integrated-digital-governance.pdf | 75% | simulation result | remove |  | 75% |
+| e43a42a4df | papers/pdfs/integrated-digital-governance.pdf | 60% | simulation result | remove |  | 60% |
+| d17cd5b6af | papers/pdfs/integrated-digital-governance.pdf | 46.7% | simulation result | remove |  | 46.7% |
+| 71fa23e161 | papers/pdfs/integrated-digital-governance.pdf | 42% | simulation result | remove |  | 42% |
+| a531d8882f | papers/pdfs/integrated-digital-governance.pdf | 85% | simulation result | remove |  | 85% (projected) |
+| 29cd69f201 | papers/pdfs/integrated-digital-governance.pdf | 20% | simulation result | remove |  | 20% |
+| 25120a4046 | papers/pdfs/integrated-digital-governance.pdf | 22% | simulation result | remove |  | 22% |
+| f9843a15d2 | papers/pdfs/integrated-digital-governance.pdf | 35% | simulation result | remove |  | 35% |
+| 1a3265f9f6 | papers/pdfs/integrated-digital-governance.pdf | 25% | simulation result | remove |  | 25% burden |
+| 6dcbd9ad4b | papers/pdfs/integrated-digital-governance.pdf | 18% | simulation result | remove |  | 18% burden |
+| b0cf476009 | papers/pdfs/integrated-digital-governance.pdf | 65% | simulation result | remove |  | 65% |
+| 6776ccd4b9 | papers/pdfs/integrated-digital-governance.pdf | 82% | simulation result | remove |  | 82% |
+| 2f7d7003ea | papers/pdfs/integrated-digital-governance.pdf | 89% | simulation result | remove |  | 89% |
+| db51bb7439 | papers/pdfs/integrated-digital-governance.pdf | 99% | simulation result | remove |  | 99% |
+| eea24343b1 | papers/pdfs/integrated-digital-governance.pdf | 92% | simulation result | remove |  | 92% (projected) |
+| 438f723af9 | papers/pdfs/integrated-digital-governance.pdf | 99% | simulation result | remove |  | …International Best Practices (2024 Updates): Estonia's X-Road: 99% of public services online 98% of companies established online 46.7% of population uses i-Voting Blockchain-secured heal… |
+| 3b69779bfc | papers/pdfs/integrated-digital-governance.pdf | 98% | simulation result | remove |  | …International Best Practices (2024 Updates): Estonia's X-Road: 99% of public services online 98% of companies established online 46.7% of population uses i-Voting Blockchain-secured health records since 2023 Singapor… |
+| 3cda25eeaa | papers/pdfs/integrated-digital-governance.pdf | 46.7% | simulation result | remove |  | …onal Best Practices (2024 Updates): Estonia's X-Road: 99% of public services online 98% of companies established online 46.7% of population uses i-Voting Blockchain-secured health records since 2023 Singapore's Smart Na |
+| 9bdd2ad9fe | papers/pdfs/integrated-digital-governance.pdf | 97% | simulation result | remove |  | …ulation uses i-Voting Blockchain-secured health records since 2023 Singapore's Smart Nation: National Digital Identity: 97% adoption LifeSG app: 400+ government services GovTech stack: 75% processing time reduction Indi |
+| a73965725b | papers/pdfs/integrated-digital-governance.pdf | 400+ | simulation result | remove |  | …ckchain-secured health records since 2023 Singapore's Smart Nation: National Digital Identity: 97% adoption LifeSG app: 400+ government services GovTech stack: 75% processing time reduction India's Digital Public Infras |
+| 8fa5967706 | papers/pdfs/integrated-digital-governance.pdf | 75% | simulation result | remove |  | …3 Singapore's Smart Nation: National Digital Identity: 97% adoption LifeSG app: 400+ government services GovTech stack: 75% processing time reduction India's Digital Public Infrastructure: Aadhaar: 1.3 billion enrolled  |
+| f711dee6ff | papers/pdfs/integrated-digital-governance.pdf | 1.3 billion | simulation result | remove |  | …: 400+ government services GovTech stack: 75% processing time reduction India's Digital Public Infrastructure: Aadhaar: 1.3 billion enrolled UPI: 10 billion monthly transactions DigiLocker: 150 million users… |
+| 18e0a5cbcb | papers/pdfs/integrated-digital-governance.pdf | 10 billion | simulation result | remove |  | … GovTech stack: 75% processing time reduction India's Digital Public Infrastructure: Aadhaar: 1.3 billion enrolled UPI: 10 billion monthly transactions DigiLocker: 150 million users… |
+| a060450035 | papers/pdfs/integrated-digital-governance.pdf | 150 million | simulation result | remove |  | …n India's Digital Public Infrastructure: Aadhaar: 1.3 billion enrolled UPI: 10 billion monthly transactions DigiLocker: 150 million users… |
+| 63b773b0d0 | papers/pdfs/integrated-digital-governance.pdf | 37120 | simulation result | remove |  | ISO 37120:2018 Sustainable Cities Standards |
+| d0de0dc262 | papers/pdfs/integrated-digital-governance.pdf | 55% | simulation result | remove |  | …The framework addresses core democratic deficits through expanded citizen participation (projected increase from 55% to 85%), economic inequality through community wealth building (Gini coefficient reduction from 0.49 t |
+| f589d1c88a | papers/pdfs/integrated-digital-governance.pdf | 85% | simulation result | remove |  | …The framework addresses core democratic deficits through expanded citizen participation (projected increase from 55% to 85%), economic inequality through community wealth building (Gini coefficient reduction from 0.49 t |
+| e1462a0ba4 | papers/pdfs/integrated-digital-governance.pdf | 0.49 to 0.28 | simulation result | remove |  | …ected increase from 55% to 85%), economic inequality through community wealth building (Gini coefficient reduction from 0.49 to 0.28), housing insecurity through collective ownership structures (housing burden reduction |
+| 8a896b4f28 | papers/pdfs/integrated-digital-governance.pdf | 30% | simulation result | remove |  | …reduction from 0.49 to 0.28), housing insecurity through collective ownership structures (housing burden reduction from 30% to 18%), and social fragmentation through voluntary community formation mechanisms (social cohe |
+| 1034e08a87 | papers/pdfs/integrated-digital-governance.pdf | 18% | simulation result | remove |  | …on from 0.49 to 0.28), housing insecurity through collective ownership structures (housing burden reduction from 30% to 18%), and social fragmentation through voluntary community formation mechanisms (social cohesion in |
+| 7aea19c2bb | papers/pdfs/integrated-digital-governance.pdf | 0.65 to 0.88 | simulation result | remove | B114 | …18%), and social fragmentation through voluntary community formation mechanisms (social cohesion index improvement from 0.65 to 0.88).… |
+| f0c78dce37 | papers/pdfs/integrated-digital-governance.pdf | 5-6 | simulation result | remove |  | Cost-Effectiveness: Integrated implementation offers superior cost-benefit ratios compared to independent system adoption, with projected payback periods of 5-6 years and substantial ongoing benefits. |
+| 0931bccddc | papers/pdfs/integrated-digital-governance.pdf | 66 | simulation result | remove |  | Public Administration Review, 66(s1), 66-75. |
+| c72d98bf05 | papers/pdfs/integrated-digital-governance.pdf | 66-75 | simulation result | remove |  | Public Administration Review, 66(s1), 66-75. |
+| 126c36b889 | papers/pdfs/integrated-digital-governance.pdf | 167 | simulation result | remove |  | Shelterforce, 167, 12-15. |
+| 126ea4e3ea | papers/pdfs/integrated-digital-governance.pdf | 12-15 | simulation result | remove |  | Shelterforce, 167, 12-15. |
+| 8d24f7f749 | papers/pdfs/integrated-digital-governance.pdf | 2,876 | simulation result | remove |  | Digital governance: A conceptual framework and research agenda based on bibliometric analysis of 2,876 publications. |
+| 84134cdc3a | papers/pdfs/integrated-digital-governance.pdf | 1403404 | simulation result | remove |  | Frontiers in Political Science, 6, 1403404. |
 | d7fe55ae8b | papers/pdfs/optimal-transfer-design.pdf | 50% | projection | relabel | A13 | …Unlike traditional welfare systems that create marginal tax rates exceeding 50% at benefit phaseout ranges, the enhanced CCO-PTF framework eliminates benefit reduction entirely while maintaining stro… |
 | 3c18b7a9ac | papers/pdfs/optimal-transfer-design.pdf | 2017-2018 | projection | relabel |  | The Finland experiment (2017-2018) found minimal employment impact but improved well-being (Kangas et al., 2020). |
 | 4378d08cb6 | papers/pdfs/optimal-transfer-design.pdf | -25% | fact | remove |  | Low (-25%) |
@@ -2543,120 +2556,76 @@ Classed by a reviewed rule or the reference list: 5621; by a generic rule or a p
 | 6457a0fd0c | papers/pdfs/risk-mitigation-framework.pdf | < 0.3 | fact | remove |  | …rvices): return self.require_modifications() # Monitor for de facto segregation if self.calculate_diversity_index(zone) < 0.3: return self.trigger_review() return self.approve_zone()… |
 | 2b9c9ae7d2 | papers/pdfs/risk-mitigation-framework.pdf | +50% | fact | remove |  | +50% distribution |
 | aa69725bbf | papers/pdfs/risk-mitigation-framework.pdf | 199-203 | fact | remove |  | Advances in Cryptology, 199-203. |
-| 5c5095914f | papers/pdfs/universal-implementation-framework.pdf | 2-3 | projection | relabel |  | …Our analysis reveals that nations achieving fastest implementation (2-3 years to full operation) combine crisis urgency with strong social cohesion, while even fragmented societies can achiev… |
-| b943287591 | papers/pdfs/universal-implementation-framework.pdf | 5-7 | projection | relabel |  | …is urgency with strong social cohesion, while even fragmented societies can achieve comprehensive transformation within 5-7 years through carefully sequenced interventions.… |
-| de32bcd196 | papers/pdfs/universal-implementation-framework.pdf | 3-5x | projection | relabel |  | Critical findings show that "all-in" commitment with adaptive flexibility yields 3-5x faster implementation than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
-| 9cc9e76b59 | papers/pdfs/universal-implementation-framework.pdf | 40-60% | projection | relabel |  | Critical findings show that "all-in" commitment with adaptive flexibility yields 3-5x faster implementation than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
-| 268c19da7f | papers/pdfs/universal-implementation-framework.pdf | 12-18 | fact | remove |  | …sitive unity and consensus: 18-24 month implementation Economic collapse: 18-24 month implementation Natural disasters: 12-18 month implementation Pandemic recovery: 24-30 month implementation Post-conflict reconstructi |
-| 00d44c6143 | papers/pdfs/universal-implementation-framework.pdf | 24-30 | fact | remove |  | …entation Economic collapse: 18-24 month implementation Natural disasters: 12-18 month implementation Pandemic recovery: 24-30 month implementation Post-conflict reconstruction: 30-36 month implementation Stable transfor |
-| ace4c2ea9d | papers/pdfs/universal-implementation-framework.pdf | 30-36 | fact | remove |  | …tural disasters: 12-18 month implementation Pandemic recovery: 24-30 month implementation Post-conflict reconstruction: 30-36 month implementation Stable transformation: 36-60 month implementation… |
-| 952fb4ef31 | papers/pdfs/universal-implementation-framework.pdf | 36-60 | fact | remove |  | …ic recovery: 24-30 month implementation Post-conflict reconstruction: 30-36 month implementation Stable transformation: 36-60 month implementation… |
-| 00d21fb124 | papers/pdfs/universal-implementation-framework.pdf | 1-3 | fact | remove |  | Month 1-3: Legislative framework leveraging existing consensus mechanisms 2. |
-| fa3bd14938 | papers/pdfs/universal-implementation-framework.pdf | 4-9 | fact | remove |  | Month 4-9: CIP integration with existing digital governance (building on Estonian e-governance models) |
-| 8ae22fc959 | papers/pdfs/universal-implementation-framework.pdf | 10-15 | fact | remove |  | Month 10-15: CCO implementation through existing welfare distribution 4. |
-| 8dd250eb74 | papers/pdfs/universal-implementation-framework.pdf | 22-24 | fact | remove |  | Month 22-24: SZH formalization of existing community structures Acceleration Factors: Existing institutional trust, digital literacy, social solidarity Key Adaptation: Integrate with existing strong welfare systems rathe |
-| 81efc103bf | papers/pdfs/universal-implementation-framework.pdf | 1-6 | fact | remove |  | Month 1-6: Pilot programs in progressive municipalities 2. |
-| 32367a8fb3 | papers/pdfs/universal-implementation-framework.pdf | 7-12 | fact | remove |  | Month 7-12: National dialogue and consensus building 3. |
-| 43e60eddb2 | papers/pdfs/universal-implementation-framework.pdf | 13-24 | fact | remove |  | Month 13-24: Phased national rollout beginning with CCO 4. |
-| 371f561ca4 | papers/pdfs/universal-implementation-framework.pdf | 25-36 | fact | remove |  | Month 25-36: Full integration with continuous adjustment Acceleration Factors: Youth demographic dividend, mobile payment adoption, urbanization Key Adaptation: Leverage mobile-first strategies and informal sector integr |
-| cfad667955 | papers/pdfs/universal-implementation-framework.pdf | 1-6 | fact | remove |  | Month 1-6: Community-based pilots using local leadership 2. |
-| 3f2bbbbf78 | papers/pdfs/universal-implementation-framework.pdf | 7-12 | fact | remove |  | Month 7-12: Mobile-first CCO deployment via feature phones 3. |
-| 0417ee58ee | papers/pdfs/universal-implementation-framework.pdf | 13-24 | fact | remove |  | Month 13-24: PTF development through community land trusts 4. |
-| 33abfae459 | papers/pdfs/universal-implementation-framework.pdf | 25-36 | fact | remove |  | Month 25-36: Gradual formalization with informal sector integration Acceleration Factors: Absence of entrenched systems, community solidarity, international support Key Adaptation: Skip desktop-era technology, go directl |
-| a6ca3fde9b | papers/pdfs/universal-implementation-framework.pdf | 2-6 | projection | relabel |  | Month 2-6: Peace-building through collaborative PTF projects |
-| 1dfdcdd876 | papers/pdfs/universal-implementation-framework.pdf | 7-12 | fact | remove |  | Month 7-12: Trauma-informed CIP deployment 4. |
-| e331296fa9 | papers/pdfs/universal-implementation-framework.pdf | 13-24 | fact | remove |  | Month 13-24: Reconciliation through inter-community SZH Acceleration Factors: Urgency, international support, opportunity for fresh start Key Adaptation: Prioritize healing and reconciliation through economic inclusion |
-| 169b0071ab | papers/pdfs/universal-implementation-framework.pdf | 1-3 | fact | remove |  | Month 1-3: Top-down directive with local adaptation 2. |
-| d1acecf9cd | papers/pdfs/universal-implementation-framework.pdf | 4-12 | fact | remove |  | Month 4-12: Simultaneous nationwide deployment 3. |
-| 54af4043eb | papers/pdfs/universal-implementation-framework.pdf | 13-18 | fact | remove |  | Month 13-18: Feedback integration and adjustment 4. |
-| 7c854e8c54 | papers/pdfs/universal-implementation-framework.pdf | 1-6 | fact | remove |  | Month 1-6: National consultation given small population 2. |
-| 27b9bf06ab | papers/pdfs/universal-implementation-framework.pdf | 7-12 | fact | remove |  | Month 7-12: Integrated deployment of all systems 3. |
-| 761f7f855e | papers/pdfs/universal-implementation-framework.pdf | 13-18 | fact | remove |  | Month 13-18: Regional cooperation protocols 4. |
-| 7eecd4efe6 | papers/pdfs/universal-implementation-framework.pdf | 7-18 | fact | remove |  | Month 7-18: Universal CCO distribution replacing subsidies 3. |
-| 901e837c6b | papers/pdfs/universal-implementation-framework.pdf | 31-42 | fact | remove |  | Month 31-42: Democratic institutionalization via CIP Acceleration Factors: Available resources, diversification urgency |
-| 424b7d90e9 | papers/pdfs/universal-implementation-framework.pdf | 1-6 | fact | remove |  | Month 1-6: State-level pilots in progressive regions 2. |
-| 8239c17acf | papers/pdfs/universal-implementation-framework.pdf | 7-18 | fact | remove |  | Month 7-18: Inter-state cooperation agreements 3. |
-| d618419ed9 | papers/pdfs/universal-implementation-framework.pdf | 37-48 | fact | remove |  | Month 37-48: Full national integration Acceleration Factors: Policy laboratories, competitive federalism Key Adaptation: Allow regional variation within national framework |
-| dd1e331cff | papers/pdfs/universal-implementation-framework.pdf | >10% | fact | remove |  | 4.2 Climate Disaster Implementation Trigger Conditions: Major disaster affecting >10% of population Acceleration Timeline: |
-| 2ac37ef207 | papers/pdfs/universal-implementation-framework.pdf | 1-3 | projection | relabel |  | …4.4 Post-Conflict Transformation Trigger Conditions: Conflict cessation, peace agreement Acceleration Timeline: Month 1-3: Disarmament and basic distribution Month 4-9: Reconciliation through shared projects Month 10-18 |
-| d9ca960fcb | papers/pdfs/universal-implementation-framework.pdf | 4-9 | projection | relabel |  | …ditions: Conflict cessation, peace agreement Acceleration Timeline: Month 1-3: Disarmament and basic distribution Month 4-9: Reconciliation through shared projects Month 10-18: Institutional reconstruction Month 19-30:  |
-| 3651230530 | papers/pdfs/universal-implementation-framework.pdf | 24 | fact | remove |  | …5.2 Adaptive Adjustment Protocols Rapid Response Team Structure: Technical adjustment: 24-hour response Policy modification: 72-hour response Legislative change: 30-day maximum Constitutional amendment: 90-day… |
-| 5a0887364d | papers/pdfs/universal-implementation-framework.pdf | 72 | fact | remove |  | …daptive Adjustment Protocols Rapid Response Team Structure: Technical adjustment: 24-hour response Policy modification: 72-hour response Legislative change: 30-day maximum Constitutional amendment: 90-day maximum Adjust |
-| 212d5338ae | papers/pdfs/universal-implementation-framework.pdf | 30 | fact | remove |  | …sponse Team Structure: Technical adjustment: 24-hour response Policy modification: 72-hour response Legislative change: 30-day maximum Constitutional amendment: 90-day maximum Adjustment Triggers: User satisfaction <60% |
-| 584c5088ba | papers/pdfs/universal-implementation-framework.pdf | 90 | fact | remove |  | …nt: 24-hour response Policy modification: 72-hour response Legislative change: 30-day maximum Constitutional amendment: 90-day maximum Adjustment Triggers: User satisfaction <60%: Immediate review Technical failures: In |
-| f8631de11d | papers/pdfs/universal-implementation-framework.pdf | >70% | fact | remove |  | Sequencing Strategies for Optimal Outcomes 7.1 High Social Cohesion Fast Track Characteristics: Trust >70%, Gini <0.30, Democratic index >7 Sequence: 1. |
-| 74152938fb | papers/pdfs/universal-implementation-framework.pdf | <0.30 | fact | remove |  | Sequencing Strategies for Optimal Outcomes 7.1 High Social Cohesion Fast Track Characteristics: Trust >70%, Gini <0.30, Democratic index >7 Sequence: 1. |
-| f058511276 | papers/pdfs/universal-implementation-framework.pdf | 18 | projection | relabel |  | International showcase within 18 months Timeline: 18-24 months to full operation |
-| 2f7cc32db9 | papers/pdfs/universal-implementation-framework.pdf | <40% | fact | remove |  | 7.2 Fragmented Society Gradual Build Characteristics: Trust <40%, Ethnic/religious divisions, Weak institutions Sequence: 1. |
-| 0731f9e3f0 | papers/pdfs/universal-implementation-framework.pdf | 48-72 | fact | remove |  | Full integration after trust building Timeline: 48-72 months to full operation |
-| 8844478c8a | papers/pdfs/universal-implementation-framework.pdf | >80% | fact | remove |  | 7.3 Digital Native Acceleration Characteristics: Internet penetration >80%, Smartphone adoption >70% |
-| 2a6377270c | papers/pdfs/universal-implementation-framework.pdf | >70% | fact | remove |  | 7.3 Digital Native Acceleration Characteristics: Internet penetration >80%, Smartphone adoption >70% |
-| e4a0bb1c13 | papers/pdfs/universal-implementation-framework.pdf | 12-18 | fact | remove |  | Viral adoption mechanics Timeline: 12-18 months to full operation |
-| 003347eb49 | papers/pdfs/universal-implementation-framework.pdf | <$2,000 | fact | remove |  | 7.4 Resource-Constrained Bootstrap Characteristics: GDP per capita <$2,000, Limited infrastructure Sequence: 1. |
-| 133deb891f | papers/pdfs/universal-implementation-framework.pdf | 36-60 | fact | remove |  | Sustainability achievement Timeline: 36-60 months to full operation |
-| 2335840434 | papers/pdfs/universal-implementation-framework.pdf | 10 | simulation result | remove |  | …satisfaction Year 3: Creative output doubles, inequality halves Year 5: Achieving "thriving" status on all metrics Year 10: Model nation for global transformation… |
-| 2c03f22733 | papers/pdfs/universal-implementation-framework.pdf | < 60% | fact | remove |  | if (satisfaction < 60%) or (inequality_increasing): trigger_review() implement_adjustments() accelerate_feedback_loops() if (crisis_detected): activate_emergency_protocols() mobilize_rapid_response() implement_temporary_ |
-| c20f00c3f5 | papers/pdfs/universal-implementation-framework.pdf | -6 to 0 | fact | remove |  | …Implementation Roadmap Summary 12.1 Universal Phases Regardless of Context Phase 0: Preparation (Months -6 to 0) Stakeholder engagement Legislative framework Infrastructure assessment Team formation Public education Pha |
-| b068bd9f34 | papers/pdfs/universal-implementation-framework.pdf | 1-6 | fact | remove |  | … engagement Legislative framework Infrastructure assessment Team formation Public education Phase 1: Foundation (Months 1-6) Core system deployment Early adopter enrollment… |
-| 6271afa4b9 | papers/pdfs/universal-implementation-framework.pdf | 37+ | projection | relabel |  | …e Advanced features International cooperation Sustainability achievement Model demonstration Phase 4: Evolution (Months 37+) Continuous improvement Innovation integration Global leadership Knowledge sharing Next generat |
-| c242941662 | papers/pdfs/universal-implementation-framework.pdf | 2-5% | fact | remove |  | Adequate resources (2-5% GDP) 3. |
-| 867d3825e1 | papers/pdfs/universal-implementation-framework.pdf | 36-48 | projection | relabel |  | 12.3 Expected Timeline Ranges Best Case (Crisis + Cohesion): 18-24 months Moderate Case (Stability + Commitment): 36-48 months Challenging Case (Resistance + Constraints): 60-84 months Gradual Case (Cautious + Incrementa |
-| c8bda66642 | papers/pdfs/universal-implementation-framework.pdf | 60-84 | projection | relabel |  | 12.3 Expected Timeline Ranges Best Case (Crisis + Cohesion): 18-24 months Moderate Case (Stability + Commitment): 36-48 months Challenging Case (Resistance + Constraints): 60-84 months Gradual Case (Cautious + Incrementa |
-| bce17c5a7e | papers/pdfs/universal-implementation-framework.pdf | 84120 | projection | relabel |  | 12.3 Expected Timeline Ranges Best Case (Crisis + Cohesion): 18-24 months Moderate Case (Stability + Commitment): 36-48 months Challenging Case (Resistance + Constraints): 60-84 months Gradual Case (Cautious + Incrementa |
-| 9d5cad6ab2 | papers/pdfs/universal-implementation-framework.pdf | 2-7 | projection | relabel |  | Through adaptive implementation with continuous feedback loops, nations can achieve human flourishing within 2-7 years depending on context and commitment level. |
-| 96024a03a6 | papers/pdfs/universal-implementation-framework.pdf | 3-5x | simulation result | remove |  | All-In Beats Incremental: Full commitment with flexibility yields 3-5x faster results than cautious incrementalism. 4. |
-| 0d0e5dca70 | papers/pdfs/universal-implementation-framework.pdf | -3 to 0 | fact | remove |  | …Appendices Appendix A: Quick Start Implementation Checklists A.1 Advanced Welfare States Checklist Pre-Launch (Months -3 to 0) Parliamentary consensus building through existing channels Integration assessment with curre |
-| 9a822ae0ad | papers/pdfs/universal-implementation-framework.pdf | 1-6 | fact | remove |  | …ltations Public referendum preparation (if required) Media strategy leveraging public broadcasting Launch Phase (Months 1-6) Leverage existing social security numbers for CCO enrollment Integrate with current digital ID |
-| 8b6892b515 | papers/pdfs/universal-implementation-framework.pdf | 1-12 | fact | remove |  | …ment bank support Develop mobile-first technology strategy Create informal sector integration plan Launch Phase (Months 1-12) Start with voluntary municipal pilots Use existing conditional cash transfer infrastructure… |
-| bba6a12a82 | papers/pdfs/universal-implementation-framework.pdf | -3 to 0 | fact | remove |  | …in design Ensure donor coordination Focus on basic needs first A.4 Post-Conflict Societies Checklist Pre-Launch (Months -3 to 0)… |
-| e126ca6ff6 | papers/pdfs/universal-implementation-framework.pdf | 2-12 | projection | relabel |  | …sh conflict-sensitive governance Build inter-community projects Focus on shared necessities Stabilization Phase (Months 2-12) Transition from emergency to development Create reconciliation incentives Build cross-communi |
-| a04aa36e0b | papers/pdfs/universal-implementation-framework.pdf | 60% | fact | remove |  | …Voluntary Community Organization (1) Communities may organize into specialized zones (2) Zone formation requires 60% resident approval (3) Individual rights remain protected regardless of zone rules (4) Inter-zone mobil |
-| 6139dc8bc2 | papers/pdfs/universal-implementation-framework.pdf | 36 | projection | relabel |  | Phased Rollout (1) Implementation shall begin with voluntary pilots (2) Full national coverage within 36 months (3) Continuous evaluation and adjustment required (4) Annual reports to Parliament Section 9. |
-| 7319fd6576 | papers/pdfs/universal-implementation-framework.pdf | 99.95% | fact | remove |  | …le Cloud, Azure) Deployment: Kubernetes containerized microservices Regions: Minimum 3 geographic regions Availability: 99.95% SLA Blockchain_Layer: Type: Permissioned blockchain (Hyperledger Fabric) Consensus: Practica |
-| 9c97591555 | papers/pdfs/universal-implementation-framework.pdf | 21 | fact | remove |  | …Type: Permissioned blockchain (Hyperledger Fabric) Consensus: Practical Byzantine Fault Tolerance (PBFT) Nodes: Minimum 21 validator nodes Transaction_Speed: 10,000+ TPS Database_Systems: Primary: PostgreSQL with replic |
-| e95d6086c0 | papers/pdfs/universal-implementation-framework.pdf | 10,000+ | fact | remove |  | …dger Fabric) Consensus: Practical Byzantine Fault Tolerance (PBFT) Nodes: Minimum 21 validator nodes Transaction_Speed: 10,000+ TPS Database_Systems: Primary: PostgreSQL with replication Cache: Redis clusters Search: El |
-| 1253377536 | papers/pdfs/universal-implementation-framework.pdf | 2.0 | fact | remove |  | …tion Cache: Redis clusters Search: Elasticsearch Analytics: Apache Spark Security_Infrastructure: Authentication: OAuth 2.0 + OpenID Connect Encryption: AES-256 (rest), TLS 1.3 (transit) Key_Management: Hardware Securit |
-| 5f919dd2c5 | papers/pdfs/universal-implementation-framework.pdf | 1.3 | fact | remove |  | …ytics: Apache Spark Security_Infrastructure: Authentication: OAuth 2.0 + OpenID Connect Encryption: AES-256 (rest), TLS 1.3 (transit) Key_Management: Hardware Security Modules (HSM) Audit: Immutable audit logs on blockc |
-| 982bbb9ca0 | papers/pdfs/universal-implementation-framework.pdf | 5.0+ | fact | remove |  | …C.3 Mobile Application Requirements Minimum Device Specifications: Android 5.0+ or iOS 10+ 1GB RAM 100MB storage 3G data connection Camera for QR scanning Offline Functionality: Store 7 days of trans… |
-| 2f3c3fac74 | papers/pdfs/universal-implementation-framework.pdf | 10+ | fact | remove |  | …C.3 Mobile Application Requirements Minimum Device Specifications: Android 5.0+ or iOS 10+ 1GB RAM 100MB storage 3G data connection Camera for QR scanning Offline Functionality: Store 7 days of transactions loc… |
-| 6dccff914e | papers/pdfs/universal-implementation-framework.pdf | 100 | fact | remove |  | …-- Core Tables CREATE TABLE implementations ( id UUID PRIMARY KEY, country VARCHAR(100), start_date DATE, population_size INTEGER, implementation_type VARCHAR(50), -- 'crisis', 'unity', 'gradual' current_ph… |
-| 7593348535 | papers/pdfs/universal-implementation-framework.pdf | 500 | fact | remove |  | …hnical', 'political', 'social', 'economic' lesson_type VARCHAR(50), -- 'success', 'failure', 'innovation' title VARCHAR(500), description TEXT, impact_level VARCHAR(20), -- 'low', 'medium', 'high', 'critical' date_recor |
-| ccf33b1414 | papers/pdfs/universal-implementation-framework.pdf | 20 | fact | remove |  | …sson_type VARCHAR(50), -- 'success', 'failure', 'innovation' title VARCHAR(500), description TEXT, impact_level VARCHAR(20), -- 'low', 'medium', 'high', 'critical' date_recorded TIMESTAMP, verified BOOLEAN DEFAULT FALSE |
-| 0d438abd88 | papers/pdfs/universal-implementation-framework.pdf | 15 | fact | remove |  | …,2), gini_coefficient DECIMAL(4,3), happiness_index DECIMAL(4,2), system_uptime DECIMAL(5,2), conversion_volume DECIMAL(15,2) );… |
-| 94df223a52 | papers/pdfs/universal-implementation-framework.pdf | >10% | fact | remove |  | …Appendix E: Crisis Response Playbooks E.1 Economic Collapse Response Trigger: GDP decline >10%, unemployment >20%, currency devaluation >50% Hour 1-6: Crisis Team Activation Convene emergency economic council Asses… |
-| f43ed40ff0 | papers/pdfs/universal-implementation-framework.pdf | >20% | fact | remove |  | …Appendix E: Crisis Response Playbooks E.1 Economic Collapse Response Trigger: GDP decline >10%, unemployment >20%, currency devaluation >50% Hour 1-6: Crisis Team Activation Convene emergency economic council Assess sys |
-| 868a90ca5e | papers/pdfs/universal-implementation-framework.pdf | >50% | fact | remove |  | …is Response Playbooks E.1 Economic Collapse Response Trigger: GDP decline >10%, unemployment >20%, currency devaluation >50% Hour 1-6: Crisis Team Activation Convene emergency economic council Assess system status and r |
-| a46ef9b430 | papers/pdfs/universal-implementation-framework.pdf | 1-6 | fact | remove |  | …e Playbooks E.1 Economic Collapse Response Trigger: GDP decline >10%, unemployment >20%, currency devaluation >50% Hour 1-6: Crisis Team Activation Convene emergency economic council Assess system status and resources P |
-| fda12f1f97 | papers/pdfs/universal-implementation-framework.pdf | 2-6 | projection | relabel |  | …ator Collective formation Identify quick-win projects Start PTF property identification Deploy basic CIP platform Month 2-6: Stabilization Full CCO implementation… |
-| aa79ed37f7 | papers/pdfs/universal-implementation-framework.pdf | 12 | projection | relabel |  | …ollment within 30 days Basic needs met for 95% population Economic stabilization within 6 months Positive growth within 12 months E.2 Natural Disaster Response Trigger: Major disaster affecting >10% of population or >20 |
-| 50345ccd29 | papers/pdfs/universal-implementation-framework.pdf | >10% | projection | relabel |  | …zation within 6 months Positive growth within 12 months E.2 Natural Disaster Response Trigger: Major disaster affecting >10% of population or >20% of territory Hour 1-72: Emergency Response Coordinate with disaster resp |
-| a2be8f0a35 | papers/pdfs/universal-implementation-framework.pdf | 3-8 | fact | remove |  | …TF emergency shelters Create Crisis Creator Collectives Deploy mobile technology units Coordinate aid distribution Week 3-8: Recovery Initiation Form Reconstruction Collectives Begin damage assessment via CIP Allocate r |
-| e4c9ffe30d | papers/pdfs/universal-implementation-framework.pdf | 3-12 | fact | remove |  | …n damage assessment via CIP Allocate reconstruction resources Establish temporary zones Plan resilient rebuilding Month 3-12: Build Back Better Full system implementation Climate-resilient PTF construction Enhanced disa |
-| 991cb35cec | papers/pdfs/universal-implementation-framework.pdf | 1-30 | fact | remove |  | …Minute 1-30: Immediate Response Isolate affected systems Activate backup infrastructure Switch to offline modes Alert security team… |
-| 0dba404a6b | papers/pdfs/us-real-estate-transformation.pdf | 770,000 | projection | relabel |  | Key indicators reveal the depth of the challenge: Homelessness: Over 770,000 Americans experienced homelessness in 2024, an 18% increase from previous counts |
-| 040057873e | papers/pdfs/us-real-estate-transformation.pdf | 18% | projection | relabel |  | Key indicators reveal the depth of the challenge: Homelessness: Over 770,000 Americans experienced homelessness in 2024, an 18% increase from previous counts |
-| 257cbd6fb2 | papers/pdfs/us-real-estate-transformation.pdf | 33% | projection | relabel |  | …g Wealth Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age Market Failures: Med |
-| 2f63b2e31d | papers/pdfs/us-real-estate-transformation.pdf | 27 | projection | relabel |  | …h Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age Market Failures: Median hom |
+| 5c5095914f | papers/pdfs/universal-implementation-framework.pdf | 2-3 | finding | relabel |  | …Our analysis reveals that nations achieving fastest implementation (2-3 years to full operation) combine crisis urgency with strong social cohesion, while even fragmented societies can achiev… |
+| b943287591 | papers/pdfs/universal-implementation-framework.pdf | 5-7 | finding | relabel |  | …is urgency with strong social cohesion, while even fragmented societies can achieve comprehensive transformation within 5-7 years through carefully sequenced interventions.… |
+| de32bcd196 | papers/pdfs/universal-implementation-framework.pdf | 3-5x | finding | relabel |  | Critical findings show that "all-in" commitment with adaptive flexibility yields 3-5x faster implementation than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
+| 9cc9e76b59 | papers/pdfs/universal-implementation-framework.pdf | 40-60% | finding | relabel |  | Critical findings show that "all-in" commitment with adaptive flexibility yields 3-5x faster implementation than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
+| 96024a03a6 | papers/pdfs/universal-implementation-framework.pdf | 3-5x | finding | relabel |  | All-In Beats Incremental: Full commitment with flexibility yields 3-5x faster results than cautious incrementalism. 4. |
+| ec4e4d897c | papers/pdfs/us-real-estate-transformation.pdf | 60% | projection | relabel |  | This paper presents a comprehensive framework demonstrating how PTH can reduce housing costs by 60% while enabling participants to accumulate $70,000 in average wealth over 20 years —compared to $380,000 in wealth extrac |
+| a4651f70bc | papers/pdfs/us-real-estate-transformation.pdf | 20 | calculation | relabel |  | This paper presents a comprehensive framework demonstrating how PTH can reduce housing costs by 60% while enabling participants to accumulate $70,000 in average wealth over 20 years —compared to $380,000 in wealth extrac |
+| 294060df58 | papers/pdfs/us-real-estate-transformation.pdf | $380,000 | calculation | relabel |  | This paper presents a comprehensive framework demonstrating how PTH can reduce housing costs by 60% while enabling participants to accumulate $70,000 in average wealth over 20 years —compared to $380,000 in wealth extrac |
+| 5f40c00c21 | papers/pdfs/us-real-estate-transformation.pdf | 44 million | fact | correct |  | With the pay-in model serving as the most accessible pathway for 44 million renter households, requiring no down payment or credit checks while converting 70-80% of monthly payments to equity. |
+| ef3b3f69fb | papers/pdfs/us-real-estate-transformation.pdf | 70-80% | projection | relabel |  | With the pay-in model serving as the most accessible pathway for 44 million renter households, requiring no down payment or credit checks while converting 70-80% of monthly payments to equity. |
+| 0dba404a6b | papers/pdfs/us-real-estate-transformation.pdf | 770,000 | fact | correct |  | Key indicators reveal the depth of the challenge: Homelessness: Over 770,000 Americans experienced homelessness in 2024, an 18% increase from previous counts |
+| 040057873e | papers/pdfs/us-real-estate-transformation.pdf | 18% | fact | correct |  | Key indicators reveal the depth of the challenge: Homelessness: Over 770,000 Americans experienced homelessness in 2024, an 18% increase from previous counts |
+| 4e954b50a0 | papers/pdfs/us-real-estate-transformation.pdf | 20.5 million | fact | correct |  | …Cost Burden: 20.5 million renter households spend more than 30% of income on housing Wealth Extraction: Average renters lose $380,000 over 20 yea… |
+| 6a4c38b483 | papers/pdfs/us-real-estate-transformation.pdf | 30% | fact | correct |  | …Cost Burden: 20.5 million renter households spend more than 30% of income on housing Wealth Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation Owner… |
+| 6eac0413fe | papers/pdfs/us-real-estate-transformation.pdf | $380,000 | calculation | relabel |  | …Burden: 20.5 million renter households spend more than 30% of income on housing Wealth Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation Ownership Barriers: Only 33% of 27-year-olds o |
+| b98219331f | papers/pdfs/us-real-estate-transformation.pdf | 20 | calculation | relabel |  | …illion renter households spend more than 30% of income on housing Wealth Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation Ownership Barriers: Only 33% of 27-year-olds own homes today |
+| 257cbd6fb2 | papers/pdfs/us-real-estate-transformation.pdf | 33% | fact | correct |  | …g Wealth Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age Market Failures: Med |
+| 2f63b2e31d | papers/pdfs/us-real-estate-transformation.pdf | 27 | fact | correct |  | …h Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age Market Failures: Median hom |
+| 1f8b377fc8 | papers/pdfs/us-real-estate-transformation.pdf | 40% | fact | correct |  | …380,000 over 20 years with zero equity accumulation Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age Market Failures: Median home prices exceed 7x median household  |
+| b7abffa977 | papers/pdfs/us-real-estate-transformation.pdf | 70-80% | projection | relabel |  | …2.2 Accumulation Mechanisms Acre Equity accumulates through multiple pathways: Direct Contribution (70-80% of rent converts to equity): Monthly resident fees: $800-1,400 typical Equity accumulation: $560-1,120 monthly A |
+| b2adadc1fd | papers/pdfs/us-real-estate-transformation.pdf | 1.5x | projection | relabel |  | …Work Contribution (valued at enhanced rates): Maintenance work: 1.5x standard wage value Administrative service: 2x standard wage value Community coordination: 2.5x standard wage value Cap… |
+| 746d2125d5 | papers/pdfs/us-real-estate-transformation.pdf | 2.5x | projection | relabel | B085 | …tes): Maintenance work: 1.5x standard wage value Administrative service: 2x standard wage value Community coordination: 2.5x standard wage value Capital Contribution (dollar-for-dollar credit): Down payment transfers Im |
+| 669e8170d9 | papers/pdfs/us-real-estate-transformation.pdf | 0-100 | projection | relabel |  | 0-100 Credits |
+| 66f998e7a5 | papers/pdfs/us-real-estate-transformation.pdf | 101-300 | projection | relabel |  | 101-300 Credits |
+| 62cdad2baf | papers/pdfs/us-real-estate-transformation.pdf | 301-600 | projection | relabel |  | 301-600 Credits |
+| 6c314d2ceb | papers/pdfs/us-real-estate-transformation.pdf | 601+ | projection | relabel |  | 601+ Credits |
+| 629f405a0b | papers/pdfs/us-real-estate-transformation.pdf | 44 million | fact | correct |  | Target Participants: 44 million renter households Young adults locked out of homeownership New arrivals to communities Those rebuilding after financial setbacks Structure: 1. |
+| 02e8cdd22a | papers/pdfs/us-real-estate-transformation.pdf | $800-1,400 | projection | relabel |  | Direct monthly payments ($800-1,400 typical) 2. |
+| 5cbe2d48e9 | papers/pdfs/us-real-estate-transformation.pdf | $800-1,400 | projection | relabel |  | Monthly payment: $800-1,400 (vs. |
+| d41e9152ce | papers/pdfs/us-real-estate-transformation.pdf | $2,000+ | projection | relabel |  | …$2,000+ market rate) Acre Equity conversion: 70-80% of payment Monthly accumulation: $560-1,120 in equity Annual accumulation: … |
+| 1bfa8706d1 | papers/pdfs/us-real-estate-transformation.pdf | 70-80% | projection | relabel |  | …$2,000+ market rate) Acre Equity conversion: 70-80% of payment Monthly accumulation: $560-1,120 in equity Annual accumulation: 10,080-11,520 credits 20-year wealth buildin… |
+| 40f825b6ea | papers/pdfs/us-real-estate-transformation.pdf | $560-1,120 | projection | relabel |  | …$2,000+ market rate) Acre Equity conversion: 70-80% of payment Monthly accumulation: $560-1,120 in equity Annual accumulation: 10,080-11,520 credits 20-year wealth building: $134,400-268,800 in Acre Equity Why Pay-I… |
+| 1d9ace400c | papers/pdfs/us-real-estate-transformation.pdf | 10,080-11,520 | projection | relabel |  | … market rate) Acre Equity conversion: 70-80% of payment Monthly accumulation: $560-1,120 in equity Annual accumulation: 10,080-11,520 credits 20-year wealth building: $134,400-268,800 in Acre Equity Why Pay-In is Critic |
+| bc44f1f43b | papers/pdfs/us-real-estate-transformation.pdf | 20 | projection | relabel |  | …ity conversion: 70-80% of payment Monthly accumulation: $560-1,120 in equity Annual accumulation: 10,080-11,520 credits 20-year wealth building: $134,400-268,800 in Acre Equity Why Pay-In is Critical: Most accessible pa |
+| 20cdd419da | papers/pdfs/us-real-estate-transformation.pdf | $134,400-268,800 | projection | relabel |  | … payment Monthly accumulation: $560-1,120 in equity Annual accumulation: 10,080-11,520 credits 20-year wealth building: $134,400-268,800 in Acre Equity Why Pay-In is Critical: Most accessible pathway with no barriers to |
+| 8d3ee6594d | papers/pdfs/us-real-estate-transformation.pdf | 20.5 million | projection | relabel |  | …in Acre Equity Why Pay-In is Critical: Most accessible pathway with no barriers to entry Serves largest market segment (20.5 million cost-burdened renters) Generates immediate cash flow for PTH operations Enables rapid  |
 | f71b4ec506 | papers/pdfs/us-real-estate-transformation.pdf | 30-40% | projection | relabel |  | Participation in collective benefits Financial Benefits: Payment reduction: 30-40% typical Risk mitigation through collective ownership Access to shared services and maintenance Preservation of housing security |
-| 4b857d842d | papers/pdfs/us-real-estate-transformation.pdf | 30-40 | fact | remove |  | 30-40 |
-| 32321fb19e | papers/pdfs/us-real-estate-transformation.pdf | 6-12 | fact | remove |  | 6-12 months |
-| 869f197373 | papers/pdfs/us-real-estate-transformation.pdf | $500K-1M | fact | remove |  | $500K-1M |
-| 3cf298ed04 | papers/pdfs/us-real-estate-transformation.pdf | 40-60 | fact | remove |  | 40-60 |
-| 7263f34ffb | papers/pdfs/us-real-estate-transformation.pdf | 12-18 | fact | remove |  | 12-18 months |
-| 0635bac3d6 | papers/pdfs/us-real-estate-transformation.pdf | $1-2M | fact | remove |  | $1-2M |
-| 57c599002b | papers/pdfs/us-real-estate-transformation.pdf | 80-100 | fact | remove |  | 80-100 |
-| 5106e7e233 | papers/pdfs/us-real-estate-transformation.pdf | $5-10M | fact | remove |  | $5-10M |
-| ecb1b3b0f8 | papers/pdfs/us-real-estate-transformation.pdf | 501 | simulation result | remove |  | Implementation Framework 5.1 Legal Structure Options Community Land Trust Model: 501(c)(3) nonprofit status Tax-exempt property holdings Charitable contribution eligibility Mission-locked governance Cooperative Corporati |
-| 38c705592e | papers/pdfs/us-real-estate-transformation.pdf | 7.1 | fact | remove |  | Comparative Analysis 7.1 PTH vs. |
-| 854fc4ebfb | papers/pdfs/us-real-estate-transformation.pdf | $2,000 | fact | remove |  | $2,000 |
-| 3922c2f522 | papers/pdfs/us-real-estate-transformation.pdf | $800-1,400 | fact | remove |  | $800-1,400 |
-| 56d466b351 | papers/pdfs/us-real-estate-transformation.pdf | 20 | fact | remove |  | Equity Built (20 years) |
-| 628a18acdc | papers/pdfs/us-real-estate-transformation.pdf | $0 | fact | remove |  | $0 |
-| 2d9b337557 | papers/pdfs/us-real-estate-transformation.pdf | $134,400-268,800 | fact | remove |  | $134,400-268,800 |
-| 97d9592d83 | papers/pdfs/us-real-estate-transformation.pdf | $380,000 | fact | remove |  | $380,000 |
-| 021d8e319b | papers/pdfs/us-real-estate-transformation.pdf | $60,000 | fact | remove |  | $60,000 |
-| 57cd79ec2a | papers/pdfs/us-real-estate-transformation.pdf | $2,500 | fact | remove |  | $2,500 |
-| 78fafff851 | papers/pdfs/us-real-estate-transformation.pdf | $1,500 | fact | remove |  | $1,500 |
+| fb99f8bcb7 | papers/pdfs/us-real-estate-transformation.pdf | 60-70% | projection | relabel |  | …Financial Architecture and Sustainability 4.1 Revenue Model Primary Revenue Streams: Pay-in monthly payments: 60-70% of revenue Buy-in payment conversions: 20-25% of revenue Commercial property income: 5-10% of revenue  |
+| 52c6e7190f | papers/pdfs/us-real-estate-transformation.pdf | 20-25% | projection | relabel |  | …ility 4.1 Revenue Model Primary Revenue Streams: Pay-in monthly payments: 60-70% of revenue Buy-in payment conversions: 20-25% of revenue Commercial property income: 5-10% of revenue Service fees and programs: 5-10% of  |
+| 0fb71ed7e5 | papers/pdfs/us-real-estate-transformation.pdf | 5-10% | projection | relabel |  | …s: Pay-in monthly payments: 60-70% of revenue Buy-in payment conversions: 20-25% of revenue Commercial property income: 5-10% of revenue Service fees and programs: 5-10% of revenue Cost Structure: Property maintenance:  |
+| 351ba03067 | papers/pdfs/us-real-estate-transformation.pdf | 25-30% | projection | relabel |  | …ial property income: 5-10% of revenue Service fees and programs: 5-10% of revenue Cost Structure: Property maintenance: 25-30% of revenue Administration: 10-15% of revenue Debt service: 20-25% of revenue Reserves: 10-15 |
+| bddbc3bf67 | papers/pdfs/us-real-estate-transformation.pdf | 10-15% | projection | relabel |  | …nue Service fees and programs: 5-10% of revenue Cost Structure: Property maintenance: 25-30% of revenue Administration: 10-15% of revenue Debt service: 20-25% of revenue Reserves: 10-15% of revenue Expansion fund: 15-20 |
+| a5dcaeff5b | papers/pdfs/us-real-estate-transformation.pdf | 15-20% | projection | relabel |  | …f revenue Administration: 10-15% of revenue Debt service: 20-25% of revenue Reserves: 10-15% of revenue Expansion fund: 15-20% of revenue… |
+| 4b857d842d | papers/pdfs/us-real-estate-transformation.pdf | 30-40 | projection | relabel |  | 30-40 |
+| 32321fb19e | papers/pdfs/us-real-estate-transformation.pdf | 6-12 | projection | relabel |  | 6-12 months |
+| 869f197373 | papers/pdfs/us-real-estate-transformation.pdf | $500K-1M | projection | relabel |  | $500K-1M |
+| 3cf298ed04 | papers/pdfs/us-real-estate-transformation.pdf | 40-60 | projection | relabel |  | 40-60 |
+| 7263f34ffb | papers/pdfs/us-real-estate-transformation.pdf | 12-18 | projection | relabel |  | 12-18 months |
+| 0635bac3d6 | papers/pdfs/us-real-estate-transformation.pdf | $1-2M | projection | relabel |  | $1-2M |
+| 57c599002b | papers/pdfs/us-real-estate-transformation.pdf | 80-100 | projection | relabel |  | 80-100 |
+| 5106e7e233 | papers/pdfs/us-real-estate-transformation.pdf | $5-10M | projection | relabel |  | $5-10M |
+| 858d23f284 | papers/pdfs/us-real-estate-transformation.pdf | 1-3 | projection | relabel |  | …4.3 Scaling Projections Year 1-3: Foundation Phase 30-100 households Focus on pay-in participants Establish operational systems Build community governan… |
+| c50ec2bc04 | papers/pdfs/us-real-estate-transformation.pdf | 4-7 | projection | relabel |  | …tion Phase 30-100 households Focus on pay-in participants Establish operational systems Build community governance Year 4-7: Growth Phase 100-500 households All four pathways active Regional expansion Technology platfor |
+| 29f0a12d24 | papers/pdfs/us-real-estate-transformation.pdf | 8-10 | projection | relabel |  | …ar 4-7: Growth Phase 100-500 households All four pathways active Regional expansion Technology platform deployment Year 8-10: Maturation Phase 500-2,000 households Multi-regional presence Self-sustaining operations Poli |
+| ecb1b3b0f8 | papers/pdfs/us-real-estate-transformation.pdf | 501 | projection | relabel |  | Implementation Framework 5.1 Legal Structure Options Community Land Trust Model: 501(c)(3) nonprofit status Tax-exempt property holdings Charitable contribution eligibility Mission-locked governance Cooperative Corporati |
+| 228b991f43 | papers/pdfs/us-real-estate-transformation.pdf | 3-6 | projection | relabel |  | 5.3 Risk Management Financial Risks: Diversified revenue streams Reserve requirements (3-6 months operating expenses) Insurance coverage (property, liability, directors) Credit facility access Operational Risks: Professi |
+| bac0b24b19 | papers/pdfs/us-real-estate-transformation.pdf | 60% | projection | relabel |  | …Community Benefits and Social Impact 6.1 Direct Participant Benefits Immediate Impact: 60% reduction in housing costs Elimination of housing insecurity Access to community resources Democratic participation rig… |
+| d7d2274c71 | papers/pdfs/us-real-estate-transformation.pdf | 20 | projection | relabel |  | …ing insecurity Access to community resources Democratic participation rights Long-term Wealth Building: $70,000 average 20-year accumulation Transferable equity rights Inheritance provisions Retirement security… |
+| 38c705592e | papers/pdfs/us-real-estate-transformation.pdf | 7.1 | projection | relabel |  | Comparative Analysis 7.1 PTH vs. |
+| 854fc4ebfb | papers/pdfs/us-real-estate-transformation.pdf | $2,000 | projection | relabel |  | $2,000 |
+| 3922c2f522 | papers/pdfs/us-real-estate-transformation.pdf | $800-1,400 | projection | relabel |  | $800-1,400 |
+| 56d466b351 | papers/pdfs/us-real-estate-transformation.pdf | 20 | projection | relabel |  | Equity Built (20 years) |
+| 628a18acdc | papers/pdfs/us-real-estate-transformation.pdf | $0 | projection | relabel |  | $0 |
+| 2d9b337557 | papers/pdfs/us-real-estate-transformation.pdf | $134,400-268,800 | projection | relabel |  | $134,400-268,800 |
+| 97d9592d83 | papers/pdfs/us-real-estate-transformation.pdf | $380,000 | calculation | relabel |  | $380,000 |
+| 021d8e319b | papers/pdfs/us-real-estate-transformation.pdf | $60,000 | projection | relabel |  | $60,000 |
+| 57cd79ec2a | papers/pdfs/us-real-estate-transformation.pdf | $2,500 | projection | relabel |  | $2,500 |
+| 78fafff851 | papers/pdfs/us-real-estate-transformation.pdf | $1,500 | projection | relabel |  | $1,500 |
+| d9c8cdafdc | papers/pdfs/us-real-estate-transformation.pdf | 44 million | fact | correct |  | The pay-in model ensures that the 44 million renter households can immediately begin building equity without traditional barriers, while the buyin, sell-in, and earn-in pathways provide options for diverse economic circu |
+| 2b6c9ce2ed | papers/pdfs/us-real-estate-transformation.pdf | 30-40 | projection | relabel | B116 | With operational break-even achievable at just 30-40 pay-in households, PTH offers communities a viable path to housing security independent of market forces or government programs. |
 | dbeb0c11a3 | pth-government-integration.html | 44 million | fact | correct |  | …ed)—create comprehensive access across economic circumstances, with the pay-in model serving as the primary pathway for 44 million renter households.… |
 | 07fccd3a76 | pth-government-integration.html | $50 billion | fact | correct |  | Unlike current HUD programs that spend $50 billion annually on rental assistance with zero wealth accumulation, PTH converts housing subsidies into community assets, achieving permanent affordability while building parti |
 | 406643089b | pth-government-integration.html | 500,000-800,000 | projection | relabel |  | Analysis reveals that moderate integration (1x HUD budget) could serve 500,000-800,000 households within 5 years while generating $150-200 billion in community wealth. |
@@ -2873,108 +2842,61 @@ Classed by a reviewed rule or the reference list: 5621; by a generic rule or a p
 | 1a8d6b7354 | risk-mitigation-framework.html | 1 | fact | remove |  | / Yellow / Anomalies detected / Security analysts / Enhanced monitoring / 1 hour response |
 | f11eea8319 | risk-mitigation-framework.html | 30 | projection | relabel |  | / Orange / Potential security incident / Incident response team / Investigation, containment / 30 minutes |
 | 78c93dd77d | risk-mitigation-framework.html | 15 | fact | remove |  | / Red / Active security breach / Full response team + executives / Emergency protocols / 15 minutes |
-| bb1fed61d3 | universal-implementation-framework.html | 18 | simulation result | remove |  | …Our analysis reveals that nations achieving fastest implementation (18 months to 3 years) combine either crisis urgency or unity momentum with strong social cohesion, while even fragmented s… |
-| 3bd8cf5e40 | universal-implementation-framework.html | 3 | projection | relabel |  | …Our analysis reveals that nations achieving fastest implementation (18 months to 3 years) combine either crisis urgency or unity momentum with strong social cohesion, while even fragmented societies can… |
-| e6fb2c083b | universal-implementation-framework.html | 5-7 | projection | relabel |  | …y momentum with strong social cohesion, while even fragmented societies can achieve comprehensive transformation within 5-7 years through carefully sequenced interventions.… |
-| 1f2ad0ae37 | universal-implementation-framework.html | 3-5x | projection | relabel |  | Critical findings show that "all-in" commitment with adaptive flexibility yields 3-5x faster implementation than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
-| df3dc736d9 | universal-implementation-framework.html | 40-60% | projection | relabel |  | Critical findings show that "all-in" commitment with adaptive flexibility yields 3-5x faster implementation than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
-| 1acab7740d | universal-implementation-framework.html | 3-5x | simulation result | remove |  | Evidence from successful large-scale transformations—from post-war reconstructions to digital revolutions—demonstrates that comprehensive "all-in" approaches achieve 3-5x faster results than incremental changes. |
-| 1e0bade530 | universal-implementation-framework.html | 18 | simulation result | remove |  | Our analysis reveals that nations achieving fastest implementation (18 months to 3 years) combine either crisis urgency or unity momentum with strong social cohesion. |
-| 434744c68c | universal-implementation-framework.html | 3 | simulation result | remove |  | Our analysis reveals that nations achieving fastest implementation (18 months to 3 years) combine either crisis urgency or unity momentum with strong social cohesion. |
-| 073c0ad375 | universal-implementation-framework.html | 5-7 | projection | relabel |  | Even fragmented societies can achieve comprehensive transformation within 5-7 years through carefully sequenced interventions that build trust and capability over time. |
-| bf9c7e0681 | universal-implementation-framework.html | 24-72 | fact | remove |  | Rapid adjustment: 24-72 hour response protocols |
-| c9a7de190c | universal-implementation-framework.html | 24-48 | fact | remove |  | Implementation Timeline: 24-48 months |
-| 8589c65c8a | universal-implementation-framework.html | 12-24 | fact | remove |  | Implementation Timeline: 12-24 months |
-| 61aa1f44ba | universal-implementation-framework.html | 36-48 | fact | remove |  | Implementation Timeline: 36-48 months |
-| a33998da50 | universal-implementation-framework.html | 36-60 | fact | remove |  | Implementation Timeline: 36-60 months |
-| 53cb4e6d53 | universal-implementation-framework.html | 60-84 | fact | remove |  | Implementation Timeline: 60-84 months |
-| 785bc2dd27 | universal-implementation-framework.html | 12-18 | fact | remove |  | Implementation Timeline: 12-18 months |
-| 7e8a13505f | universal-implementation-framework.html | 1-3 | fact | remove |  | Month 1-3: PTF emergency housing programs |
-| d61d1d7a14 | universal-implementation-framework.html | 4-6 | fact | remove |  | Month 4-6: CIP crisis coordination platforms |
-| f673430cb4 | universal-implementation-framework.html | 7-12 | fact | remove |  | Month 7-12: Full system integration |
-| b2bf8e7cc4 | universal-implementation-framework.html | 13-18 | fact | remove |  | Month 13-18: Economic stabilization |
-| 96f5bea9d5 | universal-implementation-framework.html | 1-2 | fact | remove |  | Week 1-2: PTF emergency shelter activation |
-| 137af08f0a | universal-implementation-framework.html | 3-8 | fact | remove |  | Week 3-8: Reconstruction Collectives formation |
-| 5fc9a0a8b1 | universal-implementation-framework.html | 3-6 | fact | remove |  | Month 3-6: Resilient rebuilding with integrated systems |
-| cef3a2fa9e | universal-implementation-framework.html | 7-12 | fact | remove |  | Month 7-12: Full transformation completion |
-| b630e4879d | universal-implementation-framework.html | 1-2 | fact | remove |  | Week 1-2: Digital-first deployment |
-| 937f9e661a | universal-implementation-framework.html | 4-9 | fact | remove |  | Month 4-9: Health system reinforcement |
-| 0935182588 | universal-implementation-framework.html | 10-18 | fact | remove |  | Month 10-18: Economic reconstruction |
-| c52b97500d | universal-implementation-framework.html | 1-3 | fact | remove |  | Month 1-3: Disarmament and basic distribution |
-| f4f442396d | universal-implementation-framework.html | 4-9 | projection | relabel |  | Month 4-9: Reconciliation through shared projects |
-| cac2c34942 | universal-implementation-framework.html | 10-18 | fact | remove |  | Month 10-18: Institutional reconstruction |
-| 67f64de456 | universal-implementation-framework.html | 31-36 | fact | remove |  | Month 31-36: Full system maturation |
-| a80ed55090 | universal-implementation-framework.html | 24 | fact | remove |  | Technical adjustment: 24-hour response |
-| 62b5aeef7a | universal-implementation-framework.html | 72 | fact | remove |  | Policy modification: 72-hour response |
-| b7b0e8ce25 | universal-implementation-framework.html | 30 | fact | remove |  | Legislative change: 30-day maximum |
-| 6e9a3d9269 | universal-implementation-framework.html | 90 | fact | remove |  | Constitutional amendment: 90-day maximum |
-| ebb5271f30 | universal-implementation-framework.html | <60% | fact | remove |  | User satisfaction <60%: Immediate review |
-| 8fc01ee083 | universal-implementation-framework.html | 18 | fact | remove |  | 6.2 Implementation Timeline: 18 Months |
-| ec21c04b03 | universal-implementation-framework.html | 1-3 | fact | remove |  | Months 1-3: Foundation Phase |
-| 6415287ffe | universal-implementation-framework.html | 75% | fact | remove |  | Parliamentary approval with 75% support |
-| b7d3490dbe | universal-implementation-framework.html | 10,000 | fact | remove |  | CCO pilot with 10,000 participants |
-| 38c153b8f5 | universal-implementation-framework.html | 4-9 | fact | remove |  | Months 4-9: Scaling Phase |
-| bf1b74a802 | universal-implementation-framework.html | 10-18 | fact | remove |  | Months 10-18: Integration Phase |
-| 6b76b9e945 | universal-implementation-framework.html | 50% | projection | relabel |  | Human flourishing metrics improve 50% in first year |
-| 40ec93ee81 | universal-implementation-framework.html | 0.28 to 0.15 | projection | relabel |  | Income inequality reduces from 0.28 to 0.15 Gini coefficient |
-| 141e616be1 | universal-implementation-framework.html | 75% | projection | relabel |  | Democratic participation increases from 75% to 95% |
-| 6e81003ac8 | universal-implementation-framework.html | 95% | projection | relabel |  | Democratic participation increases from 75% to 95% |
-| da87257559 | universal-implementation-framework.html | 100% | fact | remove |  | Year 1: Survival secured for 100% of population |
-| 7cf39911ef | universal-implementation-framework.html | 50% | projection | relabel |  | Year 2: 50% report increased life satisfaction |
-| be2178b939 | universal-implementation-framework.html | 10 | simulation result | remove |  | Year 10: Model nation for global transformation |
-| c0cde3da25 | universal-implementation-framework.html | 99.95% | fact | remove |  | Availability: 99.95% SLA |
-| 67efa675f4 | universal-implementation-framework.html | 21 | fact | remove |  | Nodes: Minimum 21 validator nodes |
-| 6296936457 | universal-implementation-framework.html | 10,000+ | fact | remove |  | Transaction Speed: 10,000+ TPS |
-| d7bb387360 | universal-implementation-framework.html | 2.0 | fact | remove |  | Authentication: OAuth 2.0 + OpenID Connect |
-| c88ddf6e8e | universal-implementation-framework.html | 1.3 | fact | remove |  | Encryption: AES-256 (rest), TLS 1.3 (transit) |
-| ba34f7c989 | universal-implementation-framework.html | 5.0+ | fact | remove |  | Android 5.0+ or iOS 10+ |
-| bf20c9ce63 | universal-implementation-framework.html | 10+ | fact | remove |  | Android 5.0+ or iOS 10+ |
-| 7ef717bb81 | universal-implementation-framework.html | 7 | fact | remove |  | Store 7 days of transactions locally |
-| e924670568 | universal-implementation-framework.html | 2.0 | fact | remove |  | PTF-Manager: Python/Django, Apache 2.0 - Public Trust Foundation management |
-| 383c3d2bbc | universal-implementation-framework.html | 18 | projection | relabel |  | This Universal Implementation Framework demonstrates that comprehensive transformation to human thriving is achievable across any national context within 18 months to 7 years, depending on starting conditions and impleme |
-| 7bfbfac23b | universal-implementation-framework.html | 7 | projection | relabel |  | This Universal Implementation Framework demonstrates that comprehensive transformation to human thriving is achievable across any national context within 18 months to 7 years, depending on starting conditions and impleme |
-| ebd5569fb7 | universal-implementation-framework.html | 3-5x | projection | relabel |  | "All-in" Advantage: Comprehensive implementation achieves 3-5x faster results than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
-| b2464e2115 | universal-implementation-framework.html | 40-60% | projection | relabel |  | "All-in" Advantage: Comprehensive implementation achieves 3-5x faster results than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
-| 60c0dea83e | universal-implementation-framework.html | 18 | projection | relabel |  | Crisis and Unity Catalysts: Both crisis urgency and positive unity can accelerate transformation, with fastest implementations (18 months to 3 years) combining either catalyst with strong social cohesion. |
-| ee27b83c01 | universal-implementation-framework.html | 3 | projection | relabel |  | Crisis and Unity Catalysts: Both crisis urgency and positive unity can accelerate transformation, with fastest implementations (18 months to 3 years) combining either catalyst with strong social cohesion. |
-| e5d82ed363 | us-real-estate-transformation.html | 31 | fact | remove |  | Date: August 31, 2025 |
-| 14831140a9 | us-real-estate-transformation.html | 770,000 | projection | relabel |  | Homelessness: Over 770,000 Americans experienced homelessness in 2024, an 18% increase from previous counts |
-| 0a2d41b86a | us-real-estate-transformation.html | 18% | projection | relabel |  | Homelessness: Over 770,000 Americans experienced homelessness in 2024, an 18% increase from previous counts |
-| 12f18e510f | us-real-estate-transformation.html | $380,000 | projection | relabel |  | Wealth Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation |
-| 00e7b344cc | us-real-estate-transformation.html | 20 | projection | relabel |  | Wealth Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation |
-| 9bd3f4c187 | us-real-estate-transformation.html | 33% | fact | remove |  | Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age |
-| 94e9743186 | us-real-estate-transformation.html | 27 | fact | remove |  | Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age |
-| 6f008a1338 | us-real-estate-transformation.html | 40% | fact | remove |  | Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age |
-| 885f921add | us-real-estate-transformation.html | 70-80% | fact | remove |  | Direct Contribution (70-80% of rent converts to equity): |
-| d37145e175 | us-real-estate-transformation.html | 6,720-13,440 | fact | remove |  | Annual accumulation: 6,720-13,440 in Acre Equity |
-| 7e94692d41 | us-real-estate-transformation.html | +15% | fact | remove |  | Maintenance work: +15% equity bonus |
-| 459c714d2d | us-real-estate-transformation.html | +25% | fact | remove |  | Administrative roles: +25% equity bonus |
-| 3405643aac | us-real-estate-transformation.html | +10% | fact | remove |  | Skill development: +10% equity bonus |
-| c027a3a639 | us-real-estate-transformation.html | 5+ | fact | remove |  | 5+ year residence: +50% annual bonus |
-| 36ce64d991 | us-real-estate-transformation.html | +50% | fact | remove |  | 5+ year residence: +50% annual bonus |
-| be997ef0aa | us-real-estate-transformation.html | 10+ | fact | remove |  | 10+ year residence: +100% annual bonus |
-| fc5ca69e73 | us-real-estate-transformation.html | +100% | fact | remove |  | 10+ year residence: +100% annual bonus |
-| fefcf6ded7 | us-real-estate-transformation.html | +200% | fact | remove |  | Lifetime commitment option: +200% bonus |
-| 43210b35b6 | us-real-estate-transformation.html | 25% | fact | remove |  | Partial Liquidity Options: Convert up to 25% annually to cash for emergencies |
-| d5b31851c4 | us-real-estate-transformation.html | 20 | fact | remove |  | Average 20-year accumulation: $168,000-336,000 Acre Equity |
-| fb726b4d5e | us-real-estate-transformation.html | $168,000-336,000 | fact | remove |  | Average 20-year accumulation: $168,000-336,000 Acre Equity |
-| 4fb5dc2b18 | us-real-estate-transformation.html | $67,000-134,000 | fact | remove |  | Cash equivalent: $67,000-134,000 upon exit |
-| be5a82750f | us-real-estate-transformation.html | 18 | fact | remove |  | Capital reserve maintenance: 18-month buffer |
-| 2b0e4178c6 | us-real-estate-transformation.html | 80% | fact | remove |  | Democratic governance viability: 80%+ participation |
-| 439fbe2d6d | us-real-estate-transformation.html | 1-3 | fact | remove |  | Phase 1 (Years 1-3): Proof of Concept |
-| ba5edd59b0 | us-real-estate-transformation.html | 10-20 | fact | remove |  | 10-20 pilot communities nationwide |
-| cb28f0ade3 | us-real-estate-transformation.html | 4-7 | fact | remove |  | Phase 2 (Years 4-7): Regional Expansion |
-| 5e23ddd20b | us-real-estate-transformation.html | 100-200 | fact | remove |  | 100-200 PTH networks operational |
-| be260d1ec9 | us-real-estate-transformation.html | 8-12 | fact | remove |  | Phase 3 (Years 8-12): Market Integration |
-| f7eebef1b3 | us-real-estate-transformation.html | 500-1,000 | fact | remove |  | 500-1,000 networks nationwide |
-| 9242090a33 | us-real-estate-transformation.html | 8-12% | fact | remove |  | 8-12% market penetration |
-| 980fb6f4bc | us-real-estate-transformation.html | $14-28 billion | fact | remove |  | $14-28 billion in collective assets |
-| a128203fb8 | us-real-estate-transformation.html | $70,000 | projection | relabel |  | Wealth accumulation: $70,000 over 20 years |
+| bb1fed61d3 | universal-implementation-framework.html | 18 | finding | relabel |  | …Our analysis reveals that nations achieving fastest implementation (18 months to 3 years) combine either crisis urgency or unity momentum with strong social cohesion, while even fragmented s… |
+| 3bd8cf5e40 | universal-implementation-framework.html | 3 | finding | relabel |  | …Our analysis reveals that nations achieving fastest implementation (18 months to 3 years) combine either crisis urgency or unity momentum with strong social cohesion, while even fragmented societies can… |
+| e6fb2c083b | universal-implementation-framework.html | 5-7 | finding | relabel |  | …y momentum with strong social cohesion, while even fragmented societies can achieve comprehensive transformation within 5-7 years through carefully sequenced interventions.… |
+| 1f2ad0ae37 | universal-implementation-framework.html | 3-5x | finding | relabel |  | Critical findings show that "all-in" commitment with adaptive flexibility yields 3-5x faster implementation than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
+| df3dc736d9 | universal-implementation-framework.html | 40-60% | finding | relabel |  | Critical findings show that "all-in" commitment with adaptive flexibility yields 3-5x faster implementation than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
+| 1acab7740d | universal-implementation-framework.html | 3-5x | finding | relabel |  | Evidence from successful large-scale transformations—from post-war reconstructions to digital revolutions—demonstrates that comprehensive "all-in" approaches achieve 3-5x faster results than incremental changes. |
+| 1e0bade530 | universal-implementation-framework.html | 18 | finding | relabel |  | Our analysis reveals that nations achieving fastest implementation (18 months to 3 years) combine either crisis urgency or unity momentum with strong social cohesion. |
+| 434744c68c | universal-implementation-framework.html | 3 | finding | relabel |  | Our analysis reveals that nations achieving fastest implementation (18 months to 3 years) combine either crisis urgency or unity momentum with strong social cohesion. |
+| 073c0ad375 | universal-implementation-framework.html | 5-7 | finding | relabel |  | Even fragmented societies can achieve comprehensive transformation within 5-7 years through carefully sequenced interventions that build trust and capability over time. |
+| 6b76b9e945 | universal-implementation-framework.html | 50% | projection | remove |  | Human flourishing metrics improve 50% in first year |
+| 40ec93ee81 | universal-implementation-framework.html | 0.28 to 0.15 | projection | remove |  | Income inequality reduces from 0.28 to 0.15 Gini coefficient |
+| 141e616be1 | universal-implementation-framework.html | 75% | projection | remove |  | Democratic participation increases from 75% to 95% |
+| 6e81003ac8 | universal-implementation-framework.html | 95% | projection | remove |  | Democratic participation increases from 75% to 95% |
+| ebd5569fb7 | universal-implementation-framework.html | 3-5x | finding | relabel |  | "All-in" Advantage: Comprehensive implementation achieves 3-5x faster results than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
+| b2464e2115 | universal-implementation-framework.html | 40-60% | finding | relabel |  | "All-in" Advantage: Comprehensive implementation achieves 3-5x faster results than incremental approaches, with human flourishing metrics improving 40-60% within the first operational year. |
+| 60c0dea83e | universal-implementation-framework.html | 18 | finding | relabel |  | Crisis and Unity Catalysts: Both crisis urgency and positive unity can accelerate transformation, with fastest implementations (18 months to 3 years) combining either catalyst with strong social cohesion. |
+| ee27b83c01 | universal-implementation-framework.html | 3 | finding | relabel |  | Crisis and Unity Catalysts: Both crisis urgency and positive unity can accelerate transformation, with fastest implementations (18 months to 3 years) combining either catalyst with strong social cohesion. |
+| c0e27d7940 | us-real-estate-transformation.html | 60% | calculation | relabel |  | This paper presents a comprehensive framework demonstrating how PTH can reduce housing costs by 60% while enabling participants to accumulate $70,000 in average wealth over 20 years—compared to $380,000 in wealth extract |
+| 5938a8b1aa | us-real-estate-transformation.html | 20 | calculation | relabel |  | This paper presents a comprehensive framework demonstrating how PTH can reduce housing costs by 60% while enabling participants to accumulate $70,000 in average wealth over 20 years—compared to $380,000 in wealth extract |
+| ff7b2fd2f7 | us-real-estate-transformation.html | $380,000 | calculation | relabel |  | This paper presents a comprehensive framework demonstrating how PTH can reduce housing costs by 60% while enabling participants to accumulate $70,000 in average wealth over 20 years—compared to $380,000 in wealth extract |
+| 25624e1e5c | us-real-estate-transformation.html | 44 million | fact | correct |  | With the pay-in model serving as the most accessible pathway for 44 million renter households, requiring no down payment or credit checks while converting 70-80% of monthly payments to equity. |
+| 2ce208bab5 | us-real-estate-transformation.html | 70-80% | fact | correct |  | With the pay-in model serving as the most accessible pathway for 44 million renter households, requiring no down payment or credit checks while converting 70-80% of monthly payments to equity. |
+| 14831140a9 | us-real-estate-transformation.html | 770,000 | fact | correct |  | Homelessness: Over 770,000 Americans experienced homelessness in 2024, an 18% increase from previous counts |
+| 0a2d41b86a | us-real-estate-transformation.html | 18% | fact | correct |  | Homelessness: Over 770,000 Americans experienced homelessness in 2024, an 18% increase from previous counts |
+| 8757fa00ab | us-real-estate-transformation.html | 20.5 million | fact | correct |  | Cost Burden: 20.5 million renter households spend more than 30% of income on housing |
+| 67dbdf8c2a | us-real-estate-transformation.html | 30% | fact | correct |  | Cost Burden: 20.5 million renter households spend more than 30% of income on housing |
+| 12f18e510f | us-real-estate-transformation.html | $380,000 | calculation | relabel |  | Wealth Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation |
+| 00e7b344cc | us-real-estate-transformation.html | 20 | calculation | relabel |  | Wealth Extraction: Average renters lose $380,000 over 20 years with zero equity accumulation |
+| 9bd3f4c187 | us-real-estate-transformation.html | 33% | fact | correct |  | Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age |
+| 94e9743186 | us-real-estate-transformation.html | 27 | fact | correct |  | Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age |
+| 6f008a1338 | us-real-estate-transformation.html | 40% | fact | correct |  | Ownership Barriers: Only 33% of 27-year-olds own homes today versus 40% of baby boomers at the same age |
+| d162e7ce51 | us-real-estate-transformation.html | 44 million | fact | correct |  | Target Population: 44 million renter households nationwide |
+| 439fbe2d6d | us-real-estate-transformation.html | 1-3 | projection | relabel |  | Phase 1 (Years 1-3): Proof of Concept |
+| ba5edd59b0 | us-real-estate-transformation.html | 10-20 | projection | relabel |  | 10-20 pilot communities nationwide |
+| 5687d4d643 | us-real-estate-transformation.html | 1,000-2,000 | projection | relabel |  | 1,000-2,000 participating households |
+| cb28f0ade3 | us-real-estate-transformation.html | 4-7 | projection | relabel |  | Phase 2 (Years 4-7): Regional Expansion |
+| 5e23ddd20b | us-real-estate-transformation.html | 100-200 | projection | relabel |  | 100-200 PTH networks operational |
+| fdbd30e343 | us-real-estate-transformation.html | 25,000-50,000 | projection | relabel |  | 25,000-50,000 participating households |
+| 0d7bf259c2 | us-real-estate-transformation.html | 2-3% | projection | relabel |  | 2-3% market penetration in target metros |
+| be260d1ec9 | us-real-estate-transformation.html | 8-12 | projection | relabel |  | Phase 3 (Years 8-12): Market Integration |
+| f7eebef1b3 | us-real-estate-transformation.html | 500-1,000 | projection | relabel |  | 500-1,000 networks nationwide |
+| 9ab346fb90 | us-real-estate-transformation.html | 200,000-400,000 | projection | relabel |  | 200,000-400,000 participating households |
+| 9242090a33 | us-real-estate-transformation.html | 8-12% | projection | relabel |  | 8-12% market penetration |
+| 980fb6f4bc | us-real-estate-transformation.html | $14-28 billion | projection | relabel |  | $14-28 billion in collective assets |
+| e6aabfd4b3 | us-real-estate-transformation.html | 40-60% | projection | relabel |  | Average housing cost reduction: 40-60% |
 | 0dd87f706e | us-real-estate-transformation.html | 20 | projection | relabel |  | Wealth accumulation: $70,000 over 20 years |
 | 7cb4d6e814 | us-real-estate-transformation.html | 95% | projection | relabel |  | Housing security improvement: 95% stability |
-| 5dd4cc05b6 | us-real-estate-transformation.html | 30-50 | fact | remove |  | Cooperative formation with 30-50 founding families |
-| 6dcaf04db0 | us-real-estate-transformation.html | 18 | fact | remove |  | Operational Deficits: Reserve funds (18-month operating buffer) and diversified revenue streams provide financial stability |
-| 238bcbefdf | us-real-estate-transformation.html | 60-70% | fact | remove |  | Decision Paralysis: Qualified majority voting (60-70% thresholds) balances inclusivity with efficiency |
+| 74e5ba8ad1 | us-real-estate-transformation.html | $2,000-4,000 | projection | relabel |  | Reduced housing cost burden releases $2,000-4,000 annually per household for local consumption |
+| 1490fd63e5 | us-real-estate-transformation.html | 15-20% | simulation result | correct |  | Mathematical modeling demonstrates that PTH networks can achieve 15-20% market penetration within a decade, with individual households accumulating an average of $70,000 in wealth compared to $380,000 in losses under cur |
+| a07108f114 | us-real-estate-transformation.html | $380,000 | calculation | relabel |  | Mathematical modeling demonstrates that PTH networks can achieve 15-20% market penetration within a decade, with individual households accumulating an average of $70,000 in wealth compared to $380,000 in losses under cur |
+| 6af178b989 | us-real-estate-transformation.html | $450,000 | calculation | relabel |  | This represents a $450,000 improvement in household wealth outcomes over 20 years. |
+| aec2ce17d6 | us-real-estate-transformation.html | 20 | calculation | relabel |  | This represents a $450,000 improvement in household wealth outcomes over 20 years. |
+| 66ecb81beb | us-real-estate-transformation.html | 200,000-400,000 | projection | relabel |  | …ive public policy can establish PTH as a significant housing alternative within the current decade, potentially serving 200,000-400,000 households and generating $14-28 billion in collective community assets by 2035.… |
+| b557229340 | us-real-estate-transformation.html | $14-28 billion | projection | relabel |  | …ignificant housing alternative within the current decade, potentially serving 200,000-400,000 households and generating $14-28 billion in collective community assets by 2035.… |
+| 075db31728 | us-real-estate-transformation.html | 2035 | projection | relabel |  | … decade, potentially serving 200,000-400,000 households and generating $14-28 billion in collective community assets by 2035.… |
 | 3ae8ca2a2e | wiki/faq.html | 100% | fact | correct |  | Traditional welfare systems create "welfare cliffs" where earning additional income results in a net loss due to sudden benefit reduction — creating effective marginal tax rates above 100%. |
 | 5bb47d1f8a | wiki/faq.html | 10,000+ | simulation result | remove |  | These frameworks currently exist in theoretical and design phases, supported by 10,000+ Monte Carlo simulation iterations and formal mechanism design analysis demonstrating 98% poverty elimination probability under model |
 | 3eb4e07bcc | wiki/faq.html | 98% | simulation result | remove |  | These frameworks currently exist in theoretical and design phases, supported by 10,000+ Monte Carlo simulation iterations and formal mechanism design analysis demonstrating 98% poverty elimination probability under model |

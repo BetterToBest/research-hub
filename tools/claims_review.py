@@ -411,6 +411,39 @@ REVIEW = [
     (r"citizens-internet-portal\.pdf$", r"P\(Detection\)", DER, "calculation", "relabel", "PDF Section 8.2", "recomputed", "assumed probabilities: label as illustrative"),
     (r"citizens-internet-portal\.pdf$", r"Estimated (?:minimum )?[Cc]ost|Corruption Benefit|Expected Benefit", NONE, "estimate", "relabel", "", "", "no derivation"),
     (r"citizens-internet-portal\.pdf$", r".", PAR, "specification", "keep", "the PDF's proposed structure, safeguards and plan", "", "rules, sizes, thresholds and phase targets the proposal sets"),
+
+    # ---- integrated-digital-governance (HTML and PDF)
+    (r"integrated-digital-governance", r"Date: August", META, "date", "keep", "the page itself", "", ""),
+    (r"integrated-digital-governance", r"SDG \d|ISO 27001|OAuth 2\.0", META, "standard or goal number", "keep", "named standard", "", ""),
+    (r"integrated-digital-governance", r"Lin and Yaakop", EXT, "fact", "keep", "Lin & Yaakop (2024), cited", "cited, not opened", ""),
+    (r"integrated-digital-governance", r"180% higher|wealth effects 180%", NONE, "simulation result", "remove", "", "", "B075: 180% here vs 122% in Section 5.1 of the modelling paper; no run produced either"),
+    (r"integrated-digital-governance", r"^4\.\d |θ ∈ \[0\.15|k1 = |k2 = |^A\.\d", PAR, "model coefficient", "keep", "the paper's model", "", ""),
+    (r"integrated-digital-governance", r"Reduced Overhead: PTF venues|Conversion Premium: PTF workers", PAR, "specification", "keep", "the framework's design", "", "", r"40-60%|50%"),
+    (r"integrated-digital-governance", r"^6\.1 Staged Deployment", PAR, "plan", "keep", "the paper's deployment plan", "", ""),
+    (r"integrated-digital-governance", r"^6\.3 Budget|\$54\.1 billion", NONE, "cost estimate", "relabel", "", "", "budget lines with no derivation: label as planning estimates"),
+    (r"integrated-digital-governance", r"^9\.1 Key Performance", PAR, "target", "keep", "a target set by the paper", "", "the $70,000 target conflicts with other wealth figures (B066)"),
+    (r"integrated-digital-governance", r".", NONE, "simulation result", "remove", "", "", "'modeling demonstrates' with no model run published"),
+
+    # ---- us-real-estate-transformation (HTML and PDF)
+    (r"us-real-estate-transformation", r"Date: August", META, "date", "keep", "the page itself", "", ""),
+    (r"us-real-estate-transformation", r"Over 770,000 Americans experienced homelessness", NONE, "fact", "correct", "", "", "matches HUD's 2024 AHAR (771,480, +18%) but uncited"),
+    (r"us-real-estate-transformation", r"20\.5 million renter households|Only 33% of 27-year-olds|44 million renter", NONE, "fact", "correct", "", "", "plausible but uncited (Harvard JCHS, Census): cite"),
+    (r"us-real-estate-transformation", r"15-20% market penetra|15–20% market penetra", NONE, "simulation result", "correct", "", "", "[S5-03] contradicted by the paper's own rollout table (8-12% in years 8-12) (C24)", r"15-20%"),
+    (r"us-real-estate-transformation", r"\$70,000", ILL, "simulation result", "correct", "Section 4.3 (20-year figure; no model published)", "", "[S5-04] say it is a 20-year illustrative figure (C24, B066)", r"70,000"),
+    (r"us-real-estate-transformation", r"\$380,000|\$450,000", NONE, "calculation", "relabel", "", "", "rent paid over 20 years, not derived on the page; $450,000 = $70,000 + $380,000"),
+    (r"us-real-estate-transformation", r"Average 20-year accumulation: \$168,000-336,000", DER, "calculation", "correct", "Section 3.1", "recomputed: 70-80% of $800-1,400 over 240 months gives $134,400-268,800", "the PDF version gives 134,400-268,800"),
+    (r"us-real-estate-transformation", r"Cash equivalent: \$67,000|Annual accumulation: 6,720|Equity accumulation: \$560", DER, "calculation", "keep", "Section 2.2/3.1", "recomputed", "the exit haircut (40%) is unstated"),
+    (r"us-real-estate-transformation", r"^2\.\d |^3\.1 |^5\.\d |^6\.\d ", PAR, "specification", "keep", "the framework's design", "", ""),
+    (r"us-real-estate-transformation", r"40-60 participating households|Minimum Viable Network|^4\.1 Sustainability", PAR, "assumption", "relabel", "the paper's sustainability thresholds", "", "'mathematical modeling demonstrates' but no model is published: assumed thresholds"),
+    (r"us-real-estate-transformation", r".", NONE, "projection", "relabel", "", "", "growth, penetration and cost effects with no model: label as illustrative"),
+
+    # ---- universal-implementation-framework (HTML and PDF)
+    (r"universal-implementation-framework", r"Date: |OAuth 2\.0|TLS 1\.3|AES-256|Apache 2\.0|Android 5\.0|iOS 10", META, "date or technical standard", "keep", "the page itself", "", ""),
+    (r"universal-implementation-framework", r"detailed Netherlands scenario", ILL, "scenario", "keep", "labelled a scenario", "", ""),
+    (r"universal-implementation-framework", r"3-5x faster|40-60%|nations achieving fastest implementation|fastest implementation|within 5-7 years|Evidence from successful large-scale", NONE, "finding", "relabel", "", "", "stated as findings from evidence, with no source or model: label as the framework's expectation"),
+    (r"universal-implementation-framework", r"^6\.4 Projected Outcomes", NONE, "projection", "remove", "", "", "no model"),
+    (r"universal-implementation-framework", r"^8\.3 Target Outcomes|User satisfaction <60%", PAR, "target", "keep", "a target set by the framework", "", ""),
+    (r"universal-implementation-framework", r".", PAR, "plan", "keep", "the framework's implementation timelines and specifications", "", "planned durations and settings, not forecasts"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.
