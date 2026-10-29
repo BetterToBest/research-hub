@@ -278,6 +278,22 @@ REVIEW = [
     (r"pth-independent-financing\.pdf$", r"Property portfolios for pay-in in 10 metros|Mortgage conversion programs: \$|Research and advocacy|Reserves and growth capital|Technology and systems", PAR, "plan", "keep", "the paper's endowment scenario (PDF version)", "", "", r"\$\d+M$"),
     (r"pth-independent-financing\.pdf$", r"Initial capacity|Year 5: 75,000|Year 10: 3", NONE, "projection", "relabel", "", "", "household counts with no model"),
     (r"pth-independent-financing\.pdf$", r"Monthly payment: \$800-1,400|Direct monthly payments|Acre Equity conversion: 70-80%|Required reserve fund", PAR, "specification", "keep", "the framework's design (PDF version)", "", ""),
+
+    # ---- pth-government-integration (HTML and PDF)
+    (r"pth-government-integration", r"Date: September", META, "date", "keep", "the page itself", "", ""),
+    (r"pth-government-integration", r"2\.5x greater efficiency|40% cost reduction compared to standalone|Total cost reduction: 40%", DER, "calculation", "correct", "Section 5.1", "recompute.py (S29): 2.5x is the wealth-building column; with the 40% cost cut it is 4.2x; 15% + 12% + 18% gives 45%, not 40%", "B052: name the metric"),
+    (r"pth-government-integration", r"\(0\.25x HUD\)|\(50x HUD\)|^3\.\d .*\(\d+x HUD|0\.25x HUD = |\$12\.5 billion to \$2\.5 trillion|x HUD = \$", PAR, "scenario sizes", "keep", "the paper's investment scenarios (multiples of HUD's budget)", "", ""),
+    (r"pth-government-integration", r"HUD\)? spends approximately \$50 billion|current HUD programs that spend \$50 billion|^2\.1 HUD Budget|Waiting lists|Administrative overhead: 15-20%|\$470 billion over 10 years", NONE, "fact", "correct", "", "", "HUD budget figures with no citation; the lines sum to exactly $50.0B, which HUD's budget does not: cite the FY2024 budget tables"),
+    (r"pth-government-integration", r"Average assistance: \$10,638|\| Traditional HUD \| \$10,638", DER, "calculation", "keep", "$50B / 4.7M households", "recomputed: 10,638", "inherits the uncited inputs"),
+    (r"pth-government-integration", r"Cost per household: \$50,000-83,000", DER, "calculation", "keep", "$12.5B / 250,000 and / 150,000", "recomputed", ""),
+    (r"pth-government-integration", r"\$12-20B annually", NONE, "projection", "correct", "", "", "B004: 96-160% of the one-time outlay every year, with no derivation"),
+    (r"pth-government-integration", r"Investment: \$|Returns: \$|Net benefit: \$|ROI: \d", DER, "calculation", "relabel", "Section 7.3 sums", "recomputed: 350 − 75 = 275, 350/75 = 4.7; 1.45T − 0.35T = 1.1T, 4.1", "the arithmetic holds; the savings and multiplier inputs are assumptions, so label the result as illustrative"),
+    (r"pth-government-integration", r"^3\.\d .*¦ (?:Pay-in housing|Mortgage conversion|Technical assistance|Platform development|Research and evaluation|Direct funding|Property acquisition|Infrastructure|Operations support|Universal pay-in|Comprehensive conversion|Infrastructure development|Workforce|Innovation and research|Seed funding|\$50M average|Average \$25-50M|1,000-2,000 community trusts)", PAR, "plan", "keep", "the scenario's budget split", "", "chosen allocations"),
+    (r"pth-government-integration", r"70-80% of rent converts|Initial 3-5 year support|Phi rate \(1\.618x\)", PAR, "specification", "keep", "the framework's design", "", ""),
+    (r"pth-government-integration", r"^6\.\d Year .*¦ (?:Pilot programs|Programs in|\d)", PAR, "plan", "keep", "the paper's rollout plan", "", "enrolment targets"),
+    (r"pth-government-integration", r"44 million", NONE, "fact", "correct", "", "", "plausible (ACS renter households) but uncited"),
+    (r"pth-government-integration", r"^7\.1 Return|^7\.2 Comparative", NONE, "estimate", "relabel", "", "", "per-unit savings and multipliers with no source: cite or label as assumptions"),
+    (r"pth-government-integration", r".", NONE, "projection", "relabel", "", "", "households served, wealth, jobs, savings and penetration with no model: label as illustrative projections"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.

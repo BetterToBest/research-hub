@@ -9,14 +9,14 @@ Figures: **6556** on 55 pages and PDFs.
 | Class | Figures | keep | correct | relabel | remove |
 |---|---|---|---|---|---|
 | simulation | 6 | 0 | 6 | 0 | 0 |
-| derived | 1115 | 988 | 125 | 2 | 0 |
-| external source | 235 | 197 | 38 | 0 | 0 |
-| design parameter | 1488 | 1330 | 64 | 94 | 0 |
-| illustrative projection | 231 | 205 | 25 | 1 | 0 |
-| corpus metadata | 645 | 639 | 2 | 0 | 4 |
-| no basis found | 2836 | 0 | 142 | 578 | 2116 |
+| derived | 1123 | 969 | 136 | 18 | 0 |
+| external source | 200 | 165 | 35 | 0 | 0 |
+| design parameter | 1464 | 1324 | 49 | 91 | 0 |
+| illustrative projection | 233 | 206 | 26 | 1 | 0 |
+| corpus metadata | 643 | 637 | 2 | 0 | 4 |
+| no basis found | 2887 | 0 | 171 | 698 | 2018 |
 
-Classed by a reviewed rule or the reference list: 3601; by a generic rule or a paper default: 2955.
+Classed by a reviewed rule or the reference list: 3888; by a generic rule or a paper default: 2668.
 
 ## By page
 
@@ -45,25 +45,25 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | optimal-transfer-design.html | 0 | 10 | 3 | 6 | 0 | 27 | 12 |
 | papers/corporate-transformation.html | 0 | 0 | 0 | 0 | 0 | 4 | 29 |
 | papers/index.html | 0 | 0 | 0 | 12 | 1 | 2 | 12 |
-| papers/pdfs/basic-living-economic-index.pdf | 3 | 372 | 21 | 67 | 13 | 30 | 38 |
+| papers/pdfs/basic-living-economic-index.pdf | 3 | 391 | 17 | 58 | 10 | 30 | 35 |
 | papers/pdfs/cco-ptf-integrated-framework.pdf | 0 | 11 | 11 | 42 | 8 | 16 | 57 |
 | papers/pdfs/citizens-internet-portal.pdf | 0 | 15 | 4 | 110 | 2 | 19 | 107 |
 | papers/pdfs/community-monetary-development.pdf | 0 | 42 | 1 | 30 | 1 | 28 | 44 |
 | papers/pdfs/corporate-transformation.pdf | 0 | 55 | 16 | 56 | 1 | 19 | 240 |
 | papers/pdfs/cultural-value-integration.pdf | 0 | 4 | 12 | 10 | 3 | 22 | 59 |
 | papers/pdfs/democratic-governance-pth.pdf | 0 | 0 | 3 | 10 | 0 | 13 | 30 |
-| papers/pdfs/drug-policy-reform.pdf | 0 | 0 | 8 | 0 | 0 | 14 | 122 |
+| papers/pdfs/drug-policy-reform.pdf | 0 | 0 | 6 | 0 | 0 | 14 | 124 |
 | papers/pdfs/dual-currency-inflation.pdf | 0 | 17 | 2 | 14 | 0 | 23 | 69 |
-| papers/pdfs/economic-modeling-simulation.pdf | 0 | 1 | 1 | 19 | 0 | 0 | 218 |
+| papers/pdfs/economic-modeling-simulation.pdf | 0 | 1 | 1 | 15 | 0 | 0 | 222 |
 | papers/pdfs/integrated-digital-governance.pdf | 0 | 2 | 4 | 22 | 0 | 16 | 49 |
 | papers/pdfs/optimal-transfer-design.pdf | 0 | 19 | 4 | 8 | 0 | 27 | 30 |
-| papers/pdfs/pth-government-integration.pdf | 0 | 15 | 14 | 64 | 0 | 3 | 36 |
-| papers/pdfs/pth-independent-financing.pdf | 0 | 25 | 0 | 93 | 49 | 1 | 36 |
+| papers/pdfs/pth-government-integration.pdf | 0 | 5 | 0 | 15 | 0 | 2 | 110 |
+| papers/pdfs/pth-independent-financing.pdf | 0 | 21 | 0 | 82 | 54 | 1 | 46 |
 | papers/pdfs/public-trust-financial.pdf | 0 | 14 | 1 | 46 | 0 | 2 | 32 |
 | papers/pdfs/risk-mitigation-framework.pdf | 0 | 14 | 0 | 1 | 0 | 6 | 20 |
 | papers/pdfs/universal-implementation-framework.pdf | 0 | 2 | 8 | 41 | 5 | 11 | 90 |
 | papers/pdfs/us-real-estate-transformation.pdf | 0 | 0 | 0 | 46 | 0 | 2 | 24 |
-| pth-government-integration.html | 0 | 20 | 15 | 32 | 0 | 3 | 92 |
+| pth-government-integration.html | 0 | 23 | 0 | 81 | 0 | 2 | 56 |
 | pth-independent-financing.html | 0 | 18 | 0 | 64 | 61 | 2 | 53 |
 | public-trust-financial.html | 0 | 0 | 0 | 17 | 0 | 4 | 106 |
 | referendum.html | 0 | 0 | 0 | 14 | 0 | 3 | 1 |
@@ -1200,8 +1200,6 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 5bb0cef246 | papers/pdfs/basic-living-economic-index.pdf | 730+ | calculation | correct |  | entry, rising to 16.6× at twelve months and reaching the Flourishing tier — 730+ days of basic living covered — at approximately 33 months. |
 | a06e78678e | papers/pdfs/basic-living-economic-index.pdf | 33 | calculation | correct |  | entry, rising to 16.6× at twelve months and reaching the Flourishing tier — 730+ days of basic living covered — at approximately 33 months. |
 | 12f357b52b | papers/pdfs/basic-living-economic-index.pdf | $22,800–$59,900 | estimate | relabel |  | High-wealth non-participants accrue $22,800–$59,900 in estimated annual indirect welfare gains. |
-| 096680e8c0 | papers/pdfs/basic-living-economic-index.pdf | 25–30% | fact | correct |  | The Burlington Community Land Trust (founded 1984) enables residents to pay 25–30% of income for housing versus 40–50% at market rate while building equity through a shared appreciation formula. |
-| f7cc0725d4 | papers/pdfs/basic-living-economic-index.pdf | 40–50% | fact | correct |  | The Burlington Community Land Trust (founded 1984) enables residents to pay 25–30% of income for housing versus 40–50% at market rate while building equity through a shared appreciation formula. |
 | 017275a95a | papers/pdfs/basic-living-economic-index.pdf | 35–40% | fact | correct |  | …Conventional food retail prices embed: direct variable costs (production, logistics, perishables) at approximately 35–40% of consumer price; conventional overhead including marketing, multi-tier distribution, and financ |
 | 4aef86feeb | papers/pdfs/basic-living-economic-index.pdf | 20–25% | fact | correct |  | …ximately 35–40% of consumer price; conventional overhead including marketing, multi-tier distribution, and financing at 20–25%; and shareholder return and profit extraction at 15–20%.… |
 | 1b56c41d9f | papers/pdfs/basic-living-economic-index.pdf | 15–20% | fact | correct |  | … including marketing, multi-tier distribution, and financing at 20–25%; and shareholder return and profit extraction at 15–20%.… |
@@ -1222,7 +1220,6 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 9c3d86b71a | papers/pdfs/basic-living-economic-index.pdf | 33 | calculation | correct |  | BLEI — Month 33 |
 | 15411500cf | papers/pdfs/basic-living-economic-index.pdf | 72.6× | calculation | correct |  | 72.6× |
 | b182d6348c | papers/pdfs/basic-living-economic-index.pdf | 33 | calculation | correct |  | By Month 33 (approximately 2.8 years), accumulated equity combined with ongoing FBS brings BLEI above 730 days, entering the Flourishing tier. |
-| fcb7f4ed3d | papers/pdfs/basic-living-economic-index.pdf | 730 | calculation | correct |  | By Month 33 (approximately 2.8 years), accumulated equity combined with ongoing FBS brings BLEI above 730 days, entering the Flourishing tier. |
 | fa4f296bfb | papers/pdfs/basic-living-economic-index.pdf | ~392 | calculation | correct |  | ~392 days (Tier 4: Secure) |
 | 4d5eaabd49 | papers/pdfs/basic-living-economic-index.pdf | $32,500 | estimate | relabel |  | $32,500 Labor productivity gain |
 | c0cb73426e | papers/pdfs/basic-living-economic-index.pdf | $22,800 | estimate | relabel |  | $22,800– |
@@ -1778,6 +1775,8 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 490ef4be84 | papers/pdfs/drug-policy-reform.pdf | $1.5 trillion | finding | correct |  | Our analysis reveals that current prohibition policies have cost American taxpayers over $1.5 trillion in inflation-adjusted dollars while failing to achieve stated objectives. |
 | a1b58c8e9d | papers/pdfs/drug-policy-reform.pdf | $847 billion | finding | remove | B003 B018 | Under integrated CCO-PTF-CIP-SZH governance, regulatory drug policies could generate net societal savings of $847 billion over 25 years while improving public health, reducing violent crime, and enhancing civil liberties |
 | 13a047cdb9 | papers/pdfs/drug-policy-reform.pdf | 25 | finding | remove | B003 B018 | Under integrated CCO-PTF-CIP-SZH governance, regulatory drug policies could generate net societal savings of $847 billion over 25 years while improving public health, reducing violent crime, and enhancing civil liberties |
+| ef8ffd00e6 | papers/pdfs/drug-policy-reform.pdf | $88 billion | projection | remove |  | Miron and Waldock (2010) calculated total prohibition costs including enforcement, incarceration, court proceedings, and lost tax revenue, estimating annual costs of $88 billion. |
+| c482a21e92 | papers/pdfs/drug-policy-reform.pdf | 50% | projection | remove | B028 | Greenwald (2009) documented dramatic improvements across multiple metrics: drug-related deaths fell by 95%, HIV infections among drug users decreased by 95%, and drug-related crime dropped by 50%. |
 | e86306de60 | papers/pdfs/drug-policy-reform.pdf | 2020-2024 | projection | remove |  | 2.3 Recent Policy Reversals and Lessons Learned The 2020-2024 period witnessed significant drug policy experiments in the Pacific Northwest that provide crucial insights. |
 | b1b056d2c8 | papers/pdfs/drug-policy-reform.pdf | 16,000 | projection | remove | B115 | …Key lessons include: Treatment capacity must precede decriminalization (only 16,000 of 38,000 estimated need served) Public perception management is critical (61% public support dropped to 31% by 2024) I… |
 | 0022e0a58c | papers/pdfs/drug-policy-reform.pdf | 38,000 | projection | remove | B115 | …Key lessons include: Treatment capacity must precede decriminalization (only 16,000 of 38,000 estimated need served) Public perception management is critical (61% public support dropped to 31% by 2024) Integration… |
@@ -1964,6 +1963,7 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 2be061068b | papers/pdfs/dual-currency-inflation.pdf | 375389 | fact | remove |  | Economic Modelling, 82, 375389. |
 | fee85f8bb7 | papers/pdfs/dual-currency-inflation.pdf | 13 | fact | remove |  | BerkShares: 13 Years of Community Currency. |
 | 7493db6c5b | papers/pdfs/economic-modeling-simulation.pdf | 30% | simulation result | remove |  | …aces for Creator Collectives (reducing overhead 40-60%) Basic units accepted at PTF establishments (increasing velocity 30%) PTF workers earn enhanced conversion rates (additional income stream) Acre equity provides col |
+| dff6200ba6 | papers/pdfs/economic-modeling-simulation.pdf | 1.5 | simulation result | remove |  | def calculate_ptf_enhanced_conversion(member, ptf_participation): base_conversion = member.octave_level * member.quality_multiplier ptf_multipliers = { 'ptf_worker': 1.5, |
 | 63f0322ce2 | papers/pdfs/economic-modeling-simulation.pdf | 50% | simulation result | remove |  | # 50% bonus for PTF employment |
 | bc80dd5e51 | papers/pdfs/economic-modeling-simulation.pdf | 1.2 | simulation result | remove |  | 'ptf_resident': 1.2, |
 | a4b00752c1 | papers/pdfs/economic-modeling-simulation.pdf | 20% | simulation result | remove |  | # 20% bonus for opted-in housing |
@@ -2022,6 +2022,8 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 1996cbf18e | papers/pdfs/economic-modeling-simulation.pdf | 2.86 | simulation result | remove | B025 B050 | …y to consume (0.85 with basic units) t = tax rate (0.25) m = import propensity (0.15) M = 1 / (1 - 0.85(0.75) + 0.15) = 2.86 Every $1 in PTF investment generates $2.86 in economic activity… |
 | 5a89b1ff18 | papers/pdfs/economic-modeling-simulation.pdf | $1 | simulation result | remove | B025 B050 | …e (0.85 with basic units) t = tax rate (0.25) m = import propensity (0.15) M = 1 / (1 - 0.85(0.75) + 0.15) = 2.86 Every $1 in PTF investment generates $2.86 in economic activity… |
 | c1f55e9b9d | papers/pdfs/economic-modeling-simulation.pdf | $2.86 | simulation result | remove | B025 B050 | …ax rate (0.25) m = import propensity (0.15) M = 1 / (1 - 0.85(0.75) + 0.15) = 2.86 Every $1 in PTF investment generates $2.86 in economic activity… |
+| 455546c702 | papers/pdfs/economic-modeling-simulation.pdf | 2.5 | simulation result | remove |  | …def ptf_job_creation(ptf_assets, automation_level): jobs_per_million = { 'housing_management': 2.5, 'retail_grocery': 8.0, 'restaurants': 12.0, 'maintenance': 3.0, 'administration': 1.5, 'transportation': 4.0 } total_j… |
+| a0053dee37 | papers/pdfs/economic-modeling-simulation.pdf | 8.0 | simulation result | remove |  | …def ptf_job_creation(ptf_assets, automation_level): jobs_per_million = { 'housing_management': 2.5, 'retail_grocery': 8.0, 'restaurants': 12.0, 'maintenance': 3.0, 'administration': 1.5, 'transportation': 4.0 } total_jo |
 | ba0a173088 | papers/pdfs/economic-modeling-simulation.pdf | 12.0 | simulation result | remove |  | …on(ptf_assets, automation_level): jobs_per_million = { 'housing_management': 2.5, 'retail_grocery': 8.0, 'restaurants': 12.0, 'maintenance': 3.0, 'administration': 1.5, 'transportation': 4.0 } total_jobs = 0 for sector, |
 | d066dfc25c | papers/pdfs/economic-modeling-simulation.pdf | 3.0 | simulation result | remove |  | …tion_level): jobs_per_million = { 'housing_management': 2.5, 'retail_grocery': 8.0, 'restaurants': 12.0, 'maintenance': 3.0, 'administration': 1.5, 'transportation': 4.0 } total_jobs = 0 for sector, ratio in jobs_per_mi |
 | 38af8d114f | papers/pdfs/economic-modeling-simulation.pdf | 1.5 | simulation result | remove |  | …illion = { 'housing_management': 2.5, 'retail_grocery': 8.0, 'restaurants': 12.0, 'maintenance': 3.0, 'administration': 1.5, 'transportation': 4.0 } total_jobs = 0 for sector, ratio in jobs_per_million.items(): sector_a |
@@ -2080,6 +2082,7 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 803aa92570 | papers/pdfs/economic-modeling-simulation.pdf | 0.35 | simulation result | remove |  | Q5 (rich) 0.05 0.10 0.25 0.35 0.25 Mobility Index: 0.75 (vs 0.45 current US) |
 | 3060825149 | papers/pdfs/economic-modeling-simulation.pdf | 0.75 | simulation result | remove |  | Q5 (rich) 0.05 0.10 0.25 0.35 0.25 Mobility Index: 0.75 (vs 0.45 current US) |
 | c46ee65640 | papers/pdfs/economic-modeling-simulation.pdf | 0.45 | simulation result | remove |  | Q5 (rich) 0.05 0.10 0.25 0.35 0.25 Mobility Index: 0.75 (vs 0.45 current US) |
+| 82b7d8293f | papers/pdfs/economic-modeling-simulation.pdf | 0.25 | simulation result | remove |  | class SystemStability: def calculate_risk_metrics(self): return { 'diversification_index': 0.85, # Multiple wealth channels 'correlation_risk': 0.25, |
 | dcae9f6bf0 | papers/pdfs/economic-modeling-simulation.pdf | 0.05 | simulation result | remove |  | 'cascade_probability': 0.05, # Low systemic failure risk 'recovery_time': 6, |
 | ce8c95c6ad | papers/pdfs/economic-modeling-simulation.pdf | 0.92 | simulation result | remove |  | 'stress_test_pass_rate': 0.92 # 92% of scenarios stable } |
 | 3584ff63a8 | papers/pdfs/economic-modeling-simulation.pdf | 92% | simulation result | remove |  | 'stress_test_pass_rate': 0.92 # 92% of scenarios stable } |
@@ -2260,42 +2263,116 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | f99fcb21a8 | papers/pdfs/optimal-transfer-design.pdf | > 1000 | simulation result | remove |  | A.2 Convergence Diagnostics All Monte Carlo chains satisfy: Gelman-Rubin statistic: R̂ < 1.1 Effective sample size: n_eff > 1000 Autocorrelation: ρ < 0.1 after lag 10 |
 | bed2668d7c | papers/pdfs/optimal-transfer-design.pdf | < 0.1 | simulation result | remove |  | A.2 Convergence Diagnostics All Monte Carlo chains satisfy: Gelman-Rubin statistic: R̂ < 1.1 Effective sample size: n_eff > 1000 Autocorrelation: ρ < 0.1 after lag 10 |
 | 63cb022427 | papers/pdfs/optimal-transfer-design.pdf | 10 | simulation result | remove |  | A.2 Convergence Diagnostics All Monte Carlo chains satisfy: Gelman-Rubin statistic: R̂ < 1.1 Effective sample size: n_eff > 1000 Autocorrelation: ρ < 0.1 after lag 10 |
-| 4bb87e8fe0 | papers/pdfs/pth-government-integration.pdf | $470 billion | projection | relabel |  | …xtraction Model: Government pays private landlords No equity accumulation for participants Perpetual dependency created $470 billion over 10 years with no assets Market Distortion Effects: Voucher programs inflate rents |
-| 08dd85e649 | papers/pdfs/pth-government-integration.pdf | 10 | projection | relabel |  | …overnment pays private landlords No equity accumulation for participants Perpetual dependency created $470 billion over 10 years with no assets Market Distortion Effects: Voucher programs inflate rents Concentration of  |
-| eba1e4fb17 | papers/pdfs/pth-government-integration.pdf | 1,000-2,000 | fact | remove |  | …ersion incentives: $10B Property acquisition: $10B Infrastructure: $5B Operations support: $5B Implementation Approach: 1,000-2,000 community trusts nationally… |
-| 76e8dd556c | papers/pdfs/pth-government-integration.pdf | $25-50M | fact | remove |  | …Average $25-50M per trust Professional management infrastructure Integrated technology platform All four pathways fully operational Pro… |
-| 2d9980a978 | papers/pdfs/pth-government-integration.pdf | $30B | fact | remove |  | …n access program: $100B Comprehensive conversion support: $50B Infrastructure development: $50B Workforce and services: $30B Innovation and research: $20B System Architecture: National PTH network with local control Com |
-| 0bd83034ab | papers/pdfs/pth-government-integration.pdf | $20B | fact | remove |  | …hensive conversion support: $50B Infrastructure development: $50B Workforce and services: $30B Innovation and research: $20B System Architecture: National PTH network with local control Comprehensive coverage in 100+ me |
+| fa63ad4046 | papers/pdfs/pth-government-integration.pdf | 44 million | fact | correct |  | …ed)—create comprehensive access across economic circumstances, with the pay-in model serving as the primary pathway for 44 million renter households.… |
+| 69f90d6c1e | papers/pdfs/pth-government-integration.pdf | $50 billion | fact | correct |  | Unlike current HUD programs that spend $50 billion annually on rental assistance with zero wealth accumulation, PTH converts housing subsidies into community assets, achieving permanent affordability while building parti |
+| c4b400748b | papers/pdfs/pth-government-integration.pdf | 500,000-800,000 | projection | relabel |  | Analysis reveals that moderate integration (1x HUD budget) could serve 500,000-800,000 households within 5 years while generating $150-200 billion in community wealth. |
+| d41222805f | papers/pdfs/pth-government-integration.pdf | 5 | projection | relabel |  | Analysis reveals that moderate integration (1x HUD budget) could serve 500,000-800,000 households within 5 years while generating $150-200 billion in community wealth. |
+| 17e97ffb4c | papers/pdfs/pth-government-integration.pdf | $150-200 billion | projection | relabel |  | Analysis reveals that moderate integration (1x HUD budget) could serve 500,000-800,000 households within 5 years while generating $150-200 billion in community wealth. |
+| 757ade74f0 | papers/pdfs/pth-government-integration.pdf | 40% | projection | relabel | B052 B096 | Critical findings show that PTH integrated with Creative Currency Octaves achieves 2.5x greater efficiency than standalone models, reducing per-household costs by 40% while accelerating community wealth accumulation. |
+| 35b2723a5a | papers/pdfs/pth-government-integration.pdf | $50 billion | fact | correct |  | Introduction The United States Department of Housing and Urban Development (HUD) spends approximately $50 billion annually on housing assistance programs that, while providing critical shelter, fail to build longterm wea |
+| 93fb254e42 | papers/pdfs/pth-government-integration.pdf | $26.8B | projection | relabel |  | …Assistance Landscape 2.1 HUD Budget Allocation (FY 2024) Current Spending Distribution: Tenant-Based Rental Assistance: $26.8B (53.6%) Project-Based Rental Assistance: $13.9B (27.8%) Public Housing Operating Fund: $5.1B |
+| 6cda51247e | papers/pdfs/pth-government-integration.pdf | 53.6% | projection | relabel |  | …ce Landscape 2.1 HUD Budget Allocation (FY 2024) Current Spending Distribution: Tenant-Based Rental Assistance: $26.8B (53.6%) Project-Based Rental Assistance: $13.9B (27.8%) Public Housing Operating Fund: $5.1B (10.2%) |
+| a09867a419 | papers/pdfs/pth-government-integration.pdf | $13.9B | projection | relabel |  | …FY 2024) Current Spending Distribution: Tenant-Based Rental Assistance: $26.8B (53.6%) Project-Based Rental Assistance: $13.9B (27.8%) Public Housing Operating Fund: $5.1B (10.2%) Homeless Assistance Grants: $3.5B (7.0% |
+| 7bb2fc8acd | papers/pdfs/pth-government-integration.pdf | 27.8% | projection | relabel |  | … Current Spending Distribution: Tenant-Based Rental Assistance: $26.8B (53.6%) Project-Based Rental Assistance: $13.9B (27.8%) Public Housing Operating Fund: $5.1B (10.2%) Homeless Assistance Grants: $3.5B (7.0%) Other  |
+| ef984dfa3b | papers/pdfs/pth-government-integration.pdf | $5.1B | projection | relabel |  | …-Based Rental Assistance: $26.8B (53.6%) Project-Based Rental Assistance: $13.9B (27.8%) Public Housing Operating Fund: $5.1B (10.2%) Homeless Assistance Grants: $3.5B (7.0%) Other Programs: $0.7B (1.4%) Total: $50.0B O |
+| 180d320e88 | papers/pdfs/pth-government-integration.pdf | 10.2% | projection | relabel |  | …Rental Assistance: $26.8B (53.6%) Project-Based Rental Assistance: $13.9B (27.8%) Public Housing Operating Fund: $5.1B (10.2%) Homeless Assistance Grants: $3.5B (7.0%) Other Programs: $0.7B (1.4%) Total: $50.0B Outcomes |
+| fb6880d594 | papers/pdfs/pth-government-integration.pdf | $3.5B | projection | relabel |  | …roject-Based Rental Assistance: $13.9B (27.8%) Public Housing Operating Fund: $5.1B (10.2%) Homeless Assistance Grants: $3.5B (7.0%) Other Programs: $0.7B (1.4%) Total: $50.0B Outcomes and Limitations: Households served |
+| 0691b21663 | papers/pdfs/pth-government-integration.pdf | 7.0% | projection | relabel |  | …Based Rental Assistance: $13.9B (27.8%) Public Housing Operating Fund: $5.1B (10.2%) Homeless Assistance Grants: $3.5B (7.0%) Other Programs: $0.7B (1.4%) Total: $50.0B Outcomes and Limitations: Households served: 4.7 m |
+| 635b6f8fc7 | papers/pdfs/pth-government-integration.pdf | $0.7B | projection | relabel |  | …e: $13.9B (27.8%) Public Housing Operating Fund: $5.1B (10.2%) Homeless Assistance Grants: $3.5B (7.0%) Other Programs: $0.7B (1.4%) Total: $50.0B Outcomes and Limitations: Households served: 4.7 million Average assista |
+| d4cbf2dac1 | papers/pdfs/pth-government-integration.pdf | 1.4% | projection | relabel |  | …9B (27.8%) Public Housing Operating Fund: $5.1B (10.2%) Homeless Assistance Grants: $3.5B (7.0%) Other Programs: $0.7B (1.4%) Total: $50.0B Outcomes and Limitations: Households served: 4.7 million Average assistance: $1 |
+| 7e420a6c21 | papers/pdfs/pth-government-integration.pdf | $50.0B | projection | relabel |  | …blic Housing Operating Fund: $5.1B (10.2%) Homeless Assistance Grants: $3.5B (7.0%) Other Programs: $0.7B (1.4%) Total: $50.0B Outcomes and Limitations: Households served: 4.7 million Average assistance: $10,638 per hou |
+| 9972d3572f | papers/pdfs/pth-government-integration.pdf | $10,638 | fact | correct |  | …Other Programs: $0.7B (1.4%) Total: $50.0B Outcomes and Limitations: Households served: 4.7 million Average assistance: $10,638 per household annually Wealth building: Zero Waiting lists: 3-10 years typical Administrati |
+| 530b23b4f4 | papers/pdfs/pth-government-integration.pdf | 3-10 | fact | correct |  | … Households served: 4.7 million Average assistance: $10,638 per household annually Wealth building: Zero Waiting lists: 3-10 years typical Administrative overhead: 15-20%… |
+| e0cbb30f89 | papers/pdfs/pth-government-integration.pdf | 15-20% | fact | correct |  | …stance: $10,638 per household annually Wealth building: Zero Waiting lists: 3-10 years typical Administrative overhead: 15-20%… |
+| 4bb87e8fe0 | papers/pdfs/pth-government-integration.pdf | $470 billion | fact | correct |  | …xtraction Model: Government pays private landlords No equity accumulation for participants Perpetual dependency created $470 billion over 10 years with no assets Market Distortion Effects: Voucher programs inflate rents |
+| 08dd85e649 | papers/pdfs/pth-government-integration.pdf | 10 | fact | correct |  | …overnment pays private landlords No equity accumulation for participants Perpetual dependency created $470 billion over 10 years with no assets Market Distortion Effects: Voucher programs inflate rents Concentration of  |
+| 14b93b8fec | papers/pdfs/pth-government-integration.pdf | $5B | projection | relabel |  | …3.1 Minimal Integration (0.25x HUD = $12.5 Billion) Investment Framework: Pay-in housing acquisition: $5B (40,000 units) Mortgage conversion support: $3B Technical assistance: $2B Platform development: $1.5B Research an |
+| 15f0910b4f | papers/pdfs/pth-government-integration.pdf | 40,000 | projection | relabel |  | …3.1 Minimal Integration (0.25x HUD = $12.5 Billion) Investment Framework: Pay-in housing acquisition: $5B (40,000 units) Mortgage conversion support: $3B Technical assistance: $2B Platform development: $1.5B Research an |
+| 876221405e | papers/pdfs/pth-government-integration.pdf | $3B | projection | relabel |  | … HUD = $12.5 Billion) Investment Framework: Pay-in housing acquisition: $5B (40,000 units) Mortgage conversion support: $3B Technical assistance: $2B Platform development: $1.5B Research and evaluation: $0.5B Deployment |
+| 61fe6427a8 | papers/pdfs/pth-government-integration.pdf | $2B | projection | relabel | B030 | …stment Framework: Pay-in housing acquisition: $5B (40,000 units) Mortgage conversion support: $3B Technical assistance: $2B Platform development: $1.5B Research and evaluation: $0.5B Deployment Strategy: Seed funding fo |
+| 0848b5460e | papers/pdfs/pth-government-integration.pdf | $1.5B | projection | relabel | B030 | …ousing acquisition: $5B (40,000 units) Mortgage conversion support: $3B Technical assistance: $2B Platform development: $1.5B Research and evaluation: $0.5B Deployment Strategy: Seed funding for 250 local trusts $50M av |
+| 925f8335c3 | papers/pdfs/pth-government-integration.pdf | $0.5B | projection | relabel | B030 | … units) Mortgage conversion support: $3B Technical assistance: $2B Platform development: $1.5B Research and evaluation: $0.5B Deployment Strategy: Seed funding for 250 local trusts $50M average per trust Leverage ratio: |
+| c815d6fb46 | papers/pdfs/pth-government-integration.pdf | 250 | projection | relabel | B030 | …hnical assistance: $2B Platform development: $1.5B Research and evaluation: $0.5B Deployment Strategy: Seed funding for 250 local trusts $50M average per trust Leverage ratio: 3:1 private capital Focus on demonstration  |
+| 5d622cd0e7 | papers/pdfs/pth-government-integration.pdf | $50M | projection | relabel | B030 | …: $2B Platform development: $1.5B Research and evaluation: $0.5B Deployment Strategy: Seed funding for 250 local trusts $50M average per trust Leverage ratio: 3:1 private capital Focus on demonstration and proof of conc |
+| de1f3aa959 | papers/pdfs/pth-government-integration.pdf | 150,000-250,000 | projection | relabel |  | …t Leverage ratio: 3:1 private capital Focus on demonstration and proof of concept Expected Outcomes: Households served: 150,000-250,000 annually 60% pay-in participants (no barriers) 25% buy-in conversions 10% sell-in t |
+| 08208b0ecf | papers/pdfs/pth-government-integration.pdf | 60% | projection | relabel |  | …vate capital Focus on demonstration and proof of concept Expected Outcomes: Households served: 150,000-250,000 annually 60% pay-in participants (no barriers) 25% buy-in conversions 10% sell-in transactions 5% earn-in co |
+| 4fb5ab0ed1 | papers/pdfs/pth-government-integration.pdf | 25% | projection | relabel |  | …d proof of concept Expected Outcomes: Households served: 150,000-250,000 annually 60% pay-in participants (no barriers) 25% buy-in conversions 10% sell-in transactions 5% earn-in contributors Cost per household: $50,000 |
+| 2e5b0adac4 | papers/pdfs/pth-government-integration.pdf | 10% | projection | relabel |  | …cted Outcomes: Households served: 150,000-250,000 annually 60% pay-in participants (no barriers) 25% buy-in conversions 10% sell-in transactions 5% earn-in contributors Cost per household: $50,000-83,000 (one-time) Ongo |
+| 3bce835e08 | papers/pdfs/pth-government-integration.pdf | 5% | projection | relabel |  | … served: 150,000-250,000 annually 60% pay-in participants (no barriers) 25% buy-in conversions 10% sell-in transactions 5% earn-in contributors Cost per household: $50,000-83,000 (one-time) Ongoing cost reduction: 40-55 |
+| 0ceff33d2d | papers/pdfs/pth-government-integration.pdf | $12-20B | projection | correct | B004 | …in contributors Cost per household: $50,000-83,000 (one-time) Ongoing cost reduction: 40-55% Community wealth creation: $12-20B annually Break-even: Year 3-4… |
+| 5096f97e22 | papers/pdfs/pth-government-integration.pdf | 3-4 | projection | correct | B004 | …: $50,000-83,000 (one-time) Ongoing cost reduction: 40-55% Community wealth creation: $12-20B annually Break-even: Year 3-4… |
+| d01be9ff91 | papers/pdfs/pth-government-integration.pdf | $20B | projection | relabel |  | …3.2 Moderate Integration (1x HUD = $50 Billion) Comprehensive Program Structure: Direct funding for pay-in units: $20B Mortgage conversion incentives: $10B Property acquisition: $10B Infrastructure: $5B Operations suppo |
+| 35a99e63dd | papers/pdfs/pth-government-integration.pdf | $10B | projection | relabel |  | …D = $50 Billion) Comprehensive Program Structure: Direct funding for pay-in units: $20B Mortgage conversion incentives: $10B Property acquisition: $10B Infrastructure: $5B Operations support: $5B Implementation Approach |
+| af9bd26954 | papers/pdfs/pth-government-integration.pdf | $5B | projection | relabel |  | …: Direct funding for pay-in units: $20B Mortgage conversion incentives: $10B Property acquisition: $10B Infrastructure: $5B Operations support: $5B Implementation Approach: 1,000-2,000 community trusts nationally… |
+| eba1e4fb17 | papers/pdfs/pth-government-integration.pdf | 1,000-2,000 | projection | relabel |  | …ersion incentives: $10B Property acquisition: $10B Infrastructure: $5B Operations support: $5B Implementation Approach: 1,000-2,000 community trusts nationally… |
+| 76e8dd556c | papers/pdfs/pth-government-integration.pdf | $25-50M | projection | relabel |  | …Average $25-50M per trust Professional management infrastructure Integrated technology platform All four pathways fully operational Pro… |
+| 9a9e3cb3d1 | papers/pdfs/pth-government-integration.pdf | 500,000-800,000 | projection | relabel |  | … infrastructure Integrated technology platform All four pathways fully operational Projected Impact: Households served: 500,000-800,000 within 5 years 300,000 pay-in (renters) 150,000 buy-in (homeowners) 75,000 sell-in  |
+| 5bda83512a | papers/pdfs/pth-government-integration.pdf | 5 | projection | relabel |  | …ted technology platform All four pathways fully operational Projected Impact: Households served: 500,000-800,000 within 5 years 300,000 pay-in (renters) 150,000 buy-in (homeowners) 75,000 sell-in (seniors/downsizers) 25 |
+| 1c9c658568 | papers/pdfs/pth-government-integration.pdf | 300,000 | projection | relabel |  | …nology platform All four pathways fully operational Projected Impact: Households served: 500,000-800,000 within 5 years 300,000 pay-in (renters) 150,000 buy-in (homeowners) 75,000 sell-in (seniors/downsizers) 25,000 ear |
+| d1e2ef5476 | papers/pdfs/pth-government-integration.pdf | 150,000 | projection | relabel |  | …pathways fully operational Projected Impact: Households served: 500,000-800,000 within 5 years 300,000 pay-in (renters) 150,000 buy-in (homeowners) 75,000 sell-in (seniors/downsizers) 25,000 earn-in (workers) Average ho |
+| 3556f0bc82 | papers/pdfs/pth-government-integration.pdf | 75,000 | projection | relabel |  | …rojected Impact: Households served: 500,000-800,000 within 5 years 300,000 pay-in (renters) 150,000 buy-in (homeowners) 75,000 sell-in (seniors/downsizers) 25,000 earn-in (workers) Average household benefit: $10,000-15, |
+| a15cfbc0f0 | papers/pdfs/pth-government-integration.pdf | 25,000 | projection | relabel |  | …500,000-800,000 within 5 years 300,000 pay-in (renters) 150,000 buy-in (homeowners) 75,000 sell-in (seniors/downsizers) 25,000 earn-in (workers) Average household benefit: $10,000-15,000 annually Wealth accumulation: $1 |
+| bbf5430b8f | papers/pdfs/pth-government-integration.pdf | $10,000-15,000 | projection | relabel |  | …rs) 150,000 buy-in (homeowners) 75,000 sell-in (seniors/downsizers) 25,000 earn-in (workers) Average household benefit: $10,000-15,000 annually Wealth accumulation: $150-200B over 10 years Economic multiplier: 2.5x inve |
+| 772a2b7917 | papers/pdfs/pth-government-integration.pdf | $150-200B | projection | relabel |  | …n (seniors/downsizers) 25,000 earn-in (workers) Average household benefit: $10,000-15,000 annually Wealth accumulation: $150-200B over 10 years Economic multiplier: 2.5x investment Job creation: 200,000-350,000 position |
+| 39990b25dc | papers/pdfs/pth-government-integration.pdf | 10 | projection | relabel |  | …sizers) 25,000 earn-in (workers) Average household benefit: $10,000-15,000 annually Wealth accumulation: $150-200B over 10 years Economic multiplier: 2.5x investment Job creation: 200,000-350,000 positions… |
+| f98d4915e5 | papers/pdfs/pth-government-integration.pdf | 2.5x | projection | relabel |  | …s) Average household benefit: $10,000-15,000 annually Wealth accumulation: $150-200B over 10 years Economic multiplier: 2.5x investment Job creation: 200,000-350,000 positions… |
+| adf7ae835e | papers/pdfs/pth-government-integration.pdf | 200,000-350,000 | projection | relabel |  | …$10,000-15,000 annually Wealth accumulation: $150-200B over 10 years Economic multiplier: 2.5x investment Job creation: 200,000-350,000 positions… |
+| 9a9877f02c | papers/pdfs/pth-government-integration.pdf | $100B | projection | relabel |  | …3.3 Substantial Investment (5x HUD = $250 Billion) Transformational Framework: Universal pay-in access program: $100B Comprehensive conversion support: $50B Infrastructure development: $50B Workforce and services: $30B  |
+| 9396093daa | papers/pdfs/pth-government-integration.pdf | $50B | projection | relabel |  | …UD = $250 Billion) Transformational Framework: Universal pay-in access program: $100B Comprehensive conversion support: $50B Infrastructure development: $50B Workforce and services: $30B Innovation and research: $20B Sy |
+| 2d9980a978 | papers/pdfs/pth-government-integration.pdf | $30B | projection | relabel |  | …n access program: $100B Comprehensive conversion support: $50B Infrastructure development: $50B Workforce and services: $30B Innovation and research: $20B System Architecture: National PTH network with local control Com |
+| 0bd83034ab | papers/pdfs/pth-government-integration.pdf | $20B | projection | relabel |  | …hensive conversion support: $50B Infrastructure development: $50B Workforce and services: $30B Innovation and research: $20B System Architecture: National PTH network with local control Comprehensive coverage in 100+ me |
+| b1ef121ac8 | papers/pdfs/pth-government-integration.pdf | 100+ | projection | relabel |  | …0B Innovation and research: $20B System Architecture: National PTH network with local control Comprehensive coverage in 100+ metros Rural and tribal programs International cooperation Focus on pay-in accessibility Socie |
+| 2ee9bc294e | papers/pdfs/pth-government-integration.pdf | 2.5-4 million | projection | relabel | B079 | …Rural and tribal programs International cooperation Focus on pay-in accessibility Societal Outcomes: Households served: 2.5-4 million 1.5M pay-in participants 750K buy-in conversions 500K sell-in transactions… |
+| a9695d6389 | papers/pdfs/pth-government-integration.pdf | 1.5M | projection | relabel | B079 | …al programs International cooperation Focus on pay-in accessibility Societal Outcomes: Households served: 2.5-4 million 1.5M pay-in participants 750K buy-in conversions 500K sell-in transactions… |
+| 7db7aa1931 | papers/pdfs/pth-government-integration.pdf | 750K | projection | relabel | B079 | … cooperation Focus on pay-in accessibility Societal Outcomes: Households served: 2.5-4 million 1.5M pay-in participants 750K buy-in conversions 500K sell-in transactions… |
+| 270219851d | papers/pdfs/pth-government-integration.pdf | 500K | projection | relabel | B079 | …y-in accessibility Societal Outcomes: Households served: 2.5-4 million 1.5M pay-in participants 750K buy-in conversions 500K sell-in transactions… |
 | 8b2b2f6b8c | papers/pdfs/pth-government-integration.pdf | 250K | projection | relabel |  | 250K earn-in contributors Housing insecurity eliminated in covered areas Regional economic development: $400-650B Reduced inequality (Gini improvement: 0.05-0.08) Healthcare savings: $50-75B annually |
 | 3fc927fff1 | papers/pdfs/pth-government-integration.pdf | $400-650B | projection | relabel |  | 250K earn-in contributors Housing insecurity eliminated in covered areas Regional economic development: $400-650B Reduced inequality (Gini improvement: 0.05-0.08) Healthcare savings: $50-75B annually |
 | 36b46b9367 | papers/pdfs/pth-government-integration.pdf | 0.05-0.08 | projection | relabel |  | 250K earn-in contributors Housing insecurity eliminated in covered areas Regional economic development: $400-650B Reduced inequality (Gini improvement: 0.05-0.08) Healthcare savings: $50-75B annually |
 | d3ede6dca6 | papers/pdfs/pth-government-integration.pdf | $50-75B | projection | relabel |  | 250K earn-in contributors Housing insecurity eliminated in covered areas Regional economic development: $400-650B Reduced inequality (Gini improvement: 0.05-0.08) Healthcare savings: $50-75B annually |
-| 3e63d9d8a6 | papers/pdfs/pth-government-integration.pdf | 3-5 | fact | remove |  | …shment Property acquisition support Infrastructure development Matched by local investment Operating Subsidies: Initial 3-5 year support Declining scale to encourage sustainability Performance-based metrics Transition t |
-| 378865d9dd | papers/pdfs/pth-government-integration.pdf | $10,638 | fact | remove |  | $10,638 (perpetual) |
-| 885914bcb8 | papers/pdfs/pth-government-integration.pdf | $8,000 | fact | remove |  | $8,000 (declining) |
-| bc6d438973 | papers/pdfs/pth-government-integration.pdf | $106,380 | fact | remove |  | $106,380 |
-| fa01396b5a | papers/pdfs/pth-government-integration.pdf | $45,000 | fact | remove |  | $45,000 |
-| d2269dcd65 | papers/pdfs/pth-government-integration.pdf | $0 | fact | remove |  | $0 |
-| c75230a5fc | papers/pdfs/pth-government-integration.pdf | $70,000-140,000 | fact | remove |  | $70,000-140,000 |
-| 120f28af9a | papers/pdfs/pth-government-integration.pdf | 5-7 | fact | remove |  | 5-7 years |
-| 9b29a2391c | papers/pdfs/pth-government-integration.pdf | 15-20% | fact | remove |  | 15-20% |
-| 3f7c529c97 | papers/pdfs/pth-government-integration.pdf | 8-12% | fact | remove |  | 8-12% |
-| 2d02abc201 | papers/pdfs/pth-government-integration.pdf | 2-10 | fact | remove |  | 2-10 years |
-| 48eac4862c | papers/pdfs/pth-government-integration.pdf | 1-5 | fact | remove |  | 1-5 years |
-| 7233d2b2c4 | papers/pdfs/pth-government-integration.pdf | 7-10 | fact | remove |  | 7-10 years |
-| 6e036db200 | papers/pdfs/pth-government-integration.pdf | 20% | fact | remove |  | 20% |
-| 9e677b05de | papers/pdfs/pth-government-integration.pdf | 40% | fact | remove |  | 40% |
-| 50077f5ffc | papers/pdfs/pth-government-integration.pdf | 3-5 | fact | remove |  | 3-5 years |
-| 95ceec944f | papers/pdfs/pth-government-integration.pdf | 60% | fact | remove |  | 60% |
-| 3e7889d2a4 | papers/pdfs/pth-government-integration.pdf | 2-3 | fact | remove |  | 2-3 years |
-| 5bec5330cc | papers/pdfs/pth-government-integration.pdf | 7.1 | fact | remove |  | …Scaling Pathways and Timeline 7.1 Year 1-2: Foundation Phase Legislative Framework: Authorizing legislation Appropriations secured Regulatory development… |
-| 9d204485ba | papers/pdfs/pth-government-integration.pdf | 1-2 | fact | remove |  | …Scaling Pathways and Timeline 7.1 Year 1-2: Foundation Phase Legislative Framework: Authorizing legislation Appropriations secured Regulatory development State co… |
-| 2600e4b920 | papers/pdfs/pth-government-integration.pdf | 3-5 | fact | remove |  | 7.2 Year 3-5: Expansion Phase National Rollout: |
-| 3b73cd23cf | papers/pdfs/pth-government-integration.pdf | 100+ | fact | remove |  | …Programs in 100+ communities All four pathways operational Rural and tribal inclusion International partnerships System Integration: CCO… |
-| 0ffbc88087 | papers/pdfs/pth-government-integration.pdf | 6-10 | fact | remove |  | …7.3 Year 6-10: Transformation Phase Full Scale Operations: National coverage achieved Self-sustaining operations Market influence sig… |
-| 3449632ecc | papers/pdfs/pth-government-integration.pdf | 80% | fact | remove | B021 | International Comparisons and Lessons 9.1 Successful Models Singapore's HDB System: 80% homeownership through public program Integrated planning Wealth accumulation enabled Applicable lessons for PTH Vienna's Social Hous |
-| 4d33fcbaa2 | papers/pdfs/pth-government-integration.pdf | 2.5x | fact | remove | B052 | Integration Benefits: PTH combined with Creative Currency Octaves achieves 2.5x greater efficiency than standalone implementation, suggesting integrated social programs offer superior outcomes. |
-| e98d75ea78 | papers/pdfs/pth-government-integration.pdf | $50 billion | fact | remove |  | The choice facing policymakers is clear: continue spending $50 billion annually on programs that maintain poverty and extract wealth, or invest in PTH infrastructure that builds community assets, creates economic mobilit |
+| fb780c0c05 | papers/pdfs/pth-government-integration.pdf | 5-8 million | projection | relabel |  | …ture buildout Integrated social services Climate resilience integration Pay-in as primary pathway Implementation Scale: 5-8 million households covered 3M+ through pay-in model 2M through buy-in conversion 1M through sel |
+| 3be7aa7d40 | papers/pdfs/pth-government-integration.pdf | $1 trillion | projection | relabel |  | … indigenous sovereignty support Transformational Results: Functional end to homelessness Housing cost burden eliminated $1 trillion in community wealth National economic resilience International model leadership… |
+| 594d01872b | papers/pdfs/pth-government-integration.pdf | 30-50 million | projection | relabel |  | Full market integration Theoretical Outcomes: 30-50 million households potential Complete housing security Wealth inequality reversal Economic paradigm shift Global system influence |
+| 12f3cc89b5 | papers/pdfs/pth-government-integration.pdf | 20-30% | projection | relabel |  | 4.2 Tax Incentive Structures Property Tax Exemptions: Full exemption for PTH properties Reduces operating costs 20-30% Enables deeper affordability State and local coordination Income Tax Credits: |
+| 5bcfa34442 | papers/pdfs/pth-government-integration.pdf | 2-3% | projection | relabel |  | …antees and Credit Enhancement Mortgage Conversion Guarantees: Federal backing for PTH mortgages Reduced interest rates (2-3% reduction) Streamlined underwriting Risk pooling mechanisms Construction and Rehabilitation Lo |
+| 378865d9dd | papers/pdfs/pth-government-integration.pdf | $10,638 | projection | relabel |  | $10,638 (perpetual) |
+| 885914bcb8 | papers/pdfs/pth-government-integration.pdf | $8,000 | projection | relabel |  | $8,000 (declining) |
+| 3c5eaa24b7 | papers/pdfs/pth-government-integration.pdf | 10 | projection | relabel |  | 10-year cost |
+| bc6d438973 | papers/pdfs/pth-government-integration.pdf | $106,380 | projection | relabel |  | $106,380 |
+| fa01396b5a | papers/pdfs/pth-government-integration.pdf | $45,000 | projection | relabel |  | $45,000 |
+| d2269dcd65 | papers/pdfs/pth-government-integration.pdf | $0 | projection | relabel |  | $0 |
+| c75230a5fc | papers/pdfs/pth-government-integration.pdf | $70,000-140,000 | projection | relabel |  | $70,000-140,000 |
+| 120f28af9a | papers/pdfs/pth-government-integration.pdf | 5-7 | projection | relabel |  | 5-7 years |
+| 9b29a2391c | papers/pdfs/pth-government-integration.pdf | 15-20% | projection | relabel |  | 15-20% |
+| 3f7c529c97 | papers/pdfs/pth-government-integration.pdf | 8-12% | projection | relabel |  | 8-12% |
+| 2d02abc201 | papers/pdfs/pth-government-integration.pdf | 2-10 | projection | relabel |  | 2-10 years |
+| 48eac4862c | papers/pdfs/pth-government-integration.pdf | 1-5 | projection | relabel |  | 1-5 years |
+| 7233d2b2c4 | papers/pdfs/pth-government-integration.pdf | 7-10 | projection | relabel |  | 7-10 years |
+| 6e036db200 | papers/pdfs/pth-government-integration.pdf | 20% | projection | relabel |  | 20% |
+| 9e677b05de | papers/pdfs/pth-government-integration.pdf | 40% | projection | relabel |  | 40% |
+| 50077f5ffc | papers/pdfs/pth-government-integration.pdf | 3-5 | projection | relabel |  | 3-5 years |
+| 95ceec944f | papers/pdfs/pth-government-integration.pdf | 60% | projection | relabel |  | 60% |
+| 3e7889d2a4 | papers/pdfs/pth-government-integration.pdf | 2-3 | projection | relabel |  | 2-3 years |
+| 5bec5330cc | papers/pdfs/pth-government-integration.pdf | 7.1 | projection | relabel |  | …Scaling Pathways and Timeline 7.1 Year 1-2: Foundation Phase Legislative Framework: Authorizing legislation Appropriations secured Regulatory development… |
+| 9d204485ba | papers/pdfs/pth-government-integration.pdf | 1-2 | projection | relabel |  | …Scaling Pathways and Timeline 7.1 Year 1-2: Foundation Phase Legislative Framework: Authorizing legislation Appropriations secured Regulatory development State co… |
+| 4d6b5fc10a | papers/pdfs/pth-government-integration.pdf | 10-20 | projection | relabel |  | … legislation Appropriations secured Regulatory development State coordination Initial Implementation: Pilot programs in 10-20 cities Focus on pay-in model rollout Technology platform development Community organizing Tar |
+| 5bd640e3c1 | papers/pdfs/pth-government-integration.pdf | 50,000 | projection | relabel |  | …ams in 10-20 cities Focus on pay-in model rollout Technology platform development Community organizing Target Outcomes: 50,000 households enrolled 30,000 through pay-in pathway Proof of concept established Political sup |
+| 863672caa6 | papers/pdfs/pth-government-integration.pdf | 30,000 | projection | relabel |  | …n pay-in model rollout Technology platform development Community organizing Target Outcomes: 50,000 households enrolled 30,000 through pay-in pathway Proof of concept established Political support building… |
+| 2600e4b920 | papers/pdfs/pth-government-integration.pdf | 3-5 | projection | relabel |  | 7.2 Year 3-5: Expansion Phase National Rollout: |
+| 3b73cd23cf | papers/pdfs/pth-government-integration.pdf | 100+ | projection | relabel |  | …Programs in 100+ communities All four pathways operational Rural and tribal inclusion International partnerships System Integration: CCO… |
+| 3e56a6e001 | papers/pdfs/pth-government-integration.pdf | 500,000 | projection | relabel |  | …tem Integration: CCO coordination Healthcare connections Education partnerships Workforce development Expected Results: 500,000 households participating $50B in community assets Policy framework matured Replication mode |
+| b9a7cf6e11 | papers/pdfs/pth-government-integration.pdf | $50B | projection | relabel |  | … Healthcare connections Education partnerships Workforce development Expected Results: 500,000 households participating $50B in community assets Policy framework matured Replication models proven… |
+| 0ffbc88087 | papers/pdfs/pth-government-integration.pdf | 6-10 | projection | relabel |  | …7.3 Year 6-10: Transformation Phase Full Scale Operations: National coverage achieved Self-sustaining operations Market influence sig… |
+| a13119144c | papers/pdfs/pth-government-integration.pdf | 2-5 million | projection | relabel |  | …nology deployment Comprehensive service integration Climate resilience built in Innovation continuous Projected Impact: 2-5 million households $200-500B community wealth Housing crisis addressed Economic paradigm shifte |
+| 8d81690c47 | papers/pdfs/pth-government-integration.pdf | $200-500B | projection | relabel |  | …ehensive service integration Climate resilience built in Innovation continuous Projected Impact: 2-5 million households $200-500B community wealth Housing crisis addressed Economic paradigm shifted… |
+| 3449632ecc | papers/pdfs/pth-government-integration.pdf | 80% | projection | relabel | B021 | International Comparisons and Lessons 9.1 Successful Models Singapore's HDB System: 80% homeownership through public program Integrated planning Wealth accumulation enabled Applicable lessons for PTH Vienna's Social Hous |
+| 03fefc4900 | papers/pdfs/pth-government-integration.pdf | 60% | projection | relabel |  | 60% of residents in social housing High quality standards Mixed-income communities Long-term sustainability Community Land Trusts (Global): 250+ CLTs worldwide Proven affordability preservation Democratic governance Scal |
+| 3550e1d7ba | papers/pdfs/pth-government-integration.pdf | 250+ | projection | relabel |  | 60% of residents in social housing High quality standards Mixed-income communities Long-term sustainability Community Land Trusts (Global): 250+ CLTs worldwide Proven affordability preservation Democratic governance Scal |
+| 097d66d280 | papers/pdfs/pth-government-integration.pdf | $70,000-140,000 | projection | relabel |  | Superior Outcomes: PTH delivers better results than current programs at lower long-term cost, building $70,000-140,000 in household wealth while reducing government expenditure by 50-60% over 10 years. 3. |
+| bdf49a7ff4 | papers/pdfs/pth-government-integration.pdf | 50-60% | projection | relabel |  | Superior Outcomes: PTH delivers better results than current programs at lower long-term cost, building $70,000-140,000 in household wealth while reducing government expenditure by 50-60% over 10 years. 3. |
+| a8b65a0233 | papers/pdfs/pth-government-integration.pdf | 10 | projection | relabel |  | Superior Outcomes: PTH delivers better results than current programs at lower long-term cost, building $70,000-140,000 in household wealth while reducing government expenditure by 50-60% over 10 years. 3. |
+| e98d75ea78 | papers/pdfs/pth-government-integration.pdf | $50 billion | projection | relabel |  | The choice facing policymakers is clear: continue spending $50 billion annually on programs that maintain poverty and extract wealth, or invest in PTH infrastructure that builds community assets, creates economic mobilit |
+| 68fabb635f | papers/pdfs/pth-government-integration.pdf | 0.25x | projection | relabel |  | Even minimal integration (0.25x HUD budget) would transform housing outcomes for hundreds of thousands while demonstrating the model's effectiveness. |
 | b79d2ff159 | papers/pdfs/pth-independent-financing.pdf | 50% | projection | relabel |  | …The analysis compares passive benefit distribution models (achieving 50% market penetration in 18-142 years) versus active investment participation models (achieving the same penetration in 5-… |
 | e37d7678e4 | papers/pdfs/pth-independent-financing.pdf | 18-142 | projection | relabel |  | …The analysis compares passive benefit distribution models (achieving 50% market penetration in 18-142 years) versus active investment participation models (achieving the same penetration in 5-19 years), revealing fundam |
 | 841c517c37 | papers/pdfs/pth-independent-financing.pdf | 5-19 | projection | relabel |  | …0% market penetration in 18-142 years) versus active investment participation models (achieving the same penetration in 5-19 years), revealing fundamental strategic choices about PTH's nature as either charity or invest |
@@ -2304,9 +2381,16 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 95c930fb56 | papers/pdfs/pth-independent-financing.pdf | 18-142 | projection | relabel |  | Participants pay reduced rent/fees No ownership stake accumulation Benefits cease upon departure Charity-like structure Growth Dynamics: Linear growth pattern Dependent on continuous external funding Limited network effe |
 | 5c0c13d585 | papers/pdfs/pth-independent-financing.pdf | 50% | projection | relabel |  | …ructure Growth Acceleration: Exponential growth potential Self-reinforcing network effects Participant-driven expansion 50% market penetration: 5-19 years… |
 | 33bd48cce9 | papers/pdfs/pth-independent-financing.pdf | 5-19 | projection | relabel |  | …ion: Exponential growth potential Self-reinforcing network effects Participant-driven expansion 50% market penetration: 5-19 years… |
+| 40a744ccfa | papers/pdfs/pth-independent-financing.pdf | $400,000 | projection | relabel | B117 | …Pay-in participant support: $400,000 (20-30 households) Mortgage assistance: $300,000 (5-10 households) Platform development: $200,000 Operations/reserves: … |
+| 0d6253190a | papers/pdfs/pth-independent-financing.pdf | 20-30 | projection | relabel | B117 | …Pay-in participant support: $400,000 (20-30 households) Mortgage assistance: $300,000 (5-10 households) Platform development: $200,000 Operations/reserves: $100,00… |
+| 32225c00b1 | papers/pdfs/pth-independent-financing.pdf | 40% | projection | relabel |  | …rm development: $200,000 Operations/reserves: $100,000 Expected Outcomes: Year 1: 30 households (20 pay-in, 10 buy-in), 40% cost reduction Year 3: 80 households, financial sustainability Year 5: 200 households, regional |
+| 18c2fa1ce1 | papers/pdfs/pth-independent-financing.pdf | 80 | projection | relabel |  | …erations/reserves: $100,000 Expected Outcomes: Year 1: 30 households (20 pay-in, 10 buy-in), 40% cost reduction Year 3: 80 households, financial sustainability Year 5: 200 households, regional recognition 10-Year Impact |
 | bb5488af2e | papers/pdfs/pth-independent-financing.pdf | 200 | projection | relabel |  | …ear 1: 30 households (20 pay-in, 10 buy-in), 40% cost reduction Year 3: 80 households, financial sustainability Year 5: 200 households, regional recognition 10-Year Impact: 800+ households, $25M in community wealth… |
 | 41b0192fae | papers/pdfs/pth-independent-financing.pdf | 800+ | projection | relabel |  | … reduction Year 3: 80 households, financial sustainability Year 5: 200 households, regional recognition 10-Year Impact: 800+ households, $25M in community wealth… |
 | d5e581a678 | papers/pdfs/pth-independent-financing.pdf | $25M | projection | relabel |  | …: 80 households, financial sustainability Year 5: 200 households, regional recognition 10-Year Impact: 800+ households, $25M in community wealth… |
+| 8a3505c70b | papers/pdfs/pth-independent-financing.pdf | 400-500 | projection | relabel |  | …cture: $1.5M Operations: $1.5M Scaling Projection: Year 1: 100-120 households (60 pay-in, 40 buy-in, 20 others) Year 3: 400-500 households Year 5: 1,500+ households Network effects enable accelerated growth… |
+| b9ed8d1608 | papers/pdfs/pth-independent-financing.pdf | 500 | projection | relabel |  | …nology platform: $10M Regional expansion: $15M Reserves: $5M Impact Timeline: Immediate: 1,000-1,200 households served (500 pay-in) Year 3: 4,000-5,000 households Year 5: 15,000+ households… |
+| 205bf1f90c | papers/pdfs/pth-independent-financing.pdf | 4,000-5,000 | projection | relabel |  | …M Regional expansion: $15M Reserves: $5M Impact Timeline: Immediate: 1,000-1,200 households served (500 pay-in) Year 3: 4,000-5,000 households Year 5: 15,000+ households… |
 | 31bbcc9d93 | papers/pdfs/pth-independent-financing.pdf | 15,000+ | projection | relabel |  | …rves: $5M Impact Timeline: Immediate: 1,000-1,200 households served (500 pay-in) Year 3: 4,000-5,000 households Year 5: 15,000+ households… |
 | 7cee429c70 | papers/pdfs/pth-independent-financing.pdf | 10,000-12,000 | projection | relabel |  | …lopment: $100M Research and advocacy: $50M Reserves and growth capital: $50M Transformational Impact: Initial capacity: 10,000-12,000 households (6,000 pay-in) Year 5: 75,000-100,000 households Year 10: 300,000+ househo |
 | c1c3edb18c | papers/pdfs/pth-independent-financing.pdf | 6,000 | projection | relabel |  | …d advocacy: $50M Reserves and growth capital: $50M Transformational Impact: Initial capacity: 10,000-12,000 households (6,000 pay-in) Year 5: 75,000-100,000 households Year 10: 300,000+ households National model influen |
@@ -2314,6 +2398,8 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 0d8c45f2d9 | papers/pdfs/pth-independent-financing.pdf | 300,000+ | projection | relabel |  | …ormational Impact: Initial capacity: 10,000-12,000 households (6,000 pay-in) Year 5: 75,000-100,000 households Year 10: 300,000+ households National model influencing policy… |
 | 9ef7e42de0 | papers/pdfs/pth-independent-financing.pdf | 44 million | fact | correct |  | Largest Market: Serves 44 million renter households 3. |
 | dac53c4eb0 | papers/pdfs/pth-independent-financing.pdf | 5-10 | projection | relabel |  | 5-10 |
+| 62687a381e | papers/pdfs/pth-independent-financing.pdf | 70-80% | estimate | relabel |  | …6.2 Revenue Streams Primary Revenue (70-80%): Pay-in monthly payments (largest source) Buy-in conversion payments Percentage of income model (25-30% typical) Fixed… |
+| 6ed46bd36c | papers/pdfs/pth-independent-financing.pdf | 10-15% | estimate | relabel |  | …) Buy-in conversion payments Percentage of income model (25-30% typical) Fixed fee options available Secondary Revenue (10-15%): Commercial property income Service fees from non-residents Investment returns on reserves  |
 | fa96a3de6e | papers/pdfs/pth-independent-financing.pdf | 25-35% | estimate | relabel |  | …6.3 Cost Structure Optimization Collective Purchasing Advantages: Insurance: 25-35% reduction through group policies Maintenance: 20-30% savings via service contracts Utilities: 15-20% reduction through … |
 | 76e594b79a | papers/pdfs/pth-independent-financing.pdf | 20-30% | estimate | relabel |  | …tructure Optimization Collective Purchasing Advantages: Insurance: 25-35% reduction through group policies Maintenance: 20-30% savings via service contracts Utilities: 15-20% reduction through bulk buying Materials: 30- |
 | 213aa0d7c3 | papers/pdfs/pth-independent-financing.pdf | 15-20% | estimate | relabel |  | …ntages: Insurance: 25-35% reduction through group policies Maintenance: 20-30% savings via service contracts Utilities: 15-20% reduction through bulk buying Materials: 30-40% savings on bulk purchases Operational Effici |
@@ -2322,12 +2408,13 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 1a0d6920cd | papers/pdfs/pth-independent-financing.pdf | 40% | estimate | relabel |  | …bulk purchases Operational Efficiency: Professional management: 10-15% of revenue Shared services reduce per-unit costs 40%… |
 | c6e3c52b52 | papers/pdfs/pth-independent-financing.pdf | 30% | estimate | relabel |  | Technology automation saves 30% on administration Volunteer coordination provides additional value |
 | e5505cebc2 | papers/pdfs/pth-independent-financing.pdf | 7.1 | fact | remove |  | …Implementation Roadmap 7.1 Phase 1: Foundation (Months 1-6) Legal and Governance: Establish legal entity (LLC, co-op, or CLT) Develop bylaws and g… |
-| b479deb3f5 | papers/pdfs/pth-independent-financing.pdf | 50 | projection | relabel | B060 | …9.3 Mixed Metropolitan Program (200 Households) Participant Mix: 100 pay-in (renters) 50 buy-in (mortgage holders) 30 sell-in (seniors) 20 earn-in (workers) 5-Year Outcomes: Total households served: 500+ Comm… |
 | 90addb61ab | papers/pdfs/pth-independent-financing.pdf | 30 | projection | relabel | B060 | …9.3 Mixed Metropolitan Program (200 Households) Participant Mix: 100 pay-in (renters) 50 buy-in (mortgage holders) 30 sell-in (seniors) 20 earn-in (workers) 5-Year Outcomes: Total households served: 500+ Community wealt |
 | f86f235809 | papers/pdfs/pth-independent-financing.pdf | 20 | projection | relabel |  | …olitan Program (200 Households) Participant Mix: 100 pay-in (renters) 50 buy-in (mortgage holders) 30 sell-in (seniors) 20 earn-in (workers) 5-Year Outcomes: Total households served: 500+ Community wealth created: $35M  |
 | c2887b3536 | papers/pdfs/pth-independent-financing.pdf | 500+ | projection | relabel |  | …nters) 50 buy-in (mortgage holders) 30 sell-in (seniors) 20 earn-in (workers) 5-Year Outcomes: Total households served: 500+ Community wealth created: $35M Average cost reduction: 45% Self-sustaining operations achieved |
 | 79f5866f1a | papers/pdfs/pth-independent-financing.pdf | $35M | projection | relabel |  | …ers) 30 sell-in (seniors) 20 earn-in (workers) 5-Year Outcomes: Total households served: 500+ Community wealth created: $35M Average cost reduction: 45% Self-sustaining operations achieved… |
 | 5d68cc830b | papers/pdfs/pth-independent-financing.pdf | 45% | projection | relabel |  | …earn-in (workers) 5-Year Outcomes: Total households served: 500+ Community wealth created: $35M Average cost reduction: 45% Self-sustaining operations achieved… |
+| 8a5dad0b20 | papers/pdfs/pth-independent-financing.pdf | 200,000 | projection | relabel |  | …00 initial households (60% pay-in) Technology platform deployed Professional management established 10-Year Projection: 200,000 households served $3.5B in community wealth created National policy influence International |
+| 6bc38a8e7f | papers/pdfs/pth-independent-financing.pdf | $3.5B | projection | relabel |  | … pay-in) Technology platform deployed Professional management established 10-Year Projection: 200,000 households served $3.5B in community wealth created National policy influence International replication interest… |
 | ede75f38d7 | papers/pdfs/pth-independent-financing.pdf | 44 million | fact | correct |  | Pay-In Accessibility: The pay-in model serves as the most accessible entry point, requiring no down payment or credit checks while serving 44 million renter households. |
 | 9389e01bb1 | papers/pdfs/pth-independent-financing.pdf | 5-7x | projection | relabel |  | Investment Model Superiority: Active participant investment enables 5-7x faster scaling than passive benefit distribution, achieving meaningful market penetration within 5-19 years versus 18-142 years. 4. |
 | b5e3ece9e2 | papers/pdfs/pth-independent-financing.pdf | 5-19 | projection | relabel |  | Investment Model Superiority: Active participant investment enables 5-7x faster scaling than passive benefit distribution, achieving meaningful market penetration within 5-19 years versus 18-142 years. 4. |
@@ -2498,98 +2585,62 @@ Classed by a reviewed rule or the reference list: 3601; by a generic rule or a p
 | 021d8e319b | papers/pdfs/us-real-estate-transformation.pdf | $60,000 | fact | remove |  | $60,000 |
 | 57cd79ec2a | papers/pdfs/us-real-estate-transformation.pdf | $2,500 | fact | remove |  | $2,500 |
 | 78fafff851 | papers/pdfs/us-real-estate-transformation.pdf | $1,500 | fact | remove |  | $1,500 |
-| 23956cfa4f | pth-government-integration.html | 11 | fact | remove |  | Date: September 11, 2025 |
-| 716f74d147 | pth-government-integration.html | $26.8B | fact | remove |  | Tenant-Based Rental Assistance: $26.8B (53.6%) |
-| 8dc807219c | pth-government-integration.html | 53.6% | fact | remove |  | Tenant-Based Rental Assistance: $26.8B (53.6%) |
-| 28d572ee04 | pth-government-integration.html | $13.9B | projection | relabel |  | Project-Based Rental Assistance: $13.9B (27.8%) |
-| 4de64cd5f1 | pth-government-integration.html | 27.8% | projection | relabel |  | Project-Based Rental Assistance: $13.9B (27.8%) |
-| 797d246d1a | pth-government-integration.html | $3.5B | fact | remove |  | Homeless Assistance Grants: $3.5B (7.0%) |
-| 608b349b7d | pth-government-integration.html | 7.0% | fact | remove |  | Homeless Assistance Grants: $3.5B (7.0%) |
-| b4800b9e44 | pth-government-integration.html | $0.7B | fact | remove |  | Other Programs: $0.7B (1.4%) |
-| 7c0032d1bb | pth-government-integration.html | 1.4% | fact | remove |  | Other Programs: $0.7B (1.4%) |
-| 257d7099f6 | pth-government-integration.html | $50.0B | fact | remove |  | Total: $50.0B |
-| 848e05682c | pth-government-integration.html | 3-10 | fact | remove |  | Waiting lists: 3-10 years typical |
-| 8cc82a9dd2 | pth-government-integration.html | 15-20% | fact | remove |  | Administrative overhead: 15-20% |
-| 0c21aea666 | pth-government-integration.html | $470 billion | projection | relabel |  | $470 billion over 10 years with no assets |
-| 1752fb1ca8 | pth-government-integration.html | 10 | projection | relabel |  | $470 billion over 10 years with no assets |
-| afcdca978a | pth-government-integration.html | $5B | fact | remove |  | Pay-in housing acquisition: $5B (40,000 units) |
-| 46d888e7ad | pth-government-integration.html | 40,000 | fact | remove |  | Pay-in housing acquisition: $5B (40,000 units) |
-| b29ac77cca | pth-government-integration.html | $3B | fact | remove |  | Mortgage conversion support: $3B |
-| 322107aa24 | pth-government-integration.html | $2B | fact | remove |  | Technical assistance: $2B |
-| 048f1f8e10 | pth-government-integration.html | $1.5B | fact | remove |  | Platform development: $1.5B |
-| 97b66edca4 | pth-government-integration.html | $0.5B | fact | remove |  | Research and evaluation: $0.5B |
-| fc14fb3013 | pth-government-integration.html | $50M | fact | remove |  | $50M average per trust |
-| 645f5f9f96 | pth-government-integration.html | 60% | fact | remove |  | 60% pay-in participants (no barriers) |
-| e235ffedf6 | pth-government-integration.html | 25% | fact | remove |  | 25% buy-in conversions |
-| ad93176f01 | pth-government-integration.html | 10% | fact | remove |  | 10% sell-in transactions |
-| 7e86313265 | pth-government-integration.html | 5% | fact | remove |  | 5% earn-in contributors |
-| e9b7cde163 | pth-government-integration.html | $12-20B | fact | remove | B004 | Community wealth creation: $12-20B annually |
-| dfc9106c2e | pth-government-integration.html | 3-4 | fact | remove |  | Break-even: Year 3-4 |
-| e8a560bf51 | pth-government-integration.html | $10B | fact | remove |  | Mortgage conversion incentives: $10B |
-| 654288a366 | pth-government-integration.html | $10B | fact | remove |  | Property acquisition: $10B |
-| e5cc82128b | pth-government-integration.html | $5B | fact | remove |  | Infrastructure: $5B |
-| 226e5af57d | pth-government-integration.html | $5B | fact | remove |  | Operations support: $5B |
-| 093e8c9f50 | pth-government-integration.html | 1,000-2,000 | fact | remove |  | 1,000-2,000 community trusts nationally |
-| adc585695f | pth-government-integration.html | $25-50M | fact | remove |  | Average $25-50M per trust |
-| f0ab33238d | pth-government-integration.html | 300,000 | fact | remove |  | 300,000 pay-in (renters) |
-| 8ee0973f32 | pth-government-integration.html | 150,000 | fact | remove |  | 150,000 buy-in (homeowners) |
-| 5e5c01714b | pth-government-integration.html | 75,000 | fact | remove |  | 75,000 sell-in (seniors/downsizers) |
-| f27d9f12f0 | pth-government-integration.html | 25,000 | fact | remove |  | 25,000 earn-in (workers) |
-| 4dc08db6f4 | pth-government-integration.html | $150-200B | projection | relabel |  | Wealth accumulation: $150-200B over 10 years |
-| 76af89e051 | pth-government-integration.html | 10 | projection | relabel |  | Wealth accumulation: $150-200B over 10 years |
-| 2a17c07e03 | pth-government-integration.html | 200,000-350,000 | fact | remove |  | Job creation: 200,000-350,000 positions |
-| 65cd85372e | pth-government-integration.html | $100B | fact | remove |  | Universal pay-in access program: $100B |
-| d3f54df05d | pth-government-integration.html | $50B | fact | remove |  | Comprehensive conversion support: $50B |
-| 89ad165dfc | pth-government-integration.html | $50B | fact | remove |  | Infrastructure development: $50B |
-| 552b1e72e9 | pth-government-integration.html | $30B | fact | remove |  | Workforce and services: $30B |
-| 94d2a86edf | pth-government-integration.html | $20B | fact | remove |  | Innovation and research: $20B |
-| 747a45cc87 | pth-government-integration.html | 100+ | fact | remove |  | Comprehensive coverage in 100+ metros |
-| 2794f137e8 | pth-government-integration.html | 1.5M | fact | remove |  | 1.5M pay-in participants |
-| 4df42c127c | pth-government-integration.html | 750K | fact | remove | B079 | 750K buy-in conversions |
-| ef4857b94d | pth-government-integration.html | 500K | fact | remove |  | 500K sell-in transactions |
-| 9138a12eb6 | pth-government-integration.html | 250K | fact | remove |  | 250K earn-in contributors |
-| 858b075378 | pth-government-integration.html | $400-650B | fact | remove |  | Regional economic development: $400-650B |
-| c8e6b66e48 | pth-government-integration.html | 0.05-0.08 | projection | relabel |  | Reduced inequality (Gini improvement: 0.05-0.08) |
-| 28f02bf5d2 | pth-government-integration.html | $50-75B | projection | relabel |  | Healthcare savings: $50-75B annually |
-| f69dd5be06 | pth-government-integration.html | 500K | fact | remove |  | 500K through earn-in |
-| 57242dc3e8 | pth-government-integration.html | $1 trillion | fact | remove |  | $1 trillion in community wealth |
-| 10fe496012 | pth-government-integration.html | 70-80% | fact | remove |  | 70-80% of rent converts to equity |
-| ae559bed37 | pth-government-integration.html | 3-5 | fact | remove |  | Initial 3-5 year support |
+| dbeb0c11a3 | pth-government-integration.html | 44 million | fact | correct |  | …ed)—create comprehensive access across economic circumstances, with the pay-in model serving as the primary pathway for 44 million renter households.… |
+| 07fccd3a76 | pth-government-integration.html | $50 billion | fact | correct |  | Unlike current HUD programs that spend $50 billion annually on rental assistance with zero wealth accumulation, PTH converts housing subsidies into community assets, achieving permanent affordability while building parti |
+| 406643089b | pth-government-integration.html | 500,000-800,000 | projection | relabel |  | Analysis reveals that moderate integration (1x HUD budget) could serve 500,000-800,000 households within 5 years while generating $150-200 billion in community wealth. |
+| b91799365d | pth-government-integration.html | 5 | projection | relabel |  | Analysis reveals that moderate integration (1x HUD budget) could serve 500,000-800,000 households within 5 years while generating $150-200 billion in community wealth. |
+| 480cba026e | pth-government-integration.html | $150-200 billion | projection | relabel |  | Analysis reveals that moderate integration (1x HUD budget) could serve 500,000-800,000 households within 5 years while generating $150-200 billion in community wealth. |
+| 1dc5a758b2 | pth-government-integration.html | $50 billion | fact | correct |  | The United States Department of Housing and Urban Development (HUD) spends approximately $50 billion annually on housing assistance programs that, while providing critical shelter, fail to build long-term wealth or commu |
+| 716f74d147 | pth-government-integration.html | $26.8B | fact | correct |  | Tenant-Based Rental Assistance: $26.8B (53.6%) |
+| 8dc807219c | pth-government-integration.html | 53.6% | fact | correct |  | Tenant-Based Rental Assistance: $26.8B (53.6%) |
+| 28d572ee04 | pth-government-integration.html | $13.9B | fact | correct |  | Project-Based Rental Assistance: $13.9B (27.8%) |
+| 4de64cd5f1 | pth-government-integration.html | 27.8% | fact | correct |  | Project-Based Rental Assistance: $13.9B (27.8%) |
+| c4a74794c1 | pth-government-integration.html | $5.1B | fact | correct |  | Public Housing Operating Fund: $5.1B (10.2%) |
+| e6709df623 | pth-government-integration.html | 10.2% | fact | correct |  | Public Housing Operating Fund: $5.1B (10.2%) |
+| 797d246d1a | pth-government-integration.html | $3.5B | fact | correct |  | Homeless Assistance Grants: $3.5B (7.0%) |
+| 608b349b7d | pth-government-integration.html | 7.0% | fact | correct |  | Homeless Assistance Grants: $3.5B (7.0%) |
+| b4800b9e44 | pth-government-integration.html | $0.7B | fact | correct |  | Other Programs: $0.7B (1.4%) |
+| 7c0032d1bb | pth-government-integration.html | 1.4% | fact | correct |  | Other Programs: $0.7B (1.4%) |
+| 257d7099f6 | pth-government-integration.html | $50.0B | fact | correct |  | Total: $50.0B |
+| 802a8816c4 | pth-government-integration.html | 4.7 million | fact | correct |  | Households served: 4.7 million |
+| 4a03c79bf7 | pth-government-integration.html | $10,638 | fact | correct |  | Average assistance: $10,638 per household annually |
+| 848e05682c | pth-government-integration.html | 3-10 | fact | correct |  | Waiting lists: 3-10 years typical |
+| 8cc82a9dd2 | pth-government-integration.html | 15-20% | fact | correct |  | Administrative overhead: 15-20% |
+| 0c21aea666 | pth-government-integration.html | $470 billion | fact | correct |  | $470 billion over 10 years with no assets |
+| 1752fb1ca8 | pth-government-integration.html | 10 | fact | correct |  | $470 billion over 10 years with no assets |
+| dec9a51a04 | pth-government-integration.html | 20-30% | projection | relabel |  | Reduces operating costs 20-30% |
 | 3812c0c513 | pth-government-integration.html | 2-3% | projection | relabel |  | Reduced interest rates (2-3% reduction) |
 | ba5d22c41d | pth-government-integration.html | 15% | projection | relabel |  | Shared administrative infrastructure: 15% savings |
 | 66c43742b5 | pth-government-integration.html | 12% | projection | relabel |  | Coordinated technology platform: 12% reduction |
-| 339b0ffbfa | pth-government-integration.html | 18% | fact | remove |  | Integrated community services: 18% efficiency gain |
-| ebd1dcad70 | pth-government-integration.html | 1-2 | fact | remove |  | 6.1 Year 1-2: Foundation Phase |
-| 8a05a5a72a | pth-government-integration.html | 10-20 | fact | remove |  | Pilot programs in 10-20 cities |
-| 2d48fca557 | pth-government-integration.html | 30,000 | fact | remove |  | 30,000 through pay-in pathway |
-| 9f0154a281 | pth-government-integration.html | 3-5 | fact | remove |  | 6.2 Year 3-5: Expansion Phase |
-| 4d14dbd8e5 | pth-government-integration.html | 100+ | fact | remove |  | Programs in 100+ communities |
-| 69b172cf8a | pth-government-integration.html | $50B | fact | remove |  | $50B in community assets |
-| b646e1f277 | pth-government-integration.html | 6-10 | fact | remove |  | 6.3 Year 6-10: Transformation Phase |
-| 2e9b7b40bb | pth-government-integration.html | $200-500B | fact | remove |  | $200-500B community wealth |
-| 226ce9a341 | pth-government-integration.html | $12,000 | projection | relabel |  | Crime reduction: $12,000 per neighborhood annually |
-| 21800f0f67 | pth-government-integration.html | $15,000 | projection | relabel |  | Educational improvements: $15,000 per child annually |
-| bb7427ffcd | pth-government-integration.html | 1.8x | fact | remove |  | Local procurement: 1.8x community spending |
-| 9175b13f76 | pth-government-integration.html | 200,000-350,000 | fact | remove |  | Service employment: 200,000-350,000 new jobs |
-| b5a09d6676 | pth-government-integration.html | $20-40B | fact | remove |  | Tax base expansion: $20-40B annually |
-| 0ccc04e47f | pth-government-integration.html | $15,000 | fact | remove |  | / PTH Standalone / $15,000 initial / $8,000/year / $25,000/year / 5-year break-even |
-| 771634ec1f | pth-government-integration.html | $8,000 | fact | remove |  | / PTH Standalone / $15,000 initial / $8,000/year / $25,000/year / 5-year break-even |
-| ce9ad5dc23 | pth-government-integration.html | $25,000 | fact | remove |  | / PTH Standalone / $15,000 initial / $8,000/year / $25,000/year / 5-year break-even |
-| 2e38d32dad | pth-government-integration.html | $12,000 | fact | remove |  | / PTH-CCO Integrated / $12,000 initial / $12,000/year / $35,000/year / 3-year break-even |
-| ba48cad2fc | pth-government-integration.html | $35,000 | fact | remove |  | / PTH-CCO Integrated / $12,000 initial / $12,000/year / $35,000/year / 3-year break-even |
-| 4dca2b679c | pth-government-integration.html | 10 | fact | remove |  | 10-Year Projections (Moderate Investment): |
-| 9be77aee03 | pth-government-integration.html | $275B | fact | remove |  | Net benefit: $275B |
-| e207833f2b | pth-government-integration.html | 4.7 | fact | remove |  | ROI: 4.7:1 |
-| 383265ebca | pth-government-integration.html | 20 | fact | remove |  | 20-Year Projections (Substantial Investment): |
-| 1c9ac5d0b1 | pth-government-integration.html | $1.1T | fact | remove |  | Net benefit: $1.1T |
-| b412869c1b | pth-government-integration.html | 4.1 | fact | remove |  | ROI: 4.1:1 |
+| 339b0ffbfa | pth-government-integration.html | 18% | projection | relabel |  | Integrated community services: 18% efficiency gain |
+| 69b172cf8a | pth-government-integration.html | $50B | projection | relabel |  | $50B in community assets |
+| 2e9b7b40bb | pth-government-integration.html | $200-500B | projection | relabel |  | $200-500B community wealth |
+| 73043e35f4 | pth-government-integration.html | $35,000 | estimate | relabel |  | Reduced homelessness costs: $35,000 per person annually |
+| d8312165ed | pth-government-integration.html | $8,000 | estimate | relabel |  | Healthcare savings: $8,000 per household annually |
+| 226ce9a341 | pth-government-integration.html | $12,000 | estimate | relabel |  | Crime reduction: $12,000 per neighborhood annually |
+| 21800f0f67 | pth-government-integration.html | $15,000 | estimate | relabel |  | Educational improvements: $15,000 per child annually |
+| 86f4e8db87 | pth-government-integration.html | 2.5x | estimate | relabel |  | Construction jobs: 2.5x investment multiplier |
+| bb7427ffcd | pth-government-integration.html | 1.8x | estimate | relabel |  | Local procurement: 1.8x community spending |
+| 9175b13f76 | pth-government-integration.html | 200,000-350,000 | estimate | relabel |  | Service employment: 200,000-350,000 new jobs |
+| b5a09d6676 | pth-government-integration.html | $20-40B | estimate | relabel |  | Tax base expansion: $20-40B annually |
+| 0ccc04e47f | pth-government-integration.html | $15,000 | estimate | relabel |  | / PTH Standalone / $15,000 initial / $8,000/year / $25,000/year / 5-year break-even |
+| 771634ec1f | pth-government-integration.html | $8,000 | estimate | relabel |  | / PTH Standalone / $15,000 initial / $8,000/year / $25,000/year / 5-year break-even |
+| ce9ad5dc23 | pth-government-integration.html | $25,000 | estimate | relabel |  | / PTH Standalone / $15,000 initial / $8,000/year / $25,000/year / 5-year break-even |
+| 2e38d32dad | pth-government-integration.html | $12,000 | estimate | relabel |  | / PTH-CCO Integrated / $12,000 initial / $12,000/year / $35,000/year / 3-year break-even |
+| ba48cad2fc | pth-government-integration.html | $35,000 | estimate | relabel |  | / PTH-CCO Integrated / $12,000 initial / $12,000/year / $35,000/year / 3-year break-even |
+| 4dca2b679c | pth-government-integration.html | 10 | projection | relabel |  | 10-Year Projections (Moderate Investment): |
+| 383265ebca | pth-government-integration.html | 20 | projection | relabel |  | 20-Year Projections (Substantial Investment): |
 | 0c7a229a80 | pth-government-integration.html | $150-200 billion | projection | relabel |  | Wealth Accumulation Transformation: Unlike current programs that build zero participant wealth, PTH generates $150-200 billion in community wealth over 10 years at moderate investment levels. |
 | c5287ba5c8 | pth-government-integration.html | 10 | projection | relabel |  | Wealth Accumulation Transformation: Unlike current programs that build zero participant wealth, PTH generates $150-200 billion in community wealth over 10 years at moderate investment levels. |
+| 022c58acbd | pth-government-integration.html | 44 million | fact | correct |  | Accessibility Through Pay-In Model: The pay-in pathway serves as the primary entry point for 44 million renter households, requiring no credit checks or down payments while converting 70-80% of monthly payments to equity |
+| de8c2dfaa0 | pth-government-integration.html | 70-80% | fact | correct |  | Accessibility Through Pay-In Model: The pay-in pathway serves as the primary entry point for 44 million renter households, requiring no credit checks or down payments while converting 70-80% of monthly payments to equity |
 | cbc6e77637 | pth-government-integration.html | 50% | projection | relabel |  | Scalable Implementation: Financial architecture demonstrates that 50% market penetration is achievable within 5-19 years through active investment models versus 18-142 years for passive approaches. |
 | cd29edf849 | pth-government-integration.html | 5-19 | projection | relabel |  | Scalable Implementation: Financial architecture demonstrates that 50% market penetration is achievable within 5-19 years through active investment models versus 18-142 years for passive approaches. |
 | a68d447c75 | pth-government-integration.html | 18-142 | projection | relabel |  | Scalable Implementation: Financial architecture demonstrates that 50% market penetration is achievable within 5-19 years through active investment models versus 18-142 years for passive approaches. |
-| e956fb3b3e | pth-government-integration.html | 1 to 5 | fact | remove |  | Return on investment calculations show 4:1 to 5:1 returns over 10-20 year periods, making this not just socially beneficial but fiscally advantageous. |
-| ef6aa89af6 | pth-government-integration.html | 10-20 | fact | remove |  | Return on investment calculations show 4:1 to 5:1 returns over 10-20 year periods, making this not just socially beneficial but fiscally advantageous. |
+| 26bfc2c0ec | pth-government-integration.html | 2.5x | projection | relabel |  | Economic Multiplier Effects: Public investment generates 2.5x economic multipliers through construction, local procurement, and service employment, creating 200,000-350,000 new jobs. |
+| c3e6a88388 | pth-government-integration.html | 200,000-350,000 | projection | relabel |  | Economic Multiplier Effects: Public investment generates 2.5x economic multipliers through construction, local procurement, and service employment, creating 200,000-350,000 new jobs. |
+| e956fb3b3e | pth-government-integration.html | 1 to 5 | projection | relabel |  | Return on investment calculations show 4:1 to 5:1 returns over 10-20 year periods, making this not just socially beneficial but fiscally advantageous. |
+| ef6aa89af6 | pth-government-integration.html | 10-20 | projection | relabel |  | Return on investment calculations show 4:1 to 5:1 returns over 10-20 year periods, making this not just socially beneficial but fiscally advantageous. |
 | 35c3b63f82 | pth-independent-financing.html | 50% | projection | relabel |  | …The analysis compares passive benefit distribution models (achieving 50% market penetration in 18-142 years) versus active investment participation models (achieving the same penetration in 5-… |
 | 5cca323734 | pth-independent-financing.html | 18-142 | projection | relabel |  | …The analysis compares passive benefit distribution models (achieving 50% market penetration in 18-142 years) versus active investment participation models (achieving the same penetration in 5-19 years), revealing fundam |
 | 1da30b0004 | pth-independent-financing.html | 5-19 | projection | relabel |  | …0% market penetration in 18-142 years) versus active investment participation models (achieving the same penetration in 5-19 years), revealing fundamental strategic choices about PTH's nature as either charity or invest |

@@ -100,6 +100,9 @@ def classify(rows, triage):
             r["hit"] = ("corpus metadata", "reference-list entry", "keep", "reference list", "", "", "ref")
             continue
         text = f"{r['section']} ¦ {r['context']}"
+        if r["page"].endswith(".pdf"):           # PDF text runs neighbouring cells together: match near the figure only
+            i = max(0, r["context"].find(r["figure"]))
+            text = r["context"][max(0, i - 70):i + len(r["figure"]) + 70]
         for prx, crx, cls, claimed, action, src, chk, note, frx, name in review:
             if prx.search(r["page"]) and crx.search(text) and (frx is None or frx.search(r["figure"])):
                 r["hit"] = (cls, claimed, action, src, chk, note, name); break
