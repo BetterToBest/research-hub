@@ -346,15 +346,17 @@
         <h3>4.3 SZH Zone Formation Dynamics</h3>
         <p>Zone evolution follows preference-based clustering with mobility constraints:</p>
 
-        <p><strong>dZ<sub>k</sub>/dt = Σ<sub>i≠k</sub> M<sub>ik</sub> · f(P<sub>i</sub>, P<sub>k</sub>) - Σ<sub>j≠k</sub> M<sub>kj</sub> · g(C<sub>k</sub>)</strong></p>
+        <p><strong>dZ<sub>k</sub>/dt = Σ<sub>i≠k</sub> F<sub>ik</sub> - Σ<sub>j≠k</sub> F<sub>kj</sub>, with F<sub>ij</sub> = M<sub>ij</sub> · Z<sub>i</sub> · f(P<sub>i</sub>, P<sub>j</sub>) · g(Z<sub>i</sub>/C<sub>i</sub>)</strong></p>
 
         <p>Where:</p>
         <ul>
-            <li>Z<sub>k</sub> is the population of zone k</li>
-            <li>M<sub>ik</sub> represents mobility rates between zones</li>
-            <li>f(P<sub>i</sub>, P<sub>k</sub>) captures preference alignment</li>
-            <li>g(C<sub>k</sub>) represents capacity constraints</li>
+            <li>Z<sub>k</sub> is the population of zone k, and F<sub>ij</sub> the flow of people from zone i to zone j</li>
+            <li>M<sub>ij</sub> represents mobility rates between zones (per resident)</li>
+            <li>f(P<sub>i</sub>, P<sub>j</sub>) captures preference alignment, between 0 and 1</li>
+            <li>g(Z<sub>i</sub>/C<sub>i</sub>) represents capacity constraints: a nondecreasing function of zone i's population relative to its capacity C<sub>i</sub>, for example g(x) = x</li>
         </ul>
+
+        <p>Each flow is proportional to the population of the zone people leave, so no one leaves an empty zone; and every departure from one zone is an arrival in another, so total population is conserved. An earlier version left the outflow term g(C<sub>k</sub>) undefined.</p>
 
         <h3>4.4 Network Value Quantification</h3>
         <p>Network effects generate value according to:</p>

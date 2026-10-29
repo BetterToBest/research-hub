@@ -261,14 +261,16 @@
         <p>Each household i is characterized by:</p>
         <ul>
             <li>Skill level: s<sub>i</sub> ~ LogNormal(μ<sub>s</sub>, σ<sub>s</sub>)</li>
-            <li>Risk preference: γ<sub>i</sub> ~ Beta(α<sub>γ</sub>, β<sub>γ</sub>)</li>
+            <li>Relative risk aversion: γ<sub>i</sub>, drawn from the distribution in section 4.1</li>
             <li>Social connectivity: n<sub>i</sub> ~ Poisson(λ<sub>n</sub>)</li>
             <li>Initial wealth: w<sub>i,0</sub> ~ Pareto(α<sub>w</sub>, x<sub>min</sub>)</li>
             <li>Participation status: p<sub>i</sub> ∈ {0, 1}</li>
         </ul>
 
         <p>Household utility function:</p>
-        <p>U<sub>i</sub> = u(c<sub>i</sub>, l<sub>i</sub>, s<sub>i</sub>) + β<sub>social</sub> × SocialStatus<sub>i</sub></p>
+        <p>U<sub>i</sub> = u(c<sub>i</sub>, l<sub>i</sub>) + β<sub>social</sub> × SocialStatus<sub>i</sub></p>
+
+        <p>with u(c, l) = [(c<sup>1-α<sub>leisure</sub></sup> l<sup>α<sub>leisure</sub></sup>)<sup>1-γ<sub>i</sub></sup> - 1]/(1 - γ<sub>i</sub>), the log of the composite when γ<sub>i</sub> = 1. Skill s<sub>i</sub> enters through the wage, w<sub>i</sub> = w̄ × s<sub>i</sub>, and future periods are discounted by δ. This form uses only the behavioural parameters of section 4.1 (risk aversion γ, time preference δ, work-leisure preference α<sub>leisure</sub>). It is a modelling assumption: an earlier version left u unspecified.</p>
 
         <p>Where social status depends on octave level and community recognition:</p>
         <p>SocialStatus<sub>i</sub> = α<sub>octave</sub> × O<sub>i</sub> + α<sub>recognition</sub> × R<sub>i</sub></p>
