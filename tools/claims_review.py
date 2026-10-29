@@ -322,6 +322,18 @@ REVIEW = [
     (r"public-trust-financial\.pdf$", r"Investment Required|Property acquisition: \$|Renovation: \$|Operations: \$|Federal investment|State/local|Private/philanthropy|Leveraged financing|Scale: \d", PAR, "plan", "keep", "the PDF version's scaling plan", "", ""),
     (r"public-trust-financial\.pdf$", r"α = Equity conversion rate|ractive = 1\.0|Basic unit allocation|Work contributions|Reduced payments|Break-even typically achieved", PAR, "specification", "keep", "the PDF version's model definitions", "", ""),
     (r"public-trust-financial\.pdf$", r".", NONE, "projection", "relabel", "", "", "PDF only: outcomes with no model; the PDF is an older version of the paper"),
+
+    # ---- cco-ptf-integrated-framework (HTML and PDF)
+    (r"cco-ptf-integrated-framework", r"15 percentage point", DER, "calculation", "correct", "Section 5.1: 98% − 85%", "recompute.py (S29): 13 points, not 15", "B103/B127; both inputs are themselves unsupported"),
+    (r"cco-ptf-integrated-framework", r"Berman and Reamy|Alaska Permanent Fund \(20%", EXT, "fact", "keep", "Berman & Reamy, named in the paper", "cited, not opened", "", r"^20%$|60 billion"),
+    (r"cco-ptf-integrated-framework", r"Hasdell|Stanford Basic Income Lab|Thomas and Chrystal|Ithaca HOURS|Nature Communications stock-flow|Bristol Pound's 2012-2021", EXT, "fact", "keep", "named in the paper's literature review", "cited, not opened", ""),
+    (r"cco-ptf-integrated-framework", r"WIR Bank|Norway operates|Norwegian sovereign|313 CLTs|CLT homeowners accumulate|10 times less likely|Italian cooperative|Basque Country|Earned Income Tax Credit \(7\.3|Conditional Cash Transfer programs \(32|Monte Carlo methodologies for economic modeling typically", NONE, "fact", "correct", "", "", "real-world figures with no citation: cite a source for each"),
+    (r"cco-ptf-integrated-framework", r"Financial Gravity Model|0\.2361", NONE, "fact", "remove", "", "", "B015: rests on a fringe source"),
+    (r"cco-ptf-integrated-framework", r"^3\.1\.\d|^3\.2\.\d|α represents the elasticity|Pay-in \(Renters\)", PAR, "specification", "keep", "the framework's design (Section 3)", "", ""),
+    (r"cco-ptf-integrated-framework", r"A merchant offering a \$12 lunch", ILL, "example", "keep", "the page presents it as an example", "", ""),
+    (r"cco-ptf-integrated-framework", r"^4\.1 Monte Carlo Simulation Framework", PAR, "simulation input", "keep", "the paper's stated simulation inputs", "", "inputs of a simulation that is not published"),
+    (r"cco-ptf-integrated-framework", r"^4\.3 Stress Testing", ILL, "scenario definition", "keep", "the paper's stress scenarios", "", ""),
+    (r"cco-ptf-integrated-framework", r".", NONE, "simulation result", "remove", "", "", "stated as Monte Carlo results; no run is published (S30: 85%, 98%, $37,000, $82,000); S25 replaces them with release results"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.
