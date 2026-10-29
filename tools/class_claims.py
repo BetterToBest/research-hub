@@ -45,7 +45,7 @@ SOURCES = (r"\b(?:BLS|Bureau of Labor|Census|OECD|World Bank|IMF|Federal Reserve
            r"Gallup|Pew|UN\b|United Nations|WHO\b|EMCDDA|CDC|NIH|NBER|Brookings|Urban Institute|"
            r"Pew|Eurostat|Statistics|Survey|Mondragon|Alaska Permanent Fund|Grounded Solutions|Estonia|X-Road|"
            r"according to|reported by|data from|source:|study|studies)\b")
-CITE = r"\b[A-Z][a-zA-Z'’-]+(?: (?:et al\.|and|&) [A-Z][a-zA-Z'’-]+)*,? \(?(?:19|20)\d\d[a-z]?\)?"
+CITE = r"\[\d+(?:[,–-]\s?\d+)*\]|\b[A-Z][a-zA-Z'’-]+(?: (?:et al\.|and|&) [A-Z][a-zA-Z'’-]+)*,? \(?(?:19|20)\d\d[a-z]?\)?"
 GENERIC = [
     ("meta", lambda r, c: bool(rx(r"\b(?:last updated|published|updated|version|v\d|min(?:ute)? read|pages?|papers?|"
                                    r"documents?|word count|copyright|©|ISBN|ISSN|SSRN|Zenodo|month\s?=|year\s?=|"
@@ -83,30 +83,54 @@ def load_triage(path):
         out.append((t["id"], set(t["files"].split()), re.compile(t["locator"], re.I), t["hub"], t["verdict"], t["severity"]))
     return out
 
+def slug(page):
+    return re.sub(r"^papers/pdfs/|^papers/|\.(html|pdf|md)$", "", page)
+
+def words(t):
+    return set(re.findall(r"[a-z]{4,}", t.lower()))
+
 def classify(rows, triage):
     review = [(rx(t[0]), rx(t[1]), *t[2:8], rx(t[8]) if len(t) > 8 else None, f"R{i:03d}")
               for i, t in enumerate(REVIEW, 1)]
+    keys = ["class", "claimed", "action", "source", "checked", "note", "rule"]
+    # 1. reference lists and reviewed rules
     for r in rows:
-        ctx, page = r["context"], r["page"]
-        hit = None
-        if r["ref"] == "1" or r["ref"] == 1:
-            hit = ("corpus metadata", "reference-list entry", "keep", "reference list", "", "", "ref")
-        if not hit:
-            text = f"{r['section']} ¦ {ctx}"
-            for prx, crx, cls, claimed, action, src, chk, note, frx, name in review:
-                if prx.search(page) and crx.search(text) and (frx is None or frx.search(r["figure"])):
-                    hit = (cls, claimed, action, src, chk, note, name); break
-        if not hit:
+        r["hit"] = None
+        if str(r["ref"]) == "1":
+            r["hit"] = ("corpus metadata", "reference-list entry", "keep", "reference list", "", "", "ref")
+            continue
+        text = f"{r['section']} ¦ {r['context']}"
+        for prx, crx, cls, claimed, action, src, chk, note, frx, name in review:
+            if prx.search(r["page"]) and crx.search(text) and (frx is None or frx.search(r["figure"])):
+                r["hit"] = (cls, claimed, action, src, chk, note, name); break
+    # 2. a PDF figure that is also on the paper's HTML page takes the class reviewed there
+    html = collections.defaultdict(list)
+    for r in rows:
+        if r["page"].endswith(".html") and r["hit"] and r["hit"][6].startswith("R"):
+            html[(slug(r["page"]), r["figure"])].append(r)
+    for r in rows:
+        if r["hit"] or not r["page"].endswith(".pdf"):
+            continue
+        cands = html.get((slug(r["page"]), r["figure"]))
+        if cands:
+            w = words(r["context"])
+            best = max(cands, key=lambda c: len(w & words(c["context"])))
+            h = best["hit"]
+            r["hit"] = (*h[:5], ("as on the HTML page; " + h[5]).rstrip("; "), "html:" + h[6])
+    # 3. generic keyword rules, then the paper default
+    for r in rows:
+        if not r["hit"]:
             for name, test, cls, claimed, action, src, chk in GENERIC:
-                if test(r, ctx):
-                    hit = (cls, claimed, action, src, chk, "", "g:" + name); break
-        if not hit:
-            slug = re.sub(r"^papers/pdfs/|^papers/|\.(html|pdf|md)$", "", page)
-            d = PAPER_DEFAULTS.get(slug, ("no basis found", "fact", "remove", "", "", ""))
-            hit = (*d, "default")
-        r.update(zip(["class", "claimed", "action", "source", "checked", "note", "rule"], hit))
+                if test(r, r["context"]):
+                    r["hit"] = (cls, claimed, action, src, chk, "", "g:" + name); break
+        if not r["hit"]:
+            d = PAPER_DEFAULTS.get(slug(r["page"]), ("no basis found", "fact", "remove", "", "", ""))
+            r["hit"] = (*d, "default")
+        r.update(zip(keys, r.pop("hit")))
+        if r["page"].endswith(".pdf") and not r["rule"].startswith("html:") and r["rule"] != "ref":
+            r["note"] = ("PDF only (not on the HTML page); " + r["note"]).rstrip("; ")
         ids = [tid for tid, files, loc, hub, verdict, sev in triage
-               if page in files and loc.search(ctx) and hub != "gone"]
+               if r["page"] in files and loc.search(r["context"]) and hub != "gone"]
         r["s29_id"] = " ".join(ids)
         live = [t for t in triage if t[0] in ids and t[4] in ("valid", "partly valid") and t[5] in ("headline", "derivation")]
         if live and r["action"] == "keep" and r["class"] != "corpus metadata":
@@ -122,12 +146,12 @@ def summary(rows):
     L = ["# Claims ledger summary (S23)", "",
          "Generated by `tools/class_claims.py`; do not edit by hand. One row per figure per sentence in `data/claims.csv`.",
          "Basis classes are research rule 5's. `rule` in the CSV names how each row was classed: `ref` (reference list),",
-         "`R…` (a rule in `tools/claims_review.py`, written after reading the passage), `g:…` (a generic keyword rule) or `default` (the paper's default).", "",
+         "`R…` (a rule in `tools/claims_review.py`, written after reading the passage), `html:R…` (a PDF figure that also appears on the paper's HTML page, classed as there), `g:…` (a generic keyword rule) or `default` (the paper's default).", "",
          f"Figures: **{len(rows)}** on {len(pages)} pages and PDFs.", "",
          "| Class | Figures | keep | correct | relabel | remove |", "|---|---|---|---|---|---|"]
     for c in CLASSES:
         L.append(f"| {c} | {n[c]} | " + " | ".join(str(a[(c, x)]) for x in ("keep", "correct", "relabel", "remove")) + " |")
-    by_rule = collections.Counter(("reviewed" if r["rule"].startswith("R") or r["rule"] == "ref" else "generic") for r in rows)
+    by_rule = collections.Counter(("reviewed" if re.match(r"R|ref|html:R", r["rule"]) else "generic") for r in rows)
     L += ["", f"Classed by a reviewed rule or the reference list: {by_rule['reviewed']}; by a generic rule or a paper default: {by_rule['generic']}.", "",
           "## By page", "", "| Page | " + " | ".join(CLASSES) + " |", "|---|" + "---|" * len(CLASSES)]
     for p in sorted(pages):
