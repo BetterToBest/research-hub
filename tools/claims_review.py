@@ -444,6 +444,25 @@ REVIEW = [
     (r"universal-implementation-framework", r"^6\.4 Projected Outcomes", NONE, "projection", "remove", "", "", "no model"),
     (r"universal-implementation-framework", r"^8\.3 Target Outcomes|User satisfaction <60%", PAR, "target", "keep", "a target set by the framework", "", ""),
     (r"universal-implementation-framework", r".", PAR, "plan", "keep", "the framework's implementation timelines and specifications", "", "planned durations and settings, not forecasts"),
+
+    # ---- democratic-governance-pth (HTML and PDF)
+    (r"democratic-governance-pth", r"Date: August", META, "date", "keep", "the page itself", "", ""),
+    (r"democratic-governance-pth", r"Scholz & Schneider|Whyte & Whyte|Arando et al", EXT, "fact", "keep", "cited in the paper", "cited, not opened", ""),
+    (r"democratic-governance-pth", r"Mondragon demonstrates successful worker", EXT, "fact", "keep", "Mondragon annual reports (named, not cited)", "not opened", "check against the current annual report"),
+    (r"democratic-governance-pth", r"^3\.2 PTH Charter|^3\.3 Governance Structure|^5\.3 Voluntary Participation|^6\.2 PTH Safeguards|^7\.1 Graduated|Members can build modest equity", PAR, "specification", "keep", "the paper's charter and governance design", "", ""),
+    (r"democratic-governance-pth", r"^8\.1 Quantitative Outcomes", NONE, "fact", "correct", "", "", "B058: cooperative vs HOA statistics with no source: cite or remove"),
+    (r"democratic-governance-pth", r".", NONE, "fact", "correct", "", "", "case figures (CLTs, cooperatives, CCAs, HOAs) with no citation: cite a source for each or remove"),
+
+    # ---- cultural-value-integration (HTML and PDF)
+    (r"cultural-value-integration", r"Date: August", META, "date", "keep", "the page itself", "", ""),
+    (r"cultural-value-integration", r"global creative economy contributes", EXT, "fact", "correct", "UNESCO / IDB creative-economy estimates (not cited)", "not opened", "cite the source and year; estimates differ by definition"),
+    (r"cultural-value-integration", r"Seyfang|Falk et al|Bristol Citizens' Assembly|archival studies", EXT, "fact", "keep", "cited in the paper", "cited, not opened", ""),
+    (r"cultural-value-integration", r"Losses impact 2\.25x", EXT, "fact", "correct", "Tversky & Kahneman (1992), λ = 2.25 (not cited)", "standard estimate", "add the citation"),
+    (r"cultural-value-integration", r"Time Banking Systems|€51 million|3,200\+ SME|0% interest rates|Credit limits|Currency velocity|Default rate", NONE, "fact", "correct", "", "", "WIR and time-bank figures with no citation"),
+    (r"cultural-value-integration", r"^2\.\d |^3\.2 Peer Review|^4\.\d |Egalitarian 1:1|^p\.5 (?:Health Code|Community assessment|Aesthetic|Visual|Community Contribution|Social impact)|Phase \d|Pilot Implementation", PAR, "specification", "keep", "the framework's design", "", ""),
+    (r"cultural-value-integration", r"Hypothetical Implementation", ILL, "scenario", "keep", "labelled hypothetical", "", ""),
+    (r"cultural-value-integration", r"^6\.\d ", ILL, "scenario", "relabel", "the paper's case examples", "", "outcomes with no model; say whether the communities are hypothetical"),
+    (r"cultural-value-integration", r".", NONE, "finding", "correct", "", "", "effects attributed to studies or evaluations with no citation: cite or remove"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.

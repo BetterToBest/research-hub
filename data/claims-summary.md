@@ -9,14 +9,14 @@ Figures: **6522** on 55 pages and PDFs.
 | Class | Figures | keep | correct | relabel | remove |
 |---|---|---|---|---|---|
 | simulation | 6 | 0 | 6 | 0 | 0 |
-| derived | 1037 | 827 | 174 | 36 | 0 |
-| external source | 178 | 141 | 37 | 0 | 0 |
-| design parameter | 1509 | 1394 | 47 | 68 | 0 |
-| illustrative projection | 308 | 250 | 46 | 12 | 0 |
-| corpus metadata | 655 | 637 | 3 | 0 | 15 |
-| no basis found | 2829 | 0 | 285 | 949 | 1595 |
+| derived | 1028 | 818 | 174 | 36 | 0 |
+| external source | 172 | 128 | 44 | 0 | 0 |
+| design parameter | 1500 | 1385 | 47 | 68 | 0 |
+| illustrative projection | 322 | 248 | 46 | 28 | 0 |
+| corpus metadata | 653 | 635 | 3 | 0 | 15 |
+| no basis found | 2841 | 0 | 454 | 899 | 1488 |
 
-Classed by a reviewed rule or the reference list: 6133; by a generic rule or a paper default: 389.
+Classed by a reviewed rule or the reference list: 6359; by a generic rule or a paper default: 163.
 
 ## By page
 
@@ -31,9 +31,9 @@ Classed by a reviewed rule or the reference list: 6133; by a generic rule or a p
 | comedy.md | 0 | 0 | 0 | 0 | 0 | 34 | 0 |
 | community-monetary-development.html | 0 | 37 | 2 | 6 | 19 | 11 | 17 |
 | corporate-transformation.html | 0 | 15 | 7 | 19 | 10 | 17 | 40 |
-| cultural-value-integration.html | 0 | 1 | 4 | 9 | 0 | 8 | 22 |
+| cultural-value-integration.html | 0 | 0 | 5 | 8 | 16 | 9 | 6 |
 | data/optimal-parameters.json | 0 | 0 | 0 | 33 | 0 | 9 | 17 |
-| democratic-governance-pth.html | 0 | 4 | 2 | 3 | 0 | 15 | 46 |
+| democratic-governance-pth.html | 0 | 0 | 2 | 9 | 0 | 15 | 44 |
 | drug-policy-reform.html | 0 | 0 | 31 | 8 | 0 | 30 | 263 |
 | dual-currency-inflation.html | 0 | 9 | 2 | 27 | 0 | 33 | 58 |
 | economic-modeling-simulation.html | 0 | 3 | 16 | 50 | 4 | 31 | 279 |
@@ -50,8 +50,8 @@ Classed by a reviewed rule or the reference list: 6133; by a generic rule or a p
 | papers/pdfs/citizens-internet-portal.pdf | 0 | 18 | 1 | 110 | 0 | 19 | 78 |
 | papers/pdfs/community-monetary-development.pdf | 0 | 20 | 1 | 18 | 0 | 25 | 81 |
 | papers/pdfs/corporate-transformation.pdf | 0 | 25 | 7 | 5 | 32 | 16 | 302 |
-| papers/pdfs/cultural-value-integration.pdf | 0 | 4 | 12 | 10 | 3 | 22 | 59 |
-| papers/pdfs/democratic-governance-pth.pdf | 0 | 0 | 3 | 10 | 0 | 13 | 30 |
+| papers/pdfs/cultural-value-integration.pdf | 0 | 0 | 6 | 5 | 1 | 21 | 77 |
+| papers/pdfs/democratic-governance-pth.pdf | 0 | 0 | 2 | 1 | 0 | 11 | 42 |
 | papers/pdfs/drug-policy-reform.pdf | 0 | 0 | 6 | 0 | 0 | 14 | 124 |
 | papers/pdfs/dual-currency-inflation.pdf | 0 | 2 | 2 | 6 | 0 | 23 | 92 |
 | papers/pdfs/economic-modeling-simulation.pdf | 0 | 1 | 1 | 15 | 0 | 0 | 222 |
@@ -287,28 +287,12 @@ Classed by a reviewed rule or the reference list: 6133; by a generic rule or a p
 | e6dbb4b951 | corporate-transformation.html | 80% | finding | relabel |  | Taxation can be radically simplified — revenue-based with behavior adjustments increases total revenue while reducing compliance costs 80%+. |
 | 0d32722ea2 | corporate-transformation.html | 40-60% | finding | relabel |  | Insurance can transform to mutual aid — 40-60% cost reduction with better outcomes. |
 | 4515a90fba | corporate-transformation.html | 15 | projection | relabel |  | Quantum computing accelerates the timeline — potential 15-hour workweeks by the 2040s, with human focus shifting to creativity, relationships, ethics, and meaning. |
-| 9140757862 | cultural-value-integration.html | 31 | fact | remove |  | Date: August 31, 2025 |
-| c3beed38cc | cultural-value-integration.html | 30,000+ | fact | remove |  | Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
-| bc2f6f7b95 | cultural-value-integration.html | 50+ | fact | remove |  | Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
-| 308d13ade0 | cultural-value-integration.html | €51 million | fact | remove |  | €51 million annual transaction volume |
-| c07c84d5a0 | cultural-value-integration.html | 0% | fact | remove |  | 0% interest rates with transaction fees for system maintenance |
-| e9b1202646 | cultural-value-integration.html | 40% | fact | remove |  | Domain experts (40% of panel) |
-| 7f41cc3b2f | cultural-value-integration.html | 40% | fact | remove |  | Community representatives (40% of panel) |
-| f1b5d0d042 | cultural-value-integration.html | 20% | fact | remove |  | Cross-disciplinary perspectives (20% of panel) |
-| 8f9d32ef31 | cultural-value-integration.html | 2.25x | fact | remove |  | Loss Aversion Asymmetry: Losses impact 2.25x more than equivalent gains. |
-| 29b838c2b8 | cultural-value-integration.html | 15,000 | fact | remove |  | 6.1 Rural Arts Community (Population: 15,000) |
-| f33e183be4 | cultural-value-integration.html | 40% | projection | relabel |  | Cultural tourism increase: 40% |
-| 08552394a3 | cultural-value-integration.html | 55% | projection | relabel |  | Local artist income stability: 55% improvement |
-| 7fa3ba17b6 | cultural-value-integration.html | 25% | projection | relabel |  | Youth retention: 25% improvement |
-| 6442641694 | cultural-value-integration.html | 60% | projection | relabel |  | Community engagement: 60% increase in cultural event participation |
-| fe04fc2f8c | cultural-value-integration.html | 45,000 | fact | remove |  | 6.2 Urban Creative District (Population: 45,000) |
-| 91da6ff392 | cultural-value-integration.html | 70% | fact | remove |  | Artist displacement prevention: 70% effectiveness |
-| 4e91d3200f | cultural-value-integration.html | 45% | projection | relabel |  | Cross-cultural collaboration: 45% increase |
-| 263ca0abbe | cultural-value-integration.html | $2.2M | fact | remove |  | Local business support: $2.2M annually in local spending |
-| 6076588689 | cultural-value-integration.html | 45% | projection | relabel | B131 | Income stability: 45% improvement |
-| 2a31b9d184 | cultural-value-integration.html | 32% | projection | relabel |  | Creative output: 32% increase |
-| a284986013 | cultural-value-integration.html | 58% | projection | relabel |  | Community engagement: 58% increase |
-| 775ec35350 | cultural-value-integration.html | 67% | projection | relabel |  | Career sustainability: 67% improvement |
+| da21541809 | cultural-value-integration.html | 1.618x | finding | correct |  | The framework addresses limitations of traditional monetary systems through multi-tier conversion rates (1x to 9x+), octave-based doubling of conversion capacity, and the Phi rate (1.618x) for productive and beautiful co |
+| c3beed38cc | cultural-value-integration.html | 30,000+ | fact | correct |  | Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
+| bc2f6f7b95 | cultural-value-integration.html | 50+ | fact | correct |  | Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
+| 308d13ade0 | cultural-value-integration.html | €51 million | fact | correct |  | €51 million annual transaction volume |
+| 10536606d2 | cultural-value-integration.html | 3,200+ | fact | correct |  | 3,200+ SME members |
+| c07c84d5a0 | cultural-value-integration.html | 0% | fact | correct |  | 0% interest rates with transaction fees for system maintenance |
 | 278585ebea | data/optimal-parameters.json | 10000 | validation result | remove |  | simulation_metadata.validation_iterations = 10000 |
 | 7aeacda4cc | data/optimal-parameters.json | 0.95 | validation result | remove |  | simulation_metadata.confidence_level = 0.95 |
 | 042b9094ef | data/optimal-parameters.json | 98% | simulation result | remove |  | simulation_metadata.description = Optimal parameters for CCO-PTH-CIP-SZH integrated economic system achieving 98% poverty elimination |
@@ -326,52 +310,50 @@ Classed by a reviewed rule or the reference list: 6133; by a generic rule or a p
 | ffd83fbc71 | data/optimal-parameters.json | 156 | validation result | remove |  | validation_benchmarks.parameter_sensitivity_tests = 156 |
 | 46bdddc195 | data/optimal-parameters.json | 10 | validation result | remove |  | validation_benchmarks.cross_validation_folds = 10 |
 | f4a4600aa7 | data/optimal-parameters.json | 24 | validation result | remove |  | validation_benchmarks.robustness_scenarios = 24 |
-| 5c2ad49569 | democratic-governance-pth.html | 31 | fact | remove |  | Date: August 31, 2025 |
-| 1acdaad88a | democratic-governance-pth.html | 2-3 times | simulation result | remove |  | …Columbia University experiments demonstrate over-delegation at rates 2-3 times higher than theoretical equilibrium, with liquid democracy underperforming both universal majority voting and strategic… |
-| 0ec0086a20 | democratic-governance-pth.html | 30% | simulation result | remove |  | Mixed-Income Model: 30% market rate, 40% moderate income, 30% low income |
-| 062b528848 | democratic-governance-pth.html | 40% | simulation result | remove |  | Mixed-Income Model: 30% market rate, 40% moderate income, 30% low income |
-| a1dfb985b3 | democratic-governance-pth.html | 275+ | fact | remove |  | 275+ CLTs operating in United States |
-| e4617801de | democratic-governance-pth.html | 30 | fact | remove |  | Average 30-year affordability preservation |
-| 16a370e78b | democratic-governance-pth.html | 85% | fact | remove |  | 85% resident satisfaction rates |
-| 0ce4661f62 | democratic-governance-pth.html | 256 | fact | remove |  | Key Innovation: Inter-cooperation mechanisms providing solidarity and business efficiency through network effects, allowing local autonomy while maintaining collective support across 256 companies with 92,773 employees. |
-| 2b1a54bf08 | democratic-governance-pth.html | 92,773 | fact | remove |  | Key Innovation: Inter-cooperation mechanisms providing solidarity and business efficiency through network effects, allowing local autonomy while maintaining collective support across 256 companies with 92,773 employees. |
-| 3aa861f48d | democratic-governance-pth.html | 80% | fact | remove |  | 80% surplus distribution to worker-owners |
-| 2d54aee7a6 | democratic-governance-pth.html | 94% | fact | remove |  | Productivity 94% of comparable private firms |
-| 2c1f8dd26f | democratic-governance-pth.html | 900+ | fact | remove |  | 900+ photographer-owners globally |
-| 91d9ae0962 | democratic-governance-pth.html | 11% | projection | relabel |  | 11% average bill savings |
-| d1624e8d5d | democratic-governance-pth.html | 50% | fact | remove |  | 50% higher renewable content |
-| da696fccd9 | democratic-governance-pth.html | 11 million | fact | remove |  | 11 million customers served |
-| 915f138ef5 | democratic-governance-pth.html | 36 | fact | remove |  | 36 operational programs |
-| 2e277c5195 | democratic-governance-pth.html | 95% | fact | remove |  | 95% customer satisfaction |
-| b8fd3840cf | democratic-governance-pth.html | 3% | fact | remove |  | 3% opt-out rate |
-| 5cd97bf66b | democratic-governance-pth.html | 15-25% | projection | relabel |  | Group homeowner insurance with 15-25% savings |
-| 2a0f89d381 | democratic-governance-pth.html | 30 | projection | relabel |  | / Insurance / Annual enrollment / 30-day notice / Immediate savings |
-| da4e22b31d | democratic-governance-pth.html | <10% | fact | remove |  | Low participation rates (typically <10%) |
-| a6df8a76e9 | democratic-governance-pth.html | 1-6 | fact | remove |  | Phase 1: Foundation Building (Months 1-6) |
-| 64fdc5e49a | democratic-governance-pth.html | 7-18 | fact | remove |  | Phase 2: Early Operations (Months 7-18) |
-| 0cbb9d3c64 | democratic-governance-pth.html | 34% | fact | remove |  | / Resident Participation / 34% / 8% / +325% |
-| 7d1be36246 | democratic-governance-pth.html | 8% | fact | remove |  | / Resident Participation / 34% / 8% / +325% |
-| fb059763bc | democratic-governance-pth.html | +325% | fact | remove |  | / Resident Participation / 34% / 8% / +325% |
-| 481883ad43 | democratic-governance-pth.html | 89% | fact | remove |  | / Conflict Resolution / 89% internal / 45% internal / +98% |
-| a478498fe7 | democratic-governance-pth.html | 45% | fact | remove |  | / Conflict Resolution / 89% internal / 45% internal / +98% |
-| b499f5d615 | democratic-governance-pth.html | +98% | fact | remove |  | / Conflict Resolution / 89% internal / 45% internal / +98% |
-| ff97f88613 | democratic-governance-pth.html | 94% | fact | remove |  | / Financial Stability / 94% meet reserves / 62% meet reserves / +52% |
-| 04cf4e5bd1 | democratic-governance-pth.html | 62% | fact | remove |  | / Financial Stability / 94% meet reserves / 62% meet reserves / +52% |
-| fb1d04c302 | democratic-governance-pth.html | +52% | fact | remove |  | / Financial Stability / 94% meet reserves / 62% meet reserves / +52% |
-| 09099ddb9d | democratic-governance-pth.html | 3.2 | fact | remove |  | / Leadership Retention / 3.2 years average / 1.8 years average / +78% |
-| 73c6546058 | democratic-governance-pth.html | 1.8 | fact | remove |  | / Leadership Retention / 3.2 years average / 1.8 years average / +78% |
-| 60cbe3f39e | democratic-governance-pth.html | +78% | fact | remove |  | / Leadership Retention / 3.2 years average / 1.8 years average / +78% |
-| 24ee0e167a | democratic-governance-pth.html | 3,000+ | fact | remove |  | 3,000+ permanently affordable homes |
-| 6c63ef7e07 | democratic-governance-pth.html | 565 | fact | remove |  | 565 cooperative housing units |
-| 88b94c16c5 | democratic-governance-pth.html | 30+ | fact | remove |  | 30+ years of operations |
-| c6e5d69607 | democratic-governance-pth.html | 98% | fact | remove |  | 98% mortgage payment success rate |
-| 0757327be3 | democratic-governance-pth.html | 45% | fact | remove |  | 45% resident participation in governance |
-| 8ad061ccd2 | democratic-governance-pth.html | 87% | fact | remove |  | 87% resident satisfaction scores |
-| 0b93ca1f26 | democratic-governance-pth.html | 15+ | fact | remove |  | 15+ residents elected to local government positions |
-| 235c1744f6 | democratic-governance-pth.html | 60% | fact | remove |  | 60% of population in social/cooperative housing |
-| 0b39b79789 | democratic-governance-pth.html | 50+ | fact | remove |  | 50+ communities with democratic governance |
-| fed1e4a5b2 | democratic-governance-pth.html | 25,000+ | fact | remove |  | 25,000+ families in housing cooperatives |
-| 6b79847e7e | democratic-governance-pth.html | 95% | fact | remove |  | 95% loan repayment rates |
+| 1acdaad88a | democratic-governance-pth.html | 2-3 times | fact | correct |  | …Columbia University experiments demonstrate over-delegation at rates 2-3 times higher than theoretical equilibrium, with liquid democracy underperforming both universal majority voting and strategic… |
+| a1dfb985b3 | democratic-governance-pth.html | 275+ | fact | correct |  | 275+ CLTs operating in United States |
+| e4617801de | democratic-governance-pth.html | 30 | fact | correct |  | Average 30-year affordability preservation |
+| 16a370e78b | democratic-governance-pth.html | 85% | fact | correct |  | 85% resident satisfaction rates |
+| 0ce4661f62 | democratic-governance-pth.html | 256 | fact | correct |  | Key Innovation: Inter-cooperation mechanisms providing solidarity and business efficiency through network effects, allowing local autonomy while maintaining collective support across 256 companies with 92,773 employees. |
+| 2b1a54bf08 | democratic-governance-pth.html | 92,773 | fact | correct |  | Key Innovation: Inter-cooperation mechanisms providing solidarity and business efficiency through network effects, allowing local autonomy while maintaining collective support across 256 companies with 92,773 employees. |
+| 3aa861f48d | democratic-governance-pth.html | 80% | fact | correct |  | 80% surplus distribution to worker-owners |
+| 2d54aee7a6 | democratic-governance-pth.html | 94% | fact | correct |  | Productivity 94% of comparable private firms |
+| 2c1f8dd26f | democratic-governance-pth.html | 900+ | fact | correct |  | 900+ photographer-owners globally |
+| 91d9ae0962 | democratic-governance-pth.html | 11% | fact | correct |  | 11% average bill savings |
+| d1624e8d5d | democratic-governance-pth.html | 50% | fact | correct |  | 50% higher renewable content |
+| da696fccd9 | democratic-governance-pth.html | 11 million | fact | correct |  | 11 million customers served |
+| 915f138ef5 | democratic-governance-pth.html | 36 | fact | correct |  | 36 operational programs |
+| 2e277c5195 | democratic-governance-pth.html | 95% | fact | correct |  | 95% customer satisfaction |
+| b8fd3840cf | democratic-governance-pth.html | 3% | fact | correct |  | 3% opt-out rate |
+| 5cd97bf66b | democratic-governance-pth.html | 15-25% | fact | correct |  | Group homeowner insurance with 15-25% savings |
+| da4e22b31d | democratic-governance-pth.html | <10% | fact | correct |  | Low participation rates (typically <10%) |
+| 0cbb9d3c64 | democratic-governance-pth.html | 34% | fact | correct |  | / Resident Participation / 34% / 8% / +325% |
+| 7d1be36246 | democratic-governance-pth.html | 8% | fact | correct |  | / Resident Participation / 34% / 8% / +325% |
+| fb059763bc | democratic-governance-pth.html | +325% | fact | correct |  | / Resident Participation / 34% / 8% / +325% |
+| 9cea55fc69 | democratic-governance-pth.html | 8.2 | fact | correct |  | / Satisfaction Scores / 8.2/10 / 5.7/10 / +44% |
+| f2d6faf071 | democratic-governance-pth.html | 10 | fact | correct |  | / Satisfaction Scores / 8.2/10 / 5.7/10 / +44% |
+| 0d1ac369d0 | democratic-governance-pth.html | 5.7 | fact | correct |  | / Satisfaction Scores / 8.2/10 / 5.7/10 / +44% |
+| b2951633f8 | democratic-governance-pth.html | +44% | fact | correct |  | / Satisfaction Scores / 8.2/10 / 5.7/10 / +44% |
+| 481883ad43 | democratic-governance-pth.html | 89% | fact | correct |  | / Conflict Resolution / 89% internal / 45% internal / +98% |
+| a478498fe7 | democratic-governance-pth.html | 45% | fact | correct |  | / Conflict Resolution / 89% internal / 45% internal / +98% |
+| b499f5d615 | democratic-governance-pth.html | +98% | fact | correct |  | / Conflict Resolution / 89% internal / 45% internal / +98% |
+| ff97f88613 | democratic-governance-pth.html | 94% | fact | correct |  | / Financial Stability / 94% meet reserves / 62% meet reserves / +52% |
+| 04cf4e5bd1 | democratic-governance-pth.html | 62% | fact | correct |  | / Financial Stability / 94% meet reserves / 62% meet reserves / +52% |
+| fb1d04c302 | democratic-governance-pth.html | +52% | fact | correct |  | / Financial Stability / 94% meet reserves / 62% meet reserves / +52% |
+| 09099ddb9d | democratic-governance-pth.html | 3.2 | fact | correct |  | / Leadership Retention / 3.2 years average / 1.8 years average / +78% |
+| 73c6546058 | democratic-governance-pth.html | 1.8 | fact | correct |  | / Leadership Retention / 3.2 years average / 1.8 years average / +78% |
+| 60cbe3f39e | democratic-governance-pth.html | +78% | fact | correct |  | / Leadership Retention / 3.2 years average / 1.8 years average / +78% |
+| 24ee0e167a | democratic-governance-pth.html | 3,000+ | fact | correct |  | 3,000+ permanently affordable homes |
+| 6c63ef7e07 | democratic-governance-pth.html | 565 | fact | correct |  | 565 cooperative housing units |
+| 88b94c16c5 | democratic-governance-pth.html | 30+ | fact | correct |  | 30+ years of operations |
+| c6e5d69607 | democratic-governance-pth.html | 98% | fact | correct |  | 98% mortgage payment success rate |
+| 0757327be3 | democratic-governance-pth.html | 45% | fact | correct |  | 45% resident participation in governance |
+| 8ad061ccd2 | democratic-governance-pth.html | 87% | fact | correct |  | 87% resident satisfaction scores |
+| 0b93ca1f26 | democratic-governance-pth.html | 15+ | fact | correct |  | 15+ residents elected to local government positions |
+| 235c1744f6 | democratic-governance-pth.html | 60% | fact | correct |  | 60% of population in social/cooperative housing |
+| 0b39b79789 | democratic-governance-pth.html | 50+ | fact | correct |  | 50+ communities with democratic governance |
+| fed1e4a5b2 | democratic-governance-pth.html | 25,000+ | fact | correct |  | 25,000+ families in housing cooperatives |
+| 6b79847e7e | democratic-governance-pth.html | 95% | fact | correct |  | 95% loan repayment rates |
 | d86d254b2e | drug-policy-reform.html | 10 | projection | remove |  | Drawing from international models of drug decriminalization, particularly Portugal's experience and recent Pacific Northwest policy experiments, we project outcomes under regulatory frameworks across multiple time horizo |
 | 87512b5eca | drug-policy-reform.html | 25 | projection | remove |  | Drawing from international models of drug decriminalization, particularly Portugal's experience and recent Pacific Northwest policy experiments, we project outcomes under regulatory frameworks across multiple time horizo |
 | edb4cbbca3 | drug-policy-reform.html | 50 | projection | remove |  | Drawing from international models of drug decriminalization, particularly Portugal's experience and recent Pacific Northwest policy experiments, we project outcomes under regulatory frameworks across multiple time horizo |
@@ -1703,95 +1685,125 @@ Classed by a reviewed rule or the reference list: 6133; by a generic rule or a p
 | ede1dae4cf | papers/pdfs/corporate-transformation.pdf | 254-280 | finding | relabel |  | Technological Forecasting and Social Change, 114, 254-280. |
 | a4761beb50 | papers/pdfs/corporate-transformation.pdf | 2017–2018 | finding | relabel |  | The Basic Income Experiment 2017–2018 in Finland: Preliminary Results. |
 | 0b749de152 | papers/pdfs/corporate-transformation.pdf | 79 | projection | relabel |  | Quantum, 2, 79. |
-| e7c372c5fc | papers/pdfs/cultural-value-integration.pdf | 3.1 | fact | remove |  | Practical Evaluation Mechanisms 3.1 Evidence from Alternative Currency Systems Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
-| 938fd3e9c2 | papers/pdfs/cultural-value-integration.pdf | 30,000+ | fact | remove |  | Practical Evaluation Mechanisms 3.1 Evidence from Alternative Currency Systems Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
-| 2581ba190c | papers/pdfs/cultural-value-integration.pdf | 50+ | fact | remove |  | Practical Evaluation Mechanisms 3.1 Evidence from Alternative Currency Systems Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
-| 2c5121e12d | papers/pdfs/cultural-value-integration.pdf | 35% | projection | relabel |  | Quality Assurance: Calibration exercises, inter-rater reliability, appeals processes Blinding Approaches: Research shows double-blind review reduces bias against unknown creators by 35% but may lose important contextual  |
-| 550910a35d | papers/pdfs/cultural-value-integration.pdf | 20% | projection | relabel |  | Open peer review increases accountability but may reduce critical feedback by 20% (Tomkins et al., 2017). |
-| 99d0f10469 | papers/pdfs/cultural-value-integration.pdf | 89% | fact | remove |  | 89% |
-| 0502500a05 | papers/pdfs/cultural-value-integration.pdf | 82% | fact | remove |  | 82% |
-| 03c90175af | papers/pdfs/cultural-value-integration.pdf | 85% | fact | remove |  | 85% |
-| ff85f00f07 | papers/pdfs/cultural-value-integration.pdf | 91% | fact | remove |  | 91% |
-| b0fe231b53 | papers/pdfs/cultural-value-integration.pdf | 87% | fact | remove |  | 87% |
-| 3c2f6f0244 | papers/pdfs/cultural-value-integration.pdf | 23% | projection | relabel |  | … customized evaluation approaches while maintaining core CCO principles: Healthcare Applications: Music therapy impact: 23% reduction in patient anxiety Art therapy outcomes: 31% improvement in recovery metrics Healing  |
-| a1c7814411 | papers/pdfs/cultural-value-integration.pdf | 31% | projection | relabel |  | …e CCO principles: Healthcare Applications: Music therapy impact: 23% reduction in patient anxiety Art therapy outcomes: 31% improvement in recovery metrics Healing environment design: 18% reduction in length of stay Ass |
-| ea172b37a4 | papers/pdfs/cultural-value-integration.pdf | 18% | projection | relabel |  | … 23% reduction in patient anxiety Art therapy outcomes: 31% improvement in recovery metrics Healing environment design: 18% reduction in length of stay Assessment combines clinical metrics with aesthetic evaluation Educ |
-| 62499a4943 | papers/pdfs/cultural-value-integration.pdf | 17% | projection | relabel |  | …stay Assessment combines clinical metrics with aesthetic evaluation Educational Integration: Arts-integrated curricula: 17% improvement in test scores Creative problem-solving: 42% increase in innovation metrics Cultura |
-| 4e33bcd7dc | papers/pdfs/cultural-value-integration.pdf | 42% | projection | relabel |  | …evaluation Educational Integration: Arts-integrated curricula: 17% improvement in test scores Creative problem-solving: 42% increase in innovation metrics Cultural competency: 28% improvement in cross-cultural understan |
-| 18d8c425cc | papers/pdfs/cultural-value-integration.pdf | 28% | projection | relabel |  | …icula: 17% improvement in test scores Creative problem-solving: 42% increase in innovation metrics Cultural competency: 28% improvement in cross-cultural understanding Evaluation includes academic and creative dimension |
-| 9f53abd843 | papers/pdfs/cultural-value-integration.pdf | 30% | fact | remove |  | 30% |
-| ff76d1fda5 | papers/pdfs/cultural-value-integration.pdf | 25% | fact | remove |  | 25% |
-| 2e435de9e0 | papers/pdfs/cultural-value-integration.pdf | 20% | fact | remove |  | 20% |
-| f3dec9d4bb | papers/pdfs/cultural-value-integration.pdf | +0.5x | fact | remove |  | +0.5x to 1.5x |
-| b60e0f39c5 | papers/pdfs/cultural-value-integration.pdf | 1.5x | fact | remove |  | +0.5x to 1.5x |
-| ea92abd698 | papers/pdfs/cultural-value-integration.pdf | 15% | fact | remove |  | 15% |
-| e8c521d71a | papers/pdfs/cultural-value-integration.pdf | 10% | fact | remove |  | 10% |
-| 5feb3f8f21 | papers/pdfs/cultural-value-integration.pdf | +0.5x | fact | remove |  | +0.5x to 1x |
-| dd404d6547 | papers/pdfs/cultural-value-integration.pdf | 35% | projection | relabel |  | …Studies of creative productivity demonstrate: Innovation Enablers: Guaranteed basic support: 35% increase in risk-taking Recognition pathways: 48% more experimental work Failure tolerance: 52% increase in breakthroug… |
-| 0f2bf69b62 | papers/pdfs/cultural-value-integration.pdf | 48% | projection | relabel |  | …ductivity demonstrate: Innovation Enablers: Guaranteed basic support: 35% increase in risk-taking Recognition pathways: 48% more experimental work Failure tolerance: 52% increase in breakthrough innovations Collaborativ |
-| 498ff1664c | papers/pdfs/cultural-value-integration.pdf | 52% | projection | relabel |  | …aranteed basic support: 35% increase in risk-taking Recognition pathways: 48% more experimental work Failure tolerance: 52% increase in breakthrough innovations Collaborative environment: 61% more cross-domain synthesis |
-| 819b72d119 | papers/pdfs/cultural-value-integration.pdf | 61% | projection | relabel |  | …ways: 48% more experimental work Failure tolerance: 52% increase in breakthrough innovations Collaborative environment: 61% more cross-domain synthesis The CCO framework provides these conditions through graduated recog |
-| 5931194429 | papers/pdfs/cultural-value-integration.pdf | 2.25x | fact | remove |  | CCO creates positive exchange experiences through: Recognition beyond monetary compensation Community relationship building Cultural meaning creation Skill development opportunities Loss Aversion Asymmetry: Losses impact |
-| 125c865d16 | papers/pdfs/cultural-value-integration.pdf | 8.1 | projection | relabel |  | …Easy Entry at 1x Conversion with Increased Scrutiny at Higher Tiers 8.1 Access and Barrier Management Universal 1x conversion ensures inclusive participation regardless of formal training or … |
-| 2fa3ab4204 | papers/pdfs/cultural-value-integration.pdf | 100% | fact | remove |  | 100% |
-| 0582a15de9 | papers/pdfs/cultural-value-integration.pdf | 1-3 | fact | remove |  | 1-3 days |
-| 0e66cf76bd | papers/pdfs/cultural-value-integration.pdf | 75% | fact | remove |  | 75% |
-| 146709b1aa | papers/pdfs/cultural-value-integration.pdf | 1 | fact | remove |  | 1 week |
-| 03dd9e7833 | papers/pdfs/cultural-value-integration.pdf | 60% | fact | remove |  | 60% |
-| 8dcbcc0a55 | papers/pdfs/cultural-value-integration.pdf | 2 | fact | remove |  | 2 weeks |
-| 51932720d6 | papers/pdfs/cultural-value-integration.pdf | 40% | fact | remove |  | 40% |
-| 499bc33d68 | papers/pdfs/cultural-value-integration.pdf | 1 | fact | remove |  | 1 month |
-| a1eb3b8563 | papers/pdfs/cultural-value-integration.pdf | 45% | projection | relabel |  | …45% productivity increase through focus 38% quality improvement through expertise 52% satisfaction increase through mastery… |
-| b8ffd5fd35 | papers/pdfs/cultural-value-integration.pdf | 38% | projection | relabel |  | …45% productivity increase through focus 38% quality improvement through expertise 52% satisfaction increase through mastery 29% innovation through deep knowledge C… |
-| 64a95826c4 | papers/pdfs/cultural-value-integration.pdf | 52% | projection | relabel |  | …45% productivity increase through focus 38% quality improvement through expertise 52% satisfaction increase through mastery 29% innovation through deep knowledge Coordination mechanisms ensure specialized … |
-| 78af3759f2 | papers/pdfs/cultural-value-integration.pdf | 29% | projection | relabel |  | …productivity increase through focus 38% quality improvement through expertise 52% satisfaction increase through mastery 29% innovation through deep knowledge Coordination mechanisms ensure specialized contributions serv |
-| 3001f566d8 | papers/pdfs/cultural-value-integration.pdf | 1-6 | fact | remove |  | …10.2 Pilot Implementation Strategy Phase 1: Foundation (Months 1-6) Community engagement and education Evaluation criteria development Technology platform deployment Initial reviewer rec… |
-| 61e2c6aa8a | papers/pdfs/cultural-value-integration.pdf | 13-18 | fact | remove |  | …with accelerated evaluation System refinement based on feedback Economic impact assessment Phase 3: Full Launch (Months 13-18) Open registration with marketing Complete evaluation system activation… |
-| b76dcb86ef | papers/pdfs/cultural-value-integration.pdf | 12,500 | projection | relabel |  | …mentation: Mid-Size City (Population 250,000) Projected Participation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projec |
-| 74b6c56585 | papers/pdfs/cultural-value-integration.pdf | 5% | projection | relabel |  | …ity (Population 250,000) Projected Participation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projections: Cultural econo |
-| b9d2e0409b | papers/pdfs/cultural-value-integration.pdf | 37,500 | projection | relabel |  | …00) Projected Participation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projections: Cultural economy expansion: 35% gro |
-| 226e6fd944 | papers/pdfs/cultural-value-integration.pdf | 15% | projection | relabel |  | …pation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projections: Cultural economy expansion: 35% growth Creative employme |
-| a0a0df8da9 | papers/pdfs/cultural-value-integration.pdf | 35% | projection | relabel |  | …pants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projections: Cultural economy expansion: 35% growth Creative employment: 1,200 new positions Tourism increase: 18% from cultural attractions |
-| f88ec8649e | papers/pdfs/cultural-value-integration.pdf | 1,200 | projection | relabel |  | …00 participants (15% adoption) Economic Impact Projections: Cultural economy expansion: 35% growth Creative employment: 1,200 new positions Tourism increase: 18% from cultural attractions Property values: 12% increase i |
-| 6ee1e20f00 | papers/pdfs/cultural-value-integration.pdf | 18% | projection | relabel |  | …c Impact Projections: Cultural economy expansion: 35% growth Creative employment: 1,200 new positions Tourism increase: 18% from cultural attractions Property values: 12% increase in cultural districts… |
-| 5e7880011f | papers/pdfs/cultural-value-integration.pdf | 12% | projection | relabel |  | …n: 35% growth Creative employment: 1,200 new positions Tourism increase: 18% from cultural attractions Property values: 12% increase in cultural districts… |
-| 9f5dfc3297 | papers/pdfs/cultural-value-integration.pdf | $35,000 | fact | remove |  | …11.2 Sectoral Analysis: Musicians Current State: Median income: $35,000 (below living wage) Gig economy participation: 78% Health insurance coverage: 43% CCO Implementation Impact: Basic inco… |
-| 0f2b4cf8cf | papers/pdfs/cultural-value-integration.pdf | 78% | fact | remove |  | …11.2 Sectoral Analysis: Musicians Current State: Median income: $35,000 (below living wage) Gig economy participation: 78% Health insurance coverage: 43% CCO Implementation Impact: Basic income floor via 1x conversion P |
-| 4642735ee6 | papers/pdfs/cultural-value-integration.pdf | 43% | fact | remove |  | …ans Current State: Median income: $35,000 (below living wage) Gig economy participation: 78% Health insurance coverage: 43% CCO Implementation Impact: Basic income floor via 1x conversion Performance opportunities throu |
-| 6fa7f1d284 | papers/pdfs/cultural-value-integration.pdf | 45% | projection | relabel | B131 | Projected Outcomes: Income stability: 45% improvement Creative output: 32% increase Community engagement: 58% increase Career sustainability: 67% improvement |
-| 63dc91a957 | papers/pdfs/cultural-value-integration.pdf | 32% | projection | relabel | B131 | Projected Outcomes: Income stability: 45% improvement Creative output: 32% increase Community engagement: 58% increase Career sustainability: 67% improvement |
-| 3478377cc0 | papers/pdfs/cultural-value-integration.pdf | 58% | projection | relabel | B131 | Projected Outcomes: Income stability: 45% improvement Creative output: 32% increase Community engagement: 58% increase Career sustainability: 67% improvement |
-| 7de988ad4e | papers/pdfs/cultural-value-integration.pdf | 67% | projection | relabel | B131 | Projected Outcomes: Income stability: 45% improvement Creative output: 32% increase Community engagement: 58% increase Career sustainability: 67% improvement |
-| e641d92817 | papers/pdfs/democratic-governance-pth.pdf | 2-3 times | simulation result | remove |  | …Columbia University experiments demonstrate over-delegation at rates 2-3 times higher than theoretical equilibrium, with liquid democracy underperforming both universal majority voting and strategic… |
-| c4b9b03749 | papers/pdfs/democratic-governance-pth.pdf | 3.1 | simulation result | remove |  | …Diverse Charter Models for Different Collective Needs 3.1 Learning from Housing Cooperative Variations Housing cooperatives demonstrate multiple charter models addressing differ… |
-| 2382b28cda | papers/pdfs/democratic-governance-pth.pdf | $14,000 | fact | remove |  | …Burlington Community Land Trust Outcomes: Average homeowner equity gains: $14,000 Continued affordability: 99.3% retention rate Foreclosure rate: 0.46% vs. 3.26% conventional mortgages Community contro… |
-| 2e2e85efbe | papers/pdfs/democratic-governance-pth.pdf | 99.3% | fact | remove |  | …Burlington Community Land Trust Outcomes: Average homeowner equity gains: $14,000 Continued affordability: 99.3% retention rate Foreclosure rate: 0.46% vs. 3.26% conventional mortgages Community control: Permanent affor |
-| dfeee2aedf | papers/pdfs/democratic-governance-pth.pdf | 0.46% | fact | remove |  | …Trust Outcomes: Average homeowner equity gains: $14,000 Continued affordability: 99.3% retention rate Foreclosure rate: 0.46% vs. 3.26% conventional mortgages Community control: Permanent affordability through ground le |
-| 6bfb01cb36 | papers/pdfs/democratic-governance-pth.pdf | 3.26% | fact | remove |  | …omes: Average homeowner equity gains: $14,000 Continued affordability: 99.3% retention rate Foreclosure rate: 0.46% vs. 3.26% conventional mortgages Community control: Permanent affordability through ground leases The 9 |
-| f03f081008 | papers/pdfs/democratic-governance-pth.pdf | 99 | projection | relabel |  | …osure rate: 0.46% vs. 3.26% conventional mortgages Community control: Permanent affordability through ground leases The 99-year renewable ground lease system separates land ownership (collective) from housing improvemen |
-| 6839560e02 | papers/pdfs/democratic-governance-pth.pdf | 320+ | fact | remove |  | Evergreen Cooperatives: 320+ worker-owners Wages 20-25% above competitors Profit-sharing: $4-5/hour additional compensation Anchor institution partnerships ensuring stable demand |
-| 75cd8e0cbd | papers/pdfs/democratic-governance-pth.pdf | 20-25% | fact | remove |  | Evergreen Cooperatives: 320+ worker-owners Wages 20-25% above competitors Profit-sharing: $4-5/hour additional compensation Anchor institution partnerships ensuring stable demand |
-| 96cf33971f | papers/pdfs/democratic-governance-pth.pdf | $4-5 | fact | remove |  | Evergreen Cooperatives: 320+ worker-owners Wages 20-25% above competitors Profit-sharing: $4-5/hour additional compensation Anchor institution partnerships ensuring stable demand |
-| 51656bd3d9 | papers/pdfs/democratic-governance-pth.pdf | 30 | projection | relabel |  | …dless of position Democratic election of all management Economic Democracy Outcomes: 97% cooperative survival rate over 30 years Wage ratios: 3:1 to 9:1 (typically 5:1) 10% profits to education/social projects Only one  |
-| c5bfdc46a9 | papers/pdfs/democratic-governance-pth.pdf | 1 to 9 | projection | relabel |  | …atic election of all management Economic Democracy Outcomes: 97% cooperative survival rate over 30 years Wage ratios: 3:1 to 9:1 (typically 5:1) 10% profits to education/social projects Only one strike in history (1974) |
-| 87bdd272ea | papers/pdfs/democratic-governance-pth.pdf | 10% | projection | relabel |  | …gement Economic Democracy Outcomes: 97% cooperative survival rate over 30 years Wage ratios: 3:1 to 9:1 (typically 5:1) 10% profits to education/social projects Only one strike in history (1974), leading to positive ref |
-| 43218ad7ae | papers/pdfs/democratic-governance-pth.pdf | 256 | fact | remove |  | Key Innovation: Inter-cooperation mechanisms providing solidarity and business efficiency through network effects, allowing local autonomy while maintaining collective support across 256 companies with 92,773 employees. |
-| 7867f40bb1 | papers/pdfs/democratic-governance-pth.pdf | 92,773 | fact | remove |  | Key Innovation: Inter-cooperation mechanisms providing solidarity and business efficiency through network effects, allowing local autonomy while maintaining collective support across 256 companies with 92,773 employees. |
-| 2ea89c467e | papers/pdfs/democratic-governance-pth.pdf | 11% | projection | relabel |  | …vernments aggregate electricity demand Automatic enrollment with opt-out rights IOU continues transmission/distribution 11% average bill savings 50% higher renewable content Participation Outcomes: 11 million customers  |
-| ef29d8fb35 | papers/pdfs/democratic-governance-pth.pdf | 50% | projection | relabel |  | …ricity demand Automatic enrollment with opt-out rights IOU continues transmission/distribution 11% average bill savings 50% higher renewable content Participation Outcomes: 11 million customers served 36 operational pro |
-| 9f3c247e34 | papers/pdfs/democratic-governance-pth.pdf | 11 million | projection | relabel |  | …s IOU continues transmission/distribution 11% average bill savings 50% higher renewable content Participation Outcomes: 11 million customers served 36 operational programs… |
-| a9fab8dc92 | papers/pdfs/democratic-governance-pth.pdf | 36 | projection | relabel |  | …/distribution 11% average bill savings 50% higher renewable content Participation Outcomes: 11 million customers served 36 operational programs… |
-| b0a9bc5d55 | papers/pdfs/democratic-governance-pth.pdf | 97% | fact | remove |  | 97% retention rates $3 billion annual revenues |
-| 2ebab86240 | papers/pdfs/democratic-governance-pth.pdf | $3 billion | fact | remove |  | 97% retention rates $3 billion annual revenues |
-| 77b3bf2252 | papers/pdfs/democratic-governance-pth.pdf | 15-20% | projection | relabel |  | …surance and Utility Innovations Cooperative Insurance Models: Mutual insurance companies owned by policyholders Average 15-20% lower premiums than commercial insurers Profit-sharing through dividends or reduced premiums |
-| 3628a80110 | papers/pdfs/democratic-governance-pth.pdf | 92,773 | fact | remove |  | 92,773 employees |
-| 018452e8dc | papers/pdfs/democratic-governance-pth.pdf | 97% | fact | remove |  | 97% survival rate |
-| 23b44fa65e | papers/pdfs/democratic-governance-pth.pdf | 700+ | fact | remove |  | 700+ homes |
-| 51f1a0d9ff | papers/pdfs/democratic-governance-pth.pdf | 0.46% | fact | remove |  | 0.46% foreclosure rate |
-| 598044f8cf | papers/pdfs/democratic-governance-pth.pdf | 225 | fact | remove |  | 225 acres |
-| 4414efcc94 | papers/pdfs/democratic-governance-pth.pdf | 20% | fact | remove |  | 20% higher worker earnings |
-| d603e1b5a9 | papers/pdfs/democratic-governance-pth.pdf | 1-6 | fact | remove |  | …Implementation Framework for PTF 8.1 Staged Implementation Process Phase 1: Foundation (Months 1-6) Community organizing and education Charter development with legal framework Initial membership recruitment Governance … |
-| f9866d333c | papers/pdfs/democratic-governance-pth.pdf | 7-18 | fact | remove |  | …ith legal framework Initial membership recruitment Governance structure establishment Phase 2: Pilot Operations (Months 7-18) Small-scale property acquisition or conversion Governance system testing and refinement Servi |
+| 63145023ef | papers/pdfs/cultural-value-integration.pdf | 1.618x | finding | correct |  | The framework addresses limitations of traditional monetary systems through multi-tier conversion rates (1x to 9x+), octave-based doubling of conversion capacity, and the Phi rate (1.618x) for productive and beautiful co |
+| 511c3fb972 | papers/pdfs/cultural-value-integration.pdf | 30 million | finding | correct |  | …The global creative economy contributes $4.3 trillion annually (6.1% of global GDP) and employs nearly 30 million people worldwide (UNESCO, 2022), yet creators often struggle to receive fair compensation for their contr |
+| c5a4aa3cd7 | papers/pdfs/cultural-value-integration.pdf | 0 to 7+ | finding | correct |  | …athematical Model of Octave Progression: Conversion Capacity at Octave n = Base_Capacity × 2^n Where: n = Octave level (0 to 7+) Base_Capacity = Initial conversion amount per cycle This exponential growth structure crea |
+| 171e0ea2f8 | papers/pdfs/cultural-value-integration.pdf | 1.618x | finding | correct |  | 2.3 The Phi Rate: Mathematical Foundations of Aesthetic Value The Phi rate (1.618x) specifically recognizes contributions achieving both functional effectiveness and aesthetic beauty. |
+| e7c372c5fc | papers/pdfs/cultural-value-integration.pdf | 3.1 | fact | correct |  | Practical Evaluation Mechanisms 3.1 Evidence from Alternative Currency Systems Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
+| 938fd3e9c2 | papers/pdfs/cultural-value-integration.pdf | 30,000+ | finding | correct |  | Practical Evaluation Mechanisms 3.1 Evidence from Alternative Currency Systems Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
+| 2581ba190c | papers/pdfs/cultural-value-integration.pdf | 50+ | finding | correct |  | Practical Evaluation Mechanisms 3.1 Evidence from Alternative Currency Systems Time Banking Systems: Community Exchange Systems operate globally with 30,000+ participants across 50+ countries. |
+| fc3e9c3c22 | papers/pdfs/cultural-value-integration.pdf | €51 million | fact | correct |  | …ardex B2B Mutual Credit: Operating in Sardinia since 2009, Sardex demonstrates sophisticated commercial implementation: €51 million annual transaction volume 3,200+ SME members… |
+| 8817e16fc6 | papers/pdfs/cultural-value-integration.pdf | 3,200+ | fact | correct |  | …Sardinia since 2009, Sardex demonstrates sophisticated commercial implementation: €51 million annual transaction volume 3,200+ SME members… |
+| 9addaef89d | papers/pdfs/cultural-value-integration.pdf | ~1% | fact | correct |  | …Credit limits: ~1% of annual turnover Currency velocity: 1.5x higher than euros Default rate: <0.5% (Littera et al., 2017) These systems d… |
+| 3d0ffc974f | papers/pdfs/cultural-value-integration.pdf | 1.5x | fact | correct |  | …Credit limits: ~1% of annual turnover Currency velocity: 1.5x higher than euros Default rate: <0.5% (Littera et al., 2017) These systems demonstrate that alternative evaluation and … |
+| a5aa9e842e | papers/pdfs/cultural-value-integration.pdf | <0.5% | fact | correct |  | …Credit limits: ~1% of annual turnover Currency velocity: 1.5x higher than euros Default rate: <0.5% (Littera et al., 2017) These systems demonstrate that alternative evaluation and exchange mechanisms can operate effect |
+| 2c5121e12d | papers/pdfs/cultural-value-integration.pdf | 35% | finding | correct |  | Quality Assurance: Calibration exercises, inter-rater reliability, appeals processes Blinding Approaches: Research shows double-blind review reduces bias against unknown creators by 35% but may lose important contextual  |
+| 550910a35d | papers/pdfs/cultural-value-integration.pdf | 20% | finding | correct |  | Open peer review increases accountability but may reduce critical feedback by 20% (Tomkins et al., 2017). |
+| 57ab937807 | papers/pdfs/cultural-value-integration.pdf | 82% | finding | correct |  | Decision: Consensus-building toward recommendation Bristol Citizens' Assembly demonstrated effective community priority identification with 82% participant satisfaction and 91% recommendation implementation (Bristol City |
+| aaa71c9c52 | papers/pdfs/cultural-value-integration.pdf | 91% | finding | correct |  | Decision: Consensus-building toward recommendation Bristol Citizens' Assembly demonstrated effective community priority identification with 82% participant satisfaction and 91% recommendation implementation (Bristol City |
+| 99d0f10469 | papers/pdfs/cultural-value-integration.pdf | 89% | finding | correct |  | 89% |
+| 0502500a05 | papers/pdfs/cultural-value-integration.pdf | 82% | finding | correct |  | 82% |
+| 03c90175af | papers/pdfs/cultural-value-integration.pdf | 85% | finding | correct |  | 85% |
+| ff85f00f07 | papers/pdfs/cultural-value-integration.pdf | 91% | finding | correct |  | 91% |
+| b0fe231b53 | papers/pdfs/cultural-value-integration.pdf | 87% | finding | correct |  | 87% |
+| 3c2f6f0244 | papers/pdfs/cultural-value-integration.pdf | 23% | finding | correct |  | … customized evaluation approaches while maintaining core CCO principles: Healthcare Applications: Music therapy impact: 23% reduction in patient anxiety Art therapy outcomes: 31% improvement in recovery metrics Healing  |
+| a1c7814411 | papers/pdfs/cultural-value-integration.pdf | 31% | finding | correct |  | …e CCO principles: Healthcare Applications: Music therapy impact: 23% reduction in patient anxiety Art therapy outcomes: 31% improvement in recovery metrics Healing environment design: 18% reduction in length of stay Ass |
+| ea172b37a4 | papers/pdfs/cultural-value-integration.pdf | 18% | finding | correct |  | … 23% reduction in patient anxiety Art therapy outcomes: 31% improvement in recovery metrics Healing environment design: 18% reduction in length of stay Assessment combines clinical metrics with aesthetic evaluation Educ |
+| 62499a4943 | papers/pdfs/cultural-value-integration.pdf | 17% | finding | correct |  | …stay Assessment combines clinical metrics with aesthetic evaluation Educational Integration: Arts-integrated curricula: 17% improvement in test scores Creative problem-solving: 42% increase in innovation metrics Cultura |
+| 4e33bcd7dc | papers/pdfs/cultural-value-integration.pdf | 42% | finding | correct |  | …evaluation Educational Integration: Arts-integrated curricula: 17% improvement in test scores Creative problem-solving: 42% increase in innovation metrics Cultural competency: 28% improvement in cross-cultural understan |
+| 18d8c425cc | papers/pdfs/cultural-value-integration.pdf | 28% | finding | correct |  | …icula: 17% improvement in test scores Creative problem-solving: 42% increase in innovation metrics Cultural competency: 28% improvement in cross-cultural understanding Evaluation includes academic and creative dimension |
+| 9f53abd843 | papers/pdfs/cultural-value-integration.pdf | 30% | finding | correct |  | 30% |
+| ff76d1fda5 | papers/pdfs/cultural-value-integration.pdf | 25% | finding | correct |  | 25% |
+| 2e435de9e0 | papers/pdfs/cultural-value-integration.pdf | 20% | finding | correct |  | 20% |
+| f3dec9d4bb | papers/pdfs/cultural-value-integration.pdf | +0.5x | finding | correct |  | +0.5x to 1.5x |
+| b60e0f39c5 | papers/pdfs/cultural-value-integration.pdf | 1.5x | finding | correct |  | +0.5x to 1.5x |
+| ea92abd698 | papers/pdfs/cultural-value-integration.pdf | 15% | finding | correct |  | 15% |
+| eb7d9791f5 | papers/pdfs/cultural-value-integration.pdf | +0.5x | finding | correct |  | +0.5x (Phi eligibility) |
+| e8c521d71a | papers/pdfs/cultural-value-integration.pdf | 10% | finding | correct |  | 10% |
+| 5feb3f8f21 | papers/pdfs/cultural-value-integration.pdf | +0.5x | finding | correct |  | +0.5x to 1x |
+| 19e7b4c0d1 | papers/pdfs/cultural-value-integration.pdf | 67% | finding | correct |  | …n Sales/commission data: Market validation Community engagement: Workshop participation, public art Studies demonstrate 67% of visual artists earn below poverty wages despite significant cultural contributions (NEA, 202 |
+| 5f383c4365 | papers/pdfs/cultural-value-integration.pdf | 0.67 | finding | correct |  | … influence specialization patterns (Falk et al., 2018): Key Findings: Patience correlates with innovation investment (r=0.67) Risk tolerance enables creative experimentation (r=0.54) Positive reciprocity enhances collab |
+| f7d0f1b925 | papers/pdfs/cultural-value-integration.pdf | 0.54 | finding | correct |  | …ey Findings: Patience correlates with innovation investment (r=0.67) Risk tolerance enables creative experimentation (r=0.54) Positive reciprocity enhances collaboration (r=0.71) Cultural values shape economic participa |
+| a167e02c6b | papers/pdfs/cultural-value-integration.pdf | 0.71 | finding | correct |  | …stment (r=0.67) Risk tolerance enables creative experimentation (r=0.54) Positive reciprocity enhances collaboration (r=0.71) Cultural values shape economic participation patterns CCO systems accommodate preference dive |
+| 4ea15d38e4 | papers/pdfs/cultural-value-integration.pdf | 40% | finding | correct |  | …rch shows that when alternative exchange opportunities exist, previously invisible talents emerge— communities discover 40% more skilled practitioners than traditional market systems identify (Seyfang & Longhurst, 2013) |
+| dd404d6547 | papers/pdfs/cultural-value-integration.pdf | 35% | finding | correct |  | …Studies of creative productivity demonstrate: Innovation Enablers: Guaranteed basic support: 35% increase in risk-taking Recognition pathways: 48% more experimental work Failure tolerance: 52% increase in breakthroug… |
+| 0f2bf69b62 | papers/pdfs/cultural-value-integration.pdf | 48% | finding | correct |  | …ductivity demonstrate: Innovation Enablers: Guaranteed basic support: 35% increase in risk-taking Recognition pathways: 48% more experimental work Failure tolerance: 52% increase in breakthrough innovations Collaborativ |
+| 498ff1664c | papers/pdfs/cultural-value-integration.pdf | 52% | finding | correct |  | …aranteed basic support: 35% increase in risk-taking Recognition pathways: 48% more experimental work Failure tolerance: 52% increase in breakthrough innovations Collaborative environment: 61% more cross-domain synthesis |
+| 819b72d119 | papers/pdfs/cultural-value-integration.pdf | 61% | finding | correct |  | …ways: 48% more experimental work Failure tolerance: 52% increase in breakthrough innovations Collaborative environment: 61% more cross-domain synthesis The CCO framework provides these conditions through graduated recog |
+| f4b36bdbeb | papers/pdfs/cultural-value-integration.pdf | 32% | finding | correct |  | …riches community culture Network effects: Connections multiply creative possibilities Platform cooperatives demonstrate 32% higher skill development rates than traditional firms through collaborative learning structures |
+| 125c865d16 | papers/pdfs/cultural-value-integration.pdf | 8.1 | finding | correct |  | …Easy Entry at 1x Conversion with Increased Scrutiny at Higher Tiers 8.1 Access and Barrier Management Universal 1x conversion ensures inclusive participation regardless of formal training or … |
+| 2fa3ab4204 | papers/pdfs/cultural-value-integration.pdf | 100% | finding | correct |  | 100% |
+| 0582a15de9 | papers/pdfs/cultural-value-integration.pdf | 1-3 | finding | correct |  | 1-3 days |
+| 0e66cf76bd | papers/pdfs/cultural-value-integration.pdf | 75% | finding | correct |  | 75% |
+| 146709b1aa | papers/pdfs/cultural-value-integration.pdf | 1 | finding | correct |  | 1 week |
+| 03dd9e7833 | papers/pdfs/cultural-value-integration.pdf | 60% | finding | correct |  | 60% |
+| 8dcbcc0a55 | papers/pdfs/cultural-value-integration.pdf | 2 | finding | correct |  | 2 weeks |
+| 51932720d6 | papers/pdfs/cultural-value-integration.pdf | 40% | finding | correct |  | 40% |
+| 499bc33d68 | papers/pdfs/cultural-value-integration.pdf | 1 | finding | correct |  | 1 month |
+| de02802cd5 | papers/pdfs/cultural-value-integration.pdf | 27% | finding | correct |  | …and exhibitions Cultural enrichment competitions Research shows cooperative systems with performance incentives achieve 27% higher innovation rates than pure competition or pure cooperation alone (Deutsch, 2011).… |
+| a1eb3b8563 | papers/pdfs/cultural-value-integration.pdf | 45% | finding | correct |  | …45% productivity increase through focus 38% quality improvement through expertise 52% satisfaction increase through mastery… |
+| b8ffd5fd35 | papers/pdfs/cultural-value-integration.pdf | 38% | finding | correct |  | …45% productivity increase through focus 38% quality improvement through expertise 52% satisfaction increase through mastery 29% innovation through deep knowledge C… |
+| 64a95826c4 | papers/pdfs/cultural-value-integration.pdf | 52% | finding | correct |  | …45% productivity increase through focus 38% quality improvement through expertise 52% satisfaction increase through mastery 29% innovation through deep knowledge Coordination mechanisms ensure specialized … |
+| 78af3759f2 | papers/pdfs/cultural-value-integration.pdf | 29% | finding | correct |  | …productivity increase through focus 38% quality improvement through expertise 52% satisfaction increase through mastery 29% innovation through deep knowledge Coordination mechanisms ensure specialized contributions serv |
+| 00316e1fff | papers/pdfs/cultural-value-integration.pdf | 2,500 | finding | correct |  | …s and Projections 11.1 Hypothetical Implementation: Mid-Size City (Population 250,000) Projected Participation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participa |
+| 9bf2dd7b97 | papers/pdfs/cultural-value-integration.pdf | 1% | finding | correct |  | ….1 Hypothetical Implementation: Mid-Size City (Population 250,000) Projected Participation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participants (15% adoption) E |
+| b76dcb86ef | papers/pdfs/cultural-value-integration.pdf | 12,500 | finding | correct |  | …mentation: Mid-Size City (Population 250,000) Projected Participation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projec |
+| 74b6c56585 | papers/pdfs/cultural-value-integration.pdf | 5% | finding | correct |  | …ity (Population 250,000) Projected Participation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projections: Cultural econo |
+| b9d2e0409b | papers/pdfs/cultural-value-integration.pdf | 37,500 | finding | correct |  | …00) Projected Participation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projections: Cultural economy expansion: 35% gro |
+| 226e6fd944 | papers/pdfs/cultural-value-integration.pdf | 15% | finding | correct |  | …pation: Year 1: 2,500 participants (1% adoption) Year 3: 12,500 participants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projections: Cultural economy expansion: 35% growth Creative employme |
+| a0a0df8da9 | papers/pdfs/cultural-value-integration.pdf | 35% | finding | correct |  | …pants (5% adoption) Year 5: 37,500 participants (15% adoption) Economic Impact Projections: Cultural economy expansion: 35% growth Creative employment: 1,200 new positions Tourism increase: 18% from cultural attractions |
+| f88ec8649e | papers/pdfs/cultural-value-integration.pdf | 1,200 | finding | correct |  | …00 participants (15% adoption) Economic Impact Projections: Cultural economy expansion: 35% growth Creative employment: 1,200 new positions Tourism increase: 18% from cultural attractions Property values: 12% increase i |
+| 6ee1e20f00 | papers/pdfs/cultural-value-integration.pdf | 18% | finding | correct |  | …c Impact Projections: Cultural economy expansion: 35% growth Creative employment: 1,200 new positions Tourism increase: 18% from cultural attractions Property values: 12% increase in cultural districts… |
+| 5e7880011f | papers/pdfs/cultural-value-integration.pdf | 12% | finding | correct |  | …n: 35% growth Creative employment: 1,200 new positions Tourism increase: 18% from cultural attractions Property values: 12% increase in cultural districts… |
+| 9f5dfc3297 | papers/pdfs/cultural-value-integration.pdf | $35,000 | finding | correct |  | …11.2 Sectoral Analysis: Musicians Current State: Median income: $35,000 (below living wage) Gig economy participation: 78% Health insurance coverage: 43% CCO Implementation Impact: Basic inco… |
+| 0f2b4cf8cf | papers/pdfs/cultural-value-integration.pdf | 78% | finding | correct |  | …11.2 Sectoral Analysis: Musicians Current State: Median income: $35,000 (below living wage) Gig economy participation: 78% Health insurance coverage: 43% CCO Implementation Impact: Basic income floor via 1x conversion P |
+| 4642735ee6 | papers/pdfs/cultural-value-integration.pdf | 43% | finding | correct |  | …ans Current State: Median income: $35,000 (below living wage) Gig economy participation: 78% Health insurance coverage: 43% CCO Implementation Impact: Basic income floor via 1x conversion Performance opportunities throu |
+| 6fa7f1d284 | papers/pdfs/cultural-value-integration.pdf | 45% | finding | correct | B131 | Projected Outcomes: Income stability: 45% improvement Creative output: 32% increase Community engagement: 58% increase Career sustainability: 67% improvement |
+| 63dc91a957 | papers/pdfs/cultural-value-integration.pdf | 32% | finding | correct | B131 | Projected Outcomes: Income stability: 45% improvement Creative output: 32% increase Community engagement: 58% increase Career sustainability: 67% improvement |
+| 3478377cc0 | papers/pdfs/cultural-value-integration.pdf | 58% | finding | correct | B131 | Projected Outcomes: Income stability: 45% improvement Creative output: 32% increase Community engagement: 58% increase Career sustainability: 67% improvement |
+| 7de988ad4e | papers/pdfs/cultural-value-integration.pdf | 67% | finding | correct | B131 | Projected Outcomes: Income stability: 45% improvement Creative output: 32% increase Community engagement: 58% increase Career sustainability: 67% improvement |
+| e641d92817 | papers/pdfs/democratic-governance-pth.pdf | 2-3 times | fact | correct |  | …Columbia University experiments demonstrate over-delegation at rates 2-3 times higher than theoretical equilibrium, with liquid democracy underperforming both universal majority voting and strategic… |
+| c4b9b03749 | papers/pdfs/democratic-governance-pth.pdf | 3.1 | fact | correct |  | …Diverse Charter Models for Different Collective Needs 3.1 Learning from Housing Cooperative Variations Housing cooperatives demonstrate multiple charter models addressing differ… |
+| 2382b28cda | papers/pdfs/democratic-governance-pth.pdf | $14,000 | fact | correct |  | …Burlington Community Land Trust Outcomes: Average homeowner equity gains: $14,000 Continued affordability: 99.3% retention rate Foreclosure rate: 0.46% vs. 3.26% conventional mortgages Community contro… |
+| 2e2e85efbe | papers/pdfs/democratic-governance-pth.pdf | 99.3% | fact | correct |  | …Burlington Community Land Trust Outcomes: Average homeowner equity gains: $14,000 Continued affordability: 99.3% retention rate Foreclosure rate: 0.46% vs. 3.26% conventional mortgages Community control: Permanent affor |
+| dfeee2aedf | papers/pdfs/democratic-governance-pth.pdf | 0.46% | fact | correct |  | …Trust Outcomes: Average homeowner equity gains: $14,000 Continued affordability: 99.3% retention rate Foreclosure rate: 0.46% vs. 3.26% conventional mortgages Community control: Permanent affordability through ground le |
+| 6bfb01cb36 | papers/pdfs/democratic-governance-pth.pdf | 3.26% | fact | correct |  | …omes: Average homeowner equity gains: $14,000 Continued affordability: 99.3% retention rate Foreclosure rate: 0.46% vs. 3.26% conventional mortgages Community control: Permanent affordability through ground leases The 9 |
+| f03f081008 | papers/pdfs/democratic-governance-pth.pdf | 99 | fact | correct |  | …osure rate: 0.46% vs. 3.26% conventional mortgages Community control: Permanent affordability through ground leases The 99-year renewable ground lease system separates land ownership (collective) from housing improvemen |
+| ec9441a664 | papers/pdfs/democratic-governance-pth.pdf | $10M+ | fact | correct |  | …ital and commercial spaces (Scholz & Schneider, 2016): Successful Examples: Stocksy United: 1,000+ photographer-owners, $10M+ annual sales, profit-sharing distributions Drivers Cooperative (NYC): 5,000+ driver-owners, 1 |
+| 2db68b8d3e | papers/pdfs/democratic-governance-pth.pdf | 5,000+ | fact | correct |  | …Stocksy United: 1,000+ photographer-owners, $10M+ annual sales, profit-sharing distributions Drivers Cooperative (NYC): 5,000+ driver-owners, 10% higher earnings than Uber/Lyft Savvy Cooperative: Patient-owned health da |
+| 639c1f22a5 | papers/pdfs/democratic-governance-pth.pdf | 10% | fact | correct |  | … photographer-owners, $10M+ annual sales, profit-sharing distributions Drivers Cooperative (NYC): 5,000+ driver-owners, 10% higher earnings than Uber/Lyft Savvy Cooperative: Patient-owned health data platform, 70,000+ m |
+| 08f15b2425 | papers/pdfs/democratic-governance-pth.pdf | 70,000+ | fact | correct |  | … (NYC): 5,000+ driver-owners, 10% higher earnings than Uber/Lyft Savvy Cooperative: Patient-owned health data platform, 70,000+ members The Cleveland Model demonstrates networked cooperative development:… |
+| 6839560e02 | papers/pdfs/democratic-governance-pth.pdf | 320+ | fact | correct |  | Evergreen Cooperatives: 320+ worker-owners Wages 20-25% above competitors Profit-sharing: $4-5/hour additional compensation Anchor institution partnerships ensuring stable demand |
+| 75cd8e0cbd | papers/pdfs/democratic-governance-pth.pdf | 20-25% | fact | correct |  | Evergreen Cooperatives: 320+ worker-owners Wages 20-25% above competitors Profit-sharing: $4-5/hour additional compensation Anchor institution partnerships ensuring stable demand |
+| 96cf33971f | papers/pdfs/democratic-governance-pth.pdf | $4-5 | fact | correct |  | Evergreen Cooperatives: 320+ worker-owners Wages 20-25% above competitors Profit-sharing: $4-5/hour additional compensation Anchor institution partnerships ensuring stable demand |
+| 1afcaa2b19 | papers/pdfs/democratic-governance-pth.pdf | 97% | fact | correct |  | …sions) "One person, one vote" regardless of position Democratic election of all management Economic Democracy Outcomes: 97% cooperative survival rate over 30 years Wage ratios: 3:1 to 9:1 (typically 5:1) 10% profits to  |
+| 51656bd3d9 | papers/pdfs/democratic-governance-pth.pdf | 30 | fact | correct |  | …dless of position Democratic election of all management Economic Democracy Outcomes: 97% cooperative survival rate over 30 years Wage ratios: 3:1 to 9:1 (typically 5:1) 10% profits to education/social projects Only one  |
+| c5bfdc46a9 | papers/pdfs/democratic-governance-pth.pdf | 1 to 9 | fact | correct |  | …atic election of all management Economic Democracy Outcomes: 97% cooperative survival rate over 30 years Wage ratios: 3:1 to 9:1 (typically 5:1) 10% profits to education/social projects Only one strike in history (1974) |
+| 87bdd272ea | papers/pdfs/democratic-governance-pth.pdf | 10% | fact | correct |  | …gement Economic Democracy Outcomes: 97% cooperative survival rate over 30 years Wage ratios: 3:1 to 9:1 (typically 5:1) 10% profits to education/social projects Only one strike in history (1974), leading to positive ref |
+| 43218ad7ae | papers/pdfs/democratic-governance-pth.pdf | 256 | fact | correct |  | Key Innovation: Inter-cooperation mechanisms providing solidarity and business efficiency through network effects, allowing local autonomy while maintaining collective support across 256 companies with 92,773 employees. |
+| 7867f40bb1 | papers/pdfs/democratic-governance-pth.pdf | 92,773 | fact | correct |  | Key Innovation: Inter-cooperation mechanisms providing solidarity and business efficiency through network effects, allowing local autonomy while maintaining collective support across 256 companies with 92,773 employees. |
+| 2ea89c467e | papers/pdfs/democratic-governance-pth.pdf | 11% | fact | correct |  | …vernments aggregate electricity demand Automatic enrollment with opt-out rights IOU continues transmission/distribution 11% average bill savings 50% higher renewable content Participation Outcomes: 11 million customers  |
+| ef29d8fb35 | papers/pdfs/democratic-governance-pth.pdf | 50% | fact | correct |  | …ricity demand Automatic enrollment with opt-out rights IOU continues transmission/distribution 11% average bill savings 50% higher renewable content Participation Outcomes: 11 million customers served 36 operational pro |
+| 9f3c247e34 | papers/pdfs/democratic-governance-pth.pdf | 11 million | fact | correct |  | …s IOU continues transmission/distribution 11% average bill savings 50% higher renewable content Participation Outcomes: 11 million customers served 36 operational programs… |
+| a9fab8dc92 | papers/pdfs/democratic-governance-pth.pdf | 36 | fact | correct |  | …/distribution 11% average bill savings 50% higher renewable content Participation Outcomes: 11 million customers served 36 operational programs… |
+| b0a9bc5d55 | papers/pdfs/democratic-governance-pth.pdf | 97% | fact | correct |  | 97% retention rates $3 billion annual revenues |
+| 2ebab86240 | papers/pdfs/democratic-governance-pth.pdf | $3 billion | fact | correct |  | 97% retention rates $3 billion annual revenues |
+| 77b3bf2252 | papers/pdfs/democratic-governance-pth.pdf | 15-20% | fact | correct |  | …surance and Utility Innovations Cooperative Insurance Models: Mutual insurance companies owned by policyholders Average 15-20% lower premiums than commercial insurers Profit-sharing through dividends or reduced premiums |
+| a16f12eb0d | papers/pdfs/democratic-governance-pth.pdf | 10-15% | fact | correct |  | …idends or reduced premiums Democratic control over coverage and policies Shared Infrastructure Benefits: Solar gardens: 10-15% electricity savings Fiber internet: 50% faster, 30% cheaper than commercial Maintenance pool |
+| fb780d3088 | papers/pdfs/democratic-governance-pth.pdf | 50% | fact | correct |  | …ol over coverage and policies Shared Infrastructure Benefits: Solar gardens: 10-15% electricity savings Fiber internet: 50% faster, 30% cheaper than commercial Maintenance pools: 25% cost reduction through economies of  |
+| dc2201be93 | papers/pdfs/democratic-governance-pth.pdf | 30% | fact | correct |  | …rage and policies Shared Infrastructure Benefits: Solar gardens: 10-15% electricity savings Fiber internet: 50% faster, 30% cheaper than commercial Maintenance pools: 25% cost reduction through economies of scale Landsc |
+| 2059c7ee8b | papers/pdfs/democratic-governance-pth.pdf | 25% | fact | correct |  | …s: Solar gardens: 10-15% electricity savings Fiber internet: 50% faster, 30% cheaper than commercial Maintenance pools: 25% cost reduction through economies of scale Landscaping services: Professional quality at residen |
+| 3628a80110 | papers/pdfs/democratic-governance-pth.pdf | 92,773 | fact | correct |  | 92,773 employees |
+| 018452e8dc | papers/pdfs/democratic-governance-pth.pdf | 97% | fact | correct |  | 97% survival rate |
+| 23b44fa65e | papers/pdfs/democratic-governance-pth.pdf | 700+ | fact | correct |  | 700+ homes |
+| 51f1a0d9ff | papers/pdfs/democratic-governance-pth.pdf | 0.46% | fact | correct |  | 0.46% foreclosure rate |
+| 598044f8cf | papers/pdfs/democratic-governance-pth.pdf | 225 | fact | correct |  | 225 acres |
+| e6b81cbd9f | papers/pdfs/democratic-governance-pth.pdf | 50,000+ | fact | correct |  | 50,000+ members |
+| 4414efcc94 | papers/pdfs/democratic-governance-pth.pdf | 20% | fact | correct |  | 20% higher worker earnings |
+| d603e1b5a9 | papers/pdfs/democratic-governance-pth.pdf | 1-6 | fact | correct |  | …Implementation Framework for PTF 8.1 Staged Implementation Process Phase 1: Foundation (Months 1-6) Community organizing and education Charter development with legal framework Initial membership recruitment Governance … |
+| f9866d333c | papers/pdfs/democratic-governance-pth.pdf | 7-18 | fact | correct |  | …ith legal framework Initial membership recruitment Governance structure establishment Phase 2: Pilot Operations (Months 7-18) Small-scale property acquisition or conversion Governance system testing and refinement Servi |
+| e84be0a153 | papers/pdfs/democratic-governance-pth.pdf | 108 | fact | correct |  | AEA Papers and Proceedings, 108, 33-37. |
+| 3fd1df5a15 | papers/pdfs/democratic-governance-pth.pdf | 33-37 | fact | correct |  | AEA Papers and Proceedings, 108, 33-37. |
 | dd28ee033f | papers/pdfs/drug-policy-reform.pdf | 10 | projection | remove |  | Drawing from international models of drug decriminalization, particularly Portugal's experience and recent Pacific Northwest policy experiments, we project outcomes under regulatory frameworks across multiple time horizo |
 | aea432e815 | papers/pdfs/drug-policy-reform.pdf | 25 | projection | remove |  | Drawing from international models of drug decriminalization, particularly Portugal's experience and recent Pacific Northwest policy experiments, we project outcomes under regulatory frameworks across multiple time horizo |
 | 9125a189b2 | papers/pdfs/drug-policy-reform.pdf | 50 | projection | remove |  | Drawing from international models of drug decriminalization, particularly Portugal's experience and recent Pacific Northwest policy experiments, we project outcomes under regulatory frameworks across multiple time horizo |
