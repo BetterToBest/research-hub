@@ -350,6 +350,24 @@ REVIEW = [
     (r"dual-currency-inflation", r"^7\.2 Transition Strategy", PAR, "plan", "keep", "the paper's transition plan", "", ""),
     (r"dual-currency-inflation", r"^A\.\d", DER, "derivation", "keep", "the paper's appendix proofs", "not checked (S46 repairs the formal model)", ""),
     (r"dual-currency-inflation", r".", NONE, "simulation result", "remove", "", "", "'numerical simulations' and 10,000 Monte Carlo runs are not published; S25 replaces these with results from a run"),
+
+    # ---- corporate-transformation (HTML, papers/ summary page, PDF)
+    (ALL, r"\[cite: ?\d", META, "citation placeholder", "remove", "the page itself", "", "a leftover '[cite: N]' placeholder from a drafting tool, not a reference", r"^\d{1,3}$"),
+    (r"corporate-transformation", r"JEL Classification", META, "classification code", "correct", "the page itself", "", "'033' should be 'O33'"),
+    (r"corporate-transformation", r"Date: November|45-page analysis", META, "date or length", "keep", "the page itself", "", ""),
+    (r"corporate-transformation", r"While it targets 2% inflation", EXT, "fact", "keep", "Federal Reserve's stated 2% inflation target", "standard fact, not cited", ""),
+    (r"corporate-transformation", r"McKinsey|45% of work activities|Automation currently covers 45%", EXT, "fact", "keep", "McKinsey Global Institute (2016), cited", "cited, not opened", "'45% of activities could be automated with demonstrated technology'; '75% with advanced A.I.' is not McKinsey's figure as far as stated", r"45%|75%"),
+    (r"corporate-transformation", r"Research demonstrates traditional 40-hour|Diminishing returns after 25-30|four-day weeks", EXT, "fact", "keep", "cited in the paper (source names in the PDF)", "cited, not opened", "", r"^40$|25-30|30-50%|35-40|20%"),
+    (r"corporate-transformation", r"quantum|Quantum|Phased timeline", NONE, "projection", "relabel", "", "", "speculative technology timeline: label as a scenario"),
+    (r"corporate-transformation", r"Basic Units \(\$1,000-1,200|base rate of 10-15% of gross revenue|Revenue allocation: |Community benefit reductions|Extractive behavior penalties|Effective range: 2%|Local Mutual Aid Circles", PAR, "specification", "keep", "the paper's proposed design", "", ""),
+    (r"corporate-transformation", r"A technology company with verified|A 10,000-member regional fund", ILL, "example", "keep", "the paper's worked examples", "", ""),
+    (r"corporate-transformation", r"60% housing cost reduction|\$70,000\+ average wealth|\$380,000", ILL, "simulation result", "correct", "PTH papers (no model published)", "", "B066/C24: say which scenario and that it is illustrative"),
+    (r"corporate-transformation", r"^4\.2 The 25-Hour Week|Traditional: \$25/hour|CCO-PTF: \$40/hour|Plus CCO basic units|Plus PTH savings|Total equivalent income|47% improvement", DER, "calculation", "keep", "Section 4.2 worked example", "recomputed: $1,475; 47%; 37.5% fewer hours", "inputs ($40/hour, $900 PTH savings) are assumptions"),
+    (r"corporate-transformation", r"Traditional corporate insurance extracts", NONE, "fact", "correct", "", "", "insurer profit share and denial rates uncited"),
+    (r"corporate-transformation\.pdf$", r"\$1,200 × 2\^|\$[\d,]+ - [\d,]+(?: \(1x-9x rates\))?$", DER, "calculation", "keep", "PDF octave table: $1,200 × 2^n × 1-9", "recomputed", "uses $1,200 as the octave base; the BLEI paper says BU are not scaled by octave"),
+    (r"corporate-transformation\.pdf$", r"Revenue: \$|Adjustments|Effective Tax Rate|Traditional effective rate|Reallocation of Savings|Speculation penalty|Average contribution: \$250|Total monthly|Claims \(65%\)|Traditional premiums for equivalent", ILL, "worked example", "keep", "the PDF's worked examples", "arithmetic follows from the example's inputs", ""),
+    (r"corporate-transformation\.pdf$", r"Current U\.S\. corporate tax: ~\$400B|Why \$250 Billion in Annual", NONE, "fact", "correct", "", "", "plausible but uncited (corporate income tax receipts were about $420B in FY2023)", r"400B|250 Billion"),
+    (r"corporate-transformation", r".", NONE, "finding", "relabel", "", "", "departmental, workweek and cost effects with no data, model or source: label as illustrative or remove"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.
