@@ -40,6 +40,7 @@ REVIEW = [
     (r"optimal-transfer-design", r"^4\.\d |^B\.\d |M′\(q\)|M\(q\) = min|κ ~ Uniform", PAR, "model definition", "keep", "the paper's formal model (Sections 4, B)", "", ""),
     (r"community-monetary-development", r"converges toward|long-run poverty rate at 11\.8%|converges toward 11\.8%", DER, "calculation", "keep", "Section 3.3: p* = λfall/(λescape + λfall) with the assumed rates", "recomputed: 0.118, 0.074; half-lives 3.72 and 2.20 years", "conditional on assumed transition rates"),
     (r"community-monetary-development", r"^3\.3 Convergence", DER, "derivation", "keep", "Section 3.3", "recomputed", "the transition rates are design assumptions"),
+    (r"dual-currency-inflation", r"budget of the mechanism-design paper|One rule caps conversion|offers for conversion", META, "section cross-reference", "keep", "the page itself (S46 follow-up)", "", "section numbers, not figures"),
     # ---- CCO conversion design (front page, summary, papers)
     (ALL, r"14\.56", DER, "calculation", "keep", "9 × 1.618, printed beside it", "recomputed: 14.56", "", r"14\.56"),
     (ALL, r"Octave 1 = 1,000|Octave \d = [\d,]+ BU|Cbase × 2", DER, "calculation", "keep", "capacity doubling formula printed beside it", "recomputed", "illustrative base of 1,000 BU"),

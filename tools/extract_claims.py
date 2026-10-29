@@ -96,6 +96,10 @@ def pdf_blocks(path):
             if len(lines) == 1 and PDF_HEAD.match(lines[0]) and not re.fullmatch(r"\d+", lines[0]):
                 sec = lines[0][:90]
                 continue
+            # pdftotext often runs an appendix heading into the paragraph below it; without
+            # this, an appendix after the references would be read as part of the reference list
+            if len(lines) > 1 and re.fullmatch(r"Appendix [A-Z]\b.{0,60}", lines[0]):
+                sec, lines = lines[0][:90], lines[1:]
             t = re.sub(r"-\n(?=[a-z])", "", "\n".join(lines))
             blocks.append((f"p.{pno} {sec}".strip(), re.sub(r"\s+", " ", t)))
     return blocks

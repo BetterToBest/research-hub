@@ -266,12 +266,14 @@
 
         <p><strong>Household Budget Constraints:</strong></p>
         <ul>
-            <li>Essential consumption: x<sub>E</sub> ≤ B<sub>t</sub> + P<sub>E</sub></li>
-            <li>Non-essential consumption: x<sub>N</sub> ≤ P<sub>N</sub> + P<sub>convert,i</sub></li>
-            <li>Total primary currency: P<sub>t</sub> = P<sub>E</sub> + P<sub>N</sub> + S<sub>t</sub></li>
+            <li>Basic units: B<sup>spent</sup><sub>i,t</sub> + B<sup>conv</sup><sub>i,t</sub> ≤ B<sub>t</sub> + B<sup>rec</sup><sub>i,t</sub> (each unit is spent once or converted once; the rest lapse)</li>
+            <li>Essential consumption: x<sub>E</sub> ≤ B<sup>spent</sup><sub>i,t</sub> + P<sub>E</sub></li>
+            <li>Non-essential consumption: x<sub>N</sub> ≤ P<sub>N</sub></li>
+            <li>Sources of primary currency: P<sub>t</sub> = w<sub>i</sub>h<sub>i,t</sub> + P<sub>convert,i</sub> + (1 + r)S<sub>t-1</sub> + Y<sub>i,t</sub></li>
+            <li>Uses of primary currency: P<sub>t</sub> = P<sub>E</sub> + P<sub>N</sub> + S<sub>t</sub></li>
         </ul>
 
-        <p>Where B<sub>t</sub> represents basic units received in period t, P<sub>E</sub> and P<sub>N</sub> are primary currency allocated to essential and non-essential consumption respectively, P<sub>convert,i</sub> represents converted currency from Creator Collective participation, and S<sub>t</sub> represents savings.</p>
+        <p>Where B<sub>t</sub> represents basic units received in period t, B<sup>rec</sup><sub>i,t</sub> basic units the household receives as payment, B<sup>spent</sup><sub>i,t</sub> and B<sup>conv</sup><sub>i,t</sub> the units it spends on essentials and converts, P<sub>E</sub> and P<sub>N</sub> are primary currency allocated to essential and non-essential consumption respectively, w<sub>i</sub>h<sub>i,t</sub> is earnings, P<sub>convert,i</sub> represents converted currency from Creator Collective participation (a source of primary currency like any other, spent on either kind of good or saved), S<sub>t</sub> represents savings carried forward at interest rate r, and Y<sub>i,t</sub> other primary income. This is the budget of the mechanism-design paper (Optimal Transfer Design, sec 4.1).</p>
 
         <p><strong>Basic Unit Dynamics:</strong></p>
         <ul>
@@ -284,8 +286,7 @@
         <p>Creator Collectives operate within industry sectors j ∈ {1, 2, ..., J}, each with distinct octave advancement structures determined by collective governance.</p>
 
         <p><strong>Octave Capacity Function:</strong></p>
-        <p>C<sub>i,j,t</sub> = B<sub>0</sub> × 2<sup>min(O<sub>i,j</sub>, Ō<sub>j</sub>)</sup> if O<sub>i,j</sub> ≤ Ō<sub>j</sub></p>
-        <p>C<sub>i,j,t</sub> = B<sub>0</sub> × 2<sup>Ō<sub>j</sub></sup> if O<sub>i,j</sub> > Ō<sub>j</sub></p>
+        <p>C<sub>i,j,t</sub> = B<sub>0</sub> × 2<sup>min(O<sub>i,j</sub>, Ō<sub>j</sub>)</sup></p>
 
         <p>Where:</p>
         <ul>
@@ -295,16 +296,18 @@
             <li>Ō<sub>j</sub> = Industry j's maximum octave level</li>
         </ul>
 
+        <p>One rule caps conversion: the industry maximum Ō<sub>j</sub> limits the octave level, and the capacity that level gives limits the units converted (sec 3.3). A person active in several industries has one capacity per period, the highest of their industry capacities: C<sub>i,t</sub> = max<sub>j</sub> C<sub>i,j,t</sub>. (Modelling assumption: the papers do not say whether capacities in different industries add up; this is the more cautious reading.)</p>
+
         <h3>3.3 Conversion Mechanism</h3>
         <p>The conversion function transforms basic units into primary currency through productive participation:</p>
 
-        <p>P<sub>convert,i</sub> = min(C<sub>i,j,t</sub>, B<sub>expired,i</sub>) × R<sub>i</sub> × Q<sub>i,t</sub></p>
+        <p>P<sub>convert,i</sub> = min(C<sub>i,t</sub>, B<sub>expired,i</sub>) × R<sub>i</sub> × Q<sub>i,t</sub></p>
 
         <p>Where:</p>
         <ul>
             <li>R<sub>i</sub> = Individual conversion rate (1.0x to 14x+ based on merit assessment)</li>
             <li>Q<sub>i,t</sub> = Quality multiplier based on contribution assessment (0.5 to 2.0)</li>
-            <li>B<sub>expired,i</sub> = Basic units available for conversion</li>
+            <li>B<sub>expired,i</sub> = B<sup>conv</sup><sub>i,t</sub>, the basic units i offers for conversion: unspent units of their own, or units received as payment (sec 3.1). Units received as payment were spent by someone else, so across all N households Σ<sub>i</sub> B<sub>expired,i</sub> ≤ N × B<sub>t</sub>: no unit is converted twice</li>
         </ul>
 
         <h3>3.4 Aggregate Money Supply Dynamics</h3>
@@ -312,7 +315,7 @@
 
         <p>M<sub>total,t</sub> = M<sub>P,t-1</sub> + ΣP<sub>convert,i,t</sub></p>
 
-        <p>The critical insight is that conversion is capacity-constrained by industry octave limits, creating an endogenous ceiling on monetary expansion independent of basic unit distribution.</p>
+        <p>Conversion is bounded twice: by capacity, and by the units issued, since no unit is converted twice. So ΣP<sub>convert,i,t</sub> ≤ (R × Q)<sub>max</sub> × min(Σ<sub>i</sub> C<sub>i,t</sub>, N × B<sub>t</sub>). Industry octave limits cap monetary expansion, but the ceiling also rises with the basic units distributed.</p>
     </section>
 
     <section>
