@@ -393,6 +393,24 @@ REVIEW = [
     (r"community-monetary-development\.pdf$", r"^p\.10 ", META, "goal number", "keep", "UN Sustainable Development Goal numbers", "", ""),
     (r"community-monetary-development\.pdf$", r"Projected Impact", NONE, "projection", "relabel", "", "", "no model"),
     (r"community-monetary-development", r".", NONE, "finding", "remove", "", "", "effects stated with no model, data or source"),
+
+    # ---- citizens-internet-portal (HTML and the 59-page PDF)
+    (r"citizens-internet-portal", r"Date: December|59-page", META, "date or length", "keep", "the page itself", "", ""),
+    (r"citizens-internet-portal", r"501\(c\)", META, "statute name", "keep", "US tax code section", "", "", r"^501$"),
+    (r"citizens-internet-portal", r"Kish-Gephart|Mayer \(2016\)|Project on Government Oversight", EXT, "fact", "keep", "cited in the paper", "cited, not opened", ""),
+    (r"citizens-internet-portal", r"political spending exploded|0\.01% of Americans contribute|spend \$3\.7 billion annually on federal lo|2,300\+ Local DAs", NONE, "fact", "correct", "", "", "plausible (OpenSecrets, Bonica et al.) but uncited: cite a source and year", r"\$|%|2,300"),
+    (r"citizens-internet-portal", r"Estimated minimum cost: \$50-250|Expected benefit from policy capture", NONE, "estimate", "relabel", "", "", "no derivation"),
+    (r"citizens-internet-portal", r"Traditional systems: P\(Detection\)|CIP-enhanced: 0\.75", DER, "calculation", "relabel", "Section 8.2", "recomputed: $7,500; $2.325M; 310x", "arithmetic holds; detection and conviction probabilities are assumptions: label as illustrative"),
+    (r"citizens-internet-portal", r"^6\.2 Network Value|CCO merit multipliers specifically reward|merit multipliers of 2-3x", PAR, "specification", "keep", "the paper's model and design", "", ""),
+    (r"citizens-internet-portal", r"^6\.1 |^6\.3 |Reducing corruption benefits|85-97% reduction", NONE, "projection", "remove", "", "", "effects on corruption with no model, data or source"),
+    (r"citizens-internet-portal", r"Success metric", PAR, "target", "keep", "the deployment plan's target", "", ""),
+    (r"citizens-internet-portal", r"^4\.\d |^5\.\d |^7\.\d ", PAR, "specification", "keep", "the paper's proposed structure and plan", "", "rules, thresholds and sizes the proposal sets"),
+    (r"citizens-internet-portal\.pdf$", r"Estonia's e-governance|Most platforms achieve low participation|Six corporations control 90%|congressmembers become lobbyists", NONE, "fact", "correct", "", "", "real-world figures with no citation (some dated, e.g. the 'six corporations' media claim): cite or remove"),
+    (r"citizens-internet-portal\.pdf$", r"Direct value: |Logarithmic value|Total value: |interaction-units", DER, "calculation", "keep", "PDF Section 6.5 network formula", "not recomputed", "k values are assumptions"),
+    (r"citizens-internet-portal\.pdf$", r"[-+]\d[\d,.]*%|reduction\)|Economic vulnerability:|Vote buying (?:success|susceptibility)", NONE, "projection", "remove", "", "", "effects on corruption with no model, data or source"),
+    (r"citizens-internet-portal\.pdf$", r"P\(Detection\)", DER, "calculation", "relabel", "PDF Section 8.2", "recomputed", "assumed probabilities: label as illustrative"),
+    (r"citizens-internet-portal\.pdf$", r"Estimated (?:minimum )?[Cc]ost|Corruption Benefit|Expected Benefit", NONE, "estimate", "relabel", "", "", "no derivation"),
+    (r"citizens-internet-portal\.pdf$", r".", PAR, "specification", "keep", "the PDF's proposed structure, safeguards and plan", "", "rules, sizes, thresholds and phase targets the proposal sets"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.

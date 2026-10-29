@@ -141,6 +141,8 @@ def figures(sent):
         b = m.end()
         if a == 0 and re.match(r"(?:\d+\.)+\d*[a-z]?(?:\s|$)|\d+\)\s", sent):
             continue                                   # a numbered heading or list item: "1.1 The ...", "3. "
+        if re.fullmatch(r"[1-9]\d?\.\d{1,2}", f) and re.match(r"\.\d+\s+[A-Z]", sent[b:]):
+            continue                                   # a dotted section number: "6.2.1 How ..."
         if (re.fullmatch(r"[1-9]\d?\.\d{1,2}[a-z]?", f) and re.search(r"(?:^|\s)$", sent[:a])
                 and (re.match(r"\s+\$?[A-Z1-9][A-Za-z-]*\s+[A-Z(—–-]", sent[b:])
                      or (re.search(r"(?:^|[.:;)\]]\s+)$", sent[:a])
