@@ -11,11 +11,11 @@ Every number the Hub states (percentages, money, multipliers, counts, durations,
 - **relabel**: keep the number but say what it is, usually an illustrative projection, a design parameter or a target;
 - **remove**: nothing supports it and nothing honest can be said in its place. Most removals are model results that no published run produced: S30 looks for the code that may have made them, and S25 replaces them with results from the preregistered studies.
 
-Each class was set by a rule in `tools/claims_review.py` written after reading the passage (the `rule` column names it), or by the reference list (`ref`), or, for a PDF figure that also appears on the paper's HTML page, by the class reviewed there (`html:R…`). Reviewed or reference-list classes: 6659 of 6659; keyword fallbacks: 0.
+Each class was set by a rule in `tools/claims_review.py` written after reading the passage (the `rule` column names it), or by the reference list (`ref`), or, for a PDF figure that also appears on the paper's HTML page, by the class reviewed there (`html:R…`). Reviewed or reference-list classes: 6661 of 6661; keyword fallbacks: 0.
 
 How to read the classes: a value the framework chooses is a **design parameter**; arithmetic that follows from figures printed beside it is **derived** (`checked` says whether it was recomputed); a real-world figure is an **external source** only when the text cites one (`checked` says whether it was opened); a figure stated as a fact or a result with no source, run or derivation is **no basis found** (`claimed` says what it is presented as). This is Claude's reading of rule 5, taking the cautious reading where a page is unclear.
 
-Figures: **6659** on 55 pages and PDFs. 1570 of them are in a PDF only (the PDF is an older or longer version of its HTML page; S24 rebuilds the PDFs).
+Figures: **6661** on 55 pages and PDFs. 1571 of them are in a PDF only (the PDF is an older or longer version of its HTML page; S24 rebuilds the PDFs).
 
 | Class | Figures | keep | correct | relabel | remove |
 |---|---|---|---|---|---|
@@ -24,9 +24,9 @@ Figures: **6659** on 55 pages and PDFs. 1570 of them are in a PDF only (the PDF 
 | external source | 217 | 165 | 52 | 0 | 0 |
 | design parameter | 1843 | 1704 | 57 | 82 | 0 |
 | illustrative projection | 429 | 302 | 78 | 49 | 0 |
-| corpus metadata | 695 | 677 | 3 | 0 | 15 |
+| corpus metadata | 697 | 679 | 3 | 0 | 15 |
 | no basis found | 2534 | 0 | 510 | 767 | 1257 |
-| **all** | 6659 | 3541 | 906 | 940 | 1272 |
+| **all** | 6661 | 3543 | 906 | 940 | 1272 |
 
 On the front page, research summary, paper index, wiki and parameters file (521 figures): derived 65, external source 11, design parameter 270, illustrative projection 28, corpus metadata 51, no basis found 96.
 
@@ -57,7 +57,7 @@ Earlier records merged: the session-5 claims records (S5-01, S5-02, S5-03, S5-04
 | data/optimal-parameters.json | 0 | 0 | 0 | 33 | 0 | 9 | 17 |
 | democratic-governance-pth.html | 0 | 0 | 2 | 10 | 0 | 15 | 44 |
 | drug-policy-reform.html | 0 | 0 | 32 | 9 | 0 | 30 | 263 |
-| dual-currency-inflation.html | 0 | 9 | 2 | 27 | 0 | 36 | 58 |
+| dual-currency-inflation.html | 0 | 9 | 2 | 27 | 0 | 37 | 58 |
 | economic-modeling-simulation.html | 0 | 3 | 16 | 50 | 4 | 31 | 282 |
 | index.html | 0 | 31 | 5 | 48 | 6 | 9 | 16 |
 | integrated-digital-governance.html | 0 | 0 | 1 | 20 | 0 | 24 | 46 |
@@ -75,7 +75,7 @@ Earlier records merged: the session-5 claims records (S5-01, S5-02, S5-03, S5-04
 | papers/pdfs/cultural-value-integration.pdf | 0 | 0 | 8 | 21 | 11 | 21 | 49 |
 | papers/pdfs/democratic-governance-pth.pdf | 0 | 0 | 3 | 5 | 0 | 11 | 38 |
 | papers/pdfs/drug-policy-reform.pdf | 0 | 0 | 12 | 1 | 0 | 14 | 117 |
-| papers/pdfs/dual-currency-inflation.pdf | 0 | 10 | 2 | 29 | 0 | 33 | 61 |
+| papers/pdfs/dual-currency-inflation.pdf | 0 | 10 | 2 | 29 | 0 | 34 | 61 |
 | papers/pdfs/economic-modeling-simulation.pdf | 0 | 3 | 10 | 53 | 7 | 27 | 248 |
 | papers/pdfs/integrated-digital-governance.pdf | 0 | 0 | 1 | 20 | 0 | 16 | 53 |
 | papers/pdfs/optimal-transfer-design.pdf | 8 | 1 | 4 | 25 | 0 | 31 | 1 |
