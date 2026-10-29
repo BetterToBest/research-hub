@@ -111,7 +111,7 @@ REVIEW = [
     (r"^papers/index\.html$", r"personal multiplier rates \(1x to 14x\+\)|CCO basic units enable 25-hour|PTF workers receive 50% conversion bonus|Phi rate \(1\.618x\)", PAR, "specification", "keep", "the framework's design", "", ""),
 
     # ---- the simulation claim that recurs across the Hub (S30)
-    (ALL, r"10,000\+? (?:Monte Carlo )?(?:simulation )?iterations|98% poverty elimination|validation_iterations|achieving 98% poverty", NONE, "simulation result", "remove", "", "", "no published run of 10,000 iterations or of a 98% figure; S30 checks pre-v5 engines and printed code", r"10,000|98%"),
+    (ALL, r"10,000\+? (?:Monte Carlo )?(?:simulation )?iterations|98% poverty elimination|validation_iterations|achieving 98% poverty", NONE, "simulation result", "remove", "", "", "S30: no run of 10,000 iterations exists; the printed code fails as printed and no engine before v4.20 gives a 98% reduction (research-update audits/early-figures.md)", r"10,000|98%"),
 
     # ---- wiki/index.html
     (r"^wiki/index\.html$", r"Key Terms Defined|FAQ Answers|Research Papers|22\+ research papers|17 hosted", META, "page counts", "keep", "the wiki and Hub themselves", "", "16+ here vs 17 elsewhere: make the counts agree"),
@@ -155,7 +155,7 @@ REVIEW = [
     (r"optimal-parameters\.json$", r"^simulation_metadata\.(version|last_updated)|^citation\.|^technical_specifications\.", META, "file metadata", "keep", "the file itself", "", "the Python package it names is not on the Hub"),
     (r"optimal-parameters\.json$", r"validation_confidence|confidence_level|confidence_interval|^validation_benchmarks\.|validation_iterations", NONE, "validation result", "remove", "", "", "no validation run, sensitivity test or cross-validation is published"),
     (r"optimal-parameters\.json$", r"^simulation_metadata\.description|^system_outcomes\.", NONE, "simulation result", "remove", "", "", "outcomes stored as parameters; no run produced them (S30)"),
-    (r"optimal-parameters\.json$", r"median_wealth_accumulation", NONE, "simulation result", "correct", "", "", "$82,000 sits among the inputs but the papers report it as a result with an interval (B093; S30 item 4)"),
+    (r"optimal-parameters\.json$", r"median_wealth_accumulation", NONE, "simulation result", "correct", "", "", "$82,000 sits among the inputs but the papers report it as a result with an interval (B093). S30: written before any code existed; engines v4.0-v4.2 reach $81-83K only while carrying the wage-unit error fixed in v4.3"),
     (r"optimal-parameters\.json$", r"participation_rate\.value|peer_review_accuracy\.value|governance_efficiency\.value|uptake_rate\.value|break_even_threshold|_size\.optimal", PAR, "optimal value", "relabel", "the file lists it as an 'optimal parameter'", "", "a behavioural or design assumption; no optimisation is published (B022), so call it an assumption"),
     (r"optimal-parameters\.json$", r".", PAR, "model input", "keep", "data/optimal-parameters.json", "", "design or environment parameter"),
 
@@ -197,7 +197,7 @@ REVIEW = [
     (r"basic-living-economic-index", r"limit non-essential market inflation to below 1\.5%", NONE, "analysis result", "relabel", "", "", "'preliminary analysis' is not published"),
     (r"basic-living-economic-index", r"12% conversion tax|Below approximately 60% CCO participation|PTF market share target of 18%", PAR, "specification", "keep", "the framework's design", "", ""),
     (r"basic-living-economic-index", r"seed 42, 20 years|20-year simulation horizon|flat 50% rather than", PAR, "engine setting", "keep", "Compassionism Simulation v4.4 (engine settings)", "", ""),
-    (r"basic-living-economic-index", r"N=5,000 large-N study|Gini at 0\.518|Baseline's own 0\.858", SIM, "simulation result", "correct", "Compassionism Simulation v4.4, Full Integration preset, N=5,000", "release cited; no command, seeds or results file", "rerun on the release with a recorded command (S40)"),
+    (r"basic-living-economic-index", r"N=5,000 large-N study|Gini at 0\.518|Baseline's own 0\.858", SIM, "simulation result", "correct", "Compassionism Simulation v4.4, Full Integration preset, N=5,000", "S30: reproduced on v4.4 (commit 0beb185), seeds 1-100: Gini 0.518 (0.479-0.545), no-program run 0.858", "cite the commit and command in the paper; rerun on the release (S40)"),
     (r"basic-living-economic-index", r"CFG\.TARGET_GINI|previously cited 0\.22", PAR, "target", "keep", "engine constant CFG.TARGET_GINI", "", ""),
     (r"basic-living-economic-index", r"Nordic post-redistribution Gini range", NONE, "fact", "correct", "", "", "plausible but uncited: cite a source and name the measure"),
     (r"basic-living-economic-index", r"^9\.1 On|^9\. Discussion|^8\. Simulation Parameter|^Appendix A", PAR, "specification", "keep", BLEI, "", ""),
@@ -216,9 +216,9 @@ REVIEW = [
     # ---- economic-modeling-simulation (HTML and PDF). Nearly every result here is stated as the output of
     # "10,000+ simulation iterations" or an agent-based model; no run, code release or results file exists (S30).
     (r"economic-modeling-simulation", r"^Economic Modeling and Simulation Analysi.*Date:|Date: August", META, "date", "keep", "the page itself", "", ""),
-    (r"economic-modeling-simulation", r"^4\.1 Parameter Uncertainty|~ (?:Beta|Normal|Uniform)", PAR, "simulation input", "keep", "the paper's parameter distributions (Section 4.1)", "", "inputs of a simulation that is not published; S30 runs the printed code"),
-    (r"economic-modeling-simulation", r"^A\.\d|random\.uniform|n_iterations|def |self\.", PAR, "simulation input", "keep", "the paper's printed code (Appendix A)", "", "S30 runs this code as printed"),
-    (r"economic-modeling-simulation", r"'[a-z_]+': ?\d|= \{", PAR, "simulation input", "keep", "the paper's printed code", "", "S30 runs this code as printed", r"^\d"),
+    (r"economic-modeling-simulation", r"^4\.1 Parameter Uncertainty|~ (?:Beta|Normal|Uniform)", PAR, "simulation input", "keep", "the paper's parameter distributions (Section 4.1)", "", "inputs of a simulation that is not published; S30 ran the printed code: it fails as printed (audits/early/printed-code.md in research-update)"),
+    (r"economic-modeling-simulation", r"^A\.\d|random\.uniform|n_iterations|def |self\.", PAR, "simulation input", "keep", "the paper's printed code (Appendix A)", "", "S30 ran this code as printed: the Monte Carlo and agent classes fail; the runnable blocks return constants or other numbers"),
+    (r"economic-modeling-simulation", r"'[a-z_]+': ?\d|= \{", PAR, "simulation input", "keep", "the paper's printed code", "", "S30 ran this code as printed: the Monte Carlo and agent classes fail; the runnable blocks return constants or other numbers", r"^\d"),
     (r"economic-modeling-simulation", r"^B\.2 Behavioral Parameter|Blundell|Aiyagari|Duflo|\(2013\) \| 0\.08", EXT, "calibration", "keep", "sources named in Appendix B.2", "cited, not opened", "whether the values match the sources is unchecked; the 95% intervals are not from those sources"),
     (r"economic-modeling-simulation", r"below 60% median income", EXT, "definition", "keep", "OECD/EU relative-poverty line convention", "standard definition", ""),
     (r"economic-modeling-simulation", r"below \$2/day PPP", EXT, "definition", "correct", "World Bank extreme-poverty line", "standard definition", "the line has been $2.15/day (2017 PPP) since 2022, $3.00 (2021 PPP) since 2025"),
@@ -233,8 +233,8 @@ REVIEW = [
     (r"economic-modeling-simulation", r"\| Current System \| 11%", NONE, "fact", "correct", "", "", "11% matches the 2023 official poverty rate (11.1%) but is uncited; $1.2T has no source", r"11%"),
     (r"economic-modeling-simulation", r"\| (?:US Current Trajectory|Nordic Model|Singapore Model|China Model|Expanded EITC|Job Guarantee|Current System)", NONE, "fact or projection", "remove", "", "", "comparison figures with no source; the projected columns have no model"),
     (r"economic-modeling-simulation", r"\(r=0\.\d+\)", NONE, "simulation result", "remove", "", "", "correlations with no data or run"),
-    (r"economic-modeling-simulation", r"\$37,000|\$82,000|85% poverty reduction|98% poverty reduction", NONE, "simulation result", "remove", "", "", "S30 headline: median wealth and poverty reduction with intervals, from no published run; replace with release results (S48, S25)"),
-    (r"economic-modeling-simulation", r".", NONE, "simulation result", "remove", "", "", "stated as the output of simulations or agent-based models that are not published; S30 looks for the code; S25 replaces them with release results"),
+    (r"economic-modeling-simulation", r"\$37,000|\$82,000|85% poverty reduction|98% poverty reduction", NONE, "simulation result", "remove", "", "", "median wealth and poverty reduction with intervals; S30 found no code that produced them (only $82,000 reappears, in engines v4.0-v4.2 with an error since fixed); replace with release results (S48, S25)"),
+    (r"economic-modeling-simulation", r".", NONE, "simulation result", "remove", "", "", "stated as the output of simulations or agent-based models; S30 found no code that produced them (research-update audits/early-figures.md); S25 replaces them with release results"),
 
     # ---- drug-policy-reform (HTML and PDF)
     (r"drug-policy-reform", r"Date: August", META, "date", "keep", "the page itself", "", ""),
@@ -341,7 +341,7 @@ REVIEW = [
     (r"cco-ptf-integrated-framework", r"A merchant offering a \$12 lunch", ILL, "example", "keep", "the page presents it as an example", "", ""),
     (r"cco-ptf-integrated-framework", r"^4\.1 Monte Carlo Simulation Framework", PAR, "simulation input", "keep", "the paper's stated simulation inputs", "", "inputs of a simulation that is not published"),
     (r"cco-ptf-integrated-framework", r"^4\.3 Stress Testing", ILL, "scenario definition", "keep", "the paper's stress scenarios", "", ""),
-    (r"cco-ptf-integrated-framework", r".", NONE, "simulation result", "remove", "", "", "stated as Monte Carlo results; no run is published (S30: 85%, 98%, $37,000, $82,000); S25 replaces them with release results"),
+    (r"cco-ptf-integrated-framework", r".", NONE, "simulation result", "remove", "", "", "stated as Monte Carlo results; S30 found no code that produced 85%, 98%, $37,000 or $82,000 (the last only with an error since fixed); S25 replaces them with release results"),
 
     # ---- dual-currency-inflation (HTML and PDF)
     (r"dual-currency-inflation", r"Date: August", META, "date", "keep", "the page itself", "", ""),
