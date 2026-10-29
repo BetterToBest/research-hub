@@ -141,8 +141,10 @@ def figures(sent):
         b = m.end()
         if a == 0 and re.match(r"(?:\d+\.)+\d*[a-z]?(?:\s|$)|\d+\)\s", sent):
             continue                                   # a numbered heading or list item: "1.1 The ...", "3. "
-        if (re.fullmatch(r"\d{1,2}\.\d{1,2}[a-z]?", f) and re.search(r"(?:^|[.:;)\]]\s+)$", sent[:a])
-                and re.match(r"\s+[A-Z][A-Za-z-]+(?:\s+(?:[A-Z(—–-]|of|and|in|for|the|to|vs\.)|:)", sent[b:])):
+        if (re.fullmatch(r"[1-9]\d?\.\d{1,2}[a-z]?", f) and re.search(r"(?:^|\s)$", sent[:a])
+                and (re.match(r"\s+\$?[A-Z1-9][A-Za-z-]*\s+[A-Z(—–-]", sent[b:])
+                     or (re.search(r"(?:^|[.:;)\]]\s+)$", sent[:a])
+                         and re.match(r"\s+[A-Z][A-Za-z-]+(?:\s+(?:of|and|in|for|the|to|vs\.)|:)", sent[b:])))):
             continue                                   # a section number run into the text: "... ends. 6.4 Inflationary Pressure"
         if re.search(r"\[[\d,\s–-]*$", sent[:a]) and re.match(r"[\d,\s–-]*\]", sent[a:]):
             continue                                   # a citation marker: [18], [28,29]
