@@ -9,6 +9,6 @@ This repository is the Research Hub: the HTML pages and papers of the Better To 
 - **Publish every result**, including nulls. Synergy is claimed only where the interaction's 95% interval excludes zero.
 - **Keep BetterToBest/bettertobest.github.io in step:** `ai-index.json`, `research-index.json` and `llms.txt` change whenever pages or papers are added, renamed or removed.
 - **`/v1/` is frozen once S2 lands:** the archive of Hub v1 is bannered, hidden from search engines, and not edited again.
-- Rebuild a paper's PDF whenever its HTML changes (the PDFs lagged the HTML before).
+- Rebuild a paper's PDF whenever its HTML changes (the PDFs lagged the HTML before): `python3 tools/build_pdfs.py <paper>` (`--all` for every paper).
 - No model names in commits, pull requests or any pushed file.
 - Attribution text: see BetterToBest/compassionism-simulation `CLAUDE.md`.
