@@ -94,6 +94,69 @@ REVIEW = [
     (r"^research-summary\.html$", r"\$85,000 in interest savings", NONE, "finding", "remove", "", "", "[S5-06] not reproducible: with the table's payments the avalanche saves about $900 (C26, B005)", r"85,000"),
     (r"^research-summary\.html$", r"sustainability demonstrated at just 30–40", PAR, "finding", "relabel", "PTH financing paper 6.1 break-even table (assumed)", "", "[S5-07] an assumed break-even table, not a demonstration (C26)", r"30–40"),
     (r"^research-summary\.html$", r"25-hour workweeks with CCO supplementation maintain productivity while reducing overhead 35–50%", NONE, "finding", "relabel", "", "", "'key findings' with no run or source behind them; 25 hours is a design target"),
+
+    # ---- papers/index.html blurbs (same claims as the research summary; B-ids from S29)
+    (r"^papers/index\.html$", r"Symmetrical Geometric Construction ¦", PAR, "emblem geometry", "keep", "site emblem", "", "geometry of the site's emblem, not a research figure"),
+    (r"^papers/index\.html$", r"\$1\.5 trillion in prohibition costs", NONE, "finding", "remove", "", "", "matches none of the drug-policy paper's totals; $847B is one line of one scenario (C23, B003)"),
+    (r"^papers/index\.html$", r"15-20% market penetration within a decade", NONE, "simulation result", "correct", "", "", "contradicted by the real-estate paper's own rollout table (C24)", r"15-20"),
+    (r"^papers/index\.html$", r"\$70,000 average wealth accumulation", ILL, "simulation result", "correct", "us-real-estate-transformation 4.3 (20-year figure; no model published)", "", "say it is a 20-year illustrative figure (C24, B066)", r"70,000"),
+    (r"^papers/index\.html$", r"poverty reduction below 5% within 15 years", NONE, "finding", "remove", "", "", "B053: with the paper's p* = 11.8% the rate never reaches 5% (recompute.py)"),
+    (r"^papers/index\.html$", r"ROI of \$1,847", NONE, "finding", "remove", "", "", "an NPV, not an ROI; the paper's formula gives $2,046 (C25, B097)"),
+    (r"^papers/index\.html$", r"\$85,000 in interest savings", NONE, "finding", "remove", "", "", "with the table's payments the avalanche saves about $900 (C26, B005)"),
+    (r"^papers/index\.html$", r"sustainability with just 30-40 pay-in", PAR, "finding", "relabel", "PTH financing paper 6.1 break-even table (assumed)", "", "an assumed break-even table, not a demonstration (C26, B116)"),
+    (r"^papers/index\.html$", r"pilot programs \(\$50B\) to revolutionary transformation \(\$500B\)", PAR, "scenario sizes", "keep", "PTH government-integration paper's scenarios", "", ""),
+    (r"^papers/index\.html$", r"demonstrating 50% market penetration achievable within 5-19", NONE, "simulation result", "relabel", "", "", "'demonstrating': no run is published; an illustrative projection"),
+    (r"^papers/index\.html$", r"25-hour workweeks with CCO supplementation maintain productivity", NONE, "finding", "relabel", "", "", "'key findings' with no run or source; 25 hours is a design target"),
+    (r"^papers/index\.html$", r"personal multiplier rates \(1x to 14x\+\)|CCO basic units enable 25-hour|PTF workers receive 50% conversion bonus|Phi rate \(1\.618x\)", PAR, "specification", "keep", "the framework's design", "", ""),
+
+    # ---- the simulation claim that recurs across the Hub (S30)
+    (ALL, r"10,000\+? (?:Monte Carlo )?(?:simulation )?iterations|98% poverty elimination|validation_iterations|achieving 98% poverty", NONE, "simulation result", "remove", "", "", "no published run of 10,000 iterations or of a 98% figure; S30 checks pre-v5 engines and printed code", r"10,000|98%"),
+
+    # ---- wiki/index.html
+    (r"^wiki/index\.html$", r"Key Terms Defined|FAQ Answers|Research Papers|22\+ research papers|17 hosted", META, "page counts", "keep", "the wiki and Hub themselves", "", "16+ here vs 17 elsewhere: make the counts agree"),
+    (r"^wiki/index\.html$", r"same 500 simulated adults|500 paired runs", PAR, "simulation design", "keep", "Compassionism Simulation (engine settings)", "", "describes the engine's run size, not a result"),
+    (r"^wiki/index\.html$", r"PTF venues reduce Creative Collective overhead by 40–60%", PAR, "design target", "relabel", "framework design target (see front page)", "", "stated as an effect; the front page calls it a design target"),
+
+    # ---- wiki/faq.html and wiki/glossary.html
+    (r"^wiki/(faq|glossary)\.html$", r"expire after 35 days|35-day expiry|expiring after 35 days|expire 35 days", PAR, "specification", "keep", "the framework's design (BU expiry)", "", ""),
+    (r"^wiki/(faq|glossary)\.html$", r"marginal tax rates (?:above|exceeding) 100%", NONE, "fact", "correct", "", "", "true for some benefit cliffs but uncited: cite a source (e.g. CBO or Urban Institute studies of effective marginal tax rates)"),
+    (r"^wiki/faq\.html$", r"Personal Multiplier Rate|How Assessment Works|elevated conversion rates of 2×–4×|may qualify for a 3× conversion|Diverse Contribution Recognition|personal multiplier rates \(1× to 14×", PAR, "specification", "keep", "the framework's design (conversion tiers)", "", ""),
+    (r"^wiki/faq\.html$", r"Example: A PTF restaurant", ILL, "example", "keep", "the page presents it as an example", "", ""),
+    (r"^wiki/faq\.html$", r"^Phase \d: .*months\) ¦|Year 1–2:|Year 2–3:|Year 3–5:", PAR, "plan", "keep", "the framework's implementation plan", "", "planned durations, not forecasts"),
+    (r"^wiki/faq\.html$", r"Assumed preconditions include", ILL, "scenario assumption", "keep", "the page calls it a best-case scenario", "", ""),
+    (r"^wiki/glossary\.html$", r"Maria receives|Lisa has|When she converts 1,000|Marcus, at Octave 3|Northside Creative Collective|Greendale Commons|Kim's groundbreaking|community educator who consistently teaches|In a traditional means-tested system, Sarah", ILL, "example", "keep", "the glossary's worked examples", "", "fictional examples"),
+    (r"^wiki/glossary\.html$", r"Portland Metro SZH coordinates 15", ILL, "example", "relabel", "the glossary's worked examples", "", "reads as a real Portland body; mark it as hypothetical"),
+    (r"^wiki/glossary\.html$", r"Octave 1 allows 1,000|multipliers ranging from 1× to 14×|7×–9×\+ \(exquisite|baseline 1× \(productive\)|would yield 1×|minimum of 50 members|50-member minimum|appeal within 30 days", PAR, "specification", "keep", "the framework's design", "", ""),
+
+    # ---- implementation roadmaps (wiki) and the international guide
+    (r"^wiki/(implementation-roadmap|international-adaptation-guide)\.html$", r"Success Metrics ¦", PAR, "target", "keep", "a success metric (target) set by the plan", "", "targets, not forecasts; no run or source supports reaching them"),
+    (r"^wiki/(implementation-roadmap|international-adaptation-guide)\.html$", r"Funding: \$|Staff: \d", NONE, "cost estimate", "relabel", "", "", "cost and staffing estimates with no derivation: label as rough planning assumptions"),
+    (r"^wiki/(implementation-roadmap|international-adaptation-guide)\.html$", r"Months? \d|Key Milestones|Primary Objectives ¦|Communities: |Participants: |Select 3-5 villages|Phase \d", PAR, "plan", "keep", "the implementation plan", "", "planned scale and timing, not forecasts"),
+    (r"^wiki/international-adaptation-guide\.html$", r"Parameter Adjustments ¦|Emergency Parameters ¦", PAR, "specification", "keep", "the framework's design, adapted by context", "", ""),
+
+    # ---- referendum.html (proposed legal text)
+    (r"^referendum\.html$", r"political spending increasing by over 360%", NONE, "fact", "correct", "", "", "uncited: cite a source (e.g. OpenSecrets) and the decade meant, or remove"),
+    (r"^referendum\.html$", r".", PAR, "proposed rule", "keep", "the referendum's proposed text", "", "thresholds, deadlines and sizes the proposal sets"),
+
+    # ---- 404, satire, notes, downloads README
+    (r"^404\.html$", r"404", META, "error code", "keep", "the page itself", "", ""),
+    (r"^404\.html$", r"14 open-access research papers", META, "count of papers", "correct", "the Hub's paper list", "", "stale: the Hub lists 17+"),
+    (r"^research-summary\.md$", r"14 peer-reviewable papers", META, "count of papers", "correct", "the Hub's paper list", "", "stale Markdown copy: the HTML says 17+"),
+    (r"^comedy\.(md|html)$", r".", META, "satire", "keep", "the satire page", "", "jokes, not research claims"),
+    (r"^new-frame-and-lens\.(md|html)$", r"LEFT: 1-3|RIGHT: 1-3|HEAD: 1-4|5 categories × 3 topics|UPDATED", META, "page format", "keep", "the page itself", "", ""),
+    (r"^assets/downloads/README\.md$", r"Python:|RAM:|OS:", META, "software requirements", "remove", "assets/downloads/README.md", "", "describes a download package that is not in the repository"),
+    (r"^assets/downloads/README\.md$", r".", NONE, "simulation package", "remove", "", "", "the zip files and '10,000 Monte Carlo results' it lists are not in the repository"),
+
+    # ---- cco-ptf-simulation/README.md (describes the current engine)
+    (r"^cco-ptf-simulation/README\.md$", r"500 simulated adults|500 paired runs", PAR, "simulation design", "keep", "Compassionism Simulation (engine settings)", "", "run size, not a result"),
+
+    # ---- data/optimal-parameters.json (S30 item 4 checks each value against code)
+    (r"optimal-parameters\.json$", r"^simulation_metadata\.(version|last_updated)|^citation\.|^technical_specifications\.", META, "file metadata", "keep", "the file itself", "", "the Python package it names is not on the Hub"),
+    (r"optimal-parameters\.json$", r"validation_confidence|confidence_level|confidence_interval|^validation_benchmarks\.|validation_iterations", NONE, "validation result", "remove", "", "", "no validation run, sensitivity test or cross-validation is published"),
+    (r"optimal-parameters\.json$", r"^simulation_metadata\.description|^system_outcomes\.", NONE, "simulation result", "remove", "", "", "outcomes stored as parameters; no run produced them (S30)"),
+    (r"optimal-parameters\.json$", r"median_wealth_accumulation", NONE, "simulation result", "correct", "", "", "$82,000 sits among the inputs but the papers report it as a result with an interval (B093; S30 item 4)"),
+    (r"optimal-parameters\.json$", r"participation_rate\.value|peer_review_accuracy\.value|governance_efficiency\.value|uptake_rate\.value|break_even_threshold|_size\.optimal", PAR, "optimal value", "relabel", "the file lists it as an 'optimal parameter'", "", "a behavioural or design assumption; no optimisation is published (B022), so call it an assumption"),
+    (r"optimal-parameters\.json$", r".", PAR, "model input", "keep", "data/optimal-parameters.json", "", "design or environment parameter"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.

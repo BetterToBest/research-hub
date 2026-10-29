@@ -5,7 +5,8 @@ Usage: python3 tools/extract_claims.py [hub root] [--out figures.csv]   (prints 
 
 Reads every HTML page, every Markdown page, every PDF in papers/pdfs (pdftotext)
 and data/optimal-parameters.json. The frozen /v1/ archive, repository files
-(CLAUDE.md, CONTRIBUTING.md, CITATION.cff) and the search-console stub are skipped.
+(CLAUDE.md, CONTRIBUTING.md, CITATION.cff), this step's own summary and the search-console
+stub are skipped.
 
 `context` is the sentence, or for a long sentence (PDF text often runs table
 cells together) a window of 120 characters each side of the figure.
@@ -24,7 +25,7 @@ import csv, hashlib, html, json, pathlib, re, subprocess, sys
 from html.parser import HTMLParser
 
 SKIP_DIRS = {".git", "v1", "tools"}
-SKIP_FILES = {"CLAUDE.md", "CONTRIBUTING.md", "googlea418ef0496eb2fdc.html"}
+SKIP_FILES = {"CLAUDE.md", "CONTRIBUTING.md", "googlea418ef0496eb2fdc.html", "claims-summary.md"}
 
 NUM = r"\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?|\.\d+"
 SCALE = r"(?:\s?(?:trillion|billion|million|thousand|bn|[TBMK])\b)"
