@@ -320,19 +320,24 @@
         <h2>4. Formal Model</h2>
         
         <h3>4.1 Individual Utility Maximization</h3>
-        <p>Individual i chooses effort level eᵢ and consumption (cᵢᵖ, cᵢᵇ) to maximize:</p>
+        <p>Each month adult i receives an allocation of B₀ basic units (BU). BU buy essentials at Public Trust Foundation (PTF) venues and participating merchants, and they expire if unused. A person can also receive BU as payment for goods or services they provide; call these Eᵢ ≥ 0 (zero for someone who sells nothing). A recognised contribution lets the person convert up to Capᵢ units into primary currency at their merit rate Mᵢ.</p>
 
-        <p><strong>U(cᵢᵖ, cᵢᵇ, lᵢ) = α log(cᵢᵖ) + β log(cᵢᵇ) + γ log(lᵢ)</strong></p>
+        <p><em>Modelling assumption (Claude's reading of the design):</em> the Hub describes both channels, converting one's own units "through productive activities" (glossary) and businesses converting units received as payment (front page). The model allows both, counts every unit once, and allows conversion only with a recognised contribution (qᵢ &gt; 0).</p>
+
+        <p>Individual i chooses paid work eᵢ, time on an assessed contribution tᵢ, units spent bᵢˢ and units converted bᵢᶜ to maximize:</p>
+
+        <p><strong>U(cᵢᵖ, cᵢᵇ, lᵢ) = α log(cᵢᵖ) + β log(cᵢᵇ) + γ log(lᵢ)</strong>, with α, β, γ &gt; 0 (γ is the weight on leisure)</p>
 
         <p>Subject to:</p>
         <ul>
-            <li>Primary currency budget: cᵢᵖ = wᵢeᵢ + Mᵢ(qᵢ) × min(Bᵢ, Capᵢ)</li>
-            <li>Basic unit budget: cᵢᵇ ≤ B₀ + Bᵢ - min(Bᵢ, Capᵢ)</li>
-            <li>Leisure constraint: lᵢ = L̄ - eᵢ - tᵢ</li>
-            <li>Capacity constraint: Capᵢ = B₀ × 2^(octaveᵢ)</li>
+            <li>Basic unit budget, each unit counted once: bᵢˢ + bᵢᶜ ≤ B₀ + Eᵢ</li>
+            <li>Conversion cap: 0 ≤ bᵢᶜ ≤ Capᵢ = C(Oᵢ), where capacity doubles with each octave, C(O + 1) = 2 C(O); and bᵢᶜ = 0 unless qᵢ &gt; 0</li>
+            <li>Essentials: cᵢᵇ = bᵢˢ (BU buy essentials only)</li>
+            <li>Primary currency: cᵢᵖ = wᵢeᵢ + Mᵢ(qᵢ) × bᵢᶜ</li>
+            <li>Time: lᵢ = L̄ − eᵢ − tᵢ, with quality qᵢ = q(tᵢ) increasing in tᵢ</li>
         </ul>
 
-        <p>Where Mᵢ(qᵢ) represents the merit multiplier based on quality assessment qᵢ.</p>
+        <p>Where Mᵢ(qᵢ) is the merit multiplier from the quality assessment qᵢ (Section 4.2). An earlier version of this model added the full allocation B₀ to the units converted, so the same units were counted twice. Here a unit is either spent on essentials or converted.</p>
 
         <h3>4.2 Quality Assessment Mechanism</h3>
         <p>Quality assessment follows a peer review process with incentive alignment:</p>
@@ -342,8 +347,9 @@
         <p><strong>Consensus Formation:</strong> Median assessment with outlier detection and reputation weighting.</p>
 
         <p><strong>Merit Multiplier Function:</strong></p>
-        <p>M(q) = max(1, min(9, 1 + q/10)) for standard contributions</p>
-        <p>M(q) = 1.618 × quality_factor for productive beauty contributions</p>
+        <p>M(q) = min(9, max(1, 1 + q/10)) for a recognised contribution (q ≥ 0), so 1 ≤ M(q) ≤ 9; M rises with q only for 0 &lt; q &lt; 80</p>
+        <p>M<sub>φ</sub>(q) = φ × M(q), with φ = 1.618 (the golden ratio), when the contribution is also recognised as productive beauty; the highest rate is 9φ ≈ 14.56</p>
+        <p>(The earlier text wrote 1.618 × quality_factor, a term it never defined. Here the Phi-rate multiplies the base rate, as the Hub's front page describes it.)</p>
 
         <h3>4.3 Community Assessment Equilibrium</h3>
         <p>Assessment equilibrium requires that reviewers' optimal effort levels produce reliable quality measures. The system achieves this through:</p>
@@ -356,16 +362,35 @@
     </section>
 
     <section>
+        <h3>4.4 First-Order Conditions</h3>
+        <p>With an interior choice of work and contribution time, and writing the marginal value of one more basic unit as β/cᵢᵇ, the optimum satisfies:</p>
+        <ul>
+            <li><strong>Spend or convert.</strong> A converted unit buys Mᵢ units of primary consumption. While the cap does not bind (0 &lt; bᵢᶜ &lt; Capᵢ): β/cᵢᵇ = α Mᵢ/cᵢᵖ. If β/cᵢᵇ &gt; α Mᵢ/cᵢᵖ even at bᵢᶜ = 0, the person converts nothing. If the cap binds (bᵢᶜ = Capᵢ), then β/cᵢᵇ ≤ α Mᵢ/cᵢᵖ: the person would convert more if allowed.</li>
+            <li><strong>Paid work.</strong> α wᵢ/cᵢᵖ = γ/lᵢ.</li>
+            <li><strong>Contribution time.</strong> α M′(qᵢ) q′(tᵢ) bᵢᶜ/cᵢᵖ = γ/lᵢ, where M′(q) = 1/10 for 0 &lt; q &lt; 80 and 0 otherwise. Extra quality earns nothing for someone who converts nothing, or once M has reached its ceiling of 9.</li>
+        </ul>
+        <p>These replace the conditions in the earlier PDF version, which inverted one ratio, dropped a sign and used a probability p(quality | h) it never defined.</p>
+    </section>
+
+    <section>
         <h2>5. Welfare Analysis</h2>
         
-        <h3>5.1 Pareto Efficiency Conditions</h3>
-        <p>The CCO-PTF system achieves Pareto efficiency improvements through several mechanisms:</p>
+        <h3>5.1 When No One Is Worse Off: A Conditional Proposition</h3>
+        <p>The design aims to raise welfare through three channels:</p>
 
-        <p><strong>Elimination of Deadweight Loss:</strong> By removing benefit phase-outs, the system eliminates the deadweight loss associated with high effective marginal tax rates.</p>
+        <p><strong>No benefit phase-out:</strong> Basic units are not reduced as earnings rise, so the high effective marginal tax rates of phase-outs, and their deadweight loss, disappear for anyone now on one.</p>
 
-        <p><strong>Positive Work Incentives:</strong> Merit-based conversion creates increasing returns to quality effort, encouraging both participation and excellence.</p>
+        <p><strong>Work incentives:</strong> Merit-based conversion pays more for higher-quality contributions, up to each person's cap (Section 4.4).</p>
 
-        <p><strong>Community Value Creation:</strong> PTF integration channels individual efforts into collective wealth accumulation, creating positive externalities.</p>
+        <p><strong>Community value:</strong> PTF integration channels individual effort into collectively held assets.</p>
+
+        <p><strong>Proposition 1.</strong> Let Tᵢ(y) be the value, in essentials, of the means-tested transfers person i receives today at earnings y. Suppose that (a) for every person and every earnings level, the allocation buys at least as much as today's transfers: v × B₀ ≥ Tᵢ(y), where v is the market value of the essentials one basic unit buys; (b) conversion is optional; and (c) the program is financed without lowering anyone's after-tax income from work or assets, or the prices they pay. Then every adult can still choose the work and consumption they chose before, and so is at least as well off. Anyone now on a phase-out faces a lower marginal tax rate and can do strictly better.</p>
+
+        <p><strong>Proof.</strong> Under (a) and (c), each person's previous bundle stays affordable: essentials are covered at least as well, and work income, its taxes and prices are unchanged. Under (b), the new options only add to the choice set. A person who could choose their old bundle and chooses differently is, by revealed preference, at least as well off. □</p>
+
+        <p><strong>What the proposition does not show.</strong> Condition (c) does not hold for any financing the Hub specifies. The conversion tax, the funding source and any rise in prices reach people who receive less than they pay. So the proposition does not establish a Pareto improvement over today's system; it states when one would hold. An earlier version presented a Pareto improvement as proved, from a premise (everyone's consumption at least as high as under traditional transfers) that it assumed rather than showed.</p>
+
+        <p><strong>What the simulation finds.</strong> The companion simulation's current release is Compassionism Simulation v5.6.0 (commit 5bf5bcc; 500 paired runs of 500 adults over 20 years, against today's safety net of SNAP, the EITC and the Child Tax Credit; command: <code>node harness.js testbed 500 release ref,adv,st --v54 --snab --slope</code>). In it, every group the model reports has more real resources than with today's policy alone: participants, non-participants, Public Trust Housing residents, and the lowest and highest earners. Fewer adults fall below the cost of living (19.5% against 49.3% in the Reference environment). But every group is worse off on wealth: more adults end the 20 years with under $25,000 of net wealth (44.4% against 32.7% in Reference), in all three environments (Reference, Adverse, Stress). The release reports outcomes by group, not the share of individual adults who are better off on every measure; the preregistered study program will report that share.</p>
 
         <h3>5.2 Distributional Effects</h3>
         <p>The system's distributional impact operates through multiple channels:</p>
@@ -402,7 +427,7 @@
 
         <p><strong>W_{i,t+1} = W_{i,t}(1 + g) + AcreEquity_{i,t} + Dividends_{i,t} - Consumption_{i,t}</strong></p>
 
-        <p>Expected wealth after 20 years: E[W_{i,20}] = $68,500 (95% CI: [$52,000, $85,000])</p>
+        <p>An earlier version gave expected wealth after 20 years as $68,500 with a 95% interval. No run that produced it can be found, so it is withdrawn. Wealth results with intervals come from the simulation's releases (Section 5.1).</p>
     </section>
 
     <section>
@@ -451,7 +476,7 @@
 
     <section>
         <h2>9. Conclusion</h2>
-        <p>The CCO-PTF framework resolves fundamental tensions in welfare design through innovative dual-tier incentive mechanisms. By separating basic security from merit recognition, the system maintains work incentives while ensuring universal welfare. Mathematical analysis confirms Pareto improvements over existing systems, with Monte Carlo simulations demonstrating robustness across parameter ranges.</p>
+        <p>The CCO-PTF framework resolves fundamental tensions in welfare design through innovative dual-tier incentive mechanisms. By separating basic security from merit recognition, the system maintains work incentives while ensuring universal welfare. The formal model states when no one would be worse off than under today's transfers (Proposition 1). The current simulation release finds every group better off in real resources but worse off in wealth, so a Pareto improvement over existing systems is not established.</p>
 
         <p>Key innovations include:</p>
         <ol>
@@ -538,14 +563,14 @@
         <h2>Appendix A: Sensitivity Analysis Details</h2>
         
         <h3>A.1 Parameter Distributions</h3>
-        <p>All simulations use the following parameter distributions:</p>
+        <p>Parameter distributions proposed for simulation (no run with these distributions has been published):</p>
         <ul>
             <li>Basic unit amount: B₀ ~ Uniform[800, 1500]</li>
             <li>Wage rate: w ~ LogNormal(μ = 3.5, σ = 0.5)</li>
             <li>Octave advancement probability: p(O_{t+1} = O_t + 1) ~ Beta(2, 5)</li>
             <li>Quality assessment accuracy: ρ ~ Beta(8, 2)</li>
             <li>Community participation rate: π ~ Beta(3, 2)</li>
-            <li>Risk aversion: γ ~ Uniform[0.5, 2]</li>
+            <li>Risk aversion: κ ~ Uniform[0.5, 2] (κ, not γ, which is the leisure weight in Section 4.1)</li>
             <li>Time preference: δ ~ Beta(9, 1)</li>
         </ul>
 
@@ -561,21 +586,19 @@
     <section>
         <h2>Appendix B: Proofs of Auxiliary Results</h2>
         
-        <h3>B.1 Lemma 1: Monotonicity of Conversion Function</h3>
-        <p>The conversion function P_{convert}(O, R) is strictly increasing in both arguments.</p>
+        <h3>B.1 Lemma 1: Monotonicity of Conversion Income</h3>
+        <p><strong>Lemma 1.</strong> Conversion income P = M(q) × bᶜ, with 0 ≤ bᶜ ≤ min(B₀ + E, C(O)), is weakly increasing in quality q and in octave O. It is strictly increasing in q only where 0 &lt; q &lt; 80 and bᶜ &gt; 0. It is strictly increasing in O only where the cap binds (bᶜ = C(O) &lt; B₀ + E).</p>
 
-        <p><strong>Proof:</strong> Taking partial derivatives:</p>
-        <ul>
-            <li>∂P_{convert}/∂O = B₀ × ln(2) × 2^O × R &gt; 0</li>
-            <li>∂P_{convert}/∂R = B₀ × 2^O &gt; 0</li>
-        </ul>
+        <p><strong>Proof:</strong> ∂P/∂q = M′(q) × bᶜ, with M′(q) = 1/10 for 0 &lt; q &lt; 80 and 0 otherwise. This is non-negative, and positive only where both conditions hold. Raising O doubles the cap C(O). That raises the largest feasible bᶜ only when the cap, and not the units held, is the binding limit. At M = 1, at M = 9, at the cap on units held, and for a person who converts nothing, P does not rise. □</p>
 
-        <p>Both partials are strictly positive for all feasible values. □</p>
+        <p>(The earlier statement used P = B₀ × 2^O × R, which is not this model's conversion income, and claimed strict monotonicity, which fails where the cap binds.)</p>
 
-        <h3>B.2 Lemma 2: Existence of Unique Equilibrium</h3>
-        <p>Under standard regularity conditions, a unique equilibrium exists.</p>
+        <h3>B.2 Lemma 2: A Unique Clearing Price in One Market (Partial Equilibrium)</h3>
+        <p><strong>Lemma 2.</strong> Take one market priced in primary currency, for example housing in Section 6.1. Let it have demand D(p) and supply S(p) for p ≥ 0, with every other price and income held fixed. If D is continuous and strictly decreasing, S is continuous and non-decreasing, D(0) &gt; S(0), and D(p̄) &lt; S(p̄) for some finite p̄, then the market has exactly one clearing price p*.</p>
 
-        <p><strong>Proof:</strong> The excess demand function Z(p) = D(p) - S(p) is continuous, strictly decreasing, with Z(0) &gt; 0 and Z(∞) &lt; 0. By the intermediate value theorem, there exists unique p* such that Z(p*) = 0. □</p>
+        <p><strong>Proof:</strong> Z(p) = D(p) − S(p) is continuous and strictly decreasing, with Z(0) &gt; 0 and Z(p̄) &lt; 0. By the intermediate value theorem it has a zero in (0, p̄), and because Z is strictly decreasing the zero is unique. □</p>
+
+        <p>This is a partial-equilibrium result for one market. It does not show that the basic-unit, primary-currency and labour markets clear together; that would need a general-equilibrium argument this paper does not make.</p>
     </section>
 
     <footer>

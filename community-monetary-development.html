@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Paper: Community-Based Monetary Innovation for Development | Better To Best Research Hub</title>
-    <meta name="description" content="Development economics framework achieving poverty reduction below 5% within 15 years. Superior ROI of $1,847 per beneficiary versus traditional aid approaches in emerging economies.">
+    <meta name="description" content="Development economics framework using community-based monetary innovation; under its assumed transition rates, poverty converges toward 11.8% (7.4% with PTF integration). Superior ROI of $1,847 per beneficiary versus traditional aid approaches in emerging economies.">
     <meta name="keywords" content="Development Economics, Monetary Innovation, Endogenous Growth, Creative Currency Octaves, Poverty Reduction, Community Development, Emerging Economies">
     <meta name="author" content="Duke Johnson, Claude (Anthropic)">
     <meta name="robots" content="index, follow, max-image-preview:large">
@@ -15,7 +15,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://bettertobest.github.io/research-hub/community-monetary-development.html">
     <meta property="og:title" content="Community-Based Monetary Innovation for Development">
-    <meta property="og:description" content="Revolutionary development framework achieving poverty reduction below 5% within 15 years through community-based monetary innovation.">
+    <meta property="og:description" content="Development framework using community-based monetary innovation; under its assumed transition rates, poverty converges toward 11.8% (7.4% with PTF integration).">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -204,7 +204,7 @@
 
     <section>
         <h2>Abstract</h2>
-        <p>This paper examines Creative Currency Octaves (CCO) as a development finance mechanism for emerging economies facing persistent poverty, informal sector dominance, and limited access to capital markets. Unlike traditional development interventions that rely on external funding and top-down implementation, CCO creates endogenous growth through community-based monetary innovation that rewards local knowledge production and cultural development. We develop a model of CCO implementation in developing economy contexts with specific functional forms for social capital externalities, analyze its interaction with existing informal institutions using phase transition dynamics, and compare outcomes with conventional development approaches including microfinance, conditional cash transfers, and foreign aid. Our analysis suggests CCO could accelerate human capital formation by 35%, formalize informal economic activity while preserving flexibility, and create sustainable development pathways while preserving cultural autonomy and local governance structures. Convergence analysis indicates poverty reduction to below 5% within 15 years under optimal implementation. The framework offers particular promise for post-conflict societies, rural communities, and urban informal settlements where traditional development approaches have shown limited effectiveness.</p>
+        <p>This paper examines Creative Currency Octaves (CCO) as a development finance mechanism for emerging economies facing persistent poverty, informal sector dominance, and limited access to capital markets. Unlike traditional development interventions that rely on external funding and top-down implementation, CCO creates endogenous growth through community-based monetary innovation that rewards local knowledge production and cultural development. We develop a model of CCO implementation in developing economy contexts with specific functional forms for social capital externalities, analyze its interaction with existing informal institutions using phase transition dynamics, and compare outcomes with conventional development approaches including microfinance, conditional cash transfers, and foreign aid. Our analysis suggests CCO could accelerate human capital formation by 35%, formalize informal economic activity while preserving flexibility, and create sustainable development pathways while preserving cultural autonomy and local governance structures. Under assumed escape and fall rates, a convergence analysis puts the long-run poverty rate at 11.8%, or 7.4% with PTF integration. The framework offers particular promise for post-conflict societies, rural communities, and urban informal settlements where traditional development approaches have shown limited effectiveness.</p>
         
         <p><strong>Keywords:</strong> Development Economics, Monetary Innovation, Endogenous Growth, Informal Economy, Community Development, Post-Conflict Recovery, Poverty Traps</p>
         
@@ -282,26 +282,28 @@
         </ul>
 
         <h3>3.3 Convergence Analysis</h3>
-        <p><strong>Theorem:</strong> Under CCO, poverty rate converges to steady state p* < 0.05 within finite time.</p>
-        
-        <p><strong>Proof:</strong> Define poverty rate p<sub>t</sub> = Pr(W<sub>i,t</sub> < W*).</p>
-        
+        <p><strong>Proposition (steady state).</strong> If the yearly chances of escaping poverty (λ<sub>escape</sub>) and of falling into it (λ<sub>fall</sub>) are constant, with 0 &lt; λ<sub>escape</sub> + λ<sub>fall</sub> &lt; 1, the poverty rate converges, monotonically and geometrically, to p* = λ<sub>fall</sub>/(λ<sub>escape</sub> + λ<sub>fall</sub>), from any starting rate p<sub>0</sub>.</p>
+
+        <p><strong>Proof:</strong> Define poverty rate p<sub>t</sub> = Pr(W<sub>i,t</sub> &lt; W*).</p>
+
         <p>Transition equation:</p>
         <p>p<sub>t+1</sub> = p<sub>t</sub> × (1 - λ<sub>escape</sub>) + (1 - p<sub>t</sub>) × λ<sub>fall</sub></p>
-        
+
         <p>Where:</p>
         <ul>
             <li>λ<sub>escape</sub> = Pr(escape poverty | CCO participation)</li>
             <li>λ<sub>fall</sub> = Pr(fall into poverty | shocks)</li>
         </ul>
-        
-        <p>With CCO: λ<sub>escape</sub> = 0.15, λ<sub>fall</sub> = 0.02</p>
-        
-        <p>Steady state: p* = λ<sub>fall</sub>/(λ<sub>escape</sub> + λ<sub>fall</sub>) = 0.02/(0.15 + 0.02) = 0.118</p>
-        
-        <p>With PTF integration: λ<sub>escape</sub> = 0.25, yielding p* = 0.074</p>
-        
-        <p>Convergence time: T<sub>0.05</sub> = ln(0.05/p<sub>0</sub>)/ln(1 - λ<sub>escape</sub> - λ<sub>fall</sub>) ≈ 15 years □</p>
+
+        <p>Subtracting the fixed point gives p<sub>t+1</sub> − p* = (1 − λ<sub>escape</sub> − λ<sub>fall</sub>)(p<sub>t</sub> − p*), so p<sub>t</sub> − p* = (1 − λ<sub>escape</sub> − λ<sub>fall</sub>)<sup>t</sup>(p<sub>0</sub> − p*), which tends to zero without changing sign. □</p>
+
+        <p><strong>With the paper's assumed rates</strong> (design assumptions, not estimates):</p>
+        <ul>
+            <li>CCO: λ<sub>escape</sub> = 0.15, λ<sub>fall</sub> = 0.02, so p* = 0.02/0.17 = 0.118 (11.8%). The gap to p* halves every ln 0.5 / ln 0.83 = 3.72 years.</li>
+            <li>With PTF integration: λ<sub>escape</sub> = 0.25, so p* = 0.02/0.27 = 0.074 (7.4%), halving every 2.20 years.</li>
+        </ul>
+
+        <p>A poverty rate that starts above p* stays above it, so neither case reaches 5%. The time to come within one percentage point of p* is T = ln(0.01/|p<sub>0</sub> − p*|) / ln(1 − λ<sub>escape</sub> − λ<sub>fall</sub>). An earlier version stated that poverty converges to below 5% within 15 years; its own steady states (11.8% and 7.4%) contradict that, and its 15-year formula only works if poverty starts at 82%.</p>
     </section>
 
     <section>
@@ -614,7 +616,7 @@
         <h2>9. Conclusion</h2>
         <p>Creative Currency Octaves offers a transformative approach to development economics that addresses persistent challenges in traditional interventions. By creating endogenous growth mechanisms through community-based monetary innovation integrated with Public Trust Foundations, CCO enables sustainable development pathways that preserve cultural autonomy while generating measurable welfare improvements.</p>
 
-        <p>The framework's key innovations—dual-currency architecture with 2^n octave progression, merit-based conversion mechanisms (1x-9x with 1.618x phi enhancement), community governance structures, and PTF integration—address fundamental problems in development economics: dependency creation, institutional crowding-out, and failure to harness local knowledge and capacity. Mathematical analysis demonstrates convergence to low poverty steady states within 15 years, with particular advantages in post-conflict, rural, and informal urban contexts.</p>
+        <p>The framework's key innovations—dual-currency architecture with 2^n octave progression, merit-based conversion mechanisms (1x-9x with 1.618x phi enhancement), community governance structures, and PTF integration—address fundamental problems in development economics: dependency creation, institutional crowding-out, and failure to harness local knowledge and capacity. Under the transition rates it assumes, the model converges toward poverty rates of 11.8% (7.4% with PTF integration), with the gap to the steady state halving every 2-4 years; the paper argues for particular advantages in post-conflict, rural, and informal urban contexts.</p>
 
         <p>Comparative analysis reveals superior cost-effectiveness relative to microfinance, conditional cash transfers, and traditional aid, with NPV of $1,847 per beneficiary versus -$382 to $236 for alternatives. The framework's compatibility with mobile technology, existing social institutions, and international development architecture enables practical implementation at scale.</p>
 
