@@ -9,14 +9,14 @@ Figures: **6556** on 55 pages and PDFs.
 | Class | Figures | keep | correct | relabel | remove |
 |---|---|---|---|---|---|
 | simulation | 6 | 0 | 6 | 0 | 0 |
-| derived | 1054 | 879 | 156 | 19 | 0 |
-| external source | 192 | 157 | 35 | 0 | 0 |
-| design parameter | 1445 | 1290 | 57 | 98 | 0 |
-| illustrative projection | 292 | 250 | 41 | 1 | 0 |
-| corpus metadata | 647 | 629 | 3 | 0 | 15 |
-| no basis found | 2920 | 0 | 227 | 960 | 1733 |
+| derived | 1035 | 844 | 172 | 19 | 0 |
+| external source | 193 | 156 | 37 | 0 | 0 |
+| design parameter | 1429 | 1281 | 50 | 98 | 0 |
+| illustrative projection | 310 | 257 | 41 | 12 | 0 |
+| corpus metadata | 645 | 627 | 3 | 0 | 15 |
+| no basis found | 2938 | 0 | 244 | 941 | 1753 |
 
-Classed by a reviewed rule or the reference list: 5136; by a generic rule or a paper default: 1420.
+Classed by a reviewed rule or the reference list: 5336; by a generic rule or a paper default: 1220.
 
 ## By page
 
@@ -29,7 +29,7 @@ Classed by a reviewed rule or the reference list: 5136; by a generic rule or a p
 | cco-ptf-simulation/README.md | 0 | 0 | 0 | 4 | 0 | 0 | 0 |
 | citizens-internet-portal.html | 0 | 11 | 4 | 36 | 0 | 12 | 27 |
 | comedy.md | 0 | 0 | 0 | 0 | 0 | 34 | 0 |
-| community-monetary-development.html | 0 | 34 | 2 | 10 | 0 | 10 | 36 |
+| community-monetary-development.html | 0 | 37 | 2 | 6 | 19 | 11 | 17 |
 | corporate-transformation.html | 0 | 15 | 7 | 19 | 10 | 17 | 40 |
 | cultural-value-integration.html | 0 | 1 | 4 | 9 | 0 | 8 | 22 |
 | data/optimal-parameters.json | 0 | 0 | 0 | 33 | 0 | 9 | 17 |
@@ -46,9 +46,9 @@ Classed by a reviewed rule or the reference list: 5136; by a generic rule or a p
 | papers/corporate-transformation.html | 0 | 0 | 4 | 0 | 0 | 14 | 15 |
 | papers/index.html | 0 | 0 | 0 | 12 | 1 | 2 | 12 |
 | papers/pdfs/basic-living-economic-index.pdf | 3 | 391 | 17 | 58 | 10 | 30 | 35 |
-| papers/pdfs/cco-ptf-integrated-framework.pdf | 0 | 8 | 5 | 16 | 1 | 14 | 101 |
+| papers/pdfs/cco-ptf-integrated-framework.pdf | 0 | 8 | 6 | 16 | 1 | 14 | 100 |
 | papers/pdfs/citizens-internet-portal.pdf | 0 | 15 | 4 | 110 | 2 | 19 | 107 |
-| papers/pdfs/community-monetary-development.pdf | 0 | 42 | 1 | 30 | 1 | 28 | 44 |
+| papers/pdfs/community-monetary-development.pdf | 0 | 20 | 1 | 18 | 0 | 25 | 82 |
 | papers/pdfs/corporate-transformation.pdf | 0 | 25 | 7 | 5 | 32 | 16 | 302 |
 | papers/pdfs/cultural-value-integration.pdf | 0 | 4 | 12 | 10 | 3 | 22 | 59 |
 | papers/pdfs/democratic-governance-pth.pdf | 0 | 0 | 3 | 10 | 0 | 13 | 30 |
@@ -229,42 +229,23 @@ Classed by a reviewed rule or the reference list: 5136; by a generic rule or a p
 | 61489fc229 | citizens-internet-portal.html | 50,000-100,000 | fact | remove |  | …g ($50M federal, $25M state, $25M philanthropic); deploy blockchain infrastructure; launch pilot CIP in 3-5 cities with 50,000-100,000 participants.… |
 | f0c814ea88 | citizens-internet-portal.html | 150+ | fact | remove |  | Phase 4 — Maturation (Years 16-25): Continuous optimization; international adoption and coordination; full CCO-PTF-SZH integration; 150+ million U.S. participants. |
 | 9e048b6142 | citizens-internet-portal.html | 85-97% | projection | relabel |  | The framework demonstrates 85-97% reduction in corruption across measured metrics. |
-| 1d6ed74fcc | community-monetary-development.html | 31 | fact | remove |  | Date: August 31, 2025 |
-| 7e433955c6 | community-monetary-development.html | 35% | projection | relabel |  | Our analysis suggests CCO could accelerate human capital formation by 35%, formalize informal economic activity while preserving flexibility, and create sustainable development pathways while preserving cultural autonomy |
-| d300169603 | community-monetary-development.html | 5% | projection | relabel | B053 | Convergence analysis indicates poverty reduction to below 5% within 15 years under optimal implementation. |
-| e35354377c | community-monetary-development.html | 15 | projection | relabel | B053 | Convergence analysis indicates poverty reduction to below 5% within 15 years under optimal implementation. |
-| ffa195414e | community-monetary-development.html | < 0.05 | fact | remove | B001 | Theorem: Under CCO, poverty rate converges to steady state p* < 0.05 within finite time. |
-| e4e64fbbd7 | community-monetary-development.html | 20-30% | fact | remove |  | / Coverage / 20-30% / 40-50% / Variable / 95%+ |
-| 9d4de42575 | community-monetary-development.html | 40-50% | fact | remove |  | / Coverage / 20-30% / 40-50% / Variable / 95%+ |
-| c3494dfe1f | community-monetary-development.html | 95% | fact | remove |  | / Coverage / 20-30% / 40-50% / Variable / 95%+ |
-| 36ad92ef33 | community-monetary-development.html | 6-12 | fact | remove |  | / Time to impact / 6-12 months / 3-6 months / Years / 3-6 months |
-| 65d4a4db6e | community-monetary-development.html | 3-6 | fact | remove |  | / Time to impact / 6-12 months / 3-6 months / Years / 3-6 months |
-| e28ebde335 | community-monetary-development.html | 5-10% | projection | relabel |  | / Poverty reduction / 5-10% / 10-15% / 0-10% / 25-35% |
-| 992fc82b95 | community-monetary-development.html | 10-15% | projection | relabel |  | / Poverty reduction / 5-10% / 10-15% / 0-10% / 25-35% |
-| c6901e7208 | community-monetary-development.html | 0-10% | projection | relabel |  | / Poverty reduction / 5-10% / 10-15% / 0-10% / 25-35% |
-| d0c357112a | community-monetary-development.html | 25-35% | projection | relabel |  | / Poverty reduction / 5-10% / 10-15% / 0-10% / 25-35% |
-| e1f659dc11 | community-monetary-development.html | 10 | fact | remove |  | Net Present Value per Beneficiary (10-year horizon, 5% discount): |
-| 97cf0e804c | community-monetary-development.html | 5% | fact | remove |  | Net Present Value per Beneficiary (10-year horizon, 5% discount): |
-| 8fda941fb6 | community-monetary-development.html | 82% | fact | remove |  | 82% poverty rate |
-| 55f9902209 | community-monetary-development.html | 5 | projection | relabel |  | Projected Outcomes (5 years): |
-| cec583ea53 | community-monetary-development.html | 45% | projection | relabel |  | Poverty reduction to 45% |
-| 6c7a109c94 | community-monetary-development.html | $12M | fact | remove |  | $12M in converted currency |
-| 1ca977d6ae | community-monetary-development.html | 25 | fact | remove |  | 25 PTF facilities operational |
-| 1ff430265c | community-monetary-development.html | 68% | fact | remove |  | Baseline poverty: 68% |
-| 7b5bbca850 | community-monetary-development.html | 30% | fact | remove |  | Year 3: 30% participating, poverty at 52% |
-| 409380c2aa | community-monetary-development.html | 52% | fact | remove |  | Year 3: 30% participating, poverty at 52% |
-| 3de87ac7c5 | community-monetary-development.html | 55% | fact | remove |  | Year 5: 55% participating, poverty at 38% |
-| f045a4a813 | community-monetary-development.html | 38% | fact | remove |  | Year 5: 55% participating, poverty at 38% |
-| 09999b4a5e | community-monetary-development.html | 10 | fact | remove |  | Year 10: Self-sustaining system, poverty below 20% |
-| e9e2836ef6 | community-monetary-development.html | 20% | fact | remove |  | Year 10: Self-sustaining system, poverty below 20% |
-| ecddcbfd78 | community-monetary-development.html | 40% | fact | remove |  | Formalization without regulation: 40% of informal activities |
-| 7ec3103b74 | community-monetary-development.html | 60% | projection | relabel |  | Income stability improvement: 60% |
-| ee9dcfa944 | community-monetary-development.html | 80% | projection | relabel |  | Healthcare access: 80% improvement |
-| cabf0be9e9 | community-monetary-development.html | 45% | projection | relabel |  | Education participation: 45% increase |
-| 343ba184fa | community-monetary-development.html | 4-5 | fact | remove |  | Break-even: Year 4-5 |
+| 7e433955c6 | community-monetary-development.html | 35% | finding | remove |  | Our analysis suggests CCO could accelerate human capital formation by 35%, formalize informal economic activity while preserving flexibility, and create sustainable development pathways while preserving cultural autonomy |
+| e4e64fbbd7 | community-monetary-development.html | 20-30% | fact or estimate | correct |  | / Coverage / 20-30% / 40-50% / Variable / 95%+ |
+| 9d4de42575 | community-monetary-development.html | 40-50% | fact or estimate | correct |  | / Coverage / 20-30% / 40-50% / Variable / 95%+ |
+| c3494dfe1f | community-monetary-development.html | 95% | fact or estimate | correct |  | / Coverage / 20-30% / 40-50% / Variable / 95%+ |
+| 0332d3909b | community-monetary-development.html | $150-300 | fact or estimate | correct |  | / Cost per beneficiary / $150-300 / $500-1000 / $1000+ / $200-400 |
+| 1775c156e5 | community-monetary-development.html | $500-1000 | fact or estimate | correct |  | / Cost per beneficiary / $150-300 / $500-1000 / $1000+ / $200-400 |
+| a03644147d | community-monetary-development.html | $1000+ | fact or estimate | correct |  | / Cost per beneficiary / $150-300 / $500-1000 / $1000+ / $200-400 |
+| bb9ffcebb4 | community-monetary-development.html | $200-400 | fact or estimate | correct |  | / Cost per beneficiary / $150-300 / $500-1000 / $1000+ / $200-400 |
+| 36ad92ef33 | community-monetary-development.html | 6-12 | fact or estimate | correct |  | / Time to impact / 6-12 months / 3-6 months / Years / 3-6 months |
+| 65d4a4db6e | community-monetary-development.html | 3-6 | fact or estimate | correct |  | / Time to impact / 6-12 months / 3-6 months / Years / 3-6 months |
+| e28ebde335 | community-monetary-development.html | 5-10% | fact or estimate | correct |  | / Poverty reduction / 5-10% / 10-15% / 0-10% / 25-35% |
+| 992fc82b95 | community-monetary-development.html | 10-15% | fact or estimate | correct |  | / Poverty reduction / 5-10% / 10-15% / 0-10% / 25-35% |
+| c6901e7208 | community-monetary-development.html | 0-10% | fact or estimate | correct |  | / Poverty reduction / 5-10% / 10-15% / 0-10% / 25-35% |
+| d0c357112a | community-monetary-development.html | 25-35% | fact or estimate | correct |  | / Poverty reduction / 5-10% / 10-15% / 0-10% / 25-35% |
+| 343ba184fa | community-monetary-development.html | 4-5 | projection | relabel |  | Break-even: Year 4-5 |
 | aef732e5cb | community-monetary-development.html | 250% | projection | relabel | B026 | ROI: 250% over 10 years |
 | eced07f2cc | community-monetary-development.html | 10 | projection | relabel | B026 | ROI: 250% over 10 years |
-| 0eb4280bca | community-monetary-development.html | 15 | projection | relabel |  | Mathematical analysis demonstrates convergence to low poverty steady states within 15 years, with particular advantages in post-conflict, rural, and informal urban contexts. |
 | f4430f86bd | corporate-transformation.html | 40+ | finding | relabel |  | We analyze the shift from 40+ hour weeks to 20-25 hour schedules, from shareholder to stakeholder models, and from a failed dual mandate to human flourishing orientation. |
 | f6b1ed164e | corporate-transformation.html | 25 | finding | relabel |  | Key findings: 25-hour workweeks with CCO supplementation maintain productivity while reducing overhead 35-50%. |
 | 31f7d4c2d3 | corporate-transformation.html | 35-50% | finding | relabel |  | Key findings: 25-hour workweeks with CCO supplementation maintain productivity while reducing overhead 35-50%. |
@@ -1180,7 +1161,6 @@ Classed by a reviewed rule or the reference list: 5136; by a generic rule or a p
 | aa1df61b38 | papers/pdfs/cco-ptf-integrated-framework.pdf | 9.4 percentage points | simulation result | remove |  | The Earned Income Tax Credit demonstrates particular relevance, achieving 7.3 percentage point increases in employment per $1,000 increase while reducing poverty by 9.4 percentage points. |
 | c32db92f83 | papers/pdfs/cco-ptf-integrated-framework.pdf | 106 | simulation result | remove |  | Recent research by Nature Communications (2024) presents stock-flow consistent models with 106 accounting equations for analyzing complementary currency scaling mechanisms. |
 | 6a7c54bcbe | papers/pdfs/cco-ptf-integrated-framework.pdf | 2012-2021 | simulation result | remove | B011 | Bristol Pound's operations (2012-2021) facilitated £5 billion in spending with over 2,000 individual participants and hundreds of businesses. |
-| 1e8022c70c | papers/pdfs/cco-ptf-integrated-framework.pdf | £5 billion | simulation result | remove | B011 | Bristol Pound's operations (2012-2021) facilitated £5 billion in spending with over 2,000 individual participants and hundreds of businesses. |
 | 1550eb06cc | papers/pdfs/cco-ptf-integrated-framework.pdf | 33.3% | simulation result | remove |  | Time banking systems show 33.3% positive mental health impacts in moderate/high-quality studies, indicating social capital benefits beyond economic impacts. |
 | 6c58a6b020 | papers/pdfs/cco-ptf-integrated-framework.pdf | $60 billion | simulation result | remove |  | Alaska's Permanent Fund, with $60 billion in assets serving 5.2 million people, achieves 20% poverty reduction according to Berman and Reamy studies. |
 | 43bfc312a6 | papers/pdfs/cco-ptf-integrated-framework.pdf | 5.2 million | simulation result | remove |  | Alaska's Permanent Fund, with $60 billion in assets serving 5.2 million people, achieves 20% poverty reduction according to Berman and Reamy studies. |
@@ -1377,50 +1357,88 @@ Classed by a reviewed rule or the reference list: 5136; by a generic rule or a p
 | 9994133c7c | papers/pdfs/citizens-internet-portal.pdf | $20-40M | projection | relabel |  | Transaction Fees: ●​ Minimal fees on CIP proposal submissions ($0.01-$1.00 per signature) ●​ Estimated $20-40M annually at scale 3. |
 | 14cf97a651 | papers/pdfs/citizens-internet-portal.pdf | $10-50M | projection | relabel |  | Civil Asset Forfeiture: ●​ Funds seized from successful corruption prosecutions ●​ Estimated $10-50M annually ●​ Transparent accounting prevents abuse 4. |
 | 009d120c10 | papers/pdfs/citizens-internet-portal.pdf | 15+ | fact | remove |  | In mature systems (Year 15+), phase-out might be considered if: ●​ ●​ ●​ ●​ ●​ |
-| f89e3e8b6c | papers/pdfs/community-monetary-development.pdf | 35% | projection | relabel |  | Our analysis suggests CCO could accelerate human capital formation by 35%, formalize informal economic activity while preserving flexibility, and create sustainable development pathways while preserving cultural autonomy |
-| 39153cb593 | papers/pdfs/community-monetary-development.pdf | 5% | projection | relabel | B053 | Convergence analysis indicates poverty reduction to below 5% within 15 years under optimal implementation. |
-| 6de41b4080 | papers/pdfs/community-monetary-development.pdf | 15 | projection | relabel | B053 | Convergence analysis indicates poverty reduction to below 5% within 15 years under optimal implementation. |
-| 837695fc3c | papers/pdfs/community-monetary-development.pdf | 20-100% | fact | remove |  | …Key limitations include: High interest rates (20-100% annually) Rigid repayment schedules Limited insurance provision Minimal business development support CCO addresses thes… |
-| 6f58730303 | papers/pdfs/community-monetary-development.pdf | < 0.05 | fact | remove | B001 | 3.3 Convergence Analysis Theorem: Under CCO, poverty rate converges to steady state p* < 0.05 within finite time. |
-| 2f06070b6a | papers/pdfs/community-monetary-development.pdf | 20-30% | fact | remove |  | 20-30% |
-| 0c228c46a7 | papers/pdfs/community-monetary-development.pdf | 40-50% | fact | remove |  | 40-50% |
-| 26b026fcf6 | papers/pdfs/community-monetary-development.pdf | 95% | fact | remove |  | 95%+ |
-| 48685f7825 | papers/pdfs/community-monetary-development.pdf | $150-300 | fact | remove |  | $150-300 |
-| a4677767c4 | papers/pdfs/community-monetary-development.pdf | $500-1000 | fact | remove |  | $500-1000 |
-| c4a28376a9 | papers/pdfs/community-monetary-development.pdf | $1000+ | fact | remove |  | $1000+ |
-| 00fc9233fb | papers/pdfs/community-monetary-development.pdf | $200-400 | fact | remove |  | $200-400 |
-| caa28091d6 | papers/pdfs/community-monetary-development.pdf | 6-12 | fact | remove |  | 6-12 months |
-| fa55556cae | papers/pdfs/community-monetary-development.pdf | 3-6 | fact | remove |  | 3-6 months |
-| 7b7f94dadb | papers/pdfs/community-monetary-development.pdf | 5-10% | fact | remove |  | 5-10% |
-| 3b2ba678e5 | papers/pdfs/community-monetary-development.pdf | 10-15% | fact | remove |  | 10-15% |
-| c764d60a35 | papers/pdfs/community-monetary-development.pdf | 0-10% | fact | remove |  | 0-10% |
-| f47d2b38f2 | papers/pdfs/community-monetary-development.pdf | 25-35% | fact | remove |  | 25-35% |
-| 0208e806ae | papers/pdfs/community-monetary-development.pdf | 38% | fact | remove |  | …unit distribution, collective formation Year 3: 30% participating, poverty at 52% Year 5: 55% participating, poverty at 38% Year 10: Self-sustaining system, poverty below 20%… |
-| 8d78863174 | papers/pdfs/community-monetary-development.pdf | 10 | fact | remove |  | …ribution, collective formation Year 3: 30% participating, poverty at 52% Year 5: 55% participating, poverty at 38% Year 10: Self-sustaining system, poverty below 20%… |
-| f8395d9b96 | papers/pdfs/community-monetary-development.pdf | 20% | fact | remove |  | … participating, poverty at 52% Year 5: 55% participating, poverty at 38% Year 10: Self-sustaining system, poverty below 20%… |
+| f89e3e8b6c | papers/pdfs/community-monetary-development.pdf | 35% | finding | remove |  | Our analysis suggests CCO could accelerate human capital formation by 35%, formalize informal economic activity while preserving flexibility, and create sustainable development pathways while preserving cultural autonomy |
+| f44cee67cc | papers/pdfs/community-monetary-development.pdf | 70-90% | fact | correct |  | 2.2 Informal Economy and Formalization Informal economic activity comprises 70-90% of employment in many developing economies (La Porta & Shleifer, 2014; Ulyssea, 2018). |
+| 837695fc3c | papers/pdfs/community-monetary-development.pdf | 20-100% | fact | correct |  | …Key limitations include: High interest rates (20-100% annually) Rigid repayment schedules Limited insurance provision Minimal business development support CCO addresses thes… |
+| 61a5867ff2 | papers/pdfs/community-monetary-development.pdf | 3.2 | finding | remove |  | …3.2 Mathematical Framework with Functional Forms 3.2.1 Production Functions Formal Sector: y_i^f = A_f × (h_i^f)^α × (k_i^f)^β Informal Sector: y_i^inf = A_inf × (h_i^inf)^… |
+| 07be796c89 | papers/pdfs/community-monetary-development.pdf | 0.6 | finding | remove |  | …rmal Sector: y_i^f = A_f × (h_i^f)^α × (k_i^f)^β Informal Sector: y_i^inf = A_inf × (h_i^inf)^α × (k_i^inf)^β Where α = 0.6, β = 0.3 based on empirical estimates Creative Production with Social Capital Externalities: y_ |
+| 14fe8a0354 | papers/pdfs/community-monetary-development.pdf | 0.3 | finding | remove |  | …or: y_i^f = A_f × (h_i^f)^α × (k_i^f)^β Informal Sector: y_i^inf = A_inf × (h_i^inf)^α × (k_i^inf)^β Where α = 0.6, β = 0.3 based on empirical estimates Creative Production with Social Capital Externalities: y_i^cco = A |
+| 48985aa712 | papers/pdfs/community-monetary-development.pdf | $500 | finding | remove |  | …lth evolution: W_{i,t+1} = W_{i,t}(1 + r) + Y_{i,t} - C_{i,t} + T_{i,t} Where: r = r(W_{i,t}) with poverty trap at W* = $500 Y_{i,t} = y_i^f + y_i^inf + y_i^cco C_{i,t} = c_min + c(W_{i,t}) with subsistence minimum T_{i |
+| e6701c736f | papers/pdfs/community-monetary-development.pdf | -0.1 | finding | remove |  | …c_min + c(W_{i,t}) with subsistence minimum T_{i,t} = B_0 + P_{convert,i,t} Phase Transition at Critical Wealth: r(W) = -0.1 if W < W*/2 r(W) = 0 if W*/2 ≤ W < W* r(W) = 0.05 if W ≥ W* CCO enables transition through W*  |
+| 6ba85f5d74 | papers/pdfs/community-monetary-development.pdf | 0.05 | finding | remove |  | …} = B_0 + P_{convert,i,t} Phase Transition at Critical Wealth: r(W) = -0.1 if W < W*/2 r(W) = 0 if W*/2 ≤ W < W* r(W) = 0.05 if W ≥ W* CCO enables transition through W* via accumulated conversions.… |
+| 2f06070b6a | papers/pdfs/community-monetary-development.pdf | 20-30% | finding | remove |  | 20-30% |
+| 0c228c46a7 | papers/pdfs/community-monetary-development.pdf | 40-50% | finding | remove |  | 40-50% |
+| 26b026fcf6 | papers/pdfs/community-monetary-development.pdf | 95% | finding | remove |  | 95%+ |
+| 48685f7825 | papers/pdfs/community-monetary-development.pdf | $150-300 | finding | remove |  | $150-300 |
+| a4677767c4 | papers/pdfs/community-monetary-development.pdf | $500-1000 | finding | remove |  | $500-1000 |
+| c4a28376a9 | papers/pdfs/community-monetary-development.pdf | $1000+ | finding | remove |  | $1000+ |
+| 00fc9233fb | papers/pdfs/community-monetary-development.pdf | $200-400 | finding | remove |  | $200-400 |
+| caa28091d6 | papers/pdfs/community-monetary-development.pdf | 6-12 | finding | remove |  | 6-12 months |
+| fa55556cae | papers/pdfs/community-monetary-development.pdf | 3-6 | finding | remove |  | 3-6 months |
+| 7b7f94dadb | papers/pdfs/community-monetary-development.pdf | 5-10% | finding | remove |  | 5-10% |
+| 3b2ba678e5 | papers/pdfs/community-monetary-development.pdf | 10-15% | finding | remove |  | 10-15% |
+| c764d60a35 | papers/pdfs/community-monetary-development.pdf | 0-10% | finding | remove |  | 0-10% |
+| f47d2b38f2 | papers/pdfs/community-monetary-development.pdf | 25-35% | finding | remove |  | 25-35% |
+| fb35f2e7e7 | papers/pdfs/community-monetary-development.pdf | -$150 | finding | remove |  | ….2 Cost-Effectiveness Analysis Net Present Value per Beneficiary (10-year horizon, 5% discount): Microfinance: NPV_MF = -$150 + Σ_{t=1}^{10} $50/(1.05)^t = $236 Conditional Cash Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $1 |
+| 9b1557bd25 | papers/pdfs/community-monetary-development.pdf | $50 | finding | remove |  | … Analysis Net Present Value per Beneficiary (10-year horizon, 5% discount): Microfinance: NPV_MF = -$150 + Σ_{t=1}^{10} $50/(1.05)^t = $236 Conditional Cash Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $120/(1.05)^t = $19 For |
+| 0d9697e1ae | papers/pdfs/community-monetary-development.pdf | 1.05 | finding | remove |  | …ysis Net Present Value per Beneficiary (10-year horizon, 5% discount): Microfinance: NPV_MF = -$150 + Σ_{t=1}^{10} $50/(1.05)^t = $236 Conditional Cash Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $120/(1.05)^t = $19 Foreign  |
+| c3a9932f70 | papers/pdfs/community-monetary-development.pdf | $236 | finding | remove |  | …resent Value per Beneficiary (10-year horizon, 5% discount): Microfinance: NPV_MF = -$150 + Σ_{t=1}^{10} $50/(1.05)^t = $236 Conditional Cash Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $120/(1.05)^t = $19 Foreign Aid: NPV_A |
+| 9007aba0b3 | papers/pdfs/community-monetary-development.pdf | -$500 | finding | remove |  | …on, 5% discount): Microfinance: NPV_MF = -$150 + Σ_{t=1}^{10} $50/(1.05)^t = $236 Conditional Cash Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $120/(1.05)^t = $19 Foreign Aid: NPV_Aid = -$1000 + Σ_{t=1}^{10} $80/(1.05)^t = - |
+| 6150c2175e | papers/pdfs/community-monetary-development.pdf | $120 | finding | remove |  | …Microfinance: NPV_MF = -$150 + Σ_{t=1}^{10} $50/(1.05)^t = $236 Conditional Cash Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $120/(1.05)^t = $19 Foreign Aid: NPV_Aid = -$1000 + Σ_{t=1}^{10} $80/(1.05)^t = -$382… |
+| fb0a97b485 | papers/pdfs/community-monetary-development.pdf | $19 | finding | remove |  | …V_MF = -$150 + Σ_{t=1}^{10} $50/(1.05)^t = $236 Conditional Cash Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $120/(1.05)^t = $19 Foreign Aid: NPV_Aid = -$1000 + Σ_{t=1}^{10} $80/(1.05)^t = -$382… |
+| 37201e836c | papers/pdfs/community-monetary-development.pdf | -$1000 | finding | remove |  | … $50/(1.05)^t = $236 Conditional Cash Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $120/(1.05)^t = $19 Foreign Aid: NPV_Aid = -$1000 + Σ_{t=1}^{10} $80/(1.05)^t = -$382… |
+| a5bf1c1292 | papers/pdfs/community-monetary-development.pdf | $80 | finding | remove |  | …onditional Cash Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $120/(1.05)^t = $19 Foreign Aid: NPV_Aid = -$1000 + Σ_{t=1}^{10} $80/(1.05)^t = -$382… |
+| e2c3c6e529 | papers/pdfs/community-monetary-development.pdf | -$382 | finding | remove |  | … Transfers: NPV_CCT = -$500 + Σ_{t=1}^5 $120/(1.05)^t = $19 Foreign Aid: NPV_Aid = -$1000 + Σ_{t=1}^{10} $80/(1.05)^t = -$382… |
+| da98fa37fd | papers/pdfs/community-monetary-development.pdf | 10 | finding | remove | B097 | CCO System: NPV_CCO = -$300 + Σ_{t=1}^{10} $180 × 1.1^t/(1.05)^t = $1,847 |
+| f5a29adc75 | papers/pdfs/community-monetary-development.pdf | 1.1 | finding | remove | B097 | CCO System: NPV_CCO = -$300 + Σ_{t=1}^{10} $180 × 1.1^t/(1.05)^t = $1,847 |
+| bf4c937358 | papers/pdfs/community-monetary-development.pdf | 82% | finding | remove |  | …Implementation Case Studies 5.1 Post-Conflict Recovery (Hypothetical: South Sudan) Context: 82% poverty rate Minimal formal institutions Strong tribal structures Limited infrastructure CCO Adaptation: Basic units: $… |
+| 04d79dc356 | papers/pdfs/community-monetary-development.pdf | $60 | finding | remove |  | …% poverty rate Minimal formal institutions Strong tribal structures Limited infrastructure CCO Adaptation: Basic units: $60 SSP daily (≈$2) Distribution via tribal councils Creator Collectives aligned with traditional c |
+| 6d4b9a1625 | papers/pdfs/community-monetary-development.pdf | ≈$2 | finding | remove |  | …Minimal formal institutions Strong tribal structures Limited infrastructure CCO Adaptation: Basic units: $60 SSP daily (≈$2) Distribution via tribal councils Creator Collectives aligned with traditional crafts Mobile mo |
+| e933368c5e | papers/pdfs/community-monetary-development.pdf | 5 | finding | remove |  | … traditional crafts Mobile money where available, paper backup PTF development of community markets Projected Outcomes (5 years): Poverty reduction to 45% 150,000 Creator Collective members $12M in converted currency 25 |
+| b50944e194 | papers/pdfs/community-monetary-development.pdf | 45% | finding | remove |  | …y where available, paper backup PTF development of community markets Projected Outcomes (5 years): Poverty reduction to 45% 150,000 Creator Collective members $12M in converted currency 25 PTF facilities operational… |
+| 18d74e035d | papers/pdfs/community-monetary-development.pdf | 150,000 | finding | remove |  | …ere available, paper backup PTF development of community markets Projected Outcomes (5 years): Poverty reduction to 45% 150,000 Creator Collective members $12M in converted currency 25 PTF facilities operational… |
+| 042c411b17 | papers/pdfs/community-monetary-development.pdf | $12M | finding | remove |  | …elopment of community markets Projected Outcomes (5 years): Poverty reduction to 45% 150,000 Creator Collective members $12M in converted currency 25 PTF facilities operational… |
+| af77b49123 | papers/pdfs/community-monetary-development.pdf | 25 | finding | remove |  | …ts Projected Outcomes (5 years): Poverty reduction to 45% 150,000 Creator Collective members $12M in converted currency 25 PTF facilities operational… |
+| ee327da97d | papers/pdfs/community-monetary-development.pdf | 68% | finding | remove |  | …ts, cultivation techniques) Community grain storage PTF Market linkage development Results Framework: Baseline poverty: 68% Year 1: Basic unit distribution, collective formation Year 3: 30% participating, poverty at 52% |
+| aae6b93a7d | papers/pdfs/community-monetary-development.pdf | 30% | finding | remove |  | …kage development Results Framework: Baseline poverty: 68% Year 1: Basic unit distribution, collective formation Year 3: 30% participating, poverty at 52% Year 5: 55% participating, poverty at 38% Year 10: Self-sustainin |
+| 7340da4c96 | papers/pdfs/community-monetary-development.pdf | 52% | finding | remove |  | …work: Baseline poverty: 68% Year 1: Basic unit distribution, collective formation Year 3: 30% participating, poverty at 52% Year 5: 55% participating, poverty at 38% Year 10: Self-sustaining system, poverty below 20%… |
+| 5c2d5c2b43 | papers/pdfs/community-monetary-development.pdf | 55% | finding | remove |  | …ne poverty: 68% Year 1: Basic unit distribution, collective formation Year 3: 30% participating, poverty at 52% Year 5: 55% participating, poverty at 38% Year 10: Self-sustaining system, poverty below 20%… |
+| 0208e806ae | papers/pdfs/community-monetary-development.pdf | 38% | finding | remove |  | …unit distribution, collective formation Year 3: 30% participating, poverty at 52% Year 5: 55% participating, poverty at 38% Year 10: Self-sustaining system, poverty below 20%… |
+| 8d78863174 | papers/pdfs/community-monetary-development.pdf | 10 | finding | remove |  | …ribution, collective formation Year 3: 30% participating, poverty at 52% Year 5: 55% participating, poverty at 38% Year 10: Self-sustaining system, poverty below 20%… |
+| f8395d9b96 | papers/pdfs/community-monetary-development.pdf | 20% | finding | remove |  | … participating, poverty at 52% Year 5: 55% participating, poverty at 38% Year 10: Self-sustaining system, poverty below 20%… |
 | c04ed44eb0 | papers/pdfs/community-monetary-development.pdf | 5% | projection | relabel |  | …ice-oriented collectives Incremental housing PTF Skills certification integration Projected Impact: Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction:  |
 | 315c93e29f | papers/pdfs/community-monetary-development.pdf | 35% | projection | relabel |  | …riented collectives Incremental housing PTF Skills certification integration Projected Impact: Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% ( |
 | dbf88ca3c4 | papers/pdfs/community-monetary-development.pdf | 5 | projection | relabel |  | …ollectives Incremental housing PTF Skills certification integration Projected Impact: Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% (via econo |
-| 3ed3326be7 | papers/pdfs/community-monetary-development.pdf | 45% | projection | relabel |  | …using PTF Skills certification integration Projected Impact: Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% (via economic opportunity)… |
-| d8e5bbd4d7 | papers/pdfs/community-monetary-development.pdf | 25% | projection | relabel |  | … integration Projected Impact: Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% (via economic opportunity)… |
-| 7866a25cbf | papers/pdfs/community-monetary-development.pdf | 70% | projection | relabel |  | …ration Projected Impact: Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% (via economic opportunity)… |
-| fd79a2edf0 | papers/pdfs/community-monetary-development.pdf | 30% | projection | relabel |  | … Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% (via economic opportunity)… |
-| f7fa6b4c4c | papers/pdfs/community-monetary-development.pdf | 70% | fact | remove |  | …aptation Mobile penetration enables sophisticated implementation: Payment Architecture: Layer 1: USSD for basic phones (70% coverage) Layer 2: Mobile app for smartphones (30% coverage) Layer 3: Paper backup with QR code |
-| a58730414f | papers/pdfs/community-monetary-development.pdf | 15-20% | projection | relabel |  | Critical mass: 15-20% participation for self-sustaining growth |
-| 1f50fe9feb | papers/pdfs/community-monetary-development.pdf | 10 | fact | remove |  | 10 |
-| 5bebee3957 | papers/pdfs/community-monetary-development.pdf | 16 | fact | remove |  | 16 |
-| bbfa7e737b | papers/pdfs/community-monetary-development.pdf | 17 | fact | remove |  | 17 |
-| 682fb98135 | papers/pdfs/community-monetary-development.pdf | 15 | projection | relabel |  | Mathematical analysis demonstrates convergence to low poverty steady states within 15 years, with particular advantages in post-conflict, rural, and informal urban contexts. |
-| 5f134511bb | papers/pdfs/community-monetary-development.pdf | 295-384 | projection | relabel |  | Handbook of Economic Growth, 1, 295-384. |
-| e2607f6c18 | papers/pdfs/community-monetary-development.pdf | $2 | fact | remove |  | $2/day |
-| 7af2f240a8 | papers/pdfs/community-monetary-development.pdf | $1.50 | fact | remove |  | $1.50/day |
-| 73e3fa89ca | papers/pdfs/community-monetary-development.pdf | $3 | fact | remove |  | $3/day |
-| 0673f698f6 | papers/pdfs/community-monetary-development.pdf | $5M | fact | remove |  | $5M |
-| 4db9b22005 | papers/pdfs/community-monetary-development.pdf | $3M | fact | remove |  | $3M |
-| 13f48212d2 | papers/pdfs/community-monetary-development.pdf | $8M | fact | remove |  | $8M |
-| 2c0829fe8b | papers/pdfs/community-monetary-development.pdf | 30% | fact | remove |  | 30% |
-| 242b0692e2 | papers/pdfs/community-monetary-development.pdf | 20% | fact | remove |  | 20% |
-| 929a36fccd | papers/pdfs/community-monetary-development.pdf | 60% | fact | remove |  | 60% |
+| 3ed3326be7 | papers/pdfs/community-monetary-development.pdf | 45% | finding | remove |  | …using PTF Skills certification integration Projected Impact: Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% (via economic opportunity)… |
+| d8e5bbd4d7 | papers/pdfs/community-monetary-development.pdf | 25% | finding | remove |  | … integration Projected Impact: Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% (via economic opportunity)… |
+| 7866a25cbf | papers/pdfs/community-monetary-development.pdf | 70% | finding | remove |  | …ration Projected Impact: Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% (via economic opportunity)… |
+| fd79a2edf0 | papers/pdfs/community-monetary-development.pdf | 30% | finding | remove |  | … Formalization rate: 5% → 35% over 5 years Income increase: 45% average Housing security: 25% → 70% Violence reduction: 30% (via economic opportunity)… |
+| f7fa6b4c4c | papers/pdfs/community-monetary-development.pdf | 70% | finding | remove |  | …aptation Mobile penetration enables sophisticated implementation: Payment Architecture: Layer 1: USSD for basic phones (70% coverage) Layer 2: Mobile app for smartphones (30% coverage) Layer 3: Paper backup with QR code |
+| 3898b964a0 | papers/pdfs/community-monetary-development.pdf | 30% | finding | remove |  | …mplementation: Payment Architecture: Layer 1: USSD for basic phones (70% coverage) Layer 2: Mobile app for smartphones (30% coverage) Layer 3: Paper backup with QR codes Layer 4: Biometric verification where available C |
+| d881e9f8d9 | papers/pdfs/community-monetary-development.pdf | $0.02-0.05 | fact | correct |  | …Layer 3: Paper backup with QR codes Layer 4: Biometric verification where available Cost per transaction: Mobile money: $0.02-0.05 Paper system: $0.10-0.15 Hybrid approach: $0.04 average… |
+| be2da3e7ea | papers/pdfs/community-monetary-development.pdf | $0.10-0.15 | fact | correct |  | …h QR codes Layer 4: Biometric verification where available Cost per transaction: Mobile money: $0.02-0.05 Paper system: $0.10-0.15 Hybrid approach: $0.04 average… |
+| bc7c96af40 | papers/pdfs/community-monetary-development.pdf | $0.04 | finding | remove |  | …c verification where available Cost per transaction: Mobile money: $0.02-0.05 Paper system: $0.10-0.15 Hybrid approach: $0.04 average… |
+| c7a1422c47 | papers/pdfs/community-monetary-development.pdf | 0.4 | finding | remove |  | 6.2 Scalability Analysis Network Effects: Value_N = k × N^α × Density^β Where: N = number of participants α = 1.3 (super-linear network effects) β = 0.4 (density importance) k = context-specific constant |
+| 4e8dd0adf1 | papers/pdfs/community-monetary-development.pdf | +15% | finding | remove |  | Initial wealth quintile Education level Geographic isolation Ethnic/religious minorities Expected heterogeneity: Stronger effects for women-headed households (+15%) Larger impact in bottom two quintiles (+25%) Education  |
+| 23bbb06810 | papers/pdfs/community-monetary-development.pdf | +25% | finding | remove |  | Initial wealth quintile Education level Geographic isolation Ethnic/religious minorities Expected heterogeneity: Stronger effects for women-headed households (+15%) Larger impact in bottom two quintiles (+25%) Education  |
+| 1f50fe9feb | papers/pdfs/community-monetary-development.pdf | 10 | finding | remove |  | 10 |
+| 5bebee3957 | papers/pdfs/community-monetary-development.pdf | 16 | finding | remove |  | 16 |
+| bbfa7e737b | papers/pdfs/community-monetary-development.pdf | 17 | finding | remove |  | 17 |
+| 26d3fd5253 | papers/pdfs/community-monetary-development.pdf | 4-5 | projection | relabel | B026 | …9.2 Long-term Sustainability Financial Sustainability: Break-even: Year 4-5 Self-financing: Year 6+ ROI: 250% over 10 years Institutional Sustainability: Local ownership from inception Capacity b… |
+| 31623b16b3 | papers/pdfs/community-monetary-development.pdf | 250% | projection | relabel | B026 | …9.2 Long-term Sustainability Financial Sustainability: Break-even: Year 4-5 Self-financing: Year 6+ ROI: 250% over 10 years Institutional Sustainability: Local ownership from inception Capacity building embedded Democra |
+| e9265eb1ea | papers/pdfs/community-monetary-development.pdf | 10 | projection | relabel | B026 | …9.2 Long-term Sustainability Financial Sustainability: Break-even: Year 4-5 Self-financing: Year 6+ ROI: 250% over 10 years Institutional Sustainability: Local ownership from inception Capacity building embedded Democra |
+| 5f134511bb | papers/pdfs/community-monetary-development.pdf | 295-384 | finding | remove |  | Handbook of Economic Growth, 1, 295-384. |
+| e2607f6c18 | papers/pdfs/community-monetary-development.pdf | $2 | finding | remove |  | $2/day |
+| 7af2f240a8 | papers/pdfs/community-monetary-development.pdf | $1.50 | finding | remove |  | $1.50/day |
+| 73e3fa89ca | papers/pdfs/community-monetary-development.pdf | $3 | finding | remove |  | $3/day |
+| 0673f698f6 | papers/pdfs/community-monetary-development.pdf | $5M | finding | remove |  | $5M |
+| 4db9b22005 | papers/pdfs/community-monetary-development.pdf | $3M | finding | remove |  | $3M |
+| 13f48212d2 | papers/pdfs/community-monetary-development.pdf | $8M | finding | remove |  | $8M |
+| 2c0829fe8b | papers/pdfs/community-monetary-development.pdf | 30% | finding | remove |  | 30% |
+| 242b0692e2 | papers/pdfs/community-monetary-development.pdf | 20% | finding | remove |  | 20% |
+| 929a36fccd | papers/pdfs/community-monetary-development.pdf | 60% | finding | remove |  | 60% |
+| 0d25852edf | papers/pdfs/community-monetary-development.pdf | ±30% | simulation result | remove |  | A.2 Sensitivity Ranges All parameters varied ±30% from baseline in Monte Carlo simulations (N=10,000). |
+| 10b084ffa0 | papers/pdfs/community-monetary-development.pdf | 10,000 | simulation result | remove |  | A.2 Sensitivity Ranges All parameters varied ±30% from baseline in Monte Carlo simulations (N=10,000). |
 | de0852a3b4 | papers/pdfs/corporate-transformation.pdf | 22 | finding | relabel |  | …(Anthropic)² ¹ Independent Researcher / ² Anthropic, San Francisco, CA Corresponding: Duke.T.James@gmail.com / November 22, 2025… |
 | b892a2828a | papers/pdfs/corporate-transformation.pdf | 40+ | finding | relabel |  | We analyze the shift from 40+ hour weeks to 20-25 hour schedules, from shareholder to stakeholder models, and from a failed dual mandate to human flourishing orientation. |
 | d9dbe2def1 | papers/pdfs/corporate-transformation.pdf | 25 | finding | relabel |  | Key findings: 25-hour workweeks with CCO supplementation maintain productivity while reducing overhead 35-50%. |

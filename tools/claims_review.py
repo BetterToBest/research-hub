@@ -324,6 +324,7 @@ REVIEW = [
     (r"public-trust-financial\.pdf$", r".", NONE, "projection", "relabel", "", "", "PDF only: outcomes with no model; the PDF is an older version of the paper"),
 
     # ---- cco-ptf-integrated-framework (HTML and PDF)
+    (r"cco-ptf-integrated-framework", r"Bristol Pound.{0,120}billion|£5 billion|GBP 5 billion", EXT, "fact", "correct", "Wikipedia 'Bristol pound', citing the Bristol Post (9 Dec 2017)", "opened: 'By late 2017, five million Bristol pounds had been spent'", "B011: £5 billion should be about £5 million", r"billion|£5|5"),
     (r"cco-ptf-integrated-framework", r"15 percentage point", DER, "calculation", "correct", "Section 5.1: 98% − 85%", "recompute.py (S29): 13 points, not 15", "B103/B127; both inputs are themselves unsupported"),
     (r"cco-ptf-integrated-framework", r"Berman and Reamy|Alaska Permanent Fund \(20%", EXT, "fact", "keep", "Berman & Reamy, named in the paper", "cited, not opened", "", r"^20%$|60 billion"),
     (r"cco-ptf-integrated-framework", r"Hasdell|Stanford Basic Income Lab|Thomas and Chrystal|Ithaca HOURS|Nature Communications stock-flow|Bristol Pound's 2012-2021", EXT, "fact", "keep", "named in the paper's literature review", "cited, not opened", ""),
@@ -368,6 +369,30 @@ REVIEW = [
     (r"corporate-transformation\.pdf$", r"Revenue: \$|Adjustments|Effective Tax Rate|Traditional effective rate|Reallocation of Savings|Speculation penalty|Average contribution: \$250|Total monthly|Claims \(65%\)|Traditional premiums for equivalent", ILL, "worked example", "keep", "the PDF's worked examples", "arithmetic follows from the example's inputs", ""),
     (r"corporate-transformation\.pdf$", r"Current U\.S\. corporate tax: ~\$400B|Why \$250 Billion in Annual", NONE, "fact", "correct", "", "", "plausible but uncited (corporate income tax receipts were about $420B in FY2023)", r"400B|250 Billion"),
     (r"corporate-transformation", r".", NONE, "finding", "relabel", "", "", "departmental, workweek and cost effects with no data, model or source: label as illustrative or remove"),
+
+    # ---- community-monetary-development (HTML and PDF)
+    (r"community-monetary-development", r"Date: August", META, "date", "keep", "the page itself", "", ""),
+    (r"community-monetary-development", r"Chen \(2012\)|Seyfang \(2004\)", EXT, "fact", "keep", "Chen (2012); Seyfang (2004), cited", "cited, not opened", ""),
+    (r"community-monetary-development", r"p\* < 0\.05|converges to steady state", DER, "derivation", "correct", "Section 3.3", "recompute.py (S29): the proof gives p* = 0.118 (CCO) and 0.074 (PTF)", "B001: restate the theorem (S46)"),
+    (r"community-monetary-development", r"Convergence time|below 5% within 15 years|within 15 years|^9\. Conclusion ¦ Mathematical analysis", DER, "derivation", "correct", "Section 3.3", "recompute.py (S29): the rate never reaches 5%; the 15-year formula needs a start rate of 82%", "B053: remove the claim"),
+    (r"community-monetary-development", r"Steady state: p\*|With PTF integration: λescape|With CCO: λescape", DER, "derivation", "keep", "Section 3.3", "recomputed: 0.118, 0.074", "λ values are assumptions"),
+    (r"community-monetary-development", r"^3\.\d ", PAR, "specification", "keep", "the paper's model (Section 3)", "", ""),
+    (r"community-monetary-development", r"NPVCCO|\$1,847", DER, "calculation", "correct", "Section 4.2", "recompute.py (S29): the printed formula gives $2,046", "[S5-05] B097; also an NPV, not an ROI (C25)", r"1,847|-\$300|\$180|1\.1t|1\.05|110"),
+    (r"community-monetary-development", r"NPVMF|NPVCCT|NPVAid|-\$382 to \$236", DER, "calculation", "keep", "Section 4.2", "recomputed: $236, $19, −$382", "benefit flows are assumptions"),
+    (r"community-monetary-development", r"Net Present Value per Beneficiary", PAR, "method", "keep", "Section 4.2", "", "horizon and discount rate chosen"),
+    (r"community-monetary-development", r"^4\.1 Comprehensive Comparison", NONE, "fact or estimate", "correct", "", "", "comparison of programmes with no source: cite or remove"),
+    (r"community-monetary-development", r"^5\.1 Post-Conflict Recovery \(Hypothetical", ILL, "scenario", "keep", "labelled hypothetical", "", ""),
+    (r"community-monetary-development", r"^5\.[23] ", ILL, "scenario", "relabel", "labelled 'composite'", "", "say what the composite is built from, or that it is hypothetical"),
+    (r"community-monetary-development", r"Break-even: Year 4-5|ROI: 250%", NONE, "projection", "relabel", "", "", "B026: no derivation; label as illustrative"),
+    (r"community-monetary-development\.pdf$", r"Production Functions|Where: γ = |labor elasticity|subsistence minimum|Basic Unit Distribution: Amount|Value_N = k|Critical mass|^p\.13 ", PAR, "specification", "keep", "the PDF's model and parameter table", "", ""),
+    (r"community-monetary-development\.pdf$", r"Randomization level|Power Calculations|Minimum clusters|Households per cluster|Total sample", PAR, "study design", "keep", "the PDF's proposed trial design", "", ""),
+    (r"community-monetary-development\.pdf$", r"Half-life|≈ 4\.1|Convergence Rate Calculation", DER, "calculation", "correct", "PDF Appendix B.2", "recompute.py (S29): 3.72 years discrete; 4.1 is the continuous ln2/0.17", "B031"),
+    (r"community-monetary-development\.pdf$", r"< \$1\.90", EXT, "definition", "correct", "World Bank extreme-poverty line", "standard definition", "superseded: $2.15/day (2017 PPP) from 2022, $3.00 (2021 PPP) from 2025"),
+    (r"community-monetary-development\.pdf$", r"Monte Carlo", NONE, "simulation result", "remove", "", "", "no run is published"),
+    (r"community-monetary-development\.pdf$", r"Informal economic activity comprises|High interest rates \(20-100%|Cost per transaction", NONE, "fact", "correct", "", "", "plausible but uncited"),
+    (r"community-monetary-development\.pdf$", r"^p\.10 ", META, "goal number", "keep", "UN Sustainable Development Goal numbers", "", ""),
+    (r"community-monetary-development\.pdf$", r"Projected Impact", NONE, "projection", "relabel", "", "", "no model"),
+    (r"community-monetary-development", r".", NONE, "finding", "remove", "", "", "effects stated with no model, data or source"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.
