@@ -9,14 +9,14 @@ Figures: **6556** on 55 pages and PDFs.
 | Class | Figures | keep | correct | relabel | remove |
 |---|---|---|---|---|---|
 | simulation | 6 | 0 | 6 | 0 | 0 |
-| derived | 1123 | 969 | 136 | 18 | 0 |
-| external source | 200 | 165 | 35 | 0 | 0 |
-| design parameter | 1464 | 1324 | 49 | 91 | 0 |
-| illustrative projection | 233 | 206 | 26 | 1 | 0 |
+| derived | 1114 | 952 | 144 | 18 | 0 |
+| external source | 199 | 164 | 35 | 0 | 0 |
+| design parameter | 1554 | 1398 | 65 | 91 | 0 |
+| illustrative projection | 257 | 221 | 35 | 1 | 0 |
 | corpus metadata | 643 | 637 | 2 | 0 | 4 |
-| no basis found | 2887 | 0 | 171 | 698 | 2018 |
+| no basis found | 2783 | 0 | 180 | 772 | 1831 |
 
-Classed by a reviewed rule or the reference list: 3888; by a generic rule or a paper default: 2668.
+Classed by a reviewed rule or the reference list: 4233; by a generic rule or a paper default: 2323.
 
 ## By page
 
@@ -39,7 +39,7 @@ Classed by a reviewed rule or the reference list: 3888; by a generic rule or a p
 | economic-modeling-simulation.html | 0 | 3 | 16 | 50 | 4 | 31 | 279 |
 | index.html | 0 | 29 | 5 | 48 | 6 | 9 | 16 |
 | integrated-digital-governance.html | 0 | 3 | 1 | 14 | 0 | 18 | 55 |
-| integrated-implementation-roadmap.html | 0 | 3 | 0 | 20 | 0 | 4 | 105 |
+| integrated-implementation-roadmap.html | 0 | 0 | 0 | 93 | 1 | 4 | 34 |
 | new-frame-and-lens.html | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | new-frame-and-lens.md | 0 | 0 | 0 | 0 | 0 | 5 | 0 |
 | optimal-transfer-design.html | 0 | 10 | 3 | 6 | 0 | 27 | 12 |
@@ -59,13 +59,13 @@ Classed by a reviewed rule or the reference list: 3888; by a generic rule or a p
 | papers/pdfs/optimal-transfer-design.pdf | 0 | 19 | 4 | 8 | 0 | 27 | 30 |
 | papers/pdfs/pth-government-integration.pdf | 0 | 5 | 0 | 15 | 0 | 2 | 110 |
 | papers/pdfs/pth-independent-financing.pdf | 0 | 21 | 0 | 82 | 54 | 1 | 46 |
-| papers/pdfs/public-trust-financial.pdf | 0 | 14 | 1 | 46 | 0 | 2 | 32 |
+| papers/pdfs/public-trust-financial.pdf | 0 | 0 | 0 | 33 | 9 | 2 | 51 |
 | papers/pdfs/risk-mitigation-framework.pdf | 0 | 14 | 0 | 1 | 0 | 6 | 20 |
 | papers/pdfs/universal-implementation-framework.pdf | 0 | 2 | 8 | 41 | 5 | 11 | 90 |
 | papers/pdfs/us-real-estate-transformation.pdf | 0 | 0 | 0 | 46 | 0 | 2 | 24 |
 | pth-government-integration.html | 0 | 23 | 0 | 81 | 0 | 2 | 56 |
 | pth-independent-financing.html | 0 | 18 | 0 | 64 | 61 | 2 | 53 |
-| public-trust-financial.html | 0 | 0 | 0 | 17 | 0 | 4 | 106 |
+| public-trust-financial.html | 0 | 8 | 0 | 47 | 14 | 4 | 54 |
 | referendum.html | 0 | 0 | 0 | 14 | 0 | 3 | 1 |
 | research-summary.html | 0 | 33 | 6 | 49 | 5 | 12 | 36 |
 | research-summary.md | 0 | 0 | 0 | 1 | 0 | 3 | 0 |
@@ -1039,111 +1039,40 @@ Classed by a reviewed rule or the reference list: 3888; by a generic rule or a p
 | 22a4613090 | integrated-digital-governance.html | 85% | projection | relabel |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
 | c94a89858a | integrated-digital-governance.html | 0.65 to 0.88 | projection | relabel |  | Quantitative modeling shows Gini coefficient reduction from 0.49 to 0.28, democratic participation increases from 55% to 85%, and social cohesion improvements from 0.65 to 0.88 on standardized indices. |
 | 415ee4ab47 | integrated-digital-governance.html | 2.0 | fact | remove |  | OAuth 2.0 + OpenID Connect for authentication |
-| 243ccc7898 | integrated-implementation-roadmap.html | 70% | fact | remove |  | Public mandate through 70%+ approval ratings |
-| 572caf02f2 | integrated-implementation-roadmap.html | 2–3 | fact | remove |  | Yr 2–3 Phase 3 |
-| c649b5bd00 | integrated-implementation-roadmap.html | 3–4 | fact | remove |  | Yr 3–4 Phase 4 |
-| b3b650d048 | integrated-implementation-roadmap.html | 4–5 | fact | remove |  | Yr 4–5 Phase 5 |
-| 6c9e168718 | integrated-implementation-roadmap.html | 5–6 | fact | remove |  | Yr 5–6 Phase 6 |
-| 7e74e4b74c | integrated-implementation-roadmap.html | 6–7 | fact | remove |  | Yr 6–7 Phase 7 |
-| 057a860d98 | integrated-implementation-roadmap.html | 80% | fact | remove |  | 80% |
-| 99b498fdc0 | integrated-implementation-roadmap.html | 90% | fact | remove |  | 90% |
-| 3f85d574f2 | integrated-implementation-roadmap.html | 95% | fact | remove |  | 95% |
-| a52a328524 | integrated-implementation-roadmap.html | 98% | fact | remove |  | 98% |
-| 504124282a | integrated-implementation-roadmap.html | 2–3 | fact | remove |  | Phase 3: Democratic Integration (Year 2–3) |
-| 14d4fc5422 | integrated-implementation-roadmap.html | 40% | fact | remove |  | 40% |
-| bacc8fada0 | integrated-implementation-roadmap.html | 60% | fact | remove |  | 60% |
-| 13e8398ca2 | integrated-implementation-roadmap.html | 70% | fact | remove |  | 70% |
-| 46fd0c165d | integrated-implementation-roadmap.html | 75–85% | fact | remove |  | 75–85% |
-| fdef30a157 | integrated-implementation-roadmap.html | 3–4 | fact | remove |  | Phase 4: Social Harmonization (Year 3–4) |
-| 7864e07c76 | integrated-implementation-roadmap.html | ~35% | fact | remove |  | ~35% |
-| d2d6984e59 | integrated-implementation-roadmap.html | ~30% | fact | remove |  | ~30% |
-| 6da764041e | integrated-implementation-roadmap.html | ~15% | fact | remove |  | ~15% |
-| b23e01c3c3 | integrated-implementation-roadmap.html | ~10% | fact | remove |  | ~10% |
-| 644674d9b8 | integrated-implementation-roadmap.html | ~7% | fact | remove |  | ~7% |
-| 11d8cfefc9 | integrated-implementation-roadmap.html | ~5% | fact | remove |  | ~5% |
-| 983066e870 | integrated-implementation-roadmap.html | 4–5 | fact | remove |  | Phase 5: Economic Optimization (Year 4–5) |
-| 50eacf87c1 | integrated-implementation-roadmap.html | 30–40% | fact | remove |  | / Healthcare / 30–40% / 30–50% |
-| 86397baf27 | integrated-implementation-roadmap.html | 30–50% | fact | remove |  | / Healthcare / 30–40% / 30–50% |
-| 3e31c274a2 | integrated-implementation-roadmap.html | 20–30% | fact | remove |  | / Education / 20–30% / 25–40% |
-| 0e7be52fe9 | integrated-implementation-roadmap.html | 25–40% | fact | remove |  | / Education / 20–30% / 25–40% |
-| e3fb944c42 | integrated-implementation-roadmap.html | 60–70% | fact | remove |  | / Infrastructure / 60–70% / 20–35% |
-| a03abf5ea2 | integrated-implementation-roadmap.html | 20–35% | fact | remove |  | / Infrastructure / 60–70% / 20–35% |
-| db09638c63 | integrated-implementation-roadmap.html | 40–50% | fact | remove |  | / Emergency Services / 40–50% / 30–45% |
-| 7ccaf80c13 | integrated-implementation-roadmap.html | 30–45% | fact | remove |  | / Emergency Services / 40–50% / 30–45% |
-| 7575029332 | integrated-implementation-roadmap.html | 5–6 | fact | remove |  | Phase 6: Cultural Renaissance (Year 5–6) |
-| 9d1515b50f | integrated-implementation-roadmap.html | 200–300% | fact | remove |  | 200–300% |
-| de2ab971cc | integrated-implementation-roadmap.html | 150–250% | fact | remove |  | 150–250% |
-| 57ce7a1929 | integrated-implementation-roadmap.html | 50–100% | fact | remove |  | 50–100% |
-| f081dcd69a | integrated-implementation-roadmap.html | +200–300% | fact | remove |  | +200–300% |
-| 316d1bdd8d | integrated-implementation-roadmap.html | +150–250% | fact | remove |  | +150–250% |
-| 79b4053ffd | integrated-implementation-roadmap.html | +50–100% | fact | remove |  | +50–100% |
-| 2d376c55b2 | integrated-implementation-roadmap.html | 6–7 | fact | remove |  | Phase 7: International Leadership (Year 6–7) |
-| 007a5a37e3 | integrated-implementation-roadmap.html | <2% | fact | remove |  | <2% |
-| 1978b005eb | integrated-implementation-roadmap.html | ~12% | fact | remove |  | Poverty rate (from ~12%) |
-| 8c7a68c064 | integrated-implementation-roadmap.html | 2–3% | fact | remove |  | 2–3% |
-| 9f24296cde | integrated-implementation-roadmap.html | 0.25–0.30 | fact | remove |  | 0.25–0.30 |
-| 44fffd5ec2 | integrated-implementation-roadmap.html | 0.48 | fact | remove |  | Gini coefficient (from 0.48) |
-| 1b19ad398d | integrated-implementation-roadmap.html | 50 | fact | remove |  | (b) "Creator Collectives" means voluntary associations of 50 or more persons engaged in productive activities |
-| 28e1a4560c | integrated-implementation-roadmap.html | $500 billion | projection | relabel |  | Federal government provides $500 billion over 5 years |
-| cfcfcc1bda | integrated-implementation-roadmap.html | 5 | projection | relabel |  | Federal government provides $500 billion over 5 years |
-| fca1c1479b | integrated-implementation-roadmap.html | - 99.95% | fact | remove |  | … - Conversion Processing System - Quality Assessment Platform Performance: - 100M active users - 1M transactions/second - 99.95% uptime SLA - <500ms response time PTF_Management: Components: - Asset Registry Database -  |
-| 7406faafa6 | integrated-implementation-roadmap.html | 1.3 | fact | remove |  | / Data / AES-256 at rest, TLS 1.3 in transit |
-| 860dd5a8cc | integrated-implementation-roadmap.html | 1–3 | fact | remove |  | Months 1–3: Awareness and Enrollment |
-| f3f6f92f2f | integrated-implementation-roadmap.html | 4–6 | fact | remove |  | Months 4–6: Initial Benefits |
-| 9300cacfc0 | integrated-implementation-roadmap.html | 7–12 | fact | remove |  | Months 7–12: Full Participation |
-| 9a09c6b9ee | integrated-implementation-roadmap.html | 1–12 | fact | remove |  | / Large Corporation / Pilot programs, vendor integration, innovation partnerships / Months 1–12 |
-| 27091d672b | integrated-implementation-roadmap.html | 15–20% | fact | remove |  | 15–20% |
-| 66af69565a | integrated-implementation-roadmap.html | 35–45% | fact | remove |  | 35–45% |
-| f09994a506 | integrated-implementation-roadmap.html | 50–65% | fact | remove |  | 50–65% |
-| f169989c37 | integrated-implementation-roadmap.html | 70–80% | fact | remove |  | 70–80% |
-| a3041e195c | integrated-implementation-roadmap.html | 90% | fact | remove |  | / Paper / 50M reams/year / 5M reams/year / 90% |
-| c2d62c4c4f | integrated-implementation-roadmap.html | 500 | fact | remove |  | / Energy / 500 GWh/year / 200 GWh/year / 60% |
-| b5caf366a7 | integrated-implementation-roadmap.html | 200 | fact | remove |  | / Energy / 500 GWh/year / 200 GWh/year / 60% |
-| b4f81616c7 | integrated-implementation-roadmap.html | 60% | fact | remove |  | / Energy / 500 GWh/year / 200 GWh/year / 60% |
-| 2fd1ee0f01 | integrated-implementation-roadmap.html | 600M | fact | remove |  | / Water / 2B gallons/year / 600M gallons/year / 70% |
-| 8d7ab840f9 | integrated-implementation-roadmap.html | 70% | fact | remove |  | / Water / 2B gallons/year / 600M gallons/year / 70% |
-| eb287a58e0 | integrated-implementation-roadmap.html | 100 | fact | remove |  | CCO Administrator Certification (100 hours) |
-| 899e899d53 | integrated-implementation-roadmap.html | 20 | fact | remove |  | / 1 / System Foundations / 20 |
-| 487ebcfc4b | integrated-implementation-roadmap.html | 25 | fact | remove |  | / 2 / Operations Management / 25 |
-| 640a62007e | integrated-implementation-roadmap.html | 20 | fact | remove |  | / 3 / Creator Collective Support / 20 |
-| 656b5c9c0a | integrated-implementation-roadmap.html | 15 | fact | remove |  | / 4 / Community Engagement / 15 |
-| cb42581449 | integrated-implementation-roadmap.html | 20 | fact | remove |  | / 5 / Advanced Topics / 20 |
-| e1da61f177 | integrated-implementation-roadmap.html | 15 | fact | remove |  | / 1 / Governance Fundamentals / 15 |
-| e518763812 | integrated-implementation-roadmap.html | 15 | fact | remove |  | / 2 / Asset Management / 15 |
-| acd637b859 | integrated-implementation-roadmap.html | 15 | fact | remove |  | / 3 / Financial Management / 15 |
-| e26f2a4c4e | integrated-implementation-roadmap.html | 15 | fact | remove |  | / 4 / Community Relations / 15 |
-| f168dde475 | integrated-implementation-roadmap.html | 10 | fact | remove |  | 10 explainer videos in 12 languages |
-| 18e6f1faaa | integrated-implementation-roadmap.html | 12 | fact | remove |  | 10 explainer videos in 12 languages |
-| 4055be8838 | integrated-implementation-roadmap.html | 50 | fact | remove |  | 50 success story documentaries |
-| 6ac8332d1a | integrated-implementation-roadmap.html | 25 | fact | remove |  | 25 how-to guides |
-| 832885eaa1 | integrated-implementation-roadmap.html | >2% | fact | remove |  | Recession Protocol (GDP decline >2% for 2 quarters) |
-| 774d0f301e | integrated-implementation-roadmap.html | −3 to 0 | fact | remove |  | Phase 2: Enrollment Drive (Months −3 to 0) |
-| 8f4742c7e2 | integrated-implementation-roadmap.html | 12 | fact | remove |  | Multilingual support in 12 languages |
-| 62baf593b4 | integrated-implementation-roadmap.html | 1–12 | fact | remove |  | Phase 3: Success Amplification (Months 1–12) |
-| 8e47129e98 | integrated-implementation-roadmap.html | <10% | fact | remove |  | / Poverty Rate / <10% / <5% / <3% / <2% |
-| 3d522b32a2 | integrated-implementation-roadmap.html | <5% | fact | remove |  | / Poverty Rate / <10% / <5% / <3% / <2% |
-| 0079cbafa5 | integrated-implementation-roadmap.html | <3% | fact | remove |  | / Poverty Rate / <10% / <5% / <3% / <2% |
-| 80672dabe7 | integrated-implementation-roadmap.html | <2% | fact | remove |  | / Poverty Rate / <10% / <5% / <3% / <2% |
-| b851e0cc16 | integrated-implementation-roadmap.html | 80% | fact | remove |  | / Enrollment / 80% / 90% / 95% / 98% |
-| 98db8b9b3b | integrated-implementation-roadmap.html | 90% | fact | remove |  | / Enrollment / 80% / 90% / 95% / 98% |
-| ce9fe82c52 | integrated-implementation-roadmap.html | 95% | fact | remove |  | / Enrollment / 80% / 90% / 95% / 98% |
-| a13f2c93ab | integrated-implementation-roadmap.html | 98% | fact | remove |  | / Enrollment / 80% / 90% / 95% / 98% |
-| 7ef781969b | integrated-implementation-roadmap.html | 10,000 | fact | remove |  | / Creator Collectives / 10,000 / 100,000 / 250,000 / 500,000+ |
-| cda55cb987 | integrated-implementation-roadmap.html | 100,000 | fact | remove |  | / Creator Collectives / 10,000 / 100,000 / 250,000 / 500,000+ |
-| 6f39508fb3 | integrated-implementation-roadmap.html | 250,000 | fact | remove |  | / Creator Collectives / 10,000 / 100,000 / 250,000 / 500,000+ |
-| 883a9f8462 | integrated-implementation-roadmap.html | 500,000+ | fact | remove |  | / Creator Collectives / 10,000 / 100,000 / 250,000 / 500,000+ |
-| 9cd3fb1e16 | integrated-implementation-roadmap.html | 40% | fact | remove |  | / Democratic Participation / 40% / 60% / 70% / 75–85% |
-| 8633f13cdf | integrated-implementation-roadmap.html | 60% | fact | remove |  | / Democratic Participation / 40% / 60% / 70% / 75–85% |
-| 5668347429 | integrated-implementation-roadmap.html | 70% | fact | remove |  | / Democratic Participation / 40% / 60% / 70% / 75–85% |
-| f2d84c46c5 | integrated-implementation-roadmap.html | 75–85% | fact | remove |  | / Democratic Participation / 40% / 60% / 70% / 75–85% |
-| e91fcf59dd | integrated-implementation-roadmap.html | 20% | projection | relabel |  | / Carbon Reduction / 20% / 40% / 55% / 70% |
-| fab2612538 | integrated-implementation-roadmap.html | 40% | projection | relabel |  | / Carbon Reduction / 20% / 40% / 55% / 70% |
-| ba4d925f76 | integrated-implementation-roadmap.html | 55% | projection | relabel |  | / Carbon Reduction / 20% / 40% / 55% / 70% |
-| 330cd9f883 | integrated-implementation-roadmap.html | 70% | projection | relabel |  | / Carbon Reduction / 20% / 40% / 55% / 70% |
-| 400a0bb169 | integrated-implementation-roadmap.html | 95% | fact | remove |  | / System Uptime / 95% / 98% / 99.5% / 99.9% |
-| a5955834eb | integrated-implementation-roadmap.html | 98% | fact | remove |  | / System Uptime / 95% / 98% / 99.5% / 99.9% |
-| 643a670a03 | integrated-implementation-roadmap.html | 99.5% | fact | remove |  | / System Uptime / 95% / 98% / 99.5% / 99.9% |
-| 58f8367dbd | integrated-implementation-roadmap.html | 99.9% | fact | remove |  | / System Uptime / 95% / 98% / 99.5% / 99.9% |
+| 057a860d98 | integrated-implementation-roadmap.html | 80% | projection | relabel |  | 80% |
+| 99b498fdc0 | integrated-implementation-roadmap.html | 90% | projection | relabel |  | 90% |
+| 3f85d574f2 | integrated-implementation-roadmap.html | 95% | projection | relabel |  | 95% |
+| a52a328524 | integrated-implementation-roadmap.html | 98% | projection | relabel |  | 98% |
+| 14d4fc5422 | integrated-implementation-roadmap.html | 40% | projection | relabel |  | 40% |
+| bacc8fada0 | integrated-implementation-roadmap.html | 60% | projection | relabel |  | 60% |
+| 13e8398ca2 | integrated-implementation-roadmap.html | 70% | projection | relabel |  | 70% |
+| 46fd0c165d | integrated-implementation-roadmap.html | 75–85% | projection | relabel |  | 75–85% |
+| 7864e07c76 | integrated-implementation-roadmap.html | ~35% | projection | relabel |  | ~35% |
+| d2d6984e59 | integrated-implementation-roadmap.html | ~30% | projection | relabel |  | ~30% |
+| 6da764041e | integrated-implementation-roadmap.html | ~15% | projection | relabel |  | ~15% |
+| b23e01c3c3 | integrated-implementation-roadmap.html | ~10% | projection | relabel |  | ~10% |
+| 644674d9b8 | integrated-implementation-roadmap.html | ~7% | projection | relabel |  | ~7% |
+| 11d8cfefc9 | integrated-implementation-roadmap.html | ~5% | projection | relabel |  | ~5% |
+| 50eacf87c1 | integrated-implementation-roadmap.html | 30–40% | projection | relabel |  | / Healthcare / 30–40% / 30–50% |
+| 86397baf27 | integrated-implementation-roadmap.html | 30–50% | projection | relabel |  | / Healthcare / 30–40% / 30–50% |
+| 3e31c274a2 | integrated-implementation-roadmap.html | 20–30% | projection | relabel |  | / Education / 20–30% / 25–40% |
+| 0e7be52fe9 | integrated-implementation-roadmap.html | 25–40% | projection | relabel |  | / Education / 20–30% / 25–40% |
+| e3fb944c42 | integrated-implementation-roadmap.html | 60–70% | projection | relabel |  | / Infrastructure / 60–70% / 20–35% |
+| a03abf5ea2 | integrated-implementation-roadmap.html | 20–35% | projection | relabel |  | / Infrastructure / 60–70% / 20–35% |
+| db09638c63 | integrated-implementation-roadmap.html | 40–50% | projection | relabel |  | / Emergency Services / 40–50% / 30–45% |
+| 7ccaf80c13 | integrated-implementation-roadmap.html | 30–45% | projection | relabel |  | / Emergency Services / 40–50% / 30–45% |
+| f081dcd69a | integrated-implementation-roadmap.html | +200–300% | projection | relabel |  | +200–300% |
+| 316d1bdd8d | integrated-implementation-roadmap.html | +150–250% | projection | relabel |  | +150–250% |
+| 79b4053ffd | integrated-implementation-roadmap.html | +50–100% | projection | relabel |  | +50–100% |
+| 1978b005eb | integrated-implementation-roadmap.html | ~12% | fact | correct |  | Poverty rate (from ~12%) |
+| 44fffd5ec2 | integrated-implementation-roadmap.html | 0.48 | fact | correct |  | Gini coefficient (from 0.48) |
+| 84f1a7f9c3 | integrated-implementation-roadmap.html | 50M | projection | relabel |  | / Paper / 50M reams/year / 5M reams/year / 90% |
+| a3041e195c | integrated-implementation-roadmap.html | 90% | projection | relabel |  | / Paper / 50M reams/year / 5M reams/year / 90% |
+| c2d62c4c4f | integrated-implementation-roadmap.html | 500 | projection | relabel |  | / Energy / 500 GWh/year / 200 GWh/year / 60% |
+| b5caf366a7 | integrated-implementation-roadmap.html | 200 | projection | relabel |  | / Energy / 500 GWh/year / 200 GWh/year / 60% |
+| b4f81616c7 | integrated-implementation-roadmap.html | 60% | projection | relabel |  | / Energy / 500 GWh/year / 200 GWh/year / 60% |
+| 2fd1ee0f01 | integrated-implementation-roadmap.html | 600M | projection | relabel |  | / Water / 2B gallons/year / 600M gallons/year / 70% |
+| 8d7ab840f9 | integrated-implementation-roadmap.html | 70% | projection | relabel |  | / Water / 2B gallons/year / 600M gallons/year / 70% |
 | 17dafb39c4 | optimal-transfer-design.html | 31 | fact | remove |  | Date: August 31, 2025 |
 | 0643c58f23 | optimal-transfer-design.html | 50% | projection | relabel | A13 | …Unlike traditional welfare systems that create marginal tax rates exceeding 50% at benefit phase-out ranges, the enhanced CCO-PTF framework eliminates benefit reduction entirely while maintaining str… |
 | adb961b8d1 | optimal-transfer-design.html | 2017-2018 | projection | relabel |  | The Finland experiment (2017-2018) found minimal employment impact but improved well-being (Kangas et al., 2020). |
@@ -2425,32 +2354,51 @@ Classed by a reviewed rule or the reference list: 3888; by a generic rule or a p
 | 89e5ec86b5 | papers/pdfs/public-trust-financial.pdf | 5 | projection | relabel |  | Implementation analysis suggests that initial public investment of $100 billion annually for 5 years could establish self-sustaining PTH systems serving 15-20% of the housing market, with positive spillover effects reduc |
 | 270a1515a1 | papers/pdfs/public-trust-financial.pdf | 15-20% | projection | relabel |  | Implementation analysis suggests that initial public investment of $100 billion annually for 5 years could establish self-sustaining PTH systems serving 15-20% of the housing market, with positive spillover effects reduc |
 | 467a4c9719 | papers/pdfs/public-trust-financial.pdf | 25-35% | projection | relabel |  | Implementation analysis suggests that initial public investment of $100 billion annually for 5 years could establish self-sustaining PTH systems serving 15-20% of the housing market, with positive spillover effects reduc |
-| ae9c94b3d8 | papers/pdfs/public-trust-financial.pdf | 25% | fact | remove |  | (2013) found that CLT residents accumulated only 25% of market-rate equity, creating tension between affordability and wealth building. |
-| 25a1e004a0 | papers/pdfs/public-trust-financial.pdf | 60% | simulation result | remove | B021 | Vienna's social housing model houses 60% of residents in high-quality, mixed-income developments (Lawson et al., 2018). |
+| d8d7866c8b | papers/pdfs/public-trust-financial.pdf | 770,000 | fact | correct |  | Introduction The United States faces an unprecedented housing crisis with over 770,000 people experiencing homelessness while millions more struggle with housing costs exceeding 50% of income. |
+| 3274ecbe80 | papers/pdfs/public-trust-financial.pdf | 50% | projection | relabel |  | Introduction The United States faces an unprecedented housing crisis with over 770,000 people experiencing homelessness while millions more struggle with housing costs exceeding 50% of income. |
+| ae9c94b3d8 | papers/pdfs/public-trust-financial.pdf | 25% | projection | relabel |  | (2013) found that CLT residents accumulated only 25% of market-rate equity, creating tension between affordability and wealth building. |
+| 03feaf908e | papers/pdfs/public-trust-financial.pdf | 80% | projection | relabel |  | Singapore's Housing Development Board serves 80% of the population through public housing that builds equity (Phang, 2018). |
+| 25a1e004a0 | papers/pdfs/public-trust-financial.pdf | 60% | projection | relabel | B021 | Vienna's social housing model houses 60% of residents in high-quality, mixed-income developments (Lawson et al., 2018). |
 | f3a479a368 | papers/pdfs/public-trust-financial.pdf | 50% | projection | relabel |  | Mathematical Models 4.1 Growth Trajectory Analysis We model two scenarios for reaching 50% market penetration: Charity Model (Passive Benefits): |
-| 62f5e82239 | papers/pdfs/public-trust-financial.pdf | $2,000 | fact | remove |  | $2,000 |
-| dd3d2e3b5e | papers/pdfs/public-trust-financial.pdf | $800 | fact | remove |  | $800 |
-| 4415985a52 | papers/pdfs/public-trust-financial.pdf | 20 | fact | remove |  | Equity Built (20 years) |
-| c1bac10d33 | papers/pdfs/public-trust-financial.pdf | $0 | fact | remove |  | $0 |
-| 6e71cc5f6f | papers/pdfs/public-trust-financial.pdf | $70,000 | fact | remove |  | $70,000 |
-| e1d3fbafc6 | papers/pdfs/public-trust-financial.pdf | $380,000 | fact | remove |  | $380,000 |
-| a899c36413 | papers/pdfs/public-trust-financial.pdf | $60,000 | fact | remove |  | $60,000 |
-| 509d605758 | papers/pdfs/public-trust-financial.pdf | $2,500 | fact | remove |  | $2,500 |
-| b03794dfe8 | papers/pdfs/public-trust-financial.pdf | 7.1 | fact | remove |  | …Scaling Analysis 7.1 Phase 1: Pilot Implementation (Years 1-2) Scale: 1,000 units in single metropolitan area Investment Required: $200 mill… |
-| 2f38694610 | papers/pdfs/public-trust-financial.pdf | 1-2 | fact | remove |  | …Scaling Analysis 7.1 Phase 1: Pilot Implementation (Years 1-2) Scale: 1,000 units in single metropolitan area Investment Required: $200 million Property acquisition: $150M Renovatio… |
-| ce63f948f3 | papers/pdfs/public-trust-financial.pdf | 1,000 | fact | remove |  | …Scaling Analysis 7.1 Phase 1: Pilot Implementation (Years 1-2) Scale: 1,000 units in single metropolitan area Investment Required: $200 million Property acquisition: $150M Renovation: $30M Operat… |
-| 7fac236a0c | papers/pdfs/public-trust-financial.pdf | 6-10 | fact | remove |  | 7.3 Phase 3: National Deployment (Years 6-10) Scale: 1 million units nationwide Investment Required: $100 billion total |
-| c1e6f2b734 | papers/pdfs/public-trust-financial.pdf | 1 million | fact | remove |  | 7.3 Phase 3: National Deployment (Years 6-10) Scale: 1 million units nationwide Investment Required: $100 billion total |
-| 06e72b170e | papers/pdfs/public-trust-financial.pdf | $100 billion | fact | remove |  | 7.3 Phase 3: National Deployment (Years 6-10) Scale: 1 million units nationwide Investment Required: $100 billion total |
-| 730da0d533 | papers/pdfs/public-trust-financial.pdf | 80% | simulation result | remove |  | …International Comparisons 11.1 Singapore Model HDB Success Factors: 80% population coverage Wealth building through ownership Ethnic integration policies Government land control PTH Advantage… |
-| c92365b662 | papers/pdfs/public-trust-financial.pdf | 70% | simulation result | remove |  | Financial Viability: PTH achieves break-even with 70% occupancy at 60% of market rates, demonstrating sustainable operations without ongoing subsidy. 2. |
-| 6d876ac4cd | papers/pdfs/public-trust-financial.pdf | 60% | simulation result | remove |  | Financial Viability: PTH achieves break-even with 70% occupancy at 60% of market rates, demonstrating sustainable operations without ongoing subsidy. 2. |
-| d88bf5ac79 | papers/pdfs/public-trust-financial.pdf | $70,000 | projection | relabel |  | Wealth Creation: Participants accumulate average wealth of $70,000 over 20 years, compared to zero in traditional rental and wealth extraction of $380,000. 3. |
-| 66b3954b5f | papers/pdfs/public-trust-financial.pdf | 20 | projection | relabel |  | Wealth Creation: Participants accumulate average wealth of $70,000 over 20 years, compared to zero in traditional rental and wealth extraction of $380,000. 3. |
-| d11a9216f5 | papers/pdfs/public-trust-financial.pdf | $380,000 | projection | relabel |  | Wealth Creation: Participants accumulate average wealth of $70,000 over 20 years, compared to zero in traditional rental and wealth extraction of $380,000. 3. |
-| 6f7cddeb52 | papers/pdfs/public-trust-financial.pdf | $100 billion | projection | relabel |  | Scaling Potential: With $100 billion federal investment over 5 years, PTH could serve 15-20% of the housing market, creating systemic price relief. 4. |
-| c92100faf7 | papers/pdfs/public-trust-financial.pdf | 5 | projection | relabel |  | Scaling Potential: With $100 billion federal investment over 5 years, PTH could serve 15-20% of the housing market, creating systemic price relief. 4. |
-| 1b4c1820e0 | papers/pdfs/public-trust-financial.pdf | 15-20% | projection | relabel |  | Scaling Potential: With $100 billion federal investment over 5 years, PTH could serve 15-20% of the housing market, creating systemic price relief. 4. |
+| 0ec775c64d | papers/pdfs/public-trust-financial.pdf | 0.15 | projection | relabel |  | With rpassive = 0.15, reaching 50% penetration requires 18-142 years depending on initial scale. ​ |
+| f4e62b0484 | papers/pdfs/public-trust-financial.pdf | 50% | projection | relabel |  | With rpassive = 0.15, reaching 50% penetration requires 18-142 years depending on initial scale. ​ |
+| 3de5926075 | papers/pdfs/public-trust-financial.pdf | 18-142 | projection | relabel |  | With rpassive = 0.15, reaching 50% penetration requires 18-142 years depending on initial scale. ​ |
+| 11e076ba89 | papers/pdfs/public-trust-financial.pdf | 50% | projection | relabel |  | E = Participant engagement rate θ = Network effect coefficient This model achieves 50% penetration in 5-19 years. |
+| b64762eb87 | papers/pdfs/public-trust-financial.pdf | 5-19 | projection | relabel |  | E = Participant engagement rate θ = Network effect coefficient This model achieves 50% penetration in 5-19 years. |
+| bef7696643 | papers/pdfs/public-trust-financial.pdf | +20% | projection | relabel |  | Basic unit acceptance: +20% velocity Creator collective spaces: +30% utilization Enhanced conversions: +50% for PTH workers Octave advancement: +15% per level |
+| ebb08d270b | papers/pdfs/public-trust-financial.pdf | +30% | projection | relabel |  | Basic unit acceptance: +20% velocity Creator collective spaces: +30% utilization Enhanced conversions: +50% for PTH workers Octave advancement: +15% per level |
+| 78fe0d0766 | papers/pdfs/public-trust-financial.pdf | +50% | projection | relabel |  | Basic unit acceptance: +20% velocity Creator collective spaces: +30% utilization Enhanced conversions: +50% for PTH workers Octave advancement: +15% per level |
+| 46ef9a3403 | papers/pdfs/public-trust-financial.pdf | +15% | projection | relabel |  | Basic unit acceptance: +20% velocity Creator collective spaces: +30% utilization Enhanced conversions: +50% for PTH workers Octave advancement: +15% per level |
+| fd84a98d12 | papers/pdfs/public-trust-financial.pdf | $280 | projection | relabel |  | Implementation Pathways 5.1 Entry Mechanisms Direct Payment Path: Basic unit allocation: $1,200/month PTH rent: $400/month (1/3 of basic units) Acre Equity accumulation: $280/month Full stake in 7-10 years |
+| 854188948c | papers/pdfs/public-trust-financial.pdf | 7-10 | projection | relabel |  | Implementation Pathways 5.1 Entry Mechanisms Direct Payment Path: Basic unit allocation: $1,200/month PTH rent: $400/month (1/3 of basic units) Acre Equity accumulation: $280/month Full stake in 7-10 years |
+| 62f5e82239 | papers/pdfs/public-trust-financial.pdf | $2,000 | projection | relabel |  | $2,000 |
+| dd3d2e3b5e | papers/pdfs/public-trust-financial.pdf | $800 | projection | relabel |  | $800 |
+| 4415985a52 | papers/pdfs/public-trust-financial.pdf | 20 | projection | relabel |  | Equity Built (20 years) |
+| c1bac10d33 | papers/pdfs/public-trust-financial.pdf | $0 | projection | relabel |  | $0 |
+| a899c36413 | papers/pdfs/public-trust-financial.pdf | $60,000 | projection | relabel |  | $60,000 |
+| 509d605758 | papers/pdfs/public-trust-financial.pdf | $2,500 | projection | relabel |  | $2,500 |
+| 2b2ad1e47a | papers/pdfs/public-trust-financial.pdf | $500M | projection | relabel |  | …tment Required: $2 billion Leveraged financing: 3:1 ratio CCO integration: Reduces cash needs 30% Community investment: $500M raised Outcomes: 10,000 households served $240M annual savings Network effects emerging… |
+| 2c668f55a4 | papers/pdfs/public-trust-financial.pdf | $240M | projection | relabel |  | …3:1 ratio CCO integration: Reduces cash needs 30% Community investment: $500M raised Outcomes: 10,000 households served $240M annual savings Network effects emerging… |
+| 61b1f2408e | papers/pdfs/public-trust-financial.pdf | $24B | projection | relabel |  | Federal investment: $50B State/local: $20B Private/philanthropy: $30B Outcomes: 1 million households (3 million people) $24B annual savings 15-20% market share Self-sustaining operations |
+| 0dca087d3b | papers/pdfs/public-trust-financial.pdf | 15-20% | projection | relabel |  | Federal investment: $50B State/local: $20B Private/philanthropy: $30B Outcomes: 1 million households (3 million people) $24B annual savings 15-20% market share Self-sustaining operations |
+| b05a779124 | papers/pdfs/public-trust-financial.pdf | $1,200 | projection | relabel |  | Housing cost reduction: $1,200/month Wealth accumulation: $3,500/year Economic mobility: 40% improvement Community Level: Local spending increase: $500M per 10,000 units Job creation: 2.5 jobs per unit Property value sta |
+| f6fb537789 | papers/pdfs/public-trust-financial.pdf | $3,500 | projection | relabel |  | Housing cost reduction: $1,200/month Wealth accumulation: $3,500/year Economic mobility: 40% improvement Community Level: Local spending increase: $500M per 10,000 units Job creation: 2.5 jobs per unit Property value sta |
+| dcfe78910e | papers/pdfs/public-trust-financial.pdf | 40% | projection | relabel |  | Housing cost reduction: $1,200/month Wealth accumulation: $3,500/year Economic mobility: 40% improvement Community Level: Local spending increase: $500M per 10,000 units Job creation: 2.5 jobs per unit Property value sta |
+| 5262c8c671 | papers/pdfs/public-trust-financial.pdf | $500M | projection | relabel |  | Housing cost reduction: $1,200/month Wealth accumulation: $3,500/year Economic mobility: 40% improvement Community Level: Local spending increase: $500M per 10,000 units Job creation: 2.5 jobs per unit Property value sta |
+| 5114e8073b | papers/pdfs/public-trust-financial.pdf | 10,000 | projection | relabel |  | Housing cost reduction: $1,200/month Wealth accumulation: $3,500/year Economic mobility: 40% improvement Community Level: Local spending increase: $500M per 10,000 units Job creation: 2.5 jobs per unit Property value sta |
+| 71e2c97616 | papers/pdfs/public-trust-financial.pdf | 2.5 | projection | relabel |  | Housing cost reduction: $1,200/month Wealth accumulation: $3,500/year Economic mobility: 40% improvement Community Level: Local spending increase: $500M per 10,000 units Job creation: 2.5 jobs per unit Property value sta |
+| f93eac787d | papers/pdfs/public-trust-financial.pdf | 25-35% | projection | relabel |  | …9.2 Systemic Benefits Housing Market: Price pressure relief: 25-35% reduction Speculation reduction: 50% in PTH zones Affordability improvement: 60% more households qualify Economic Growt… |
+| c5be99ee9f | papers/pdfs/public-trust-financial.pdf | 50% | projection | relabel |  | …9.2 Systemic Benefits Housing Market: Price pressure relief: 25-35% reduction Speculation reduction: 50% in PTH zones Affordability improvement: 60% more households qualify Economic Growth: GDP contribution: $50B annual |
+| e21c9a650b | papers/pdfs/public-trust-financial.pdf | 60% | projection | relabel |  | …sing Market: Price pressure relief: 25-35% reduction Speculation reduction: 50% in PTH zones Affordability improvement: 60% more households qualify Economic Growth: GDP contribution: $50B annually at scale Productivity  |
+| 8b7946f47e | papers/pdfs/public-trust-financial.pdf | $50B | projection | relabel |  | …n reduction: 50% in PTH zones Affordability improvement: 60% more households qualify Economic Growth: GDP contribution: $50B annually at scale Productivity gains: 15% from housing security Innovation: Creative economy e |
+| 9bf7aa786f | papers/pdfs/public-trust-financial.pdf | 15% | projection | relabel |  | … improvement: 60% more households qualify Economic Growth: GDP contribution: $50B annually at scale Productivity gains: 15% from housing security Innovation: Creative economy expansion… |
+| 730da0d533 | papers/pdfs/public-trust-financial.pdf | 80% | projection | relabel |  | …International Comparisons 11.1 Singapore Model HDB Success Factors: 80% population coverage Wealth building through ownership Ethnic integration policies Government land control PTH Advantage… |
+| 84fbd820ba | papers/pdfs/public-trust-financial.pdf | 60% | projection | relabel | B021 | 11.2 Vienna Model Social Housing Strengths: 60% population served High quality standards Mixed-income communities Long-term affordability PTH Innovations: Acre Equity wealth building CCO economic integration Transferable |
+| ac6a20e087 | papers/pdfs/public-trust-financial.pdf | 50% | projection | relabel |  | Our analysis demonstrates that PTH systems can achieve substantial market penetration (50% of households) within 5-19 years through active investment models, while passive benefit distribution models would require 18-142 |
+| 2483bddcb7 | papers/pdfs/public-trust-financial.pdf | 5-19 | projection | relabel |  | Our analysis demonstrates that PTH systems can achieve substantial market penetration (50% of households) within 5-19 years through active investment models, while passive benefit distribution models would require 18-142 |
+| a56d4cb1d5 | papers/pdfs/public-trust-financial.pdf | 18-142 | projection | relabel |  | Our analysis demonstrates that PTH systems can achieve substantial market penetration (50% of households) within 5-19 years through active investment models, while passive benefit distribution models would require 18-142 |
+| c92365b662 | papers/pdfs/public-trust-financial.pdf | 70% | projection | relabel |  | Financial Viability: PTH achieves break-even with 70% occupancy at 60% of market rates, demonstrating sustainable operations without ongoing subsidy. 2. |
+| 6d876ac4cd | papers/pdfs/public-trust-financial.pdf | 60% | projection | relabel |  | Financial Viability: PTH achieves break-even with 70% occupancy at 60% of market rates, demonstrating sustainable operations without ongoing subsidy. 2. |
 | 1ee96063b3 | papers/pdfs/risk-mitigation-framework.pdf | 0-39 | fact | remove |  | 0-39 |
 | 1c4a4b2f83 | papers/pdfs/risk-mitigation-framework.pdf | 0% | fact | remove |  | 0% for 6 months |
 | 3c6f1337d7 | papers/pdfs/risk-mitigation-framework.pdf | 6 | fact | remove |  | 0% for 6 months |
@@ -2703,103 +2651,51 @@ Classed by a reviewed rule or the reference list: 3888; by a generic rule or a p
 | 5896a0578a | public-trust-financial.html | 18-142 | projection | relabel |  | …rating that strategic public-private partnerships can accelerate PTH to 50% market penetration within 5-19 years versus 18-142 years for organic growth.… |
 | da18db8fe8 | public-trust-financial.html | 10,000 | simulation result | remove |  | Monte Carlo simulations across 10,000 scenarios show median IRR of 8.5% for PTH investments with lower volatility than traditional real estate. |
 | a097fe152d | public-trust-financial.html | 8.5% | simulation result | remove |  | Monte Carlo simulations across 10,000 scenarios show median IRR of 8.5% for PTH investments with lower volatility than traditional real estate. |
-| d7dfe5f34e | public-trust-financial.html | $50,000 | fact | remove |  | / Land/Property / $50,000 / $120,000 / $100,000 |
-| f934bbcf5b | public-trust-financial.html | $120,000 | fact | remove |  | / Land/Property / $50,000 / $120,000 / $100,000 |
-| c0904e2d6a | public-trust-financial.html | $100,000 | fact | remove |  | / Land/Property / $50,000 / $120,000 / $100,000 |
-| a1df2bcb70 | public-trust-financial.html | $150,000 | fact | remove |  | / Construction/Rehab / $150,000 / $40,000 / $20,000 |
-| 2b4e86fcd2 | public-trust-financial.html | $40,000 | fact | remove |  | / Construction/Rehab / $150,000 / $40,000 / $20,000 |
-| b95fb83180 | public-trust-financial.html | $20,000 | fact | remove |  | / Construction/Rehab / $150,000 / $40,000 / $20,000 |
-| f434f3913e | public-trust-financial.html | $20,000 | fact | remove |  | / Reserves / $20,000 / $25,000 / $20,000 |
-| c53fdcb2e3 | public-trust-financial.html | $25,000 | fact | remove |  | / Reserves / $20,000 / $25,000 / $20,000 |
-| 394030ad19 | public-trust-financial.html | $250,000 | fact | remove |  | / Total/Unit / $250,000 / $200,000 / $150,000 |
-| 7ffedd76a3 | public-trust-financial.html | $200,000 | fact | remove |  | / Total/Unit / $250,000 / $200,000 / $150,000 |
-| 9ce4f5780a | public-trust-financial.html | $150,000 | fact | remove |  | / Total/Unit / $250,000 / $200,000 / $150,000 |
-| 8c3ba9a7e7 | public-trust-financial.html | 10% | fact | remove |  | 10% market penetration: $750 billion |
-| d5ffcfba82 | public-trust-financial.html | $750 billion | fact | remove |  | 10% market penetration: $750 billion |
-| 6f5d0b09c5 | public-trust-financial.html | 25% | fact | remove |  | 25% market penetration: $1.9 trillion |
-| 9a5dc718ee | public-trust-financial.html | $1.9 trillion | fact | remove |  | 25% market penetration: $1.9 trillion |
-| d4460787bb | public-trust-financial.html | 50% | fact | remove |  | 50% market penetration: $3.8 trillion |
-| 6bcda095ca | public-trust-financial.html | $3.8 trillion | fact | remove |  | 50% market penetration: $3.8 trillion |
-| 8d40ef15f0 | public-trust-financial.html | 10-30 | fact | remove |  | Timeline: 10-30 years depending on strategy |
-| 6dc3ff8494 | public-trust-financial.html | 3.5-4.5% | fact | remove |  | Yield: 3.5-4.5% tax-equivalent to 5.5-7% taxable |
-| f71140b3bf | public-trust-financial.html | 5.5-7% | fact | remove |  | Yield: 3.5-4.5% tax-equivalent to 5.5-7% taxable |
-| bc713b96f0 | public-trust-financial.html | $500 billion | projection | relabel |  | Market Size: $500 billion potential (similar to MBS market) |
-| c240b44ff6 | public-trust-financial.html | 6-8% | fact | remove |  | Returns: 6-8% dividend yield plus appreciation |
-| 97b0d9e987 | public-trust-financial.html | 5-7% | fact | remove |  | Yield: 5-7% based on equity accumulation rates |
-| 467a3c53c4 | public-trust-financial.html | 1-2 | fact | remove |  | / Pilot / 1-2 / $5B / 25,000 / 0.5% |
-| 23e6b98e10 | public-trust-financial.html | $5B | fact | remove |  | / Pilot / 1-2 / $5B / 25,000 / 0.5% |
-| 4e4452c50a | public-trust-financial.html | 25,000 | fact | remove |  | / Pilot / 1-2 / $5B / 25,000 / 0.5% |
-| c6af8d1ba4 | public-trust-financial.html | 0.5% | fact | remove |  | / Pilot / 1-2 / $5B / 25,000 / 0.5% |
-| c8959c4c14 | public-trust-financial.html | 3-5 | fact | remove |  | / Expansion / 3-5 / $50B / 250,000 / 3% |
-| f59f9cc6c9 | public-trust-financial.html | $50B | fact | remove |  | / Expansion / 3-5 / $50B / 250,000 / 3% |
-| 77da0116c5 | public-trust-financial.html | 250,000 | fact | remove |  | / Expansion / 3-5 / $50B / 250,000 / 3% |
-| 4f420440e4 | public-trust-financial.html | 3% | fact | remove |  | / Expansion / 3-5 / $50B / 250,000 / 3% |
-| a5d886ecf7 | public-trust-financial.html | 6-10 | fact | remove |  | / Scaling / 6-10 / $200B / 1,000,000 / 12% |
-| bd9fc34500 | public-trust-financial.html | $200B | fact | remove |  | / Scaling / 6-10 / $200B / 1,000,000 / 12% |
-| 25e9f8137f | public-trust-financial.html | 1,000,000 | fact | remove |  | / Scaling / 6-10 / $200B / 1,000,000 / 12% |
-| 16af431497 | public-trust-financial.html | 12% | fact | remove |  | / Scaling / 6-10 / $200B / 1,000,000 / 12% |
-| 244beb7481 | public-trust-financial.html | 11-19 | fact | remove |  | / Transformation / 11-19 / $750B / 3,750,000 / 50% |
-| 55f5ad1d76 | public-trust-financial.html | $750B | fact | remove |  | / Transformation / 11-19 / $750B / 3,750,000 / 50% |
-| 7771c9f42a | public-trust-financial.html | 3,750,000 | fact | remove |  | / Transformation / 11-19 / $750B / 3,750,000 / 50% |
-| 24c54ba01f | public-trust-financial.html | 50% | fact | remove |  | / Transformation / 11-19 / $750B / 3,750,000 / 50% |
+| 6dc3ff8494 | public-trust-financial.html | 3.5-4.5% | estimate | relabel |  | Yield: 3.5-4.5% tax-equivalent to 5.5-7% taxable |
+| f71140b3bf | public-trust-financial.html | 5.5-7% | estimate | relabel |  | Yield: 3.5-4.5% tax-equivalent to 5.5-7% taxable |
+| bc713b96f0 | public-trust-financial.html | $500 billion | estimate | relabel |  | Market Size: $500 billion potential (similar to MBS market) |
+| c240b44ff6 | public-trust-financial.html | 6-8% | estimate | relabel |  | Returns: 6-8% dividend yield plus appreciation |
+| 97b0d9e987 | public-trust-financial.html | 5-7% | estimate | relabel |  | Yield: 5-7% based on equity accumulation rates |
 | 2298dc2f05 | public-trust-financial.html | 2-3% | projection | relabel |  | Organic growth: 2-3% annually |
-| e7a52aafb4 | public-trust-financial.html | 50% | fact | remove |  | 50% penetration: 35-142 years |
-| 7101e0d420 | public-trust-financial.html | 35-142 | fact | remove |  | 50% penetration: 35-142 years |
-| f3df91c50e | public-trust-financial.html | $1.2 trillion | fact | remove |  | Total investment: $1.2 trillion |
-| 3ee5ebd7f6 | public-trust-financial.html | 20% | fact | remove |  | / Government Grant / 20% / 0% / No repayment |
-| bd98d11089 | public-trust-financial.html | 0% | fact | remove |  | / Government Grant / 20% / 0% / No repayment |
-| c605fde26d | public-trust-financial.html | 45% | fact | remove |  | / Senior Debt / 45% / 4.5% / 30-year amortization |
-| bb8c830b5d | public-trust-financial.html | 4.5% | fact | remove |  | / Senior Debt / 45% / 4.5% / 30-year amortization |
-| 1a026e2b47 | public-trust-financial.html | 30 | fact | remove |  | / Senior Debt / 45% / 4.5% / 30-year amortization |
-| 69207be25e | public-trust-financial.html | 10% | fact | remove |  | / Equity / 10% / 8-12% IRR / Patient capital |
-| 4c2d354c07 | public-trust-financial.html | 8-12% | fact | remove |  | / Equity / 10% / 8-12% IRR / Patient capital |
-| c2d593785f | public-trust-financial.html | 30% | fact | remove |  | This enables 30% below-market rents while maintaining viability |
-| f10fd78243 | public-trust-financial.html | 10,000 | fact | remove |  | 10,000 scenarios with varying economic conditions: |
-| 3247d15485 | public-trust-financial.html | 4.2% | fact | remove |  | / IRR / 4.2% / 8.5% / 13.8% |
-| e61a532701 | public-trust-financial.html | 8.5% | fact | remove |  | / IRR / 4.2% / 8.5% / 13.8% |
-| 9b64429ce3 | public-trust-financial.html | 13.8% | fact | remove |  | / IRR / 4.2% / 8.5% / 13.8% |
-| f2180448bb | public-trust-financial.html | 3.5% | fact | remove |  | / Cash-on-Cash / 3.5% / 6.2% / 9.1% |
-| 4707270277 | public-trust-financial.html | 6.2% | fact | remove |  | / Cash-on-Cash / 3.5% / 6.2% / 9.1% |
-| c2e71da7a3 | public-trust-financial.html | 9.1% | fact | remove |  | / Cash-on-Cash / 3.5% / 6.2% / 9.1% |
-| 811b5c90dc | public-trust-financial.html | 0.5% | fact | remove |  | / Default Rate / 0.5% / 1.8% / 4.2% |
-| ea07130b84 | public-trust-financial.html | 1.8% | fact | remove |  | / Default Rate / 0.5% / 1.8% / 4.2% |
-| b7c5c8d8c1 | public-trust-financial.html | 4.2% | fact | remove |  | / Default Rate / 0.5% / 1.8% / 4.2% |
-| 86c4a7aac8 | public-trust-financial.html | 180% | fact | remove |  | / Social Return / 180% / 250% / 340% |
-| eec5198c04 | public-trust-financial.html | 250% | fact | remove |  | / Social Return / 180% / 250% / 340% |
-| 9629501ddb | public-trust-financial.html | 340% | fact | remove |  | / Social Return / 180% / 250% / 340% |
-| 5a1dfee814 | public-trust-financial.html | 12% | fact | remove |  | Volatility: PTH 12% vs Traditional RE 18% |
-| 427ddbdf31 | public-trust-financial.html | 18% | fact | remove |  | Volatility: PTH 12% vs Traditional RE 18% |
-| 6c2090d0bb | public-trust-financial.html | -15% | fact | remove |  | Maximum Drawdown: PTH -15% vs Traditional RE -35% |
-| 1c9c139771 | public-trust-financial.html | -35% | fact | remove |  | Maximum Drawdown: PTH -15% vs Traditional RE -35% |
-| 79db42da1c | public-trust-financial.html | 18 | fact | remove |  | Recovery Time: PTH 18 months vs Traditional RE 36 months |
-| 1de48fe2b3 | public-trust-financial.html | 36 | fact | remove |  | Recovery Time: PTH 18 months vs Traditional RE 36 months |
-| 1abb0b0406 | public-trust-financial.html | 100% | fact | remove |  | FHA PTH Insurance: 100% LTV with 3% premium |
-| 9f809466ce | public-trust-financial.html | 3% | fact | remove |  | FHA PTH Insurance: 100% LTV with 3% premium |
-| f735a7d5cc | public-trust-financial.html | 15 | fact | remove |  | Property tax abatement for 15 years |
-| 405b35b69a | public-trust-financial.html | 99 | fact | remove |  | Government develops, residents purchase 99-year leases |
-| 03890122c4 | public-trust-financial.html | 80% | fact | remove |  | 80% homeownership achieved |
-| d42b67d151 | public-trust-financial.html | 60% | fact | remove |  | 60% of residents in social housing |
-| 8eb4ae2560 | public-trust-financial.html | €500M | fact | remove |  | €500M annual investment |
-| 29330eaffe | public-trust-financial.html | 10 | fact | remove |  | 9.1 10-Year Acceleration Plan |
-| 9f7bf87d92 | public-trust-financial.html | 1-2 | simulation result | remove |  | Years 1-2: Pilot programs, $5B investment, prove model |
-| be1244232d | public-trust-financial.html | $5B | simulation result | remove |  | Years 1-2: Pilot programs, $5B investment, prove model |
-| 00f3aa9869 | public-trust-financial.html | 3-4 | fact | remove |  | Years 3-4: Regional expansion, $25B, develop infrastructure |
-| 4c6040112a | public-trust-financial.html | $25B | fact | remove |  | Years 3-4: Regional expansion, $25B, develop infrastructure |
-| 036daf6123 | public-trust-financial.html | 5-6 | fact | remove |  | Years 5-6: National rollout, $50B, policy framework |
-| 243e0be7ed | public-trust-financial.html | $50B | fact | remove |  | Years 5-6: National rollout, $50B, policy framework |
-| a4c15168b2 | public-trust-financial.html | 7-8 | fact | remove |  | Years 7-8: Market maturation, $75B, secondary markets |
-| 5c1ef5bce0 | public-trust-financial.html | $75B | fact | remove |  | Years 7-8: Market maturation, $75B, secondary markets |
-| ab5ee8dfce | public-trust-financial.html | 9-10 | fact | remove |  | Years 9-10: Full scale, $100B, 25% market share |
-| 10efa68ab0 | public-trust-financial.html | $100B | fact | remove |  | Years 9-10: Full scale, $100B, 25% market share |
-| 7449b7f505 | public-trust-financial.html | 25% | fact | remove |  | Years 9-10: Full scale, $100B, 25% market share |
+| e7a52aafb4 | public-trust-financial.html | 50% | projection | relabel |  | 50% penetration: 35-142 years |
+| 7101e0d420 | public-trust-financial.html | 35-142 | projection | relabel |  | 50% penetration: 35-142 years |
+| f3df91c50e | public-trust-financial.html | $1.2 trillion | projection | relabel |  | Total investment: $1.2 trillion |
+| d1b413d3ed | public-trust-financial.html | $2.5 trillion | projection | relabel |  | Opportunity cost: $2.5 trillion in lost savings |
+| 6cd044251c | public-trust-financial.html | 6.5% | fact or estimate | correct |  | Weighted average: 3.2% (vs 6.5% market rate) |
+| c2d593785f | public-trust-financial.html | 30% | fact or estimate | correct |  | This enables 30% below-market rents while maintaining viability |
+| f10fd78243 | public-trust-financial.html | 10,000 | simulation result | remove |  | 10,000 scenarios with varying economic conditions: |
+| 3247d15485 | public-trust-financial.html | 4.2% | simulation result | remove |  | / IRR / 4.2% / 8.5% / 13.8% |
+| e61a532701 | public-trust-financial.html | 8.5% | simulation result | remove |  | / IRR / 4.2% / 8.5% / 13.8% |
+| 9b64429ce3 | public-trust-financial.html | 13.8% | simulation result | remove |  | / IRR / 4.2% / 8.5% / 13.8% |
+| f2180448bb | public-trust-financial.html | 3.5% | simulation result | remove |  | / Cash-on-Cash / 3.5% / 6.2% / 9.1% |
+| 4707270277 | public-trust-financial.html | 6.2% | simulation result | remove |  | / Cash-on-Cash / 3.5% / 6.2% / 9.1% |
+| c2e71da7a3 | public-trust-financial.html | 9.1% | simulation result | remove |  | / Cash-on-Cash / 3.5% / 6.2% / 9.1% |
+| 811b5c90dc | public-trust-financial.html | 0.5% | simulation result | remove |  | / Default Rate / 0.5% / 1.8% / 4.2% |
+| ea07130b84 | public-trust-financial.html | 1.8% | simulation result | remove |  | / Default Rate / 0.5% / 1.8% / 4.2% |
+| b7c5c8d8c1 | public-trust-financial.html | 4.2% | simulation result | remove |  | / Default Rate / 0.5% / 1.8% / 4.2% |
+| 86c4a7aac8 | public-trust-financial.html | 180% | simulation result | remove |  | / Social Return / 180% / 250% / 340% |
+| eec5198c04 | public-trust-financial.html | 250% | simulation result | remove |  | / Social Return / 180% / 250% / 340% |
+| 9629501ddb | public-trust-financial.html | 340% | simulation result | remove |  | / Social Return / 180% / 250% / 340% |
+| 5a1dfee814 | public-trust-financial.html | 12% | simulation result | remove |  | Volatility: PTH 12% vs Traditional RE 18% |
+| 427ddbdf31 | public-trust-financial.html | 18% | simulation result | remove |  | Volatility: PTH 12% vs Traditional RE 18% |
+| 0ec9c42377 | public-trust-financial.html | 0.71 | simulation result | remove |  | Sharpe Ratio: PTH 0.71 vs Traditional RE 0.52 |
+| aeade4adfb | public-trust-financial.html | 0.52 | simulation result | remove |  | Sharpe Ratio: PTH 0.71 vs Traditional RE 0.52 |
+| 6c2090d0bb | public-trust-financial.html | -15% | simulation result | remove |  | Maximum Drawdown: PTH -15% vs Traditional RE -35% |
+| 1c9c139771 | public-trust-financial.html | -35% | simulation result | remove |  | Maximum Drawdown: PTH -15% vs Traditional RE -35% |
+| 79db42da1c | public-trust-financial.html | 18 | simulation result | remove |  | Recovery Time: PTH 18 months vs Traditional RE 36 months |
+| 1de48fe2b3 | public-trust-financial.html | 36 | simulation result | remove |  | Recovery Time: PTH 18 months vs Traditional RE 36 months |
+| 405b35b69a | public-trust-financial.html | 99 | fact | correct |  | Government develops, residents purchase 99-year leases |
+| 03890122c4 | public-trust-financial.html | 80% | fact | correct |  | 80% homeownership achieved |
+| d42b67d151 | public-trust-financial.html | 60% | fact | correct |  | 60% of residents in social housing |
+| 8eb4ae2560 | public-trust-financial.html | €500M | fact | correct |  | €500M annual investment |
 | a55fd65ab3 | public-trust-financial.html | 5-19 | projection | relabel |  | Public Trust Financial Mechanisms demonstrate that large-scale collective housing transformation is financially viable and achievable within 5-19 years through active investment strategies. |
 | 393e88b724 | public-trust-financial.html | $250 billion | projection | relabel |  | The combination of innovative financing instruments, optimized capital stacks, and public-private partnerships can mobilize the $250 billion needed to reach critical mass while generating competitive risk-adjusted return |
 | 9fa0167d48 | public-trust-financial.html | 8.5% | simulation result | remove |  | Monte Carlo simulations confirm median IRR of 8.5% with lower volatility than traditional real estate, making PTH attractive to diverse investor classes. |
-| 4adfa76e49 | public-trust-financial.html | 50% | simulation result | remove |  | The active investment model achieves 50% market penetration 25-120 years faster than passive approaches while requiring 80% less total capital due to compound effects and market momentum. |
-| 5b40c3faa9 | public-trust-financial.html | 25-120 | simulation result | remove |  | The active investment model achieves 50% market penetration 25-120 years faster than passive approaches while requiring 80% less total capital due to compound effects and market momentum. |
-| 6c1ca987b6 | public-trust-financial.html | 80% | simulation result | remove |  | The active investment model achieves 50% market penetration 25-120 years faster than passive approaches while requiring 80% less total capital due to compound effects and market momentum. |
-| 7dfca7792a | public-trust-financial.html | $50 billion | projection | relabel |  | Government incentives totaling $50 billion can catalyze $200 billion in private investment, creating a sustainable transformation pathway. |
-| ba1c9c02ac | public-trust-financial.html | $200 billion | projection | relabel |  | Government incentives totaling $50 billion can catalyze $200 billion in private investment, creating a sustainable transformation pathway. |
+| 4adfa76e49 | public-trust-financial.html | 50% | projection | relabel |  | The active investment model achieves 50% market penetration 25-120 years faster than passive approaches while requiring 80% less total capital due to compound effects and market momentum. |
+| 5b40c3faa9 | public-trust-financial.html | 25-120 | projection | relabel |  | The active investment model achieves 50% market penetration 25-120 years faster than passive approaches while requiring 80% less total capital due to compound effects and market momentum. |
+| 6c1ca987b6 | public-trust-financial.html | 80% | projection | relabel |  | The active investment model achieves 50% market penetration 25-120 years faster than passive approaches while requiring 80% less total capital due to compound effects and market momentum. |
+| 7dfca7792a | public-trust-financial.html | $50 billion | estimate | relabel |  | Government incentives totaling $50 billion can catalyze $200 billion in private investment, creating a sustainable transformation pathway. |
+| ba1c9c02ac | public-trust-financial.html | $200 billion | estimate | relabel |  | Government incentives totaling $50 billion can catalyze $200 billion in private investment, creating a sustainable transformation pathway. |
 | b76ae2ae8c | referendum.html | 360% | fact | correct |  | …raction of wealthy interests to dominate the legislative process, with documented political spending increasing by over 360% in a single decade, producing policy outcomes that consistently favor powerful special interes |
 | d22a505c3b | research-summary.html | 50% | simulation result | relabel |  | PTH can be financed independently through grassroots cooperation or scaled through public investment, with modeling showing 50% market penetration achievable within 5–19 years depending on investment scenario. |
 | b7b76a2c4a | research-summary.html | 5–19 | simulation result | relabel |  | PTH can be financed independently through grassroots cooperation or scaled through public investment, with modeling showing 50% market penetration achievable within 5–19 years depending on investment scenario. |

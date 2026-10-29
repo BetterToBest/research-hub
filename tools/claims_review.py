@@ -294,6 +294,34 @@ REVIEW = [
     (r"pth-government-integration", r"44 million", NONE, "fact", "correct", "", "", "plausible (ACS renter households) but uncited"),
     (r"pth-government-integration", r"^7\.1 Return|^7\.2 Comparative", NONE, "estimate", "relabel", "", "", "per-unit savings and multipliers with no source: cite or label as assumptions"),
     (r"pth-government-integration", r".", NONE, "projection", "relabel", "", "", "households served, wealth, jobs, savings and penetration with no model: label as illustrative projections"),
+
+    # ---- integrated-implementation-roadmap (a plan: phases, legislation, training, specs)
+    (r"integrated-implementation-roadmap", r"Public mandate through 70%", ILL, "scenario assumption", "keep", "the roadmap's stated core assumptions", "", ""),
+    (r"integrated-implementation-roadmap", r"Poverty rate \(from ~12%\)|Gini coefficient \(from 0\.48\)", NONE, "fact", "correct", "", "", "US baselines, plausible (official poverty rate 11-12%; Census income Gini about 0.48) but uncited: cite and name the measure", r"12%|0\.48"),
+    (r"integrated-implementation-roadmap", r"TLS 1\.3|AES-256", META, "technical standard", "keep", "the page itself", "", ""),
+    (r"integrated-implementation-roadmap", r"^Projected |^Zone Distribution Projection|^Labor Market Evolution|^Innovation Metrics Projection|^Resource Optimization", NONE, "projection", "relabel", "", "", "projections with no model: label as targets or illustrative"),
+    (r"integrated-implementation-roadmap", r"^Success Metrics|^Success Criteria|^Innovation Acceleration Goals|^Carbon Footprint Reduction Targets", PAR, "target", "keep", "a target set by the roadmap", "", "targets; no run or source supports reaching them"),
+    (r"integrated-implementation-roadmap", r".", PAR, "plan", "keep", "the roadmap's design (phases, legislation, training, specifications)", "", ""),
+
+    # ---- public-trust-financial (HTML and PDF)
+    (r"public-trust-financial", r"Monte Carlo|10,000 scenarios|^6\.\d |median IRR of 8\.5%", NONE, "simulation result", "remove", "", "", "no simulation, code or results file is published (S30)"),
+    (r"public-trust-financial", r"^2\.1 Per-Unit Economics", ILL, "cost assumption", "keep", "the paper's per-unit cost table", "", "assumed costs, uncited"),
+    (r"public-trust-financial", r"^2\.2 Portfolio Scale|market penetration: \$", DER, "calculation", "correct", "Section 2.1 unit cost × an implied 37.5M units", "recomputed: consistent with $200,000 × 37.5M units × share", "the Section 4.1 table reaches 50% with $750B and 3.75M units, which contradicts $3.8 trillion here"),
+    (r"public-trust-financial", r"^4\.1 Active Investment", PAR, "plan", "correct", "the paper's investment schedule", "recomputed: $200,000 per unit", "the penetration column implies 7.5M units in total, against 37.5M in Section 2.2"),
+    (r"public-trust-financial", r"^4\.2 Passive|18-142|35-142|5-19 years|25-120 years faster|\$1\.2 trillion|\$250 billion over 10", NONE, "projection", "relabel", "", "", "no model of either path is published; label as illustrative"),
+    (r"public-trust-financial", r"^5\.1 Typical PTH Project Capital Stack", PAR, "specification", "keep", "the paper's capital-stack design", "", ""),
+    (r"public-trust-financial", r"Weighted average: 3\.2%", DER, "calculation", "correct", "Section 5.1 capital stack", "recomputed: 3.5-3.9% with the table's own rates (equity at 8-12%)", "", r"3\.2%"),
+    (r"public-trust-financial", r"Weighted average: 3\.2%|30% below-market rents", NONE, "fact or estimate", "correct", "", "", "6.5% market rate uncited; 30% below-market rents not derived"),
+    (r"public-trust-financial", r"^3\.\d |Market Size: \$500 billion", NONE, "estimate", "relabel", "", "", "yields and market sizes with no source: cite or label as assumptions"),
+    (r"public-trust-financial", r"^7\.\d |^9\.1 10-Year Acceleration", PAR, "plan", "keep", "the paper's proposed programs and plan", "", ""),
+    (r"public-trust-financial", r"^8\.1 Singapore|^8\.2 Vienna", NONE, "fact", "correct", "", "", "plausible but uncited: Singapore's homeownership rate is about 89% (HDB houses about 78% of residents); Vienna's social-housing share is usually given as 40-60%; cite sources"),
+    (r"public-trust-financial", r"\$50 billion can catalyze \$200 billion", NONE, "estimate", "relabel", "", "", "a 4x leverage ratio with no derivation"),
+    (r"public-trust-financial", r"can mobilize|mobilize \$250", NONE, "projection", "relabel", "", "", "no derivation"),
+    (r"public-trust-financial\.pdf$", r"770,000 people experiencing homelessness", NONE, "fact", "correct", "", "", "matches HUD's 2024 point-in-time count (771,480) but is uncited"),
+    (r"public-trust-financial\.pdf$", r"\$70,000|\$380,000", ILL, "simulation result", "correct", "PDF Section 6 comparison table (no model)", "", "the $70,000-over-20-years figure (B066, C24): say it is illustrative and which scenario"),
+    (r"public-trust-financial\.pdf$", r"Investment Required|Property acquisition: \$|Renovation: \$|Operations: \$|Federal investment|State/local|Private/philanthropy|Leveraged financing|Scale: \d", PAR, "plan", "keep", "the PDF version's scaling plan", "", ""),
+    (r"public-trust-financial\.pdf$", r"α = Equity conversion rate|ractive = 1\.0|Basic unit allocation|Work contributions|Reduced payments|Break-even typically achieved", PAR, "specification", "keep", "the PDF version's model definitions", "", ""),
+    (r"public-trust-financial\.pdf$", r".", NONE, "projection", "relabel", "", "", "PDF only: outcomes with no model; the PDF is an older version of the paper"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.
