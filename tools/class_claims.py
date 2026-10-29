@@ -20,8 +20,14 @@ presents the figure as (simulation result, finding, projection, fact ...).
 
 Order: reference-list entries first, then the reviewed rules in tools/claims_review.py
 (first match wins; each was written after reading the passage; a rule matches the page,
-then "section ¦ sentence", then optionally the figure itself), then the generic rules
-below. `rule` names the rule that classed the row, so every class can be traced.
+then "section ¦ sentence", then optionally the figure itself). PDF text runs table cells
+together, so on a PDF a rule sees only 70 characters either side of the figure, and a
+PDF figure that also appears on the paper's HTML page takes the class reviewed there
+before any page-wide fallback rule (a rule whose sentence pattern is ".") is tried.
+The generic keyword rules below catch anything left; on the Oct 29, 2026 Hub they class
+nothing, and the summary reports how many rows they class so a new page is noticed.
+`rule` names the rule that classed each row, so every class can be traced. Rule numbers
+change when rules are added; the rule text in claims_review.py is the record.
 The S29 refine.ink triage (research-update audits/refine/triage.csv) adds its id and,
 for live valid critiques, turns a "keep" into "correct".
 
@@ -100,10 +106,13 @@ def classify(rows, triage):
             r["hit"] = ("corpus metadata", "reference-list entry", "keep", "reference list", "", "", "ref")
             continue
         text = f"{r['section']} ¦ {r['context']}"
-        if r["page"].endswith(".pdf"):           # PDF text runs neighbouring cells together: match near the figure only
+        pdf = r["page"].endswith(".pdf")
+        if pdf:                                  # PDF text runs neighbouring cells together: match near the figure only
             i = max(0, r["context"].find(r["figure"]))
-            text = r["context"][max(0, i - 70):i + len(r["figure"]) + 70]
+            text = f"{r['section']} ¦ " + r["context"][max(0, i - 70):i + len(r["figure"]) + 70]
         for prx, crx, cls, claimed, action, src, chk, note, frx, name in review:
+            if pdf and crx.pattern == ".":       # a page-wide fallback waits until the HTML class has been tried
+                continue
             if prx.search(r["page"]) and crx.search(text) and (frx is None or frx.search(r["figure"])):
                 r["hit"] = (cls, claimed, action, src, chk, note, name); break
     # 2. a PDF figure that is also on the paper's HTML page takes the class reviewed there
@@ -120,8 +129,12 @@ def classify(rows, triage):
             best = max(cands, key=lambda c: len(w & words(c["context"])))
             h = best["hit"]
             r["hit"] = (*h[:5], ("as on the HTML page; " + h[5]).rstrip("; "), "html:" + h[6])
-    # 3. generic keyword rules, then the paper default
+    # 3. page-wide fallback rules for the PDF rows still unclassed, then generic keyword rules, then the paper default
     for r in rows:
+        if not r["hit"] and r["page"].endswith(".pdf"):
+            for prx, crx, cls, claimed, action, src, chk, note, frx, name in review:
+                if crx.pattern == "." and prx.search(r["page"]) and (frx is None or frx.search(r["figure"])):
+                    r["hit"] = (cls, claimed, action, src, chk, note, name); break
         if not r["hit"]:
             for name, test, cls, claimed, action, src, chk in GENERIC:
                 if test(r, r["context"]):
@@ -133,37 +146,78 @@ def classify(rows, triage):
         if r["page"].endswith(".pdf") and not r["rule"].startswith("html:") and r["rule"] != "ref":
             r["note"] = ("PDF only (not on the HTML page); " + r["note"]).rstrip("; ")
         ids = [tid for tid, files, loc, hub, verdict, sev in triage
-               if r["page"] in files and loc.search(r["context"]) and hub != "gone"]
+               if r["page"] in files and loc.search(f"{r['section']} ¦ {r['context']}") and hub != "gone"]
         r["s29_id"] = " ".join(ids)
         live = [t for t in triage if t[0] in ids and t[4] in ("valid", "partly valid") and t[5] in ("headline", "derivation")]
         if live and r["action"] == "keep" and r["class"] != "corpus metadata":
             r["action"] = "correct"
     return rows
 
-def summary(rows):
+HEADLINE = re.compile(r"^(index|research-summary|papers/index)\.html$|^wiki/|^data/")
+
+def summary(rows, triage):
     n = collections.Counter(r["class"] for r in rows)
     a = collections.Counter((r["class"], r["action"]) for r in rows)
     pages = collections.defaultdict(collections.Counter)
     for r in rows:
         pages[r["page"]][r["class"]] += 1
+    head = [r for r in rows if HEADLINE.search(r["page"])]
+    nh = collections.Counter(r["class"] for r in head)
+    pdf_only = sum(1 for r in rows if r["note"].startswith("PDF only"))
+    by_rule = collections.Counter(("reviewed" if re.match(r"R|ref|html:R", r["rule"]) else "generic") for r in rows)
+    ext = collections.Counter(("opened" if r["checked"].startswith("opened") else "cited, not opened" if r["checked"].startswith("cited")
+                               else "a standard fact or definition, not cited" if r["checked"].startswith("standard")
+                               else "named in the text, not opened") for r in rows if r["class"] == "external source")
+    opened = sorted({(r["source"], r["checked"]) for r in rows if r["checked"].startswith("opened")})
+    linked = collections.Counter(i for r in rows for i in r["s29_id"].split())
+    unlinked = [t for t in triage if t[3] != "gone" and t[0] not in linked and t[4] in ("valid", "partly valid") and t[5] in ("headline", "derivation")]
+    prior = collections.Counter(i for r in rows for i in r["prior_id"].split())
     L = ["# Claims ledger summary (S23)", "",
-         "Generated by `tools/class_claims.py`; do not edit by hand. One row per figure per sentence in `data/claims.csv`.",
-         "Basis classes are research rule 5's. `rule` in the CSV names how each row was classed: `ref` (reference list),",
-         "`R…` (a rule in `tools/claims_review.py`, written after reading the passage), `html:R…` (a PDF figure that also appears on the paper's HTML page, classed as there), `g:…` (a generic keyword rule) or `default` (the paper's default).", "",
-         f"Figures: **{len(rows)}** on {len(pages)} pages and PDFs.", "",
+         "Generated by `tools/class_claims.py`; do not edit by hand. The ledger itself is `data/claims.csv`: one row per figure per sentence, on every live page, Markdown page, PDF and `data/optimal-parameters.json` (the `/v1/` archive is not included).", "",
+         "## What this is", "",
+         "Every number the Hub states (percentages, money, multipliers, counts, durations, years ahead) was extracted by `tools/extract_claims.py` and given one basis class from research rule 5, and an action for the corrections step (S24) and the rewrite (S25):", "",
+         "- **keep**: the figure has the basis its class names;",
+         "- **correct**: the figure or its arithmetic is wrong, or its source must be added (the note says what);",
+         "- **relabel**: keep the number but say what it is, usually an illustrative projection, a design parameter or a target;",
+         "- **remove**: nothing supports it and nothing honest can be said in its place. Most removals are model results that no published run produced: S30 looks for the code that may have made them, and S25 replaces them with results from the preregistered studies.", "",
+         "Each class was set by a rule in `tools/claims_review.py` written after reading the passage (the `rule` column names it), or by the reference list (`ref`), or, for a PDF figure that also appears on the paper's HTML page, by the class reviewed there (`html:R…`). "
+         + f"Reviewed or reference-list classes: {by_rule['reviewed']} of {len(rows)}; keyword fallbacks: {by_rule['generic']}.", "",
+         "How to read the classes: a value the framework chooses is a **design parameter**; arithmetic that follows from figures printed beside it is **derived** (`checked` says whether it was recomputed); a real-world figure is an **external source** only when the text cites one (`checked` says whether it was opened); a figure stated as a fact or a result with no source, run or derivation is **no basis found** (`claimed` says what it is presented as). This is Claude's reading of rule 5, taking the cautious reading where a page is unclear.", "",
+         f"Figures: **{len(rows)}** on {len(pages)} pages and PDFs. {pdf_only} of them are in a PDF only (the PDF is an older or longer version of its HTML page; S24 rebuilds the PDFs).", "",
          "| Class | Figures | keep | correct | relabel | remove |", "|---|---|---|---|---|---|"]
     for c in CLASSES:
         L.append(f"| {c} | {n[c]} | " + " | ".join(str(a[(c, x)]) for x in ("keep", "correct", "relabel", "remove")) + " |")
-    by_rule = collections.Counter(("reviewed" if re.match(r"R|ref|html:R", r["rule"]) else "generic") for r in rows)
-    L += ["", f"Classed by a reviewed rule or the reference list: {by_rule['reviewed']}; by a generic rule or a paper default: {by_rule['generic']}.", "",
-          "## By page", "", "| Page | " + " | ".join(CLASSES) + " |", "|---|" + "---|" * len(CLASSES)]
+    L.append(f"| **all** | {len(rows)} | " + " | ".join(str(sum(a[(c, x)] for c in CLASSES)) for x in ("keep", "correct", "relabel", "remove")) + " |")
+    L += ["", f"On the front page, research summary, paper index, wiki and parameters file ({len(head)} figures): "
+          + ", ".join(f"{c} {nh[c]}" for c in CLASSES if nh[c]) + ".", "",
+          "Simulation: only the BLEI paper cites a simulation release for its figures (v4.4, Full Integration, N = 5,000), and it gives no command, seeds or results file, so those rows are marked to be rerun on a release with a recorded command (S40).", "",
+          "External sources: " + ", ".join(f"{k} {v}" for k, v in ext.most_common()) + ". Opening the rest is left to S24/S25, figure by figure, before any is kept in a rewritten paper. Sources opened this step:", ""]
+    for src, chk in opened:
+        L.append(f"- {src}: {chk}")
+    L += ["", f"Earlier records merged: the session-5 claims records ({', '.join(sorted(prior))}) are carried in `prior_id` (the original claims-ledger draft was not brought over). "
+          f"S29 refine.ink ids are in `s29_id`: {len(linked)} ids are linked to figure rows."]
+    if unlinked:
+        L[-1] += (f" Valid headline or derivation items with no figure row to attach to (they concern formulas or wording; see the S29 triage): {', '.join(t[0] for t in unlinked)}.")
+    L += ["", "## By page", "", "| Page | " + " | ".join(CLASSES) + " |", "|---|" + "---|" * len(CLASSES)]
     for p in sorted(pages):
         L.append(f"| {p} | " + " | ".join(str(pages[p][c]) for c in CLASSES) + " |")
-    L += ["", "## No basis found (full list)", "", "| id | page | figure | claimed | action | S29 | sentence |", "|---|---|---|---|---|---|---|"]
-    for r in rows:
-        if r["class"] == "no basis found":
-            s = r["sentence"].replace("|", "/")[:220]
-            L.append(f"| {r['id']} | {r['page']} | {r['figure']} | {r['claimed']} | {r['action']} | {r['s29_id']} | {s} |")
+    L += ["", "## No basis found (full list)", "",
+          "Grouped by page; the same figure and sentence appearing twice on one page is listed once. Ids are `data/claims.csv` ids.", ""]
+    for p in sorted(pages):
+        seen, items = set(), []
+        for r in rows:
+            if r["page"] != p or r["class"] != "no basis found":
+                continue
+            k = (r["figure"], r["sentence"][:120])
+            if k in seen:
+                continue
+            seen.add(k)
+            i = max(0, r["sentence"].find(r["figure"]))
+            s_ = re.sub(r"\s+", " ", r["sentence"][max(0, i - 70):i + len(r["figure"]) + 70]).replace("|", "/").strip("… ")
+            tag = f" [{r['s29_id']}]" if r["s29_id"] else ""
+            items.append(f"- `{r['id']}` **{r['figure']}**: {r['claimed']}, {r['action']}{tag}. …{s_}…")
+        if items:
+            L += [f"### {p} ({len(items)})", ""] + items + [""]
     return "\n".join(L) + "\n"
 
 def main():
@@ -171,18 +225,18 @@ def main():
     rows = []
     for page, blocks in ex.collect(ROOT):
         rows += ex.rows_for(page, blocks)
-    rows = classify(rows, load_triage(tri))
+    triage = load_triage(tri)
+    rows = classify(rows, triage)
     cols = ["id", "page", "section", "sentence", "figure", "class", "claimed", "source", "checked",
             "action", "s29_id", "prior_id", "note", "rule"]
     for r in rows:
         r["sentence"] = r.pop("context")
-        r.setdefault("prior_id", "")
-        m = re.match(r"\[(S5-\d\d)\]\s*", r["note"])
-        if m:
-            r["prior_id"], r["note"] = m.group(1), r["note"][m.end():]
+        ids = re.findall(r"\[?(S5-\d\d)\]?", r["note"])
+        r["prior_id"] = " ".join(dict.fromkeys(ids))
+        r["note"] = re.sub(r"\[(S5-\d\d)\]\s*", r"\1: ", r["note"])
     with open(ROOT / "data/claims.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader(); w.writerows(rows)
-    (ROOT / "data/claims-summary.md").write_text(summary(rows))
+    (ROOT / "data/claims-summary.md").write_text(summary(rows, triage))
     n = collections.Counter(r["class"] for r in rows)
     print(f"{len(rows)} figures: " + ", ".join(f"{c} {n[c]}" for c in CLASSES))
 

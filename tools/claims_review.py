@@ -38,6 +38,7 @@ REVIEW = [
     (ALL, r"14\.56", DER, "calculation", "keep", "9 × 1.618, printed beside it", "recomputed: 14.56", "", r"14\.56"),
     (ALL, r"Octave 1 = 1,000|Octave \d = [\d,]+ BU|Cbase × 2", DER, "calculation", "keep", "capacity doubling formula printed beside it", "recomputed", "illustrative base of 1,000 BU"),
     (ALL, r"stadium-concert band|small café with limited hours", ILL, "example", "keep", "the page presents it as an example", "", ""),
+    (ALL, r"Phi\b|φ|Φ|golden", PAR, "specification", "keep", "the framework's design (Phi-rate)", "", "", r"^[(×~≈ ]*1\.618?x?\)?$|^1\.62"),
     (ALL, r"(?:1×\s?[–-]\s?9×|1× to 9×|1x-9x|1-9x|\b9× base|9× ×|Phi-rate|Phi-Rate|Φ ≈ 1\.618|~1\.618|golden ratio)", PAR, "specification", "keep", "the framework's design (conversion tiers, Phi-rate)", "", "", r"[×x]$|1\.618"),
 
     # ---- PTF overhead, theta, PTH penetration (summary blocks)
@@ -205,6 +206,7 @@ REVIEW = [
     (r"basic-living-economic-index", r"^Appendix B", DER, "calculation", "keep", BLEI + ", Appendix B", "recomputed", ""),
     (r"basic-living-economic-index", r"Lusardi|Jones and Marinescu|Mullainathan|Davis and Demetrowitz|National CLT Network|Mondragon comprises", EXT, "fact", "keep", "cited in the BLEI paper", "cited, not opened", ""),
     (r"basic-living-economic-index", r"\$3,400\+/month|2\.4× further|\$104 to \$43", DER, "calculation", "keep", BLEI + ", Section 7.2", "not recomputed", "from the stylized profile"),
+    (r"basic-living-economic-index", r"1\.00 / \(0\.3", DER, "calculation", "keep", BLEI + ", Section 3.3", "recomputed: 2.22, 2.65, 2.94", "cost shares are design assumptions"),
     (r"basic-living-economic-index", r"shareholder return and profit extraction at|conventional overhead including marketing", NONE, "fact", "correct", "", "", "retail cost shares stated without a source; cite one (they set ε)"),
     (r"basic-living-economic-index", r"ε = Market price / PTF price|ε = 2\.64 base case|2\.64× face value", DER, "calculation", "keep", BLEI + ", Section 3.3", "recomputed: 2.22, 2.65, 2.94", "cost shares are design assumptions"),
     (ALL, r"Johnson, D\.|Johnson, Duke|Duke Johnson", META, "authorship", "keep", "the page itself", "", ""),
@@ -216,6 +218,7 @@ REVIEW = [
     (r"economic-modeling-simulation", r"^Economic Modeling and Simulation Analysi.*Date:|Date: August", META, "date", "keep", "the page itself", "", ""),
     (r"economic-modeling-simulation", r"^4\.1 Parameter Uncertainty|~ (?:Beta|Normal|Uniform)", PAR, "simulation input", "keep", "the paper's parameter distributions (Section 4.1)", "", "inputs of a simulation that is not published; S30 runs the printed code"),
     (r"economic-modeling-simulation", r"^A\.\d|random\.uniform|n_iterations|def |self\.", PAR, "simulation input", "keep", "the paper's printed code (Appendix A)", "", "S30 runs this code as printed"),
+    (r"economic-modeling-simulation", r"'[a-z_]+': ?\d|= \{", PAR, "simulation input", "keep", "the paper's printed code", "", "S30 runs this code as printed", r"^\d"),
     (r"economic-modeling-simulation", r"^B\.2 Behavioral Parameter|Blundell|Aiyagari|Duflo|\(2013\) \| 0\.08", EXT, "calibration", "keep", "sources named in Appendix B.2", "cited, not opened", "whether the values match the sources is unchecked; the 95% intervals are not from those sources"),
     (r"economic-modeling-simulation", r"below 60% median income", EXT, "definition", "keep", "OECD/EU relative-poverty line convention", "standard definition", ""),
     (r"economic-modeling-simulation", r"below \$2/day PPP", EXT, "definition", "correct", "World Bank extreme-poverty line", "standard definition", "the line has been $2.15/day (2017 PPP) since 2022, $3.00 (2021 PPP) since 2025"),
@@ -275,6 +278,10 @@ REVIEW = [
     (r"pth-independent-financing", r"Community wealth created: \$35M|Total households served: 500\+|Average cost reduction: 45%", NONE, "projection", "relabel", "", "", "no derivation"),
     (r"pth-independent-financing", r"^9\.3 Mixed", ILL, "worked example", "keep", "the paper's case example", "", ""),
     (r"pth-independent-financing", r"Monthly savings: \$600|20-year wealth building: \$151,200|Acre Equity accumulation: \$630", DER, "calculation", "keep", "Section 5.2 example", "recomputed: 630 × 240 = 151,200 (no appreciation)", ""),
+    (r"pth-independent-financing\.pdf$", r"Interest saved on C's mortgage", DER, "calculation", "correct", "PDF Section 2.3", "recompute.py (S29): the example does not reproduce", "B005"),
+    (r"pth-independent-financing\.pdf$", r"Annual accumulation: 10,080-11,520", DER, "calculation", "correct", "PDF Section 5.1", "recomputed: 70-80% of $800-1,400 × 12 is 6,720-13,440", "", r"10,080"),
+    (r"pth-independent-financing\.pdf$", r"\$134,400-268,800", DER, "calculation", "keep", "PDF Section 5.1", "recomputed: $560-1,120 × 240", "", r"134,400"),
+    (r"pth-independent-financing\.pdf$", r"7\.1 Phase 1: Foundation", META, "section number", "keep", "the page itself", "", "", r"^7\.1$"),
     (r"pth-independent-financing\.pdf$", r"Property portfolios for pay-in in 10 metros|Mortgage conversion programs: \$|Research and advocacy|Reserves and growth capital|Technology and systems", PAR, "plan", "keep", "the paper's endowment scenario (PDF version)", "", "", r"\$\d+M$"),
     (r"pth-independent-financing\.pdf$", r"Initial capacity|Year 5: 75,000|Year 10: 3", NONE, "projection", "relabel", "", "", "household counts with no model"),
     (r"pth-independent-financing\.pdf$", r"Monthly payment: \$800-1,400|Direct monthly payments|Acre Equity conversion: 70-80%|Required reserve fund", PAR, "specification", "keep", "the framework's design (PDF version)", "", ""),
@@ -372,6 +379,7 @@ REVIEW = [
 
     # ---- community-monetary-development (HTML and PDF)
     (r"community-monetary-development", r"Date: August", META, "date", "keep", "the page itself", "", ""),
+    (r"community-monetary-development", r"poverty trap at W\*", PAR, "model coefficient", "keep", "the paper's model", "", ""),
     (r"community-monetary-development", r"Chen \(2012\)|Seyfang \(2004\)", EXT, "fact", "keep", "Chen (2012); Seyfang (2004), cited", "cited, not opened", ""),
     (r"community-monetary-development", r"p\* < 0\.05|converges to steady state", DER, "derivation", "correct", "Section 3.3", "recompute.py (S29): the proof gives p* = 0.118 (CCO) and 0.074 (PTF)", "B001: restate the theorem (S46)"),
     (r"community-monetary-development", r"Convergence time|below 5% within 15 years|within 15 years|^9\. Conclusion ¦ Mathematical analysis", DER, "derivation", "correct", "Section 3.3", "recompute.py (S29): the rate never reaches 5%; the 15-year formula needs a start rate of 82%", "B053: remove the claim"),
@@ -399,6 +407,8 @@ REVIEW = [
     (r"citizens-internet-portal", r"501\(c\)", META, "statute name", "keep", "US tax code section", "", "", r"^501$"),
     (r"citizens-internet-portal", r"Kish-Gephart|Mayer \(2016\)|Project on Government Oversight", EXT, "fact", "keep", "cited in the paper", "cited, not opened", ""),
     (r"citizens-internet-portal", r"political spending exploded|0\.01% of Americans contribute|spend \$3\.7 billion annually on federal lo|2,300\+ Local DAs", NONE, "fact", "correct", "", "", "plausible (OpenSecrets, Bonica et al.) but uncited: cite a source and year", r"\$|%|2,300"),
+    (r"citizens-internet-portal", r"a 12:1 ratio", DER, "calculation", "keep", "$3.7B / $0.3B", "recomputed: 12.3", "inputs uncited", r"^12$"),
+    (r"citizens-internet-portal", r"a 12:1 ratio", NONE, "fact", "correct", "", "", "uncited"),
     (r"citizens-internet-portal", r"Estimated minimum cost: \$50-250|Expected benefit from policy capture", NONE, "estimate", "relabel", "", "", "no derivation"),
     (r"citizens-internet-portal", r"Traditional systems: P\(Detection\)|CIP-enhanced: 0\.75", DER, "calculation", "relabel", "Section 8.2", "recomputed: $7,500; $2.325M; 310x", "arithmetic holds; detection and conviction probabilities are assumptions: label as illustrative"),
     (r"citizens-internet-portal", r"^6\.2 Network Value|CCO merit multipliers specifically reward|merit multipliers of 2-3x", PAR, "specification", "keep", "the paper's model and design", "", ""),
@@ -463,6 +473,23 @@ REVIEW = [
     (r"cultural-value-integration", r"Hypothetical Implementation", ILL, "scenario", "keep", "labelled hypothetical", "", ""),
     (r"cultural-value-integration", r"^6\.\d ", ILL, "scenario", "relabel", "the paper's case examples", "", "outcomes with no model; say whether the communities are hypothetical"),
     (r"cultural-value-integration", r".", NONE, "finding", "correct", "", "", "effects attributed to studies or evaluations with no citation: cite or remove"),
+
+    # ---- optimal-transfer-design (HTML and PDF)
+    (r"optimal-transfer-design", r"Date: August|Finland experiment \(2017-2018\)|Finland: Preliminary", META, "date or period", "keep", "the page itself", "", ""),
+    (r"optimal-transfer-design", r"Congressional Budget Office \(2012\)|Kangas et al", EXT, "fact", "keep", "CBO (2012); Kangas et al. (2020), cited", "cited, not opened", ""),
+    (r"optimal-transfer-design", r"marginal tax rates approaching 100%|marginal tax rates exceeding 50% at benefit", EXT, "fact", "keep", "CBO (2012), cited in Section 2.1", "cited, not opened", "A13 on the abstract's wording"),
+    (r"optimal-transfer-design", r"^3\.\d |^4\.2 Quality|^6\.1 Housing Market|^A\.1 Parameter|B_0 = \$1,200|14\.562x|Parameters varied", PAR, "specification", "keep", "the paper's model", "", ""),
+    (r"optimal-transfer-design", r"Expected wealth after 20 years", NONE, "simulation result", "remove", "", "", "a wealth estimate with an interval from no published run (S30)"),
+    (r"optimal-transfer-design", r"^8\.2 Power Calculations", PAR, "study design", "keep", "the paper's proposed trial design", "", "the sample size is not derived on the page"),
+    (r"optimal-transfer-design", r"^A\.2 Convergence Diagnostics", PAR, "method", "keep", "standard MCMC diagnostics", "", "no chains are published"),
+    (r"optimal-transfer-design", r"Welfare Decomposition|0\.42", NONE, "simulation result", "remove", "", "", "A08: decomposition with no method"),
+    (r"optimal-transfer-design", r".", NONE, "simulation result", "remove", "", "", "Monte Carlo results and sensitivities from no published run (A05: no standard errors)"),
+
+    # ---- risk-mitigation-framework (HTML and PDF): a design specification
+    (r"risk-mitigation-framework", r"Date: August|Advances in Cryptology", META, "date or reference", "keep", "the page itself", "", ""),
+    (r"risk-mitigation-framework", r"^12\.4 Long-term Evolution", PAR, "target", "correct", "the framework's evolution targets", "", "B119: the 50% cost reduction is unreferenced", r"50%"),
+    (r"risk-mitigation-framework", r"^12\.4 Long-term Evolution", PAR, "target", "keep", "the framework's evolution targets", "", ""),
+    (r"risk-mitigation-framework", r".", PAR, "specification", "keep", "the framework's security and crisis design (thresholds, limits, response times)", "", ""),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.
