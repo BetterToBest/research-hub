@@ -334,6 +334,22 @@ REVIEW = [
     (r"cco-ptf-integrated-framework", r"^4\.1 Monte Carlo Simulation Framework", PAR, "simulation input", "keep", "the paper's stated simulation inputs", "", "inputs of a simulation that is not published"),
     (r"cco-ptf-integrated-framework", r"^4\.3 Stress Testing", ILL, "scenario definition", "keep", "the paper's stress scenarios", "", ""),
     (r"cco-ptf-integrated-framework", r".", NONE, "simulation result", "remove", "", "", "stated as Monte Carlo results; no run is published (S30: 85%, 98%, $37,000, $82,000); S25 replaces them with release results"),
+
+    # ---- dual-currency-inflation (HTML and PDF)
+    (r"dual-currency-inflation", r"Date: August", META, "date", "keep", "the page itself", "", ""),
+    (r"dual-currency-inflation", r"65% lower", NONE, "simulation result", "correct", "", "", "B033/B061: in no table; the PDF's Table 5.2 gives 51-54% (total) or 78-86% (excess)"),
+    (r"dual-currency-inflation", r"providing \$12,000 annually to 250 million adults", DER, "calculation", "correct", "Section 1", "recompute.py (S29): $3T is 11% of 2023 GDP, not 14%", "B032"),
+    (r"dual-currency-inflation", r"GiveDirectly|Haushofer|Egger et al", EXT, "fact", "keep", "Egger et al. (2022); Haushofer & Shapiro (2016), cited", "cited, not opened", ""),
+    (r"dual-currency-inflation", r"^3\.\d |^4\.3 Stability", PAR, "specification", "keep", "the paper's model (Sections 3-4)", "", ""),
+    (r"dual-currency-inflation", r"GDP: \$26\.9 trillion", NONE, "fact", "correct", "", "", "uncited; BEA puts 2023 US GDP at about $27.4 trillion"),
+    (r"dual-currency-inflation", r"Adult population: 258 million|Essential sector share: 45%", NONE, "fact", "correct", "", "", "plausible but uncited"),
+    (r"dual-currency-inflation", r"Price elasticities: αE|Supply elasticities: βE|Basic unit (?:distribution|amount)|Creator Collective participation: 15%|Average conversion rate: 2\.1x|Maximum octave levels", PAR, "calibration", "relabel", "the paper's calibration (Section 5.1, B.1)", "", "assumed values, not estimated: say so"),
+    (r"dual-currency-inflation", r"^B\.2 Monte Carlo Methodology", PAR, "simulation design", "keep", "the paper's stated method", "", "the runs themselves are not published"),
+    (r"dual-currency-inflation", r"inject \$3\.72 trillion|13\.8%", DER, "calculation", "keep", "$1,200 × 12 × 258M; ÷ $26.9T", "recomputed: 3.72T, 13.8%", "the GDP input is off (see 5.1)"),
+    (r"dual-currency-inflation", r"CCO efficiency gain: 69%", DER, "calculation", "relabel", "$1,760 / $1,040 − 1", "recomputed: 69%", "arithmetic holds; both inputs are unpublished simulation results"),
+    (r"dual-currency-inflation", r"^7\.2 Transition Strategy", PAR, "plan", "keep", "the paper's transition plan", "", ""),
+    (r"dual-currency-inflation", r"^A\.\d", DER, "derivation", "keep", "the paper's appendix proofs", "not checked (S46 repairs the formal model)", ""),
+    (r"dual-currency-inflation", r".", NONE, "simulation result", "remove", "", "", "'numerical simulations' and 10,000 Monte Carlo runs are not published; S25 replaces these with results from a run"),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.

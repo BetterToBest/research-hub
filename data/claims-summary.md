@@ -9,14 +9,14 @@ Figures: **6556** on 55 pages and PDFs.
 | Class | Figures | keep | correct | relabel | remove |
 |---|---|---|---|---|---|
 | simulation | 6 | 0 | 6 | 0 | 0 |
-| derived | 1109 | 936 | 155 | 18 | 0 |
+| derived | 1075 | 900 | 156 | 19 | 0 |
 | external source | 198 | 163 | 35 | 0 | 0 |
-| design parameter | 1511 | 1361 | 61 | 89 | 0 |
+| design parameter | 1507 | 1349 | 57 | 101 | 0 |
 | illustrative projection | 251 | 215 | 35 | 1 | 0 |
-| corpus metadata | 639 | 633 | 2 | 0 | 4 |
-| no basis found | 2842 | 0 | 209 | 710 | 1923 |
+| corpus metadata | 640 | 634 | 2 | 0 | 4 |
+| no basis found | 2879 | 0 | 222 | 696 | 1961 |
 
-Classed by a reviewed rule or the reference list: 4452; by a generic rule or a paper default: 2104.
+Classed by a reviewed rule or the reference list: 4648; by a generic rule or a paper default: 1908.
 
 ## By page
 
@@ -35,7 +35,7 @@ Classed by a reviewed rule or the reference list: 4452; by a generic rule or a p
 | data/optimal-parameters.json | 0 | 0 | 0 | 33 | 0 | 9 | 17 |
 | democratic-governance-pth.html | 0 | 4 | 2 | 3 | 0 | 15 | 46 |
 | drug-policy-reform.html | 0 | 0 | 31 | 8 | 0 | 30 | 263 |
-| dual-currency-inflation.html | 0 | 28 | 2 | 23 | 0 | 32 | 44 |
+| dual-currency-inflation.html | 0 | 9 | 2 | 27 | 0 | 33 | 58 |
 | economic-modeling-simulation.html | 0 | 3 | 16 | 50 | 4 | 31 | 279 |
 | index.html | 0 | 29 | 5 | 48 | 6 | 9 | 16 |
 | integrated-digital-governance.html | 0 | 3 | 1 | 14 | 0 | 18 | 55 |
@@ -53,7 +53,7 @@ Classed by a reviewed rule or the reference list: 4452; by a generic rule or a p
 | papers/pdfs/cultural-value-integration.pdf | 0 | 4 | 12 | 10 | 3 | 22 | 59 |
 | papers/pdfs/democratic-governance-pth.pdf | 0 | 0 | 3 | 10 | 0 | 13 | 30 |
 | papers/pdfs/drug-policy-reform.pdf | 0 | 0 | 6 | 0 | 0 | 14 | 124 |
-| papers/pdfs/dual-currency-inflation.pdf | 0 | 17 | 2 | 14 | 0 | 23 | 69 |
+| papers/pdfs/dual-currency-inflation.pdf | 0 | 2 | 2 | 6 | 0 | 23 | 92 |
 | papers/pdfs/economic-modeling-simulation.pdf | 0 | 1 | 1 | 15 | 0 | 0 | 222 |
 | papers/pdfs/integrated-digital-governance.pdf | 0 | 2 | 4 | 22 | 0 | 16 | 49 |
 | papers/pdfs/optimal-transfer-design.pdf | 0 | 19 | 4 | 8 | 0 | 27 | 30 |
@@ -660,50 +660,64 @@ Classed by a reviewed rule or the reference list: 4452; by a generic rule or a p
 | db3fbc9c05 | drug-policy-reform.html | $102B | projection | remove |  | / Total / $102B / New Framework / $32B |
 | 9045603e47 | drug-policy-reform.html | $32B | projection | remove |  | / Total / $102B / New Framework / $32B |
 | 76110d0414 | drug-policy-reform.html | $70 billion | projection | remove |  | Net Annual Savings: $70 billion |
-| 17958587db | dual-currency-inflation.html | 31 | fact | remove |  | Date: August 31, 2025 |
-| e5ce51fad2 | dual-currency-inflation.html | 65% | simulation result | remove | B033 B061 | Numerical simulations demonstrate inflation rates 65% lower than traditional UBI with equivalent welfare gains. |
-| ea2e4707a9 | dual-currency-inflation.html | $12,000 | fact | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
-| 8e2751aeaf | dual-currency-inflation.html | 250 million | fact | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
-| 13c81430c4 | dual-currency-inflation.html | $3 trillion | fact | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
-| 6bd37b35b7 | dual-currency-inflation.html | 14% | fact | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
-| 5cb95e8eac | dual-currency-inflation.html | < 0.3 | fact | remove |  | Moderate price elasticities in essential sectors (αE < 0.3) |
-| 8b3d58ede0 | dual-currency-inflation.html | > 0.1 | fact | remove |  | Responsive supply elasticities (βE, βN > 0.1) |
-| 1a2945bb99 | dual-currency-inflation.html | $26.9 trillion | fact | remove |  | GDP: $26.9 trillion (2023) |
-| 340150d4b0 | dual-currency-inflation.html | 45% | fact | remove |  | Essential sector share: 45% (housing, food, healthcare, utilities) |
-| c9868b96b9 | dual-currency-inflation.html | 258 million | fact | remove |  | Adult population: 258 million |
-| 35646ebce4 | dual-currency-inflation.html | 15% | fact | remove |  | Under baseline parameters with 15% Creator Collective participation and average conversion rates of 2.1x: |
-| 12a465fc1e | dual-currency-inflation.html | 2.1x | fact | remove |  | Under baseline parameters with 15% Creator Collective participation and average conversion rates of 2.1x: |
-| c9c0ac6503 | dual-currency-inflation.html | 1.2% | fact | remove |  | Essential sector inflation: 1.2% annually |
-| b9de69fa0e | dual-currency-inflation.html | 0.8% | fact | remove |  | Non-essential sector inflation: 0.8% annually |
-| ad40f22a93 | dual-currency-inflation.html | 0.95% | fact | remove |  | Overall inflation: 0.95% annually |
-| c178d6ca15 | dual-currency-inflation.html | $847 billion | fact | remove | B003 | Total monetary expansion: $847 billion annually (3.15% of GDP) |
-| 506e7424da | dual-currency-inflation.html | 3.15% | fact | remove | B003 | Total monetary expansion: $847 billion annually (3.15% of GDP) |
-| 687af3509b | dual-currency-inflation.html | 5% | projection | relabel |  | Participation Rates: Higher Creator Collective participation (5% to 35%) increases conversion flows but maintains inflation below 1.8% due to capacity constraints. |
-| 74d5f7c28b | dual-currency-inflation.html | 35% | projection | relabel |  | Participation Rates: Higher Creator Collective participation (5% to 35%) increases conversion flows but maintains inflation below 1.8% due to capacity constraints. |
-| 0073376ade | dual-currency-inflation.html | 1.8% | projection | relabel |  | Participation Rates: Higher Creator Collective participation (5% to 35%) increases conversion flows but maintains inflation below 1.8% due to capacity constraints. |
+| e5ce51fad2 | dual-currency-inflation.html | 65% | simulation result | correct | B033 B061 | Numerical simulations demonstrate inflation rates 65% lower than traditional UBI with equivalent welfare gains. |
+| 1a2945bb99 | dual-currency-inflation.html | $26.9 trillion | fact | correct |  | GDP: $26.9 trillion (2023) |
+| 340150d4b0 | dual-currency-inflation.html | 45% | fact | correct |  | Essential sector share: 45% (housing, food, healthcare, utilities) |
+| c9868b96b9 | dual-currency-inflation.html | 258 million | fact | correct |  | Adult population: 258 million |
+| 35646ebce4 | dual-currency-inflation.html | 15% | simulation result | remove |  | Under baseline parameters with 15% Creator Collective participation and average conversion rates of 2.1x: |
+| 12a465fc1e | dual-currency-inflation.html | 2.1x | simulation result | remove |  | Under baseline parameters with 15% Creator Collective participation and average conversion rates of 2.1x: |
+| c9c0ac6503 | dual-currency-inflation.html | 1.2% | simulation result | remove |  | Essential sector inflation: 1.2% annually |
+| b9de69fa0e | dual-currency-inflation.html | 0.8% | simulation result | remove |  | Non-essential sector inflation: 0.8% annually |
+| ad40f22a93 | dual-currency-inflation.html | 0.95% | simulation result | remove |  | Overall inflation: 0.95% annually |
+| c178d6ca15 | dual-currency-inflation.html | $847 billion | simulation result | remove | B003 | Total monetary expansion: $847 billion annually (3.15% of GDP) |
+| 506e7424da | dual-currency-inflation.html | 3.15% | simulation result | remove | B003 | Total monetary expansion: $847 billion annually (3.15% of GDP) |
+| 1ede734776 | dual-currency-inflation.html | $1,850 | simulation result | correct | B033 | Welfare gain: Equivalent to $1,850 monthly UBI with 65% lower inflation |
+| d2c69933af | dual-currency-inflation.html | 65% | simulation result | correct | B033 | Welfare gain: Equivalent to $1,850 monthly UBI with 65% lower inflation |
+| 687af3509b | dual-currency-inflation.html | 5% | simulation result | remove |  | Participation Rates: Higher Creator Collective participation (5% to 35%) increases conversion flows but maintains inflation below 1.8% due to capacity constraints. |
+| 74d5f7c28b | dual-currency-inflation.html | 35% | simulation result | remove |  | Participation Rates: Higher Creator Collective participation (5% to 35%) increases conversion flows but maintains inflation below 1.8% due to capacity constraints. |
+| 0073376ade | dual-currency-inflation.html | 1.8% | simulation result | remove |  | Participation Rates: Higher Creator Collective participation (5% to 35%) increases conversion flows but maintains inflation below 1.8% due to capacity constraints. |
+| 6fc95f4588 | dual-currency-inflation.html | 8 to 4 | simulation result | remove |  | Octave Limits: Reducing maximum octaves from 8 to 4 cuts inflation by additional 0.3 percentage points while preserving 89% of welfare gains. |
+| 0c7210a7d4 | dual-currency-inflation.html | 0.3 percentage points | simulation result | remove |  | Octave Limits: Reducing maximum octaves from 8 to 4 cuts inflation by additional 0.3 percentage points while preserving 89% of welfare gains. |
+| f356fab52e | dual-currency-inflation.html | 89% | simulation result | remove |  | Octave Limits: Reducing maximum octaves from 8 to 4 cuts inflation by additional 0.3 percentage points while preserving 89% of welfare gains. |
+| bec0b5b8ef | dual-currency-inflation.html | 0.25 | simulation result | remove |  | Price Elasticities: Even with higher elasticities (αE = 0.25), inflation remains manageable at 1.6% annually. |
+| 83d9d8b8a0 | dual-currency-inflation.html | 1.6% | simulation result | remove |  | Price Elasticities: Even with higher elasticities (αE = 0.25), inflation remains manageable at 1.6% annually. |
 | aa4dd6d87b | dual-currency-inflation.html | 10,000 | simulation result | remove |  | 10,000 simulation runs with randomized parameters show: |
-| c48bf40d74 | dual-currency-inflation.html | 95% | fact | remove |  | 95% confidence interval for inflation: [0.6%, 1.4%] |
-| 920f63ee45 | dual-currency-inflation.html | 0.6% | fact | remove |  | 95% confidence interval for inflation: [0.6%, 1.4%] |
-| 585e42955c | dual-currency-inflation.html | 1.4% | fact | remove |  | 95% confidence interval for inflation: [0.6%, 1.4%] |
-| c4e4bba14a | dual-currency-inflation.html | > 2% | fact | remove |  | Probability of inflation > 2%: 4.2% |
-| a9bc4ba7e9 | dual-currency-inflation.html | 4.2% | fact | remove |  | Probability of inflation > 2%: 4.2% |
-| a518c5f822 | dual-currency-inflation.html | 97.8% | fact | remove |  | System stability in 97.8% of scenarios |
-| dc9e402858 | dual-currency-inflation.html | 2.8% | projection | relabel |  | Expected inflation: 2.8% annually |
-| c89f427689 | dual-currency-inflation.html | 4.1% | fact | remove |  | Essential sector inflation: 4.1% (due to inelastic supply) |
-| 247be67974 | dual-currency-inflation.html | 1.9% | fact | remove |  | Non-essential sector inflation: 1.9% |
-| d81a4c0f59 | dual-currency-inflation.html | 1-2 | fact | remove |  | Phase 1 (Years 1-2): Pilot programs in selected metropolitan areas with 100,000-500,000 participants. |
-| de194c6e31 | dual-currency-inflation.html | 100,000-500,000 | fact | remove |  | Phase 1 (Years 1-2): Pilot programs in selected metropolitan areas with 100,000-500,000 participants. |
-| f3dc124001 | dual-currency-inflation.html | 3-5 | fact | remove |  | Phase 2 (Years 3-5): Regional expansion to 5-10 million participants. |
-| 39bb9630b4 | dual-currency-inflation.html | 5-10 million | fact | remove |  | Phase 2 (Years 3-5): Regional expansion to 5-10 million participants. |
-| ad454c28a0 | dual-currency-inflation.html | 6-10 | fact | remove |  | Phase 3 (Years 6-10): National deployment with full population coverage. |
-| ac807ffad1 | dual-currency-inflation.html | $26.9 trillion | fact | remove |  | GDP: $26.9 trillion (2023 U.S.) |
-| ab1a515f62 | dual-currency-inflation.html | 45% | fact | remove |  | Essential sector share: 45% |
-| f33ecbe4f7 | dual-currency-inflation.html | 15% | fact | remove |  | Creator Collective participation: 15% |
-| 2adbc1a18c | dual-currency-inflation.html | 0.05 | fact | remove |  | Structural shocks: Normal(0, 0.05²) for demand/supply variations |
-| e5a09736a5 | dual-currency-inflation.html | < 0.01% | fact | remove |  | Convergence criterion: /inflationt - inflationt-1/ < 0.01% |
-| b38cc53e2d | dual-currency-inflation.html | 10 | fact | remove |  | Time horizon: 10 years with quarterly adjustments |
-| 676f356959 | dual-currency-inflation.html | 5% | fact | remove |  | Participation Rates (5% - 35%): |
-| da8edfcbcf | dual-currency-inflation.html | - 35% | fact | remove |  | Participation Rates (5% - 35%): |
+| c48bf40d74 | dual-currency-inflation.html | 95% | simulation result | remove |  | 95% confidence interval for inflation: [0.6%, 1.4%] |
+| 920f63ee45 | dual-currency-inflation.html | 0.6% | simulation result | remove |  | 95% confidence interval for inflation: [0.6%, 1.4%] |
+| 585e42955c | dual-currency-inflation.html | 1.4% | simulation result | remove |  | 95% confidence interval for inflation: [0.6%, 1.4%] |
+| 45cb2a1ca4 | dual-currency-inflation.html | $1,760 | simulation result | remove |  | Mean welfare improvement: $1,760 monthly equivalent |
+| c4e4bba14a | dual-currency-inflation.html | > 2% | simulation result | remove |  | Probability of inflation > 2%: 4.2% |
+| a9bc4ba7e9 | dual-currency-inflation.html | 4.2% | simulation result | remove |  | Probability of inflation > 2%: 4.2% |
+| a518c5f822 | dual-currency-inflation.html | 97.8% | simulation result | remove |  | System stability in 97.8% of scenarios |
+| dc9e402858 | dual-currency-inflation.html | 2.8% | simulation result | remove |  | Expected inflation: 2.8% annually |
+| c89f427689 | dual-currency-inflation.html | 4.1% | simulation result | remove |  | Essential sector inflation: 4.1% (due to inelastic supply) |
+| 247be67974 | dual-currency-inflation.html | 1.9% | simulation result | remove |  | Non-essential sector inflation: 1.9% |
+| 222b7fca2b | dual-currency-inflation.html | $1,040 | simulation result | remove |  | Real welfare gain after inflation: $1,040 monthly equivalent |
+| 7fae0da35f | dual-currency-inflation.html | $1,040 | simulation result | remove |  | Traditional UBI welfare gain: $1,040 monthly (inflation-adjusted) |
+| 97ce6047d1 | dual-currency-inflation.html | $1,760 | simulation result | remove |  | CCO welfare gain: $1,760 monthly (inflation-adjusted) |
+| 96c98f9155 | dual-currency-inflation.html | $1,760 | simulation result | correct | B033 B061 | Our formal model and numerical simulations show CCO can deliver welfare gains equivalent to $1,760 monthly UBI with inflation rates 65% lower than traditional cash transfer approaches. |
+| 9fba8c856c | dual-currency-inflation.html | 65% | simulation result | correct | B033 B061 | Our formal model and numerical simulations show CCO can deliver welfare gains equivalent to $1,760 monthly UBI with inflation rates 65% lower than traditional cash transfer approaches. |
+| ac807ffad1 | dual-currency-inflation.html | $26.9 trillion | fact | correct |  | GDP: $26.9 trillion (2023 U.S.) |
+| ab1a515f62 | dual-currency-inflation.html | 45% | fact | correct |  | Essential sector share: 45% |
+| 676f356959 | dual-currency-inflation.html | 5% | simulation result | remove |  | Participation Rates (5% - 35%): |
+| da8edfcbcf | dual-currency-inflation.html | - 35% | simulation result | remove |  | Participation Rates (5% - 35%): |
+| 964340e501 | dual-currency-inflation.html | 5% | simulation result | remove |  | Low participation (5%): Inflation = 0.71%, Welfare gain = $1,420 |
+| ebd062857c | dual-currency-inflation.html | 0.71% | simulation result | remove |  | Low participation (5%): Inflation = 0.71%, Welfare gain = $1,420 |
+| e49bf974d6 | dual-currency-inflation.html | $1,420 | simulation result | remove |  | Low participation (5%): Inflation = 0.71%, Welfare gain = $1,420 |
+| ba4f0cdfe7 | dual-currency-inflation.html | 35% | simulation result | remove |  | High participation (35%): Inflation = 1.79%, Welfare gain = $2,140 |
+| 7f86207ff4 | dual-currency-inflation.html | 1.79% | simulation result | remove |  | High participation (35%): Inflation = 1.79%, Welfare gain = $2,140 |
+| 5436802a60 | dual-currency-inflation.html | $2,140 | simulation result | remove |  | High participation (35%): Inflation = 1.79%, Welfare gain = $2,140 |
+| f762c54f40 | dual-currency-inflation.html | 3 - 10 | simulation result | remove |  | Octave Limits (3 - 10): |
+| 951f3698f1 | dual-currency-inflation.html | 3-4 | simulation result | remove |  | Conservative limits (3-4): Inflation = 0.62%, Welfare gain = $1,580 |
+| 6baf8ff251 | dual-currency-inflation.html | 0.62% | simulation result | remove |  | Conservative limits (3-4): Inflation = 0.62%, Welfare gain = $1,580 |
+| af7cc13337 | dual-currency-inflation.html | $1,580 | simulation result | remove |  | Conservative limits (3-4): Inflation = 0.62%, Welfare gain = $1,580 |
+| b4578c89e0 | dual-currency-inflation.html | 8-10 | simulation result | remove |  | Generous limits (8-10): Inflation = 1.34%, Welfare gain = $1,890 |
+| b90eff6cab | dual-currency-inflation.html | 1.34% | simulation result | remove |  | Generous limits (8-10): Inflation = 1.34%, Welfare gain = $1,890 |
+| aa652dc008 | dual-currency-inflation.html | $1,890 | simulation result | remove |  | Generous limits (8-10): Inflation = 1.34%, Welfare gain = $1,890 |
+| ff33a4bc0d | dual-currency-inflation.html | 0.10 | simulation result | remove |  | Low elasticity (αE = 0.10): Inflation = 0.54% |
+| c84fdfc4ca | dual-currency-inflation.html | 0.54% | simulation result | remove |  | Low elasticity (αE = 0.10): Inflation = 0.54% |
+| 66d5dfbdfe | dual-currency-inflation.html | 0.30 | simulation result | remove |  | High elasticity (αE = 0.30): Inflation = 2.12% |
+| 30d8ac837c | dual-currency-inflation.html | 2.12% | simulation result | remove |  | High elasticity (αE = 0.30): Inflation = 2.12% |
 | 71a4a9aa72 | economic-modeling-simulation.html | 10,000+ | simulation result | remove |  | Through 10,000+ simulation iterations across diverse economic conditions, we demonstrate that CCO systems achieve poverty elimination while maintaining work incentives in 95% of tested scenarios. |
 | 23032d1c67 | economic-modeling-simulation.html | 95% | simulation result | remove |  | Through 10,000+ simulation iterations across diverse economic conditions, we demonstrate that CCO systems achieve poverty elimination while maintaining work incentives in 95% of tested scenarios. |
 | b056a37c9e | economic-modeling-simulation.html | 85% | simulation result | remove |  | Results show that while CCO-only systems achieve 85% poverty reduction with median wealth improvements to $37,000, integrated CCO-PTF frameworks reach 98% poverty elimination with median wealth accumulation of $82,000. |
@@ -1881,75 +1895,98 @@ Classed by a reviewed rule or the reference list: 4452; by a generic rule or a p
 | 9cd9742c5c | papers/pdfs/drug-policy-reform.pdf | 100,000 | fact | remove | B084 | Every year of continued prohibition represents approximately 100,000 preventable deaths, 500,000 unnecessary incarcerations, and immeasurable community trauma. |
 | b8d4de50e7 | papers/pdfs/drug-policy-reform.pdf | 500,000 | fact | remove | B084 | Every year of continued prohibition represents approximately 100,000 preventable deaths, 500,000 unnecessary incarcerations, and immeasurable community trauma. |
 | 8c2f4ccc5a | papers/pdfs/drug-policy-reform.pdf | 2020-2024 | projection | remove |  | The rise and fall of Pacific Northwest drug policy reform, 2020-2024. |
-| 021fedc23e | papers/pdfs/dual-currency-inflation.pdf | 65% | simulation result | remove | B033 B061 | Numerical simulations demonstrate inflation rates 65% lower than traditional UBI with equivalent welfare gains. |
-| 5f856873a1 | papers/pdfs/dual-currency-inflation.pdf | $12,000 | fact | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
-| c5966d54cb | papers/pdfs/dual-currency-inflation.pdf | 250 million | fact | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
-| a479347387 | papers/pdfs/dual-currency-inflation.pdf | $3 trillion | fact | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
-| 810f23f6e5 | papers/pdfs/dual-currency-inflation.pdf | 14% | fact | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
-| 73417143c6 | papers/pdfs/dual-currency-inflation.pdf | 8.09x | fact | remove |  | 8.09x-9.708x |
-| d7a1218063 | papers/pdfs/dual-currency-inflation.pdf | 11.326x | fact | remove |  | 11.326x-14.562x |
-| 98fa3907ef | papers/pdfs/dual-currency-inflation.pdf | 2.5% | fact | remove |  | 2.5% |
-| 628e0cec42 | papers/pdfs/dual-currency-inflation.pdf | 28.0% | fact | remove |  | 28.0% |
-| d029daa7cd | papers/pdfs/dual-currency-inflation.pdf | 100 | fact | remove |  | 100 |
-| 8734fb42cb | papers/pdfs/dual-currency-inflation.pdf | $1,200 | fact | remove |  | Traditional UBI ($1,200) |
-| a7997efe84 | papers/pdfs/dual-currency-inflation.pdf | 8.3% | fact | remove |  | 8.3% |
-| 9f6e04e7ab | papers/pdfs/dual-currency-inflation.pdf | 6.7% | fact | remove |  | 6.7% |
-| e46d78b0d6 | papers/pdfs/dual-currency-inflation.pdf | 72.4% | fact | remove |  | 72.4% |
-| df8222f60f | papers/pdfs/dual-currency-inflation.pdf | 142 | fact | remove |  | 142 |
-| 28051f2f93 | papers/pdfs/dual-currency-inflation.pdf | 3.8% | fact | remove |  | 3.8% |
-| 7751e08bbf | papers/pdfs/dual-currency-inflation.pdf | 3.1% | fact | remove |  | 3.1% |
-| 8e8e8aa993 | papers/pdfs/dual-currency-inflation.pdf | 35.2% | fact | remove |  | 35.2% |
-| 6c9251bb15 | papers/pdfs/dual-currency-inflation.pdf | 138 | fact | remove |  | 138 |
-| 4109eb46aa | papers/pdfs/dual-currency-inflation.pdf | 3.2% | fact | remove |  | 3.2% |
-| b593d5cb55 | papers/pdfs/dual-currency-inflation.pdf | 2.8% | fact | remove |  | 2.8% |
-| e35f2bb3b3 | papers/pdfs/dual-currency-inflation.pdf | 31.5% | fact | remove |  | 31.5% |
-| 08c10c1195 | papers/pdfs/dual-currency-inflation.pdf | 145 | fact | remove |  | 145 |
-| 211f4f8616 | papers/pdfs/dual-currency-inflation.pdf | ±0.3% | fact | remove |  | *Standard errors: ±0.3% for inflation, ±2 for welfare index |
-| 586f7ce18f | papers/pdfs/dual-currency-inflation.pdf | 10% | projection | relabel |  | Supply Shock (10% reduction in Y_E): Traditional UBI: 15.2% inflation spike CCO: 7.8% inflation spike Recovery time: CCO 40% faster 2. |
-| 3ba5e1f126 | papers/pdfs/dual-currency-inflation.pdf | 15.2% | projection | relabel |  | Supply Shock (10% reduction in Y_E): Traditional UBI: 15.2% inflation spike CCO: 7.8% inflation spike Recovery time: CCO 40% faster 2. |
-| 367ed5e901 | papers/pdfs/dual-currency-inflation.pdf | 7.8% | projection | relabel |  | Supply Shock (10% reduction in Y_E): Traditional UBI: 15.2% inflation spike CCO: 7.8% inflation spike Recovery time: CCO 40% faster 2. |
-| 5a22b35d18 | papers/pdfs/dual-currency-inflation.pdf | 40% | projection | relabel |  | Supply Shock (10% reduction in Y_E): Traditional UBI: 15.2% inflation spike CCO: 7.8% inflation spike Recovery time: CCO 40% faster 2. |
-| ca69d5930f | papers/pdfs/dual-currency-inflation.pdf | 20% | projection | relabel |  | Demand Shock (20% increase in velocity): Traditional UBI: 12.1% inflation CCO: 5.4% inflation Stability maintained in CCO 3. |
-| 9c5e0fc31f | papers/pdfs/dual-currency-inflation.pdf | 12.1% | projection | relabel |  | Demand Shock (20% increase in velocity): Traditional UBI: 12.1% inflation CCO: 5.4% inflation Stability maintained in CCO 3. |
-| 888ed3b978 | papers/pdfs/dual-currency-inflation.pdf | 5.4% | projection | relabel |  | Demand Shock (20% increase in velocity): Traditional UBI: 12.1% inflation CCO: 5.4% inflation Stability maintained in CCO 3. |
-| 2262f896cc | papers/pdfs/dual-currency-inflation.pdf | 90% | fact | remove |  | Participation Surge (90% CCO participation): Maximum inflation: 4.2% Capacity constraints bind effectively No hyperinflationary spiral |
-| 8467190e8c | papers/pdfs/dual-currency-inflation.pdf | 4.2% | fact | remove |  | Participation Surge (90% CCO participation): Maximum inflation: 4.2% Capacity constraints bind effectively No hyperinflationary spiral |
-| c7e1fdfee2 | papers/pdfs/dual-currency-inflation.pdf | €560 | fact | remove |  | €560/month |
-| d66b6f9337 | papers/pdfs/dual-currency-inflation.pdf | $22 | fact | remove |  | $22/month |
-| 1358cd03f1 | papers/pdfs/dual-currency-inflation.pdf | 0.1% | fact | remove |  | 0.1% per 1% GDP |
-| 6c89e5bb16 | papers/pdfs/dual-currency-inflation.pdf | 1% | fact | remove |  | 0.1% per 1% GDP |
-| 2dbe742555 | papers/pdfs/dual-currency-inflation.pdf | ~$1,600 | fact | remove |  | ~$1,600/year |
-| e675aad951 | papers/pdfs/dual-currency-inflation.pdf | 0.3% | fact | remove |  | 0.3% annual |
-| 7f89f56ab9 | papers/pdfs/dual-currency-inflation.pdf | $1,200 | fact | remove |  | $1,200/month |
-| 4758a1222d | papers/pdfs/dual-currency-inflation.pdf | 1.3% | fact | remove | B040 | 1.3% annual |
-| dfbb421334 | papers/pdfs/dual-currency-inflation.pdf | €1,000 | fact | remove |  | €1,000/month |
-| d3cce24ff8 | papers/pdfs/dual-currency-inflation.pdf | 5.2% | projection | relabel |  | 5.2% (estimated) |
-| 19b4aeeea9 | papers/pdfs/dual-currency-inflation.pdf | 15-20% | fact | remove |  | 15-20% |
-| bdfcd47455 | papers/pdfs/dual-currency-inflation.pdf | 12-15% | fact | remove |  | 12-15% |
-| 12ce1781cf | papers/pdfs/dual-currency-inflation.pdf | 8-12% | fact | remove |  | 8-12% |
-| 253fffc6a5 | papers/pdfs/dual-currency-inflation.pdf | 5-8% | fact | remove |  | 5-8% |
-| 2cecbcdced | papers/pdfs/dual-currency-inflation.pdf | +42% | fact | remove |  | +42% |
-| d622e7c79f | papers/pdfs/dual-currency-inflation.pdf | +38% | fact | remove |  | +38% |
-| 5acdc5e6a3 | papers/pdfs/dual-currency-inflation.pdf | -4% | fact | remove |  | -4% |
-| 8966abe8d6 | papers/pdfs/dual-currency-inflation.pdf | -18% | fact | remove |  | -18% |
-| 31e563bd00 | papers/pdfs/dual-currency-inflation.pdf | -6% | fact | remove |  | -6% |
-| 81c590dcbe | papers/pdfs/dual-currency-inflation.pdf | +12% | fact | remove |  | +12% |
-| 6699166f50 | papers/pdfs/dual-currency-inflation.pdf | -8% | fact | remove |  | -8% |
-| 08521e9247 | papers/pdfs/dual-currency-inflation.pdf | -3% | fact | remove |  | -3% |
-| ada4c0d9d4 | papers/pdfs/dual-currency-inflation.pdf | +5% | fact | remove |  | +5% |
-| 5ee652adac | papers/pdfs/dual-currency-inflation.pdf | -5% | fact | remove |  | -5% |
-| 391c55e659 | papers/pdfs/dual-currency-inflation.pdf | +2% | fact | remove |  | +2% |
-| a2243cb8e6 | papers/pdfs/dual-currency-inflation.pdf | +7% | fact | remove |  | +7% |
-| 4351ec8f54 | papers/pdfs/dual-currency-inflation.pdf | +11% | fact | remove |  | +11% |
-| 068602906a | papers/pdfs/dual-currency-inflation.pdf | +31% | fact | remove |  | +31% |
-| 1ffb723c4e | papers/pdfs/dual-currency-inflation.pdf | +20% | fact | remove |  | +20% |
-| d5d217f0cc | papers/pdfs/dual-currency-inflation.pdf | 65% | projection | relabel | B033 | Democratic Governance: Community assessment maintains system integrity Numerical simulations indicate CCO could achieve 65% lower inflation than traditional UBI while delivering 90% of the welfare gains. |
-| ee104d6479 | papers/pdfs/dual-currency-inflation.pdf | 90% | projection | relabel | B033 | Democratic Governance: Community assessment maintains system integrity Numerical simulations indicate CCO could achieve 65% lower inflation than traditional UBI while delivering 90% of the welfare gains. |
-| b357ff0b06 | papers/pdfs/dual-currency-inflation.pdf | 1867-1960 | fact | remove |  | A Monetary History of the United States, 1867-1960. |
-| 1ad388e7b3 | papers/pdfs/dual-currency-inflation.pdf | 2017– 2018 | fact | remove |  | The basic income experiment 2017– 2018 in Finland. |
-| 74fd137434 | papers/pdfs/dual-currency-inflation.pdf | 82 | fact | remove |  | Economic Modelling, 82, 375389. |
-| 2be061068b | papers/pdfs/dual-currency-inflation.pdf | 375389 | fact | remove |  | Economic Modelling, 82, 375389. |
-| fee85f8bb7 | papers/pdfs/dual-currency-inflation.pdf | 13 | fact | remove |  | BerkShares: 13 Years of Community Currency. |
+| 021fedc23e | papers/pdfs/dual-currency-inflation.pdf | 65% | simulation result | correct | B033 B061 | Numerical simulations demonstrate inflation rates 65% lower than traditional UBI with equivalent welfare gains. |
+| a479347387 | papers/pdfs/dual-currency-inflation.pdf | $3 trillion | simulation result | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
+| 810f23f6e5 | papers/pdfs/dual-currency-inflation.pdf | 14% | simulation result | remove | B032 | For a program providing $12,000 annually to 250 million adults, this represents approximately $3 trillion in additional liquidity—roughly 14% of 2023 U.S. |
+| c6a5063cda | papers/pdfs/dual-currency-inflation.pdf | $1,200 | simulation result | remove | B039 | Basic Unit Dynamics: Distribution: B_t = B_0 (constant universal distribution of $1,200 monthly) Expiration: B_{t+1} = 0 (complete expiration each period) Conversion: P_convert,i = f(C_{i,t}, B_expired,i, R_i) for Creato |
+| 7c2715221c | papers/pdfs/dual-currency-inflation.pdf | $1,200 | simulation result | remove | B067 | Octave Capacity Function: C_{i,j,t} = B_0 × 2^min(O_{i,j}, Ō_j) if O_{i,j} ≤ Ō_j C_{i,j,t} = B_0 × 2^Ō_j if O_{i,j} > Ō_j Where: C_{i,j,t} = Conversion capacity for individual i in industry j at time t B_0 = Base convers |
+| 3696b29f5a | papers/pdfs/dual-currency-inflation.pdf | 1.618 | simulation result | remove |  | With Phi (×1.618) |
+| 73417143c6 | papers/pdfs/dual-currency-inflation.pdf | 8.09x | simulation result | remove |  | 8.09x-9.708x |
+| d7a1218063 | papers/pdfs/dual-currency-inflation.pdf | 11.326x | simulation result | remove |  | 11.326x-14.562x |
+| 8713dc41d6 | papers/pdfs/dual-currency-inflation.pdf | 0.35 | simulation result | remove |  | …0 = $1,200 (monthly basic unit distribution) Population = 250 million adults GDP = $25 trillion Essential goods share = 0.35 Velocity_P = 4.5 Velocity_B = 12 (higher due to expiration) Octave distribution ~ Poisson(λ=2) |
+| a0b485300d | papers/pdfs/dual-currency-inflation.pdf | 4.5 | simulation result | remove |  | …y basic unit distribution) Population = 250 million adults GDP = $25 trillion Essential goods share = 0.35 Velocity_P = 4.5 Velocity_B = 12 (higher due to expiration) Octave distribution ~ Poisson(λ=2) Industry caps: 50 |
+| 62e608ef8c | papers/pdfs/dual-currency-inflation.pdf | 12 | simulation result | remove |  | …ribution) Population = 250 million adults GDP = $25 trillion Essential goods share = 0.35 Velocity_P = 4.5 Velocity_B = 12 (higher due to expiration) Octave distribution ~ Poisson(λ=2) Industry caps: 50% capped at O=5,  |
+| 8358a26f2b | papers/pdfs/dual-currency-inflation.pdf | 50% | simulation result | remove |  | …re = 0.35 Velocity_P = 4.5 Velocity_B = 12 (higher due to expiration) Octave distribution ~ Poisson(λ=2) Industry caps: 50% capped at O=5, 50% uncapped Conversion rates: 1x-9x range with phi enhancement (1.618x)… |
+| 98fa3907ef | papers/pdfs/dual-currency-inflation.pdf | 2.5% | simulation result | remove |  | 2.5% |
+| 628e0cec42 | papers/pdfs/dual-currency-inflation.pdf | 28.0% | simulation result | remove |  | 28.0% |
+| d029daa7cd | papers/pdfs/dual-currency-inflation.pdf | 100 | simulation result | remove |  | 100 |
+| 8734fb42cb | papers/pdfs/dual-currency-inflation.pdf | $1,200 | simulation result | remove |  | Traditional UBI ($1,200) |
+| a7997efe84 | papers/pdfs/dual-currency-inflation.pdf | 8.3% | simulation result | remove |  | 8.3% |
+| 9f6e04e7ab | papers/pdfs/dual-currency-inflation.pdf | 6.7% | simulation result | remove |  | 6.7% |
+| e46d78b0d6 | papers/pdfs/dual-currency-inflation.pdf | 72.4% | simulation result | remove |  | 72.4% |
+| df8222f60f | papers/pdfs/dual-currency-inflation.pdf | 142 | simulation result | remove |  | 142 |
+| 28051f2f93 | papers/pdfs/dual-currency-inflation.pdf | 3.8% | simulation result | remove |  | 3.8% |
+| 7751e08bbf | papers/pdfs/dual-currency-inflation.pdf | 3.1% | simulation result | remove |  | 3.1% |
+| 8e8e8aa993 | papers/pdfs/dual-currency-inflation.pdf | 35.2% | simulation result | remove |  | 35.2% |
+| 6c9251bb15 | papers/pdfs/dual-currency-inflation.pdf | 138 | simulation result | remove |  | 138 |
+| 4109eb46aa | papers/pdfs/dual-currency-inflation.pdf | 3.2% | simulation result | remove |  | 3.2% |
+| b593d5cb55 | papers/pdfs/dual-currency-inflation.pdf | 2.8% | simulation result | remove |  | 2.8% |
+| e35f2bb3b3 | papers/pdfs/dual-currency-inflation.pdf | 31.5% | simulation result | remove |  | 31.5% |
+| 08c10c1195 | papers/pdfs/dual-currency-inflation.pdf | 145 | simulation result | remove |  | 145 |
+| 211f4f8616 | papers/pdfs/dual-currency-inflation.pdf | ±0.3% | simulation result | remove |  | *Standard errors: ±0.3% for inflation, ±2 for welfare index |
+| 586f7ce18f | papers/pdfs/dual-currency-inflation.pdf | 10% | simulation result | remove |  | Supply Shock (10% reduction in Y_E): Traditional UBI: 15.2% inflation spike CCO: 7.8% inflation spike Recovery time: CCO 40% faster 2. |
+| 3ba5e1f126 | papers/pdfs/dual-currency-inflation.pdf | 15.2% | simulation result | remove |  | Supply Shock (10% reduction in Y_E): Traditional UBI: 15.2% inflation spike CCO: 7.8% inflation spike Recovery time: CCO 40% faster 2. |
+| 367ed5e901 | papers/pdfs/dual-currency-inflation.pdf | 7.8% | simulation result | remove |  | Supply Shock (10% reduction in Y_E): Traditional UBI: 15.2% inflation spike CCO: 7.8% inflation spike Recovery time: CCO 40% faster 2. |
+| 5a22b35d18 | papers/pdfs/dual-currency-inflation.pdf | 40% | simulation result | remove |  | Supply Shock (10% reduction in Y_E): Traditional UBI: 15.2% inflation spike CCO: 7.8% inflation spike Recovery time: CCO 40% faster 2. |
+| ca69d5930f | papers/pdfs/dual-currency-inflation.pdf | 20% | simulation result | remove |  | Demand Shock (20% increase in velocity): Traditional UBI: 12.1% inflation CCO: 5.4% inflation Stability maintained in CCO 3. |
+| 9c5e0fc31f | papers/pdfs/dual-currency-inflation.pdf | 12.1% | simulation result | remove |  | Demand Shock (20% increase in velocity): Traditional UBI: 12.1% inflation CCO: 5.4% inflation Stability maintained in CCO 3. |
+| 888ed3b978 | papers/pdfs/dual-currency-inflation.pdf | 5.4% | simulation result | remove |  | Demand Shock (20% increase in velocity): Traditional UBI: 12.1% inflation CCO: 5.4% inflation Stability maintained in CCO 3. |
+| 2262f896cc | papers/pdfs/dual-currency-inflation.pdf | 90% | simulation result | remove |  | Participation Surge (90% CCO participation): Maximum inflation: 4.2% Capacity constraints bind effectively No hyperinflationary spiral |
+| 8467190e8c | papers/pdfs/dual-currency-inflation.pdf | 4.2% | simulation result | remove |  | Participation Surge (90% CCO participation): Maximum inflation: 4.2% Capacity constraints bind effectively No hyperinflationary spiral |
+| 6117c388db | papers/pdfs/dual-currency-inflation.pdf | 0.42 | simulation result | remove | B055 | …Sectoral Analysis 6.1 Housing Market Effects Traditional UBI Impact: ΔP_housing = β_0 + β_1 × UBI + ε Estimated β_1 = 0.42 (42% pass-through to housing prices) CCO Impact: ΔP_housing = γ_0 + γ_1 × B_0 + γ_2 × PTF_Supply |
+| e4dd5ad6f3 | papers/pdfs/dual-currency-inflation.pdf | 42% | simulation result | remove | B055 | …oral Analysis 6.1 Housing Market Effects Traditional UBI Impact: ΔP_housing = β_0 + β_1 × UBI + ε Estimated β_1 = 0.42 (42% pass-through to housing prices) CCO Impact: ΔP_housing = γ_0 + γ_1 × B_0 + γ_2 × PTF_Supply + ν |
+| 5f88502a1a | papers/pdfs/dual-currency-inflation.pdf | 0.15 | simulation result | remove | B055 | …42 (42% pass-through to housing prices) CCO Impact: ΔP_housing = γ_0 + γ_1 × B_0 + γ_2 × PTF_Supply + ν Estimated γ_1 = 0.15, γ_2 = -0.28 (net reduction with PTF)… |
+| 2ddf61f647 | papers/pdfs/dual-currency-inflation.pdf | -0.28 | simulation result | remove | B055 | …-through to housing prices) CCO Impact: ΔP_housing = γ_0 + γ_1 × B_0 + γ_2 × PTF_Supply + ν Estimated γ_1 = 0.15, γ_2 = -0.28 (net reduction with PTF)… |
+| f840983a77 | papers/pdfs/dual-currency-inflation.pdf | 18% | simulation result | remove |  | 6.2 Healthcare Sector Basic units restricted to essential care create: Predictable demand for preventive services Reduced emergency utilization 18% reduction in overall healthcare inflation |
+| c7e1fdfee2 | papers/pdfs/dual-currency-inflation.pdf | €560 | simulation result | remove |  | €560/month |
+| d66b6f9337 | papers/pdfs/dual-currency-inflation.pdf | $22 | simulation result | remove |  | $22/month |
+| 1358cd03f1 | papers/pdfs/dual-currency-inflation.pdf | 0.1% | simulation result | remove |  | 0.1% per 1% GDP |
+| 6c89e5bb16 | papers/pdfs/dual-currency-inflation.pdf | 1% | simulation result | remove |  | 0.1% per 1% GDP |
+| 2dbe742555 | papers/pdfs/dual-currency-inflation.pdf | ~$1,600 | simulation result | remove |  | ~$1,600/year |
+| e675aad951 | papers/pdfs/dual-currency-inflation.pdf | 0.3% | simulation result | remove |  | 0.3% annual |
+| 7f89f56ab9 | papers/pdfs/dual-currency-inflation.pdf | $1,200 | simulation result | remove |  | $1,200/month |
+| 4758a1222d | papers/pdfs/dual-currency-inflation.pdf | 1.3% | simulation result | remove | B040 | 1.3% annual |
+| dfbb421334 | papers/pdfs/dual-currency-inflation.pdf | €1,000 | simulation result | remove |  | €1,000/month |
+| d3cce24ff8 | papers/pdfs/dual-currency-inflation.pdf | 5.2% | simulation result | remove |  | 5.2% (estimated) |
+| 19b4aeeea9 | papers/pdfs/dual-currency-inflation.pdf | 15-20% | simulation result | remove |  | 15-20% |
+| bdfcd47455 | papers/pdfs/dual-currency-inflation.pdf | 12-15% | simulation result | remove |  | 12-15% |
+| 12ce1781cf | papers/pdfs/dual-currency-inflation.pdf | 8-12% | simulation result | remove |  | 8-12% |
+| 253fffc6a5 | papers/pdfs/dual-currency-inflation.pdf | 5-8% | simulation result | remove |  | 5-8% |
+| f20814300c | papers/pdfs/dual-currency-inflation.pdf | 1-6 | simulation result | remove |  | …Policy Implementation Framework 8.1 Phased Rollout Strategy Phase 1 (Months 1-6): Infrastructure Development Digital wallet deployment Merchant onboarding for basic unit acceptance Creator Collective… |
+| fedaf60ebe | papers/pdfs/dual-currency-inflation.pdf | 7-12 | simulation result | remove |  | …igital wallet deployment Merchant onboarding for basic unit acceptance Creator Collective establishment Phase 2 (Months 7-12): Pilot Program 10,000 participant pilot Full conversion mechanism testing (1x-9x with phi) In |
+| 26e1e20e7b | papers/pdfs/dual-currency-inflation.pdf | 10,000 | simulation result | remove |  | …ent Merchant onboarding for basic unit acceptance Creator Collective establishment Phase 2 (Months 7-12): Pilot Program 10,000 participant pilot Full conversion mechanism testing (1x-9x with phi) Inflation monitoring sy |
+| d10ff6ea30 | papers/pdfs/dual-currency-inflation.pdf | 13-24 | simulation result | remove |  | …0,000 participant pilot Full conversion mechanism testing (1x-9x with phi) Inflation monitoring systems Phase 3 (Months 13-24): Regional Expansion Scale to 1 million participants Industry-specific octave calibration PTF |
+| 6e85382c8b | papers/pdfs/dual-currency-inflation.pdf | 1 million | simulation result | remove |  | …ion mechanism testing (1x-9x with phi) Inflation monitoring systems Phase 3 (Months 13-24): Regional Expansion Scale to 1 million participants Industry-specific octave calibration PTF integration begins Phase 4 (Year 3+ |
+| 2cecbcdced | papers/pdfs/dual-currency-inflation.pdf | +42% | simulation result | remove |  | +42% |
+| d622e7c79f | papers/pdfs/dual-currency-inflation.pdf | +38% | simulation result | remove |  | +38% |
+| 5acdc5e6a3 | papers/pdfs/dual-currency-inflation.pdf | -4% | simulation result | remove |  | -4% |
+| 8966abe8d6 | papers/pdfs/dual-currency-inflation.pdf | -18% | simulation result | remove |  | -18% |
+| 31e563bd00 | papers/pdfs/dual-currency-inflation.pdf | -6% | simulation result | remove |  | -6% |
+| 81c590dcbe | papers/pdfs/dual-currency-inflation.pdf | +12% | simulation result | remove |  | +12% |
+| 6699166f50 | papers/pdfs/dual-currency-inflation.pdf | -8% | simulation result | remove |  | -8% |
+| 08521e9247 | papers/pdfs/dual-currency-inflation.pdf | -3% | simulation result | remove |  | -3% |
+| ada4c0d9d4 | papers/pdfs/dual-currency-inflation.pdf | +5% | simulation result | remove |  | +5% |
+| 5ee652adac | papers/pdfs/dual-currency-inflation.pdf | -5% | simulation result | remove |  | -5% |
+| 391c55e659 | papers/pdfs/dual-currency-inflation.pdf | +2% | simulation result | remove |  | +2% |
+| a2243cb8e6 | papers/pdfs/dual-currency-inflation.pdf | +7% | simulation result | remove |  | +7% |
+| 4351ec8f54 | papers/pdfs/dual-currency-inflation.pdf | +11% | simulation result | remove |  | +11% |
+| 068602906a | papers/pdfs/dual-currency-inflation.pdf | +31% | simulation result | remove |  | +31% |
+| 1ffb723c4e | papers/pdfs/dual-currency-inflation.pdf | +20% | simulation result | remove |  | +20% |
+| d5d217f0cc | papers/pdfs/dual-currency-inflation.pdf | 65% | simulation result | correct | B033 | Democratic Governance: Community assessment maintains system integrity Numerical simulations indicate CCO could achieve 65% lower inflation than traditional UBI while delivering 90% of the welfare gains. |
+| ee104d6479 | papers/pdfs/dual-currency-inflation.pdf | 90% | simulation result | correct | B033 | Democratic Governance: Community assessment maintains system integrity Numerical simulations indicate CCO could achieve 65% lower inflation than traditional UBI while delivering 90% of the welfare gains. |
+| 0bfb560033 | papers/pdfs/dual-currency-inflation.pdf | 42 | simulation result | remove |  | Journal of Money, Credit and Banking, 42(s1), 199-215. |
+| 297d11f1ed | papers/pdfs/dual-currency-inflation.pdf | 199-215 | simulation result | remove |  | Journal of Money, Credit and Banking, 42(s1), 199-215. |
+| b357ff0b06 | papers/pdfs/dual-currency-inflation.pdf | 1867-1960 | simulation result | remove |  | A Monetary History of the United States, 1867-1960. |
+| 1ad388e7b3 | papers/pdfs/dual-currency-inflation.pdf | 2017– 2018 | simulation result | remove |  | The basic income experiment 2017– 2018 in Finland. |
+| 74fd137434 | papers/pdfs/dual-currency-inflation.pdf | 82 | simulation result | remove |  | Economic Modelling, 82, 375389. |
+| 2be061068b | papers/pdfs/dual-currency-inflation.pdf | 375389 | simulation result | remove |  | Economic Modelling, 82, 375389. |
+| fee85f8bb7 | papers/pdfs/dual-currency-inflation.pdf | 13 | simulation result | remove |  | BerkShares: 13 Years of Community Currency. |
+| 2b7c742ff6 | papers/pdfs/dual-currency-inflation.pdf | 12 | simulation result | remove |  | A.1 Velocity Differential Proof Given expiration constraint, basic unit velocity must satisfy: V_B = 12/t_avg Where t_avg is average holding period in months. |
+| 2557a1be60 | papers/pdfs/dual-currency-inflation.pdf | ≥ 12 | simulation result | remove |  | With monthly expiration: V_B ≥ 12 Primary currency velocity unconstrained: V_P ≈ 4.5 (historical average) Therefore: V_B/V_P ≥ 2.67 |
+| a5a3734d94 | papers/pdfs/dual-currency-inflation.pdf | ≈ 4.5 | simulation result | remove |  | With monthly expiration: V_B ≥ 12 Primary currency velocity unconstrained: V_P ≈ 4.5 (historical average) Therefore: V_B/V_P ≥ 2.67 |
+| 97777932f5 | papers/pdfs/dual-currency-inflation.pdf | ≥ 2.67 | simulation result | remove |  | With monthly expiration: V_B ≥ 12 Primary currency velocity unconstrained: V_P ≈ 4.5 (historical average) Therefore: V_B/V_P ≥ 2.67 |
+| 96256cc7f3 | papers/pdfs/dual-currency-inflation.pdf | $1,200 | simulation result | remove |  | …class CCOSimulation: def __init__(self, params): self.B0 = params['basic_unit_amount'] # $1,200 self.population = params['population'] self.industries = params['industries'] self.octave_caps = params['octave_caps'] … |
+| 28004caf10 | papers/pdfs/dual-currency-inflation.pdf | 10 | simulation result | remove |  | …tion'] self.industries = params['industries'] self.octave_caps = params['octave_caps'] self.conversion_rates = range(1, 10) # 1x to 9x self.phi = 1.618 # Golden ratio enhancement def run_simulation(self, periods): for t |
 | 7493db6c5b | papers/pdfs/economic-modeling-simulation.pdf | 30% | simulation result | remove |  | …aces for Creator Collectives (reducing overhead 40-60%) Basic units accepted at PTF establishments (increasing velocity 30%) PTF workers earn enhanced conversion rates (additional income stream) Acre equity provides col |
 | dff6200ba6 | papers/pdfs/economic-modeling-simulation.pdf | 1.5 | simulation result | remove |  | def calculate_ptf_enhanced_conversion(member, ptf_participation): base_conversion = member.octave_level * member.quality_multiplier ptf_multipliers = { 'ptf_worker': 1.5, |
 | 63f0322ce2 | papers/pdfs/economic-modeling-simulation.pdf | 50% | simulation result | remove |  | # 50% bonus for PTF employment |
