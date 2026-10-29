@@ -158,7 +158,7 @@ def figures(sent):
             continue                                   # part of a word or symbol: x2, B0, H2O
         if after[:1].isalpha():
             continue                                   # 3D, 2nd, 10am, CO2e
-        if YEAR.match(core) and not re.search(r"[%$£€×]", f):
+        if re.fullmatch(r"\d{4}", f) and YEAR.match(f):
             continue                                   # a past calendar year used as a date
         if re.fullmatch(r"[0-9]", core) and not re.search(r"[%$£€×]|fold|times", f):
             nxt = sent[b:b + 30]

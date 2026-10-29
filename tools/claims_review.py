@@ -490,6 +490,12 @@ REVIEW = [
     (r"risk-mitigation-framework", r"^12\.4 Long-term Evolution", PAR, "target", "correct", "the framework's evolution targets", "", "B119: the 50% cost reduction is unreferenced", r"50%"),
     (r"risk-mitigation-framework", r"^12\.4 Long-term Evolution", PAR, "target", "keep", "the framework's evolution targets", "", ""),
     (r"risk-mitigation-framework", r".", PAR, "specification", "keep", "the framework's security and crisis design (thresholds, limits, response times)", "", ""),
+
+    # ---- late cross-page rules (reach PDF fragments before their page's fallback)
+    (ALL, r"Phase \d+:? .{0,40}\((?:Months?|Years?|Weeks?|Days?) [−-]?\d+|^(?:Phase \d+|Months? \d+[–-]\d+|Years? \d+[–-]\d+)", PAR, "plan", "keep", "the paper's phase plan", "", "planned timing, not a forecast", r"^[−-]?\d+(?:[–-]\d+)?(?: to \d+)?$|^\d+\+$"),
+    (ALL, r"^Portugal \(2001-2024\)|^Switzerland \(1994-2024\)", META, "period label", "keep", "the page itself", "", ""),
+    (r"citizens-internet-portal", r"Gilens and Page \(2014\)", EXT, "fact", "keep", "Gilens & Page (2014), cited", "cited, not opened", ""),
+    (r"pth-independent-financing", r"pays their own mortgage over 15-30 years", EXT, "fact", "keep", "standard US mortgage terms", "standard fact, not cited", ""),
 ]
 
 # Default class for a figure on a paper page that no rule above or generic rule matches.
