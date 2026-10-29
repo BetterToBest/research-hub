@@ -588,9 +588,10 @@
         <h2>Appendix A: Mathematical Proofs</h2>
         
         <h3>A.1 Equilibrium Existence</h3>
-        <p><strong>Theorem 1:</strong> Under standard regularity conditions, a unique equilibrium exists in the dual-currency system.</p>
+        <p><strong>Theorem 1 (one market, partial equilibrium):</strong> Take one sector's market, priced in primary currency, with demand D(p) and supply S(p) for p ≥ 0, and hold every other price and income fixed. If D is continuous and strictly decreasing, S is continuous and non-decreasing, D(0) &gt; S(0), and D(p̄) &lt; S(p̄) for some finite p̄, the market has exactly one clearing price.</p>
 
-        <p><strong>Proof:</strong> The excess demand function Z(p) = D(p) - S(p) is continuous and strictly decreasing due to capacity constraints. With Z(0) > 0 and Z(∞) < 0, the intermediate value theorem guarantees a unique solution p* such that Z(p*) = 0. □</p>
+        <p><strong>Proof:</strong> The excess demand function Z(p) = D(p) − S(p) is continuous and strictly decreasing, with Z(0) &gt; 0 and Z(p̄) &lt; 0. The intermediate value theorem gives a zero p* in (0, p̄), and strict decrease makes it unique. □</p>
+        <p>This is a sector-level, partial-equilibrium result. Capacity constraints alone do not make Z strictly decreasing; that is an assumption on demand and supply. The theorem does not show that the basic-unit and primary-currency markets clear together, which would need a general-equilibrium argument this paper does not make. An earlier version stated it for "the dual-currency system" as a whole.</p>
 
         <h3>A.2 Stability Analysis</h3>
         <p><strong>Theorem 2:</strong> The equilibrium is locally stable when octave capacity constraints are binding.</p>

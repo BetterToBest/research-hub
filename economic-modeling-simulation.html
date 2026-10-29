@@ -624,7 +624,7 @@
         <ul>
             <li>60-70%: Efficient resource utilization with strong network effects</li>
             <li>70-80%: Peak performance across all metrics</li>
-            <li>80%+: Diminishing returns due to coordination complexity</li>
+            <li>80%+: diminishing returns are asserted here, but no model in the compendium produces them. The network value function used elsewhere, V(n) = k₁n² + k₂n·log(n) (Integrated Digital Governance, Section 4.4), is convex for every n &gt; 0 (V″(n) = 2k₁ + k₂/n &gt; 0), so returns to participation never diminish under it. Diminishing returns would need a coordination-cost term that no paper specifies.</li>
         </ul>
 
         <h3>7.2 PTF Market Share Limits</h3>
@@ -1289,7 +1289,8 @@ class CCOAgent:
         <p>dO_i/dt = λ_i(Quality, Experience, Network) × (Max_Octave - O_i)</p>
         
         <p><strong>System Stability Measure:</strong></p>
-        <p>Stability = 1 - Var(Key_Metrics) / Mean(Key_Metrics)</p>
+        <p>Stability = 1 − SD(Key_Metrics) / Mean(Key_Metrics), that is, one minus the coefficient of variation</p>
+        <p>(An earlier version divided the variance by the mean. That ratio carries the metric's units, so its value changes with the unit of measure. The coefficient of variation is unit-free.)</p>
     </section>
 
     <section>

@@ -34,6 +34,12 @@ REVIEW = [
     (ALL, r"\b1[57]\+? (?:core |open-access |peer-reviewable )?(?:research |working )?papers|Papers: 17|collection of 17|comprising 17", META, "count of papers", "keep", "the Hub's paper list", "", ""),
     (r"^index\.html$", r"Symmetrical Geometric Construction ¦", PAR, "emblem geometry", "keep", "site emblem", "", "geometry of the site's emblem, not a research figure"),
 
+    # ---- text written in S46 (the repaired formal model); placed before the papers' page-wide rules
+    (r"optimal-transfer-design", r"v5\.6\.0|5bf5bcc|19\.5%|49\.3%|44\.4%|32\.7%", SIM, "simulation result", "keep", "Compassionism Simulation v5.6.0 (commit 5bf5bcc), release panel, 500 paired seeds of 500 adults, 20 years: node harness.js testbed 500 release ref,adv,st --v54 --snab --slope", "release data (compassionism-simulation data/releases/v5.6.json)", ""),
+    (r"optimal-transfer-design|community-monetary-development|economic-modeling-simulation|dual-currency-inflation", r"[Aa]n earlier (?:PDF )?version|is withdrawn|earlier PDF version|earlier statement used", META, "correction note", "keep", "the page itself (S46 correction note)", "", "states what an earlier version said and why it changed"),
+    (r"optimal-transfer-design", r"^4\.\d |^B\.\d |M′\(q\)|M\(q\) = min|κ ~ Uniform", PAR, "model definition", "keep", "the paper's formal model (Sections 4, B)", "", ""),
+    (r"community-monetary-development", r"converges toward|long-run poverty rate at 11\.8%|converges toward 11\.8%", DER, "calculation", "keep", "Section 3.3: p* = λfall/(λescape + λfall) with the assumed rates", "recomputed: 0.118, 0.074; half-lives 3.72 and 2.20 years", "conditional on assumed transition rates"),
+    (r"community-monetary-development", r"^3\.3 Convergence", DER, "derivation", "keep", "Section 3.3", "recomputed", "the transition rates are design assumptions"),
     # ---- CCO conversion design (front page, summary, papers)
     (ALL, r"14\.56", DER, "calculation", "keep", "9 × 1.618, printed beside it", "recomputed: 14.56", "", r"14\.56"),
     (ALL, r"Octave 1 = 1,000|Octave \d = [\d,]+ BU|Cbase × 2", DER, "calculation", "keep", "capacity doubling formula printed beside it", "recomputed", "illustrative base of 1,000 BU"),
