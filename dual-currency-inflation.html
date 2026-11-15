@@ -218,7 +218,7 @@
 
     <section class="abstract">
         <h2>Abstract</h2>
-        <p>This paper examines Creative Currency Octaves (CCO), a dual-currency monetary framework designed to implement Universal Basic Income while mitigating inflationary pressures. Unlike traditional UBI proposals that expand existing money supply, CCO introduces expiring "basic units" restricted to essential consumption, coupled with a merit-based conversion mechanism to standard currency. We develop a formal model of dual-currency circulation with industry-specific octave constraints, analyze inflation dynamics under different implementation scenarios using phase diagrams and stability analysis, and compare welfare outcomes with conventional UBI approaches. Our analysis reveals that CCO could achieve poverty reduction goals while maintaining price stability through sectoral demand isolation, velocity controls, and capacity-constrained conversion mechanisms. Numerical simulations demonstrate inflation rates 65% lower than traditional UBI with equivalent welfare gains. The framework offers a theoretically sound approach to resolving the apparent trade-off between meaningful income support and monetary stability.</p>
+        <p>This paper examines Creative Currency Octaves (CCO), a dual-currency monetary framework designed to implement Universal Basic Income while mitigating inflationary pressures. Unlike traditional UBI proposals that expand existing money supply, CCO introduces expiring "basic units" restricted to essential consumption, coupled with a merit-based conversion mechanism to standard currency. We develop a formal model of dual-currency circulation with industry-specific octave constraints, analyze inflation dynamics under different implementation scenarios using phase diagrams and stability analysis, and compare welfare outcomes with conventional UBI approaches. Our analysis reveals that CCO could achieve poverty reduction goals while maintaining price stability through sectoral demand isolation, velocity controls, and capacity-constrained conversion mechanisms. In the Compassionism Simulation, programme inflation is negligible only when new output backs the payout in full, and is tens of points a year when it does not (section 5). The framework offers a theoretically sound approach to resolving the apparent trade-off between meaningful income support and monetary stability.</p>
         
         <p><strong>Keywords:</strong> Universal Basic Income, Monetary Policy, Inflation Control, Dual Currency Systems, Welfare Economics, Mechanism Design, Monetary Theory</p>
         <p><strong>JEL Classification:</strong> E42, E52, H53, I38, E31, D82</p>
@@ -369,48 +369,18 @@
             <li>Supply elasticities: β<sub>E</sub> = 0.15, β<sub>N</sub> = 0.22</li>
         </ul>
 
-        <h3>5.2 Baseline Scenario</h3>
-        <p>Under baseline parameters with 15% Creator Collective participation and average conversion rates of 2.1x:</p>
-
-        <ul>
-            <li>Essential sector inflation: 1.2% annually</li>
-            <li>Non-essential sector inflation: 0.8% annually</li>
-            <li>Overall inflation: 0.95% annually</li>
-            <li>Total monetary expansion: $847 billion annually (3.15% of GDP)</li>
-            <li>Welfare gain: Equivalent to $1,850 monthly UBI with 65% lower inflation</li>
-        </ul>
-
-        <h3>5.3 Sensitivity Analysis</h3>
-        <p>Robustness checks across parameter ranges:</p>
-
-        <p><strong>Participation Rates:</strong> Higher Creator Collective participation (5% to 35%) increases conversion flows but maintains inflation below 1.8% due to capacity constraints.</p>
-
-        <p><strong>Octave Limits:</strong> Reducing maximum octaves from 8 to 4 cuts inflation by additional 0.3 percentage points while preserving 89% of welfare gains.</p>
-
-        <p><strong>Price Elasticities:</strong> Even with higher elasticities (α<sub>E</sub> = 0.25), inflation remains manageable at 1.6% annually.</p>
-
-        <h3>5.4 Monte Carlo Analysis</h3>
-        <p>10,000 simulation runs with randomized parameters show:</p>
-        <ul>
-            <li>95% confidence interval for inflation: [0.6%, 1.4%]</li>
-            <li>Mean welfare improvement: $1,760 monthly equivalent</li>
-            <li>Probability of inflation > 2%: 4.2%</li>
-            <li>System stability in 97.8% of scenarios</li>
-        </ul>
+        <h3>5.2 What the simulation finds</h3>
+        <p>An earlier version of this section printed inflation rates, a Monte Carlo interval and a welfare comparison with a traditional cash transfer. No run produced them, and they have been removed. The figures below come from the Compassionism Simulation's published release.</p>
+        <!-- FIG:r2-inflation -->
+<p><strong>Inflation in the simulation (Release 2, v5.8.0).</strong> Inflation depends on how much new output backs the payout. At full backing, which is a design statement and not a result, programme inflation is 0.00 to 0.18 points a year across both designs, three environments and both horizons. At the model’s own backing mechanism, which backs 0.2 to 19.6% of the payout, it is 14.9 to 53.3 points a year (over the mechanism with and without its ceiling). Programme inflation stays under 5% a year only when backing is above about 74 to 90% of the payout. So no figure here says the framework contains inflation unless the output behind the payout is also in place.</p>
+<!-- /FIG -->
     </section>
 
     <section>
         <h2>6. Comparison with Traditional UBI</h2>
         
         <h3>6.1 Direct Cash Transfer Model</h3>
-        <p>A traditional UBI providing $1,200 monthly to all adults would inject $3.72 trillion annually into the economy—13.8% of GDP. Using standard multiplier effects:</p>
-
-        <ul>
-            <li>Expected inflation: 2.8% annually</li>
-            <li>Essential sector inflation: 4.1% (due to inelastic supply)</li>
-            <li>Non-essential sector inflation: 1.9%</li>
-            <li>Real welfare gain after inflation: $1,040 monthly equivalent</li>
-        </ul>
+        <p>A traditional UBI providing $1,200 monthly to all adults would inject $3.72 trillion annually into the economy, 13.8% of GDP. This paper no longer states an inflation rate or a welfare gain for it: the figures printed here earlier came from no run.</p>
 
         <h3>6.2 CCO Advantages</h3>
         <p>CCO delivers superior outcomes through several mechanisms:</p>
@@ -423,12 +393,7 @@
         </ol>
 
         <h3>6.3 Welfare Comparison</h3>
-        <p>Using compensating variation measures:</p>
-        <ul>
-            <li>Traditional UBI welfare gain: $1,040 monthly (inflation-adjusted)</li>
-            <li>CCO welfare gain: $1,760 monthly (inflation-adjusted)</li>
-            <li>CCO efficiency gain: 69% higher welfare per dollar of fiscal cost</li>
-        </ul>
+        <p>The welfare comparison with a traditional UBI that stood here (monthly dollar gains and a "69% higher welfare per dollar") is withdrawn for the same reason. The mechanisms in 6.2 are design arguments; whether they lower inflation is a question for the simulation's release figures in section 5.2.</p>
     </section>
 
     <section>
@@ -502,7 +467,7 @@
         
         <p>This paper demonstrates that Creative Currency Octaves offers a theoretically sound approach to implementing Universal Basic Income while maintaining price stability. The dual-currency architecture with sectoral restrictions, expiration mechanisms, and capacity-constrained conversion creates multiple inflation control mechanisms without sacrificing welfare objectives.</p>
 
-        <p>Our formal model and numerical simulations show CCO can deliver welfare gains equivalent to $1,760 monthly UBI with inflation rates 65% lower than traditional cash transfer approaches. The key innovation lies in separating essential consumption support from discretionary monetary expansion, enabling targeted poverty relief without broad inflationary pressure.</p>
+        <p>The Compassionism Simulation's published figures (section 5.2) show negligible programme inflation only when new output backs the payout in full, and much higher inflation under the model's own backing mechanism. No comparison with a traditional cash transfer is claimed. The key innovation lies in separating essential consumption support from discretionary monetary expansion, enabling targeted poverty relief without broad inflationary pressure.</p>
 
         <p>The framework's capacity constraints through industry-specific octave limits provide endogenous monetary discipline while creating productive incentives through conversion mechanisms. This resolves the traditional trade-off between meaningful income support and macroeconomic stability.</p>
 
@@ -604,7 +569,7 @@
         <h3>A.3 Welfare Optimization</h3>
         <p><strong>Theorem 3:</strong> CCO achieves higher social welfare than traditional UBI for inflation-averse populations.</p>
 
-        <p><strong>Proof:</strong> Using a social welfare function W = U(consumption) - λ×inflation², CCO's lower inflation rate more than compensates for any reduction in direct transfers, yielding higher overall welfare for λ > λ*, where λ* ≈ 0.7 in our calibration. □</p>
+        <p><strong>Proof:</strong> Using a social welfare function W = U(consumption) - λ×inflation², CCO gives higher welfare than traditional UBI whenever the inflation it avoids, weighted by λ, outweighs the consumption it gives up; this holds for λ above a threshold λ* that depends on the two programmes' inflation and consumption. A value for λ* is not stated: the calibration that gave 0.7 rested on simulation figures that no run supports. □</p>
     </section>
 
     <section>
@@ -624,35 +589,8 @@
             <li>Maximum octave levels: 6-8 across industries</li>
         </ul>
 
-        <h3>B.2 Monte Carlo Methodology</h3>
-        <p>10,000 simulation runs with parameter uncertainty:</p>
-        <ul>
-            <li>Each parameter drawn from uniform distribution ±20% around baseline</li>
-            <li>Structural shocks: Normal(0, 0.05²) for demand/supply variations</li>
-            <li>Convergence criterion: |inflation<sub>t</sub> - inflation<sub>t-1</sub>| < 0.01%</li>
-            <li>Time horizon: 10 years with quarterly adjustments</li>
-        </ul>
-
-        <h3>B.3 Sensitivity Analysis Details</h3>
-        <p>Comprehensive sensitivity testing across all major parameters:</p>
-
-        <p><strong>Participation Rates (5% - 35%):</strong></p>
-        <ul>
-            <li>Low participation (5%): Inflation = 0.71%, Welfare gain = $1,420</li>
-            <li>High participation (35%): Inflation = 1.79%, Welfare gain = $2,140</li>
-        </ul>
-
-        <p><strong>Octave Limits (3 - 10):</strong></p>
-        <ul>
-            <li>Conservative limits (3-4): Inflation = 0.62%, Welfare gain = $1,580</li>
-            <li>Generous limits (8-10): Inflation = 1.34%, Welfare gain = $1,890</li>
-        </ul>
-
-        <p><strong>Price Elasticities:</strong></p>
-        <ul>
-            <li>Low elasticity (α<sub>E</sub> = 0.10): Inflation = 0.54%</li>
-            <li>High elasticity (α<sub>E</sub> = 0.30): Inflation = 2.12%</li>
-        </ul>
+        <h3>B.2 Monte Carlo and sensitivity results withdrawn</h3>
+        <p>This appendix earlier described 10,000 Monte Carlo runs and listed sensitivity results for participation, octave limits and price elasticities. No such runs exist, and the results are removed. The simulation's own sensitivity analysis is on its <a href="https://bettertobest.github.io/compassionism-simulation/findings.html">findings page</a>.</p>
     </section>
 
     <footer>
