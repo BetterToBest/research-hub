@@ -5,11 +5,13 @@
     "validation_iterations": 10000,
     "provenance_note": "Withdrawn: no 10,000-iteration run exists, and 98% poverty elimination was produced by no code (audits/early-figures.md in research-update). Treat every value here as an unvalidated design value, not an optimum.",
     "confidence_level": 0.95,
+    "validation_basis": "validation_iterations, confidence_level and every validation_confidence are claims of validation work; no such run exists (S30)",
     "description": "Optimal parameters for CCO-PTH-CIP-SZH integrated economic system achieving 98% poverty elimination"
   },
   
   "core_cco_parameters": {
     "basic_unit_amount": {
+      "basis": "design parameter (S30: copied from the first engine's Full Integration preset; the range matches its random draws)",
       "value": 1200,
       "unit": "USD_monthly",
       "range": [800, 1500],
@@ -17,12 +19,14 @@
       "validation_confidence": 0.94
     },
     "max_octave_level": {
+      "basis": "design parameter (S30: copied from the first engine's Full Integration preset; the range matches its random draws)",
       "value": 6,
       "range": [4, 8],
       "description": "Maximum octave level for capacity expansion",
       "capacity_multiplier": 64
     },
     "participation_rate": {
+      "basis": "assumption labelled optimal: no optimisation exists (S29 B022); range matches the printed code's draws",
       "value": 0.78,
       "range": [0.6, 0.95],
       "description": "Population participation in CCO system",
@@ -32,18 +36,21 @@
   
   "quality_assessment_parameters": {
     "base_quality_multiplier": {
+      "basis": "design parameter (S30: copied from the first engine's Full Integration preset; the range matches its random draws)",
       "min": 1.0,
       "max": 9.0,
       "description": "Quality-based conversion multipliers",
       "distribution": "uniform"
     },
     "phi_enhancement_rate": {
+      "basis": "design parameter (S30: copied from the first engine's Full Integration preset; the range matches its random draws)",
       "value": 1.618,
       "qualification_threshold": 3.0,
       "qualification_rate": 0.25,
       "description": "Golden ratio multiplier for aesthetic/productive contributions"
     },
     "peer_review_accuracy": {
+      "basis": "assumption labelled optimal: no optimisation exists (S29 B022); range matches the printed code's draws",
       "value": 0.82,
       "range": [0.7, 0.95],
       "description": "Accuracy of community quality assessments"
@@ -52,22 +59,26 @@
   
   "pth_parameters": {
     "uptake_rate": {
+      "basis": "assumption labelled optimal: no optimisation exists (S29 B022); range matches the printed code's draws",
       "value": 0.20,
       "range": [0.10, 0.30],
       "description": "Housing system adoption rate"
     },
     "acre_appreciation_rate": {
+      "basis": "design parameter (S30: copied from the first engine's Full Integration preset; the range matches its random draws)",
       "value": 0.04,
       "annual": true,
       "range": [0.02, 0.06],
       "description": "Community asset appreciation rate"
     },
     "break_even_threshold": {
+      "basis": "design parameter stated as an optimum; 'optimal' is unsupported (S30)",
       "value": 35,
       "unit": "households",
       "description": "Minimum viable PTH community size"
     },
     "median_wealth_accumulation": {
+      "basis": "target written into the parameter file; not an input and not a result (S29 B093, S30)",
       "value": 82000,
       "unit": "USD",
       "timeframe": "10_years",
@@ -78,16 +89,19 @@
   
   "community_structure": {
     "creative_collective_size": {
+      "basis": "design parameter stated as an optimum; 'optimal' is unsupported (S30)",
       "optimal": 42,
       "range": [35, 50],
       "description": "Optimal size for CCO creative groups"
     },
     "pth_community_size": {
+      "basis": "design parameter stated as an optimum; 'optimal' is unsupported (S30)",
       "range": [30, 300],
       "optimal": 150,
       "description": "PTH housing community size range"
     },
     "governance_efficiency": {
+      "basis": "assumption labelled optimal: no optimisation exists (S29 B022); range matches the printed code's draws",
       "value": 0.85,
       "range": [0.6, 0.95],
       "description": "Democratic decision-making effectiveness"
@@ -96,16 +110,19 @@
   
   "economic_environment": {
     "gdp_growth": {
+      "basis": "environment assumption, uncited (S30)",
       "mean": 0.025,
       "std_dev": 0.01,
       "description": "Annual GDP growth rate assumptions"
     },
     "inflation_target": {
+      "basis": "environment assumption, uncited (S30)",
       "value": 0.02,
       "variance": 0.005,
       "description": "Central bank inflation targeting"
     },
     "interest_rates": {
+      "basis": "environment assumption, uncited (S30)",
       "mean": 0.03,
       "std_dev": 0.01,
       "description": "Market interest rate environment"
@@ -114,19 +131,23 @@
   
   "system_outcomes": {
     "poverty_elimination_rate": {
+      "basis": "result stored as a parameter: produced by no code found (S30); not a basis for any figure",
       "value": 0.98,
       "confidence_interval": [0.96, 0.99],
       "description": "Population moved above poverty line"
     },
     "system_stability": {
+      "basis": "result stored as a parameter: produced by no code found (S30); not a basis for any figure",
       "value": 0.94,
       "description": "Long-term economic stability metric"
     },
     "work_participation": {
+      "basis": "result stored as a parameter: produced by no code found (S30); not a basis for any figure",
       "value": 0.88,
       "description": "Continued work engagement under CCO system"
     },
     "median_income_increase": {
+      "basis": "result stored as a parameter: produced by no code found (S30); not a basis for any figure",
       "value": 2.3,
       "unit": "multiplier",
       "description": "Income improvement over baseline"
@@ -135,16 +156,19 @@
   
   "international_adaptations": {
     "developed_economies": {
+      "basis": "design parameter (S30)",
       "basic_unit_multiplier": 1.5,
       "cultural_emphasis": "innovation_creativity",
       "integration_complexity": "high"
     },
     "developing_economies": {
+      "basis": "design parameter (S30)",
       "basic_unit_multiplier": 0.4,
       "cultural_emphasis": "agricultural_artisanal",
       "integration_complexity": "medium"
     },
     "post_crisis_economies": {
+      "basis": "design parameter (S30)",
       "rapid_deployment": true,
       "emergency_parameters": true,
       "international_coordination": "required"
@@ -152,6 +176,8 @@
   },
   
   "technical_specifications": {
+  
+    "basis": "metadata for a package that does not exist on the Hub (S30)",
     "simulation_language": "Python 3.9+",
     "required_libraries": [
       "numpy>=1.21.0",
@@ -168,6 +194,8 @@
   },
   
   "validation_benchmarks": {
+  
+    "basis": "validation claim: no such run exists (S30)",
     "monte_carlo_iterations": 10000,
     "parameter_sensitivity_tests": 156,
     "cross_validation_folds": 10,
