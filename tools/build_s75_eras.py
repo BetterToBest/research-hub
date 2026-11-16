@@ -6,7 +6,8 @@ and written unchanged (rounded for display) to data/s75-us-eras.json and into th
 inline data block:
   sources/s75_eras.json            the descriptive panel (part 1; results s75-panel-54e88bc)
   sources/s75_hx.json              each era's yearly path as the engine reads it
-  dev/runs/s75-eras/tables.json    the engine readings (part 2; results s75-eras-77a85d6)
+  dev/runs/s77-s75/tables.json     the engine readings (part 2, rerun with the release's settings in S77;
+                                   results s75-eras-e5649ef; the first run, dev/runs/s75-eras/, is superseded)
 
 Usage: python3 tools/build_s75_eras.py PATH/TO/compassionism-simulation
 """
@@ -28,7 +29,7 @@ def r(x, n=2):
 def main(sim):
     panel = json.load(open(os.path.join(sim, "sources/s75_eras.json")))
     hx = json.load(open(os.path.join(sim, "sources/s75_hx.json")))
-    tab = json.load(open(os.path.join(sim, "dev/runs/s75-eras/tables.json")))
+    tab = json.load(open(os.path.join(sim, "dev/runs/s77-s75/tables.json")))
     commit = subprocess.run(["git", "-C", sim, "rev-parse", "HEAD"], capture_output=True,
                             text=True).stdout.strip()
 
@@ -140,7 +141,24 @@ def main(sim):
         for e in ("e1", "e2", "e3", "e4"):
             q4[d][e] = [{"k": out_keys[i], "m": r(c["m"], 3), "lo": r(c["loH"], 3),
                          "hi": r(c["hiH"], 3)} for i, c in enumerate(tab["q4"][d][e + " P"])]
-    tally = tab["q4tally"]
+    tally = dict(tab["q4tally"])
+    # S77: a reversal is favourable when the programme's effect is now in the steadier direction (lower is
+    # steadier on all five outcomes), unfavourable otherwise. Counted over the tally's cells (six arms, P-A).
+    s74dir = {"c22": [1, 1, -1, -1, -1], "rel": [1, 1, -1, 1, -1]}
+    for d in ("c22", "rel"):
+        fav = unf = 0
+        for e in ("e1", "e2", "e3", "e4"):
+            for a in ("P", "R", "S", "T", "H", "A"):
+                for i, c in enumerate(tab["q4"][d][e + " " + a]):
+                    sig = 1 if c["loH"] > 0 else (-1 if c["hiH"] < 0 else 0)
+                    if sig and sig != s74dir[d][i]:
+                        if sig < 0:
+                            fav += 1
+                        else:
+                            unf += 1
+        assert fav + unf == tally.get(d + " reversed", 0), (d, fav, unf, tally)
+        tally[d + " reversed, favourable"] = fav
+        tally[d + " reversed, unfavourable"] = unf
     tax_change = {hx[e]["era"]: {"groups": hx[e]["T"]["groups"],
                                  "d": [r(x, 2) for x in hx[e]["T"]["d"]],
                                  "years": hx[e]["T"]["years"]} for e in ("e1", "e2", "e3", "e4")}
@@ -151,7 +169,7 @@ def main(sim):
 
     data = {
         "_about": "Built by research-hub tools/build_s75_eras.py from BetterToBest/compassionism-simulation "
-                  "at %s (sources/s75_eras.json, sources/s75_hx.json, dev/runs/s75-eras/tables.json)." % commit,
+                  "at %s (sources/s75_eras.json, sources/s75_hx.json, dev/runs/s77-s75/tables.json)." % commit,
         "sim_commit": commit,
         "engine_commit": tab["meta"]["e1"]["commit"],
         "seeds": tab["meta"]["e1"]["seeds"],
