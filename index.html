@@ -1280,7 +1280,7 @@
           <li>BLEI (Basic Living Economic Index): days of basic living covered by accessible resources. Formula: [L + γ·Y + BU_food_eff] / C_basic. Six tiers: Crisis (0–6), Precarious (7–29), Threshold (30–119), Stable (120–364), Secure (365–729), Flourishing (730+).</li>
           <li>EDC (Extractive Drain Coefficient): fraction of gross income captured by zero-wealth-building contracts. US baseline near-poverty: 0.625. CCO-PTH target: 0.025.</li>
           <li>EPPM (Effective Purchasing Power Multiplier): purchasing power ratio vs. baseline at same nominal income. Uses full BU·ε_blended = $2,502/adult/month. At poverty line: 5.80×.</li>
-          <li>FBS (Financial Bandwidth Score): monthly residual above basic living threshold. Gates P(advance) = 1 − exp(−λ·FBS). Near-poverty CCO: $2,281/month. Baseline: $0 (deficit).</li>
+          <li>FBS (Financial Bandwidth Score): monthly residual above basic living threshold. Gates P(advance) = 1 − exp(−λ·FBS). Near-poverty CCO: $2,281/month (assuming the EDC target of 0.025 is met). Baseline: $0 (deficit).</li>
           <li>CSI (Compound Stability Index): forward-looking stability horizon. CSI(i,t) = BLEI(i,0)·(1+r_wealth/12)^t·(1−EDC) + AE(i,t)/C_basic. All time in months; annual rates use monthly compounding.</li>
           <li>IPBI (Indirect Participant Benefit Index): annual welfare gains to high-wealth non-participants. Conservative total: $22,800/year. Upper bound: $59,900/year. Channel notation: α·CR + β·PH + π·LP + δ·PV + ζ·ME (π = LP weight, distinct from BLEI liquidity coefficient γ). All channel coefficients (α, β, π, δ, ζ) and their assumed values are defined in full in the <a href="/research-hub/basic-living-economic-index.html">BLEI Foundation Paper</a>; the LP channel (π) is the dominant driver of variance between the conservative and upper-bound estimates.</li>
         </ul>
@@ -1323,13 +1323,13 @@
       <li><strong>PTF overhead reduction:</strong> 40–60% vs. comparable private operations (framework design target derived from the 35–55% empirical overhead reduction documented in Mondragon/Eroski food-cooperative analogues; the wider range reflects variation across PTF operational scales and sector types)</li>
       <li><strong>PTH penetration target:</strong> 50% market share within 5–19 years depending on capital-deployment pathway (illustrative range reflecting three distinct pathways: philanthropic funding, grassroots community formation, and government-directed capital deployment; see PTH research paper for per-pathway sensitivity analysis)</li>
       <li><strong>CCO synergy coefficient (θ):</strong> 0.15–0.25 — additional community wealth from CCO-PTF integration in W(t), measured against an independent-operation baseline. Range derived via Monte Carlo simulation calibrated against comparable community economy dyads. <em>Status: pending peer-reviewed empirical calibration.</em></li>
-      <li><strong>Gini coefficient target (EDC-adjusted):</strong> ≤0.22 within full deployment (where "full deployment" corresponds to the Year 15 milestone, the same timeframe as the nominal target below). US baseline: 0.44–0.46 (EDC-adjusted). Direction: lower is better. <em>Comparability note: the EDC adjustment is a framework-specific correction not applied to standard published Gini statistics. For a like-for-like comparison against external benchmarks, use the nominal CCO target (≤0.25, below).</em></li>
-      <li><strong>Gini coefficient target (nominal):</strong> ≤0.25 within 15 years of full implementation. Nordic reference benchmark (nominal, conventionally reported): 0.27–0.29.</li>
+      <li><strong>Gini coefficient target (EDC-adjusted, disposable income):</strong> ≤0.22 within full deployment (where "full deployment" corresponds to the Year 15 milestone, the same timeframe as the nominal target below). US baseline: 0.44–0.46 (EDC-adjusted). Direction: lower is better. <em>Comparability note: the EDC adjustment is a framework-specific correction not applied to standard published Gini statistics. For a like-for-like comparison against external benchmarks, use the nominal CCO target (≤0.25, below).</em></li>
+      <li><strong>Gini coefficient target (nominal, disposable income, OECD definition):</strong> ≤0.25 within 15 years of full implementation. Nordic reference benchmark (nominal, conventionally reported): 0.27–0.29. The simulation reports a wealth Gini, so it cannot yet test either target.</li>
       <li><strong>BLEI Threshold Rate:</strong> 97% of CCO-PTF participants at ≥30 days (Tier 2+) by Year 5</li>
       <li><strong>BLEI Secure Rate:</strong> 84% of CCO-PTF participants at ≥365 days (Tier 4+) by Year 15</li>
-      <li><strong>BLEI Flourishing entry (near-poverty):</strong> ~33 months (sensitivity range: 28–47 months across ε_food ∈ [1.50, 3.00])</li>
+      <li><strong>BLEI Flourishing entry (near-poverty, illustrative):</strong> ~33 months under the BLEI paper's optimal parameters and an assumed saving of about 10% of financial bandwidth; the paper reports 28–47 months across ε_food ∈ [1.50, 3.00] but does not publish that derivation</li>
       <li><strong>EPPM at poverty line:</strong> 5.80× (sensitivity range: 3.40–6.70× across full ε range)</li>
-      <li><strong>FBS near-poverty participant:</strong> $2,281/month (from $0 deficit baseline)</li>
+      <li><strong>FBS near-poverty participant:</strong> $2,281/month (assuming the EDC target of 0.025 is met) (from $0 deficit baseline)</li>
       <li><strong>IPBI high-wealth non-participants:</strong> $22,800–$59,900/year (conservative $22,800 preferred; channel coefficients defined in <a href="/research-hub/basic-living-economic-index.html">BLEI Foundation Paper</a>)</li>
       <li><strong>CCO maximum effective conversion rate:</strong> ~14.56× (9× base tier × Φ ~1.618×)</li>
       <li><strong>Primary research collection:</strong> 17+ open-access papers, CC BY 4.0</li>
@@ -1366,5 +1366,6 @@
         });
     </script>
     
+<p style="max-width:52rem;margin:1rem auto;padding:0 16px;font-size:.85rem"><a href="/research-hub/corrections.html">Corrections log</a>: figures on this page that have been corrected, relabelled or removed.</p>
 </body>
 </html>
