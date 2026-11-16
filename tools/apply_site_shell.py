@@ -25,8 +25,8 @@ PAGES = {
     'wiki/international-adaptation-guide.html': ('../', 'wiki', [('Home', '../'), ('Wiki', 'index.html'), ('International Adaptation Guide', None)], False),
 }
 
-NAV = [('home', 'Home', ''), ('findings', 'Findings', '#findings'), ('papers', 'Papers', 'papers/'),
-       ('wiki', 'Wiki', 'wiki/'), ('tools', 'Tools', '#tools'), ('help', 'Get involved', '#help')]
+NAV = [('home', 'Home', ''), ('papers', 'Papers', 'papers/'), ('findings', 'Findings', '#findings'),
+       ('tools', 'Tools', '#tools'), ('wiki', 'Wiki', 'wiki/'), ('help', 'Get involved', '#help')]
 
 
 def head(r):
@@ -76,8 +76,8 @@ def header(r, cur, crumbs, search):
 def footer(r):
     return f'''<footer class="site-footer" role="contentinfo">
     <div class="container">
-        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All research is open access under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
-        <p>Corresponding author: <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a></p>
+        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All research is open access under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. The Simulation's code is open source under the <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/LICENSE-CODE.txt" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>. Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
+        <p>Contact: <a href="mailto:BetterToBestResearch@gmail.com">BetterToBestResearch@gmail.com</a></p>
         <nav class="footer-links" aria-label="Footer navigation">
             <a href="{r}">Home</a>
             <a href="{r}papers/">Research Papers</a>

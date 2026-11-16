@@ -488,10 +488,10 @@
             <a class="brand" href="../"><img src="../assets/bettertobest-mark-cool-academic.svg" alt="" width="32" height="32"><span>Better To Best <em>Research Hub</em></span></a>
             <nav class="site-nav" id="site-nav" aria-label="Primary">
                 <a href="../">Home</a>
-                <a href="../#findings">Findings</a>
                 <a href="../papers/">Papers</a>
-                <a href="../wiki/" aria-current="page">Wiki</a>
+                <a href="../#findings">Findings</a>
                 <a href="../#tools">Tools</a>
+                <a href="../wiki/" aria-current="page">Wiki</a>
                 <a href="../#help">Get involved</a>
             </nav>
             <div class="header-tools">
@@ -537,7 +537,7 @@
 <!-- ── About strip ───────────────────────────────────────────── -->
 <div class="about-strip" role="note">
     <div class="container">
-        All content is open-access under <strong>CC BY 4.0</strong> &mdash; authored by Duke Johnson with contributions from Claude (Anthropic) &mdash; Version 1.1 &mdash; Last updated May 2026
+        All content is open-access under <strong>CC BY 4.0</strong>; the Simulation is <strong>Apache 2.0</strong> &mdash; authored by Duke Johnson with contributions from Claude (Anthropic) &mdash; Version 1.1 &mdash; Last updated November 2026
     </div>
 </div>
 
@@ -561,7 +561,7 @@
             </div>
 
             <div class="card-grid-2">
-                <article class="doc-card" data-search="glossary definitions terms basic units octave levels multiplier CCO PTH PTF SZH CIP">
+                <article class="doc-card" data-search="glossary definitions terms basic units octave levels multiplier CCO PTH PTF SZH CIP OEIAS">
                     <div class="card-meta">
                         <span class="card-label">Reference</span>
                         <span class="badge badge-live">Live</span>
@@ -629,6 +629,9 @@
             <div class="qr-grid">
                 <a href="glossary.html#basic-units" class="qr-item">
                     <span class="qr-marker">[CCO]</span> Basic Units
+                </a>
+                <a href="glossary.html#oeias" class="qr-item">
+                    <span class="qr-marker">[GOV]</span> OEIAS
                 </a>
                 <a href="glossary.html#octave-levels" class="qr-item">
                     <span class="qr-marker">[CCO]</span> Octave Levels
@@ -900,8 +903,8 @@
 <!-- SHELL:footer -->
 <footer class="site-footer" role="contentinfo">
     <div class="container">
-        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All research is open access under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
-        <p>Corresponding author: <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a></p>
+        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All research is open access under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. The Simulation's code is open source under the <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/LICENSE-CODE.txt" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>. Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
+        <p>Contact: <a href="mailto:BetterToBestResearch@gmail.com">BetterToBestResearch@gmail.com</a></p>
         <nav class="footer-links" aria-label="Footer navigation">
             <a href="../">Home</a>
             <a href="../papers/">Research Papers</a>
@@ -925,7 +928,7 @@
 const SEARCH_INDEX = [
     {
         title: 'Complete Glossary',
-        desc: 'Definitions of key terms: basic units, octave levels, multiplier rates, CCO, PTH, PTF, SZH, CIP, welfare cliffs, conversion system.',
+        desc: 'Definitions of key terms: basic units, octave levels, multiplier rates, CCO, PTH, PTF, SZH, CIP, OEIAS, welfare cliffs, conversion system.',
         url: 'glossary.html',
         tags: ['Reference', 'Definitions']
     },
@@ -993,6 +996,7 @@ const SEARCH_INDEX = [
         external: true
     },
     /* Glossary anchor terms */
+    { title: 'OEIAS (definition)', desc: 'Optional Equitable Integrated Assurance Systems: the umbrella name for the five architectures taken together, with X-Cents. It supplements Compassionism and CCO-PTF-PTH-CIP-SZH.', url: 'glossary.html#oeias', tags: ['Glossary', 'Definitions'] },
     { title: 'Basic Units (definition)', desc: 'The supplementary currency in the CCO system, pegged 1:1 to USD, expiring 35 days after distribution.', url: 'glossary.html#basic-units', tags: ['Glossary'] },
     { title: 'Octave Levels (definition)', desc: 'Progression tiers determining CCO conversion capacity, following a doubling pattern analogous to musical octaves.', url: 'glossary.html#octave-levels', tags: ['Glossary'] },
     { title: 'Multiplier Rates (definition)', desc: 'Merit-based conversion rates from 1x to 14x, including the Phi-rate (1.618x) for qualitative excellence.', url: 'glossary.html#personal-multiplier-rates', tags: ['Glossary'] },
