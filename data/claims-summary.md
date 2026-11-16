@@ -11,22 +11,22 @@ Every number the Hub states (percentages, money, multipliers, counts, durations,
 - **relabel**: keep the number but say what it is, usually an illustrative projection, a design parameter or a target;
 - **remove**: nothing supports it and nothing honest can be said in its place. Most removals are model results that no published run produced: S30 looks for the code that may have made them, and S25 replaces them with results from the preregistered studies.
 
-Each class was set by a rule in `tools/claims_review.py` written after reading the passage (the `rule` column names it), or by the reference list (`ref`), or, for a PDF figure that also appears on the paper's HTML page, by the class reviewed there (`html:R…`). Reviewed or reference-list classes: 6336 of 11172; keyword fallbacks: 4836.
+Each class was set by a rule in `tools/claims_review.py` written after reading the passage (the `rule` column names it), or by the reference list (`ref`), or, for a PDF figure that also appears on the paper's HTML page, by the class reviewed there (`html:R…`). Reviewed or reference-list classes: 6337 of 11173; keyword fallbacks: 4836.
 
 How to read the classes: a value the framework chooses is a **design parameter**; arithmetic that follows from figures printed beside it is **derived** (`checked` says whether it was recomputed); a real-world figure is an **external source** only when the text cites one (`checked` says whether it was opened); a figure stated as a fact or a result with no source, run or derivation is **no basis found** (`claimed` says what it is presented as). This is Claude's reading of rule 5, taking the cautious reading where a page is unclear.
 
-Figures: **11172** on 59 pages and PDFs. 949 of them are in a PDF only (the PDF is an older or longer version of its HTML page; S24 rebuilds the PDFs).
+Figures: **11173** on 59 pages and PDFs. 949 of them are in a PDF only (the PDF is an older or longer version of its HTML page; S24 rebuilds the PDFs).
 
 | Class | Figures | keep | correct | relabel | remove |
 |---|---|---|---|---|---|
 | simulation | 8 | 2 | 6 | 0 | 0 |
 | derived | 4876 | 4666 | 156 | 54 | 0 |
 | external source | 268 | 183 | 85 | 0 | 0 |
-| design parameter | 1778 | 1594 | 77 | 107 | 0 |
+| design parameter | 1779 | 1595 | 77 | 107 | 0 |
 | illustrative projection | 459 | 315 | 89 | 55 | 0 |
 | corpus metadata | 761 | 744 | 2 | 0 | 15 |
 | no basis found | 3022 | 0 | 480 | 585 | 1957 |
-| **all** | 11172 | 7504 | 895 | 801 | 1972 |
+| **all** | 11173 | 7505 | 895 | 801 | 1972 |
 
 On the front page, research summary, paper index, wiki and parameters file (4952 figures): derived 4001, external source 14, design parameter 282, illustrative projection 49, corpus metadata 78, no basis found 528.
 
@@ -62,7 +62,7 @@ Earlier records merged: the session-5 claims records (S5-04, S5-05, S5-06, S5-07
 | economic-modeling-simulation.html | 0 | 3 | 16 | 48 | 4 | 32 | 284 |
 | index.html | 0 | 36 | 6 | 53 | 13 | 19 | 8 |
 | integrated-digital-governance.html | 0 | 0 | 1 | 20 | 0 | 24 | 46 |
-| integrated-implementation-roadmap.html | 0 | 0 | 0 | 94 | 1 | 4 | 34 |
+| integrated-implementation-roadmap.html | 0 | 0 | 0 | 95 | 1 | 4 | 34 |
 | new-frame-and-lens.html | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | new-frame-and-lens.md | 0 | 0 | 0 | 0 | 0 | 5 | 0 |
 | optimal-transfer-design.html | 1 | 0 | 4 | 28 | 0 | 32 | 14 |
