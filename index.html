@@ -62,7 +62,6 @@
     <meta name="twitter:site" content="@Author_Duke_J">
     
     <!-- Performance Hints -->
-    <link rel="preload" href="styles.css" as="style" fetchpriority="high">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preconnect" href="//www.googletagmanager.com">
     <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -74,9 +73,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
     
+    <!-- SHELL:head -->
+<link rel="stylesheet" href="assets/site.css">
+    <script src="assets/site.js"></script>
+<!-- /SHELL:head -->
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -675,42 +677,93 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS47FXL9" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" style="position:absolute;left:-9999px;z-index:999;padding:1em;background:#000;color:#fff;text-decoration:none;border-radius:4px;" onfocus="this.style.left='10px';this.style.top='10px';" onblur="this.style.left='-9999px';this.style.top='auto';">Skip to main content</a>
-    
-   <header role="banner">
-    <div class="btb-mark-wrap">
-        <button type="button" class="btb-mark-button" id="btbMarkToggle" aria-expanded="false" aria-controls="btbGeometryNote" aria-label="Show the geometric construction of the Better To Best mark">
-            <img src="assets/bettertobest-mark-cool-academic.svg" alt="" width="56" height="56">
-        </button>
+<!-- SHELL:header -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" role="banner">
+    <div class="container">
+        <div class="header-inner">
+            <a class="brand" href=""><img src="assets/bettertobest-mark-cool-academic.svg" alt="" width="32" height="32"><span>Better To Best <em>Research Hub</em></span></a>
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a href="" aria-current="page">Home</a>
+                <a href="#findings">Findings</a>
+                <a href="papers/">Papers</a>
+                <a href="wiki/">Wiki</a>
+                <a href="#tools">Tools</a>
+                <a href="#help">Get involved</a>
+            </nav>
+            <div class="header-tools">
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme">Dark</button>
+                <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            </div>
+        </div>
     </div>
-    <div class="btb-geometry-note" id="btbGeometryNote" role="region" aria-label="Mark geometric construction">
-        <h2>Symmetrical Geometric Construction</h2>
-        <p>This logo's inner circle features two golden-section arcs (green and purple). The inner and outer sections are also in Phi proportion to each other.</p>
-        <table>
-            <tr><td>Golden angle</td><td>~137.508&deg;</td></tr>
-            <tr><td>Golden ratio (&Phi;)</td><td>~1.618</td></tr>
-            <tr><td>Outer radius</td><td>90</td></tr>
-            <tr><td>Inner radius (outer &divide; &Phi;)</td><td>~55.62</td></tr>
-        </table>
-    </div>
-    <h1>Better To Best Research Hub</h1>
-    <p>Open-access research specializing in economic, social, and civic innovations designed for enhancing human cultures—featuring dual-currency systems, community ownership models, and democratic governance frameworks.</p>
-    <script>
-        (function(){
-            var btn = document.getElementById('btbMarkToggle');
-            var note = document.getElementById('btbGeometryNote');
-            btn.addEventListener('click', function(){
-                var isOpen = note.getAttribute('data-open') === 'true';
-                note.setAttribute('data-open', isOpen ? 'false' : 'true');
-                btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-            });
-        })();
-    </script>
 </header>
+<!-- /SHELL:header -->
+
+<section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+        <div class="btb-mark-wrap">
+            <button type="button" class="btb-mark-button" id="btbMarkToggle" aria-expanded="false" aria-controls="btbGeometryNote" aria-label="Show the geometric construction of the Better To Best mark">
+                <img src="assets/bettertobest-mark-cool-academic.svg" alt="" width="56" height="56">
+            </button>
+        </div>
+        <div class="btb-geometry-note" id="btbGeometryNote" role="region" aria-label="Mark geometric construction">
+            <h2>Symmetrical Geometric Construction</h2>
+            <p>This logo's inner circle features two golden-section arcs (green and purple). The inner and outer sections are also in Phi proportion to each other.</p>
+            <table>
+                <tr><td>Golden angle</td><td>~137.508&deg;</td></tr>
+                <tr><td>Golden ratio (&Phi;)</td><td>~1.618</td></tr>
+                <tr><td>Outer radius</td><td>90</td></tr>
+                <tr><td>Inner radius (outer &divide; &Phi;)</td><td>~55.62</td></tr>
+            </table>
+        </div>
+        <h1 id="hero-heading">Better To Best Research Hub</h1>
+        <p class="lede">Open-access research specializing in economic, social, and civic innovations designed for enhancing human cultures—featuring dual-currency systems, community ownership models, and democratic governance frameworks.</p>
+        <div class="btn-row">
+            <a class="btn" href="#findings">Findings</a>
+            <a class="btn btn-ghost" href="papers/">Research papers</a>
+            <a class="btn btn-ghost" href="#tools">Tools</a>
+        </div>
+    </div>
+</section>
 
 <main id="main-content" role="main">
-        
+<div class="home-section" id="about">
+<div class="container prose">
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">What Compassionism Is</h2>
+            <p>This open-research project presents academic literature focused on eliminating extreme poverty while preserving market dynamism. The five main architectures—Creative Currency Octaves, Public Trust Housing, Public Trust Foundations, Social Zone Harmonization, and Citizens Internet Portal—offer practical, implementable alternatives to inefficient welfare programs and general political dysfunction.</p>
+            
+            <p><strong>Core Mission:</strong> Develop economically-prudent and socially-coherent systems that guarantee basic needs while rewarding creativity, productivity, and community contribution.</p>
+
+            <div class="card-grid" aria-label="The five architectures">
+                <a class="card" href="#concepts"><span class="card-kicker">Economy</span><h3>Creative Currency Octaves</h3><span class="card-go">Read the concept</span></a>
+                <a class="card" href="#concepts"><span class="card-kicker">Housing</span><h3>Public Trust Housing</h3><span class="card-go">Read the concept</span></a>
+                <a class="card" href="#concepts"><span class="card-kicker">Assets</span><h3>Public Trust Foundations</h3><span class="card-go">Read the concept</span></a>
+                <a class="card" href="#concepts"><span class="card-kicker">Space</span><h3>Social Zone Harmonization</h3><span class="card-go">Read the concept</span></a>
+                <a class="card" href="#concepts"><span class="card-kicker">Democracy</span><h3>Citizens Internet Portal</h3><span class="card-go">Read the concept</span></a>
+            </div>
+        </section>
+</div>
+</div>
+
+<div class="home-section" id="findings">
+<div class="container prose">
+        <section aria-labelledby="findings-heading">
+            <h2 id="findings-heading">Findings</h2>
+            <p class="section-intro">What the simulation shows, generated from its current release so that the page and the data cannot drift apart. Every figure here is a model result with the design it rests on stated beside it; none is a forecast.</p>
+            <div class="findings-box">
+<!-- FIG:r2-inflation -->
+<p><strong>Inflation in the simulation (Release 2, v5.8.0).</strong> Inflation depends on how much new output backs the payout. At full backing, which is a design statement and not a result, programme inflation is 0.00 to 0.18 points a year across both designs, three environments and both horizons. At the model’s own backing mechanism, which backs 0.2 to 19.6% of the payout, it is 14.9 to 53.3 points a year (over the mechanism with and without its ceiling). Programme inflation stays under 5% a year only when backing is above about 74 to 90% of the payout. So no figure here says the framework contains inflation unless the output behind the payout is also in place.</p>
+<!-- /FIG -->
+            </div>
+            <p><a href="economic-modeling-simulation.html">Economic Modeling and Simulation</a> | <a href="cco-ptf-simulation-replication.html">Replication package</a> | <a href="corrections.html">Corrections log</a></p>
+        </section>
+</div>
+</div>
+
+<div class="home-section" id="papers">
+<div class="container prose">
 <section aria-labelledby="papers-heading">
     <h2 id="papers-heading">Research Papers</h2>
     <p>All working papers are open access under Creative Commons Attribution 4.0 licensing.</p>
@@ -722,8 +775,18 @@
             <a href="research-summary.html">Architectural Index</a>
         </p>
     </nav>
+
+    <div class="card-grid">
+        <a class="card" href="papers/"><span class="card-kicker">Collection</span><h3>Core Research Papers</h3><span class="card-go">Open the papers index</span></a>
+        <a class="card" href="research-summary.html"><span class="card-kicker">Overview</span><h3>Architectural Index</h3><span class="card-go">Read the summary</span></a>
+        <a class="card" href="https://independentresearcher.academia.edu/DukeJohnson" target="_blank" rel="noopener noreferrer"><span class="card-kicker">Academia</span><h3>Related Research Papers</h3><span class="card-go">Open Academia.edu</span></a>
+    </div>
 </section>
-        
+</div>
+</div>
+
+<div class="home-section" id="concepts">
+<div class="container prose">
         <section aria-labelledby="concepts-heading">
             <h2 id="concepts-heading">Key Concepts &amp; Definitions</h2>
             <p><em>These interconnected frameworks form a comprehensive system for developing harmonized economics and rational public affairs. Each component addresses specific challenges while working synergistically with the others.</em></p>
@@ -836,20 +899,39 @@
                 <p><strong>Design Principles:</strong> Community-controlled technology that serves democratic participation rather than extracting data or controlling behavior. Robust infrastructure with no single point of failure.</p>
             </article>
             
-            <div style="margin-top: 2em; padding: 1.5em; background: #f9f9f9; border-left: 4px solid #0066cc;">
-                <h3 style="margin-top: 0;">How These Systems Work Together</h3>
+            <div class="callout">
+                <h3>How These Systems Work Together</h3>
                 <p>The frameworks integrate to create resilient, equitable communities:</p>
-                <ul style="margin-bottom: 0;">
+                <ul>
                     <li><strong>CCO</strong> ensures everyone can meet basic needs while rewarding contribution</li>
                     <li><strong>PTH/PTF</strong> provide stable, affordable access to housing and essentials</li>
                     <li><strong>Creative Collectives</strong> (a CCO sub-component) foster cultural vibrancy and economic opportunity</li>
                     <li><strong>SZH</strong> enables diverse communities to optimize for their specific values</li>
                     <li><strong>CIP</strong> secures transparent democratic governance of all systems</li>
                 </ul>
-                <p style="margin-bottom: 0;"><em>Together, these systems are designed to preserve market dynamism, reduce poverty while minimizing dependency incentives, and strengthen human dignity through guaranteed basic access and contribution-based reward systems.</em></p>
+                <p><em>Together, these systems are designed to preserve market dynamism, reduce poverty while minimizing dependency incentives, and strengthen human dignity through guaranteed basic access and contribution-based reward systems.</em></p>
             </div>
         </section>
-        
+</div>
+</div>
+
+<div class="home-section" id="tools">
+<div class="container prose">
+        <section aria-labelledby="tools-heading">
+            <h2 id="tools-heading">Tools</h2>
+            <p class="section-intro">Working software and projects that put the research to use.</p>
+            <div class="card-grid">
+                <a class="card" href="https://bettertobest.github.io/compassionism-simulation/" target="_blank" rel="noopener noreferrer"><span class="card-kicker">Simulation</span><h3>Compassionism Simulation</h3><p>Agent-based interactive tool. Runs in any browser, nothing to install.</p><span class="card-go">Open the simulation</span></a>
+                <a class="card" href="https://bettertobest.github.io/portal/" target="_blank" rel="noopener noreferrer"><span class="card-kicker">Democracy</span><h3>Citizens Internet Portal</h3><p>A proposed open-source, distributed platform for transparent democratic participation.</p><span class="card-go">Open the portal</span></a>
+                <a class="card" href="https://bettertobest.github.io/x-cents/" target="_blank" rel="noopener noreferrer"><span class="card-kicker">Money</span><h3>X-Cents</h3><p>A citizen-led monetary framework that lets communities reassign value to the coins and bills they already hold.</p><span class="card-go">Open X-Cents</span></a>
+                <a class="card" href="https://bettertobest.github.io/NormativeEvaluation/" target="_blank" rel="noopener noreferrer"><span class="card-kicker">Evaluation</span><h3>NEEC</h3><p>Normative Economic Evaluation Criteria: how economic systems compare, with the evidence behind every score.</p><span class="card-go">Open NEEC</span></a>
+            </div>
+        </section>
+</div>
+</div>
+
+<div class="home-section" id="docs">
+<div class="container prose">
        <section aria-labelledby="wiki-heading">
     <h2 id="wiki-heading">Wiki &amp; Documentation</h2>
     <p>Comprehensive documentation, definitions, and research tools for understanding and implementing these frameworks.</p>
@@ -865,7 +947,7 @@
         </ul>
     </nav>
 </section>
-        
+
         <section aria-labelledby="implementation-heading">
             <h2 id="implementation-heading">Implementation Resources</h2>
             <nav aria-label="Implementation resources navigation">
@@ -883,14 +965,11 @@
             <h2 id="comparison-heading">Economic System Comparison</h2>
             <p>Evaluation of how CCO and the broader Compassionism framework compare to major competing systems using a structured, falsifiable methodology.<br><br><a href="https://BetterToBest.github.io/NormativeEvaluation/" target="_blank" rel="noopener noreferrer">Research</a> | <a href="https://medium.com/@duke.t.james/normative-economic-evaluation-for-the-automation-age-35bd4ef5e6a7" target="_blank" rel="noopener noreferrer">Article</a></p>
         </section>
-        
-        <section aria-labelledby="about-heading">
-            <h2 id="about-heading">About The Research Initiative</h2>
-            <p>This open-research project presents academic literature focused on eliminating extreme poverty while preserving market dynamism. The five main architectures—Creative Currency Octaves, Public Trust Housing, Public Trust Foundations, Social Zone Harmonization, and Citizens Internet Portal—offer practical, implementable alternatives to inefficient welfare programs and general political dysfunction.</p>
-            
-            <p><strong>Core Mission:</strong> Develop economically-prudent and socially-coherent systems that guarantee basic needs while rewarding creativity, productivity, and community contribution.</p>
-        </section>
-        
+</div>
+</div>
+
+<div class="home-section" id="authors">
+<div class="container prose">
         <section aria-labelledby="authors-heading">
             <h2 id="authors-heading">About the Authors</h2>
             
@@ -904,7 +983,11 @@
                 <p>AI assistant contributing mathematical formalization, empirical research design, and comprehensive literature integration to support rigorous academic development of these frameworks.</p>
             </article>
         </section>
-        
+</div>
+</div>
+
+<div class="home-section" id="help">
+<div class="container prose">
         <section aria-labelledby="connect-heading">
             <h2 id="connect-heading">Contact &amp; Connect</h2>
             
@@ -938,25 +1021,24 @@
             <p><strong>Contact:</strong> <a href="mailto:BetterToBestResearch@gmail.com" target="_blank" rel="noopener noreferrer">BetterToBestResearch@gmail.com</a></p>
         </section>
 
-        <!-- Civic Engagement: advocacy content, editorially distinct from research content above -->
-        <section aria-labelledby="action-heading" data-type="action-layer" style="margin-top: 2.5em; padding: 1.5em; background: #f5f5f5; border-top: 3px solid #ccc;">
-            <h2 id="action-heading" style="margin-top: 0; font-size: 1.1em; color: #555; text-transform: uppercase; letter-spacing: 0.05em;">Civic Engagement</h2>
-            <p style="font-size: 0.85em; color: #666; font-style: italic; margin-bottom: 1em;">The following reflects the public advocacy dimension of this research initiative, distinct from the academic and policy content above.</p>
-            <p style="font-size: 0.9em; margin: 0; font-style: italic;">"The next step is not another election. It is a referendum on the system itself."</p>
+        <section class="civic" aria-labelledby="action-heading" data-type="action-layer">
+            <h2 id="action-heading">Civic Engagement</h2>
+            <p class="note">The following reflects the public advocacy dimension of this research initiative, distinct from the academic and policy content above.</p>
+            <blockquote>"The next step is not another election. It is a referendum on the system itself."</blockquote>
             <nav aria-label="Action and civic engagement links">
-                <ul style="margin-bottom: 1.25em;">
-                    <li style="margin-bottom: 0.5em;">New here? Start with <a href="https://bettertobest.github.io/research-hub/new-frame-and-lens.html" target="_blank" rel="noopener noreferrer">A New Frame and Lens</a> — to see where the left and right already agree</li>
-                    <li style="margin-bottom: 0.5em;">Read the <a href="https://bettertobest.github.io/research-hub/referendum.html" target="_blank" rel="noopener noreferrer">Citizens' Referendum for Systemic Governance Reform</a></li>
-                    <li style="margin-bottom: 0.5em;">Sign and share the official petition at <a href="https://www.change.org/BetterToBest" target="_blank" rel="noopener noreferrer">Change.org/BetterToBest</a></li>
+                <ul>
+                    <li>New here? Start with <a href="https://bettertobest.github.io/research-hub/new-frame-and-lens.html" target="_blank" rel="noopener noreferrer">A New Frame and Lens</a> — to see where the left and right already agree</li>
+                    <li>Read the <a href="https://bettertobest.github.io/research-hub/referendum.html" target="_blank" rel="noopener noreferrer">Citizens' Referendum for Systemic Governance Reform</a></li>
+                    <li>Sign and share the official petition at <a href="https://www.change.org/BetterToBest" target="_blank" rel="noopener noreferrer">Change.org/BetterToBest</a></li>
                     <li>Initiate discussions that spread awarness of these novel concepts</li>
                 </ul>
             </nav>
         </section>
+</div>
+</div>
 
-        <hr style="margin: 2.5em 0 1.5em; border: none; border-top: 1px solid #ddd;">
-
-<!-- Machine-Readable System Graph for AI/LLM Ingestion -->
-<!-- ONTOLOGY VERSION: 2.3 | LAST UPDATED: 2026-06-14 | SCHEMA: Compassionism Architecture Graph -->
+<div class="home-section ontology-wrap" id="ontology">
+<div class="container prose">
 <section id="ai-ontology" aria-label="Machine-readable ontology" data-ontology-version="2.4" data-updated="2026-11-16">
   <details>
     <summary><strong>For AI systems: Complete Compassionism architecture graph (v2.3) — includes BLEI welfare measurement suite</strong></summary>
@@ -1339,33 +1421,42 @@
 
   </details>
 </section>
-        
-    </main>
+</div>
+</div>
+</main>
     
-    <footer role="contentinfo" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid #ddd; text-align: center; color: #666; font-size: 0.9em;">
-        <p>&copy; 2025-2026 Better To Best Research Hub. All research licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" style="color: #0066cc;">CC BY 4.0</a>.</p>
-        <nav aria-label="Footer navigation">
-            <p style="margin-top: 0.5em;">
-                <a href="wiki/glossary.html" style="color:#0066cc;">Glossary</a> |
-                <a href="wiki/faq.html" style="color:#0066cc;">FAQ</a> |
-                <a href="papers/" style="color:#0066cc;">Research Papers</a> |
-                <a href="integrated-implementation-roadmap.html" style="color:#0066cc;">Implementation Roadmap</a> |
-                <a href="v1/" style="color:#0066cc;">Version 1 (archived)</a> |
-                <a href="https://github.com/BetterToBest/research-hub/discussions" target="_blank" rel="noopener noreferrer" style="color:#0066cc;">Discussions</a>
-            </p>
+<!-- SHELL:footer -->
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All research is open access under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
+        <p>Corresponding author: <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a></p>
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="">Home</a>
+            <a href="papers/">Research Papers</a>
+            <a href="wiki/">Wiki</a>
+            <a href="wiki/glossary.html">Glossary</a>
+            <a href="wiki/faq.html">FAQ</a>
+            <a href="integrated-implementation-roadmap.html">Implementation Roadmap</a>
+            <a href="wiki/implementation-roadmap.html">General Roadmap</a>
+            <a href="wiki/international-adaptation-guide.html">International Guide</a>
+            <a href="corrections.html">Corrections</a>
+            <a href="v1/">Version 1 (archived)</a>
+            <a href="https://github.com/BetterToBest/research-hub/discussions" target="_blank" rel="noopener noreferrer">Discussions</a>
+            <a href="https://independentresearcher.academia.edu/DukeJohnson" target="_blank" rel="noopener noreferrer">Academia.edu</a>
         </nav>
-    </footer>
+    </div>
+</footer>
+<!-- /SHELL:footer -->
 
     <!-- Back to top button -->
-    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"
-        style="display:none;position:fixed;bottom:1.5rem;right:1.5rem;background:#0066cc;color:#fff;border:none;border-radius:50%;width:2.5rem;height:2.5rem;font-size:1.1rem;cursor:pointer;z-index:500;line-height:1;">&#8593;</button>
+    <button id="backToTop" class="home-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
     <script>
         var btt = document.getElementById('backToTop');
         window.addEventListener('scroll', function() {
-            btt.style.display = window.scrollY > 400 ? 'block' : 'none';
+            btt.classList.toggle('show', window.scrollY > 400);
         });
     </script>
     
-<p style="max-width:52rem;margin:1rem auto;padding:0 16px;font-size:.85rem"><a href="/research-hub/corrections.html">Corrections log</a>: figures on this page that have been corrected, relabelled or removed.</p>
+<p class="corrections-note"><a href="/research-hub/corrections.html">Corrections log</a>: figures on this page that have been corrected, relabelled or removed.</p>
 </body>
 </html>

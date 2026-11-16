@@ -38,7 +38,6 @@
     <meta name="twitter:description" content="Detailed answers to common questions about Creative Currency Octaves, PTF, PTH, SZH, CIP, and the Compassionism framework.">
 
     <!-- Performance -->
-    <link rel="preload" href="../styles.css" as="style" fetchpriority="high">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
@@ -128,100 +127,21 @@
     }
     </script>
 
+    <!-- SHELL:head -->
+<link rel="stylesheet" href="../assets/site.css">
+    <script src="../assets/site.js"></script>
+<!-- /SHELL:head -->
     <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        :root {
-            --primary:      #1e40af;
-            --primary-dark: #1e3a8a;
-            --accent:       #2563eb;
-            --accent-light: #eff6ff;
-            --bg:           #ffffff;
-            --surface:      #f8fafc;
-            --text:         #0f172a;
-            --text-muted:   #475569;
-            --border:       #e2e8f0;
-            --success:      #15803d;
-            --success-bg:   #f0fdf4;
-            --warn-bg:      #fffbeb;
-            --warn-border:  #fbbf24;
-            --header-h:     27px;
-            --mono:         'Courier New', Courier, monospace;
-            --sans:         'Segoe UI', system-ui, -apple-system, sans-serif;
-        }
-
-        body {
-            font-family: var(--sans);
-            font-size: 16px;
-            line-height: 1.65;
-            color: var(--text);
-            background: var(--bg);
-        }
-
-        a { color: var(--accent); }
-        a:hover { text-decoration: underline; }
-
-        .container { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
 
         /* ── Skip link ──────────────────────────────────────── */
-        .skip-link {
-            position: absolute; left: -9999px;
-            background: var(--primary); color: #fff;
-            padding: 0.5rem 1rem; font-size: 0.9rem;
-        }
-        .skip-link:focus { left: 1rem; top: 1rem; z-index: 9999; }
 
         /* ── Header ─────────────────────────────────────────── */
-        .site-header {
-            background: var(--surface);
-            border-bottom: 1px solid var(--border);
-            height: var(--header-h);
-            position: sticky; top: 0; z-index: 200;
-        }
-        .header-inner {
-            height: 100%;
-            display: flex; align-items: center;
-            justify-content: space-between; gap: 1rem;
-        }
-        .site-logo {
-            font-weight: 700; font-size: 1rem;
-            color: var(--primary); text-decoration: none; white-space: nowrap;
-        }
-        .site-logo:hover { text-decoration: underline; }
-        .breadcrumb {
-            font-size: 0.85rem; color: var(--text-muted);
-            display: flex; align-items: center; gap: 0.4rem;
-        }
-        .breadcrumb a { color: var(--primary); text-decoration: none; }
-        .breadcrumb a:hover { text-decoration: underline; }
 
         /* ── Page header ────────────────────────────────────── */
-        .page-header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 60%, #2563eb 100%);
-            color: #fff;
-            padding: 3rem 0 2.5rem;
-            text-align: center;
-        }
-        .page-header h1 {
-            font-size: clamp(1.75rem, 5vw, 2.5rem);
-            font-weight: 800; margin-bottom: 0.6rem; line-height: 1.15;
-        }
-        .page-header p {
-            font-size: 1rem; opacity: 0.9;
-            max-width: 600px; margin: 0 auto;
-        }
 
         /* ── About strip ────────────────────────────────────── */
-        .about-strip {
-            background: var(--accent-light);
-            border-bottom: 1px solid #bfdbfe;
-            padding: 0.75rem 0;
-            font-size: 0.87rem; color: var(--text-muted); text-align: center;
-        }
-        .about-strip strong { color: var(--primary-dark); }
 
         /* ── Main ───────────────────────────────────────────── */
-        main { padding: 3rem 0; }
 
         /* ── Section nav ────────────────────────────────────── */
         .section-nav {
@@ -251,14 +171,14 @@
             transition: all 0.15s;
         }
         .nav-link:hover {
-            background: var(--primary); color: #fff;
+            background: var(--primary); color: var(--on-primary);
             border-color: var(--primary); text-decoration: none;
         }
         .nav-marker {
             font-family: var(--mono); font-size: 0.72rem;
             color: var(--text-muted); flex-shrink: 0;
         }
-        .nav-link:hover .nav-marker { color: rgba(255,255,255,0.75); }
+        .nav-link:hover .nav-marker { color: var(--on-primary); opacity: .8; }
 
         /* ── FAQ sections ───────────────────────────────────── */
         .faq-section {
@@ -371,7 +291,7 @@
         /* Tier table */
         .tier-table { width: 100%; border-collapse: collapse; font-size: 0.87rem; margin: 0.75rem 0; }
         .tier-table th {
-            background: var(--primary); color: #fff;
+            background: var(--primary); color: var(--on-primary);
             padding: 0.55rem 0.85rem; text-align: left;
             font-weight: 600; font-size: 0.8rem;
         }
@@ -397,29 +317,8 @@
         .contact-cta h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.6rem; }
         .contact-cta p { font-size: 0.93rem; color: var(--text-muted); margin-bottom: 1.25rem; }
         .btn-row { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; }
-        .btn {
-            display: inline-flex; align-items: center; gap: 0.4em;
-            padding: 0.65rem 1.35rem;
-            background: var(--primary); color: #fff;
-            border: 1px solid transparent; border-radius: 5px;
-            font-size: 0.9rem; font-weight: 600;
-            text-decoration: none; font-family: var(--sans);
-            transition: background 0.15s, transform 0.15s;
-        }
-        .btn:hover { background: var(--primary-dark); transform: translateY(-1px); text-decoration: none; color: #fff; }
-        .btn-ghost {
-            background: transparent; color: var(--primary);
-            border-color: var(--primary);
-        }
-        .btn-ghost:hover { background: var(--primary); color: #fff; }
 
         /* ── Footer ─────────────────────────────────────────── */
-        footer {
-            background: var(--surface); border-top: 1px solid var(--border);
-            padding: 2.5rem 0 1.5rem; margin-top: 2rem;
-            text-align: center; color: var(--text-muted); font-size: 0.88rem;
-        }
-        footer a { color: var(--accent); }
         .footer-links {
             display: flex; justify-content: center; flex-wrap: wrap;
             gap: 0.4rem 1.25rem; margin-top: 0.75rem;
@@ -430,7 +329,7 @@
         /* ── Back to top ────────────────────────────────────── */
         .back-to-top {
             position: fixed; bottom: 1.5rem; right: 1.5rem;
-            background: var(--primary); color: #fff;
+            background: var(--primary); color: var(--on-primary);
             border: none; border-radius: 50%;
             width: 2.5rem; height: 2.5rem;
             font-size: 1.1rem; cursor: pointer;
@@ -455,23 +354,29 @@
 </head>
 <body>
 
+<!-- SHELL:header -->
 <a class="skip-link" href="#main-content">Skip to main content</a>
-
-<!-- ── Site Header ──────────────────────────────────────────── -->
 <header class="site-header" role="banner">
     <div class="container">
         <div class="header-inner">
-            <a href="../" class="site-logo">Better To Best Research Hub</a>
-            <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a class="brand" href="../"><img src="../assets/bettertobest-mark-cool-academic.svg" alt="" width="32" height="32"><span>Better To Best <em>Research Hub</em></span></a>
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
                 <a href="../">Home</a>
-                <span aria-hidden="true">/</span>
-                <a href="index.html">Wiki</a>
-                <span aria-hidden="true">/</span>
-                <span aria-current="page">FAQ</span>
+                <a href="../#findings">Findings</a>
+                <a href="../papers/">Papers</a>
+                <a href="../wiki/" aria-current="page">Wiki</a>
+                <a href="../#tools">Tools</a>
+                <a href="../#help">Get involved</a>
             </nav>
+            <div class="header-tools">
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme">Dark</button>
+                <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            </div>
         </div>
     </div>
 </header>
+<div class="crumbs"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a> <span aria-hidden="true">/</span> <a href="index.html">Wiki</a> <span aria-hidden="true">/</span> <span aria-current="page">FAQ</span></nav></div></div>
+<!-- /SHELL:header -->
 
 <!-- ── Page Header ──────────────────────────────────────────── -->
 <div class="page-header" role="region" aria-labelledby="page-h1">
@@ -490,7 +395,7 @@
 
 <!-- ── Main ─────────────────────────────────────────────────── -->
 <main id="main-content">
-    <div class="container">
+    <div class="container narrow">
 
         <!-- Section navigation -->
         <nav class="section-nav" aria-labelledby="secnav-label">
@@ -1241,21 +1146,28 @@
 </main>
 
 <!-- ── Footer ────────────────────────────────────────────────── -->
-<footer role="contentinfo">
+<!-- SHELL:footer -->
+<footer class="site-footer" role="contentinfo">
     <div class="container">
-        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.</p>
-        <p style="margin-top:0.4rem;">Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
+        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All research is open access under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
+        <p>Corresponding author: <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a></p>
         <nav class="footer-links" aria-label="Footer navigation">
             <a href="../">Home</a>
-            <a href="index.html">Wiki</a>
-            <a href="glossary.html">Glossary</a>
-            <a href="implementation-roadmap.html">Implementation Guide</a>
             <a href="../papers/">Research Papers</a>
-            <a href="../integrated-implementation-roadmap.html">Full Roadmap</a>
+            <a href="../wiki/">Wiki</a>
+            <a href="../wiki/glossary.html">Glossary</a>
+            <a href="../wiki/faq.html">FAQ</a>
+            <a href="../integrated-implementation-roadmap.html">Implementation Roadmap</a>
+            <a href="../wiki/implementation-roadmap.html">General Roadmap</a>
+            <a href="../wiki/international-adaptation-guide.html">International Guide</a>
+            <a href="../corrections.html">Corrections</a>
+            <a href="../v1/">Version 1 (archived)</a>
             <a href="https://github.com/BetterToBest/research-hub/discussions" target="_blank" rel="noopener noreferrer">Discussions</a>
+            <a href="https://independentresearcher.academia.edu/DukeJohnson" target="_blank" rel="noopener noreferrer">Academia.edu</a>
         </nav>
     </div>
 </footer>
+<!-- /SHELL:footer -->
 
 <button class="back-to-top" id="backToTop"
     onclick="window.scrollTo({top:0,behavior:'smooth'})"

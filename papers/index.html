@@ -14,7 +14,6 @@
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
 
-    <link rel="preload" href="styles.css" as="style">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -421,10 +420,37 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png">
 
-    <link rel="stylesheet" href="../styles.css">
+    <!-- SHELL:head -->
+<link rel="stylesheet" href="../assets/site.css">
+    <script src="../assets/site.js"></script>
+<!-- /SHELL:head -->
 </head>
 <body>
-    <header>
+    <!-- SHELL:header -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" role="banner">
+    <div class="container">
+        <div class="header-inner">
+            <a class="brand" href="../"><img src="../assets/bettertobest-mark-cool-academic.svg" alt="" width="32" height="32"><span>Better To Best <em>Research Hub</em></span></a>
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a href="../">Home</a>
+                <a href="../#findings">Findings</a>
+                <a href="../papers/" aria-current="page">Papers</a>
+                <a href="../wiki/">Wiki</a>
+                <a href="../#tools">Tools</a>
+                <a href="../#help">Get involved</a>
+            </nav>
+            <div class="header-tools">
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme">Dark</button>
+                <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="crumbs"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Papers</span></nav></div></div>
+<!-- /SHELL:header -->
+<div class="page-header" role="region" aria-labelledby="page-h1">
+    <div class="container">
         <div class="btb-mark-wrap">
             <button type="button" class="btb-mark-button" id="btbMarkToggle" aria-expanded="false" aria-controls="btbGeometryNote" aria-label="Show the geometric construction of the Better To Best mark">
                 <img src="../assets/bettertobest-mark-warm-earthen.svg" alt="" width="56" height="56">
@@ -440,21 +466,12 @@
                 <tr><td>Inner radius (outer &divide; &Phi;)</td><td>~55.62</td></tr>
             </table>
         </div>
-        <h1>Research Papers</h1>
+        <h1 id="page-h1">Research Papers</h1>
         <p>Open-access collection focusing on Creative Currency Octaves (CCO), Public Trust Housing (PTH), Citizens Internet Portal (CIP), Social Zone Harmonization (SZH), and the Basic Living Economic Index (BLEI) welfare measurement framework. All under CC BY 4.0 license.</p>
         <p><a href="../">Back to Hub</a> | <a href="https://independentresearcher.academia.edu/DukeJohnson" target="_blank" rel="noopener noreferrer">Related Research Papers</a></p>
-        <script>
-            (function(){
-                var btn = document.getElementById('btbMarkToggle');
-                var note = document.getElementById('btbGeometryNote');
-                btn.addEventListener('click', function(){
-                    var isOpen = note.getAttribute('data-open') === 'true';
-                    note.setAttribute('data-open', isOpen ? 'false' : 'true');
-                    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-                });
-            })();
-        </script>
-    </header>
+    </div>
+</div>
+    <main id="main-content" class="container narrow prose">
 
     <section>
         <h2>Economic Framework Papers</h2>
@@ -590,9 +607,29 @@
         <p><em>Frameworks are under active development. Version numbers reflect theoretical maturity, not deployment status.</em></p>
     </section>
     
-    <footer>
-<p>Corresponding Author: <a href="mailto:Duke.T.James@gmail.com" target="_blank" rel="noopener noreferrer">Duke.T.James@gmail.com</a></p>
-<p>&copy; 2025-2026 Johnson &amp; Claude (Anthropic). All papers licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International License</a>.</p>
-    </footer>
+    </main>
+
+<!-- SHELL:footer -->
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All research is open access under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
+        <p>Corresponding author: <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a></p>
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="../">Home</a>
+            <a href="../papers/">Research Papers</a>
+            <a href="../wiki/">Wiki</a>
+            <a href="../wiki/glossary.html">Glossary</a>
+            <a href="../wiki/faq.html">FAQ</a>
+            <a href="../integrated-implementation-roadmap.html">Implementation Roadmap</a>
+            <a href="../wiki/implementation-roadmap.html">General Roadmap</a>
+            <a href="../wiki/international-adaptation-guide.html">International Guide</a>
+            <a href="../corrections.html">Corrections</a>
+            <a href="../v1/">Version 1 (archived)</a>
+            <a href="https://github.com/BetterToBest/research-hub/discussions" target="_blank" rel="noopener noreferrer">Discussions</a>
+            <a href="https://independentresearcher.academia.edu/DukeJohnson" target="_blank" rel="noopener noreferrer">Academia.edu</a>
+        </nav>
+    </div>
+</footer>
+<!-- /SHELL:footer -->
 </body>
 </html>
