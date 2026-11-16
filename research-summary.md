@@ -8,7 +8,7 @@
 ---
 
 ## 1. Project Overview
-The **Better To Best Research Hub** is an open-access initiative comprising 14 peer-reviewable papers. The research focuses on the structural elimination of poverty through integrated economic and civic architectures. It proposes a "Compassionate Meritocracy" that secures basic human needs while incentivizing high-value productivity and community contribution.
+The **Better To Best Research Hub** is an open-access initiative comprising 17+ working papers (the 17 on the Research Hub plus further papers on Academia.edu). The research focuses on the structural elimination of poverty through integrated economic and civic architectures. It proposes a "Compassionate Meritocracy" that secures basic human needs while incentivizing high-value productivity and community contribution.
 
 
 
