@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
-</head>
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="../assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,7 +62,6 @@
     <meta name="twitter:site" content="@Author_Duke_J">
 
     <!-- Performance -->
-    <link rel="preload" href="../styles.css" as="style" fetchpriority="high">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
     <!-- Structured Data -->
@@ -108,169 +107,25 @@
     }
     </script>
 
+    <!-- SHELL:head -->
+<link rel="stylesheet" href="../assets/site.css">
+    <script src="../assets/site.js"></script>
+<!-- /SHELL:head -->
     <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        :root {
-            --primary:       #1e40af;
-            --primary-dark:  #1e3a8a;
-            --accent:        #2563eb;
-            --accent-light:  #eff6ff;
-            --bg:            #ffffff;
-            --surface:       #f8fafc;
-            --text:          #0f172a;
-            --text-muted:    #475569;
-            --border:        #e2e8f0;
-            --success:       #15803d;
-            --success-bg:    #f0fdf4;
-            --warn:          #b45309;
-            --warn-bg:       #fffbeb;
-            --header-h:      31px;
-            --mono:          'Courier New', Courier, monospace;
-            --serif:         Georgia, 'Times New Roman', serif;
-            --sans:          'Segoe UI', system-ui, -apple-system, sans-serif;
-        }
 
         /* ── Base ─────────────────────────────────────────────── */
-        body {
-            font-family: var(--sans);
-            font-size: 16px;
-            line-height: 1.65;
-            color: var(--text);
-            background: var(--bg);
-        }
-
-        a { color: var(--accent); }
-        a:hover { text-decoration: underline; }
-
-        .container {
-            max-width: 1160px;
-            margin: 0 auto;
-            padding: 0 1.25rem;
-        }
 
         /* ── Skip link ────────────────────────────────────────── */
-        .skip-link {
-            position: absolute; left: -9999px;
-            background: var(--primary); color: #fff;
-            padding: 0.5rem 1rem; font-size: 0.9rem;
-        }
-        .skip-link:focus { left: 1rem; top: 1rem; z-index: 9999; }
 
         /* ── Header ───────────────────────────────────────────── */
-        .site-header {
-            background: var(--surface);
-            border-bottom: 1px solid var(--border);
-            height: var(--header-h);
-            position: sticky; top: 0; z-index: 200;
-        }
-        .header-inner {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-        }
-        .site-logo {
-            font-weight: 700;
-            font-size: 1rem;
-            color: var(--primary);
-            text-decoration: none;
-            white-space: nowrap;
-        }
-        .site-logo:hover { text-decoration: underline; }
-        .breadcrumb {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
-        .breadcrumb a { color: var(--primary); text-decoration: none; }
-        .breadcrumb a:hover { text-decoration: underline; }
 
         /* ── Search bar (header) ──────────────────────────────── */
-        .header-search {
-            display: flex;
-            align-items: center;
-            gap: 0;
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            overflow: hidden;
-            background: var(--bg);
-        }
-        .header-search input {
-            border: none;
-            outline: none;
-            padding: 0.4rem 0.75rem;
-            font-size: 0.85rem;
-            width: 220px;
-            color: var(--text);
-            background: transparent;
-        }
-        .header-search button {
-            border: none;
-            background: var(--primary);
-            color: #fff;
-            padding: 0.4rem 0.75rem;
-            cursor: pointer;
-            font-size: 0.85rem;
-            transition: background 0.2s;
-        }
-        .header-search button:hover { background: var(--primary-dark); }
 
         /* ── Page header ──────────────────────────────────────── */
-        .page-header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 60%, #2563eb 100%);
-            color: #fff;
-            padding: 3rem 0 2.5rem;
-            text-align: center;
-        }
-        .page-header h1 {
-            font-size: clamp(1.75rem, 5vw, 2.75rem);
-            font-weight: 800;
-            margin-bottom: 0.75rem;
-            line-height: 1.15;
-        }
-        .page-header .subtitle {
-            font-size: 1.05rem;
-            opacity: 0.9;
-            max-width: 580px;
-            margin: 0 auto 2rem;
-            line-height: 1.5;
-        }
-        .header-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-        }
-        .stat { text-align: center; }
-        .stat-n {
-            display: block;
-            font-size: 1.9rem;
-            font-weight: 800;
-            line-height: 1;
-        }
-        .stat-l {
-            font-size: 0.82rem;
-            opacity: 0.8;
-            margin-top: 0.2rem;
-        }
 
         /* ── About strip ──────────────────────────────────────── */
-        .about-strip {
-            background: var(--accent-light);
-            border-bottom: 1px solid #bfdbfe;
-            padding: 0.9rem 0;
-            font-size: 0.88rem;
-            color: var(--text-muted);
-            text-align: center;
-        }
-        .about-strip strong { color: var(--primary-dark); }
 
         /* ── Main ─────────────────────────────────────────────── */
-        main { padding: 3.5rem 0; }
 
         /* ── Search results panel ─────────────────────────────── */
         #search-results {
@@ -353,7 +208,7 @@
             transition: box-shadow 0.2s, transform 0.2s;
         }
         .doc-card:hover {
-            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
             transform: translateY(-2px);
         }
         .card-meta {
@@ -369,17 +224,6 @@
             letter-spacing: 0.08em;
             color: var(--text-muted);
         }
-        .badge {
-            font-size: 0.68rem;
-            font-weight: 700;
-            padding: 0.15em 0.6em;
-            border-radius: 3px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        .badge-live  { background: var(--success-bg); color: var(--success); border: 1px solid #86efac; }
-        .badge-beta  { background: var(--accent-light); color: var(--primary); border: 1px solid #bfdbfe; }
-        .badge-new   { background: #fdf4ff; color: #7e22ce; border: 1px solid #e9d5ff; }
 
         .doc-card h3 {
             font-size: 1.05rem;
@@ -442,7 +286,7 @@
         }
         .qr-item:hover {
             background: var(--primary);
-            color: #fff;
+            color: var(--on-primary);
             border-color: var(--primary);
             text-decoration: none;
         }
@@ -452,7 +296,7 @@
             color: var(--text-muted);
             flex-shrink: 0;
         }
-        .qr-item:hover .qr-marker { color: rgba(255,255,255,0.7); }
+        .qr-item:hover .qr-marker { color: var(--on-primary); opacity: .8; }
 
         /* ── System Interaction Model ─────────────────────────── */
         .sim-box {
@@ -509,7 +353,7 @@
         }
         .dep-table thead th {
             background: var(--primary);
-            color: #fff;
+            color: var(--on-primary);
             padding: 0.65rem 1rem;
             text-align: left;
             font-weight: 600;
@@ -581,35 +425,12 @@
             line-height: 1.6;
         }
         .btn-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4em;
-            padding: 0.6rem 1.25rem;
-            background: var(--primary);
-            color: #fff;
-            border: 1px solid transparent;
-            border-radius: 5px;
-            font-size: 0.88rem;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background 0.15s, transform 0.15s;
-            font-family: var(--sans);
-        }
-        .btn:hover { background: var(--primary-dark); transform: translateY(-1px); color: #fff; text-decoration: none; }
-        .btn-ghost {
-            background: transparent;
-            color: var(--primary);
-            border-color: var(--primary);
-        }
-        .btn-ghost:hover { background: var(--primary); color: #fff; }
 
         /* ── GitHub Discussions ───────────────────────────────── */
         .discussions-card {
             background: var(--bg);
             border: 1px solid var(--border);
-            border-top: 3px solid #1b1f24;
+            border-top: 3px solid var(--text);
             border-radius: 6px;
             padding: 1.5rem;
             display: flex;
@@ -624,35 +445,14 @@
             align-items: center;
             justify-content: center;
         }
-        .gh-icon svg { width: 32px; height: 32px; fill: #1b1f24; }
+        .gh-icon svg { width: 32px; height: 32px; fill: var(--text); }
         .discussions-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem; }
         .discussions-card p { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem; }
 
         /* ── Footer ───────────────────────────────────────────── */
-        footer {
-            background: var(--surface);
-            border-top: 1px solid var(--border);
-            padding: 2.5rem 0 1.5rem;
-            margin-top: 4rem;
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.88rem;
-        }
-        footer a { color: var(--accent); }
-        footer .footer-links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 0.4rem 1.25rem;
-            margin-top: 0.75rem;
-        }
-        footer .footer-links a { text-decoration: none; }
-        footer .footer-links a:hover { text-decoration: underline; }
 
         /* ── Responsive ───────────────────────────────────────── */
         @media (max-width: 768px) {
-            .header-search { display: none; }
-            .page-header { padding: 2.5rem 0 2rem; }
             .header-stats { gap: 2rem; }
             .card-grid-2, .card-grid-3 { grid-template-columns: 1fr; }
             .layer-grid { grid-template-columns: 1fr 1fr; }
@@ -665,35 +465,39 @@
             .qr-grid { grid-template-columns: 1fr 1fr; }
         }
         /* ── Simulation featured card ── */
-.sim-featured-card{display:grid;grid-template-columns:1fr auto;gap:1.25rem;align-items:start;background:#ffffff;border:1px solid #1D9E75;border-radius:10px;padding:1.5rem;margin-bottom:1.5rem;text-decoration:none;transition:box-shadow .15s}
-.sim-featured-card:hover{box-shadow:0 4px 20px rgba(29,158,117,0.14)}
-@media(prefers-color-scheme:dark){.sim-featured-card{background:#1c1c1a;border-color:#1D9E75}}
-.sfc-label{font-size:10.5px;font-weight:700;color:#1D9E75;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
-.sfc-title{font-size:20px;font-weight:700;color:inherit;margin-bottom:.5rem;line-height:1.25}
-.sfc-desc{font-size:13px;color:#5a5a56;line-height:1.6;margin-bottom:.8rem}
-@media(prefers-color-scheme:dark){.sfc-desc{color:#a8a89f}}
+.sim-featured-card{display:grid;grid-template-columns:1fr auto;gap:1.25rem;align-items:start;background:var(--surface-raised);border:1px solid var(--cco-color);border-radius:10px;padding:1.5rem;margin-bottom:1.5rem;text-decoration:none;color:var(--text);transition:box-shadow .15s}
+.sim-featured-card:hover{box-shadow:var(--shadow);text-decoration:none}
+.sfc-label{font-size:.72rem;font-weight:700;color:var(--success);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
+.sfc-title{font-size:1.25rem;font-weight:700;color:inherit;margin-bottom:.5rem;line-height:1.25;font-family:var(--serif)}
+.sfc-desc{font-size:.92rem;color:var(--text-muted);line-height:1.6;margin-bottom:.8rem}
 .sfc-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.5rem}
-.sfc-tag{font-size:11px;padding:2px 9px;border-radius:20px;background:#E1F5EE;color:#0F6E56;border:.5px solid rgba(29,158,117,0.3)}
-.sfc-cta{display:inline-flex;align-items:center;gap:.35rem;background:#1D9E75;color:#fff;padding:.7rem 1.4rem;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:background .15s}
-.sfc-cta:hover{background:#0F6E56}
-.sfc-meta{font-size:11px;color:#8a8a85;text-align:center;margin-top:.4rem;max-width:120px}
+.sfc-tag{font-size:.75rem;padding:2px 9px;border-radius:20px;background:var(--success-bg);color:var(--success);border:1px solid var(--success-line)}
+.sfc-cta{display:inline-flex;align-items:center;gap:.35rem;background:var(--cco-color);color:#fff;padding:.7rem 1.4rem;border-radius:999px;font-size:.95rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.sfc-cta:hover{background:#065f46;color:#fff;text-decoration:none}
+.sfc-meta{font-size:.75rem;color:var(--text-muted);text-align:center;margin-top:.4rem;max-width:120px}
 @media(max-width:600px){.sim-featured-card{grid-template-columns:1fr}.sfc-meta{max-width:none;text-align:left}}
     </style>
 </head>
 <body>
 
+<!-- SHELL:header -->
 <a class="skip-link" href="#main-content">Skip to main content</a>
-
-<!-- ── Site Header ───────────────────────────────────────────── -->
 <header class="site-header" role="banner">
     <div class="container">
         <div class="header-inner">
-            <a href="../" class="site-logo">Better To Best Research Hub</a>
-            <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a class="brand" href="../"><img src="../assets/bettertobest-mark-cool-academic.svg" alt="" width="32" height="32"><span>Better To Best <em>Research Hub</em></span></a>
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
                 <a href="../">Home</a>
-                <span aria-hidden="true">/</span>
-                <span aria-current="page">Wiki</span>
+                <a href="../#findings">Findings</a>
+                <a href="../papers/">Papers</a>
+                <a href="../wiki/" aria-current="page">Wiki</a>
+                <a href="../#tools">Tools</a>
+                <a href="../#help">Get involved</a>
             </nav>
+            <div class="header-tools">
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme">Dark</button>
+                <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            </div>
             <form class="header-search" role="search" aria-label="Search documentation" onsubmit="runSearch(event)">
                 <input type="search" id="search-input" placeholder="Search documentation..." aria-label="Search documentation" autocomplete="off">
                 <button type="submit" aria-label="Submit search">Search</button>
@@ -701,6 +505,8 @@
         </div>
     </div>
 </header>
+<div class="crumbs"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Wiki</span></nav></div></div>
+<!-- /SHELL:header -->
 
 <!-- ── Page Header ───────────────────────────────────────────── -->
 <div class="page-header" role="region" aria-labelledby="page-h1">
@@ -888,7 +694,7 @@
                 </div>
 
                 <h3 style="font-size:0.85rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-muted); margin-bottom:0.9rem;">Framework Dependencies &amp; Relationships</h3>
-                <div style="overflow-x:auto;">
+                <div style="overflow-x:auto;" tabindex="0" role="region" aria-label="System dependency table">
                     <table class="dep-table" aria-label="Framework dependencies and relationships">
                         <thead>
                             <tr>
@@ -1091,21 +897,28 @@
 </main>
 
 <!-- ── Footer ───────────────────────────────────────────────── -->
-<footer role="contentinfo">
+<!-- SHELL:footer -->
+<footer class="site-footer" role="contentinfo">
     <div class="container">
-        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All research licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.</p>
-        <p style="margin-top:0.4rem;">Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
+        <p>&copy; 2025&ndash;2026 Better To Best Research Hub. All research is open access under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Created by Duke Johnson in collaboration with Claude (Anthropic).</p>
+        <p>Corresponding author: <a href="mailto:Duke.T.James@gmail.com">Duke.T.James@gmail.com</a></p>
         <nav class="footer-links" aria-label="Footer navigation">
             <a href="../">Home</a>
-            <a href="glossary.html">Glossary</a>
-            <a href="faq.html">FAQ</a>
             <a href="../papers/">Research Papers</a>
+            <a href="../wiki/">Wiki</a>
+            <a href="../wiki/glossary.html">Glossary</a>
+            <a href="../wiki/faq.html">FAQ</a>
             <a href="../integrated-implementation-roadmap.html">Implementation Roadmap</a>
+            <a href="../wiki/implementation-roadmap.html">General Roadmap</a>
+            <a href="../wiki/international-adaptation-guide.html">International Guide</a>
+            <a href="../corrections.html">Corrections</a>
+            <a href="../v1/">Version 1 (archived)</a>
             <a href="https://github.com/BetterToBest/research-hub/discussions" target="_blank" rel="noopener noreferrer">Discussions</a>
             <a href="https://independentresearcher.academia.edu/DukeJohnson" target="_blank" rel="noopener noreferrer">Academia.edu</a>
         </nav>
     </div>
 </footer>
+<!-- /SHELL:footer -->
 
 <script>
 /* ── Search index ──────────────────────────────────────────── */
