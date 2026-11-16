@@ -24,8 +24,31 @@ h1{font-size:1.7rem;margin:.2rem 0 .5rem}h2{font-size:1.2rem;margin:2rem 0 .5rem
 <h1>Corrections log</h1>
 <p class="lede">Figures and statements the Hub has corrected, relabelled or removed since Hub v1, newest first. Each entry says what the text said, what it says now, and why. The archived <a href="/research-hub/v1/">v1 pages</a> are not edited; read this log alongside them. Papers are corrected in groups; items still waiting are listed at the end.</p>
 
+<h2>Nov 16, 2026 (step S24, part 3): the four held items, checked against simulation v5.9.1</h2>
+<p>These four were written against engine v4.21. Each was checked against v5.9.1 and the wording below is what the current engine does.</p>
+
+<div class="entry" id="c08"><h3>C08 · θ gating</h3>
+<p class="k">index.html · research-summary.html</p>
+<p><b>Said:</b> θ is 0 below 55% PTF density and scales to 0.25 at 90%+, with no note on how the simulation computes it.</p>
+<p><b>Now says:</b> the same design, labelled as the framework design; the simulation gates θ on its SZH zone-coherence setting, so realised PTF membership does not change θ. The study harness has an off-by-default switch that gates on realised PTF share, for the restudy.</p></div>
+
+<div class="entry" id="c09"><h3>C09 · γ transition</h3>
+<p class="k">index.html · research-summary.html</p>
+<p><b>Said:</b> γ ramps from 0.12 at entry to 0.20 at Month 6+.</p>
+<p><b>Now says:</b> the same design, plus: the simulation steps by year and applies 0.20 to CCO participants from enrollment and 0.12 to everyone else.</p></div>
+
+<div class="entry" id="c11"><h3>C11 · EDC profile value</h3>
+<p class="k">index.html · research-summary.html</p>
+<p><b>Said:</b> US baseline near-poverty EDC 0.625; CCO-PTH target 0.025.</p>
+<p><b>Now says:</b> 0.62 is the BLEI paper's own near-poverty profile ($1,300 rent on $2,083 a month), not a measured US baseline; 0.025 is a design target that the simulation uses as an input, so results that depend on it assume it is met.</p></div>
+
+<div class="entry" id="c13"><h3>C13 · $2.75 per food BU</h3>
+<p class="k">index.html · research-summary.html</p>
+<p><b>Said:</b> 360 BU × $2.75 = $990 per adult per month.</p>
+<p><b>Now says:</b> $2.75 is an assumed market-equivalent value with no source in the paper and differs from ε_food = 2.64 (which would give $950). The simulation credits $990, so changing it would move shipped BLEI figures; the two values are to be aligned in the paper work.</p></div>
+
 <h2>Nov 16, 2026 (step S24, part 2): corrections package C01–C22</h2>
-<p>Held for the next release check because they describe the engine as it was at v4.21: C08 (θ gating), C09 (γ ramp), C11 (EDC profile) and C13 ($2.75 per food BU).</p>
+<p>The four items held earlier (C08, C09, C11, C13) are in part 3, above.</p>
 
 <div class="entry" id="c01"><h3>C01 · Octave capacity formula</h3>
 <p class="k">front page · research summary · AI files</p>
