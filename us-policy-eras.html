@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>US Policy Eras and Stability, 1947-2025 | Better To Best Research Hub</title>
+<meta name="description" content="Were earlier US policy eras steadier? Four postwar eras measured two ways: the published record (inflation, essentials prices, unemployment, home and share prices, taxes paid, hospital ownership, the Federal Reserve's rule) and the Compassionism Simulation's readings of today's households under each era's settings, with and without the programme. Preregistered; every result published.">
+<meta name="author" content="Duke Johnson, Claude (Anthropic)">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://bettertobest.github.io/research-hub/us-policy-eras.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://bettertobest.github.io/research-hub/us-policy-eras.html">
+<meta property="og:title" content="US Policy Eras and Stability, 1947-2025">
+<meta property="og:description" content="The published record and the Compassionism Simulation's readings of four US policy eras. The record is mixed; the programme's effect holds its direction in every era.">
+<meta property="twitter:card" content="summary">
+<meta property="twitter:title" content="US Policy Eras and Stability, 1947-2025">
+<meta property="twitter:description" content="The published record and the Compassionism Simulation's readings of four US policy eras.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="alternate" type="application/json" href="data/s75-us-eras.json" title="Data behind this page">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Report",
+  "name": "US Policy Eras and Stability, 1947-2025",
+  "headline": "Were earlier US policy eras steadier? The published record and the Compassionism Simulation's readings",
+  "url": "https://bettertobest.github.io/research-hub/us-policy-eras.html",
+  "datePublished": "2026-11-16",
+  "inLanguage": "en-US",
+  "author": [
+    {"@type": "Person", "name": "Duke Johnson", "description": "Concepts"},
+    {"@type": "Organization", "name": "Claude (Anthropic)", "description": "Math, code and presentation"}
+  ],
+  "isPartOf": {"@type": "Collection", "name": "Better To Best Research Hub", "url": "https://bettertobest.github.io/research-hub/"},
+  "isBasedOn": [
+    "https://github.com/BetterToBest/compassionism-simulation/blob/main/dev/reports/s75-deep-history.md",
+    "https://github.com/BetterToBest/compassionism-simulation/blob/main/dev/reports/s75-panel.md"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": ["US economic history", "macroeconomic stability", "effective tax rates", "hospital ownership", "Taylor rule", "agent-based simulation", "Compassionism"]
+}
+</script>
+<style>
+:root{
+  color-scheme: light;
+  --page:#f9f9f7; --surface:#fcfcfb; --card:#ffffff;
+  --ink:#0b0b0b; --ink-2:#52514e; --muted:#6f6e69; --axis:#c3c2b7; --grid:#e1e0d9;
+  --ring:rgba(11,11,11,.10); --link:#1c5cab;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100;
+  --neutral-mark:#8d8b84; --band:#f1f0ec;
+  --pos:#2a78d6; --pos-bg:#e3eefb; --neg:#d03b3b; --neg-bg:#fbe6e4; --none-bg:#f0efec;
+  --recess:rgba(137,135,129,.16);
+  --sans: system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#1a1a19; --card:#151514;
+    --ink:#f0efec; --ink-2:#c3c2b7; --muted:#9a9890; --axis:#4a4a46; --grid:#2c2c2a;
+    --ring:rgba(255,255,255,.10); --link:#86b6ef;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+    --neutral-mark:#8d8b84; --band:#222220;
+    --pos:#5598e7; --pos-bg:#1b2a3d; --neg:#e66767; --neg-bg:#3a1f1e; --none-bg:#262624;
+    --recess:rgba(160,158,150,.16);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#0d0d0d; --surface:#1a1a19; --card:#151514;
+  --ink:#f0efec; --ink-2:#c3c2b7; --muted:#9a9890; --axis:#4a4a46; --grid:#2c2c2a;
+  --ring:rgba(255,255,255,.10); --link:#86b6ef;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+  --neutral-mark:#8d8b84; --band:#222220;
+  --pos:#5598e7; --pos-bg:#1b2a3d; --neg:#e66767; --neg-bg:#3a1f1e; --none-bg:#262624;
+  --recess:rgba(160,158,150,.16);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6}
+a{color:var(--link);text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+.topbar{border-bottom:1px solid var(--ring);background:var(--surface)}
+.topbar-in{max-width:1080px;margin:0 auto;padding:10px 20px;display:flex;gap:16px;align-items:center;justify-content:space-between;font-size:14px}
+.topbar a{color:var(--ink-2);text-decoration:none}
+.topbar a:hover{color:var(--ink);text-decoration:underline}
+.topbar .brand{font-weight:650;color:var(--ink)}
+main{max-width:1080px;margin:0 auto;padding:0 20px 64px}
+.prose{max-width:720px}
+header.hero{padding:48px 0 16px}
+.eyebrow{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 10px}
+h1{font-size:clamp(30px,5vw,44px);line-height:1.12;margin:0 0 16px;letter-spacing:-.01em;font-weight:700}
+.lede{font-size:clamp(18px,2.2vw,21px);color:var(--ink-2);margin:0 0 18px;max-width:760px}
+.byline{font-size:14px;color:var(--muted);margin:0}
+h2{font-size:clamp(23px,3vw,28px);line-height:1.2;margin:64px 0 12px;letter-spacing:-.005em}
+h3{font-size:19px;margin:36px 0 8px;line-height:1.3}
+p{margin:0 0 14px}
+.answer{margin:28px 0 8px;padding:20px 22px;background:var(--card);border:1px solid var(--ring);border-radius:12px;max-width:820px}
+.answer p{margin:0;font-size:18px}
+.answer strong{font-weight:650}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px 0 8px}
+.tile{background:var(--card);border:1px solid var(--ring);border-radius:12px;padding:16px 18px}
+.tile .v{font-size:34px;font-weight:700;line-height:1.1;letter-spacing:-.01em}
+.tile .v small{font-size:18px;font-weight:600;color:var(--ink-2)}
+.tile .k{font-size:14px;color:var(--ink-2);margin-top:6px;line-height:1.45}
+.tile .src{font-size:12px;color:var(--muted);margin-top:8px}
+.eras{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0}
+.era{border-left:3px solid var(--axis);padding:4px 0 4px 14px}
+.era b{display:block;font-size:16px}
+.era span{font-size:14px;color:var(--ink-2)}
+figure.chart{margin:22px 0 10px;background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:18px 18px 12px}
+figure.chart h4{margin:0 0 2px;font-size:16px;font-weight:650}
+figure.chart .sub{margin:0 0 10px;font-size:14px;color:var(--ink-2);max-width:760px}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.5}
+figcaption b{color:var(--ink-2);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink-2);margin:2px 0 8px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.legend i.line{height:3px;border-radius:2px;vertical-align:3px;width:16px}
+.legend i.dot{border-radius:50%}
+.vizbox{position:relative;width:100%}
+.vizbox svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--sans);fill:var(--muted);font-size:12px}
+svg .tick{font-variant-numeric:tabular-nums}
+svg .lab{fill:var(--ink-2);font-size:12.5px}
+svg .lab-strong{fill:var(--ink);font-size:12.5px;font-weight:600}
+svg .panel-title{fill:var(--ink);font-size:13px;font-weight:600}
+.tip{position:absolute;pointer-events:none;background:var(--card);color:var(--ink);border:1px solid var(--ring);box-shadow:0 4px 18px rgba(0,0,0,.12);border-radius:8px;padding:8px 10px;font-size:13px;line-height:1.45;min-width:150px;opacity:0;transition:opacity .08s;z-index:5}
+.tip b{font-weight:650}
+.tip .row{display:flex;justify-content:space-between;gap:14px;font-variant-numeric:tabular-nums}
+.tip .row span:first-child{color:var(--ink-2)}
+details.numbers{margin-top:8px;font-size:14px}
+details.numbers summary{cursor:pointer;color:var(--link);font-size:13px;width:max-content}
+.tablewrap{overflow-x:auto;margin:10px 0 4px}
+table{border-collapse:collapse;font-size:14px;width:100%}
+th,td{padding:7px 10px;text-align:right;border-bottom:1px solid var(--grid);font-variant-numeric:tabular-nums;vertical-align:top}
+th{font-weight:600;color:var(--ink-2);font-size:13px;background:var(--surface)}
+th:first-child,td:first-child{text-align:left}
+table.data td:first-child{color:var(--ink)}
+.matrix td,.matrix th{text-align:left}
+.matrix td.v{min-width:150px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:2px 9px;border-radius:999px;font-size:13px;font-weight:600;white-space:nowrap}
+.pill.pos{background:var(--pos-bg);color:var(--pos)}
+.pill.neg{background:var(--neg-bg);color:var(--neg)}
+.pill.none{background:var(--none-bg);color:var(--ink-2);font-weight:500}
+.cellnote{display:block;font-size:12px;color:var(--muted);margin-top:3px;font-variant-numeric:tabular-nums}
+.basis{font-size:12.5px;color:var(--muted);margin-top:6px}
+.basis b{color:var(--ink-2);font-weight:600}
+.callout{border-left:3px solid var(--s1);padding:6px 0 6px 16px;margin:18px 0;max-width:720px}
+.callout.warn{border-left-color:var(--s4)}
+.callout p:last-child{margin-bottom:0}
+blockquote.aim{margin:20px 0;padding:18px 22px;background:var(--card);border:1px solid var(--ring);border-radius:12px;max-width:760px;font-size:18px}
+blockquote.aim footer{font-size:14px;color:var(--muted);margin-top:8px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.smalls{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px 22px}
+ul.clean{padding-left:20px;margin:0 0 14px}
+ul.clean li{margin-bottom:6px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none;font-size:14px}
+.toc a{display:inline-block;padding:5px 11px;border:1px solid var(--ring);border-radius:999px;text-decoration:none;color:var(--ink-2);background:var(--card)}
+.toc a:hover{color:var(--ink);border-color:var(--axis)}
+.attrib{font-size:14px;color:var(--ink-2);border-top:1px solid var(--grid);margin-top:56px;padding-top:18px;max-width:820px}
+code{font-size:.9em;background:var(--band);padding:1px 5px;border-radius:4px}
+@media (max-width:560px){
+  body{font-size:16px}
+  main,.topbar-in{padding-left:16px;padding-right:16px}
+  figure.chart{padding:14px 12px 10px;margin-left:-4px;margin-right:-4px}
+  .tile .v{font-size:30px}
+}
+@media print{ .topbar,.toc,details.numbers summary{display:none} figure.chart{break-inside:avoid} }
+</style>
+</head>
+<body>
+<nav class="topbar" aria-label="Site">
+  <div class="topbar-in">
+    <a class="brand" href="./">Better To Best Research Hub</a>
+    <span><a href="wiki/">Wiki</a> &nbsp;·&nbsp; <a href="https://bettertobest.github.io/compassionism-simulation/">Simulation</a></span>
+  </div>
+</nav>
+<main>
+<header class="hero">
+  <p class="eyebrow">Simulation study S75 · Findings</p>
+  <h1>Were earlier US policy eras steadier?</h1>
+  <p class="lede">Four eras of US economic policy since the Second World War, measured two ways: what the published record shows, and what the Compassionism Simulation finds when today's households live through each era's settings, with the programme and without it.</p>
+  <p class="byline">November 16, 2026 · Concepts: Duke Johnson · Math, code and presentation: Claude (Anthropic) · Preregistered before any figure was computed; every result is published.</p>
+
+  <div class="answer">
+    <p><strong>The record is mixed.</strong> On no measure was 2005-2025 clearly less stable than all three earlier postwar eras, and 1973-1983 was the unstable era. In the model, today's households under an earlier era's settings see smaller falls in wealth but larger price swings and more basket poverty. Under every era's settings, the programme's effect keeps its direction.</p>
+  </div>
+
+  <div class="tiles" role="list">
+    <div class="tile" role="listitem"><div class="v">0 <small>of 14</small></div><div class="k">measures on which 2005-2025 was clearly less stable than every earlier postwar era. 5 go the other way; 9 are mixed.</div><div class="src">Published record</div></div>
+    <div class="tile" role="listitem"><div class="v">8 · 6 · 1</div><div class="k">model cells where an earlier era's path is steadier · less steady · no clear difference, against 2008-2025, without the programme</div><div class="src">Simulation, 15 cells</div></div>
+    <div class="tile" role="listitem"><div class="v">226 <small>of 240</small></div><div class="k">cells where the programme's effect keeps its direction across eras, settings and designs. 8 show no measurable difference; the 6 reversals are favourable.</div><div class="src">Simulation, both designs</div></div>
+    <div class="tile" role="listitem"><div class="v">41-52 <small>points</small></div><div class="k">less basket poverty with the C2.2 design, in every era (the release design: 23-32 points)</div><div class="src">Simulation, 100 paired seeds</div></div>
+  </div>
+
+  <ul class="toc" aria-label="On this page">
+    <li><a href="#question">The question</a></li>
+    <li><a href="#glance">80 years at a glance</a></li>
+    <li><a href="#record">The published record</a></li>
+    <li><a href="#policy">Taxes, hospitals, the Fed</a></li>
+    <li><a href="#engine">Today's households, each era</a></li>
+    <li><a href="#programme">The programme</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ul>
+</header>
+
+<section id="question" class="prose">
+  <h2>The question</h2>
+  <p>Duke Johnson's view, put to the test: <em>2005-2025 was less stable than the decades before it</em>, and earlier eras had policy settings worth comparing, among them far higher top tax rates in the 1950s, and health care financed mostly through non-profit hospitals and plans before managed care grew after the HMO Act of 1973.</p>
+  <p>The test was written down before any figure was computed (<a href="https://github.com/BetterToBest/research-update/blob/main/prereg/2026-11-s75-deep-history.md">preregistration</a>). The eras were fixed in advance:</p>
+</section>
+<div class="eras">
+  <div class="era"><b>1947-1972</b><span>Postwar; fixed exchange rates until 1971</span></div>
+  <div class="era"><b>1973-1983</b><span>Oil shocks, stagflation, the Volcker tightening</span></div>
+  <div class="era"><b>1984-2007</b><span>Usually called the Great Moderation</span></div>
+  <div class="era"><b>2008-2025</b><span>The financial crisis, rates at zero, the pandemic, the 2021-2022 inflation</span></div>
+</div>
+<div class="prose">
+  <p>2005-2025, the window of Duke's view, is shown beside them. 1913-1946 is shown as a reading only. "More stable" or "less stable" is said only where a difference passes the preregistered test: a block-bootstrap 95% interval that excludes zero after Holm's correction across the measures compared. The eras are short (11 to 26 years), so most differences do not pass, and "no clear difference" is often the honest reading.</p>
+</div>
+
+<section id="glance">
+  <h2>Eighty years at a glance</h2>
+  <div class="prose"><p>The yearly path of each era, as the simulation reads it. The high inflation and unemployment of 1973-1983 stand out. So does the zero policy rate of 2009-2015 and 2020-2021, and the home price fall of 2007-2011.</p></div>
+  <figure class="chart" id="fig-timeline">
+    <h4>Inflation, unemployment, the policy rate, and real home and share prices, 1946-2025</h4>
+    <p class="sub">One panel per measure, each on its own scale. Shaded columns are years with at least one NBER recession month. Hover or tap for a year's values.</p>
+    <div class="vizbox" data-chart="timeline"></div>
+    <figcaption><b>Definitions.</b> Inflation: CPI-U, December over December. Unemployment: the year's mean rate (BLS from 1948; Jordà, Schularick and Taylor before). Policy rate: the year's mean effective federal funds rate from 1955; the 3-month Treasury bill before. Home and share prices: the yearly change after inflation (Shiller, linked to Case-Shiller and the S&amp;P 500).</figcaption>
+    <p class="basis"><b>Basis:</b> external sources (opened): BLS, FRED, Shiller, NBER, as read into <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/sources/s75_hx.json">sources/s75_hx.json</a>.</p>
+    <details class="numbers"><summary>Show the numbers</summary><div class="tablewrap" data-table="timeline"></div></details>
+  </figure>
+</section>
+
+<section id="record">
+  <h2>Was 2005-2025 less stable? The published record</h2>
+  <div class="prose">
+    <p>Fourteen measures compared, with no simulation involved. On <strong>5</strong> of them the record goes against the view: 2005-2025 had lower inflation and lower food, shelter and medical inflation than 1973-1983, steadier shelter prices, and slower medical inflation than 1984-2007 too. On the other <strong>9</strong>, no comparison passes the test either way. None supports it.</p>
+    <p>Three measures lean Duke's way without passing the test: unemployment swung more from year to year in 2005-2025 than in 1947-1972 or 1984-2007, real home prices swung more than in 1947-1972, and food prices swung more than in 1984-2007. Each interval excludes zero before the correction (marked † below), but none does after it.</p>
+  </div>
+  <figure class="chart" id="fig-matrix">
+    <h4>2005-2025 against each earlier era, measure by measure</h4>
+    <p class="sub">Each cell reads "2005-2025 was ... than that era". The figures show the difference (2005-2025 minus the earlier era, in points) and its 95% interval.</p>
+    <div class="legend" aria-hidden="true"><span><span class="pill pos">▼ more stable</span></span><span><span class="pill neg">▲ less stable</span></span><span><span class="pill none">no clear difference</span></span><span>† interval excludes zero before Holm's correction only</span></div>
+    <div class="tablewrap" data-chart="matrix"></div>
+    <p class="basis"><b>Basis:</b> derived calculation (file): <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/sources/s75_eras.py">sources/s75_eras.py</a> → <code>s75_eras.json</code>; results folder <a href="https://github.com/BetterToBest/compassionism-sim-results/tree/main/s75-panel-54e88bc">s75-panel-54e88bc</a>.</p>
+  </figure>
+
+  <figure class="chart" id="fig-spreads">
+    <h4>How much each measure swung from year to year, by era</h4>
+    <p class="sub">The standard deviation of the yearly values, in points. Longer bars mean bigger swings. 2005-2025 is highlighted.</p>
+    <div class="legend" aria-hidden="true"><span><i style="background:var(--s1)"></i>2005-2025</span><span><i style="background:var(--neutral-mark)"></i>the eras</span></div>
+    <div class="vizbox" data-chart="spreads"></div>
+    <figcaption>Shelter from 1954, unemployment from 1948. 1913-1946, a reading only, swung far more than any postwar era on every measure it has (inflation 7.6, unemployment 7.2, growth 8.2, share prices 23.7, home prices 7.3); it is in the table.</figcaption>
+    <p class="basis"><b>Basis:</b> derived calculation (file): <code>sources/s75_eras.json</code> (results s75-panel-54e88bc).</p>
+    <details class="numbers"><summary>Show the numbers</summary><div class="tablewrap" data-table="spreads"></div></details>
+  </figure>
+</section>
+
+<section id="policy">
+  <h2>Who paid, who owned, how rates were set</h2>
+  <div class="prose">
+    <h3>Taxes actually paid were far more progressive in the 1950s</h3>
+    <p>The 91-92% top statutory rate of the 1950s applied to very few incomes. The rates below are what each group actually paid in all taxes as a share of its pre-tax income, from Piketty, Saez and Zucman's distributional accounts. Over 1950-1959 the top 0.1% paid 57.3% and the top 1% 45.5%; by 2008-2019 they paid 34.8% and 32.9%, while the bottom half paid more (about 21.6% in 1947-1972, 25.2% in 2008-2019).</p>
+  </div>
+  <figure class="chart" id="fig-taxes">
+    <h4>Average tax rate, all taxes, by income group and era (% of pre-tax income)</h4>
+    <div class="legend" aria-hidden="true"><span><i class="line" style="background:var(--s1)"></i>Top 0.1%</span><span><i class="line" style="background:var(--s2)"></i>Top 1%</span><span><i class="line" style="background:var(--s3)"></i>Middle 40%</span><span><i class="line" style="background:var(--s4)"></i>Bottom 50%</span></div>
+    <div class="vizbox" data-chart="taxes"></div>
+    <figcaption>Era means. The middle 40% in 1947-1972 is from 1962. PSZ's series end in 2019, so 2008-2025 means 2008-2019. The planning text gave 42% and 50.6% for the 1950s; the opened file gives 45.5% and 57.3%, and the file's figures are used.</figcaption>
+    <p class="basis"><b>Basis:</b> external source (opened): Piketty, Saez and Zucman (2018), 2022 appendix, Table G1; derived in <code>sources/s75_eras.json</code>.</p>
+    <details class="numbers"><summary>Show the numbers</summary><div class="tablewrap" data-table="taxes"></div></details>
+  </figure>
+
+  <div class="prose">
+    <p>Distribution moved the other way from stability. The top 1%'s share of pre-tax income fell in 1947-1972 (14.9% to 11.0%), held flat in 1973-1983, rose in 1984-2007 (12.2% to 18.4%) and stayed high (19.1% in 2019). Poverty fell in three of the four eras and rose in 1973-1983.</p>
+  </div>
+  <div class="tablewrap" data-table="distribution"></div>
+  <p class="basis"><b>Basis:</b> external sources (opened): PSZ (income and wealth shares), Census (official poverty), Columbia's anchored SPM, CMS national health expenditure; derived in <code>sources/s75_eras.json</code>.</p>
+
+  <div class="prose">
+    <h3>Who owned the hospitals</h3>
+    <p>For-profit hospitals existed before 1973, but they were small: in 1946-1950 about one US hospital in five was proprietary, holding under 4% of beds. For-profit care grew after 1973. Its share of beds roughly doubled in 1973-1983 (4.8% to 8.2%), and its share of community hospital admissions doubled from 1975 to 2015. Non-profits carried about 71-74% of admissions throughout. The rise follows the HMO Act (1973), which promoted HMOs and opened the way for for-profit ones; it did not make health profit legal, and this panel does not test what caused the rise.</p>
+  </div>
+  <figure class="chart" id="fig-hospitals">
+    <h4>Community hospital admissions by ownership, 1975-2015 (% of admissions)</h4>
+    <div class="legend" aria-hidden="true"><span><i class="line" style="background:var(--s1)"></i>Non-profit</span><span><i class="line" style="background:var(--s2)"></i>State and local government</span><span><i class="line" style="background:var(--s3)"></i>For-profit</span></div>
+    <div class="vizbox" data-chart="hospitals"></div>
+    <figcaption>Selected years, as published. Among private community hospitals in 1961-1971, net income was 4.3-8.4% of revenue for for-profit hospitals and -0.1-3.7% for non-profits (Pettengill 1973).</figcaption>
+    <p class="basis"><b>Basis:</b> external source (opened): Health, United States 2017, Table 82; Historical Statistics of the United States, Bd144-157 (beds, in the table); Social Security Bulletin, November 1973.</p>
+    <details class="numbers"><summary>Show the numbers</summary><div class="tablewrap" data-table="hospitals"></div></details>
+  </figure>
+
+  <div class="prose">
+    <h3>How the central bank set its rate</h3>
+    <p>A simple fitted rule for each era: how many points the policy rate rose per point of inflation. Before 1984 the response was below one for one, which lets the real rate fall as inflation rises. In 1984-2007 it was 1.3. In 2008-2025 it was about zero: the rate sat at the floor through low inflation and rose only in 2022, after inflation had already climbed. These are descriptive fits, not the rules the Federal Reserve followed.</p>
+  </div>
+  <figure class="chart" id="fig-rule">
+    <h4>The policy rate's response to one point of inflation, by era (with 95% interval)</h4>
+    <div class="vizbox" data-chart="rule"></div>
+    <figcaption>A regression of the quarterly policy rate on CPI-U's change over four quarters and CBO's output gap; Newey-West standard errors. The pattern before 1984 is the one Clarida, Galí and Gertler (2000) describe for the pre-Volcker years, found here independently.</figcaption>
+    <p class="basis"><b>Basis:</b> derived calculation (file): <code>sources/s75_eras.json</code>, B5 (FRED, CBO).</p>
+    <details class="numbers"><summary>Show the numbers</summary><div class="tablewrap" data-table="rule"></div></details>
+  </figure>
+</section>
+
+<section id="engine">
+  <h2>Today's households under each era's settings</h2>
+  <div class="prose">
+    <p>The second part asks a model question: take today's households (the simulation's 500 adults, based on 2022) and let them live through each era's measured settings. This is a <strong>model counterfactual</strong>, not a reconstruction of the era. The population, its jobs and homes, the prices of the basket of essentials and today's institutions stay as they are, apart from the settings changed:</p>
+    <ul class="clean">
+      <li><b>The era's path:</b> its inflation, real home and share price changes, interest rates, recession years and the fall in family income in them.</li>
+      <li><b>The era's central-bank rule</b> as fitted above, or today's rule in every era.</li>
+      <li><b>The era's tax schedule:</b> each income group's tax rate actually paid in that era minus 2019's, charged on earnings and Social Security, with an equal amount per adult returned so the size of the state does not change.</li>
+      <li><b>The era's health cost growth:</b> the basket's medical prices rise faster than the rest at the era's pace.</li>
+    </ul>
+    <p>Five stability outcomes, lower is steadier on all five: <b>P1</b> the swings in the basket's price; <b>P2</b> the swings in yearly real income; <b>P3</b> the largest fall in real wealth (the median adult's); <b>P4</b> the years to recover from an income shock; <b>P5</b> the share of adults pushed below the basket line in a recession year. Each run uses 100 seeds; intervals are Holm-adjusted across the five.</p>
+    <p><strong>Without the programme, today's households are not steadier in every way under an earlier era's path.</strong> The earlier eras give smaller falls in real wealth and smaller swings in yearly income. But the basket's price swings more in 1947-1972 and 1973-1983, recovery from an income shock is slower in 1947-1972 and 1984-2007, and more people are pushed below the basket line in the recession years of 1973-1983 and 1984-2007. Of the 15 cells, 8 are steadier, 6 less steady and 1 shows no clear difference. Mixed, as the record is.</p>
+  </div>
+  <figure class="chart" id="fig-q3">
+    <h4>Each earlier era's path against 2008-2025, without the programme</h4>
+    <p class="sub">The era minus 2008-2025, with its Holm-adjusted 95% interval. Left of zero: the earlier era is steadier. Right of zero: less steady.</p>
+    <div class="legend" aria-hidden="true"><span><i class="dot" style="background:var(--pos)"></i>steadier</span><span><i class="dot" style="background:var(--neg)"></i>less steady</span><span><i class="dot" style="background:var(--neutral-mark)"></i>no clear difference</span></div>
+    <div class="vizbox" data-chart="q3"></div>
+    <figcaption>P3 covers each era's whole run (27, 12, 25 and 19 years). Over the first 11 years only, like for like, every earlier era's largest fall is also smaller: by $21,329, $6,243 and $17,680. P1 comes from the era's own price path and does not vary across seeds, so its interval is a point.</figcaption>
+    <p class="basis"><b>Basis:</b> simulation release and command: engine commit <code>77a85d6</code>, <code>node dev/tools/s75_eras.js e1…e4 100</code>; results folder <a href="https://github.com/BetterToBest/compassionism-sim-results/tree/main/s75-eras-77a85d6">s75-eras-77a85d6</a>.</p>
+    <details class="numbers"><summary>Show the numbers</summary><div class="tablewrap" data-table="q3"></div></details>
+  </figure>
+
+  <div class="prose">
+    <h3>Which setting moves it, inside the model</h3>
+    <ul class="clean">
+      <li><b>The central bank's rule</b> moves the largest falls in real wealth most, by $12,000-19,000 in 1973-2025: easing raises asset prices in a recession, and the later tightening lowers them.</li>
+      <li><b>The era's tax schedule</b> barely moves stability, and lowers basket poverty a little in every era (0.1-0.4 points). Once the equal amount per adult is returned, each era's change takes a little more from higher earnings than from lower ones.</li>
+      <li><b>The era's health cost growth</b> raises basket poverty (0.1-1.1 points), and in 1947-2007 the share pushed below the line in recession years.</li>
+      <li><b>No setting moves the basket's price swings</b> (P1): the rule has no channel to essential prices.</li>
+    </ul>
+  </div>
+  <div class="tablewrap" data-table="settings"></div>
+  <p class="basis">No programme; each setting minus the era's path alone, in the same era. Only cells whose interval excludes zero are named. P3 in dollars, poverty in points. <b>Basis:</b> simulation release and command (as above); every cell is in <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/dev/runs/s75-eras/tables.md">tables.md</a>.</p>
+
+  <div class="callout warn">
+    <p><b>Today's rule put into 1947 is not a fair test.</b> Set against the Federal Reserve's pegged rates after the war, today's rule tightens by up to 28 points in 1947, reading 1946's 18% inflation at the end of price controls. The engine's links from the rate to asset prices were estimated for moves of a point or two, and stretched this far they produce a $261,000 larger fall in real wealth. That cell says more about the model's reach than about the era.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>Basket poverty without the programme is higher under every earlier era's path</strong>: 47.2% of person-years in 1947-1972, 57.7% in 1973-1983 and 48.6% in 1984-2007, against 44.4% in 2008-2025. This comes from the model's paths (their recession years, the fall in family income in them, and inflation applied to today's basket). It is not a measure of how people lived then.</p>
+  </div>
+</section>
+
+<section id="programme">
+  <h2>The programme's effect under every era's settings</h2>
+  <div class="prose">
+    <p>Both designs were run against each era: <b>C2.2</b>, which pays every adult enough to reach the cost of the basket of essentials, and <b>the release design</b>, the simulation's first released design, which adults join. Each is paired with a no-programme run on the same seeds.</p>
+    <p>Both designs cut basket poverty in every era, shrink the largest fall in real wealth, and push fewer people below the line in recession years. Both also make the basket's price and incomes in dollars swing more, as in the simulation's study of the central bank (S74). The release design lengthens recovery from an income shock in most cells; C2.2 shortens it.</p>
+  </div>
+  <figure class="chart" id="fig-dumbbell">
+    <h4>Basket poverty under each era's path: no programme, release design, C2.2</h4>
+    <p class="sub">% of person-years with income below the cost of the basket of essentials, means over 100 seeds.</p>
+    <div class="legend" aria-hidden="true"><span><i class="dot" style="background:var(--neutral-mark)"></i>No programme</span><span><i class="dot" style="background:var(--s2)"></i>Release design</span><span><i class="dot" style="background:var(--s1)"></i>C2.2</span></div>
+    <div class="vizbox" data-chart="dumbbell"></div>
+    <p class="basis"><b>Basis:</b> simulation release and command: engine commit <code>77a85d6</code>; results <a href="https://github.com/BetterToBest/compassionism-sim-results/tree/main/s75-eras-77a85d6">s75-eras-77a85d6</a>.</p>
+    <details class="numbers"><summary>Show the numbers</summary><div class="tablewrap" data-table="dumbbell"></div></details>
+  </figure>
+
+  <figure class="chart" id="fig-tally">
+    <h4>Does the programme's effect keep its direction? 120 cells per design</h4>
+    <p class="sub">Every era (4) × setting (6) × outcome (5), each against the direction found in S74. "Kept" means the same direction, good or bad.</p>
+    <div class="legend" aria-hidden="true"><span><i style="background:var(--s1)"></i>kept</span><span><i style="background:var(--neutral-mark)"></i>no measurable difference</span><span><i style="background:var(--s3)"></i>reversed, in the favourable direction</span></div>
+    <div class="vizbox" data-chart="tally"></div>
+    <figcaption>The six reversals are all C2.2's P1 in 2008-2025: there the programme makes the basket's price swing slightly less (by 0.07 points), not more.</figcaption>
+  </figure>
+</section>
+
+<section id="limits" class="prose">
+  <h2>What this does not show</h2>
+  <ul class="clean">
+    <li><b>The panel describes; it does not attribute.</b> The eras differ in many ways at once: the US's postwar position, union membership, demography, fixed exchange rates to 1971, wars, the size of government, the rules of finance. No comparison here says which policy caused which outcome.</li>
+    <li><b>The tax setting covers work and pensions only.</b> It is charged on earnings and Social Security, not on the capital income wealth pays. Much of the top 1%'s higher tax in 1947-1972 fell on capital (corporate, estate and property taxes), and that part is not in the model.</li>
+    <li><b>The engine has no expectations channel.</b> A rule that responds to inflation less than one for one (1947-1983) or not at all (2008-2025) cannot show the instability it is thought to cause.</li>
+    <li><b>The rate's links to asset prices are stretched</b> wherever a rule parts from the actual rate by more than about 5 points (today's rule in 1947-1983; the era's own rule in 1947-1972). Those links were estimated for moves of a point or two.</li>
+    <li><b>The model does not represent war, military spending or corruption</b>, so no figure on this page is about them.</li>
+    <li>Era samples are short. The simulation uses one population and 100 seeds; its intervals measure the model's randomness, not uncertainty about history. Series that do not reach back are replaced by named substitutes, each a modelling assumption listed in <code>sources/s75_hx.json</code>.</li>
+    <li>The model has not yet been reviewed by an independent economist.</li>
+  </ul>
+</section>
+
+<section id="aim">
+  <h2>The aim of the design</h2>
+  <blockquote class="aim">
+    2005-2025 was marked by war and corruption. Compassionism is meant as a way past war, with stability and prosperity as goals instead of exploitation and extraction.
+    <footer>Duke Johnson's note on the design's purpose (planning conversation, November 13, 2026, as recorded in the project plan). It states an aim, not a result: the model does not represent war or corruption, and nothing above measures them.</footer>
+  </blockquote>
+</section>
+
+<section id="sources" class="prose">
+  <h2>Sources, files and how to check them</h2>
+  <ul class="clean">
+    <li>Preregistration, with Amendments 1-4: <a href="https://github.com/BetterToBest/research-update/blob/main/prereg/2026-11-s75-deep-history.md">prereg/2026-11-s75-deep-history.md</a></li>
+    <li>Full report: <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/dev/reports/s75-deep-history.md">dev/reports/s75-deep-history.md</a> · the panel's note: <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/dev/reports/s75-panel.md">dev/reports/s75-panel.md</a></li>
+    <li>Every cell: <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/dev/runs/s75-panel/tables.md">panel tables</a> · <a href="https://github.com/BetterToBest/compassionism-simulation/blob/main/dev/runs/s75-eras/tables.md">engine tables</a></li>
+    <li>Results, with run.txt and SHA256SUMS: <a href="https://github.com/BetterToBest/compassionism-sim-results/tree/main/s75-panel-54e88bc">s75-panel-54e88bc</a> · <a href="https://github.com/BetterToBest/compassionism-sim-results/tree/main/s75-eras-77a85d6">s75-eras-77a85d6</a></li>
+    <li>Data sources opened: BLS CPI-U and its food, shelter and medical indexes; FRED (federal funds rate, Treasury bill, mortgage rate, unemployment, CBO's output gap and noncyclical rate); Shiller's home and share prices; NBER recession dates; Piketty, Saez and Zucman's distributional accounts; the Historical SCF (Kuhn, Schularick and Steins); Jordà, Schularick and Taylor's rates of return; CMS national health expenditure; Census poverty tables; Historical Statistics of the United States; Health, United States 2017.</li>
+    <li>The data behind this page, in one file: <a href="data/s75-us-eras.json">data/s75-us-eras.json</a>, built by <code>tools/build_s75_eras.py</code> from the simulation's files.</li>
+    <li>The simulation itself: <a href="https://bettertobest.github.io/compassionism-simulation/">Compassionism Simulation</a> · <a href="https://bettertobest.github.io/compassionism-simulation/findings.html">its findings page</a></li>
+  </ul>
+  <p class="attrib">The math and code of this simulation were engineered by Claude, an AI model made by Anthropic, from the concepts in Duke Johnson's book <em>Better To Best</em> and his related vision for eradicating extreme poverty while enriching cultures and supporting human flourishing. The model has not yet been reviewed by an independent economist; the full code is open for anyone to check, and expert collaborators are welcome.</p>
+</section>
+</main>
+
+<div class="tip" id="tip" role="tooltip"></div>
+<script id="s75-data" type="application/json">{"_about":"Built by research-hub tools/build_s75_eras.py from BetterToBest/compassionism-simulation at 87e9769a70d52725c75c95e143a0a8e20fdea121 (sources/s75_eras.json, sources/s75_hx.json, dev/runs/s75-eras/tables.json).","sim_commit":"87e9769a70d52725c75c95e143a0a8e20fdea121","engine_commit":"77a85d6b1e2a9610a5f12c03b313eaa4980c9c75","seeds":100,"commands":{"e1":"node dev/tools/s75_eras.js e1 100 --out=dev/runs/s75-eras","e2":"node dev/tools/s75_eras.js e2 100 --out=dev/runs/s75-eras","e3":"node dev/tools/s75_eras.js e3 100 --out=dev/runs/s75-eras","e4":"node dev/tools/s75_eras.js e4 100 --out=dev/runs/s75-eras"},"eras":{"E0":"1913-1946 (reading)","E1":"1947-1972","E2":"1973-1983","E3":"1984-2007","E4":"2008-2025","W":"2005-2025"},"timeline":{"years":[1946,1947,1948,1949,1950,1951,1952,1953,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975,1976,1977,1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],"inflation":[18.13,8.84,2.99,-2.07,5.93,6.0,0.75,0.75,-0.74,0.37,2.99,2.9,1.76,1.73,1.36,0.67,1.33,1.64,0.97,1.92,3.46,3.04,4.72,6.2,5.57,3.27,3.41,8.71,12.34,6.94,4.86,6.7,9.02,13.29,12.52,8.92,3.83,3.79,3.95,3.8,1.1,4.43,4.42,4.65,6.11,3.06,2.9,2.75,2.67,2.54,3.32,1.7,1.61,2.68,3.39,1.55,2.38,1.88,3.26,3.42,2.54,4.08,0.09,2.72,1.5,2.96,1.74,1.5,0.76,0.73,2.07,2.11,1.91,2.29,1.36,7.04,6.45,3.35,2.89,2.68],"unemployment":[3.9,3.9,3.75,6.05,5.21,3.28,3.02,2.92,5.59,4.37,4.12,4.3,6.84,5.45,5.54,6.69,5.57,5.64,5.16,4.51,3.79,3.84,3.56,3.49,4.98,5.95,5.6,4.86,5.64,8.47,7.7,7.05,6.07,5.85,7.17,7.62,9.71,9.6,7.51,7.19,7.0,6.17,5.49,5.26,5.62,6.85,7.49,6.91,6.1,5.59,5.41,4.94,4.5,4.22,3.97,4.74,5.78,5.99,5.54,5.08,4.61,4.62,5.8,9.28,9.61,8.93,8.07,7.36,6.16,5.28,4.88,4.36,3.89,3.67,8.1,5.35,3.65,3.62,4.03,4.26],"policy":[0.38,0.6,1.04,1.11,1.2,1.52,1.72,1.89,0.94,1.78,2.73,3.1,1.57,3.31,3.22,1.96,2.71,3.18,3.5,4.08,5.11,4.22,5.66,8.2,7.18,4.66,4.43,8.73,10.5,5.82,5.04,5.54,7.93,11.19,13.36,16.38,12.26,9.09,10.22,8.1,6.8,6.66,7.57,9.22,8.1,5.69,3.52,3.02,4.2,5.84,5.3,5.46,5.35,4.97,6.24,3.89,1.67,1.13,1.35,3.21,4.96,5.02,1.93,0.16,0.17,0.1,0.14,0.11,0.09,0.13,0.4,1.0,1.83,2.16,0.38,0.08,1.68,5.02,5.14,4.21],"homes":[21.37,2.65,-7.42,-1.16,5.85,-1.89,0.07,9.86,1.68,-0.37,-2.01,-0.18,-1.08,-1.59,-0.59,0.3,-1.0,0.49,0.29,-0.26,-2.16,-0.7,-0.56,0.75,2.51,0.95,-0.42,-4.86,-2.02,-0.15,3.16,7.45,6.15,0.4,-4.55,-3.51,-3.15,0.92,0.7,3.54,8.42,3.27,2.68,-0.24,-6.4,-3.14,-2.02,-0.58,-0.16,-0.73,-0.87,2.28,4.75,4.86,5.71,5.05,7.02,7.79,10.05,9.76,-0.79,-9.11,-12.08,-6.4,-5.53,-6.65,4.61,9.07,3.72,4.44,3.16,4.01,2.56,1.37,8.95,11.05,-0.77,2.24,1.08,-1.48],"shares":[-26.1,-8.73,-1.87,11.19,12.72,11.82,10.4,-5.36,41.89,29.26,-0.61,-15.6,30.34,8.54,-5.12,25.46,-13.83,16.49,12.11,7.19,-14.3,13.72,6.72,-19.44,-6.38,6.64,14.58,-25.8,-37.01,23.67,12.56,-16.02,-6.03,-1.0,10.06,-14.86,8.45,13.63,-3.74,21.41,18.62,-7.17,9.87,20.48,-11.12,14.66,8.97,4.1,-4.85,31.67,17.05,27.31,21.7,16.91,-9.89,-15.29,-23.29,17.96,7.47,1.77,9.45,0.34,-40.73,23.18,10.16,-2.74,12.44,25.22,12.78,-0.73,7.15,16.14,-5.45,20.97,14.76,18.19,-21.38,15.91,24.72,11.06],"recession_months":[0.0,0.0,1.0,10.0,0.0,0.0,0.0,5.0,5.0,0.0,0.0,4.0,4.0,0.0,8.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,11.0,0.0,0.0,1.0,12.0,3.0,0.0,0.0,0.0,0.0,6.0,5.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,12.0,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0],"food":[18.13,8.84,-0.78,-3.92,9.8,7.43,-1.04,-1.94,-2.31,-1.01,2.73,2.66,2.27,-1.58,3.22,-1.56,1.27,1.56,1.54,3.64,3.22,0.85,3.93,7.03,1.26,4.49,4.77,22.1,12.31,6.48,-0.94,7.87,12.26,9.62,10.68,3.11,2.08,1.83,3.7,2.12,3.59,3.37,5.64,6.09,5.74,1.19,1.25,3.49,3.37,2.04,4.92,1.01,2.2,1.66,2.84,2.64,0.69,4.55,2.45,1.75,1.41,5.71,6.65,-2.43,1.67,5.98,1.28,0.4,3.66,-0.42,-1.96,0.94,0.74,0.73,3.97,6.51,11.74,1.31,1.73,2.33],"shelter":[18.13,8.84,2.99,-2.07,5.93,6.0,0.75,0.75,1.79,0.88,2.62,3.4,0.82,2.04,1.6,0.79,0.78,1.94,1.52,1.87,4.04,3.18,6.51,8.68,8.88,2.72,3.97,7.12,11.4,7.25,4.17,8.78,11.4,17.48,15.01,9.91,2.33,4.77,5.24,5.92,4.79,5.08,4.43,4.94,5.29,3.98,2.89,3.0,2.98,3.51,2.91,3.35,3.41,2.43,3.48,4.18,3.18,2.23,2.69,2.62,4.14,3.16,1.86,0.29,0.03,1.95,2.16,2.54,2.92,3.21,3.64,3.19,3.21,3.24,1.85,4.18,7.47,6.17,4.62,3.15],"medical":[18.13,8.84,5.76,1.36,3.36,5.84,4.29,3.53,2.27,3.33,3.23,4.69,4.98,3.32,3.67,2.65,2.59,2.1,2.06,2.82,6.67,6.62,6.21,5.84,7.67,4.56,3.27,5.28,12.28,10.04,9.94,8.86,8.64,10.14,10.2,12.47,11.09,6.38,6.19,6.65,7.77,5.78,6.89,8.55,9.62,7.83,6.66,5.38,4.91,3.89,3.08,2.85,3.41,3.66,4.2,4.74,5.0,3.73,4.22,4.24,3.65,5.19,2.74,3.35,3.25,3.49,3.21,1.97,3.0,2.55,3.93,1.77,2.07,4.51,1.76,2.15,3.95,0.44,2.83,3.15]},"stats":{"A1 inflation":{"label":"Inflation (CPI-U)","eras":{"E1":{"mean":2.68,"sd":2.43,"years":"1947-1972","max":[1947,8.84]},"E2":{"mean":8.27,"sd":3.41,"years":"1973-1983","max":[1979,13.29]},"E3":{"mean":3.09,"sd":1.16,"years":"1984-2007","max":[1990,6.11]},"E4":{"mean":2.45,"sd":1.78,"years":"2008-2025","max":[2021,7.04]},"W":{"mean":2.58,"sd":1.69,"years":"2005-2025","max":[2021,7.04]},"E0":{"mean":2.61,"sd":7.59,"years":"1914-1946","max":[1918,20.44]}}},"A2 food":{"label":"Food prices","eras":{"E1":{"mean":1.9,"sd":3.31,"years":"1948-1972","max":[1950,9.8]},"E2":{"mean":7.95,"sd":6.51,"years":"1973-1983","max":[1973,22.1]},"E3":{"mean":3.06,"sd":1.66,"years":"1984-2007","max":[1989,6.09]},"E4":{"mean":2.49,"sd":3.47,"years":"2008-2025","max":[2022,11.74]},"W":{"mean":2.56,"sd":3.29,"years":"2005-2025","max":[2022,11.74]}}},"A2 shelter":{"label":"Shelter prices","eras":{"E1":{"mean":3.05,"sd":2.47,"years":"1954-1972","max":[1970,8.88]},"E2":{"mean":9.06,"sd":4.61,"years":"1973-1983","max":[1979,17.48]},"E3":{"mean":3.74,"sd":1.03,"years":"1984-2007","max":[1985,5.92]},"E4":{"mean":3.09,"sd":1.8,"years":"2008-2025","max":[2022,7.47]},"W":{"mean":3.12,"sd":1.68,"years":"2005-2025","max":[2022,7.47]}}},"A2 medical":{"label":"Medical prices","eras":{"E1":{"mean":4.11,"sd":1.7,"years":"1948-1972","max":[1970,7.67]},"E2":{"mean":9.57,"sd":2.22,"years":"1973-1983","max":[1981,12.47]},"E3":{"mean":5.34,"sd":1.83,"years":"1984-2007","max":[1990,9.62]},"E4":{"mean":2.79,"sd":0.98,"years":"2008-2025","max":[2019,4.51]},"W":{"mean":3.01,"sd":1.09,"years":"2005-2025","max":[2007,5.19]}}},"A3 unemployment":{"label":"Unemployment rate","eras":{"E1":{"mean":4.77,"sd":1.13,"years":"1948-1972","max":[1958,6.84]},"E2":{"mean":7.25,"sd":1.58,"years":"1973-1983","max":[1982,9.71]},"E3":{"mean":5.69,"sd":1.04,"years":"1984-2007","max":[1984,7.51]},"E4":{"mean":5.91,"sd":2.11,"years":"2008-2025","max":[2010,9.61]},"W":{"mean":5.74,"sd":1.99,"years":"2005-2025","max":[2010,9.61]},"E0":{"mean":8.83,"sd":7.24,"years":"1913-1946","max":[1933,24.9]}}},"A4 growth per person":{"label":"Growth per person","eras":{"E1":{"mean":2.53,"sd":3.14,"years":"1948-1972","max":[1950,11.52]},"E2":{"mean":1.67,"sd":3.18,"years":"1973-1983","max":[1983,6.94]},"E3":{"mean":2.16,"sd":1.42,"years":"1984-2007","max":[1984,4.65]},"E4":{"mean":1.31,"sd":1.86,"years":"2008-2025","max":[2021,5.5]},"W":{"mean":1.36,"sd":1.72,"years":"2005-2025","max":[2021,5.5]},"E0":{"mean":2.54,"sd":8.22,"years":"1913-1946","max":[1942,17.43]}}},"A5 homes real change":{"label":"Real home prices","eras":{"E1":{"mean":0.15,"sd":2.99,"years":"1947-1972","max":[1953,9.86]},"E2":{"mean":-0.01,"sd":4.18,"years":"1973-1983","max":[1977,7.45]},"E3":{"mean":2.16,"sd":4.87,"years":"1984-2007","max":[2004,10.05]},"E4":{"mean":1.3,"sd":6.01,"years":"2008-2025","max":[2021,11.05]},"W":{"mean":1.11,"sd":6.32,"years":"2005-2025","max":[2021,11.05]},"E0":{"mean":0.37,"sd":7.31,"years":"1913-1946","max":[1946,21.37]}}},"A5 shares real change":{"label":"Real share prices","eras":{"E1":{"mean":6.46,"sd":15.31,"years":"1947-1972","max":[1954,41.89]},"E2":{"mean":-2.94,"sd":18.79,"years":"1973-1983","max":[1975,23.67]},"E3":{"mean":7.27,"sd":14.33,"years":"1984-2007","max":[1995,31.67]},"E4":{"mean":7.87,"sd":17.01,"years":"2008-2025","max":[2013,25.22]},"W":{"mean":7.3,"sd":15.83,"years":"2005-2025","max":[2013,25.22]},"E0":{"mean":1.89,"sd":23.65,"years":"1913-1946","max":[1933,45.08]}}}},"drawdowns":{"E1":{"shares":[35.3,258],"homes":[9.1,10],"recession_months_pct":16.0},"E2":{"shares":[59.6,61],"homes":[10.8,4],"recession_months_pct":28.8},"E3":{"shares":[46.8,141],"homes":[13.4,4],"recession_months_pct":5.6},"E4":{"shares":[45.5,48],"homes":[17.5,4],"recession_months_pct":9.3},"W":{"shares":[51.7,56],"homes":[34.6,10],"recession_months_pct":7.9},"E0":{"shares":[80.6,317],"homes":[32.3,25],"recession_months_pct":34.1}},"comparisons":{"W vs E1":[{"measure":"A1 inflation mean","earlier":2.68,"later":2.58,"diff":-0.1,"ci95":[-1.24,1.4],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A1 inflation sd","earlier":2.43,"later":1.69,"diff":-0.74,"ci95":[-1.71,0.54],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A2 food mean","earlier":1.9,"later":2.56,"diff":0.66,"ci95":[-1.19,2.65],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A2 food sd","earlier":3.31,"later":3.29,"diff":-0.02,"ci95":[-1.53,1.74],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A2 shelter mean","earlier":3.05,"later":3.12,"diff":0.07,"ci95":[-2.08,1.77],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A2 shelter sd","earlier":2.47,"later":1.68,"diff":-0.78,"ci95":[-2.03,0.98],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A2 medical mean","earlier":4.11,"later":3.01,"diff":-1.1,"ci95":[-2.15,-0.22],"p_holm":0.1708,"verdict":"no clear difference"},{"measure":"A2 medical sd","earlier":1.7,"later":1.09,"diff":-0.6,"ci95":[-1.02,0.01],"p_holm":0.538,"verdict":"no clear difference"},{"measure":"A3 unemployment mean","earlier":4.77,"later":5.74,"diff":0.97,"ci95":[-0.16,2.57],"p_holm":0.7232,"verdict":"no clear difference"},{"measure":"A3 unemployment sd","earlier":1.13,"later":1.99,"diff":0.86,"ci95":[0.03,1.38],"p_holm":0.5328,"verdict":"no clear difference"},{"measure":"A4 growth mean","earlier":2.53,"later":1.36,"diff":-1.17,"ci95":[-2.54,0.03],"p_holm":0.538,"verdict":"no clear difference"},{"measure":"A4 growth sd","earlier":3.14,"later":1.72,"diff":-1.42,"ci95":[-2.77,-0.02],"p_holm":0.5328,"verdict":"no clear difference"},{"measure":"A5 shares real change sd","earlier":15.31,"later":15.83,"diff":0.52,"ci95":[-6.98,7.74],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A5 homes real change sd","earlier":2.99,"later":6.32,"diff":3.32,"ci95":[0.36,5.53],"p_holm":0.3588,"verdict":"no clear difference"}],"W vs E2":[{"measure":"A1 inflation mean","earlier":8.27,"later":2.58,"diff":-5.68,"ci95":[-8.37,-3.86],"p_holm":0.0,"verdict":"more stable"},{"measure":"A1 inflation sd","earlier":3.41,"later":1.69,"diff":-1.72,"ci95":[-2.54,-0.31],"p_holm":0.1674,"verdict":"no clear difference"},{"measure":"A2 food mean","earlier":7.95,"later":2.56,"diff":-5.39,"ci95":[-8.72,-1.25],"p_holm":0.048,"verdict":"more stable"},{"measure":"A2 food sd","earlier":6.51,"later":3.29,"diff":-3.23,"ci95":[-4.29,0.32],"p_holm":0.6874,"verdict":"no clear difference"},{"measure":"A2 shelter mean","earlier":9.06,"later":3.12,"diff":-5.93,"ci95":[-9.98,-3.6],"p_holm":0.0,"verdict":"more stable"},{"measure":"A2 shelter sd","earlier":4.61,"later":1.68,"diff":-2.93,"ci95":[-4.04,-0.88],"p_holm":0.0088,"verdict":"more stable"},{"measure":"A2 medical mean","earlier":9.57,"later":3.01,"diff":-6.56,"ci95":[-7.96,-6.17],"p_holm":0.0,"verdict":"more stable"},{"measure":"A2 medical sd","earlier":2.22,"later":1.09,"diff":-1.12,"ci95":[-1.57,0.42],"p_holm":0.993,"verdict":"no clear difference"},{"measure":"A3 unemployment mean","earlier":7.25,"later":5.74,"diff":-1.51,"ci95":[-2.8,0.23],"p_holm":0.6874,"verdict":"no clear difference"},{"measure":"A3 unemployment sd","earlier":1.58,"later":1.99,"diff":0.4,"ci95":[-0.19,1.43],"p_holm":0.6874,"verdict":"no clear difference"},{"measure":"A4 growth mean","earlier":1.67,"later":1.36,"diff":-0.32,"ci95":[-1.98,1.63],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A4 growth sd","earlier":3.18,"later":1.72,"diff":-1.46,"ci95":[-2.16,0.18],"p_holm":0.6768,"verdict":"no clear difference"},{"measure":"A5 shares real change sd","earlier":18.79,"later":15.83,"diff":-2.96,"ci95":[-11.91,9.15],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A5 homes real change sd","earlier":4.18,"later":6.32,"diff":2.13,"ci95":[-0.66,4.68],"p_holm":0.6874,"verdict":"no clear difference"}],"W vs E3":[{"measure":"A1 inflation mean","earlier":3.09,"later":2.58,"diff":-0.51,"ci95":[-1.53,0.63],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A1 inflation sd","earlier":1.16,"later":1.69,"diff":0.53,"ci95":[-0.46,1.38],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A2 food mean","earlier":3.06,"later":2.56,"diff":-0.5,"ci95":[-2.02,1.4],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A2 food sd","earlier":1.66,"later":3.29,"diff":1.63,"ci95":[0.45,2.82],"p_holm":0.052,"verdict":"no clear difference"},{"measure":"A2 shelter mean","earlier":3.74,"later":3.12,"diff":-0.62,"ci95":[-1.77,0.63],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A2 shelter sd","earlier":1.03,"later":1.68,"diff":0.65,"ci95":[-0.17,1.46],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A2 medical mean","earlier":5.34,"later":3.01,"diff":-2.33,"ci95":[-3.68,-1.19],"p_holm":0.0,"verdict":"more stable"},{"measure":"A2 medical sd","earlier":1.83,"later":1.09,"diff":-0.74,"ci95":[-1.31,0.16],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A3 unemployment mean","earlier":5.69,"later":5.74,"diff":0.05,"ci95":[-1.1,1.61],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A3 unemployment sd","earlier":1.04,"later":1.99,"diff":0.95,"ci95":[0.18,1.59],"p_holm":0.2832,"verdict":"no clear difference"},{"measure":"A4 growth mean","earlier":2.16,"later":1.36,"diff":-0.8,"ci95":[-1.78,0.12],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A4 growth sd","earlier":1.42,"later":1.72,"diff":0.3,"ci95":[-0.62,1.19],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A5 shares real change sd","earlier":14.33,"later":15.83,"diff":1.5,"ci95":[-5.8,8.67],"p_holm":1.0,"verdict":"no clear difference"},{"measure":"A5 homes real change sd","earlier":4.87,"later":6.32,"diff":1.44,"ci95":[-1.2,3.92],"p_holm":1.0,"verdict":"no clear difference"}]},"dukes_view":[{"measure":"A1 inflation mean","vs 1947-1972":"no clear difference","vs 1973-1983":"more stable","vs 1984-2007":"no clear difference","reading":"against it"},{"measure":"A1 inflation sd","vs 1947-1972":"no clear difference","vs 1973-1983":"no clear difference","vs 1984-2007":"no clear difference","reading":"mixed"},{"measure":"A2 food mean","vs 1947-1972":"no clear difference","vs 1973-1983":"more stable","vs 1984-2007":"no clear difference","reading":"against it"},{"measure":"A2 food sd","vs 1947-1972":"no clear difference","vs 1973-1983":"no clear difference","vs 1984-2007":"no clear difference","reading":"mixed"},{"measure":"A2 shelter mean","vs 1947-1972":"no clear difference","vs 1973-1983":"more stable","vs 1984-2007":"no clear difference","reading":"against it"},{"measure":"A2 shelter sd","vs 1947-1972":"no clear difference","vs 1973-1983":"more stable","vs 1984-2007":"no clear difference","reading":"against it"},{"measure":"A2 medical mean","vs 1947-1972":"no clear difference","vs 1973-1983":"more stable","vs 1984-2007":"more stable","reading":"against it"},{"measure":"A2 medical sd","vs 1947-1972":"no clear difference","vs 1973-1983":"no clear difference","vs 1984-2007":"no clear difference","reading":"mixed"},{"measure":"A3 unemployment mean","vs 1947-1972":"no clear difference","vs 1973-1983":"no clear difference","vs 1984-2007":"no clear difference","reading":"mixed"},{"measure":"A3 unemployment sd","vs 1947-1972":"no clear difference","vs 1973-1983":"no clear difference","vs 1984-2007":"no clear difference","reading":"mixed"},{"measure":"A4 growth mean","vs 1947-1972":"no clear difference","vs 1973-1983":"no clear difference","vs 1984-2007":"no clear difference","reading":"mixed"},{"measure":"A4 growth sd","vs 1947-1972":"no clear difference","vs 1973-1983":"no clear difference","vs 1984-2007":"no clear difference","reading":"mixed"},{"measure":"A5 shares real change sd","vs 1947-1972":"no clear difference","vs 1973-1983":"no clear difference","vs 1984-2007":"no clear difference","reading":"mixed"},{"measure":"A5 homes real change sd","vs 1947-1972":"no clear difference","vs 1973-1983":"no clear difference","vs 1984-2007":"no clear difference","reading":"mixed"}],"taxes":{"Bottom 50%":{"E1":21.6,"E2":25.4,"E3":28.0,"E4":25.2},"Middle 40%":{"E1":26.1,"E2":30.3,"E3":30.7,"E4":28.4},"Top 10%":{"E1":33.6,"E2":33.4,"E3":32.2,"E4":30.9},"Top 1%":{"E1":44.3,"E2":39.0,"E3":34.7,"E4":32.9},"Top 0.1%":{"E1":54.9,"E2":44.1,"E3":37.3,"E4":34.8}},"distribution":{"B1 top 1% income share":{"E1":{"years":"1947-1972","start":14.8,"end":11.0},"E2":{"years":"1973-1983","start":10.8,"end":11.5},"E3":{"years":"1984-2007","start":12.2,"end":18.4},"E4":{"years":"2008-2019","start":17.9,"end":19.1}},"B1 top 10% income share":{"E1":{"years":"1947-1972","start":36.5,"end":34.4},"E2":{"years":"1973-1983","start":34.3,"end":35.3},"E3":{"years":"1984-2007","start":36.5,"end":44.0},"E4":{"years":"2008-2019","start":43.5,"end":45.7}},"B1 top 1% wealth share":{"E1":{"years":"1947-1972","start":29.8,"end":26.2},"E2":{"years":"1973-1983","start":25.2,"end":24.0},"E3":{"years":"1984-2007","start":24.2,"end":33.3},"E4":{"years":"2008-2019","start":33.9,"end":34.9}},"B2 official poverty %":{"E1":{"years":"1959-1972","start":22.4,"end":11.9},"E2":{"years":"1973-1983","start":11.1,"end":15.2},"E3":{"years":"1984-2007","start":14.4,"end":12.5},"E4":{"years":"2008-2025","start":13.2,"end":10.2}},"B2 anchored SPM poverty %":{"E1":{"years":"1967-1972","start":25.8,"end":20.4},"E2":{"years":"1973-1983","start":19.1,"end":21.4},"E3":{"years":"1984-2007","start":20.5,"end":14.8},"E4":{"years":"2008-2024","start":14.6,"end":10.1}},"B3 health spending % of GDP":{"E1":{"years":"1960-1972","start":5.0,"end":7.2},"E2":{"years":"1973-1983","start":7.2,"end":10.0},"E3":{"years":"1984-2007","start":10.0,"end":15.9},"E4":{"years":"2008-2024","start":16.3,"end":18.0}},"B3 out-of-pocket % of health spending":{"E1":{"years":"1960-1972","start":47.1,"end":30.1},"E2":{"years":"1973-1983","start":29.9,"end":20.5},"E3":{"years":"1984-2007","start":20.5,"end":12.8},"E4":{"years":"2008-2024","start":12.5,"end":10.5}}},"beds":{"for-profit":{"E0":{"years":"1946-1946","start":3.7,"end":3.7},"E1":{"years":"1947-1972","start":3.6,"end":4.2},"E2":{"years":"1973-1983","start":4.8,"end":8.2},"E3":{"years":"1984-1993","start":8.9,"end":11.3}},"non-profit":{"E0":{"years":"1946-1946","start":23.3,"end":23.3},"E1":{"years":"1947-1972","start":24.4,"end":41.3},"E2":{"years":"1973-1983","start":42.5,"end":54.7},"E3":{"years":"1984-1993","start":55.1,"end":57.4}},"government":{"E0":{"years":"1946-1946","start":73.0,"end":73.0},"E1":{"years":"1947-1972","start":71.9,"end":54.5},"E2":{"years":"1973-1983","start":52.7,"end":37.1},"E3":{"years":"1984-1993","start":36.0,"end":31.3}}},"admissions":{"1975":{"non-profit":70.9,"for-profit":7.9,"state-local government":21.1},"1980":{"non-profit":70.7,"for-profit":8.8,"state-local government":20.5},"1990":{"non-profit":73.4,"for-profit":9.8,"state-local government":16.8},"2000":{"non-profit":73.9,"for-profit":12.5,"state-local government":13.6},"2010":{"non-profit":72.6,"for-profit":14.0,"state-local government":13.4},"2013":{"non-profit":72.4,"for-profit":15.0,"state-local government":12.6},"2014":{"non-profit":71.8,"for-profit":15.5,"state-local government":12.7},"2015":{"non-profit":71.8,"for-profit":15.6,"state-local government":12.6}},"rule":{"1947-1972":{"phi":0.45,"phi_se":0.25,"beta":0.08,"beta_se":0.11,"quarters":"1949Q1-1972Q4","n":96},"1951-1972 (after the Accord)":{"phi":0.55,"phi_se":0.28,"beta":0.1,"beta_se":0.11,"quarters":"1951Q2-1972Q4","n":87},"1973-1983":{"phi":0.65,"phi_se":0.2,"beta":-0.18,"beta_se":0.24,"quarters":"1973Q1-1983Q4","n":44},"1984-2007":{"phi":1.3,"phi_se":0.29,"beta":0.48,"beta_se":0.23,"quarters":"1984Q1-2007Q4","n":96},"2008-2025":{"phi":-0.05,"phi_se":0.21,"beta":0.67,"beta_se":0.25,"quarters":"2008Q1-2025Q3","n":71}},"q3":{"e1":[{"k":"P1","m":0.646,"lo":0.646,"hi":0.646,"v":"less steady"},{"k":"P2","m":-448.374,"lo":-596.82,"hi":-299.928,"v":"steadier"},{"k":"P3","m":-1734.569,"lo":-2597.462,"hi":-871.677,"v":"steadier"},{"k":"P4","m":0.368,"lo":0.329,"hi":0.408,"v":"less steady"},{"k":"P5","m":-0.081,"lo":-0.293,"hi":0.131,"v":"no clear difference"}],"e2":[{"k":"P1","m":1.634,"lo":1.634,"hi":1.634,"v":"less steady"},{"k":"P2","m":-4305.306,"lo":-4469.763,"hi":-4140.849,"v":"steadier"},{"k":"P3","m":-7525.026,"lo":-8064.488,"hi":-6985.564,"v":"steadier"},{"k":"P4","m":-0.688,"lo":-0.738,"hi":-0.639,"v":"steadier"},{"k":"P5","m":5.682,"lo":5.407,"hi":5.958,"v":"less steady"}],"e3":[{"k":"P1","m":-0.618,"lo":-0.618,"hi":-0.618,"v":"steadier"},{"k":"P2","m":-1548.511,"lo":-1753.037,"hi":-1343.986,"v":"steadier"},{"k":"P3","m":-1292.467,"lo":-1856.274,"hi":-728.66,"v":"steadier"},{"k":"P4","m":0.309,"lo":0.264,"hi":0.353,"v":"less steady"},{"k":"P5","m":1.133,"lo":0.772,"hi":1.493,"v":"less steady"}]},"levels":{"e1":{"none":{"P1":2.427,"P2":18913.48,"P3":42005.667,"P4":3.644,"P5":8.771,"P3_0_11":21128.824,"basket_poverty":47.183,"wealth_poverty_last":31.678,"wealth_poverty_avg":27.333},"c22":{"P1":2.663,"P2":29265.41,"P3":686.286,"P4":3.554,"P5":0.748,"P3_0_11":0,"basket_poverty":2.83,"wealth_poverty_last":0.36,"wealth_poverty_avg":2.824},"rel":{"P1":2.589,"P2":21462.995,"P3":28788.718,"P4":4.237,"P5":4.642,"P3_0_11":8346.373,"basket_poverty":20.489,"wealth_poverty_last":12.536,"wealth_poverty_avg":12.999}},"e2":{"none":{"P1":3.415,"P2":15056.548,"P3":36215.21,"P4":2.588,"P5":14.534,"P3_0_11":36215.21,"basket_poverty":57.724,"wealth_poverty_last":32.17,"wealth_poverty_avg":26.747},"c22":{"P1":3.675,"P2":30627.074,"P3":217.79,"P4":2.436,"P5":1.458,"P3_0_11":217.79,"basket_poverty":6.224,"wealth_poverty_last":1.646,"wealth_poverty_avg":5.964},"rel":{"P1":3.679,"P2":18097.819,"P3":13716.636,"P4":2.613,"P5":6.607,"P3_0_11":13716.636,"basket_poverty":25.906,"wealth_poverty_last":13.984,"wealth_poverty_avg":15.669}},"e3":{"none":{"P1":1.163,"P2":17813.343,"P3":42447.769,"P4":3.585,"P5":9.985,"P3_0_11":24777.527,"basket_poverty":48.612,"wealth_poverty_last":27.712,"wealth_poverty_avg":25.005},"c22":{"P1":1.337,"P2":29652.701,"P3":1085.356,"P4":3.528,"P5":0.497,"P3_0_11":0,"basket_poverty":3.019,"wealth_poverty_last":0.392,"wealth_poverty_avg":2.863},"rel":{"P1":1.289,"P2":20399.242,"P3":35431.507,"P4":3.809,"P5":5.475,"P3_0_11":14404.031,"basket_poverty":25.623,"wealth_poverty_last":14.274,"wealth_poverty_avg":13.388}},"e4":{"none":{"P1":1.781,"P2":19361.854,"P3":43740.236,"P4":3.276,"P5":8.852,"P3_0_11":42457.865,"basket_poverty":44.377,"wealth_poverty_last":25.022,"wealth_poverty_avg":26.958},"c22":{"P1":1.707,"P2":33733.581,"P3":14696.229,"P4":2.9,"P5":1.589,"P3_0_11":11463.065,"basket_poverty":3.675,"wealth_poverty_last":0.508,"wealth_poverty_avg":4.056},"rel":{"P1":1.806,"P2":22187.263,"P3":27374.974,"P4":3.845,"P5":5.407,"P3_0_11":24690.446,"basket_poverty":20.872,"wealth_poverty_last":11.314,"wealth_poverty_avg":15.79}}},"q4":{"c22":{"e1":[{"k":"P1","m":0.236,"lo":0.23,"hi":0.243},{"k":"P2","m":10351.93,"lo":10140.928,"hi":10562.931},{"k":"P3","m":-41319.38,"lo":-42331.0,"hi":-40307.761},{"k":"P4","m":-0.091,"lo":-0.125,"hi":-0.056},{"k":"P5","m":-8.023,"lo":-8.233,"hi":-7.813}],"e2":[{"k":"P1","m":0.26,"lo":0.253,"hi":0.267},{"k":"P2","m":15570.527,"lo":15252.263,"hi":15888.79},{"k":"P3","m":-35997.42,"lo":-36626.346,"hi":-35368.494},{"k":"P4","m":-0.152,"lo":-0.198,"hi":-0.105},{"k":"P5","m":-13.076,"lo":-13.371,"hi":-12.782}],"e3":[{"k":"P1","m":0.174,"lo":0.168,"hi":0.181},{"k":"P2","m":11839.358,"lo":11617.424,"hi":12061.292},{"k":"P3","m":-41362.413,"lo":-42023.753,"hi":-40701.073},{"k":"P4","m":-0.057,"lo":-0.096,"hi":-0.019},{"k":"P5","m":-9.487,"lo":-9.836,"hi":-9.139}],"e4":[{"k":"P1","m":-0.074,"lo":-0.08,"hi":-0.069},{"k":"P2","m":14371.727,"lo":14072.179,"hi":14671.275},{"k":"P3","m":-29044.007,"lo":-29756.522,"hi":-28331.492},{"k":"P4","m":-0.376,"lo":-0.407,"hi":-0.345},{"k":"P5","m":-7.263,"lo":-7.495,"hi":-7.032}]},"rel":{"e1":[{"k":"P1","m":0.162,"lo":0.155,"hi":0.168},{"k":"P2","m":2549.515,"lo":2449.869,"hi":2649.16},{"k":"P3","m":-13216.949,"lo":-14061.503,"hi":-12372.396},{"k":"P4","m":0.593,"lo":0.55,"hi":0.635},{"k":"P5","m":-4.129,"lo":-4.341,"hi":-3.916}],"e2":[{"k":"P1","m":0.265,"lo":0.254,"hi":0.275},{"k":"P2","m":3041.271,"lo":2929.563,"hi":3152.979},{"k":"P3","m":-22498.573,"lo":-23201.52,"hi":-21795.627},{"k":"P4","m":0.026,"lo":-0.019,"hi":0.07},{"k":"P5","m":-7.927,"lo":-8.214,"hi":-7.639}],"e3":[{"k":"P1","m":0.126,"lo":0.12,"hi":0.133},{"k":"P2","m":2585.899,"lo":2488.827,"hi":2682.972},{"k":"P3","m":-7016.262,"lo":-7600.726,"hi":-6431.797},{"k":"P4","m":0.224,"lo":0.188,"hi":0.261},{"k":"P5","m":-4.509,"lo":-4.838,"hi":-4.18}],"e4":[{"k":"P1","m":0.025,"lo":0.02,"hi":0.03},{"k":"P2","m":2825.409,"lo":2712.408,"hi":2938.409},{"k":"P3","m":-16365.262,"lo":-17156.891,"hi":-15573.634},{"k":"P4","m":0.569,"lo":0.529,"hi":0.609},{"k":"P5","m":-3.445,"lo":-3.68,"hi":-3.211}]}},"q4tally":{"c22 kept":111,"c22 no measurable difference":3,"c22 reversed":6,"rel kept":115,"rel no measurable difference":5},"tax_change":{"1947-1972":{"groups":["bottom 50%","middle 40%","next 9%","top 1%"],"d":[-4.45,-5.55,-1.86,11.92],"years":"1947-1972"},"1973-1983":{"groups":["bottom 50%","middle 40%","next 9%","top 1%"],"d":[-0.63,1.04,1.73,6.61],"years":"1973-1983"},"1984-2007":{"groups":["bottom 50%","middle 40%","next 9%","top 1%"],"d":[1.95,1.47,1.51,2.37],"years":"1984-2007"},"2008-2025":{"groups":["bottom 50%","middle 40%","next 9%","top 1%"],"d":[-0.8,-0.8,0.47,0.52],"years":"2008-2019"}},"health_real_growth":{"1947-1972":1.65,"1973-1983":1.28,"1984-2007":2.18,"2008-2025":0.35},"stance":{"e1":{"era_rule":[9.9,-1.9],"todays_rule":[27.9,-5.0]},"e2":{"era_rule":[6.3,-3.9],"todays_rule":[12.3,-6.5]},"e3":{"era_rule":[3.8,-6.4],"todays_rule":[3.8,-7.0]},"e4":{"era_rule":[2.6,-3.2],"todays_rule":[9.3,-0.3]}}}</script>
+<script>
+(function(){
+"use strict";
+var D = JSON.parse(document.getElementById("s75-data").textContent);
+var NS = "http://www.w3.org/2000/svg";
+var tip = document.getElementById("tip");
+var ERA = {E1:"1947-1972",E2:"1973-1983",E3:"1984-2007",E4:"2008-2025",W:"2005-2025",E0:"1913-1946"};
+var ERAKEY = {e1:"1947-1972",e2:"1973-1983",e3:"1984-2007",e4:"2008-2025"};
+
+function el(tag, attrs, parent, text){
+  var n = document.createElementNS(NS, tag);
+  for (var k in attrs) if (attrs[k] !== undefined && attrs[k] !== null) n.setAttribute(k, attrs[k]);
+  if (text !== undefined) n.textContent = text;
+  if (parent) parent.appendChild(n);
+  return n;
+}
+function h(tag, attrs, html){ var n=document.createElement(tag); for (var k in attrs) n.setAttribute(k, attrs[k]); if (html!==undefined) n.innerHTML=html; return n; }
+function lin(d0,d1,r0,r1){ return function(v){ return r0 + (v-d0)/(d1-d0)*(r1-r0); }; }
+function fmt(v,dp){ if (v===null||v===undefined||isNaN(v)) return "–"; var s = Math.abs(v).toFixed(dp===undefined?1:dp).replace(/\B(?=(\d{3})+(?!\d))/g, ","); return (v<0?"−":"")+s; }
+function fmtS(v,dp){ return (v>0?"+":"")+fmt(v,dp); }
+function money(v){ return (v<0?"−$":"$")+fmt(Math.abs(v),0); }
+function moneyS(v){ return (v>0?"+":v<0?"−":"")+"$"+fmt(Math.abs(v),0); }
+function css(name){ return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+function svgFor(box, w, hgt, label){
+  box.innerHTML = "";
+  var s = el("svg", {viewBox:"0 0 "+w+" "+hgt, width:w, height:hgt, role:"img", "aria-label":label}, box);
+  s.style.maxWidth = "100%"; s.style.height = "auto";
+  return s;
+}
+function niceTicks(lo, hi, n){
+  var span = hi-lo, step = Math.pow(10, Math.floor(Math.log10(span/n))), err = span/n/step;
+  if (err >= 7.5) step*=10; else if (err>=3.5) step*=5; else if (err>=1.5) step*=2;
+  var t=[], v=Math.ceil(lo/step)*step;
+  for (; v<=hi+1e-9; v+=step) t.push(Math.round(v*1e6)/1e6);
+  return t;
+}
+function showTip(html, evt, box){
+  tip.innerHTML = html; tip.style.opacity = 1;
+  var bx = box.getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight;
+  var x = evt.clientX + window.scrollX + 14, y = evt.clientY + window.scrollY - th - 12;
+  if (x + tw > window.scrollX + document.documentElement.clientWidth - 8) x = evt.clientX + window.scrollX - tw - 14;
+  if (y < window.scrollY + 4) y = evt.clientY + window.scrollY + 16;
+  tip.style.left = Math.max(window.scrollX+4, x) + "px"; tip.style.top = y + "px";
+}
+function hideTip(){ tip.style.opacity = 0; }
+function table(container, head, rows, cls){
+  var t = h("table", {class: cls||"data"});
+  var thead = h("thead"), tr = h("tr");
+  head.forEach(function(c){ tr.appendChild(h("th",{scope:"col"},c)); }); thead.appendChild(tr); t.appendChild(thead);
+  var tb = h("tbody");
+  rows.forEach(function(r){ var tr=h("tr"); r.forEach(function(c,i){ tr.appendChild(h(i===0?"th":"td", i===0?{scope:"row"}:{}, c)); }); tb.appendChild(tr); });
+  t.appendChild(tb); container.innerHTML=""; container.appendChild(t);
+}
+function width(box){ return Math.max(300, Math.round(box.clientWidth)); }
+
+/* ---------- 1. Timeline: small multiples on a shared year axis ---------- */
+var TL = D.timeline;
+var PANELS = [
+  {k:"inflation", t:"Inflation (CPI-U, % a year)", lo:-4, hi:20},
+  {k:"unemployment", t:"Unemployment rate (%)", lo:0, hi:12},
+  {k:"policy", t:"Policy rate (%)", lo:0, hi:18},
+  {k:"homes", t:"Real home prices (% change)", lo:-15, hi:25},
+  {k:"shares", t:"Real share prices (% change)", lo:-45, hi:45}
+];
+var ERA_SPANS = [[1946.5,1972.5,"1947-1972"],[1972.5,1983.5,"1973-1983"],[1983.5,2007.5,"1984-2007"],[2007.5,2025.5,"2008-2025"]];
+function drawTimeline(box){
+  var W = width(box), ml = 40, mr = 12, ph = W<560? 78: 92, gap = 34, top = 30;
+  var H = top + PANELS.length*(ph+gap) + 8;
+  var s = svgFor(box, W, H, "Five yearly series, 1946 to 2025, with eras and recession years marked");
+  var x = lin(1945.5, 2025.5, ml, W-mr), bw = x(1)-x(0);
+  // era bands and labels
+  ERA_SPANS.forEach(function(e,i){
+    if (i>0) el("line",{x1:x(e[0]),x2:x(e[0]),y1:2,y2:H-22,stroke:"var(--ink-2)","stroke-width":1,"stroke-opacity":.35},s);
+    var lab = W<560 ? e[2].replace(/(\d\d)(\d\d)-(\d\d)(\d\d)/,"$1$2-$4") : e[2];
+    el("text",{x:(x(e[0])+x(e[1]))/2,y:14,"text-anchor":"middle",class:"lab-strong"},s,lab);
+  });
+  // recession columns
+  TL.years.forEach(function(y,i){ if (TL.recession_months[i]>0) el("rect",{x:x(y-0.5),y:top-6,width:bw,height:H-top-2,fill:"var(--recess)"},s); });
+  var cross = el("line",{x1:0,x2:0,y1:top-6,y2:H-4,stroke:"var(--ink-2)","stroke-width":1,opacity:0},s);
+  var dots = [];
+  PANELS.forEach(function(p,pi){
+    var y0 = top + pi*(ph+gap) + 18, y = lin(p.lo, p.hi, y0+ph, y0);
+    el("text",{x:ml,y:y0-6,class:"panel-title"},s,p.t);
+    niceTicks(p.lo,p.hi,3).forEach(function(t){
+      el("line",{x1:ml,x2:W-mr,y1:y(t),y2:y(t),stroke: t===0?"var(--axis)":"var(--grid)","stroke-width":1},s);
+      el("text",{x:ml-6,y:y(t)+4,"text-anchor":"end",class:"tick"},s,fmt(t,0));
+    });
+    var d = "";
+    TL.years.forEach(function(yr,i){ var v = TL[p.k][i]; if (v===null) return; d += (d?"L":"M")+x(yr).toFixed(1)+","+y(Math.max(p.lo,Math.min(p.hi,v))).toFixed(1); });
+    el("path",{d:d,fill:"none",stroke:"var(--s1)","stroke-width":2,"stroke-linejoin":"round","stroke-linecap":"round"},s);
+    var dot = el("circle",{r:4,fill:"var(--s1)",stroke:"var(--surface)","stroke-width":2,opacity:0},s);
+    dots.push({dot:dot,y:y,p:p});
+  });
+  // x axis
+  var axY = top + PANELS.length*(ph+gap) - gap + 18 + 16;
+  [1950,1960,1970,1980,1990,2000,2010,2020].forEach(function(t){ el("text",{x:x(t),y:axY,"text-anchor":"middle",class:"tick"},s,t); });
+  // hover layer
+  var hit = el("rect",{x:ml,y:top-6,width:W-ml-mr,height:H-top,fill:"transparent"},s);
+  function move(evt){
+    var pt = s.getBoundingClientRect(), sx = (evt.clientX-pt.left)*W/pt.width;
+    var yr = Math.round(lin(ml, W-mr, 1945.5, 2025.5)(sx)); yr = Math.max(1946, Math.min(2025, yr));
+    var i = TL.years.indexOf(yr); if (i<0) return;
+    cross.setAttribute("x1",x(yr)); cross.setAttribute("x2",x(yr)); cross.setAttribute("opacity",.5);
+    var era = yr<=1972?"1947-1972":yr<=1983?"1973-1983":yr<=2007?"1984-2007":"2008-2025"; if (yr===1946) era="start of 1947-1972 run";
+    var html = "<b>"+yr+"</b> <span style='color:var(--muted)'>· "+era+"</span>";
+    dots.forEach(function(o){ var v = TL[o.p.k][i]; o.dot.setAttribute("cx",x(yr)); o.dot.setAttribute("cy",o.y(Math.max(o.p.lo,Math.min(o.p.hi,v)))); o.dot.setAttribute("opacity",1);
+      html += "<div class='row'><span>"+o.p.t.replace(/ \(.*\)/,"")+"</span><span>"+fmt(v,1)+"%</span></div>"; });
+    if (TL.recession_months[i]>0) html += "<div style='color:var(--muted);margin-top:3px'>"+TL.recession_months[i]+" recession month"+(TL.recession_months[i]>1?"s":"")+"</div>";
+    showTip(html, evt, box);
+  }
+  function out(){ cross.setAttribute("opacity",0); dots.forEach(function(o){o.dot.setAttribute("opacity",0);}); hideTip(); }
+  hit.addEventListener("pointermove", move); hit.addEventListener("pointerdown", move); hit.addEventListener("pointerleave", out);
+}
+function tableTimeline(c){
+  table(c, ["Year","Inflation %","Unemployment %","Policy rate %","Real home prices %","Real share prices %","Recession months"],
+    TL.years.map(function(y,i){ return [y, fmt(TL.inflation[i]), fmt(TL.unemployment[i]), fmt(TL.policy[i],2), fmt(TL.homes[i]), fmt(TL.shares[i]), TL.recession_months[i]||""]; }));
+}
+
+/* ---------- 2. Verdict matrix ---------- */
+var MEAS = {"A1 inflation mean":"Inflation, level","A1 inflation sd":"Inflation, swings","A2 food mean":"Food prices, level","A2 food sd":"Food prices, swings",
+  "A2 shelter mean":"Shelter prices, level","A2 shelter sd":"Shelter prices, swings","A2 medical mean":"Medical prices, level","A2 medical sd":"Medical prices, swings",
+  "A3 unemployment mean":"Unemployment, level","A3 unemployment sd":"Unemployment, swings","A4 growth mean":"Growth per person, level","A4 growth sd":"Growth per person, swings",
+  "A5 shares real change sd":"Real share prices, swings","A5 homes real change sd":"Real home prices, swings"};
+function pill(v){
+  if (v==="more stable") return "<span class='pill pos'>▼ more stable</span>";
+  if (v==="less stable") return "<span class='pill neg'>▲ less stable</span>";
+  return "<span class='pill none'>no clear difference</span>";
+}
+function drawMatrix(c){
+  var keys = ["W vs E1","W vs E2","W vs E3"];
+  var t = h("table",{class:"matrix"}), th = h("thead"), tr = h("tr");
+  ["Measure","against 1947-1972","against 1973-1983","against 1984-2007","Reading"].forEach(function(x){ tr.appendChild(h("th",{scope:"col"},x)); });
+  th.appendChild(tr); t.appendChild(th);
+  var tb = h("tbody");
+  D.dukes_view.forEach(function(row, ri){
+    var tr = h("tr"); tr.appendChild(h("th",{scope:"row"}, MEAS[row.measure]||row.measure));
+    keys.forEach(function(k){
+      var cmp = D.comparisons[k][ri];
+      var unadj = cmp.verdict==="no clear difference" && (cmp.ci95[0]>0 || cmp.ci95[1]<0);
+      var td = h("td",{class:"v"}, pill(cmp.verdict) + (unadj?" <span title='The 95% interval excludes zero before Holm&#39;s correction, not after it'>†</span>":"") +
+        "<span class='cellnote'>"+fmtS(cmp.diff,2)+" ["+fmt(cmp.ci95[0],2)+", "+fmt(cmp.ci95[1],2)+"]</span>");
+      tr.appendChild(td);
+    });
+    var r = row.reading==="against it" ? "<b>against the view</b>" : row.reading==="supported" ? "<b>supports it</b>" : "mixed";
+    tr.appendChild(h("td",{},r));
+    tb.appendChild(tr);
+  });
+  t.appendChild(tb); c.innerHTML=""; c.appendChild(t);
+}
+
+/* ---------- 3. Spreads by era: small multiples of bars ---------- */
+var SPREAD_ORDER = ["A1 inflation","A2 food","A2 shelter","A2 medical","A3 unemployment","A4 growth per person","A5 homes real change","A5 shares real change"];
+var ROWS = ["E1","E2","E3","E4","W"];
+function drawSpreads(box){
+  box.innerHTML = ""; var grid = h("div",{class:"smalls"}); box.appendChild(grid);
+  var cells = SPREAD_ORDER.map(function(){ var c = h("div"); grid.appendChild(c); return c; });
+  SPREAD_ORDER.forEach(function(k, ci){
+    var st = D.stats[k], cell = cells[ci];
+    var max = 0; ROWS.forEach(function(e){ if (st.eras[e]) max = Math.max(max, st.eras[e].sd); });
+    var W = Math.max(240, Math.round(cell.clientWidth||260)), rh = 22, ml = 74, mr = 40, top = 22, H = top + ROWS.length*rh + 4;
+    var s = svgFor(cell, W, H, st.label+": year-to-year swings by era");
+    el("text",{x:0,y:13,class:"panel-title"},s,st.label);
+    var x = lin(0, max*1.05, ml, W-mr);
+    el("line",{x1:ml,x2:ml,y1:top-2,y2:H-2,stroke:"var(--axis)"},s);
+    ROWS.forEach(function(e,i){
+      var v = st.eras[e]; var y = top + i*rh;
+      el("text",{x:ml-8,y:y+rh/2+4,"text-anchor":"end",class: e==="W"?"lab-strong":"lab"},s,ERA[e]);
+      if (!v) { el("text",{x:ml+6,y:y+rh/2+4,class:"tick"},s,"no data"); return; }
+      var wv = Math.max(1,x(v.sd)-ml);
+      var b = el("path",{d:"M"+ml+","+(y+4)+"h"+(wv-4)+"a4,4 0 0 1 4,4v"+(rh-16)+"a4,4 0 0 1 -4,4h-"+(wv-4)+"z",fill: e==="W"?"var(--s1)":"var(--neutral-mark)",opacity: e==="W"?1:.55},s);
+      el("text",{x:ml+wv+6,y:y+rh/2+4,class: e==="W"?"lab-strong tick":"lab tick"},s,fmt(v.sd,1));
+      var hit = el("rect",{x:ml,y:y,width:W-ml,height:rh,fill:"transparent"},s);
+      hit.addEventListener("pointermove",function(evt){ showTip("<b>"+st.label+"</b> · "+ERA[e]+"<div class='row'><span>Swings (sd)</span><span>"+fmt(v.sd,2)+"</span></div><div class='row'><span>Mean</span><span>"+fmt(v.mean,2)+"</span></div><div style='color:var(--muted)'>"+v.years+"</div>",evt,box); });
+      hit.addEventListener("pointerleave",hideTip);
+    });
+  });
+}
+function tableSpreads(c){
+  var eras = ["E0","E1","E2","E3","E4","W"];
+  table(c, ["Measure (mean / swings)"].concat(eras.map(function(e){return ERA[e]+(e==="E0"?" (reading)":"");})),
+    SPREAD_ORDER.map(function(k){ var st=D.stats[k]; return [st.label].concat(eras.map(function(e){ var v=st.eras[e]; return v? fmt(v.mean,1)+" / "+fmt(v.sd,1) : "–"; })); }));
+}
+
+/* ---------- 4. Taxes by group across eras ---------- */
+var TAXG = [["Top 0.1%","var(--s1)"],["Top 1%","var(--s2)"],["Middle 40%","var(--s3)"],["Bottom 50%","var(--s4)"]];
+function drawTaxes(box){
+  var W = width(box), narrow = W<560, ml = 36, mr = narrow?104:120, top = 12, ph = 250, H = top+ph+34;
+  var s = svgFor(box, W, H, "Average tax rate by income group across the four eras");
+  var eras = ["E1","E2","E3","E4"], x = function(i){ return ml + 18 + i*(W-ml-mr-36)/3; }, y = lin(15, 60, top+ph, top);
+  [20,30,40,50,60].forEach(function(t){ el("line",{x1:ml,x2:W-mr+10,y1:y(t),y2:y(t),stroke:"var(--grid)"},s); el("text",{x:ml-6,y:y(t)+4,"text-anchor":"end",class:"tick"},s,t+"%"); });
+  eras.forEach(function(e,i){ el("text",{x:x(i),y:top+ph+22,"text-anchor":"middle",class:"lab"},s, narrow? ERA[e].replace(/(\d\d)(\d\d)-(\d\d)(\d\d)/,"$1$2-$4") : (e==="E4"?"2008-2019":ERA[e])); });
+  var ends = [];
+  TAXG.forEach(function(g){
+    var vals = eras.map(function(e){ return D.taxes[g[0]][e]; });
+    var d = vals.map(function(v,i){ return (i?"L":"M")+x(i)+","+y(v); }).join("");
+    el("path",{d:d,fill:"none",stroke:g[1],"stroke-width":2.25,"stroke-linejoin":"round"},s);
+    vals.forEach(function(v,i){
+      el("circle",{cx:x(i),cy:y(v),r:4.5,fill:g[1],stroke:"var(--surface)","stroke-width":2},s);
+      var hit = el("circle",{cx:x(i),cy:y(v),r:13,fill:"transparent"},s);
+      hit.addEventListener("pointermove",function(evt){ showTip("<b>"+g[0]+"</b> · "+(eras[i]==="E4"?"2008-2019":ERA[eras[i]])+"<div class='row'><span>Tax paid, all taxes</span><span>"+fmt(v,1)+"%</span></div>",evt,box); });
+      hit.addEventListener("pointerleave",hideTip);
+    });
+    ends.push({y:y(vals[3]), label:g[0]+" "+fmt(vals[3],1)+"%", first:{y:y(vals[0]), v:vals[0]}});
+  });
+  // first-era values, left of the first points
+  // direct labels at the right end, nudged apart
+  ends.sort(function(a,b){return a.y-b.y;});
+  for (var i=1;i<ends.length;i++) if (ends[i].y-ends[i-1].y<15) ends[i].y = ends[i-1].y+15;
+  ends.forEach(function(e){ el("text",{x:x(3)+10,y:e.y+4,class:"lab"},s,e.label); });
+}
+function tableTaxes(c){
+  table(c, ["Group","1947-1972","1973-1983","1984-2007","2008-2019"], ["Bottom 50%","Middle 40%","Top 10%","Top 1%","Top 0.1%"].map(function(g){ return [g].concat(["E1","E2","E3","E4"].map(function(e){ return fmt(D.taxes[g][e],1)+"%"; })); }));
+}
+function tableDistribution(c){
+  var rows = [["B1 top 1% income share","Top 1% share of pre-tax income"],["B1 top 10% income share","Top 10% share of pre-tax income"],["B1 top 1% wealth share","Top 1% share of wealth"],
+    ["B2 official poverty %","Official poverty rate"],["B2 anchored SPM poverty %","Anchored SPM poverty rate"],["B3 health spending % of GDP","Health spending, % of GDP"],["B3 out-of-pocket % of health spending","Out-of-pocket share of health spending"]];
+  table(c, ["% , first to last year of the era","1947-1972","1973-1983","1984-2007","2008-2025"], rows.map(function(r){
+    return [r[1]].concat(["E1","E2","E3","E4"].map(function(e){ var v = D.distribution[r[0]][e]; if (!v) return "–"; var yrs = v.years.split("-"); var note = (e==="E1"&&yrs[0]!=="1947")?" (from "+yrs[0]+")":(e==="E4"&&yrs[1]!=="2025")?" ("+yrs[1]+")":""; return fmt(v.start,1)+" → "+fmt(v.end,1)+note; }));
+  }));
+}
+
+/* ---------- 5. Hospital admissions ---------- */
+var HOSPG = [["non-profit","Non-profit","var(--s1)"],["state-local government","State and local government","var(--s2)"],["for-profit","For-profit","var(--s3)"]];
+function drawHospitals(box){
+  var W = width(box), narrow = W<560, ml = 36, mr = narrow?104:150, top = 10, ph = 220, H = top+ph+30;
+  var s = svgFor(box, W, H, "Community hospital admissions by ownership, 1975 to 2015");
+  var yrs = Object.keys(D.admissions).map(Number), x = lin(1974, 2016, ml, W-mr), y = lin(0, 80, top+ph, top), ends = [];
+  [0,20,40,60,80].forEach(function(t){ el("line",{x1:ml,x2:W-mr,y1:y(t),y2:y(t),stroke:t===0?"var(--axis)":"var(--grid)"},s); el("text",{x:ml-6,y:y(t)+4,"text-anchor":"end",class:"tick"},s,t+"%"); });
+  [1975,1985,1995,2005,2015].forEach(function(t){ el("text",{x:x(t),y:top+ph+20,"text-anchor":"middle",class:"tick"},s,t); });
+  HOSPG.forEach(function(g){
+    var d = yrs.map(function(yr,i){ return (i?"L":"M")+x(yr)+","+y(D.admissions[yr][g[0]]); }).join("");
+    el("path",{d:d,fill:"none",stroke:g[2],"stroke-width":2.25,"stroke-linejoin":"round"},s);
+    yrs.forEach(function(yr){ var v = D.admissions[yr][g[0]];
+      el("circle",{cx:x(yr),cy:y(v),r:4,fill:g[2],stroke:"var(--surface)","stroke-width":2},s);
+      var hit = el("circle",{cx:x(yr),cy:y(v),r:12,fill:"transparent"},s);
+      hit.addEventListener("pointermove",function(evt){ showTip("<b>"+yr+"</b><div class='row'><span>"+g[1]+"</span><span>"+fmt(v,1)+"%</span></div>",evt,box); });
+      hit.addEventListener("pointerleave",hideTip);
+    });
+    var last = D.admissions[yrs[yrs.length-1]][g[0]], first = D.admissions[yrs[0]][g[0]];
+    ends.push({y:y(last), t:(narrow? g[1].replace("State and local government","Government"):g[1].replace("State and local government","State and local"))+" "+fmt(last,1)+"%"});
+    el("text",{x:x(1975),y:y(first)-9,"text-anchor":"middle",class:"tick"},s,fmt(first,1));
+  });
+  ends.sort(function(a,b){return a.y-b.y;});
+  for (var i=1;i<ends.length;i++) if (ends[i].y-ends[i-1].y<15) ends[i].y = ends[i-1].y+15;
+  ends.forEach(function(e){ el("text",{x:x(2015)+10,y:e.y+4,class:"lab"},s,e.t); });
+}
+function tableHospitals(c){
+  var yrs = Object.keys(D.admissions);
+  var t1 = h("div"), t2 = h("div"); c.innerHTML=""; c.appendChild(t1); c.appendChild(t2);
+  table(t1, ["Admissions, %"].concat(yrs), HOSPG.map(function(g){ return [g[1]].concat(yrs.map(function(y){ return fmt(D.admissions[y][g[0]],1); })); }));
+  var eras = ["E0","E1","E2","E3"];
+  var t2h = h("p",{class:"basis"},"All US hospitals, share of beds (Historical Statistics), first to last year of each era:"); t2.appendChild(t2h);
+  var t2t = h("div"); t2.appendChild(t2t);
+  table(t2t, ["Share of beds, %","1946","1947-1972","1973-1983","1984-1993"], [["for-profit","For-profit"],["non-profit","Non-profit"],["government","Government"]].map(function(g){
+    return [g[1]].concat(eras.map(function(e){ var v=D.beds[g[0]][e]; if(!v) return "–"; return e==="E0"? fmt(v.end,1) : fmt(v.start,1)+" → "+fmt(v.end,1); })); }));
+}
+
+/* ---------- 6. The fitted rule ---------- */
+function drawRule(box){
+  var keys = Object.keys(D.rule), W = width(box), narrow = W<560, ml = narrow?118:210, mr = 20, rh = 40, top = 30, H = top + keys.length*rh + 28;
+  var s = svgFor(box, W, H, "Fitted response of the policy rate to inflation by era");
+  var x = lin(-0.6, 2.0, ml, W-mr);
+  [-0.5,0,0.5,1,1.5,2].forEach(function(t){ el("line",{x1:x(t),x2:x(t),y1:top-8,y2:H-26,stroke: t===0?"var(--axis)":"var(--grid)"},s); el("text",{x:x(t),y:H-8,"text-anchor":"middle",class:"tick"},s,fmt(t,1)); });
+  el("line",{x1:x(1),x2:x(1),y1:top-12,y2:H-26,stroke:"var(--ink-2)","stroke-width":1.25},s);
+  el("text",{x:x(1)+6,y:top-12,class:"lab"},s,"one for one");
+  keys.forEach(function(k,i){
+    var r = D.rule[k], y = top + i*rh + rh/2, lo = r.phi-1.96*r.phi_se, hi = r.phi+1.96*r.phi_se;
+    el("text",{x:ml-12,y:y+4,"text-anchor":"end",class: k.indexOf("Accord")>0?"lab":"lab-strong"},s, narrow? k.replace("1951-1972 (after the Accord)","1951-72, Accord") : k);
+    el("line",{x1:x(lo),x2:x(hi),y1:y,y2:y,stroke:"var(--s1)","stroke-width":2,"stroke-linecap":"round",opacity:.45},s);
+    el("circle",{cx:x(r.phi),cy:y,r:5.5,fill:"var(--s1)",stroke:"var(--surface)","stroke-width":2},s);
+    el("text",{x:x(r.phi),y:y-10,"text-anchor":"middle",class:"lab-strong tick"},s,fmt(r.phi,2));
+    var hit = el("rect",{x:ml,y:y-rh/2,width:W-ml-mr,height:rh,fill:"transparent"},s);
+    hit.addEventListener("pointermove",function(evt){ showTip("<b>"+k+"</b><div class='row'><span>Per point of inflation</span><span>"+fmt(r.phi,2)+" (se "+fmt(r.phi_se,2)+")</span></div><div class='row'><span>Per point of output gap</span><span>"+fmt(r.beta,2)+" (se "+fmt(r.beta_se,2)+")</span></div><div style='color:var(--muted)'>"+r.quarters+", "+r.n+" quarters</div>",evt,box); });
+    hit.addEventListener("pointerleave",hideTip);
+  });
+}
+function tableRule(c){
+  table(c, ["Fit","Per point of inflation (se)","Per point of output gap (se)","Quarters"], Object.keys(D.rule).map(function(k){ var r=D.rule[k]; return [k, fmt(r.phi,2)+" ("+fmt(r.phi_se,2)+")", fmt(r.beta,2)+" ("+fmt(r.beta_se,2)+")", r.quarters]; }));
+}
+
+/* ---------- 7. Engine Q3: diverging intervals per outcome ---------- */
+var OUT = {P1:{t:"P1 · Swings in the basket's price",u:"points",f:function(v){return fmtS(v,2);}},
+  P2:{t:"P2 · Swings in yearly real income",u:"$",f:moneyS},
+  P3:{t:"P3 · Largest fall in real wealth (median adult)",u:"$",f:moneyS},
+  P4:{t:"P4 · Years to recover from an income shock",u:"years",f:function(v){return fmtS(v,2);}},
+  P5:{t:"P5 · % pushed below the basket line in a recession year",u:"points",f:function(v){return fmtS(v,2);}}};
+function vcol(v){ return v==="steadier"?"var(--pos)":v==="less steady"?"var(--neg)":"var(--neutral-mark)"; }
+function drawQ3(box){
+  box.innerHTML=""; var grid = h("div",{class:"grid2"}); box.appendChild(grid);
+  var cells = [0,1,2,3,4].map(function(){ var c = h("div"); grid.appendChild(c); return c; });
+  ["P1","P2","P3","P4","P5"].forEach(function(k,ki){
+    var cell = cells[ki];
+    var items = ["e1","e2","e3"].map(function(e){ var c = D.q3[e][ki]; return {e:e,c:c}; });
+    var ext = 0; items.forEach(function(o){ ext = Math.max(ext, Math.abs(o.c.lo), Math.abs(o.c.hi), Math.abs(o.c.m)); }); ext *= 1.15;
+    var W = Math.max(280, Math.round(cell.clientWidth||320)), ml = 74, mr = 14, rh = 30, top = 40, H = top + 3*rh + 22;
+    var s = svgFor(cell, W, H, OUT[k].t);
+    el("text",{x:0,y:13,class:"panel-title"},s,OUT[k].t);
+    var x = lin(-ext, ext, ml, W-mr);
+    el("text",{x:ml,y:31,class:"tick"},s,"← steadier");
+    el("text",{x:W-mr,y:31,"text-anchor":"end",class:"tick"},s,"less steady →");
+    el("line",{x1:x(0),x2:x(0),y1:top-4,y2:top+3*rh,stroke:"var(--axis)","stroke-width":1.25},s);
+    items.forEach(function(o,i){
+      var y = top + i*rh + rh/2, c = o.c, col = vcol(c.v);
+      el("text",{x:ml-8,y:y+4,"text-anchor":"end",class:"lab"},s,ERAKEY[o.e]);
+      if (Math.abs(x(c.hi)-x(c.lo))>1) el("line",{x1:x(c.lo),x2:x(c.hi),y1:y,y2:y,stroke:col,"stroke-width":2,"stroke-linecap":"round",opacity:.5},s);
+      el("circle",{cx:x(c.m),cy:y,r:5.5,fill:col,stroke:"var(--surface)","stroke-width":2},s);
+      var hit = el("rect",{x:ml,y:y-rh/2,width:W-ml-mr,height:rh,fill:"transparent"},s);
+      hit.addEventListener("pointermove",function(evt){ showTip("<b>"+ERAKEY[o.e]+"</b> minus 2008-2025<div class='row'><span>"+k+"</span><span>"+OUT[k].f(c.m)+"</span></div><div class='row'><span>95% (Holm)</span><span>"+OUT[k].f(c.lo)+" to "+OUT[k].f(c.hi)+"</span></div><div style='color:var(--muted)'>"+c.v+"</div>",evt,box); });
+      hit.addEventListener("pointerleave",hideTip);
+    });
+    var tk = niceTicks(-ext*0.95, ext*0.95, 4);
+    tk.forEach(function(t){ el("text",{x:x(t),y:H-4,"text-anchor":"middle",class:"tick"},s, OUT[k].u==="$"? (t===0?"0":(t<0?"−":"")+"$"+fmt(Math.abs(t)/1000,0)+"k") : fmt(t, Math.abs(ext)<3?1:0)); });
+  });
+}
+function tableQ3(c){
+  table(c, ["Outcome (era minus 2008-2025)","1947-1972","1973-1983","1984-2007"], ["P1","P2","P3","P4","P5"].map(function(k,ki){
+    return [OUT[k].t + (OUT[k].u==="$"?" ($)":" ("+OUT[k].u+")")].concat(["e1","e2","e3"].map(function(e){ var q=D.q3[e][ki]; return q.v+": "+OUT[k].f(q.m)+" ["+OUT[k].f(q.lo)+", "+OUT[k].f(q.hi)+"]"; })); }));
+}
+function tableSettings(c){
+  // Transcribed from dev/reports/s75-deep-history.md, "Which setting moves it"; the same cells are in dev/runs/s75-eras/tables.md.
+  table(c, ["Era","The era's rule","Today's rule","The era's tax schedule","The era's health cost growth"], [
+    ["1947-1972","P3 no clear difference; P5 −0.11; basket poverty −1.04; wealth poverty −5.41","P3 +$272,464 (see the note below); basket poverty −4.00; wealth poverty −12.0","basket poverty −0.40","basket poverty +0.88; P5 +0.20"],
+    ["1973-1983","P3 +$12,801; P5 −0.53; basket poverty −0.16; wealth poverty −1.05","P3 +$27,434; basket poverty +0.45","basket poverty −0.30; P5 −0.13","basket poverty +0.27; P5 +0.16"],
+    ["1984-2007","P3 +$18,654; P5 +0.31; basket poverty +0.53; wealth poverty +3.18","P3 +$20,909; basket poverty +0.41","basket poverty −0.19","basket poverty +1.14; P5 +0.39"],
+    ["2008-2025","P3 +$17,171; basket poverty +0.28; wealth poverty +3.03","P3 +$9,695; P5 +0.28; basket poverty +0.50","basket poverty −0.11","basket poverty +0.12"]
+  ]);
+}
+
+/* ---------- 8. Dumbbell: basket poverty by era and design ---------- */
+function drawDumbbell(box){
+  var W = width(box), narrow = W<560, ml = 84, mr = 20, rh = 46, top = 10, eras = ["e1","e2","e3","e4"], H = top + eras.length*rh + 30;
+  var s = svgFor(box, W, H, "Basket poverty by era with no programme, the release design and C2.2");
+  var x = lin(0, 62, ml, W-mr);
+  [0,10,20,30,40,50,60].forEach(function(t){ el("line",{x1:x(t),x2:x(t),y1:top,y2:top+eras.length*rh,stroke:t===0?"var(--axis)":"var(--grid)"},s); el("text",{x:x(t),y:H-8,"text-anchor":"middle",class:"tick"},s,t+"%"); });
+  eras.forEach(function(e,i){
+    var L = D.levels[e], y = top + i*rh + rh/2, a = L.none.basket_poverty, r = L.rel.basket_poverty, c = L.c22.basket_poverty;
+    el("text",{x:ml-10,y:y+4,"text-anchor":"end",class:"lab-strong"},s,ERAKEY[e]);
+    el("line",{x1:x(c),x2:x(a),y1:y,y2:y,stroke:"var(--axis)","stroke-width":2},s);
+    [[a,"var(--neutral-mark)","No programme"],[r,"var(--s2)","Release design"],[c,"var(--s1)","C2.2"]].forEach(function(m){
+      el("circle",{cx:x(m[0]),cy:y,r:6.5,fill:m[1],stroke:"var(--surface)","stroke-width":2},s);
+    });
+    el("text",{x:x(a),y:y-11,"text-anchor":"middle",class:"lab tick"},s,fmt(a,1));
+    el("text",{x:x(r),y:y-11,"text-anchor":"middle",class:"lab tick"},s,fmt(r,1));
+    el("text",{x:x(c)+ (narrow?0:0),y:y+21,"text-anchor":"start",class:"lab tick"},s,fmt(c,1));
+    var hit = el("rect",{x:ml,y:y-rh/2,width:W-ml-mr,height:rh,fill:"transparent"},s);
+    hit.addEventListener("pointermove",function(evt){ showTip("<b>"+ERAKEY[e]+"</b> · basket poverty<div class='row'><span>No programme</span><span>"+fmt(a,1)+"%</span></div><div class='row'><span>Release design</span><span>"+fmt(r,1)+"%</span></div><div class='row'><span>C2.2</span><span>"+fmt(c,1)+"%</span></div>",evt,box); });
+    hit.addEventListener("pointerleave",hideTip);
+  });
+}
+function tableDumbbell(c){
+  table(c, ["Era (its own path)","No programme","Release design","C2.2","Release minus none [95%]","C2.2 minus none [95%]","C2.2: largest fall in real wealth","Release: largest fall"], ["e1","e2","e3","e4"].map(function(e){
+    var L = D.levels[e];
+    // Q4 effects (programme minus no programme) for the basket-poverty and P3 rows, from the report.
+    var Q = {e1:["−26.7 [−27.1, −26.3]","−44.4 [−44.7, −44.0]","−$41,319","−$13,217"],e2:["−31.8 [−32.2, −31.5]","−51.5 [−51.9, −51.1]","−$35,997","−$22,499"],
+             e3:["−23.0 [−23.3, −22.6]","−45.6 [−46.0, −45.2]","−$41,362","−$7,016"],e4:["−23.5 [−23.9, −23.1]","−40.7 [−41.1, −40.3]","−$29,044","−$16,365"]}[e];
+    return [ERAKEY[e], fmt(L.none.basket_poverty,1)+"%", fmt(L.rel.basket_poverty,1)+"%", fmt(L.c22.basket_poverty,1)+"%", Q[0], Q[1], Q[2], Q[3]];
+  }));
+}
+
+/* ---------- 9. Tally: segmented bars ---------- */
+function drawTally(box){
+  var T = D.q4tally, W = width(box), ml = 104, mr = 16, rh = 40, top = 6, H = top + 2*rh + 4;
+  var s = svgFor(box, W, H, "Programme effect direction tally by design");
+  [["c22","C2.2"],["rel","Release design"]].forEach(function(d,i){
+    var segs = [[T[d[0]+" kept"]||0,"var(--s1)","kept"],[T[d[0]+" no measurable difference"]||0,"var(--neutral-mark)","no measurable difference"],[T[d[0]+" reversed"]||0,"var(--s3)","reversed (favourable)"]];
+    var tot = segs.reduce(function(a,b){return a+b[0];},0), x = lin(0, tot, ml, W-mr), y = top + i*rh, cx = ml;
+    el("text",{x:ml-10,y:y+rh/2+2,"text-anchor":"end",class:"lab-strong"},s,d[1]);
+    segs.forEach(function(sg){
+      if (!sg[0]) return; var w = x(sg[0])-ml - 2;
+      var r = el("rect",{x:cx,y:y+6,width:Math.max(2,w),height:rh-14,rx:4,fill:sg[1]},s);
+      if (w > 34) el("text",{x:cx+w/2,y:y+rh/2+2,"text-anchor":"middle",style:"fill:#fff;font-weight:600"},s,sg[0]);
+      else el("text",{x:cx+w/2,y:y+rh-1,"text-anchor":"middle",class:"tick",style:"font-size:11px"},s,"");
+      r.addEventListener("pointermove",function(evt){ showTip("<b>"+d[1]+"</b><div class='row'><span>"+sg[2]+"</span><span>"+sg[0]+" of "+tot+"</span></div>",evt,box); });
+      r.addEventListener("pointerleave",hideTip);
+      cx += w + 2;
+    });
+    var small = segs.slice(1).filter(function(sg){return sg[0];}).map(function(sg){return sg[0]+" "+(W<560? sg[2].replace("no measurable difference","no difference").replace(" (favourable)",""): sg[2]);}).join(" · ");
+    el("text",{x:W-mr,y:y+4,"text-anchor":"end",class:"tick",style:"font-size:11.5px"},s,small);
+  });
+}
+
+var CHARTS = {timeline:drawTimeline, spreads:drawSpreads, taxes:drawTaxes, hospitals:drawHospitals, rule:drawRule, q3:drawQ3, dumbbell:drawDumbbell, tally:drawTally};
+var TABLES = {timeline:tableTimeline, spreads:tableSpreads, taxes:tableTaxes, distribution:tableDistribution, hospitals:tableHospitals, rule:tableRule, q3:tableQ3, settings:tableSettings, dumbbell:tableDumbbell};
+function renderAll(){ document.querySelectorAll("[data-chart]").forEach(function(b){ var k=b.getAttribute("data-chart"); if (k==="matrix") drawMatrix(b); else if (CHARTS[k]) CHARTS[k](b); }); }
+document.querySelectorAll("[data-table]").forEach(function(c){ var k=c.getAttribute("data-table"); if (TABLES[k]) TABLES[k](c); });
+renderAll();
+var lastW = window.innerWidth, timer;
+window.addEventListener("resize", function(){ if (Math.abs(window.innerWidth-lastW)<4) return; lastW = window.innerWidth; clearTimeout(timer); timer = setTimeout(renderAll, 120); });
+})();
+</script>
+</body>
+</html>
