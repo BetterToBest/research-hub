@@ -618,7 +618,7 @@
           <td><strong>EDC</strong></td>
           <td>Extractive Drain Coefficient — fraction of gross income captured by contracts that build zero household wealth</td>
           <td>dimensionless [0,1]</td>
-          <td>0.625 (baseline market rent) → 0.025 (PTH + CCO)</td>
+          <td>0.62 (the paper's near-poverty profile at market rent) → 0.025 (PTH + CCO design target)</td>
         </tr>
         <tr>
           <td><strong>EPPM</strong></td>
@@ -1369,7 +1369,7 @@
       <dd><strong>Six indices:</strong>
         <ul>
           <li>BLEI (Basic Living Economic Index): days of basic living covered by accessible resources. Formula: [L + γ·Y + BU_food_eff] / C_basic. Six tiers: Crisis (0–6), Precarious (7–29), Threshold (30–119), Stable (120–364), Secure (365–729), Flourishing (730+).</li>
-          <li>EDC (Extractive Drain Coefficient): fraction of gross income captured by zero-wealth-building contracts. US baseline near-poverty: 0.625. CCO-PTH target: 0.025.</li>
+          <li>EDC (Extractive Drain Coefficient): fraction of gross income captured by zero-wealth-building contracts. In the BLEI paper's near-poverty profile: 0.62 ($1,300 rent on $2,083 a month). CCO-PTH target: 0.025 (a design target; the simulation uses it as an input, so results that depend on it assume the target is met).</li>
           <li>EPPM (Effective Purchasing Power Multiplier): purchasing power ratio vs. baseline at same nominal income. Uses full BU·ε_blended = $2,502/adult/month. At poverty line: 5.80×.</li>
           <li>FBS (Financial Bandwidth Score): monthly residual above basic living threshold. Gates P(advance) = 1 − exp(−λ·FBS). Near-poverty CCO: $2,281/month (assuming the EDC target of 0.025 is met). Baseline: $0 (deficit).</li>
           <li>CSI (Compound Stability Index): forward-looking stability horizon. CSI(i,t) = BLEI(i,0)·(1+r_wealth/12)^t·(1−EDC) + AE(i,t)/C_basic. All time in months; annual rates use monthly compounding.</li>
@@ -1378,10 +1378,10 @@
       </dd>
       <dd><strong>Key accounting conventions:</strong>
         <ul>
-          <li>BLEI numerator: food BU effective value only = 360 BU × $2.75 = $990/adult/month (utility BU offsets $150 cash utility cost in C_basic → net zero contribution to BLEI)</li>
+          <li>BLEI numerator: food BU effective value only = 360 BU × $2.75 assumed market-equivalent value per BU = $990/adult/month (an assumption that differs from ε_food = 2.64, which would give $950; utility BU offsets $150 cash utility cost in C_basic → net zero contribution to BLEI)</li>
           <li>EPPM: full BU blended value = $2,502/adult/month (food + utility premium vs. market provision)</li>
           <li>FBS: BU at face value $1,200 (cash-equivalent food expenditure reduction); EDC_residual (consumer debt interest only, not housing)</li>
-          <li>γ (liquidity coefficient): 0.12 at entry (Month 0–2) → 0.20 at Month 6+ (CCO floor established)</li>
+          <li>γ (liquidity coefficient): 0.12 at entry (Month 0–2) → 0.20 at Month 6+ (CCO floor established). The simulation, which steps by year, applies 0.20 to CCO participants from enrollment and 0.12 to everyone else.</li>
           <li>AE excluded from W_accessible for CSI orthogonality; r_wealth and r_a evolve under distinct rate parameters</li>
         </ul>
       </dd>
@@ -1399,7 +1399,7 @@
           <li>BU allocation flat at $1,200/adult/month — NOT scaled by octave level</li>
           <li>FBS uses EDC_residual (consumer debt only) to prevent housing double-counting</li>
           <li>P(advance) gated by FBS: agents at FBS = 0 cannot advance regardless of quality score</li>
-          <li>Network-density-gated synergy θ: 0 below 55% PTF density; scales to 0.25 at 90%+</li>
+          <li>Network-density-gated synergy θ: 0 below 55% PTF density; scales to 0.25 at 90%+ (framework design). The simulation (v5.9.1) gates θ on its SZH zone-coherence setting as a stand-in for PTF density, so realised PTF membership does not change θ; the study harness has an off-by-default switch that gates on realised PTF share, for the restudy.</li>
         </ul>
       </dd>
     </dl>
