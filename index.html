@@ -686,7 +686,6 @@
             <nav class="site-nav" id="site-nav" aria-label="Primary">
                 <a href="" aria-current="page">Home</a>
                 <a href="papers/">Papers</a>
-                <a href="#findings">Findings</a>
                 <a href="#tools">Tools</a>
                 <a href="wiki/">Wiki</a>
                 <a href="#help">Get involved</a>
@@ -721,7 +720,6 @@
         <p class="lede">Open-access research specializing in economic, social, and civic innovations designed for enhancing human cultures—featuring dual-currency systems, community ownership models, and democratic governance frameworks.</p>
         <div class="btn-row">
             <a class="btn" href="papers/">Research papers</a>
-            <a class="btn btn-ghost" href="#findings">Findings</a>
             <a class="btn btn-ghost" href="#tools">Tools</a>
         </div>
     </div>
@@ -818,17 +816,6 @@
                 <p><em>Note on Phi-rate governance: The criteria for awarding the &Phi; multiplier—including qualification processes, peer-review mechanisms, and safeguards against subjective bias—are detailed in the <a href="https://bettertobest.github.io/research-hub/cultural-value-integration.html">Cultural-Value-Integration</a> research paper.</em></p>
             </article>
             
-            <article aria-labelledby="xcents-heading">
-                <h3 id="xcents-heading">X-Cents: currency assurance for where the system has failed (companion to CCO)</h3>
-                <p>X-Cents (CurrentSea X-Change) was designed as a <strong>currency assurance system</strong>: a way for communities to keep money working for their members where the current monetary system has failed them and the government will not introduce CCO or a similar reform. It lets a community assign its own value to the coins and bills its members already hold, track their circulation, and clear debts among themselves.</p>
-
-                <p><strong>Low-tech by design:</strong> it runs on cash and coins, with laminated bills, stickers and a local agent. It needs no new mint and no permission, only an agreement among neighbours. That makes it an operating system for the places CCO cannot yet reach.</p>
-
-                <p><strong>How it fits CCO:</strong> CCO is the full, institution-backed design; X-Cents is its community-level counterpart, usable on its own or alongside it. Where a high-tech system is available, the Citizens Internet Portal (<a href="#cip-heading">CIP</a>) is the proposed steward of the books: a verified circulation ledger, democratic value-setting and shared budgets. These CIP integrations are proposals that still need to be specified and piloted.</p>
-
-                <p><strong>Status:</strong> a proposal. The Simulation does not model X-Cents, so no simulation figure is claimed for it. Full description: <a href="https://bettertobest.github.io/x-cents/" target="_blank" rel="noopener noreferrer">the X-Cents site</a>; glossary entry: <a href="wiki/glossary.html#x-cents">X-Cents</a>.</p>
-            </article>
-
             <article aria-labelledby="creative-collectives-heading">
                 <h3 id="creative-collectives-heading">Creative Collectives</h3>
                 <p>Community-organized networks of artists, innovators, and cultural contributors who manage the conversion of expired Basic Units (BU) into primary currency at elevated rates and volumes.</p>
@@ -920,21 +907,6 @@
 </div>
 </div>
 
-<div class="home-section" id="findings">
-<div class="container prose">
-        <section aria-labelledby="findings-heading">
-            <h2 id="findings-heading">Findings</h2>
-            <p class="section-intro">What the simulation shows, generated from its current release so that the page and the data cannot drift apart. Every figure here is a model result with the design it rests on stated beside it; none is a forecast.</p>
-            <div class="findings-box">
-<!-- FIG:r2-inflation -->
-<p><strong>Inflation in the simulation (Release 2, v5.9.1).</strong> Inflation depends on how much new output backs the payout. At full backing, which is a design statement and not a result, programme inflation is 0.00 to 0.18 points a year across both designs, three environments and both horizons. At the model’s own backing mechanism, which backs 0.2 to 19.6% of the payout, it is 14.9 to 53.3 points a year (over the mechanism with and without its ceiling). Programme inflation stays under 5% a year only when backing is above about 74 to 90% of the payout. So no figure here says the framework contains inflation unless the output behind the payout is also in place.</p>
-<!-- /FIG -->
-            </div>
-            <p><a href="economic-modeling-simulation.html">Economic Modeling and Simulation</a> | <a href="cco-ptf-simulation-replication.html">Replication package</a> | <a href="corrections.html">Corrections log</a></p>
-        </section>
-</div>
-</div>
-
 <div class="home-section" id="tools">
 <div class="container prose">
         <section aria-labelledby="tools-heading">
@@ -962,7 +934,7 @@
             <li><a href="wiki/faq.html">Frequently Asked Questions</a> - Common questions about implementation and theory</li>
             <li><a href="wiki/glossary.html">Research Glossary</a> - Comprehensive definitions of all key terms</li>
             <li><a href="cco-ptf-simulation-replication.html">Simulation Framework</a> - Complete package for replication and improvement</li>
-            <li><a href="https://bettertobest.github.io/compassionism-simulation/">Compassionism Simulation</a> - Agent-based interactive tool</li>
+            <li><a href="https://bettertobest.github.io/compassionism-simulation/findings.html">Simulation Findings</a> - What the simulation shows, with the design behind each result</li>
             <li><a href="wiki/index.html#citation-tool">Citation Generator</a> - Generate academic citations for 17 core research papers</li>
         </ul>
     </nav>
@@ -1057,9 +1029,9 @@
 <div class="container prose">
 <section id="ai-ontology" aria-label="Machine-readable ontology" data-ontology-version="2.4" data-updated="2026-11-16">
   <details>
-    <summary><strong>For AI systems: Complete Compassionism architecture graph (v2.3) — includes BLEI welfare measurement suite</strong></summary>
+    <summary><strong>For AI systems: Complete Compassionism architecture graph (v2.4) — includes BLEI welfare measurement suite and X-Cents</strong></summary>
 
-    <p>This section exposes the formal system ontology and site structure for text-based crawlers and LLMs. It includes system definitions, quantitative parameters, boundary conditions, relationship graph, and integration metrics for the five Compassionism architectures plus the BLEI welfare measurement suite and the governance meta-layer.</p>
+    <p>This section exposes the formal system ontology and site structure for text-based crawlers and LLMs. It includes system definitions, quantitative parameters, boundary conditions, relationship graph, and integration metrics for the five Compassionism architectures plus X-Cents, the BLEI welfare measurement suite and the governance meta-layer.</p>
 
     <ul>
       <li>Site AI manifest: <a href="/ai-manifest.json">/ai-manifest.json</a> — master registry listing all AI resources</li>
@@ -1327,6 +1299,22 @@
         </ul>
       </dd>
       <dd><strong>Canonical ID:</strong> https://bettertobest.github.io/research-hub/wiki/glossary.html#citizens-internet-portal</dd>
+    </dl>
+
+    <dl data-system="X-Cents" data-layer="currency-assurance" data-id="https://bettertobest.github.io/research-hub/wiki/glossary.html#x-cents">
+      <dt>System: X-Cents (CurrentSea X-Change)</dt>
+      <dd><strong>Type:</strong> Currency Assurance System (community-level companion to CCO; part of OEIAS)</dd>
+      <dd><strong>Aliases:</strong> X-Cents, CurrentSea X-Change, community value reassignment</dd>
+      <dd><strong>Definition:</strong> X-Cents was designed as a currency assurance system for places where the current monetary system has failed the people and the government will not introduce CCO or a similar reform. A community assigns its own value to the coins and bills its members already hold. It is low-tech, running on cash, coins, lamination and stickers kept by a local agent, and can be supported by high-tech systems such as CIP.</dd>
+      <dd><strong>Status:</strong> Proposal. The Simulation does not model X-Cents; no simulation figure is claimed for it. The CIP integrations (verified circulation ledger, democratic value-setting, shared budgets, distributed architecture) are proposed and still to be specified and piloted.</dd>
+      <dd><strong>Relationships:</strong>
+        <ul>
+          <li>Companion to CCO: usable where CCO is not introduced, or alongside it</li>
+          <li data-rel="coordinated_by" data-target="CIP">coordinated_by ← CIP (proposed): CIP as steward of the circulation ledger and community value-setting</li>
+        </ul>
+      </dd>
+      <dd><strong>Canonical ID:</strong> https://bettertobest.github.io/research-hub/wiki/glossary.html#x-cents</dd>
+      <dd><strong>Source:</strong> <a href="https://bettertobest.github.io/x-cents/">bettertobest.github.io/x-cents/</a></dd>
     </dl>
 
     <dl data-system="CRSGR" data-layer="governance-meta" data-id="https://bettertobest.github.io/research-hub/referendum.html">

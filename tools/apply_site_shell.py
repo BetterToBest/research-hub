@@ -25,7 +25,7 @@ PAGES = {
     'wiki/international-adaptation-guide.html': ('../', 'wiki', [('Home', '../'), ('Wiki', 'index.html'), ('International Adaptation Guide', None)], False),
 }
 
-NAV = [('home', 'Home', ''), ('papers', 'Papers', 'papers/'), ('findings', 'Findings', '#findings'),
+NAV = [('home', 'Home', ''), ('papers', 'Papers', 'papers/'),
        ('tools', 'Tools', '#tools'), ('wiki', 'Wiki', 'wiki/'), ('help', 'Get involved', '#help')]
 
 
