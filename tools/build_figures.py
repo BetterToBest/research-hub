@@ -61,7 +61,7 @@ def fig_release_design(snap):
     k = lambda key: eff(snap, 'release design', 'Reference', 20, key)
     cost, wp, med = k('cost of living'), k('wealth poverty'), k('median real wealth')
     return (
-        f'<p><strong>What the simulation finds ({snap["label"]}, {snap["release"]}).</strong> The release design is run at full backing '
+        f'<p><strong>What the simulation finds ({snap["release"]}).</strong> The opt-in design (the design as the Hub’s papers set it: adults choose to take part) is run at full backing '
         '(its own statement: the payout is matched by new output), 500 paired runs of 500 adults, against no programme, in the Reference '
         'environment over 20 years. Adults below the cost of living (basket poverty, averaged over the adult-years): '
         f'{pct(cost["no programme"])} without the programme, {pct(cost["programme"])} with it, a fall of {pt(-cost["effect"])} points '
@@ -75,10 +75,10 @@ def fig_release_design(snap):
 
 def fig_wealth_history(snap):
     return (
-        '<p><strong>An earlier release said the opposite about wealth.</strong> Release 1 (v5.6.0) counted the share of adults under $25,000 '
+        '<p><strong>An earlier release said the opposite about wealth.</strong> v5.6.0 counted the share of adults under $25,000 '
         'at the end of the run, with all wealth held as cash, and found that share higher with the programme. '
-        f'The current release ({snap["label"]}, {snap["release"]}) averages every year and holds wealth by asset class, so the two measure '
-        'different things and their figures are not compared here. The current release supersedes release 1 on wealth.</p>')
+        f'The current release ({snap["release"]}) averages every year and holds wealth by asset class, so the two measure '
+        'different things and their figures are not compared here. The current release supersedes v5.6 on wealth.</p>')
 
 
 def inflation_ranges(snap):
@@ -98,7 +98,7 @@ def fig_inflation(snap):
     bshare = [r['backed share (fraction of the payout)'] * 100 for r in mech]
     blo, bhi = min(be, key=lambda r: r['backed share (fraction of the payout)']), max(be, key=lambda r: r['backed share (fraction of the payout)'])
     return (
-        f'<p><strong>Inflation in the simulation ({snap["label"]}, {snap["release"]}).</strong> Inflation depends on how much new output backs the payout. '
+        f'<p><strong>Inflation in the simulation ({snap["release"]}).</strong> Inflation depends on how much new output backs the payout. '
         f'At full backing, which is a design statement and not a result, programme inflation is {pt(flo, 2)} to {pt(fhi, 2)} points a year '
         'across both designs, three environments and both horizons. At the model’s own backing mechanism, which backs '
         f'{pt(min(bshare), 1)} to {pt(max(bshare), 1)}% of the payout, it is {pt(mlo)} to {pt(mhi)} points a year '
