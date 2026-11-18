@@ -9,7 +9,7 @@ source, opened, or a derived calculation from those sources (this file):
                         annual, 1791-2025
   mw_cpi_result.html    MeasuringWorth, US consumer price index, annual (1982-84 = 100; BLS CPI-U
                         annual average from 1913)
-  usprice_cust.xls      US Census Bureau, median sales price of new houses sold, annual, 1963-
+  usprice_cust.xls      US Census Bureau, median and average sales price of new houses sold, annual, 1963-
   d24_tabn330.10.xlsx   NCES, Digest of Education Statistics 2024, Table 330.10, average
                         undergraduate tuition, fees, room and board, all institutions, current dollars
   MIN_WAGE below        US Department of Labor, Wage and Hour Division, "History of Federal Minimum
@@ -118,14 +118,15 @@ def read_cpi(path):
 
 
 def read_houses(path):
+    """Census table: year, median price, average price of new houses sold. Returns (median, average)."""
     import xlrd
     s = xlrd.open_workbook(path).sheet_by_index(0)
-    out = {}
+    med, avg = {}, {}
     for r in range(s.nrows):
-        a, b = s.row_values(r)[:2]
-        if isinstance(a, float) and isinstance(b, float) and 1900 < a < 2100:
-            out[int(a)] = b
-    return out
+        a, b, c = s.row_values(r)[:3]
+        if isinstance(a, float) and isinstance(b, float) and isinstance(c, float) and 1900 < a < 2100:
+            med[int(a)], avg[int(a)] = b, c
+    return med, avg
 
 
 def read_tuition(path):
@@ -157,7 +158,7 @@ def in_effect(table, date):
 def main(raw):
     gold = read_gold(os.path.join(raw, "mw_gold_result.html"))
     cpi = read_cpi(os.path.join(raw, "mw_cpi_result.html"))
-    houses = read_houses(os.path.join(raw, "usprice_cust.xls"))
+    houses, houses_avg = read_houses(os.path.join(raw, "usprice_cust.xls"))
     tuition = read_tuition(os.path.join(raw, "d24_tabn330.10.xlsx"))
     s75 = json.load(open(os.path.join(HUB, "data", "s75-us-eras.json")))["timeline"]
 
@@ -201,6 +202,8 @@ def main(raw):
     items = {
         "house": {"label": "Median new house (Census)", "kind": "price",
                   "years": sorted(houses), "usd": [houses[y] for y in sorted(houses)]},
+        "house_avg": {"label": "Average new house (Census)", "kind": "price",
+                      "years": sorted(houses_avg), "usd": [houses_avg[y] for y in sorted(houses_avg)]},
         "college": {"label": "A year of college: tuition, fees, room and board (NCES, all institutions)",
                     "kind": "price", "years": sorted(tuition), "usd": [tuition[y]["total"] for y in sorted(tuition)],
                     "note": "Academic year starting in the autumn of the year shown"},
