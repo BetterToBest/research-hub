@@ -1027,6 +1027,31 @@ const SEARCH_INDEX = [
     { title: 'Public Trust Housing (definition)', desc: 'Community-owned, resident-governed housing held in public trust with collective equity accounts.', url: 'glossary.html#public-trust-housing', tags: ['Glossary'] },
 ];
 
+/* Pull every glossary term into the search index (stays in step with glossary.html).
+   The hand-written glossary entries above remain as the fallback if the fetch fails. */
+fetch('glossary.html').then(r => r.ok ? r.text() : Promise.reject()).then(html => {
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const txt = el => el ? el.textContent.replace(/\s+/g, ' ').trim() : '';
+    const terms = [...doc.querySelectorAll('article.term-card[id]')].map(c => {
+        const badge = txt(c.querySelector('.term-badge'));
+        const def = txt(c.querySelector('.term-definition'));
+        return {
+            title: txt(c.querySelector('.term-title')) + ' (definition)',
+            desc: def.length > 260 ? def.slice(0, 257).replace(/\s+\S*$/, '') + '…' : def,
+            url: 'glossary.html#' + c.id,
+            tags: ['Glossary'].concat(badge ? [badge] : []),
+            text: txt(c.querySelector('.term-pronunciation')) + ' ' + def + ' ' + txt(c.querySelector('.term-example'))
+        };
+    });
+    if (!terms.length) return;
+    for (let i = SEARCH_INDEX.length - 1; i >= 0; i--) {
+        if (SEARCH_INDEX[i].url.indexOf('glossary.html#') === 0) SEARCH_INDEX.splice(i, 1);
+    }
+    SEARCH_INDEX.push(...terms);
+    const box = document.getElementById('search-input');
+    if (box && box.value.trim().length >= 2) runSearch(null);
+}).catch(() => {});
+
 function runSearch(e) {
     if (e) e.preventDefault();
     const q = document.getElementById('search-input').value.trim().toLowerCase();
@@ -1041,7 +1066,7 @@ function runSearch(e) {
 
     const terms = q.split(/\s+/);
     const results = SEARCH_INDEX.filter(item => {
-        const blob = (item.title + ' ' + item.desc + ' ' + (item.tags || []).join(' ')).toLowerCase();
+        const blob = (item.title + ' ' + item.desc + ' ' + (item.tags || []).join(' ') + ' ' + (item.text || '')).toLowerCase();
         return terms.every(t => blob.includes(t));
     });
 
