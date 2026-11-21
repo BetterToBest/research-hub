@@ -2,6 +2,8 @@
 
 This directory contains downloadable resources for replicating and extending the CCO-PTH-CIP-SZH economic system simulations.
 
+**Note (Nov 21, 2026):** none of the archives listed below is in this directory, and the "10,000 Monte Carlo results" described under the validation datasets were never produced. The open replication material is the [Compassionism Simulation](https://github.com/BetterToBest/compassionism-simulation) repository, whose results folders carry the command and checksums for each run.
+
 ## Available Downloads
 
 ### Core Simulation Package
@@ -35,7 +37,7 @@ This directory contains downloadable resources for replicating and extending the
 
 ### Validation Datasets
 - **`validation-benchmarks.zip`** - Reference datasets and benchmarks
-  - 10,000 Monte Carlo results
+  - 10,000 Monte Carlo results (never produced; see the note above)
   - Cross-validation datasets
   - Historical economic indicators
   - Size: ~45 MB
