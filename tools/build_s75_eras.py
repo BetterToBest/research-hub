@@ -6,10 +6,13 @@ and written unchanged (rounded for display) to data/s75-us-eras.json and into th
 inline data block:
   sources/s75_eras.json            the descriptive panel (part 1; results s75-panel-54e88bc)
   sources/s75_hx.json              each era's yearly path as the engine reads it
-  dev/runs/s77-s75/tables.json     the engine readings (part 2, rerun with the release's settings in S77;
-                                   results s75-eras-e5649ef; the first run, dev/runs/s75-eras/, is superseded)
+  TABLES (the engine readings, part 2): since S93 the rerun on the release engine v5.9.23,
+                                   compassionism-sim-results s75-eras-50bc51d/tables.json (every value equal
+                                   to s75-eras-69e8953's). Before it: dev/runs/s77-s75/tables.json, results
+                                   s75-eras-e5649ef (rerun with the release's settings in S77; the first run,
+                                   dev/runs/s75-eras/, is superseded). With no TABLES the S77 file is read.
 
-Usage: python3 tools/build_s75_eras.py PATH/TO/compassionism-simulation
+Usage: python3 tools/build_s75_eras.py PATH/TO/compassionism-simulation [PATH/TO/results/<folder>/tables.json]
 """
 import json
 import os
@@ -26,10 +29,13 @@ def r(x, n=2):
     return None if x is None else round(x, n)
 
 
-def main(sim):
+def main(sim, tables=None):
     panel = json.load(open(os.path.join(sim, "sources/s75_eras.json")))
     hx = json.load(open(os.path.join(sim, "sources/s75_hx.json")))
-    tab = json.load(open(os.path.join(sim, "dev/runs/s77-s75/tables.json")))
+    tables = tables or os.path.join(sim, "dev/runs/s77-s75/tables.json")
+    tab = json.load(open(tables))
+    tsrc = (os.path.basename(os.path.dirname(os.path.abspath(tables))) + "/tables.json"
+            if "dev/runs/" not in tables else "dev/runs/s77-s75/tables.json")
     commit = subprocess.run(["git", "-C", sim, "rev-parse", "HEAD"], capture_output=True,
                             text=True).stdout.strip()
 
@@ -167,9 +173,43 @@ def main(sim):
                   "todays_rule": [r(x, 1) for x in tab["stance"][e + " c22 S"][:2]]}
               for e in ("e1", "e2", "e3", "e4")}
 
+    # The settings table ("Which setting moves it"): no programme, each arm minus arm P in the same era,
+    # full-coverage design. Its cells (which outcomes each column names) are the page's selection, kept from
+    # the S77 version; each figure is computed here (P3, P5: the Holm-adjusted cell; poverty: the difference
+    # of the seed means, as tables.md prints it). Before S93 these cells were typed into the page.
+    SEL = {"e1": {"R": ["P3", "P5", "bp", "wp"], "S": ["P3*", "bp", "wp"], "T": ["bp"], "H": ["bp", "P5"]},
+           "e2": {"R": ["P3", "P5", "bp", "wp"], "S": ["P3", "bp"], "T": ["bp", "P5"], "H": ["bp", "P5"]},
+           "e3": {"R": ["P3", "P5", "bp", "wp"], "S": ["P3", "bp"], "T": ["bp"], "H": ["bp", "P5"]},
+           "e4": {"R": ["P3", "bp", "wp"], "S": ["P3", "P5", "bp"], "T": ["bp"], "H": ["bp", "P5"]}}
+
+    def num(x):
+        x = 0.0 if abs(x) < 0.005 else x
+        t = ("%.1f" % abs(x)) if abs(x) >= 10 else ("%.2f" % abs(x))
+        return ("+" if x > 0 else "\u2212" if x < 0 else "") + t
+
+    def cell(e, a, k):
+        if k in ("bp", "wp"):
+            i = 6 if k == "bp" else 8
+            d = lv["c22"][e + " " + a + " 0"][i] - lv["c22"][e + " P 0"][i]
+            return ("basket poverty " if k == "bp" else "wealth poverty ") + num(d)
+        note = k.endswith("*")
+        k = k.rstrip("*")
+        c = tab["settings"]["c22"][e][a][out_keys.index(k)]
+        if not (c["loH"] > 0 or c["hiH"] < 0):
+            return k + " no clear difference"
+        if k == "P3":
+            v = c["m"]
+            t = "P3 " + ("+" if v > 0 else "\u2212") + "$" + format(int(round(abs(v))), ",")
+            return t + (" (see the note below)" if note else "")
+        return k + " " + num(c["m"])
+    settings_table = [[N, ]+["; ".join(cell(e, a, k) for k in SEL[e][a]) for a in ("R", "S", "T", "H")]
+                      for e, N in (("e1", "1947-1972"), ("e2", "1973-1983"), ("e3", "1984-2007"),
+                                   ("e4", "2008-2025"))]
+
     data = {
         "_about": "Built by research-hub tools/build_s75_eras.py from BetterToBest/compassionism-simulation "
-                  "at %s (sources/s75_eras.json, sources/s75_hx.json, dev/runs/s77-s75/tables.json)." % commit,
+                  "at %s (sources/s75_eras.json, sources/s75_hx.json) and %s." % (commit, tsrc),
+        "tables": tsrc,
         "sim_commit": commit,
         "engine_commit": tab["meta"]["e1"]["commit"],
         "seeds": tab["meta"]["e1"]["seeds"],
@@ -181,6 +221,7 @@ def main(sim):
         "taxes": taxes, "distribution": dist, "beds": beds, "admissions": admissions,
         "rule": rule,
         "q3": q3, "levels": levels, "q4": q4, "q4tally": tally,
+        "settings_table": settings_table,
         "tax_change": tax_change, "health_real_growth": health, "stance": stance,
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
@@ -199,6 +240,6 @@ def main(sim):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) not in (2, 3):
         sys.exit(__doc__)
-    main(sys.argv[1])
+    main(*sys.argv[1:])

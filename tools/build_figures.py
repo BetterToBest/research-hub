@@ -5,6 +5,7 @@
                                                                         # snapshot a release into data/releases/ and make it current
   python3 tools/build_figures.py                                        # write every <!-- FIG:name --> block in the pages
   python3 tools/build_figures.py --check                                # fail if a page disagrees with the release
+  python3 tools/build_figures.py --fetch SIM --tag <commit> --release v5.9.23 --label "Release 2"   # a release whose data landed after its tag
 
 The current release is named in data/releases/current.json. When the next engine round is released, fetch it
 with a new tag and label (and its data-file names); every block then follows it, and --check lists each page that
@@ -21,8 +22,8 @@ CUR = os.path.join(ROOT, 'data', 'releases', 'current.json')
 BLOCK = re.compile(r'(<!-- FIG:([\w.-]+) -->)(.*?)(<!-- /FIG -->)', re.S)
 
 
-def fetch(sim, tag, label, files):
-    snap = {'release': tag, 'label': label, 'engine': None, 'files': {}, 'tables': {}}
+def fetch(sim, tag, label, files, release=None):
+    snap = {'release': release or tag, 'label': label, 'engine': None, 'files': {}, 'tables': {}}
     snap['commit'] = subprocess.check_output(['git', '-C', sim, 'rev-parse', tag + '^{commit}'], text=True).strip()
     for f in files:
         raw = subprocess.check_output(['git', '-C', sim, 'show', f'{tag}:data/studies/{f}.json'])
@@ -30,7 +31,8 @@ def fetch(sim, tag, label, files):
         snap['files'][f] = hashlib.sha256(raw).hexdigest()
         snap['engine'] = d['meta']['engine']
         snap['tables'][f] = {'columns': d['columns'], 'rows': [list(r) for r in zip(*d['data'])]}
-    name = f'{tag}-{label.lower().replace(" ", "")}.json'
+    snap['rev'] = tag
+    name = f'{release or tag}-{label.lower().replace(" ", "")}.json'
     os.makedirs(os.path.dirname(CUR), exist_ok=True)
     json.dump(snap, open(os.path.join(os.path.dirname(CUR), name), 'w'), indent=1)
     json.dump({'snapshot': name}, open(CUR, 'w'))
@@ -118,11 +120,11 @@ def pages():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--fetch', metavar='SIM_CLONE')
-    ap.add_argument('--tag'); ap.add_argument('--label'); ap.add_argument('--engine-files', default='r2-effects,r2-backing')
+    ap.add_argument('--tag'); ap.add_argument('--label'); ap.add_argument('--release', help='the release name the blocks print, when --tag is a commit rather than the release tag (S93: the release data landed after the v5.9.23 tag)'); ap.add_argument('--engine-files', default='r2-effects,r2-backing')
     ap.add_argument('--check', action='store_true')
     a = ap.parse_args()
     if a.fetch:
-        return fetch(a.fetch, a.tag, a.label, a.engine_files.split(','))
+        return fetch(a.fetch, a.tag, a.label, a.engine_files.split(','), a.release)
     snap = json.load(open(os.path.join(os.path.dirname(CUR), json.load(open(CUR))['snapshot'])))
     TAG = snap['release']
     bad, n = [], 0
